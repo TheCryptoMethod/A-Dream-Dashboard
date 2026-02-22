@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A_Dream — Backtesting Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-primary: #0a0e17;
+    --bg-secondary: #111827;
+    --bg-card: #151d2e;
+    --bg-card-hover: #1a2540;
+    --border: #1e293b;
+    --border-active: #334155;
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --green: #22c55e;
+    --green-dim: #166534;
+    --green-glow: rgba(34, 197, 94, 0.15);
+    --red: #ef4444;
+    --red-dim: #991b1b;
+    --red-glow: rgba(239, 68, 68, 0.15);
+    --cyan: #06b6d4;
+    --cyan-dim: #0e7490;
+    --cyan-glow: rgba(6, 182, 212, 0.1);
+    --yellow: #eab308;
+    --magenta: #d946ef;
+    --blue: #3b82f6;
+    --orange: #f97316;
+    --font-mono: 'JetBrains Mono', 'Consolas', monospace;
+    --font-display: 'Outfit', sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-display);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ═══════ HEADER ═══════ */
+  .header {
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+  }
+  .header-inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .logo-icon {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, var(--cyan), var(--magenta));
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    font-family: var(--font-mono);
+  }
+  .logo-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  .logo-text span { color: var(--cyan); }
+  .header-stats {
+    display: flex;
+    gap: 2rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+  }
+  .header-stat-value { color: var(--text-primary); font-weight: 600; }
+  .header-stat-value.green { color: var(--green); }
+
+  /* ═══════ MAIN LAYOUT ═══════ */
+  .main {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+  }
+
+  /* ═══════ FILTERS BAR ═══════ */
+  .filters {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .filter-group {
+    display: flex;
+    gap: 2px;
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+  .filter-btn {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .filter-btn:hover { color: var(--text-primary); background: var(--bg-card); }
+  .filter-btn.active {
+    color: var(--cyan);
+    background: var(--bg-card);
+    box-shadow: inset 0 -2px 0 var(--cyan);
+  }
+  .filter-label {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding-right: 0.5rem;
+    align-self: center;
+  }
+
+  /* ═══════ SUMMARY CARDS ═══════ */
+  .summary-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .summary-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem;
+    transition: border-color 0.2s;
+  }
+  .summary-card:hover { border-color: var(--border-active); }
+  .summary-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+  .summary-value {
+    font-family: var(--font-mono);
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .summary-sub {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+    font-family: var(--font-mono);
+  }
+
+  /* ═══════ RUNS TABLE ═══════ */
+  .runs-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .runs-header {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .runs-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  .runs-count {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  .runs-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .runs-table th {
+    text-align: left;
+    padding: 0.6rem 1rem;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+    font-weight: 500;
+    background: var(--bg-secondary);
+    position: sticky;
+    top: 0;
+    font-family: var(--font-mono);
+  }
+  .runs-table td {
+    padding: 0.7rem 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    border-bottom: 1px solid rgba(30, 41, 59, 0.5);
+    vertical-align: middle;
+  }
+  .runs-table tr { cursor: pointer; transition: background 0.1s; }
+  .runs-table tbody tr:hover { background: var(--bg-card-hover); }
+  .runs-table tr.expanded { background: var(--bg-card-hover); }
+
+  .td-method {
+    font-weight: 600;
+    color: var(--cyan);
+  }
+  .td-date { color: var(--text-secondary); }
+  .td-green { color: var(--green); }
+  .td-red { color: var(--red); }
+  .td-yellow { color: var(--yellow); }
+  .td-muted { color: var(--text-muted); }
+
+  /* ═══════ GATE BADGES ═══════ */
+  .gates-row {
+    display: flex;
+    gap: 3px;
+    flex-wrap: nowrap;
+  }
+  .gate-badge {
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.55rem;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    flex-shrink: 0;
+  }
+  .gate-pass { background: var(--green-dim); color: var(--green); }
+  .gate-fail { background: var(--red-dim); color: var(--red); }
+
+  /* ═══════ GRADE BADGES ═══════ */
+  .grade {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px; height: 24px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    font-family: var(--font-mono);
+  }
+  .grade-a { background: var(--green-glow); color: var(--green); border: 1px solid var(--green-dim); }
+  .grade-b { background: rgba(234, 179, 8, 0.12); color: var(--yellow); border: 1px solid rgba(234, 179, 8, 0.3); }
+  .grade-c { background: rgba(249, 115, 22, 0.12); color: var(--orange); border: 1px solid rgba(249, 115, 22, 0.3); }
+  .grade-d { background: var(--red-glow); color: var(--red); border: 1px solid var(--red-dim); }
+
+  /* ═══════ DETAIL PANEL ═══════ */
+  .detail-row { display: none; }
+  .detail-row.visible { display: table-row; }
+  .detail-cell {
+    padding: 1.25rem !important;
+    background: var(--bg-secondary) !important;
+    border-bottom: 2px solid var(--cyan-dim) !important;
+  }
+  .detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+  .detail-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  .detail-section-title {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--cyan);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
+  .detail-kv {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    border-bottom: 1px solid rgba(30, 41, 59, 0.3);
+  }
+  .detail-kv:last-child { border-bottom: none; }
+  .detail-key { color: var(--text-muted); }
+  .detail-val { color: var(--text-primary); font-weight: 500; }
+
+  /* ═══════ GATE DETAIL BARS ═══════ */
+  .gate-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+  }
+  .gate-name { width: 40px; color: var(--text-muted); font-weight: 500; }
+  .gate-bar-bg {
+    flex: 1;
+    height: 20px;
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  .gate-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+  }
+  .gate-bar-fill.pass { background: linear-gradient(90deg, var(--green-dim), var(--green)); }
+  .gate-bar-fill.fail { background: linear-gradient(90deg, var(--red-dim), var(--red)); }
+  .gate-result {
+    width: 50px;
+    text-align: right;
+    font-weight: 600;
+  }
+  .gate-result.pass { color: var(--green); }
+  .gate-result.fail { color: var(--red); }
+
+  /* ═══════ EMPTY STATE ═══════ */
+  .empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--text-muted);
+  }
+  .empty-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.3;
+  }
+  .empty-text {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+  }
+  .empty-sub { font-size: 0.85rem; font-family: var(--font-mono); }
+
+  /* ═══════ DUPLICATE BANNER ═══════ */
+  .dup-banner {
+    background: rgba(234, 179, 8, 0.08);
+    border: 1px solid rgba(234, 179, 8, 0.25);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: var(--yellow);
+    display: none;
+    font-family: var(--font-mono);
+  }
+
+  /* ═══════ RESPONSIVE ═══════ */
+  @media (max-width: 1024px) {
+    .detail-grid { grid-template-columns: 1fr; }
+    .main { padding: 1rem; }
+    .header { padding: 1rem; }
+    .header-stats { display: none; }
+  }
+  @media (max-width: 768px) {
+    .summary-row { grid-template-columns: 1fr 1fr; }
+    .runs-table { font-size: 0.7rem; }
+    .runs-table td, .runs-table th { padding: 0.5rem 0.6rem; }
+  }
+
+  /* ═══════ SCROLLBAR ═══════ */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg-primary); }
+  ::-webkit-scrollbar-thumb { background: var(--border-active); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+  /* ═══════ ANIMATIONS ═══════ */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-in { animation: fadeIn 0.3s ease forwards; }
+  .runs-table tbody tr {
+    animation: fadeIn 0.25s ease forwards;
+    opacity: 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-icon">A</div>
+      <div class="logo-text">A_Dream <span>Dashboard</span></div>
+    </div>
+    <div class="header-stats">
+      <div>Runs: <span class="header-stat-value" id="h-runs">0</span></div>
+      <div>Validated: <span class="header-stat-value green" id="h-validated">0</span></div>
+      <div>Last: <span class="header-stat-value" id="h-last">—</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- FILTERS -->
+  <div class="filters">
+    <span class="filter-label">Method</span>
+    <div class="filter-group" id="method-filters">
+      <button class="filter-btn active" data-filter="all">ALL</button>
+      <button class="filter-btn" data-filter="M1">M1</button>
+      <button class="filter-btn" data-filter="M2">M2</button>
+      <button class="filter-btn" data-filter="M3">M3</button>
+      <button class="filter-btn" data-filter="M4">M4</button>
+      <button class="filter-btn" data-filter="COMBINED">COMBINED</button>
+    </div>
+    <span class="filter-label" style="margin-left:1rem">Sort</span>
+    <div class="filter-group" id="sort-filters">
+      <button class="filter-btn active" data-sort="date">DATE</button>
+      <button class="filter-btn" data-sort="sortino">SORTINO</button>
+      <button class="filter-btn" data-sort="gates">GATES</button>
+      <button class="filter-btn" data-sort="ev">EV</button>
+    </div>
+  </div>
+
+  <!-- SUMMARY CARDS -->
+  <div class="summary-row" id="summary-cards">
+    <div class="summary-card">
+      <div class="summary-label">Total Runs</div>
+      <div class="summary-value" id="s-runs">0</div>
+      <div class="summary-sub" id="s-runs-sub">—</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-label">Passed 11/11</div>
+      <div class="summary-value" style="color:var(--green)" id="s-passed">0</div>
+      <div class="summary-sub" id="s-passed-sub">—</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-label">Best Sortino</div>
+      <div class="summary-value" style="color:var(--cyan)" id="s-sortino">—</div>
+      <div class="summary-sub" id="s-sortino-sub">—</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-label">Best EV/Trade</div>
+      <div class="summary-value" style="color:var(--yellow)" id="s-ev">—</div>
+      <div class="summary-sub" id="s-ev-sub">—</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-label">Avg Gate Pass Rate</div>
+      <div class="summary-value" id="s-gaterate">—</div>
+      <div class="summary-sub" id="s-gaterate-sub">across all combos</div>
+    </div>
+  </div>
+
+  <!-- DUPLICATE BANNER -->
+  <div class="dup-banner" id="dup-banner"></div>
+
+  <!-- RUNS TABLE -->
+  <div class="runs-section">
+    <div class="runs-header">
+      <div class="runs-title">Backtest Runs</div>
+      <div class="runs-count" id="runs-count">0 runs</div>
+    </div>
+    <div style="overflow-x:auto">
+      <table class="runs-table" id="runs-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Method</th>
+            <th>DB</th>
+            <th>Trades</th>
+            <th>Best SL/TP</th>
+            <th>EV</th>
+            <th>WR</th>
+            <th>Sortino</th>
+            <th>MaxDD</th>
+            <th>Gates</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody id="runs-body"></tbody>
+      </table>
+    </div>
+
+    <!-- EMPTY STATE -->
+    <div class="empty-state" id="empty-state">
+      <div class="empty-icon">📊</div>
+      <div class="empty-text">No backtest runs yet</div>
+      <div class="empty-sub">Run the backtesting engine with --validate to see results here</div>
+      <div class="empty-sub" style="margin-top:0.5rem;color:var(--text-muted)">
+        python -m backtesting.engine --validate && python -m utils.dashboard_push
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const GATE_NAMES = ['SIG','EQ','WF','MC','PLT','REG','ROB','tT','DSR','WRC','HHI'];
+
+let allRuns = [];
+let currentFilter = 'all';
+let currentSort = 'date';
+
+async function loadData() {
+  try {
+    const resp = await fetch('data/results.json?t=' + Date.now());
+    const data = await resp.json();
+    allRuns = data.runs || [];
+    updateUI();
+  } catch (e) {
+    console.log('No data yet or fetch error:', e);
+    updateUI();
+  }
+}
+
+function updateUI() {
+  const filtered = filterRuns(allRuns);
+  const sorted = sortRuns(filtered);
+  
+  updateSummary(allRuns, sorted);
+  renderTable(sorted);
+  
+  document.getElementById('empty-state').style.display = sorted.length ? 'none' : 'block';
+  document.getElementById('runs-count').textContent = `${sorted.length} run${sorted.length !== 1 ? 's' : ''}`;
+}
+
+function filterRuns(runs) {
+  if (currentFilter === 'all') return runs;
+  return runs.filter(r => r.method === currentFilter || r.label === currentFilter);
+}
+
+function sortRuns(runs) {
+  const sorted = [...runs];
+  switch (currentSort) {
+    case 'date': sorted.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp)); break;
+    case 'sortino': sorted.sort((a, b) => (b.best?.sortino || 0) - (a.best?.sortino || 0)); break;
+    case 'gates': sorted.sort((a, b) => (b.best?.gates_passed || 0) - (a.best?.gates_passed || 0)); break;
+    case 'ev': sorted.sort((a, b) => (b.best?.avg_pnl || 0) - (a.best?.avg_pnl || 0)); break;
+  }
+  return sorted;
+}
+
+function updateSummary(all, filtered) {
+  document.getElementById('h-runs').textContent = all.length;
+  document.getElementById('s-runs').textContent = all.length;
+  
+  const passed = all.filter(r => r.best && r.best.gates_passed === 11).length;
+  document.getElementById('h-validated').textContent = passed;
+  document.getElementById('s-passed').textContent = passed;
+  document.getElementById('s-passed-sub').textContent = all.length ? `${(passed/all.length*100).toFixed(0)}% of runs` : '—';
+  
+  if (all.length) {
+    const last = all.reduce((a, b) => new Date(a.timestamp) > new Date(b.timestamp) ? a : b);
+    document.getElementById('h-last').textContent = formatDate(last.timestamp);
+    document.getElementById('s-runs-sub').textContent = `since ${formatDate(all[0]?.timestamp)}`;
+    
+    // Best sortino across all runs
+    let bestSortino = null;
+    let bestEV = null;
+    all.forEach(r => {
+      if (r.best) {
+        if (!bestSortino || (r.best.sortino || 0) > (bestSortino.best.sortino || 0)) bestSortino = r;
+        if (!bestEV || (r.best.avg_pnl || 0) > (bestEV.best.avg_pnl || 0)) bestEV = r;
+      }
+    });
+    
+    if (bestSortino?.best) {
+      document.getElementById('s-sortino').textContent = bestSortino.best.sortino?.toFixed(2) || '—';
+      document.getElementById('s-sortino-sub').textContent = `SL=${bestSortino.best.sl}% TP=${bestSortino.best.tp}%`;
+    }
+    if (bestEV?.best) {
+      document.getElementById('s-ev').textContent = `${bestEV.best.avg_pnl >= 0 ? '+' : ''}${bestEV.best.avg_pnl?.toFixed(2) || 0}%`;
+      document.getElementById('s-ev-sub').textContent = `${bestEV.method} — ${formatDate(bestEV.timestamp)}`;
+    }
+    
+    // Avg gate pass rate
+    let totalGates = 0, totalPossible = 0;
+    all.forEach(r => {
+      if (r.validated) {
+        r.validated.forEach(v => {
+          totalGates += v.gates_passed || 0;
+          totalPossible += 11;
+        });
+      }
+    });
+    if (totalPossible > 0) {
+      document.getElementById('s-gaterate').textContent = `${(totalGates/totalPossible*100).toFixed(0)}%`;
+    }
+  }
+}
+
+function renderTable(runs) {
+  const tbody = document.getElementById('runs-body');
+  tbody.innerHTML = '';
+  
+  runs.forEach((run, idx) => {
+    const best = run.best || {};
+    const gatesPassed = best.gates_passed || 0;
+    const grade = getGrade(gatesPassed, best);
+    
+    const tr = document.createElement('tr');
+    tr.style.animationDelay = `${idx * 0.03}s`;
+    tr.innerHTML = `
+      <td class="td-date">${formatDate(run.timestamp)}</td>
+      <td class="td-method">${run.method || run.label || '—'}</td>
+      <td class="td-muted" title="${run.db_name || ''}">${truncate(run.db_name || '—', 20)}</td>
+      <td>${run.total_trades?.toLocaleString() || '—'}</td>
+      <td>${best.sl ? `${best.sl}/${best.tp}` : '—'}</td>
+      <td class="${(best.avg_pnl||0) >= 0 ? 'td-green' : 'td-red'}">${best.avg_pnl ? `${best.avg_pnl >= 0 ? '+' : ''}${best.avg_pnl.toFixed(2)}%` : '—'}</td>
+      <td>${best.win_rate ? `${(best.win_rate*100).toFixed(0)}%` : '—'}</td>
+      <td style="color:var(--cyan)">${best.sortino?.toFixed(2) || '—'}</td>
+      <td class="td-yellow">${best.max_dd ? `${best.max_dd.toFixed(0)}%` : '—'}</td>
+      <td>${renderGateBadges(best.gates || {})}</td>
+      <td>${renderGrade(grade)}</td>
+    `;
+    tr.onclick = () => toggleDetail(run, tr);
+    tbody.appendChild(tr);
+  });
+}
+
+function renderGateBadges(gates) {
+  return GATE_NAMES.map(g => {
+    const passed = gates[g];
+    if (passed === undefined) return `<span class="gate-badge" style="background:var(--bg-secondary);color:var(--text-muted)">—</span>`;
+    return `<span class="gate-badge ${passed ? 'gate-pass' : 'gate-fail'}" title="${g}: ${passed ? 'PASS' : 'FAIL'}">${g.substring(0,2)}</span>`;
+  }).join('');
+}
+
+function renderGrade(grade) {
+  return `<span class="grade grade-${grade.toLowerCase()}">${grade}</span>`;
+}
+
+function getGrade(gatesPassed, best) {
+  if (gatesPassed === 11) return 'A';
+  if (gatesPassed >= 9) return 'B';
+  if (gatesPassed >= 7) return 'C';
+  return 'D';
+}
+
+function toggleDetail(run, tr) {
+  const existing = tr.nextElementSibling;
+  if (existing && existing.classList.contains('detail-row')) {
+    existing.remove();
+    tr.classList.remove('expanded');
+    return;
+  }
+  
+  // Close other details
+  document.querySelectorAll('.detail-row').forEach(el => el.remove());
+  document.querySelectorAll('.runs-table tr.expanded').forEach(el => el.classList.remove('expanded'));
+  
+  tr.classList.add('expanded');
+  const best = run.best || {};
+  const detailTr = document.createElement('tr');
+  detailTr.className = 'detail-row visible animate-in';
+  detailTr.innerHTML = `<td class="detail-cell" colspan="11">
+    <div class="detail-grid">
+      <div class="detail-section">
+        <div class="detail-section-title">Run Configuration</div>
+        ${kv('Timestamp', run.timestamp)}
+        ${kv('Method', run.method || run.label)}
+        ${kv('Database', run.db_name)}
+        ${kv('DB Hash', run.db_hash?.substring(0,12) || '—')}
+        ${kv('Flags', run.flags || '—')}
+        ${kv('Total Trades', run.total_trades?.toLocaleString())}
+        ${kv('Unique Mints', run.unique_mints?.toLocaleString())}
+        ${kv('Time Span', run.time_span || '—')}
+        ${kv('Profitable Combos', run.profitable_combos)}
+        ${kv('Passed 11/11', run.passed_all)}
+      </div>
+      <div class="detail-section">
+        <div class="detail-section-title">Best Combo — SL=${best.sl}% TP=${best.tp}%</div>
+        ${kv('EV/Trade', best.avg_pnl ? `${best.avg_pnl >= 0 ? '+' : ''}${best.avg_pnl.toFixed(3)}%` : '—')}
+        ${kv('Win Rate', best.win_rate ? `${(best.win_rate*100).toFixed(1)}%` : '—')}
+        ${kv('Profit Factor', best.profit_factor?.toFixed(2))}
+        ${kv('Sharpe', best.sharpe?.toFixed(3))}
+        ${kv('Sortino', best.sortino?.toFixed(3))}
+        ${kv('Max Drawdown', best.max_dd ? `${best.max_dd.toFixed(1)}%` : '—')}
+        ${kv('Risk of Ruin', best.risk_of_ruin ? `${best.risk_of_ruin.toFixed(1)}%` : '—')}
+        ${kv('Equity Multiple', best.equity_multiple?.toFixed(2) + 'x')}
+        ${kv('MC p-value', best.mc_p?.toFixed(4))}
+        ${kv('t-Test p', best.ttest_p?.toFixed(4))}
+        ${kv('DSR', best.dsr_pct ? `${best.dsr_pct.toFixed(1)}%` : '—')}
+        ${kv('WRC p', best.wrc_p?.toFixed(4))}
+        ${kv('HHI', best.hhi?.toFixed(3))}
+      </div>
+    </div>
+    <div class="detail-section" style="margin-top:1rem">
+      <div class="detail-section-title">11-Gate Results</div>
+      ${renderGateDetails(best.gates || {}, best.gate_values || {})}
+    </div>
+  </td>`;
+  tr.after(detailTr);
+}
+
+function kv(key, val) {
+  return `<div class="detail-kv"><span class="detail-key">${key}</span><span class="detail-val">${val ?? '—'}</span></div>`;
+}
+
+function renderGateDetails(gates, values) {
+  return GATE_NAMES.map(g => {
+    const passed = gates[g];
+    const val = values[g] || '';
+    const cls = passed ? 'pass' : 'fail';
+    return `<div class="gate-detail">
+      <span class="gate-name">${g}</span>
+      <div class="gate-bar-bg">
+        <div class="gate-bar-fill ${cls}" style="width:${passed ? 100 : 35}%"></div>
+      </div>
+      <span class="gate-result ${cls}">${passed ? 'PASS' : 'FAIL'}</span>
+    </div>`;
+  }).join('');
+}
+
+function formatDate(ts) {
+  if (!ts) return '—';
+  const d = new Date(ts);
+  return d.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: '2-digit' }) +
+    ' ' + d.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+}
+
+function truncate(s, n) {
+  return s.length > n ? s.substring(0, n) + '…' : s;
+}
+
+// Filter handlers
+document.getElementById('method-filters').addEventListener('click', e => {
+  if (e.target.classList.contains('filter-btn')) {
+    document.querySelectorAll('#method-filters .filter-btn').forEach(b => b.classList.remove('active'));
+    e.target.classList.add('active');
+    currentFilter = e.target.dataset.filter;
+    updateUI();
+  }
+});
+
+document.getElementById('sort-filters').addEventListener('click', e => {
+  if (e.target.classList.contains('filter-btn')) {
+    document.querySelectorAll('#sort-filters .filter-btn').forEach(b => b.classList.remove('active'));
+    e.target.classList.add('active');
+    currentSort = e.target.dataset.sort;
+    updateUI();
+  }
+});
+
+// Load data on page load
+loadData();
+
+// Auto-refresh every 60s
+setInterval(loadData, 60000);
+</script>
+</body>
+</html>
