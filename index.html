@@ -3,442 +3,444 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>A_Dream Dashboard V3</title>
+<title>A_Dream Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #0a0e17; --surface: #111827; --surface2: #1a2332;
-  --border: #1e2d3d; --text: #e0e7ef; --text-secondary: #94a3b8;
-  --text-muted: #64748b; --green: #22c55e; --red: #ef4444;
-  --yellow: #eab308; --cyan: #06b6d4; --magenta: #d946ef;
-  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --bg: #080c14; --surface: #0f1520; --surface2: #151d2b;
+  --surface3: #1a2435; --border: #1c2a3a; --border-light: #253345;
+  --text: #d8e2ef; --text-sec: #8899ad; --text-dim: #506070;
+  --accent: #e8870e; --accent-glow: rgba(232,135,14,.12);
+  --green: #2dd4a0; --green-bg: rgba(45,212,160,.12);
+  --red: #f0615e; --red-bg: rgba(240,97,94,.12);
+  --yellow: #e8b53e; --yellow-bg: rgba(232,181,62,.12);
+  --cyan: #38bdf8; --cyan-bg: rgba(56,189,248,.10);
+  --magenta: #c77dff; --magenta-bg: rgba(199,125,255,.10);
+  --mono: 'IBM Plex Mono', 'Fira Code', monospace;
+  --sans: 'DM Sans', system-ui, sans-serif;
 }
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: var(--bg); color: var(--text); font-family: var(--font-sans); font-size: 14px; padding: 1rem; }
-h1 { font-size: 1.3rem; color: var(--cyan); margin-bottom: .5rem; }
-.header { display: flex; justify-content: space-between; align-items: center; padding: .75rem 1rem; background: var(--surface); border-radius: 8px; margin-bottom: 1rem; border: 1px solid var(--border); }
-.header-sub { font-size: .7rem; color: var(--text-muted); }
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14px;min-height:100vh}
+.page{max-width:1100px;margin:0 auto;padding:1.5rem 1rem 4rem}
 
-/* Summary cards */
-.summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .5rem; margin-bottom: 1rem; }
-.summary-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: .75rem; text-align: center; }
-.summary-label { font-size: .6rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: .05em; }
-.summary-value { font-size: 1.4rem; font-weight: 700; font-family: var(--font-mono); margin: .25rem 0; }
-.summary-sub { font-size: .6rem; color: var(--text-secondary); }
+/* ── Header ── */
+.top-bar{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--border)}
+.top-bar h1{font-family:var(--mono);font-size:1.5rem;font-weight:700;color:#fff;letter-spacing:-.02em}
+.top-bar h1 span{color:var(--accent)}
+.top-bar .meta{font-size:.7rem;color:var(--text-dim);font-family:var(--mono);text-align:right}
 
-/* Method folder */
-.method-folder { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin-bottom: .75rem; overflow: hidden; }
-.method-header { display: flex; align-items: center; justify-content: space-between; padding: .75rem 1rem; cursor: pointer; user-select: none; transition: background .15s; }
-.method-header:hover { background: var(--surface2); }
-.method-name { font-size: 1rem; font-weight: 700; color: var(--cyan); font-family: var(--font-mono); }
-.method-badge { font-size: .65rem; padding: .15rem .5rem; border-radius: 4px; font-weight: 600; font-family: var(--font-mono); }
-.method-badge.validated { background: rgba(34,197,94,.15); color: var(--green); }
-.method-badge.partial { background: rgba(234,179,8,.15); color: var(--yellow); }
-.method-badge.none { background: rgba(239,68,68,.15); color: var(--red); }
-.method-body { display: none; padding: 0 1rem 1rem; }
-.method-body.open { display: block; }
-.chevron { font-size: .8rem; color: var(--text-muted); transition: transform .2s; }
-.chevron.open { transform: rotate(90deg); }
+/* ── Summary row ── */
+.stats-row{display:flex;gap:.75rem;margin-bottom:2rem;flex-wrap:wrap}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.65rem 1rem;min-width:130px;flex:1}
+.stat-label{font-size:.55rem;text-transform:uppercase;letter-spacing:.08em;color:var(--text-dim);font-weight:600;margin-bottom:.2rem}
+.stat-val{font-family:var(--mono);font-size:1.15rem;font-weight:700}
+.stat-sub{font-size:.6rem;color:var(--text-dim);margin-top:.15rem}
 
-/* Variant row */
-.variant { background: var(--surface2); border: 1px solid var(--border); border-radius: 6px; margin-bottom: .5rem; overflow: hidden; }
-.variant-header { display: flex; align-items: center; justify-content: space-between; padding: .5rem .75rem; cursor: pointer; font-size: .75rem; }
-.variant-header:hover { background: rgba(6,182,212,.05); }
-.variant-tag { font-family: var(--font-mono); color: var(--text-secondary); font-size: .65rem; }
-.variant-stats { font-family: var(--font-mono); font-size: .65rem; display: flex; gap: .75rem; align-items: center; }
-.variant-detail { display: none; padding: .75rem; border-top: 1px solid var(--border); }
-.variant-detail.open { display: block; }
+/* ── Method Card ── */
+.method-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:1rem;overflow:hidden;transition:border-color .2s}
+.method-card:hover{border-color:var(--border-light)}
+.method-head{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem}
+.method-title{display:flex;align-items:center;gap:.75rem}
+.method-title h2{font-family:var(--mono);font-size:1.1rem;font-weight:700;color:#fff}
+.method-title .count-badge{font-size:.6rem;font-family:var(--mono);color:var(--text-dim);background:var(--surface2);padding:.15rem .5rem;border-radius:20px}
+.method-right{display:flex;align-items:center;gap:1rem;font-family:var(--mono);font-size:.65rem;color:var(--text-dim)}
 
-/* Gate pills */
-.gate-pill { display: inline-block; font-size: .55rem; font-family: var(--font-mono); padding: .1rem .3rem; border-radius: 3px; margin-right: 2px; font-weight: 600; }
-.gate-pill.pass { background: rgba(34,197,94,.15); color: var(--green); }
-.gate-pill.fail { background: rgba(239,68,68,.15); color: var(--red); }
+/* ── Variant Row ── */
+.variant-list{padding:0 1.25rem 1rem}
+.variant-row{position:relative;padding:.75rem 0;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.variant-row:first-child{border-top:none}
+.vr-left{display:flex;flex-direction:column;gap:.3rem;min-width:200px}
+.vr-label{font-family:var(--mono);font-size:.75rem;color:var(--text-sec)}
+.vr-sub{font-size:.6rem;color:var(--text-dim)}
+.vr-center{display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;flex:1;justify-content:flex-start;padding-left:1rem}
+.vr-right{display:flex;align-items:center;gap:.75rem;flex-shrink:0}
+.vr-date{font-size:.6rem;color:var(--text-dim);font-family:var(--mono);white-space:nowrap}
 
-/* Detail grid */
-.detail-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: .3rem; }
-.kv { display: flex; justify-content: space-between; font-size: .7rem; padding: .15rem .3rem; border-radius: 3px; }
-.kv:nth-child(odd) { background: rgba(255,255,255,.02); }
-.kv-label { color: var(--text-muted); }
-.kv-value { font-family: var(--font-mono); font-weight: 600; }
+/* ── Badges / Pills ── */
+.pill{display:inline-flex;align-items:center;font-family:var(--mono);font-size:.6rem;font-weight:600;padding:.2rem .55rem;border-radius:5px;white-space:nowrap}
+.pill-green{background:var(--green-bg);color:var(--green)}
+.pill-red{background:var(--red-bg);color:var(--red)}
+.pill-yellow{background:var(--yellow-bg);color:var(--yellow)}
+.pill-cyan{background:var(--cyan-bg);color:var(--cyan)}
+.pill-magenta{background:var(--magenta-bg);color:var(--magenta)}
+.pill-dim{background:rgba(255,255,255,.04);color:var(--text-dim)}
+.pill-accent{background:var(--accent-glow);color:var(--accent)}
 
-/* Train/Test */
-.train-test { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; margin: .5rem 0; }
-.tt-panel { background: rgba(255,255,255,.03); border-radius: 6px; padding: .5rem; }
-.tt-title { font-size: .55rem; text-transform: uppercase; font-weight: 700; margin-bottom: .25rem; letter-spacing: .05em; }
-.overfit-bar { font-family: var(--font-mono); font-size: .65rem; padding: .3rem .5rem; border-radius: 4px; margin-top: .3rem; }
+/* Gate score pill */
+.gate-score{font-family:var(--mono);font-size:.65rem;font-weight:700;padding:.2rem .6rem;border-radius:5px}
 
-/* LIFT + Post-Entry bars */
-.filter-section { margin-top: .75rem; }
-.filter-title { font-size: .7rem; font-weight: 700; margin-bottom: .3rem; }
-.filter-cat { font-size: .6rem; color: var(--cyan); font-weight: 600; margin: .5rem 0 .2rem; }
-.bar-row { display: flex; align-items: center; gap: .3rem; font-size: .6rem; font-family: var(--font-mono); margin: .1rem 0; }
-.bar-label { width: 80px; color: var(--text-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.bar-bg { flex: 1; height: 10px; background: rgba(255,255,255,.05); border-radius: 5px; overflow: hidden; }
-.bar-fill { height: 100%; border-radius: 5px; }
-.bar-fill.good { background: var(--green); }
-.bar-fill.bad { background: var(--red); }
-.bar-val { width: 35px; text-align: right; }
-.bar-tag { width: 30px; text-align: center; font-weight: 700; font-size: .55rem; }
+/* ── Open Button ── */
+.btn-open{font-family:var(--mono);font-size:.65rem;font-weight:600;padding:.35rem .9rem;border-radius:6px;border:1px solid var(--accent);color:var(--accent);background:transparent;cursor:pointer;transition:all .15s;white-space:nowrap}
+.btn-open:hover{background:var(--accent);color:#000}
+.btn-open.active{background:var(--accent);color:#000}
 
-/* .env block */
-.env-block { background: #0d1117; border: 1px solid var(--border); border-radius: 6px; padding: .75rem; font-family: var(--font-mono); font-size: .6rem; line-height: 1.5; white-space: pre-wrap; word-break: break-all; color: var(--text-secondary); position: relative; margin-top: .5rem; }
-.env-block .comment { color: var(--text-muted); }
-.copy-btn { position: absolute; top: .3rem; right: .3rem; background: var(--surface2); border: 1px solid var(--border); border-radius: 4px; color: var(--text-muted); font-size: .6rem; padding: .2rem .5rem; cursor: pointer; }
-.copy-btn:hover { color: var(--cyan); border-color: var(--cyan); }
+/* ── Detail Panel (slide down) ── */
+.detail-panel{max-height:0;overflow:hidden;transition:max-height .35s ease;background:var(--surface2);border-top:1px solid var(--border)}
+.detail-panel.open{max-height:3000px;border-top:1px solid var(--border)}
+.detail-inner{padding:1.25rem}
 
-/* History */
-.history { margin-top: .5rem; }
-.history-row { display: flex; gap: .75rem; font-size: .6rem; font-family: var(--font-mono); color: var(--text-muted); padding: .15rem 0; }
+/* ── Detail layout ── */
+.d-section{margin-bottom:1rem}
+.d-section-title{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-bottom:.5rem;display:flex;align-items:center;gap:.4rem}
+.d-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:.25rem}
+.kv{display:flex;justify-content:space-between;font-size:.68rem;padding:.2rem .35rem;border-radius:4px}
+.kv:nth-child(odd){background:rgba(255,255,255,.015)}
+.kv-l{color:var(--text-dim)}.kv-v{font-family:var(--mono);font-weight:600;color:var(--text)}
 
-/* Grade */
-.grade { font-weight: 700; font-family: var(--font-mono); font-size: .7rem; }
-.grade-a { color: var(--green); }
-.grade-b { color: var(--yellow); }
-.grade-c { color: var(--red); }
+/* ── Train/Test ── */
+.tt-grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:.5rem}
+.tt-box{background:rgba(255,255,255,.02);border-radius:8px;padding:.6rem .75rem;border-left:3px solid var(--border)}
+.tt-box.train{border-left-color:var(--cyan)}
+.tt-box.test{border-left-color:var(--green)}
+.tt-label{font-size:.55rem;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:.3rem}
+.overfit-strip{font-family:var(--mono);font-size:.65rem;padding:.35rem .6rem;border-radius:6px;display:inline-block}
+
+/* ── LIFT / Post bars ── */
+.bar-row{display:flex;align-items:center;gap:.3rem;font-size:.58rem;font-family:var(--mono);margin:.15rem 0}
+.bar-label{width:85px;color:var(--text-dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar-bg{flex:1;height:8px;background:rgba(255,255,255,.04);border-radius:4px;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px;transition:width .3s}
+.bar-fill.good{background:var(--green)}.bar-fill.bad{background:var(--red)}
+.bar-val{width:32px;text-align:right}.bar-n{width:28px;color:var(--text-dim);text-align:right}
+
+/* ── .env ── */
+.env-wrap{position:relative;margin-top:.75rem}
+.env-block{background:#070b12;border:1px solid var(--border);border-radius:8px;padding:.8rem 1rem;font-family:var(--mono);font-size:.58rem;line-height:1.6;white-space:pre-wrap;word-break:break-all;color:var(--text-sec);max-height:300px;overflow-y:auto}
+.env-block .c{color:var(--text-dim)}
+.btn-copy{position:absolute;top:.4rem;right:.4rem;background:var(--surface3);border:1px solid var(--border);border-radius:5px;color:var(--text-dim);font-family:var(--mono);font-size:.58rem;padding:.2rem .6rem;cursor:pointer;transition:all .15s}
+.btn-copy:hover{color:var(--accent);border-color:var(--accent)}
+
+/* ── History ── */
+.hist-row{display:flex;gap:1rem;font-size:.6rem;font-family:var(--mono);color:var(--text-dim);padding:.15rem 0}
+.hist-row span:first-child{min-width:110px}
+
+/* Gate mini bar */
+.gate-bar{display:flex;gap:2px;align-items:center}
+.gate-dot{width:6px;height:6px;border-radius:2px}
+.gate-dot.pass{background:var(--green)}.gate-dot.fail{background:var(--red)}
+
+/* ── Empty state ── */
+.empty{text-align:center;padding:4rem 2rem;color:var(--text-dim)}
+.empty h3{font-family:var(--mono);color:var(--text-sec);margin-bottom:.5rem}
+
+/* ── Responsive ── */
+@media(max-width:640px){
+  .stats-row{flex-direction:column}
+  .variant-row{flex-direction:column;align-items:flex-start}
+  .vr-center{padding-left:0;margin:.3rem 0}
+  .vr-right{width:100%;justify-content:space-between}
+  .tt-grid{grid-template-columns:1fr}
+  .d-grid{grid-template-columns:1fr 1fr}
+}
 </style>
 </head>
 <body>
-<div class="header">
-  <div>
-    <h1>🚀 A_Dream Dashboard</h1>
-    <div class="header-sub">V3 Hierarchical — <span id="last-update">loading...</span></div>
+<div class="page">
+  <div class="top-bar">
+    <div>
+      <h1>A<span>_</span>Dream</h1>
+      <div style="font-size:.7rem;color:var(--text-dim);margin-top:.15rem">Backtesting Dashboard</div>
+    </div>
+    <div class="meta">
+      <div id="last-update">—</div>
+      <div style="margin-top:.15rem;font-size:.6rem;opacity:.5">auto-refresh 60s</div>
+    </div>
   </div>
-  <div style="font-size:.65rem;color:var(--text-muted)" id="auto-refresh">Auto-refresh: 60s</div>
+  <div class="stats-row" id="stats"></div>
+  <div id="root"></div>
 </div>
 
-<div class="summary" id="summary"></div>
-<div id="methods-container"></div>
-
 <script>
-const $ = id => document.getElementById(id);
+const $=id=>document.getElementById(id);
+const sp=(v,d=2)=>v==null?'—':`${v>=0?'+':''}${v.toFixed(d)}%`;
+const pf=v=>v==null?'—':(v*100).toFixed(1)+'%';
+const kv=(k,v)=>`<div class="kv"><span class="kv-l">${k}</span><span class="kv-v">${v}</span></div>`;
 
-function signedPct(v, d=2) { if (v == null) return '—'; return `${v >= 0 ? '+' : ''}${v.toFixed(d)}%`; }
-function pctFmt(v) { if (v == null) return '—'; return (v * 100).toFixed(1) + '%'; }
-function kv(k, v) { return `<div class="kv"><span class="kv-label">${k}</span><span class="kv-value">${v}</span></div>`; }
-
-function gradeFor(gp) {
-  if (gp >= 11) return ['A', 'grade-a'];
-  if (gp >= 9) return ['B', 'grade-b'];
-  return ['C', 'grade-c'];
+function pillFor(label,val,thresholds){
+  // thresholds: [{min,cls}] sorted desc
+  let cls='pill-dim';
+  if(thresholds)for(const t of thresholds)if(val>=t.min){cls=t.cls;break}
+  return `<span class="pill ${cls}">${label}</span>`;
 }
 
-async function loadData() {
-  try {
-    const r = await fetch('data/results.json?t=' + Date.now());
-    return await r.json();
-  } catch(e) { return null; }
+function gateScorePill(gp,allPassed){
+  if(allPassed)return `<span class="gate-score pill-green">✅ 11/11</span>`;
+  if(gp>=9)return `<span class="gate-score pill-yellow">⚠ ${gp}/11</span>`;
+  return `<span class="gate-score pill-accent">${gp}/11</span>`;
 }
 
-function renderSummary(data) {
-  const methods = data.methods || {};
-  const methodNames = Object.keys(methods);
-  let totalVariants = 0, totalValidated = 0, bestSortino = null, bestEV = null;
+function gateDots(gates){
+  if(!gates)return'';
+  const order=['SIG','EQ','WF','MC','PLT','REG','ROB','tT','DSR','WRC','HHI'];
+  return `<div class="gate-bar" title="${order.map(g=>g+'='+(gates[g]?'✓':'✗')).join('  ')}">${order.map(g=>`<div class="gate-dot ${gates[g]?'pass':'fail'}"></div>`).join('')}</div>`;
+}
 
-  methodNames.forEach(mn => {
-    methods[mn].forEach(v => {
-      totalVariants++;
-      const cur = v.current || {};
-      if (cur.all_11_passed) totalValidated++;
-      const met = cur.metrics || {};
-      if (met.sortino != null && (!bestSortino || met.sortino > bestSortino.val))
-        bestSortino = { val: met.sortino, label: `${mn} (${v.db_name})` };
-      if (met.avg_pnl != null && (!bestEV || met.avg_pnl > bestEV.val))
-        bestEV = { val: met.avg_pnl, label: `${mn} (${v.db_name})` };
+async function loadData(){
+  try{const r=await fetch('data/results.json?t='+Date.now());return await r.json()}
+  catch(e){return null}
+}
+
+function renderStats(data){
+  const ms=data.methods||{};const mns=Object.keys(ms);
+  let tv=0,val=0,bestS=null,bestEV=null;
+  mns.forEach(mn=>{ms[mn].forEach(v=>{
+    tv++;const c=v.current||{},m=c.metrics||{};
+    if(c.all_11_passed)val++;
+    if(m.sortino!=null&&(!bestS||m.sortino>bestS.v))bestS={v:m.sortino,l:mn};
+    if(m.avg_pnl!=null&&(!bestEV||m.avg_pnl>bestEV.v))bestEV={v:m.avg_pnl,l:mn};
+  })});
+  $('stats').innerHTML=`
+    <div class="stat"><div class="stat-label">Methods</div><div class="stat-val" style="color:var(--cyan)">${mns.length}</div><div class="stat-sub">${tv} variants total</div></div>
+    <div class="stat"><div class="stat-label">Validated</div><div class="stat-val" style="color:${val?'var(--green)':'var(--red)'}">${val}</div><div class="stat-sub">passed 11/11 gates</div></div>
+    <div class="stat"><div class="stat-label">Best Sortino</div><div class="stat-val" style="color:var(--cyan)">${bestS?bestS.v.toFixed(2):'—'}</div><div class="stat-sub">${bestS?bestS.l:'—'}</div></div>
+    <div class="stat"><div class="stat-label">Best EV</div><div class="stat-val" style="color:var(--green)">${bestEV?sp(bestEV.v):'—'}</div><div class="stat-sub">${bestEV?bestEV.l:'—'}</div></div>`;
+}
+
+function renderAll(data){
+  const ms=data.methods||{};const root=$('root');root.innerHTML='';
+  const sorted=Object.keys(ms).sort();
+  if(!sorted.length){root.innerHTML='<div class="empty"><h3>Keine Ergebnisse</h3><p>Starte einen Backtest um Daten hier zu sehen.</p></div>';return}
+
+  sorted.forEach(mn=>{
+    const variants=ms[mn];
+    // Find best variant
+    let bestGP=0;variants.forEach(v=>{const gp=v.current?.gates_passed||0;if(gp>bestGP)bestGP=gp});
+    const lastDate=variants[0]?.updated_at?.substring(0,10)||'—';
+    const totalRuns=variants.reduce((s,v)=>s+(v.run_count||1),0);
+
+    const card=document.createElement('div');card.className='method-card';
+    card.innerHTML=`
+      <div class="method-head">
+        <div class="method-title">
+          <h2>${mn}</h2>
+          ${gateScorePill(bestGP,variants.some(v=>v.current?.all_11_passed))}
+          <span class="count-badge">${variants.length} Variant${variants.length!==1?'en':''}</span>
+        </div>
+        <div class="method-right">
+          <span>${totalRuns} Tests</span>
+          <span>·</span>
+          <span>Letzter: ${lastDate}</span>
+        </div>
+      </div>
+      <div class="variant-list" id="vlist-${mn}"></div>
+    `;
+    root.appendChild(card);
+
+    const vlist=document.getElementById('vlist-'+mn);
+    variants.forEach((v,i)=>{
+      const cur=v.current||{};const met=cur.metrics||{};
+      const gp=cur.gates_passed||0;
+      const rm=cur._run_meta||{};
+      const uid=mn+'-'+i;
+
+      // Variant row
+      const row=document.createElement('div');
+      row.innerHTML=`
+        <div class="variant-row">
+          <div class="vr-left">
+            <div class="vr-label">${v.db_name||'—'}</div>
+            <div class="vr-sub">${v.flags||'—'} · Span: ${rm.time_span||'?'} · Mints: ${rm.unique_mints||'?'}</div>
+          </div>
+          <div class="vr-center">
+            ${gateScorePill(gp,cur.all_11_passed)}
+            ${pillFor(pf(met.win_rate),met.win_rate,[{min:.4,cls:'pill-green'},{min:.3,cls:'pill-yellow'},{min:0,cls:'pill-red'}])}
+            ${pillFor(sp(met.avg_pnl,1),(met.avg_pnl||0),[{min:0.5,cls:'pill-green'},{min:0,cls:'pill-yellow'},{min:-999,cls:'pill-red'}])}
+            ${pillFor('Srt '+(met.sortino||0).toFixed(1),(met.sortino||0),[{min:1,cls:'pill-cyan'},{min:.5,cls:'pill-yellow'},{min:0,cls:'pill-dim'}])}
+            ${met.n_trades?`<span class="pill pill-dim">${met.n_trades} Trades</span>`:''}
+            ${gateDots(cur.gates)}
+          </div>
+          <div class="vr-right">
+            <span class="vr-date">${(v.updated_at||'').substring(0,16).replace('T',' ')}</span>
+            <button class="btn-open" onclick="toggleDetail('${uid}',this)">Öffnen</button>
+          </div>
+        </div>
+        <div class="detail-panel" id="dp-${uid}">
+          <div class="detail-inner">${renderDetail(cur,v)}</div>
+        </div>
+      `;
+      vlist.appendChild(row);
     });
   });
-
-  $('summary').innerHTML = `
-    <div class="summary-card"><div class="summary-label">Methods</div>
-      <div class="summary-value" style="color:var(--cyan)">${methodNames.length}</div>
-      <div class="summary-sub">${totalVariants} variants</div></div>
-    <div class="summary-card"><div class="summary-label">Validated</div>
-      <div class="summary-value" style="color:${totalValidated > 0 ? 'var(--green)' : 'var(--red)'}">${totalValidated}</div>
-      <div class="summary-sub">11/11 gates</div></div>
-    <div class="summary-card"><div class="summary-label">Best Sortino</div>
-      <div class="summary-value" style="color:var(--cyan)">${bestSortino ? bestSortino.val.toFixed(2) : '—'}</div>
-      <div class="summary-sub">${bestSortino ? bestSortino.label : '—'}</div></div>
-    <div class="summary-card"><div class="summary-label">Best EV</div>
-      <div class="summary-value" style="color:var(--green)">${bestEV ? signedPct(bestEV.val, 2) : '—'}</div>
-      <div class="summary-sub">${bestEV ? bestEV.label : '—'}</div></div>
-  `;
 }
 
-function renderGates(gates) {
-  if (!gates) return '';
-  const order = ['SIG','EQ','WF','MC','PLT','REG','ROB','tT','DSR','WRC','HHI'];
-  return order.map(g => {
-    const p = gates[g];
-    return `<span class="gate-pill ${p ? 'pass' : 'fail'}">${g}</span>`;
-  }).join('');
+function toggleDetail(uid,btn){
+  const panel=document.getElementById('dp-'+uid);
+  const isOpen=panel.classList.contains('open');
+  panel.classList.toggle('open');
+  btn.classList.toggle('active');
+  btn.textContent=isOpen?'Öffnen':'Schließen';
 }
 
-function renderTrainTest(tt) {
-  if (!tt || !tt.train_n) return '';
-  const deg = tt.train_avg_pnl > 0 ? (1 - tt.test_avg_pnl / tt.train_avg_pnl) : 0;
-  const degPct = Math.round(deg * 100);
-  let degColor = 'var(--green)', degLabel = 'Consistent';
-  if (deg > .5) { degColor = 'var(--red)'; degLabel = 'OVERFIT WARNING'; }
-  else if (deg > .25) { degColor = 'var(--yellow)'; degLabel = 'Moderate degradation'; }
+function renderDetail(cur,variant){
+  if(!cur||!cur.metrics)return'<div style="color:var(--text-dim)">Keine Daten</div>';
+  const met=cur.metrics||{};const tt=cur.train_test||{};
+  const gates=cur.gates||{};const gv=cur.gate_values||{};
+  const cfg=cur.config||{};const rm=cur._run_meta||{};
+  const envBlock=cur.env_block||'';
+  const euid='env-'+Math.random().toString(36).substr(2,8);
 
-  return `<div class="train-test">
-    <div class="tt-panel"><div class="tt-title" style="color:var(--cyan)">TRAIN (Discovery)</div>
-      ${kv('Trades', tt.train_n)} ${kv('EV', signedPct(tt.train_avg_pnl, 3))}
-      ${kv('WR', pctFmt(tt.train_win_rate))}
-      ${tt.train_period ? `<div style="font-size:.55rem;color:var(--text-muted);margin-top:.2rem">${tt.train_period}</div>` : ''}
+  let html='';
+
+  // Metrics
+  html+=`<div class="d-section">
+    <div class="d-section-title">📊 Performance (TEST)</div>
+    <div class="d-grid">
+      ${kv('Trades',met.n_trades||0)}
+      ${kv('Win Rate',pf(met.win_rate))}
+      ${kv('EV/Trade',sp(met.avg_pnl,3))}
+      ${kv('Total PnL',sp(met.total_pnl,1))}
+      ${kv('Profit Factor',(met.profit_factor||0).toFixed(3))}
+      ${kv('Sortino',(met.sortino||0).toFixed(3))}
+      ${kv('Sharpe',(met.sharpe||0).toFixed(3))}
+      ${kv('Max Drawdown',(met.max_dd||0).toFixed(1)+'%')}
+      ${kv('Risk of Ruin',(met.risk_of_ruin||0).toFixed(1)+'%')}
+      ${met.n_early_exits>0?kv('Early Exits',met.n_early_exits+' post-entry'):''}
+      ${kv('SL / TP',(cfg.sl_pct||'?')+'% / '+(cfg.tp_pct||'?')+'%')}
+      ${cfg.has_trailing?kv('Trailing','Act='+cfg.trailing_activation_pct+'% Trail='+cfg.trailing_pct+'%'):''}
     </div>
-    <div class="tt-panel"><div class="tt-title" style="color:var(--green)">TEST (Validation)</div>
-      ${kv('Trades', tt.test_n)} ${kv('EV', signedPct(tt.test_avg_pnl, 3))}
-      ${kv('WR', pctFmt(tt.test_win_rate))}
-      ${tt.test_period ? `<div style="font-size:.55rem;color:var(--text-muted);margin-top:.2rem">${tt.test_period}</div>` : ''}
-    </div>
-  </div>
-  <div class="overfit-bar" style="background:${deg > .25 ? 'rgba(239,68,68,.1)' : 'rgba(34,197,94,.1)'}">
-    <span style="color:${degColor};font-weight:600">${degLabel}</span>
-    <span style="color:var(--text-muted);margin-left:.5rem">${degPct > 0 ? '-' : '+'}${Math.abs(degPct)}%</span>
   </div>`;
-}
 
-function renderLift(lift) {
-  if (!lift) return '';
-  const dims = [{key:'mcap',label:'MCAP'},{key:'time',label:'Time→Entry'},{key:'dd',label:'DD@Entry'}];
-  let hasAny = false;
-  dims.forEach(d => { if (lift[d.key] && Object.keys(lift[d.key]).length) hasAny = true; });
-  if (!hasAny) return '';
-  let html = '<div class="filter-section"><div class="filter-title">📈 Pre-Entry LIFT</div>';
-  dims.forEach(d => {
-    const data = lift[d.key];
-    if (!data || !Object.keys(data).length) return;
-    html += `<div class="filter-cat">${d.label}</div>`;
-    Object.entries(data).forEach(([k, v]) => {
-      const w = Math.min(100, (v.lift || 0) * 40);
-      html += `<div class="bar-row"><span class="bar-label">${k}</span>
-        <div class="bar-bg"><div class="bar-fill ${v.good ? 'good' : 'bad'}" style="width:${w}%"></div></div>
-        <span class="bar-val" style="color:${v.good ? 'var(--green)' : 'var(--red)'}">${(v.lift||0).toFixed(2)}</span>
-        <span style="width:25px;font-size:.55rem;color:var(--text-muted)">n=${v.count||0}</span></div>`;
-    });
-  });
-  return html + '</div>';
-}
+  // Gates detail
+  const gateOrder=['SIG','EQ','WF','MC','PLT','REG','ROB','tT','DSR','WRC','HHI'];
+  html+=`<div class="d-section">
+    <div class="d-section-title">🔒 11-Gate Validation</div>
+    <div style="display:flex;flex-wrap:wrap;gap:.3rem">
+      ${gateOrder.map(g=>{
+        const passed=gates[g];
+        const val=gv[g]||'';
+        return `<span class="pill ${passed?'pill-green':'pill-red'}" title="${val}">${g}${val?' · '+val:''}</span>`;
+      }).join('')}
+    </div>
+  </div>`;
 
-function renderPostEntry(pf) {
-  if (!pf || !Object.keys(pf).length) return '';
-  let hasExits = false;
-  Object.values(pf).forEach(bs => { Object.values(bs).forEach(b => { if (!b.keep) hasExits = true; }); });
-  if (!hasExits) return '';
-  let html = '<div class="filter-section"><div class="filter-title">🔍 Post-Entry Filters</div>';
-  Object.entries(pf).forEach(([cat, buckets]) => {
-    const exits = Object.entries(buckets).filter(([,b]) => !b.keep);
-    if (!exits.length) return;
-    html += `<div class="filter-cat" style="color:var(--magenta)">${cat}</div>`;
-    Object.entries(buckets).forEach(([suffix, b]) => {
-      const w = Math.min(100, (b.lift||0) * 40);
-      const isKeep = b.keep;
-      html += `<div class="bar-row"><span class="bar-label" style="width:100px">${suffix}</span>
-        <div class="bar-bg"><div class="bar-fill ${isKeep ? 'good' : 'bad'}" style="width:${w}%"></div></div>
-        <span class="bar-tag" style="color:${isKeep ? 'var(--green)' : 'var(--red)'}">${isKeep ? 'KEEP' : 'EXIT'}</span>
-        <span class="bar-val" style="color:${isKeep ? 'var(--green)' : 'var(--red)'}">${(b.lift||0).toFixed(2)}</span>
-        <span style="width:25px;font-size:.55rem;color:var(--text-muted)">n=${b.count||0}</span></div>`;
-    });
-  });
-  return html + '</div>';
-}
-
-function renderEnv(envBlock, uid) {
-  if (!envBlock) return '';
-  const highlighted = envBlock
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
-    .replace(/(#[^\n]*)/g, '<span class="comment">$1</span>');
-  return `<div class="env-block" id="${uid}">
-    <button class="copy-btn" onclick="copyEnv('${uid}')">📋 Copy .env</button>
-    ${highlighted}</div>`;
-}
-
-function copyEnv(uid) {
-  const el = document.getElementById(uid);
-  if (!el) return;
-  const text = el.innerText.replace('📋 Copy .env', '').trim();
-  navigator.clipboard.writeText(text).then(() => {
-    const btn = el.querySelector('.copy-btn');
-    if (btn) { btn.textContent = '✅ Copied!'; setTimeout(() => btn.textContent = '📋 Copy .env', 2000); }
-  });
-}
-
-function renderVariantDetail(cur, variant) {
-  if (!cur) return '<div style="color:var(--text-muted);padding:.5rem">No data</div>';
-  const met = cur.metrics || {};
-  const tt = cur.train_test || {};
-  const gates = cur.gates || {};
-  const gateValues = cur.gate_values || {};
-  const lift = cur.lift_filters || {};
-  const postEntry = cur.post_entry_filters || {};
-  const envBlock = cur.env_block || '';
-  const config = cur.config || {};
-  const runMeta = cur._run_meta || {};
-  const envUid = 'env-' + (variant.variant_key || Math.random().toString(36).substr(2,6));
-
-  return `
-    <div style="margin-bottom:.5rem">
-      <div style="font-size:.6rem;color:var(--text-muted);margin-bottom:.5rem">
-        DB: ${runMeta.db_name || variant.db_name || '?'} |
-        Trades: ${(runMeta.total_trades || met.n_trades || 0).toLocaleString()} |
-        Mints: ${runMeta.unique_mints || '?'} |
-        Span: ${runMeta.time_span || '?'} |
-        Flags: ${runMeta.flags || variant.flags || '?'}
+  // Train/Test
+  if(tt&&tt.train_n){
+    const deg=tt.train_avg_pnl>0?(1-tt.test_avg_pnl/tt.train_avg_pnl):0;
+    const dp=Math.round(deg*100);
+    let dc='var(--green)',dl='Consistent';
+    if(deg>.5){dc='var(--red)';dl='OVERFIT ⚠';}
+    else if(deg>.25){dc='var(--yellow)';dl='Moderate ⚠';}
+    html+=`<div class="d-section">
+      <div class="d-section-title">🔀 Train / Test Split</div>
+      <div class="tt-grid">
+        <div class="tt-box train">
+          <div class="tt-label" style="color:var(--cyan)">Train (Discovery)</div>
+          ${kv('Trades',tt.train_n)}${kv('EV',sp(tt.train_avg_pnl,3))}${kv('WR',pf(tt.train_win_rate))}
+          ${tt.train_period?`<div style="font-size:.55rem;color:var(--text-dim);margin-top:.2rem">${tt.train_period}</div>`:''}
+        </div>
+        <div class="tt-box test">
+          <div class="tt-label" style="color:var(--green)">Test (Validation)</div>
+          ${kv('Trades',tt.test_n)}${kv('EV',sp(tt.test_avg_pnl,3))}${kv('WR',pf(tt.test_win_rate))}
+          ${tt.test_period?`<div style="font-size:.55rem;color:var(--text-dim);margin-top:.2rem">${tt.test_period}</div>`:''}
+        </div>
       </div>
-      <div style="margin-bottom:.3rem">${renderGates(gates)}</div>
-      <div class="detail-grid">
-        ${kv('Trades (TEST)', met.n_trades || 0)}
-        ${kv('Win Rate', pctFmt(met.win_rate))}
-        ${kv('EV/Trade', signedPct(met.avg_pnl, 3))}
-        ${kv('Total PnL', signedPct(met.total_pnl, 1))}
-        ${kv('Profit Factor', (met.profit_factor || 0).toFixed(3))}
-        ${kv('Sortino', (met.sortino || 0).toFixed(3))}
-        ${kv('Sharpe', (met.sharpe || 0).toFixed(3))}
-        ${kv('Max DD', (met.max_dd || 0).toFixed(1) + '%')}
-        ${kv('Risk of Ruin', (met.risk_of_ruin || 0).toFixed(1) + '%')}
-        ${met.n_early_exits > 0 ? kv('Early Exits', met.n_early_exits) : ''}
-        ${kv('SL / TP', (config.sl_pct || '?') + '% / ' + (config.tp_pct || '?') + '%')}
-        ${config.has_trailing ? kv('Trailing', 'Act=' + config.trailing_activation_pct + '% Pct=' + config.trailing_pct + '%') : ''}
-      </div>
-    </div>
-    ${renderTrainTest(tt)}
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:.75rem">
-      <div>${renderLift(lift)}</div>
-      <div>${renderPostEntry(postEntry)}</div>
-    </div>
-    ${renderEnv(envBlock, envUid)}
-    ${renderHistory(variant.history || [])}
-    <div style="margin-top:.5rem">
-      <div class="detail-grid">
-        ${kv('Entries (raw)', cur.n_total_entries || 0)}
-        ${kv('Entries (filtered)', cur.n_filtered_entries || 0)}
-        ${cur.n_total_entries > 0 ? kv('Filter Rate',
-          ((1 - (cur.n_filtered_entries || 0) / cur.n_total_entries) * 100).toFixed(1) + '% removed') : ''}
-      </div>
-    </div>
-    <div style="font-size:.55rem;color:var(--text-muted);margin-top:.5rem;text-align:right">
-      Gate details: ${Object.entries(gateValues).map(([g,v]) => g+'='+v).join(' | ')}
-    </div>
-  `;
-}
-
-function renderHistory(history) {
-  if (!history || !history.length) return '';
-  let html = '<div class="history"><div style="font-size:.65rem;color:var(--text-muted);font-weight:600;margin-bottom:.2rem">📜 Previous Runs</div>';
-  history.forEach(h => {
-    const [g, gc] = gradeFor(h.gates_passed || 0);
-    html += `<div class="history-row">
-      <span>${(h.timestamp || '?').substring(0, 16)}</span>
-      <span class="grade ${gc}">${h.gates_passed}/11</span>
-      <span style="color:${(h.avg_pnl||0) >= 0 ? 'var(--green)' : 'var(--red)'}">${signedPct(h.avg_pnl, 3)}</span>
-      <span>Srt=${(h.sortino||0).toFixed(2)}</span>
-      <span>n=${h.n_trades || '?'}</span>
+      <span class="overfit-strip" style="background:${deg>.25?'var(--red-bg)':'var(--green-bg)'};color:${dc}">${dl} · ${dp>0?'-':'+'}${Math.abs(dp)}% degradation</span>
     </div>`;
-  });
-  return html + '</div>';
-}
-
-function renderMethods(data) {
-  const methods = data.methods || {};
-  const container = $('methods-container');
-  container.innerHTML = '';
-
-  const sorted = Object.keys(methods).sort();
-  if (!sorted.length) {
-    container.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:3rem">No backtest results yet. Run the pipeline to see data here.</div>';
-    return;
   }
 
-  sorted.forEach(mn => {
-    const variants = methods[mn];
-    // Best variant for this method
-    let bestGP = 0, bestVariant = null;
-    variants.forEach(v => {
-      const gp = v.current?.gates_passed || 0;
-      if (gp > bestGP) { bestGP = gp; bestVariant = v; }
+  // LIFT
+  html+=renderLift(cur.lift_filters);
+  // Post-entry
+  html+=renderPostEntry(cur.post_entry_filters);
+
+  // .env
+  if(envBlock){
+    const highlighted=envBlock.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/(#[^\n]*)/g,'<span class="c">$1</span>');
+    html+=`<div class="d-section">
+      <div class="d-section-title">⚙️ .env Konfiguration</div>
+      <div class="env-wrap"><button class="btn-copy" onclick="copyEnv('${euid}')">📋 Copy</button>
+      <div class="env-block" id="${euid}">${highlighted}</div></div>
+    </div>`;
+  }
+
+  // Filter stats
+  html+=`<div class="d-section">
+    <div class="d-grid">
+      ${kv('Entries (raw)',cur.n_total_entries||0)}
+      ${kv('Entries (filtered)',cur.n_filtered_entries||0)}
+      ${cur.n_total_entries>0?kv('Filter Rate',((1-(cur.n_filtered_entries||0)/cur.n_total_entries)*100).toFixed(1)+'% removed'):''}
+    </div>
+  </div>`;
+
+  // History
+  const hist=variant.history||[];
+  if(hist.length){
+    html+=`<div class="d-section">
+      <div class="d-section-title">📜 Vorherige Runs (${hist.length})</div>
+      ${hist.map(h=>`<div class="hist-row">
+        <span>${(h.timestamp||'?').substring(0,16)}</span>
+        <span style="color:${h.gates_passed>=11?'var(--green)':h.gates_passed>=9?'var(--yellow)':'var(--text-dim)'}">${h.gates_passed}/11</span>
+        <span style="color:${(h.avg_pnl||0)>=0?'var(--green)':'var(--red)'}">${sp(h.avg_pnl,3)}</span>
+        <span>Srt=${(h.sortino||0).toFixed(2)}</span>
+        <span>n=${h.n_trades||'?'}</span>
+      </div>`).join('')}
+    </div>`;
+  }
+
+  return html;
+}
+
+function renderLift(lift){
+  if(!lift)return'';
+  const dims=[{key:'mcap',label:'MCAP'},{key:'time',label:'Time→Entry'},{key:'dd',label:'DD@Entry'}];
+  let hasAny=false;
+  dims.forEach(d=>{if(lift[d.key]&&Object.keys(lift[d.key]).length)hasAny=true});
+  if(!hasAny)return'';
+  let html=`<div class="d-section"><div class="d-section-title">📈 Pre-Entry LIFT</div>`;
+  dims.forEach(d=>{
+    const data=lift[d.key];if(!data||!Object.keys(data).length)return;
+    html+=`<div style="font-size:.6rem;color:var(--cyan);font-weight:600;margin:.4rem 0 .15rem">${d.label}</div>`;
+    Object.entries(data).forEach(([k,v])=>{
+      const w=Math.min(100,(v.lift||0)*40);
+      html+=`<div class="bar-row"><span class="bar-label">${k}</span>
+        <div class="bar-bg"><div class="bar-fill ${v.good?'good':'bad'}" style="width:${w}%"></div></div>
+        <span class="bar-val" style="color:${v.good?'var(--green)':'var(--red)'}">${(v.lift||0).toFixed(2)}</span>
+        <span class="bar-n">n=${v.count||0}</span></div>`;
     });
+  });
+  return html+'</div>';
+}
 
-    const [grade, gradeClass] = gradeFor(bestGP);
-    const hasValidated = variants.some(v => v.current?.all_11_passed);
-    const badgeClass = hasValidated ? 'validated' : bestGP >= 9 ? 'partial' : 'none';
-    const badgeText = hasValidated ? '✅ VALIDATED' : `${bestGP}/11`;
+function renderPostEntry(pf2){
+  if(!pf2||!Object.keys(pf2).length)return'';
+  let hasExits=false;
+  Object.values(pf2).forEach(bs=>{Object.values(bs).forEach(b=>{if(!b.keep)hasExits=true})});
+  if(!hasExits)return'';
+  let html=`<div class="d-section"><div class="d-section-title">🔍 Post-Entry Filter</div>`;
+  Object.entries(pf2).forEach(([cat,buckets])=>{
+    const exits=Object.entries(buckets).filter(([,b])=>!b.keep);
+    if(!exits.length)return;
+    html+=`<div style="font-size:.6rem;color:var(--magenta);font-weight:600;margin:.4rem 0 .15rem">${cat}</div>`;
+    Object.entries(buckets).forEach(([suffix,b])=>{
+      const w=Math.min(100,(b.lift||0)*40);
+      html+=`<div class="bar-row"><span class="bar-label" style="width:100px">${suffix}</span>
+        <div class="bar-bg"><div class="bar-fill ${b.keep?'good':'bad'}" style="width:${w}%"></div></div>
+        <span style="width:30px;text-align:center;font-weight:700;font-size:.55rem;color:${b.keep?'var(--green)':'var(--red)'}">${b.keep?'KEEP':'EXIT'}</span>
+        <span class="bar-val" style="color:${b.keep?'var(--green)':'var(--red)'}">${(b.lift||0).toFixed(2)}</span>
+        <span class="bar-n">n=${b.count||0}</span></div>`;
+    });
+  });
+  return html+'</div>';
+}
 
-    const folder = document.createElement('div');
-    folder.className = 'method-folder';
-    folder.innerHTML = `
-      <div class="method-header" onclick="toggleFolder(this)">
-        <div style="display:flex;align-items:center;gap:.75rem">
-          <span class="chevron">▶</span>
-          <span class="method-name">📁 ${mn}</span>
-          <span class="method-badge ${badgeClass}">${badgeText}</span>
-          <span style="font-size:.65rem;color:var(--text-muted)">${variants.length} variant${variants.length !== 1 ? 's' : ''}</span>
-        </div>
-        <div style="display:flex;gap:1rem;font-family:var(--font-mono);font-size:.7rem">
-          ${bestVariant ? `<span style="color:${(bestVariant.current?.metrics?.avg_pnl||0)>=0?'var(--green)':'var(--red)'}">EV=${signedPct(bestVariant.current?.metrics?.avg_pnl,2)}</span>
-          <span style="color:var(--cyan)">Srt=${(bestVariant.current?.metrics?.sortino||0).toFixed(2)}</span>` : ''}
-        </div>
-      </div>
-      <div class="method-body" id="body-${mn}">
-        ${variants.map((v, i) => renderVariant(mn, v, i)).join('')}
-      </div>
-    `;
-    container.appendChild(folder);
+function copyEnv(uid){
+  const el=document.getElementById(uid);if(!el)return;
+  const text=el.innerText.trim();
+  navigator.clipboard.writeText(text).then(()=>{
+    const btn=el.parentElement.querySelector('.btn-copy');
+    if(btn){btn.textContent='✅ Copied!';setTimeout(()=>btn.textContent='📋 Copy',2000)}
   });
 }
 
-function renderVariant(methodName, variant, idx) {
-  const cur = variant.current || {};
-  const met = cur.metrics || {};
-  const gp = cur.gates_passed || 0;
-  const [grade, gradeClass] = gradeFor(gp);
-  const vid = `var-${methodName}-${idx}`;
-
-  return `<div class="variant">
-    <div class="variant-header" onclick="toggleVariant('${vid}')">
-      <div style="display:flex;align-items:center;gap:.5rem">
-        <span class="chevron" id="chev-${vid}">▶</span>
-        <span class="variant-tag">📄 ${variant.db_name || '?'}</span>
-        <span style="font-size:.55rem;color:var(--text-muted)">${variant.flags || ''}</span>
-      </div>
-      <div class="variant-stats">
-        <span class="grade ${gradeClass}">${gp}/11</span>
-        <span style="color:${(met.avg_pnl||0)>=0?'var(--green)':'var(--red)'}">${signedPct(met.avg_pnl,2)}</span>
-        <span style="color:var(--cyan)">Srt=${(met.sortino||0).toFixed(2)}</span>
-        <span style="color:var(--text-muted)">n=${met.n_trades||0}</span>
-        <span style="color:var(--text-muted)">×${variant.run_count || 1}</span>
-        <span style="font-size:.55rem;color:var(--text-muted)">${(variant.updated_at || '').substring(0, 16)}</span>
-      </div>
-    </div>
-    <div class="variant-detail" id="${vid}">
-      ${renderVariantDetail(cur, variant)}
-    </div>
-  </div>`;
+async function init(){
+  const data=await loadData();
+  if(!data){$('root').innerHTML='<div class="empty"><h3>Fehler</h3><p>Konnte data/results.json nicht laden.</p></div>';return}
+  $('last-update').textContent='Letzter: '+(data.last_updated?new Date(data.last_updated).toLocaleString('de-DE'):'—');
+  renderStats(data);
+  renderAll(data);
 }
-
-function toggleFolder(el) {
-  const body = el.nextElementSibling;
-  const chev = el.querySelector('.chevron');
-  body.classList.toggle('open');
-  chev.classList.toggle('open');
-}
-
-function toggleVariant(vid) {
-  const detail = document.getElementById(vid);
-  const chev = document.getElementById('chev-' + vid);
-  detail.classList.toggle('open');
-  if (chev) chev.classList.toggle('open');
-}
-
-async function init() {
-  const data = await loadData();
-  if (!data) { $('methods-container').innerHTML = '<p style="color:var(--red);padding:2rem">Failed to load data</p>'; return; }
-  $('last-update').textContent = data.last_updated ? new Date(data.last_updated).toLocaleString('de-DE') : 'never';
-  renderSummary(data);
-  renderMethods(data);
-}
-
 init();
-setInterval(init, 60000);
+setInterval(init,60000);
 </script>
 </body>
 </html>
