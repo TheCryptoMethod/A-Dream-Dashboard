@@ -119,8 +119,8 @@
     <div style="overflow-x:auto">
       <table class="runs-table" id="runs-table">
         <thead><tr>
-          <th>Date</th><th>Methods</th><th>DB</th><th>Trades</th>
-          <th>Best Method</th><th>Gates</th><th>EV</th><th>Sortino</th><th>Grade</th>
+          <th>Date</th><th>Methods</th><th>DB</th><th>Trades</th><th>Mints</th>
+          <th>Best Method</th><th>Gates</th><th>EV (TEST)</th><th>Sortino</th><th>Grade</th>
         </tr></thead>
         <tbody id="runs-body"></tbody>
       </table>
@@ -188,9 +188,10 @@ function renderAll() {
     tr.style.opacity = '0';
     tr.innerHTML = `
       <td style="color:var(--text-secondary)">${fmtDate(run.timestamp)}</td>
-      <td style="color:var(--cyan);font-weight:600">${methods}</td>
+      <td style="color:var(--cyan);font-weight:600">${methods}${run.version ? ` <span style="font-size:.55rem;color:var(--text-muted)">${run.version}</span>` : ''}</td>
       <td style="color:var(--text-muted)" title="${run.db_name || ''}">${trunc(run.db_name || '—', 20)}</td>
       <td>${(run.total_trades || 0).toLocaleString()}</td>
+      <td style="color:var(--text-muted)">${run.unique_mints || '—'}</td>
       <td style="font-weight:600">${b.method || '—'}</td>
       <td>${renderGateMini(b.gates || {}, gp)}</td>
       <td style="color:${(b.avg_pnl || 0) >= 0 ? 'var(--green)' : 'var(--red)'}">
@@ -221,7 +222,7 @@ function toggleDetail(run, tr) {
   dtr.className = 'detail-row visible';
   
   if (methods.length > 0) {
-    dtr.innerHTML = `<td class="detail-cell" colspan="9">
+    dtr.innerHTML = `<td class="detail-cell" colspan="10">
       <div class="method-tabs" id="mtabs-${run.timestamp.replace(/[:.]/g,'')}">
         ${methods.map((m, i) => {
           const col = m.all_11_passed ? 'color:var(--green)' : m.gates_passed >= 9 ? 'color:var(--yellow)' : '';
@@ -248,7 +249,7 @@ function toggleDetail(run, tr) {
   } else {
     // Legacy V1 run
     const b = run.best || {};
-    dtr.innerHTML = `<td class="detail-cell" colspan="9">
+    dtr.innerHTML = `<td class="detail-cell" colspan="10">
       <div class="detail-section">
         <div class="detail-section-title">Legacy Run</div>
         ${kv('SL/TP', `${b.sl || '?'}% / ${b.tp || '?'}%`)}
@@ -278,7 +279,7 @@ function renderMethodContent(dtr, idx) {
       <div>
         <div class="detail-section">
           <div class="detail-section-title">📊 Validation — ${m.method}</div>
-          ${kv('Status', m.all_11_passed ? '<span style="color:var(--green)">✅ VALIDATED</span>' : `<span style="color:var(--yellow)">⚠ ${m.gates_passed}/11 gates</span>`)}
+          ${kv('Status', m.all_11_passed ? '<span style="color:var(--green)">✅ VALIDATED (on TEST)</span>' : `<span style="color:var(--yellow)">⚠ ${m.gates_passed}/11 gates</span>`)}
           ${kv('Trades', (met.n_trades || 0).toLocaleString())}
           ${kv('Win Rate', pctFmt(met.win_rate))}
           ${kv('EV/Trade', signedPct(met.avg_pnl, 3))}
@@ -288,7 +289,9 @@ function renderMethodContent(dtr, idx) {
           ${kv('Sharpe', (met.sharpe || 0).toFixed(3))}
           ${kv('Max Drawdown', (met.max_dd || 0).toFixed(1) + '%')}
           ${kv('Risk of Ruin', (met.risk_of_ruin || 0).toFixed(1) + '%')}
+          ${met.n_early_exits > 0 ? kv('Early Exits', met.n_early_exits + ' post-entry') : ''}
         </div>
+        ${renderTrainTest(m.train_test || {})}
         <div class="detail-section" style="margin-top:1rem">
           <div class="detail-section-title">🔒 11 Gates Detail</div>
           ${GATE_NAMES.map(g => `
@@ -368,6 +371,47 @@ function renderLift(lift) {
   });
   
   return html + '</div>';
+}
+
+function renderTrainTest(tt) {
+  if (!tt || !tt.train_n) return '';
+  
+  const degradation = tt.train_avg_pnl > 0 
+    ? (1 - tt.test_avg_pnl / tt.train_avg_pnl) 
+    : 0;
+  const degPct = Math.round(degradation * 100);
+  let degColor = 'var(--green)';
+  let degLabel = 'Consistent';
+  if (degradation > 0.50) { degColor = 'var(--red)'; degLabel = 'OVERFIT WARNING'; }
+  else if (degradation > 0.25) { degColor = 'var(--yellow)'; degLabel = 'Moderate degradation'; }
+  
+  return `<div class="detail-section" style="margin-top:1rem">
+    <div class="detail-section-title">🔀 Train/Test Split (60/40)</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-bottom:.5rem">
+      <div style="background:rgba(6,182,212,0.08);border-radius:6px;padding:.5rem">
+        <div style="font-size:.6rem;color:var(--cyan);text-transform:uppercase;margin-bottom:.25rem;font-weight:600">TRAIN (Discovery)</div>
+        <div style="font-family:var(--font-mono);font-size:.75rem">
+          ${kv('Trades', tt.train_n)}
+          ${kv('EV/Trade', signedPct(tt.train_avg_pnl, 3))}
+          ${kv('Win Rate', pctFmt(tt.train_win_rate))}
+          ${tt.train_period ? kv('Period', tt.train_period) : ''}
+        </div>
+      </div>
+      <div style="background:rgba(34,197,94,0.08);border-radius:6px;padding:.5rem">
+        <div style="font-size:.6rem;color:var(--green);text-transform:uppercase;margin-bottom:.25rem;font-weight:600">TEST (Validation)</div>
+        <div style="font-family:var(--font-mono);font-size:.75rem">
+          ${kv('Trades', tt.test_n)}
+          ${kv('EV/Trade', signedPct(tt.test_avg_pnl, 3))}
+          ${kv('Win Rate', pctFmt(tt.test_win_rate))}
+          ${tt.test_period ? kv('Period', tt.test_period) : ''}
+        </div>
+      </div>
+    </div>
+    <div style="font-family:var(--font-mono);font-size:.7rem;padding:.3rem .5rem;border-radius:4px;background:${degradation > 0.25 ? 'rgba(239,68,68,0.1)' : 'rgba(34,197,94,0.1)'}">
+      <span style="color:${degColor};font-weight:600">${degLabel}</span>
+      <span style="color:var(--text-muted);margin-left:.5rem">TRAIN→TEST: ${degPct > 0 ? '-' : '+'}${Math.abs(degPct)}% degradation</span>
+    </div>
+  </div>`;
 }
 
 function renderPostEntry(postFilters) {
