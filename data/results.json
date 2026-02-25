@@ -1,8 +1,1080 @@
 {
   "version": 3,
-  "last_updated": "2026-02-24T10:20:01.554510+00:00",
+  "last_updated": "2026-02-25T12:20:36.059347+00:00",
   "methods": {
     "M1": [
+      {
+        "variant_key": "3e34d75da945",
+        "db_name": "backtest_30d.db",
+        "db_hash": "0cbe962b8c5da57d",
+        "fingerprint": "d1e68d7cf548",
+        "flags": "methods=M1 realistic",
+        "data_label": "backtest_30d.db | 769 mints | 2026-02-22 → 2026-02-25",
+        "updated_at": "2026-02-25T12:20:36.059347+00:00",
+        "run_count": 1,
+        "current": {
+          "method": "M1",
+          "config": {
+            "method": "M1",
+            "entry_params": {
+              "type": "migration"
+            },
+            "mcap_min": 30000,
+            "mcap_max": 100000,
+            "time_to_entry_min_ms": 0,
+            "time_to_entry_max_ms": 60000,
+            "dd_at_entry_min": 0,
+            "dd_at_entry_max": 5,
+            "sl_pct": 34,
+            "tp_pct": 170,
+            "trailing_activation_pct": 70,
+            "trailing_pct": 5,
+            "has_trailing": true,
+            "fingerprint": "915d96a9ae40",
+            "post_entry_filters": {
+              "PERF_10S": {
+                "LT_MINUS15": {
+                  "keep": false,
+                  "lift": 0.0,
+                  "count": 36,
+                  "winners": 0,
+                  "losers": 36
+                },
+                "MINUS15_MINUS5": {
+                  "keep": false,
+                  "lift": 0.373,
+                  "count": 55,
+                  "winners": 5,
+                  "losers": 50
+                },
+                "MINUS5_0": {
+                  "keep": false,
+                  "lift": 1.002,
+                  "count": 52,
+                  "winners": 11,
+                  "losers": 41
+                },
+                "0_PLUS5": {
+                  "keep": false,
+                  "lift": 0.884,
+                  "count": 47,
+                  "winners": 9,
+                  "losers": 38
+                },
+                "PLUS5_PLUS15": {
+                  "keep": false,
+                  "lift": 1.149,
+                  "count": 68,
+                  "winners": 16,
+                  "losers": 52
+                },
+                "PLUS15_PLUS30": {
+                  "keep": true,
+                  "lift": 2.334,
+                  "count": 26,
+                  "winners": 10,
+                  "losers": 16
+                },
+                "GT_PLUS30": {
+                  "keep": true,
+                  "lift": 8.091,
+                  "count": 19,
+                  "winners": 13,
+                  "losers": 6
+                }
+              },
+              "PERF_30S": {
+                "LT_MINUS20": {
+                  "keep": false,
+                  "lift": 0.0,
+                  "count": 50,
+                  "winners": 0,
+                  "losers": 50
+                },
+                "MINUS20_MINUS10": {
+                  "keep": false,
+                  "lift": 0.0,
+                  "count": 32,
+                  "winners": 0,
+                  "losers": 32
+                },
+                "MINUS10_0": {
+                  "keep": false,
+                  "lift": 0.636,
+                  "count": 55,
+                  "winners": 8,
+                  "losers": 47
+                },
+                "0_PLUS10": {
+                  "keep": false,
+                  "lift": 0.575,
+                  "count": 60,
+                  "winners": 8,
+                  "losers": 52
+                },
+                "PLUS10_PLUS25": {
+                  "keep": true,
+                  "lift": 1.671,
+                  "count": 55,
+                  "winners": 17,
+                  "losers": 38
+                },
+                "PLUS25_PLUS50": {
+                  "keep": true,
+                  "lift": 3.268,
+                  "count": 30,
+                  "winners": 14,
+                  "losers": 16
+                },
+                "GT_PLUS50": {
+                  "keep": true,
+                  "lift": 15.871,
+                  "count": 21,
+                  "winners": 17,
+                  "losers": 4
+                }
+              },
+              "PERF_60S": {
+                "LT_MINUS30": {
+                  "keep": false,
+                  "lift": 0.076,
+                  "count": 50,
+                  "winners": 1,
+                  "losers": 49
+                },
+                "MINUS30_MINUS15": {
+                  "keep": false,
+                  "lift": 0.0,
+                  "count": 40,
+                  "winners": 0,
+                  "losers": 40
+                },
+                "MINUS15_0": {
+                  "keep": false,
+                  "lift": 0.359,
+                  "count": 57,
+                  "winners": 5,
+                  "losers": 52
+                },
+                "0_PLUS15": {
+                  "keep": false,
+                  "lift": 0.568,
+                  "count": 53,
+                  "winners": 7,
+                  "losers": 46
+                },
+                "PLUS15_PLUS40": {
+                  "keep": true,
+                  "lift": 2.298,
+                  "count": 63,
+                  "winners": 24,
+                  "losers": 39
+                },
+                "PLUS40_PLUS80": {
+                  "keep": true,
+                  "lift": 3.447,
+                  "count": 25,
+                  "winners": 12,
+                  "losers": 13
+                },
+                "GT_PLUS80": {
+                  "keep": true,
+                  "lift": 2.0,
+                  "count": 15,
+                  "winners": 15,
+                  "losers": 0
+                }
+              },
+              "PERF_5M": {
+                "LT_MINUS50": {
+                  "keep": false,
+                  "lift": 0.273,
+                  "count": 88,
+                  "winners": 6,
+                  "losers": 82
+                },
+                "MINUS50_MINUS30": {
+                  "keep": false,
+                  "lift": 0.11,
+                  "count": 35,
+                  "winners": 1,
+                  "losers": 34
+                },
+                "MINUS30_MINUS15": {
+                  "keep": false,
+                  "lift": 0.0,
+                  "count": 33,
+                  "winners": 0,
+                  "losers": 33
+                },
+                "MINUS15_0": {
+                  "keep": false,
+                  "lift": 0.0,
+                  "count": 24,
+                  "winners": 0,
+                  "losers": 24
+                },
+                "0_PLUS25": {
+                  "keep": false,
+                  "lift": 0.602,
+                  "count": 36,
+                  "winners": 5,
+                  "losers": 31
+                },
+                "PLUS25_PLUS50": {
+                  "keep": true,
+                  "lift": 3.527,
+                  "count": 35,
+                  "winners": 17,
+                  "losers": 18
+                },
+                "PLUS50_PLUS100": {
+                  "keep": true,
+                  "lift": 4.668,
+                  "count": 27,
+                  "winners": 15,
+                  "losers": 12
+                },
+                "PLUS100_PLUS200": {
+                  "keep": true,
+                  "lift": 16.182,
+                  "count": 16,
+                  "winners": 13,
+                  "losers": 3
+                },
+                "GT_PLUS200": {
+                  "keep": true,
+                  "lift": 13.07,
+                  "count": 9,
+                  "winners": 7,
+                  "losers": 2
+                }
+              },
+              "PERF_10M": {
+                "LT_MINUS60": {
+                  "keep": false,
+                  "lift": 0.424,
+                  "count": 98,
+                  "winners": 10,
+                  "losers": 88
+                },
+                "MINUS60_MINUS40": {
+                  "keep": false,
+                  "lift": 0.0,
+                  "count": 34,
+                  "winners": 0,
+                  "losers": 34
+                },
+                "MINUS40_MINUS20": {
+                  "keep": false,
+                  "lift": 0.233,
+                  "count": 34,
+                  "winners": 2,
+                  "losers": 32
+                },
+                "MINUS20_0": {
+                  "keep": false,
+                  "lift": 0.11,
+                  "count": 35,
+                  "winners": 1,
+                  "losers": 34
+                },
+                "0_PLUS30": {
+                  "keep": false,
+                  "lift": 0.934,
+                  "count": 30,
+                  "winners": 6,
+                  "losers": 24
+                },
+                "PLUS30_PLUS75": {
+                  "keep": true,
+                  "lift": 3.034,
+                  "count": 29,
+                  "winners": 13,
+                  "losers": 16
+                },
+                "PLUS75_PLUS150": {
+                  "keep": true,
+                  "lift": 9.069,
+                  "count": 24,
+                  "winners": 17,
+                  "losers": 7
+                },
+                "PLUS150_PLUS300": {
+                  "keep": true,
+                  "lift": 37.344,
+                  "count": 11,
+                  "winners": 10,
+                  "losers": 1
+                },
+                "GT_PLUS300": {
+                  "keep": true,
+                  "lift": 6.224,
+                  "count": 8,
+                  "winners": 5,
+                  "losers": 3
+                }
+              },
+              "DELTA_10S_30S": {
+                "LT_MINUS20": {
+                  "keep": false,
+                  "lift": 0.482,
+                  "count": 35,
+                  "winners": 4,
+                  "losers": 31
+                },
+                "MINUS20_MINUS10": {
+                  "keep": false,
+                  "lift": 0.098,
+                  "count": 39,
+                  "winners": 1,
+                  "losers": 38
+                },
+                "MINUS10_MINUS3": {
+                  "keep": false,
+                  "lift": 0.404,
+                  "count": 41,
+                  "winners": 4,
+                  "losers": 37
+                },
+                "MINUS3_PLUS3": {
+                  "keep": false,
+                  "lift": 0.7,
+                  "count": 57,
+                  "winners": 9,
+                  "losers": 48
+                },
+                "PLUS3_PLUS10": {
+                  "keep": false,
+                  "lift": 0.817,
+                  "count": 39,
+                  "winners": 7,
+                  "losers": 32
+                },
+                "PLUS10_PLUS20": {
+                  "keep": true,
+                  "lift": 1.545,
+                  "count": 41,
+                  "winners": 12,
+                  "losers": 29
+                },
+                "GT_PLUS20": {
+                  "keep": true,
+                  "lift": 4.201,
+                  "count": 51,
+                  "winners": 27,
+                  "losers": 24
+                }
+              },
+              "DELTA_30S_60S": {
+                "LT_MINUS25": {
+                  "keep": false,
+                  "lift": 0.533,
+                  "count": 32,
+                  "winners": 4,
+                  "losers": 28
+                },
+                "MINUS25_MINUS10": {
+                  "keep": false,
+                  "lift": 0.406,
+                  "count": 51,
+                  "winners": 5,
+                  "losers": 46
+                },
+                "MINUS10_MINUS3": {
+                  "keep": false,
+                  "lift": 0.434,
+                  "count": 48,
+                  "winners": 5,
+                  "losers": 43
+                },
+                "MINUS3_PLUS3": {
+                  "keep": false,
+                  "lift": 0.934,
+                  "count": 50,
+                  "winners": 10,
+                  "losers": 40
+                },
+                "PLUS3_PLUS10": {
+                  "keep": false,
+                  "lift": 1.084,
+                  "count": 40,
+                  "winners": 9,
+                  "losers": 31
+                },
+                "PLUS10_PLUS25": {
+                  "keep": true,
+                  "lift": 2.241,
+                  "count": 48,
+                  "winners": 18,
+                  "losers": 30
+                },
+                "GT_PLUS25": {
+                  "keep": true,
+                  "lift": 2.312,
+                  "count": 34,
+                  "winners": 13,
+                  "losers": 21
+                }
+              },
+              "DELTA_60S_5M": {
+                "LT_MINUS40": {
+                  "keep": false,
+                  "lift": 0.551,
+                  "count": 70,
+                  "winners": 9,
+                  "losers": 61
+                },
+                "MINUS40_MINUS20": {
+                  "keep": false,
+                  "lift": 0.0,
+                  "count": 32,
+                  "winners": 0,
+                  "losers": 32
+                },
+                "MINUS20_MINUS5": {
+                  "keep": false,
+                  "lift": 0.261,
+                  "count": 46,
+                  "winners": 3,
+                  "losers": 43
+                },
+                "MINUS5_PLUS5": {
+                  "keep": false,
+                  "lift": 0.482,
+                  "count": 35,
+                  "winners": 4,
+                  "losers": 31
+                },
+                "PLUS5_PLUS20": {
+                  "keep": true,
+                  "lift": 1.428,
+                  "count": 47,
+                  "winners": 13,
+                  "losers": 34
+                },
+                "PLUS20_PLUS50": {
+                  "keep": true,
+                  "lift": 2.178,
+                  "count": 38,
+                  "winners": 14,
+                  "losers": 24
+                },
+                "GT_PLUS50": {
+                  "keep": true,
+                  "lift": 5.602,
+                  "count": 35,
+                  "winners": 21,
+                  "losers": 14
+                }
+              }
+            }
+          },
+          "env_block": "# ═══ A_Dream Strategy: M1 ═══\nTRADE_METHOD=M1\n# Pre-Entry Filters\nENTRY_MCAP_MIN=30000\nENTRY_MCAP_MAX=100000\nENTRY_TIME_MAX_MS=60000\nENTRY_DD_MAX_PCT=5.0\n# Exit Model\nSL_PCT=34\nTP_PCT=170\nTRAILING_ACTIVATION_PCT=70\nTRAILING_PCT=5\n# Post-Entry Early Exit Filters\n# Post-Entry Bucket Filters\nPOST_ENTRY_BUCKETS_ENABLED=true\nPOST_DELTA_10S_30S_ENABLED=true\nPOST_DELTA_10S_30S_LT_MINUS20=false\nPOST_DELTA_10S_30S_MINUS20_MINUS10=false\nPOST_DELTA_10S_30S_MINUS10_MINUS3=false\nPOST_DELTA_10S_30S_MINUS3_PLUS3=false\nPOST_DELTA_10S_30S_PLUS3_PLUS10=false\nPOST_DELTA_10S_30S_PLUS10_PLUS20=true\nPOST_DELTA_10S_30S_GT_PLUS20=true\nPOST_DELTA_30S_60S_ENABLED=true\nPOST_DELTA_30S_60S_LT_MINUS25=false\nPOST_DELTA_30S_60S_MINUS25_MINUS10=false\nPOST_DELTA_30S_60S_MINUS10_MINUS3=false\nPOST_DELTA_30S_60S_MINUS3_PLUS3=false\nPOST_DELTA_30S_60S_PLUS3_PLUS10=false\nPOST_DELTA_30S_60S_PLUS10_PLUS25=true\nPOST_DELTA_30S_60S_GT_PLUS25=true\nPOST_DELTA_60S_5M_ENABLED=true\nPOST_DELTA_60S_5M_LT_MINUS40=false\nPOST_DELTA_60S_5M_MINUS40_MINUS20=false\nPOST_DELTA_60S_5M_MINUS20_MINUS5=false\nPOST_DELTA_60S_5M_MINUS5_PLUS5=false\nPOST_DELTA_60S_5M_PLUS5_PLUS20=true\nPOST_DELTA_60S_5M_PLUS20_PLUS50=true\nPOST_DELTA_60S_5M_GT_PLUS50=true\nPOST_PERF_10M_ENABLED=true\nPOST_PERF_10M_LT_MINUS60=false\nPOST_PERF_10M_MINUS60_MINUS40=false\nPOST_PERF_10M_MINUS40_MINUS20=false\nPOST_PERF_10M_MINUS20_0=false\nPOST_PERF_10M_0_PLUS30=false\nPOST_PERF_10M_PLUS30_PLUS75=true\nPOST_PERF_10M_PLUS75_PLUS150=true\nPOST_PERF_10M_PLUS150_PLUS300=true\nPOST_PERF_10M_GT_PLUS300=true\nPOST_PERF_10S_ENABLED=true\nPOST_PERF_10S_LT_MINUS15=false\nPOST_PERF_10S_MINUS15_MINUS5=false\nPOST_PERF_10S_MINUS5_0=false\nPOST_PERF_10S_0_PLUS5=false\nPOST_PERF_10S_PLUS5_PLUS15=false\nPOST_PERF_10S_PLUS15_PLUS30=true\nPOST_PERF_10S_GT_PLUS30=true\nPOST_PERF_30S_ENABLED=true\nPOST_PERF_30S_LT_MINUS20=false\nPOST_PERF_30S_MINUS20_MINUS10=false\nPOST_PERF_30S_MINUS10_0=false\nPOST_PERF_30S_0_PLUS10=false\nPOST_PERF_30S_PLUS10_PLUS25=true\nPOST_PERF_30S_PLUS25_PLUS50=true\nPOST_PERF_30S_GT_PLUS50=true\nPOST_PERF_5M_ENABLED=true\nPOST_PERF_5M_LT_MINUS50=false\nPOST_PERF_5M_MINUS50_MINUS30=false\nPOST_PERF_5M_MINUS30_MINUS15=false\nPOST_PERF_5M_MINUS15_0=false\nPOST_PERF_5M_0_PLUS25=false\nPOST_PERF_5M_PLUS25_PLUS50=true\nPOST_PERF_5M_PLUS50_PLUS100=true\nPOST_PERF_5M_PLUS100_PLUS200=true\nPOST_PERF_5M_GT_PLUS200=true\nPOST_PERF_60S_ENABLED=true\nPOST_PERF_60S_LT_MINUS30=false\nPOST_PERF_60S_MINUS30_MINUS15=false\nPOST_PERF_60S_MINUS15_0=false\nPOST_PERF_60S_0_PLUS15=false\nPOST_PERF_60S_PLUS15_PLUS40=true\nPOST_PERF_60S_PLUS40_PLUS80=true\nPOST_PERF_60S_GT_PLUS80=true",
+          "n_total_entries": 769,
+          "n_filtered_entries": 176,
+          "gates_passed": 1,
+          "all_11_passed": false,
+          "metrics": {
+            "n_trades": 176,
+            "win_rate": 0.3806818181818182,
+            "avg_pnl": -8.4944,
+            "total_pnl": -1495.01,
+            "profit_factor": 0.308,
+            "sortino": -12.192,
+            "sharpe": -13.578,
+            "max_dd": 100.0,
+            "risk_of_ruin": 100.0,
+            "n_early_exits": 175
+          },
+          "train_test": {
+            "train_n": 303,
+            "test_n": 176,
+            "train_avg_pnl": -2.4846,
+            "test_avg_pnl": -8.4944,
+            "train_win_rate": 0.4719,
+            "test_win_rate": 0.3807,
+            "train_period": "22.02 12:07 → 24.02 09:09",
+            "test_period": "24.02 09:11 → 25.02 11:15",
+            "split_ratio": 0.6
+          },
+          "gates": {
+            "SIG": false,
+            "EQ": false,
+            "WF": 0,
+            "MC": false,
+            "PLT": false,
+            "REG": false,
+            "ROB": true,
+            "tT": false,
+            "DSR": false,
+            "WRC": false,
+            "HHI": false
+          },
+          "gate_values": {
+            "SIG": "PF=0.31,EV=-8.49%",
+            "EQ": "DD=100%,Srt=-12.19,equity<1,RoR=100%",
+            "WF": "OOS=-8.822%",
+            "MC": "p=0.9909",
+            "PLT": "ratio=0.00",
+            "REG": "neg=0.94",
+            "ROB": "h=0.07,m=0.01",
+            "tT": "t=-4.22,p=0.0000",
+            "DSR": "DSR=0.0%,E[max]=0.000",
+            "WRC": "p=0.4530",
+            "HHI": "HHI=1.000,0/6prof"
+          },
+          "lift_filters": {
+            "mcap": {
+              "<30k": {
+                "lift": 0.644,
+                "count": 155,
+                "good": false
+              },
+              "30-60k": {
+                "lift": 1.207,
+                "count": 288,
+                "good": true
+              },
+              "60-100k": {
+                "lift": 1.307,
+                "count": 15,
+                "good": true
+              },
+              "100-200k": {
+                "lift": 0.0,
+                "count": 1,
+                "good": false
+              },
+              "200-500k": {
+                "lift": 0.0,
+                "count": 2,
+                "good": false
+              },
+              "500k-1M": {
+                "lift": 0.0,
+                "count": 0,
+                "good": false
+              }
+            },
+            "time": {
+              "0-1m": {
+                "lift": 1.0,
+                "count": 461,
+                "good": true
+              },
+              "1-5m": {
+                "lift": 0.0,
+                "count": 0,
+                "good": false
+              },
+              "5-15m": {
+                "lift": 0.0,
+                "count": 0,
+                "good": false
+              },
+              "15-60m": {
+                "lift": 0.0,
+                "count": 0,
+                "good": false
+              },
+              "1-6h": {
+                "lift": 0.0,
+                "count": 0,
+                "good": false
+              },
+              "6h+": {
+                "lift": 0.0,
+                "count": 0,
+                "good": false
+              }
+            },
+            "dd": {
+              "0-5%": {
+                "lift": 1.0,
+                "count": 461,
+                "good": true
+              },
+              "5-10%": {
+                "lift": 0.0,
+                "count": 0,
+                "good": false
+              },
+              "10-20%": {
+                "lift": 0.0,
+                "count": 0,
+                "good": false
+              },
+              "20-30%": {
+                "lift": 0.0,
+                "count": 0,
+                "good": false
+              },
+              "30-50%": {
+                "lift": 0.0,
+                "count": 0,
+                "good": false
+              },
+              "50%+": {
+                "lift": 0.0,
+                "count": 0,
+                "good": false
+              }
+            }
+          },
+          "post_entry_filters": {
+            "PERF_10S": {
+              "LT_MINUS15": {
+                "keep": false,
+                "lift": 0.0,
+                "count": 36,
+                "winners": 0,
+                "losers": 36
+              },
+              "MINUS15_MINUS5": {
+                "keep": false,
+                "lift": 0.373,
+                "count": 55,
+                "winners": 5,
+                "losers": 50
+              },
+              "MINUS5_0": {
+                "keep": false,
+                "lift": 1.002,
+                "count": 52,
+                "winners": 11,
+                "losers": 41
+              },
+              "0_PLUS5": {
+                "keep": false,
+                "lift": 0.884,
+                "count": 47,
+                "winners": 9,
+                "losers": 38
+              },
+              "PLUS5_PLUS15": {
+                "keep": false,
+                "lift": 1.149,
+                "count": 68,
+                "winners": 16,
+                "losers": 52
+              },
+              "PLUS15_PLUS30": {
+                "keep": true,
+                "lift": 2.334,
+                "count": 26,
+                "winners": 10,
+                "losers": 16
+              },
+              "GT_PLUS30": {
+                "keep": true,
+                "lift": 8.091,
+                "count": 19,
+                "winners": 13,
+                "losers": 6
+              }
+            },
+            "PERF_30S": {
+              "LT_MINUS20": {
+                "keep": false,
+                "lift": 0.0,
+                "count": 50,
+                "winners": 0,
+                "losers": 50
+              },
+              "MINUS20_MINUS10": {
+                "keep": false,
+                "lift": 0.0,
+                "count": 32,
+                "winners": 0,
+                "losers": 32
+              },
+              "MINUS10_0": {
+                "keep": false,
+                "lift": 0.636,
+                "count": 55,
+                "winners": 8,
+                "losers": 47
+              },
+              "0_PLUS10": {
+                "keep": false,
+                "lift": 0.575,
+                "count": 60,
+                "winners": 8,
+                "losers": 52
+              },
+              "PLUS10_PLUS25": {
+                "keep": true,
+                "lift": 1.671,
+                "count": 55,
+                "winners": 17,
+                "losers": 38
+              },
+              "PLUS25_PLUS50": {
+                "keep": true,
+                "lift": 3.268,
+                "count": 30,
+                "winners": 14,
+                "losers": 16
+              },
+              "GT_PLUS50": {
+                "keep": true,
+                "lift": 15.871,
+                "count": 21,
+                "winners": 17,
+                "losers": 4
+              }
+            },
+            "PERF_60S": {
+              "LT_MINUS30": {
+                "keep": false,
+                "lift": 0.076,
+                "count": 50,
+                "winners": 1,
+                "losers": 49
+              },
+              "MINUS30_MINUS15": {
+                "keep": false,
+                "lift": 0.0,
+                "count": 40,
+                "winners": 0,
+                "losers": 40
+              },
+              "MINUS15_0": {
+                "keep": false,
+                "lift": 0.359,
+                "count": 57,
+                "winners": 5,
+                "losers": 52
+              },
+              "0_PLUS15": {
+                "keep": false,
+                "lift": 0.568,
+                "count": 53,
+                "winners": 7,
+                "losers": 46
+              },
+              "PLUS15_PLUS40": {
+                "keep": true,
+                "lift": 2.298,
+                "count": 63,
+                "winners": 24,
+                "losers": 39
+              },
+              "PLUS40_PLUS80": {
+                "keep": true,
+                "lift": 3.447,
+                "count": 25,
+                "winners": 12,
+                "losers": 13
+              },
+              "GT_PLUS80": {
+                "keep": true,
+                "lift": 2.0,
+                "count": 15,
+                "winners": 15,
+                "losers": 0
+              }
+            },
+            "PERF_5M": {
+              "LT_MINUS50": {
+                "keep": false,
+                "lift": 0.273,
+                "count": 88,
+                "winners": 6,
+                "losers": 82
+              },
+              "MINUS50_MINUS30": {
+                "keep": false,
+                "lift": 0.11,
+                "count": 35,
+                "winners": 1,
+                "losers": 34
+              },
+              "MINUS30_MINUS15": {
+                "keep": false,
+                "lift": 0.0,
+                "count": 33,
+                "winners": 0,
+                "losers": 33
+              },
+              "MINUS15_0": {
+                "keep": false,
+                "lift": 0.0,
+                "count": 24,
+                "winners": 0,
+                "losers": 24
+              },
+              "0_PLUS25": {
+                "keep": false,
+                "lift": 0.602,
+                "count": 36,
+                "winners": 5,
+                "losers": 31
+              },
+              "PLUS25_PLUS50": {
+                "keep": true,
+                "lift": 3.527,
+                "count": 35,
+                "winners": 17,
+                "losers": 18
+              },
+              "PLUS50_PLUS100": {
+                "keep": true,
+                "lift": 4.668,
+                "count": 27,
+                "winners": 15,
+                "losers": 12
+              },
+              "PLUS100_PLUS200": {
+                "keep": true,
+                "lift": 16.182,
+                "count": 16,
+                "winners": 13,
+                "losers": 3
+              },
+              "GT_PLUS200": {
+                "keep": true,
+                "lift": 13.07,
+                "count": 9,
+                "winners": 7,
+                "losers": 2
+              }
+            },
+            "PERF_10M": {
+              "LT_MINUS60": {
+                "keep": false,
+                "lift": 0.424,
+                "count": 98,
+                "winners": 10,
+                "losers": 88
+              },
+              "MINUS60_MINUS40": {
+                "keep": false,
+                "lift": 0.0,
+                "count": 34,
+                "winners": 0,
+                "losers": 34
+              },
+              "MINUS40_MINUS20": {
+                "keep": false,
+                "lift": 0.233,
+                "count": 34,
+                "winners": 2,
+                "losers": 32
+              },
+              "MINUS20_0": {
+                "keep": false,
+                "lift": 0.11,
+                "count": 35,
+                "winners": 1,
+                "losers": 34
+              },
+              "0_PLUS30": {
+                "keep": false,
+                "lift": 0.934,
+                "count": 30,
+                "winners": 6,
+                "losers": 24
+              },
+              "PLUS30_PLUS75": {
+                "keep": true,
+                "lift": 3.034,
+                "count": 29,
+                "winners": 13,
+                "losers": 16
+              },
+              "PLUS75_PLUS150": {
+                "keep": true,
+                "lift": 9.069,
+                "count": 24,
+                "winners": 17,
+                "losers": 7
+              },
+              "PLUS150_PLUS300": {
+                "keep": true,
+                "lift": 37.344,
+                "count": 11,
+                "winners": 10,
+                "losers": 1
+              },
+              "GT_PLUS300": {
+                "keep": true,
+                "lift": 6.224,
+                "count": 8,
+                "winners": 5,
+                "losers": 3
+              }
+            },
+            "DELTA_10S_30S": {
+              "LT_MINUS20": {
+                "keep": false,
+                "lift": 0.482,
+                "count": 35,
+                "winners": 4,
+                "losers": 31
+              },
+              "MINUS20_MINUS10": {
+                "keep": false,
+                "lift": 0.098,
+                "count": 39,
+                "winners": 1,
+                "losers": 38
+              },
+              "MINUS10_MINUS3": {
+                "keep": false,
+                "lift": 0.404,
+                "count": 41,
+                "winners": 4,
+                "losers": 37
+              },
+              "MINUS3_PLUS3": {
+                "keep": false,
+                "lift": 0.7,
+                "count": 57,
+                "winners": 9,
+                "losers": 48
+              },
+              "PLUS3_PLUS10": {
+                "keep": false,
+                "lift": 0.817,
+                "count": 39,
+                "winners": 7,
+                "losers": 32
+              },
+              "PLUS10_PLUS20": {
+                "keep": true,
+                "lift": 1.545,
+                "count": 41,
+                "winners": 12,
+                "losers": 29
+              },
+              "GT_PLUS20": {
+                "keep": true,
+                "lift": 4.201,
+                "count": 51,
+                "winners": 27,
+                "losers": 24
+              }
+            },
+            "DELTA_30S_60S": {
+              "LT_MINUS25": {
+                "keep": false,
+                "lift": 0.533,
+                "count": 32,
+                "winners": 4,
+                "losers": 28
+              },
+              "MINUS25_MINUS10": {
+                "keep": false,
+                "lift": 0.406,
+                "count": 51,
+                "winners": 5,
+                "losers": 46
+              },
+              "MINUS10_MINUS3": {
+                "keep": false,
+                "lift": 0.434,
+                "count": 48,
+                "winners": 5,
+                "losers": 43
+              },
+              "MINUS3_PLUS3": {
+                "keep": false,
+                "lift": 0.934,
+                "count": 50,
+                "winners": 10,
+                "losers": 40
+              },
+              "PLUS3_PLUS10": {
+                "keep": false,
+                "lift": 1.084,
+                "count": 40,
+                "winners": 9,
+                "losers": 31
+              },
+              "PLUS10_PLUS25": {
+                "keep": true,
+                "lift": 2.241,
+                "count": 48,
+                "winners": 18,
+                "losers": 30
+              },
+              "GT_PLUS25": {
+                "keep": true,
+                "lift": 2.312,
+                "count": 34,
+                "winners": 13,
+                "losers": 21
+              }
+            },
+            "DELTA_60S_5M": {
+              "LT_MINUS40": {
+                "keep": false,
+                "lift": 0.551,
+                "count": 70,
+                "winners": 9,
+                "losers": 61
+              },
+              "MINUS40_MINUS20": {
+                "keep": false,
+                "lift": 0.0,
+                "count": 32,
+                "winners": 0,
+                "losers": 32
+              },
+              "MINUS20_MINUS5": {
+                "keep": false,
+                "lift": 0.261,
+                "count": 46,
+                "winners": 3,
+                "losers": 43
+              },
+              "MINUS5_PLUS5": {
+                "keep": false,
+                "lift": 0.482,
+                "count": 35,
+                "winners": 4,
+                "losers": 31
+              },
+              "PLUS5_PLUS20": {
+                "keep": true,
+                "lift": 1.428,
+                "count": 47,
+                "winners": 13,
+                "losers": 34
+              },
+              "PLUS20_PLUS50": {
+                "keep": true,
+                "lift": 2.178,
+                "count": 38,
+                "winners": 14,
+                "losers": 24
+              },
+              "GT_PLUS50": {
+                "keep": true,
+                "lift": 5.602,
+                "count": 35,
+                "winners": 21,
+                "losers": 14
+              }
+            }
+          },
+          "_run_meta": {
+            "db_name": "backtest_30d.db",
+            "db_hash": "0cbe962b8c5da57d",
+            "fingerprint": "d1e68d7cf548",
+            "flags": "methods=M1 realistic",
+            "total_entries": 769,
+            "unique_mints": 769,
+            "date_from": "2026-02-22",
+            "date_to": "2026-02-25",
+            "time_span": "3.0d",
+            "timestamp": "2026-02-25T12:20:36.059347+00:00"
+          }
+        },
+        "history": []
+      },
       {
         "variant_key": "d365497626f4",
         "db_name": "backtest_30d.db",
