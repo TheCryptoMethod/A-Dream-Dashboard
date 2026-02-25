@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "last_updated": "2026-02-25T12:59:36.610798+00:00",
+  "last_updated": "2026-02-25T13:27:01.251846+00:00",
   "methods": {
     "M1": [
       {
@@ -2264,493 +2264,490 @@
         "fingerprint": "5c56624cb054",
         "flags": "methods=M2 realistic",
         "data_label": "backtest_30d.db | 785 mints | 2026-02-22 → 2026-02-25",
-        "updated_at": "2026-02-25T12:49:58.761539+00:00",
-        "run_count": 1,
+        "updated_at": "2026-02-25T13:27:01.251846+00:00",
+        "run_count": 2,
         "current": {
           "method": "M2",
           "config": {
             "method": "M2",
             "entry_params": {
-              "fib_ratio": 0.236,
-              "ath_price": 5.777343150855208e-05,
-              "ath_mcap": 57773.43150855208,
-              "ath_idx": 172
+              "fib_ratio": 0.382
             },
             "mcap_min": 10000,
-            "mcap_max": 200000,
+            "mcap_max": 100000,
             "time_to_entry_min_ms": 0,
-            "time_to_entry_max_ms": 86400000,
+            "time_to_entry_max_ms": 3600000,
             "dd_at_entry_min": 5,
             "dd_at_entry_max": 50,
-            "sl_pct": 15,
-            "tp_pct": 60,
-            "trailing_activation_pct": 50,
-            "trailing_pct": 10,
+            "sl_pct": 19,
+            "tp_pct": 90,
+            "trailing_activation_pct": 40,
+            "trailing_pct": 20,
             "has_trailing": true,
-            "fingerprint": "8dc2da445b9d",
+            "fingerprint": "2fa3985e570d",
             "post_entry_filters": {
               "PERF_10S": {
                 "LT_MINUS15": {
                   "keep": false,
                   "lift": 0.0,
-                  "count": 284,
+                  "count": 61,
                   "winners": 0,
-                  "losers": 284
+                  "losers": 61
                 },
                 "MINUS15_MINUS5": {
                   "keep": false,
-                  "lift": 0.211,
-                  "count": 276,
-                  "winners": 14,
-                  "losers": 262
+                  "lift": 0.699,
+                  "count": 66,
+                  "winners": 10,
+                  "losers": 56
                 },
                 "MINUS5_0": {
                   "keep": false,
-                  "lift": 0.776,
-                  "count": 347,
-                  "winners": 57,
-                  "losers": 290
+                  "lift": 0.742,
+                  "count": 69,
+                  "winners": 11,
+                  "losers": 58
                 },
                 "0_PLUS5": {
                   "keep": false,
-                  "lift": 0.784,
-                  "count": 320,
-                  "winners": 53,
-                  "losers": 267
+                  "lift": 0.583,
+                  "count": 54,
+                  "winners": 7,
+                  "losers": 47
                 },
                 "PLUS5_PLUS15": {
                   "keep": true,
-                  "lift": 1.655,
-                  "count": 342,
-                  "winners": 101,
-                  "losers": 241
+                  "lift": 1.494,
+                  "count": 76,
+                  "winners": 21,
+                  "losers": 55
                 },
                 "PLUS15_PLUS30": {
                   "keep": true,
-                  "lift": 2.866,
-                  "count": 195,
-                  "winners": 82,
-                  "losers": 113
+                  "lift": 1.66,
+                  "count": 47,
+                  "winners": 14,
+                  "losers": 33
                 },
                 "GT_PLUS30": {
                   "keep": true,
-                  "lift": 13.23,
-                  "count": 87,
-                  "winners": 67,
-                  "losers": 20
+                  "lift": 10.063,
+                  "count": 25,
+                  "winners": 18,
+                  "losers": 7
                 }
               },
               "PERF_30S": {
                 "LT_MINUS20": {
                   "keep": false,
-                  "lift": 0.033,
-                  "count": 359,
-                  "winners": 3,
-                  "losers": 356
+                  "lift": 0.0,
+                  "count": 77,
+                  "winners": 0,
+                  "losers": 77
                 },
                 "MINUS20_MINUS10": {
                   "keep": false,
-                  "lift": 0.108,
-                  "count": 187,
-                  "winners": 5,
-                  "losers": 182
+                  "lift": 0.23,
+                  "count": 36,
+                  "winners": 2,
+                  "losers": 34
                 },
                 "MINUS10_0": {
                   "keep": false,
-                  "lift": 0.321,
-                  "count": 333,
-                  "winners": 25,
-                  "losers": 308
+                  "lift": 0.361,
+                  "count": 71,
+                  "winners": 6,
+                  "losers": 65
                 },
                 "0_PLUS10": {
                   "keep": false,
-                  "lift": 0.839,
-                  "count": 388,
-                  "winners": 68,
-                  "losers": 320
+                  "lift": 0.995,
+                  "count": 74,
+                  "winners": 15,
+                  "losers": 59
                 },
                 "PLUS10_PLUS25": {
                   "keep": true,
-                  "lift": 1.772,
-                  "count": 339,
-                  "winners": 105,
-                  "losers": 234
+                  "lift": 1.305,
+                  "count": 84,
+                  "winners": 21,
+                  "losers": 63
                 },
                 "PLUS25_PLUS50": {
                   "keep": true,
-                  "lift": 6.356,
-                  "count": 167,
-                  "winners": 103,
-                  "losers": 64
+                  "lift": 4.647,
+                  "count": 35,
+                  "winners": 19,
+                  "losers": 16
                 },
                 "GT_PLUS50": {
                   "keep": true,
-                  "lift": 19.746,
-                  "count": 78,
-                  "winners": 65,
-                  "losers": 13
+                  "lift": 23.481,
+                  "count": 21,
+                  "winners": 18,
+                  "losers": 3
                 }
               },
               "PERF_60S": {
                 "LT_MINUS30": {
                   "keep": false,
-                  "lift": 0.065,
-                  "count": 368,
-                  "winners": 6,
-                  "losers": 362
+                  "lift": 0.0,
+                  "count": 83,
+                  "winners": 0,
+                  "losers": 83
                 },
                 "MINUS30_MINUS15": {
                   "keep": false,
-                  "lift": 0.054,
-                  "count": 223,
-                  "winners": 3,
-                  "losers": 220
+                  "lift": 0.0,
+                  "count": 41,
+                  "winners": 0,
+                  "losers": 41
                 },
                 "MINUS15_0": {
                   "keep": false,
-                  "lift": 0.263,
-                  "count": 368,
-                  "winners": 23,
-                  "losers": 345
+                  "lift": 0.559,
+                  "count": 80,
+                  "winners": 10,
+                  "losers": 70
                 },
                 "0_PLUS15": {
                   "keep": false,
-                  "lift": 0.892,
-                  "count": 380,
-                  "winners": 70,
-                  "losers": 310
+                  "lift": 0.856,
+                  "count": 78,
+                  "winners": 14,
+                  "losers": 64
                 },
                 "PLUS15_PLUS40": {
                   "keep": true,
-                  "lift": 3.028,
-                  "count": 318,
-                  "winners": 138,
-                  "losers": 180
+                  "lift": 1.915,
+                  "count": 70,
+                  "winners": 23,
+                  "losers": 47
                 },
                 "PLUS40_PLUS80": {
                   "keep": true,
-                  "lift": 7.478,
-                  "count": 136,
-                  "winners": 89,
-                  "losers": 47
+                  "lift": 6.653,
+                  "count": 27,
+                  "winners": 17,
+                  "losers": 10
                 },
                 "GT_PLUS80": {
                   "keep": true,
-                  "lift": 13.67,
-                  "count": 58,
-                  "winners": 45,
-                  "losers": 13
+                  "lift": 33.265,
+                  "count": 19,
+                  "winners": 17,
+                  "losers": 2
                 }
               },
               "PERF_5M": {
                 "LT_MINUS50": {
                   "keep": false,
-                  "lift": 0.37,
-                  "count": 490,
-                  "winners": 42,
-                  "losers": 448
+                  "lift": 0.217,
+                  "count": 114,
+                  "winners": 6,
+                  "losers": 108
                 },
                 "MINUS50_MINUS30": {
                   "keep": false,
-                  "lift": 0.263,
-                  "count": 224,
-                  "winners": 14,
-                  "losers": 210
+                  "lift": 0.151,
+                  "count": 54,
+                  "winners": 2,
+                  "losers": 52
                 },
                 "MINUS30_MINUS15": {
                   "keep": false,
-                  "lift": 0.199,
-                  "count": 188,
-                  "winners": 9,
-                  "losers": 179
+                  "lift": 0.0,
+                  "count": 33,
+                  "winners": 0,
+                  "losers": 33
                 },
                 "MINUS15_0": {
                   "keep": false,
-                  "lift": 0.432,
-                  "count": 213,
-                  "winners": 21,
-                  "losers": 192
+                  "lift": 0.734,
+                  "count": 38,
+                  "winners": 6,
+                  "losers": 32
                 },
                 "0_PLUS25": {
                   "keep": false,
-                  "lift": 0.941,
-                  "count": 291,
-                  "winners": 56,
-                  "losers": 235
+                  "lift": 0.537,
+                  "count": 58,
+                  "winners": 7,
+                  "losers": 51
                 },
                 "PLUS25_PLUS50": {
                   "keep": true,
-                  "lift": 2.377,
-                  "count": 181,
-                  "winners": 68,
-                  "losers": 113
+                  "lift": 1.884,
+                  "count": 40,
+                  "winners": 13,
+                  "losers": 27
                 },
                 "PLUS50_PLUS100": {
                   "keep": true,
-                  "lift": 6.44,
-                  "count": 171,
-                  "winners": 106,
-                  "losers": 65
+                  "lift": 13.045,
+                  "count": 39,
+                  "winners": 30,
+                  "losers": 9
                 },
                 "PLUS100_PLUS200": {
                   "keep": true,
-                  "lift": 7.267,
-                  "count": 71,
-                  "winners": 46,
-                  "losers": 25
+                  "lift": 16.959,
+                  "count": 16,
+                  "winners": 13,
+                  "losers": 3
                 },
                 "GT_PLUS200": {
                   "keep": true,
-                  "lift": 4.739,
-                  "count": 22,
-                  "winners": 12,
-                  "losers": 10
+                  "lift": 7.827,
+                  "count": 6,
+                  "winners": 4,
+                  "losers": 2
                 }
               },
               "PERF_10M": {
                 "LT_MINUS60": {
                   "keep": false,
-                  "lift": 0.474,
-                  "count": 560,
-                  "winners": 60,
-                  "losers": 500
+                  "lift": 0.388,
+                  "count": 122,
+                  "winners": 11,
+                  "losers": 111
                 },
                 "MINUS60_MINUS40": {
                   "keep": false,
-                  "lift": 0.293,
-                  "count": 203,
-                  "winners": 14,
-                  "losers": 189
+                  "lift": 0.074,
+                  "count": 54,
+                  "winners": 1,
+                  "losers": 53
                 },
                 "MINUS40_MINUS20": {
                   "keep": false,
-                  "lift": 0.673,
-                  "count": 213,
-                  "winners": 31,
-                  "losers": 182
+                  "lift": 0.23,
+                  "count": 36,
+                  "winners": 2,
+                  "losers": 34
                 },
                 "MINUS20_0": {
                   "keep": false,
-                  "lift": 0.445,
-                  "count": 247,
-                  "winners": 25,
-                  "losers": 222
+                  "lift": 0.559,
+                  "count": 48,
+                  "winners": 6,
+                  "losers": 42
                 },
                 "0_PLUS30": {
                   "keep": false,
-                  "lift": 0.973,
-                  "count": 253,
-                  "winners": 50,
-                  "losers": 203
+                  "lift": 0.815,
+                  "count": 58,
+                  "winners": 10,
+                  "losers": 48
                 },
                 "PLUS30_PLUS75": {
                   "keep": true,
-                  "lift": 3.768,
-                  "count": 170,
-                  "winners": 83,
-                  "losers": 87
+                  "lift": 5.544,
+                  "count": 29,
+                  "winners": 17,
+                  "losers": 12
                 },
                 "PLUS75_PLUS150": {
                   "keep": true,
-                  "lift": 5.772,
-                  "count": 128,
-                  "winners": 76,
-                  "losers": 52
+                  "lift": 6.322,
+                  "count": 34,
+                  "winners": 21,
+                  "losers": 13
                 },
                 "PLUS150_PLUS300": {
                   "keep": true,
-                  "lift": 4.388,
-                  "count": 57,
-                  "winners": 30,
-                  "losers": 27
+                  "lift": 21.525,
+                  "count": 13,
+                  "winners": 11,
+                  "losers": 2
                 },
                 "GT_PLUS300": {
-                  "keep": false,
-                  "lift": 1.053,
-                  "count": 19,
-                  "winners": 4,
-                  "losers": 15
+                  "keep": true,
+                  "lift": 1.0,
+                  "count": 4,
+                  "winners": 2,
+                  "losers": 2
                 }
               },
               "DELTA_10S_30S": {
                 "LT_MINUS20": {
                   "keep": false,
-                  "lift": 0.294,
-                  "count": 260,
-                  "winners": 18,
-                  "losers": 242
+                  "lift": 0.077,
+                  "count": 52,
+                  "winners": 1,
+                  "losers": 51
                 },
                 "MINUS20_MINUS10": {
                   "keep": false,
-                  "lift": 0.389,
-                  "count": 212,
-                  "winners": 19,
-                  "losers": 193
+                  "lift": 0.5,
+                  "count": 53,
+                  "winners": 6,
+                  "losers": 47
                 },
                 "MINUS10_MINUS3": {
                   "keep": false,
-                  "lift": 0.762,
-                  "count": 241,
-                  "winners": 39,
-                  "losers": 202
+                  "lift": 0.749,
+                  "count": 56,
+                  "winners": 9,
+                  "losers": 47
                 },
                 "MINUS3_PLUS3": {
                   "keep": false,
-                  "lift": 0.705,
-                  "count": 350,
-                  "winners": 53,
-                  "losers": 297
+                  "lift": 0.665,
+                  "count": 62,
+                  "winners": 9,
+                  "losers": 53
                 },
                 "PLUS3_PLUS10": {
                   "keep": false,
-                  "lift": 1.143,
-                  "count": 294,
-                  "winners": 66,
-                  "losers": 228
+                  "lift": 1.198,
+                  "count": 64,
+                  "winners": 15,
+                  "losers": 49
                 },
                 "PLUS10_PLUS20": {
-                  "keep": true,
-                  "lift": 1.418,
-                  "count": 246,
-                  "winners": 65,
-                  "losers": 181
+                  "keep": false,
+                  "lift": 1.067,
+                  "count": 56,
+                  "winners": 12,
+                  "losers": 44
                 },
                 "GT_PLUS20": {
                   "keep": true,
-                  "lift": 3.36,
-                  "count": 248,
-                  "winners": 114,
-                  "losers": 134
+                  "lift": 4.365,
+                  "count": 55,
+                  "winners": 29,
+                  "losers": 26
                 }
               },
               "DELTA_30S_60S": {
                 "LT_MINUS25": {
                   "keep": false,
-                  "lift": 0.487,
-                  "count": 255,
-                  "winners": 28,
-                  "losers": 227
+                  "lift": 0.285,
+                  "count": 59,
+                  "winners": 4,
+                  "losers": 55
                 },
                 "MINUS25_MINUS10": {
                   "keep": false,
-                  "lift": 0.514,
-                  "count": 295,
-                  "winners": 34,
-                  "losers": 261
+                  "lift": 0.518,
+                  "count": 77,
+                  "winners": 9,
+                  "losers": 68
                 },
                 "MINUS10_MINUS3": {
                   "keep": false,
-                  "lift": 0.693,
-                  "count": 248,
-                  "winners": 37,
-                  "losers": 211
+                  "lift": 0.978,
+                  "count": 45,
+                  "winners": 9,
+                  "losers": 36
                 },
                 "MINUS3_PLUS3": {
                   "keep": false,
-                  "lift": 0.941,
-                  "count": 343,
-                  "winners": 66,
-                  "losers": 277
+                  "lift": 0.583,
+                  "count": 54,
+                  "winners": 7,
+                  "losers": 47
                 },
                 "PLUS3_PLUS10": {
                   "keep": false,
-                  "lift": 1.064,
-                  "count": 245,
-                  "winners": 52,
-                  "losers": 193
+                  "lift": 1.001,
+                  "count": 54,
+                  "winners": 11,
+                  "losers": 43
                 },
                 "PLUS10_PLUS25": {
                   "keep": true,
-                  "lift": 1.488,
-                  "count": 285,
-                  "winners": 78,
-                  "losers": 207
+                  "lift": 1.702,
+                  "count": 66,
+                  "winners": 20,
+                  "losers": 46
                 },
                 "GT_PLUS25": {
                   "keep": true,
-                  "lift": 3.089,
-                  "count": 180,
-                  "winners": 79,
-                  "losers": 101
+                  "lift": 3.736,
+                  "count": 43,
+                  "winners": 21,
+                  "losers": 22
                 }
               },
               "DELTA_60S_5M": {
                 "LT_MINUS40": {
                   "keep": false,
-                  "lift": 1.141,
-                  "count": 388,
-                  "winners": 87,
-                  "losers": 301
+                  "lift": 0.824,
+                  "count": 92,
+                  "winners": 16,
+                  "losers": 76
                 },
                 "MINUS40_MINUS20": {
                   "keep": false,
-                  "lift": 0.364,
-                  "count": 249,
-                  "winners": 21,
-                  "losers": 228
+                  "lift": 0.319,
+                  "count": 53,
+                  "winners": 4,
+                  "losers": 49
                 },
                 "MINUS20_MINUS5": {
                   "keep": false,
-                  "lift": 0.602,
-                  "count": 325,
-                  "winners": 43,
-                  "losers": 282
+                  "lift": 0.675,
+                  "count": 68,
+                  "winners": 10,
+                  "losers": 58
                 },
                 "MINUS5_PLUS5": {
                   "keep": false,
-                  "lift": 0.444,
-                  "count": 257,
-                  "winners": 26,
-                  "losers": 231
+                  "lift": 0.5,
+                  "count": 53,
+                  "winners": 6,
+                  "losers": 47
                 },
                 "PLUS5_PLUS20": {
                   "keep": false,
-                  "lift": 1.022,
-                  "count": 214,
-                  "winners": 44,
-                  "losers": 170
+                  "lift": 0.712,
+                  "count": 39,
+                  "winners": 6,
+                  "losers": 33
                 },
                 "PLUS20_PLUS50": {
                   "keep": true,
-                  "lift": 1.885,
-                  "count": 229,
-                  "winners": 74,
-                  "losers": 155
+                  "lift": 1.236,
+                  "count": 50,
+                  "winners": 12,
+                  "losers": 38
                 },
                 "GT_PLUS50": {
                   "keep": true,
-                  "lift": 2.836,
-                  "count": 189,
-                  "winners": 79,
-                  "losers": 110
+                  "lift": 6.604,
+                  "count": 43,
+                  "winners": 27,
+                  "losers": 16
                 }
               }
             }
           },
-          "env_block": "# ═══ A_Dream Strategy: M2 ═══\nTRADE_METHOD=M2\nENTRY_FIB_RATIO=0.236\n# Pre-Entry Filters\nENTRY_MCAP_MIN=10000\nENTRY_MCAP_MAX=200000\nENTRY_DD_MIN_PCT=5.0\nENTRY_DD_MAX_PCT=50.0\n# Exit Model\nSL_PCT=15\nTP_PCT=60\nTRAILING_ACTIVATION_PCT=50\nTRAILING_PCT=10\n# Post-Entry Early Exit Filters\n# Post-Entry Bucket Filters\nPOST_ENTRY_BUCKETS_ENABLED=true\nPOST_DELTA_10S_30S_ENABLED=true\nPOST_DELTA_10S_30S_LT_MINUS20=false\nPOST_DELTA_10S_30S_MINUS20_MINUS10=false\nPOST_DELTA_10S_30S_MINUS10_MINUS3=false\nPOST_DELTA_10S_30S_MINUS3_PLUS3=false\nPOST_DELTA_10S_30S_PLUS3_PLUS10=false\nPOST_DELTA_10S_30S_PLUS10_PLUS20=true\nPOST_DELTA_10S_30S_GT_PLUS20=true\nPOST_DELTA_30S_60S_ENABLED=true\nPOST_DELTA_30S_60S_LT_MINUS25=false\nPOST_DELTA_30S_60S_MINUS25_MINUS10=false\nPOST_DELTA_30S_60S_MINUS10_MINUS3=false\nPOST_DELTA_30S_60S_MINUS3_PLUS3=false\nPOST_DELTA_30S_60S_PLUS3_PLUS10=false\nPOST_DELTA_30S_60S_PLUS10_PLUS25=true\nPOST_DELTA_30S_60S_GT_PLUS25=true\nPOST_DELTA_60S_5M_ENABLED=true\nPOST_DELTA_60S_5M_LT_MINUS40=false\nPOST_DELTA_60S_5M_MINUS40_MINUS20=false\nPOST_DELTA_60S_5M_MINUS20_MINUS5=false\nPOST_DELTA_60S_5M_MINUS5_PLUS5=false\nPOST_DELTA_60S_5M_PLUS5_PLUS20=false\nPOST_DELTA_60S_5M_PLUS20_PLUS50=true\nPOST_DELTA_60S_5M_GT_PLUS50=true\nPOST_PERF_10M_ENABLED=true\nPOST_PERF_10M_LT_MINUS60=false\nPOST_PERF_10M_MINUS60_MINUS40=false\nPOST_PERF_10M_MINUS40_MINUS20=false\nPOST_PERF_10M_MINUS20_0=false\nPOST_PERF_10M_0_PLUS30=false\nPOST_PERF_10M_PLUS30_PLUS75=true\nPOST_PERF_10M_PLUS75_PLUS150=true\nPOST_PERF_10M_PLUS150_PLUS300=true\nPOST_PERF_10M_GT_PLUS300=false\nPOST_PERF_10S_ENABLED=true\nPOST_PERF_10S_LT_MINUS15=false\nPOST_PERF_10S_MINUS15_MINUS5=false\nPOST_PERF_10S_MINUS5_0=false\nPOST_PERF_10S_0_PLUS5=false\nPOST_PERF_10S_PLUS5_PLUS15=true\nPOST_PERF_10S_PLUS15_PLUS30=true\nPOST_PERF_10S_GT_PLUS30=true\nPOST_PERF_30S_ENABLED=true\nPOST_PERF_30S_LT_MINUS20=false\nPOST_PERF_30S_MINUS20_MINUS10=false\nPOST_PERF_30S_MINUS10_0=false\nPOST_PERF_30S_0_PLUS10=false\nPOST_PERF_30S_PLUS10_PLUS25=true\nPOST_PERF_30S_PLUS25_PLUS50=true\nPOST_PERF_30S_GT_PLUS50=true\nPOST_PERF_5M_ENABLED=true\nPOST_PERF_5M_LT_MINUS50=false\nPOST_PERF_5M_MINUS50_MINUS30=false\nPOST_PERF_5M_MINUS30_MINUS15=false\nPOST_PERF_5M_MINUS15_0=false\nPOST_PERF_5M_0_PLUS25=false\nPOST_PERF_5M_PLUS25_PLUS50=true\nPOST_PERF_5M_PLUS50_PLUS100=true\nPOST_PERF_5M_PLUS100_PLUS200=true\nPOST_PERF_5M_GT_PLUS200=true\nPOST_PERF_60S_ENABLED=true\nPOST_PERF_60S_LT_MINUS30=false\nPOST_PERF_60S_MINUS30_MINUS15=false\nPOST_PERF_60S_MINUS15_0=false\nPOST_PERF_60S_0_PLUS15=false\nPOST_PERF_60S_PLUS15_PLUS40=true\nPOST_PERF_60S_PLUS40_PLUS80=true\nPOST_PERF_60S_GT_PLUS80=true",
+          "env_block": "# ═══ A_Dream Strategy: M2 ═══\nTRADE_METHOD=M2\nENTRY_FIB_RATIO=0.382\n# Pre-Entry Filters\nENTRY_MCAP_MIN=10000\nENTRY_MCAP_MAX=100000\nENTRY_TIME_MAX_MS=3600000\nENTRY_DD_MIN_PCT=5.0\nENTRY_DD_MAX_PCT=50.0\n# Exit Model\nSL_PCT=19\nTP_PCT=90\nTRAILING_ACTIVATION_PCT=40\nTRAILING_PCT=20\n# Post-Entry Early Exit Filters\n# Post-Entry Bucket Filters\nPOST_ENTRY_BUCKETS_ENABLED=true\nPOST_DELTA_10S_30S_ENABLED=true\nPOST_DELTA_10S_30S_LT_MINUS20=false\nPOST_DELTA_10S_30S_MINUS20_MINUS10=false\nPOST_DELTA_10S_30S_MINUS10_MINUS3=false\nPOST_DELTA_10S_30S_MINUS3_PLUS3=false\nPOST_DELTA_10S_30S_PLUS3_PLUS10=false\nPOST_DELTA_10S_30S_PLUS10_PLUS20=false\nPOST_DELTA_10S_30S_GT_PLUS20=true\nPOST_DELTA_30S_60S_ENABLED=true\nPOST_DELTA_30S_60S_LT_MINUS25=false\nPOST_DELTA_30S_60S_MINUS25_MINUS10=false\nPOST_DELTA_30S_60S_MINUS10_MINUS3=false\nPOST_DELTA_30S_60S_MINUS3_PLUS3=false\nPOST_DELTA_30S_60S_PLUS3_PLUS10=false\nPOST_DELTA_30S_60S_PLUS10_PLUS25=true\nPOST_DELTA_30S_60S_GT_PLUS25=true\nPOST_DELTA_60S_5M_ENABLED=true\nPOST_DELTA_60S_5M_LT_MINUS40=false\nPOST_DELTA_60S_5M_MINUS40_MINUS20=false\nPOST_DELTA_60S_5M_MINUS20_MINUS5=false\nPOST_DELTA_60S_5M_MINUS5_PLUS5=false\nPOST_DELTA_60S_5M_PLUS5_PLUS20=false\nPOST_DELTA_60S_5M_PLUS20_PLUS50=true\nPOST_DELTA_60S_5M_GT_PLUS50=true\nPOST_PERF_10M_ENABLED=true\nPOST_PERF_10M_LT_MINUS60=false\nPOST_PERF_10M_MINUS60_MINUS40=false\nPOST_PERF_10M_MINUS40_MINUS20=false\nPOST_PERF_10M_MINUS20_0=false\nPOST_PERF_10M_0_PLUS30=false\nPOST_PERF_10M_PLUS30_PLUS75=true\nPOST_PERF_10M_PLUS75_PLUS150=true\nPOST_PERF_10M_PLUS150_PLUS300=true\nPOST_PERF_10M_GT_PLUS300=true\nPOST_PERF_10S_ENABLED=true\nPOST_PERF_10S_LT_MINUS15=false\nPOST_PERF_10S_MINUS15_MINUS5=false\nPOST_PERF_10S_MINUS5_0=false\nPOST_PERF_10S_0_PLUS5=false\nPOST_PERF_10S_PLUS5_PLUS15=true\nPOST_PERF_10S_PLUS15_PLUS30=true\nPOST_PERF_10S_GT_PLUS30=true\nPOST_PERF_30S_ENABLED=true\nPOST_PERF_30S_LT_MINUS20=false\nPOST_PERF_30S_MINUS20_MINUS10=false\nPOST_PERF_30S_MINUS10_0=false\nPOST_PERF_30S_0_PLUS10=false\nPOST_PERF_30S_PLUS10_PLUS25=true\nPOST_PERF_30S_PLUS25_PLUS50=true\nPOST_PERF_30S_GT_PLUS50=true\nPOST_PERF_5M_ENABLED=true\nPOST_PERF_5M_LT_MINUS50=false\nPOST_PERF_5M_MINUS50_MINUS30=false\nPOST_PERF_5M_MINUS30_MINUS15=false\nPOST_PERF_5M_MINUS15_0=false\nPOST_PERF_5M_0_PLUS25=false\nPOST_PERF_5M_PLUS25_PLUS50=true\nPOST_PERF_5M_PLUS50_PLUS100=true\nPOST_PERF_5M_PLUS100_PLUS200=true\nPOST_PERF_5M_GT_PLUS200=true\nPOST_PERF_60S_ENABLED=true\nPOST_PERF_60S_LT_MINUS30=false\nPOST_PERF_60S_MINUS30_MINUS15=false\nPOST_PERF_60S_MINUS15_0=false\nPOST_PERF_60S_0_PLUS15=false\nPOST_PERF_60S_PLUS15_PLUS40=true\nPOST_PERF_60S_PLUS40_PLUS80=true\nPOST_PERF_60S_GT_PLUS80=true",
           "n_total_entries": 3146,
-          "n_filtered_entries": 1222,
+          "n_filtered_entries": 273,
           "gates_passed": 1,
           "all_11_passed": false,
           "metrics": {
-            "n_trades": 1222,
-            "win_rate": 0.3199672667757774,
-            "avg_pnl": -9.6257,
-            "total_pnl": -11762.58,
-            "profit_factor": 0.326,
-            "sortino": -13.626,
-            "sharpe": -10.87,
+            "n_trades": 273,
+            "win_rate": 0.30036630036630035,
+            "avg_pnl": -12.6701,
+            "total_pnl": -3458.93,
+            "profit_factor": 0.214,
+            "sortino": -16.313,
+            "sharpe": -18.621,
             "max_dd": 100.0,
             "risk_of_ruin": 100.0,
-            "n_early_exits": 1218
+            "n_early_exits": 273
           },
           "train_test": {
-            "train_n": 1851,
-            "test_n": 1222,
-            "train_avg_pnl": -8.5726,
-            "test_avg_pnl": -9.6257,
-            "train_win_rate": 0.3447,
-            "test_win_rate": 0.32,
+            "train_n": 398,
+            "test_n": 273,
+            "train_avg_pnl": -9.1611,
+            "test_avg_pnl": -12.6701,
+            "train_win_rate": 0.3116,
+            "test_win_rate": 0.3004,
             "train_period": "22.02 12:08 → 24.02 09:20",
             "test_period": "24.02 09:20 → 25.02 11:20",
             "split_ratio": 0.6
@@ -2769,43 +2766,43 @@
             "HHI": false
           },
           "gate_values": {
-            "SIG": "PF=0.33,EV=-9.63%,streak=17",
-            "EQ": "DD=100%,Srt=-13.63,equity<1,RoR=100%",
-            "WF": "OOS=-9.597%",
-            "MC": "p=0.9937",
+            "SIG": "PF=0.21,EV=-12.67%,streak=16",
+            "EQ": "DD=100%,Srt=-16.31,equity<1,RoR=100%",
+            "WF": "OOS=-13.367%",
+            "MC": "p=0.6562",
             "PLT": "ratio=0.00",
-            "REG": "neg=1.00",
+            "REG": "neg=0.95",
             "ROB": "h=0.07,m=0.00",
-            "tT": "t=-8.90,p=0.0000",
+            "tT": "t=-7.20,p=0.0000",
             "DSR": "DSR=0.0%,E[max]=0.000",
-            "WRC": "p=0.4910",
+            "WRC": "p=0.5150",
             "HHI": "HHI=1.000,0/6prof"
           },
           "lift_filters": {
             "mcap": {
               "<30k": {
-                "lift": 0.925,
-                "count": 1160,
+                "lift": 0.817,
+                "count": 231,
                 "good": true
               },
               "30-60k": {
-                "lift": 1.023,
-                "count": 562,
+                "lift": 1.232,
+                "count": 147,
                 "good": true
               },
               "60-100k": {
-                "lift": 1.913,
-                "count": 116,
+                "lift": 1.826,
+                "count": 24,
                 "good": true
               },
               "100-200k": {
-                "lift": 0.87,
-                "count": 38,
-                "good": true
+                "lift": 0.782,
+                "count": 16,
+                "good": false
               },
               "200-500k": {
                 "lift": 0.0,
-                "count": 11,
+                "count": 3,
                 "good": false
               },
               "500k-1M": {
@@ -2816,34 +2813,34 @@
             },
             "time": {
               "0-1m": {
-                "lift": 1.099,
-                "count": 641,
+                "lift": 0.962,
+                "count": 174,
                 "good": true
               },
               "1-5m": {
-                "lift": 0.914,
-                "count": 619,
+                "lift": 1.143,
+                "count": 168,
                 "good": true
               },
               "5-15m": {
-                "lift": 1.03,
-                "count": 309,
-                "good": true
+                "lift": 0.671,
+                "count": 55,
+                "good": false
               },
               "15-60m": {
-                "lift": 1.022,
-                "count": 225,
+                "lift": 1.461,
+                "count": 19,
                 "good": true
               },
               "1-6h": {
-                "lift": 0.689,
-                "count": 84,
+                "lift": 0.0,
+                "count": 5,
                 "good": false
               },
               "6h+": {
-                "lift": 1.64,
-                "count": 9,
-                "good": true
+                "lift": 0.0,
+                "count": 0,
+                "good": false
               }
             },
             "dd": {
@@ -2853,28 +2850,28 @@
                 "good": false
               },
               "5-10%": {
-                "lift": 0.844,
-                "count": 78,
+                "lift": 0.913,
+                "count": 7,
                 "good": true
               },
               "10-20%": {
-                "lift": 0.924,
-                "count": 858,
+                "lift": 0.813,
+                "count": 263,
                 "good": true
               },
               "20-30%": {
-                "lift": 1.043,
-                "count": 644,
+                "lift": 1.438,
+                "count": 125,
                 "good": true
               },
               "30-50%": {
-                "lift": 1.217,
-                "count": 280,
+                "lift": 1.095,
+                "count": 24,
                 "good": true
               },
               "50%+": {
-                "lift": 0.717,
-                "count": 27,
+                "lift": 0.0,
+                "count": 2,
                 "good": false
               }
             }
@@ -2884,515 +2881,492 @@
               "LT_MINUS15": {
                 "keep": false,
                 "lift": 0.0,
-                "count": 284,
+                "count": 61,
                 "winners": 0,
-                "losers": 284
+                "losers": 61
               },
               "MINUS15_MINUS5": {
                 "keep": false,
-                "lift": 0.211,
-                "count": 276,
-                "winners": 14,
-                "losers": 262
+                "lift": 0.699,
+                "count": 66,
+                "winners": 10,
+                "losers": 56
               },
               "MINUS5_0": {
                 "keep": false,
-                "lift": 0.776,
-                "count": 347,
-                "winners": 57,
-                "losers": 290
+                "lift": 0.742,
+                "count": 69,
+                "winners": 11,
+                "losers": 58
               },
               "0_PLUS5": {
                 "keep": false,
-                "lift": 0.784,
-                "count": 320,
-                "winners": 53,
-                "losers": 267
+                "lift": 0.583,
+                "count": 54,
+                "winners": 7,
+                "losers": 47
               },
               "PLUS5_PLUS15": {
                 "keep": true,
-                "lift": 1.655,
-                "count": 342,
-                "winners": 101,
-                "losers": 241
+                "lift": 1.494,
+                "count": 76,
+                "winners": 21,
+                "losers": 55
               },
               "PLUS15_PLUS30": {
                 "keep": true,
-                "lift": 2.866,
-                "count": 195,
-                "winners": 82,
-                "losers": 113
+                "lift": 1.66,
+                "count": 47,
+                "winners": 14,
+                "losers": 33
               },
               "GT_PLUS30": {
                 "keep": true,
-                "lift": 13.23,
-                "count": 87,
-                "winners": 67,
-                "losers": 20
+                "lift": 10.063,
+                "count": 25,
+                "winners": 18,
+                "losers": 7
               }
             },
             "PERF_30S": {
               "LT_MINUS20": {
                 "keep": false,
-                "lift": 0.033,
-                "count": 359,
-                "winners": 3,
-                "losers": 356
+                "lift": 0.0,
+                "count": 77,
+                "winners": 0,
+                "losers": 77
               },
               "MINUS20_MINUS10": {
                 "keep": false,
-                "lift": 0.108,
-                "count": 187,
-                "winners": 5,
-                "losers": 182
+                "lift": 0.23,
+                "count": 36,
+                "winners": 2,
+                "losers": 34
               },
               "MINUS10_0": {
                 "keep": false,
-                "lift": 0.321,
-                "count": 333,
-                "winners": 25,
-                "losers": 308
+                "lift": 0.361,
+                "count": 71,
+                "winners": 6,
+                "losers": 65
               },
               "0_PLUS10": {
                 "keep": false,
-                "lift": 0.839,
-                "count": 388,
-                "winners": 68,
-                "losers": 320
+                "lift": 0.995,
+                "count": 74,
+                "winners": 15,
+                "losers": 59
               },
               "PLUS10_PLUS25": {
                 "keep": true,
-                "lift": 1.772,
-                "count": 339,
-                "winners": 105,
-                "losers": 234
+                "lift": 1.305,
+                "count": 84,
+                "winners": 21,
+                "losers": 63
               },
               "PLUS25_PLUS50": {
                 "keep": true,
-                "lift": 6.356,
-                "count": 167,
-                "winners": 103,
-                "losers": 64
+                "lift": 4.647,
+                "count": 35,
+                "winners": 19,
+                "losers": 16
               },
               "GT_PLUS50": {
                 "keep": true,
-                "lift": 19.746,
-                "count": 78,
-                "winners": 65,
-                "losers": 13
+                "lift": 23.481,
+                "count": 21,
+                "winners": 18,
+                "losers": 3
               }
             },
             "PERF_60S": {
               "LT_MINUS30": {
                 "keep": false,
-                "lift": 0.065,
-                "count": 368,
-                "winners": 6,
-                "losers": 362
+                "lift": 0.0,
+                "count": 83,
+                "winners": 0,
+                "losers": 83
               },
               "MINUS30_MINUS15": {
                 "keep": false,
-                "lift": 0.054,
-                "count": 223,
-                "winners": 3,
-                "losers": 220
+                "lift": 0.0,
+                "count": 41,
+                "winners": 0,
+                "losers": 41
               },
               "MINUS15_0": {
                 "keep": false,
-                "lift": 0.263,
-                "count": 368,
-                "winners": 23,
-                "losers": 345
+                "lift": 0.559,
+                "count": 80,
+                "winners": 10,
+                "losers": 70
               },
               "0_PLUS15": {
                 "keep": false,
-                "lift": 0.892,
-                "count": 380,
-                "winners": 70,
-                "losers": 310
+                "lift": 0.856,
+                "count": 78,
+                "winners": 14,
+                "losers": 64
               },
               "PLUS15_PLUS40": {
                 "keep": true,
-                "lift": 3.028,
-                "count": 318,
-                "winners": 138,
-                "losers": 180
+                "lift": 1.915,
+                "count": 70,
+                "winners": 23,
+                "losers": 47
               },
               "PLUS40_PLUS80": {
                 "keep": true,
-                "lift": 7.478,
-                "count": 136,
-                "winners": 89,
-                "losers": 47
+                "lift": 6.653,
+                "count": 27,
+                "winners": 17,
+                "losers": 10
               },
               "GT_PLUS80": {
                 "keep": true,
-                "lift": 13.67,
-                "count": 58,
-                "winners": 45,
-                "losers": 13
+                "lift": 33.265,
+                "count": 19,
+                "winners": 17,
+                "losers": 2
               }
             },
             "PERF_5M": {
               "LT_MINUS50": {
                 "keep": false,
-                "lift": 0.37,
-                "count": 490,
-                "winners": 42,
-                "losers": 448
+                "lift": 0.217,
+                "count": 114,
+                "winners": 6,
+                "losers": 108
               },
               "MINUS50_MINUS30": {
                 "keep": false,
-                "lift": 0.263,
-                "count": 224,
-                "winners": 14,
-                "losers": 210
+                "lift": 0.151,
+                "count": 54,
+                "winners": 2,
+                "losers": 52
               },
               "MINUS30_MINUS15": {
                 "keep": false,
-                "lift": 0.199,
-                "count": 188,
-                "winners": 9,
-                "losers": 179
+                "lift": 0.0,
+                "count": 33,
+                "winners": 0,
+                "losers": 33
               },
               "MINUS15_0": {
                 "keep": false,
-                "lift": 0.432,
-                "count": 213,
-                "winners": 21,
-                "losers": 192
+                "lift": 0.734,
+                "count": 38,
+                "winners": 6,
+                "losers": 32
               },
               "0_PLUS25": {
                 "keep": false,
-                "lift": 0.941,
-                "count": 291,
-                "winners": 56,
-                "losers": 235
+                "lift": 0.537,
+                "count": 58,
+                "winners": 7,
+                "losers": 51
               },
               "PLUS25_PLUS50": {
                 "keep": true,
-                "lift": 2.377,
-                "count": 181,
-                "winners": 68,
-                "losers": 113
+                "lift": 1.884,
+                "count": 40,
+                "winners": 13,
+                "losers": 27
               },
               "PLUS50_PLUS100": {
                 "keep": true,
-                "lift": 6.44,
-                "count": 171,
-                "winners": 106,
-                "losers": 65
+                "lift": 13.045,
+                "count": 39,
+                "winners": 30,
+                "losers": 9
               },
               "PLUS100_PLUS200": {
                 "keep": true,
-                "lift": 7.267,
-                "count": 71,
-                "winners": 46,
-                "losers": 25
+                "lift": 16.959,
+                "count": 16,
+                "winners": 13,
+                "losers": 3
               },
               "GT_PLUS200": {
                 "keep": true,
-                "lift": 4.739,
-                "count": 22,
-                "winners": 12,
-                "losers": 10
+                "lift": 7.827,
+                "count": 6,
+                "winners": 4,
+                "losers": 2
               }
             },
             "PERF_10M": {
               "LT_MINUS60": {
                 "keep": false,
-                "lift": 0.474,
-                "count": 560,
-                "winners": 60,
-                "losers": 500
+                "lift": 0.388,
+                "count": 122,
+                "winners": 11,
+                "losers": 111
               },
               "MINUS60_MINUS40": {
                 "keep": false,
-                "lift": 0.293,
-                "count": 203,
-                "winners": 14,
-                "losers": 189
+                "lift": 0.074,
+                "count": 54,
+                "winners": 1,
+                "losers": 53
               },
               "MINUS40_MINUS20": {
                 "keep": false,
-                "lift": 0.673,
-                "count": 213,
-                "winners": 31,
-                "losers": 182
+                "lift": 0.23,
+                "count": 36,
+                "winners": 2,
+                "losers": 34
               },
               "MINUS20_0": {
                 "keep": false,
-                "lift": 0.445,
-                "count": 247,
-                "winners": 25,
-                "losers": 222
+                "lift": 0.559,
+                "count": 48,
+                "winners": 6,
+                "losers": 42
               },
               "0_PLUS30": {
                 "keep": false,
-                "lift": 0.973,
-                "count": 253,
-                "winners": 50,
-                "losers": 203
+                "lift": 0.815,
+                "count": 58,
+                "winners": 10,
+                "losers": 48
               },
               "PLUS30_PLUS75": {
                 "keep": true,
-                "lift": 3.768,
-                "count": 170,
-                "winners": 83,
-                "losers": 87
+                "lift": 5.544,
+                "count": 29,
+                "winners": 17,
+                "losers": 12
               },
               "PLUS75_PLUS150": {
                 "keep": true,
-                "lift": 5.772,
-                "count": 128,
-                "winners": 76,
-                "losers": 52
+                "lift": 6.322,
+                "count": 34,
+                "winners": 21,
+                "losers": 13
               },
               "PLUS150_PLUS300": {
                 "keep": true,
-                "lift": 4.388,
-                "count": 57,
-                "winners": 30,
-                "losers": 27
+                "lift": 21.525,
+                "count": 13,
+                "winners": 11,
+                "losers": 2
               },
               "GT_PLUS300": {
-                "keep": false,
-                "lift": 1.053,
-                "count": 19,
-                "winners": 4,
-                "losers": 15
+                "keep": true,
+                "lift": 1.0,
+                "count": 4,
+                "winners": 2,
+                "losers": 2
               }
             },
             "DELTA_10S_30S": {
               "LT_MINUS20": {
                 "keep": false,
-                "lift": 0.294,
-                "count": 260,
-                "winners": 18,
-                "losers": 242
+                "lift": 0.077,
+                "count": 52,
+                "winners": 1,
+                "losers": 51
               },
               "MINUS20_MINUS10": {
                 "keep": false,
-                "lift": 0.389,
-                "count": 212,
-                "winners": 19,
-                "losers": 193
+                "lift": 0.5,
+                "count": 53,
+                "winners": 6,
+                "losers": 47
               },
               "MINUS10_MINUS3": {
                 "keep": false,
-                "lift": 0.762,
-                "count": 241,
-                "winners": 39,
-                "losers": 202
+                "lift": 0.749,
+                "count": 56,
+                "winners": 9,
+                "losers": 47
               },
               "MINUS3_PLUS3": {
                 "keep": false,
-                "lift": 0.705,
-                "count": 350,
-                "winners": 53,
-                "losers": 297
+                "lift": 0.665,
+                "count": 62,
+                "winners": 9,
+                "losers": 53
               },
               "PLUS3_PLUS10": {
                 "keep": false,
-                "lift": 1.143,
-                "count": 294,
-                "winners": 66,
-                "losers": 228
+                "lift": 1.198,
+                "count": 64,
+                "winners": 15,
+                "losers": 49
               },
               "PLUS10_PLUS20": {
-                "keep": true,
-                "lift": 1.418,
-                "count": 246,
-                "winners": 65,
-                "losers": 181
+                "keep": false,
+                "lift": 1.067,
+                "count": 56,
+                "winners": 12,
+                "losers": 44
               },
               "GT_PLUS20": {
                 "keep": true,
-                "lift": 3.36,
-                "count": 248,
-                "winners": 114,
-                "losers": 134
+                "lift": 4.365,
+                "count": 55,
+                "winners": 29,
+                "losers": 26
               }
             },
             "DELTA_30S_60S": {
               "LT_MINUS25": {
                 "keep": false,
-                "lift": 0.487,
-                "count": 255,
-                "winners": 28,
-                "losers": 227
+                "lift": 0.285,
+                "count": 59,
+                "winners": 4,
+                "losers": 55
               },
               "MINUS25_MINUS10": {
                 "keep": false,
-                "lift": 0.514,
-                "count": 295,
-                "winners": 34,
-                "losers": 261
+                "lift": 0.518,
+                "count": 77,
+                "winners": 9,
+                "losers": 68
               },
               "MINUS10_MINUS3": {
                 "keep": false,
-                "lift": 0.693,
-                "count": 248,
-                "winners": 37,
-                "losers": 211
+                "lift": 0.978,
+                "count": 45,
+                "winners": 9,
+                "losers": 36
               },
               "MINUS3_PLUS3": {
                 "keep": false,
-                "lift": 0.941,
-                "count": 343,
-                "winners": 66,
-                "losers": 277
+                "lift": 0.583,
+                "count": 54,
+                "winners": 7,
+                "losers": 47
               },
               "PLUS3_PLUS10": {
                 "keep": false,
-                "lift": 1.064,
-                "count": 245,
-                "winners": 52,
-                "losers": 193
+                "lift": 1.001,
+                "count": 54,
+                "winners": 11,
+                "losers": 43
               },
               "PLUS10_PLUS25": {
                 "keep": true,
-                "lift": 1.488,
-                "count": 285,
-                "winners": 78,
-                "losers": 207
+                "lift": 1.702,
+                "count": 66,
+                "winners": 20,
+                "losers": 46
               },
               "GT_PLUS25": {
                 "keep": true,
-                "lift": 3.089,
-                "count": 180,
-                "winners": 79,
-                "losers": 101
+                "lift": 3.736,
+                "count": 43,
+                "winners": 21,
+                "losers": 22
               }
             },
             "DELTA_60S_5M": {
               "LT_MINUS40": {
                 "keep": false,
-                "lift": 1.141,
-                "count": 388,
-                "winners": 87,
-                "losers": 301
+                "lift": 0.824,
+                "count": 92,
+                "winners": 16,
+                "losers": 76
               },
               "MINUS40_MINUS20": {
                 "keep": false,
-                "lift": 0.364,
-                "count": 249,
-                "winners": 21,
-                "losers": 228
+                "lift": 0.319,
+                "count": 53,
+                "winners": 4,
+                "losers": 49
               },
               "MINUS20_MINUS5": {
                 "keep": false,
-                "lift": 0.602,
-                "count": 325,
-                "winners": 43,
-                "losers": 282
+                "lift": 0.675,
+                "count": 68,
+                "winners": 10,
+                "losers": 58
               },
               "MINUS5_PLUS5": {
                 "keep": false,
-                "lift": 0.444,
-                "count": 257,
-                "winners": 26,
-                "losers": 231
+                "lift": 0.5,
+                "count": 53,
+                "winners": 6,
+                "losers": 47
               },
               "PLUS5_PLUS20": {
                 "keep": false,
-                "lift": 1.022,
-                "count": 214,
-                "winners": 44,
-                "losers": 170
+                "lift": 0.712,
+                "count": 39,
+                "winners": 6,
+                "losers": 33
               },
               "PLUS20_PLUS50": {
                 "keep": true,
-                "lift": 1.885,
-                "count": 229,
-                "winners": 74,
-                "losers": 155
+                "lift": 1.236,
+                "count": 50,
+                "winners": 12,
+                "losers": 38
               },
               "GT_PLUS50": {
                 "keep": true,
-                "lift": 2.836,
-                "count": 189,
-                "winners": 79,
-                "losers": 110
+                "lift": 6.604,
+                "count": 43,
+                "winners": 27,
+                "losers": 16
               }
             }
           },
           "exit_distribution": {
             "post_exit_perf_10s": {
-              "count": 807,
-              "avg_pnl": -13.3,
+              "count": 184,
+              "avg_pnl": -15.92,
               "min_pnl": -98.29,
-              "max_pnl": 4.37
+              "max_pnl": 3.98
             },
             "post_exit_perf_5m": {
-              "count": 86,
-              "avg_pnl": -24.47,
-              "min_pnl": -99.7,
-              "max_pnl": 24.08
-            },
-            "post_exit_perf_60s": {
-              "count": 93,
-              "avg_pnl": -8.39,
-              "min_pnl": -99.55,
-              "max_pnl": 14.09
+              "count": 27,
+              "avg_pnl": -26.02,
+              "min_pnl": -97.74,
+              "max_pnl": 23.22
             },
             "post_exit_perf_30s": {
-              "count": 151,
-              "avg_pnl": -9.8,
-              "min_pnl": -88.84,
-              "max_pnl": 9.35
+              "count": 24,
+              "avg_pnl": -13.95,
+              "min_pnl": -88.77,
+              "max_pnl": 8.97
             },
             "post_exit_perf_10m": {
-              "count": 35,
-              "avg_pnl": 29.5,
-              "min_pnl": -97.68,
-              "max_pnl": 623.01
+              "count": 5,
+              "avg_pnl": 15.44,
+              "min_pnl": 4.18,
+              "max_pnl": 22.5
             },
-            "post_exit_delta_60s_5m": {
-              "count": 9,
-              "avg_pnl": 80.87,
-              "min_pnl": 25.4,
-              "max_pnl": 202.05
+            "post_exit_perf_60s": {
+              "count": 22,
+              "avg_pnl": -6.08,
+              "min_pnl": -59.48,
+              "max_pnl": 13.07
             },
             "post_exit_delta_10s_30s": {
-              "count": 24,
-              "avg_pnl": 24.46,
-              "min_pnl": 9.94,
-              "max_pnl": 54.03
+              "count": 8,
+              "avg_pnl": 31.4,
+              "min_pnl": 16.53,
+              "max_pnl": 56.35
             },
             "post_exit_delta_30s_60s": {
-              "count": 13,
-              "avg_pnl": 64.39,
-              "min_pnl": 20.52,
-              "max_pnl": 165.7
+              "count": 1,
+              "avg_pnl": 85.86,
+              "min_pnl": 85.86,
+              "max_pnl": 85.86
             },
-            "tp": {
+            "post_exit_delta_60s_5m": {
               "count": 2,
-              "avg_pnl": 59.4,
-              "min_pnl": 59.4,
-              "max_pnl": 59.4
-            },
-            "trailing": {
-              "count": 1,
-              "avg_pnl": 47.97,
-              "min_pnl": 47.97,
-              "max_pnl": 47.97
-            },
-            "sl": {
-              "count": 1,
-              "avg_pnl": -16.5,
-              "min_pnl": -16.5,
-              "max_pnl": -16.5
+              "avg_pnl": 113.53,
+              "min_pnl": 45.6,
+              "max_pnl": 181.45
             }
           },
-          "trail_slippage": {
-            "n_trailing": 1,
-            "n_gaps": 0,
-            "avg_gap": 0,
-            "worst_gap": 0,
-            "total_gap_cost": 0,
-            "n_negative_trails": 0,
-            "worst_examples": []
+          "trail_slippage": {},
+          "sub_strategy": {
+            "fib_ratio": 0.382
           },
           "_run_meta": {
             "db_name": "backtest_30d.db",
@@ -3404,10 +3378,25 @@
             "date_from": "2026-02-22",
             "date_to": "2026-02-25",
             "time_span": "3.0d",
-            "timestamp": "2026-02-25T12:49:58.761539+00:00"
+            "timestamp": "2026-02-25T13:27:01.251846+00:00"
           }
         },
-        "history": []
+        "history": [
+          {
+            "timestamp": "2026-02-25T12:49:58.761539+00:00",
+            "gates_passed": 1,
+            "all_11_passed": false,
+            "avg_pnl": -9.6257,
+            "win_rate": 0.3199672667757774,
+            "sortino": -13.626,
+            "n_trades": 1222,
+            "max_dd": 100.0,
+            "unique_mints": 785,
+            "total_entries": 3146,
+            "date_from": "2026-02-22",
+            "date_to": "2026-02-25"
+          }
+        ]
       },
       {
         "variant_key": "bdc28ec3e161",
