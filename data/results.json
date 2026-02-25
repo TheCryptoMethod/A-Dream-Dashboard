@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "last_updated": "2026-02-25T16:54:08.030608+00:00",
+  "last_updated": "2026-02-25T16:56:06.100288+00:00",
   "methods": {
     "M1": [
       {
@@ -10,8 +10,8 @@
         "fingerprint": "d1e68d7cf548",
         "flags": "methods=M1 realistic",
         "data_label": "backtest_30d.db | 769 mints | 2026-02-22 → 2026-02-25",
-        "updated_at": "2026-02-25T15:41:04.728721+00:00",
-        "run_count": 6,
+        "updated_at": "2026-02-25T16:56:06.100288+00:00",
+        "run_count": 7,
         "current": {
           "method": "M1",
           "config": {
@@ -1270,10 +1270,24 @@
             "date_from": "2026-02-22",
             "date_to": "2026-02-25",
             "time_span": "3.0d",
-            "timestamp": "2026-02-25T15:41:04.728721+00:00"
+            "timestamp": "2026-02-25T16:56:06.100288+00:00"
           }
         },
         "history": [
+          {
+            "timestamp": "2026-02-25T15:41:04.728721+00:00",
+            "gates_passed": 10,
+            "all_11_passed": false,
+            "avg_pnl": 7.9014,
+            "win_rate": 0.6704545454545454,
+            "sortino": 19.464,
+            "n_trades": 176,
+            "max_dd": 75.34,
+            "unique_mints": 769,
+            "total_entries": 769,
+            "date_from": "2026-02-22",
+            "date_to": "2026-02-25"
+          },
           {
             "timestamp": "2026-02-25T15:34:16.582211+00:00",
             "gates_passed": 9,
