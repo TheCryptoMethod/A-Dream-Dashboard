@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "last_updated": "2026-02-25T12:20:36.059347+00:00",
+  "last_updated": "2026-02-25T12:42:47.067920+00:00",
   "methods": {
     "M1": [
       {
@@ -10,8 +10,8 @@
         "fingerprint": "d1e68d7cf548",
         "flags": "methods=M1 realistic",
         "data_label": "backtest_30d.db | 769 mints | 2026-02-22 → 2026-02-25",
-        "updated_at": "2026-02-25T12:20:36.059347+00:00",
-        "run_count": 1,
+        "updated_at": "2026-02-25T12:42:47.067920+00:00",
+        "run_count": 2,
         "current": {
           "method": "M1",
           "config": {
@@ -1060,6 +1060,65 @@
               }
             }
           },
+          "exit_distribution": {
+            "post_exit_perf_10s": {
+              "count": 157,
+              "avg_pnl": -8.67,
+              "min_pnl": -96.72,
+              "max_pnl": 13.04
+            },
+            "post_exit_delta_10s_30s": {
+              "count": 2,
+              "avg_pnl": 20.94,
+              "min_pnl": 19.66,
+              "max_pnl": 22.22
+            },
+            "post_exit_perf_30s": {
+              "count": 7,
+              "avg_pnl": -10.12,
+              "min_pnl": -98.4,
+              "max_pnl": 9.16
+            },
+            "trailing": {
+              "count": 1,
+              "avg_pnl": 135.12,
+              "min_pnl": 135.12,
+              "max_pnl": 135.12
+            },
+            "post_exit_perf_5m": {
+              "count": 6,
+              "avg_pnl": -60.35,
+              "min_pnl": -98.36,
+              "max_pnl": 6.43
+            },
+            "post_exit_perf_60s": {
+              "count": 2,
+              "avg_pnl": -2.56,
+              "min_pnl": -5.43,
+              "max_pnl": 0.3
+            },
+            "post_exit_delta_60s_5m": {
+              "count": 1,
+              "avg_pnl": 127.05,
+              "min_pnl": 127.05,
+              "max_pnl": 127.05
+            }
+          },
+          "trail_slippage": {
+            "n_trailing": 1,
+            "n_gaps": 1,
+            "avg_gap": 7.1,
+            "worst_gap": 7.1,
+            "total_gap_cost": 7.1,
+            "n_negative_trails": 0,
+            "worst_examples": [
+              {
+                "expected": 142.8,
+                "actual": 135.7,
+                "gap": 7.1
+              }
+            ]
+          },
           "_run_meta": {
             "db_name": "backtest_30d.db",
             "db_hash": "0cbe962b8c5da57d",
@@ -1070,10 +1129,25 @@
             "date_from": "2026-02-22",
             "date_to": "2026-02-25",
             "time_span": "3.0d",
-            "timestamp": "2026-02-25T12:20:36.059347+00:00"
+            "timestamp": "2026-02-25T12:42:47.067920+00:00"
           }
         },
-        "history": []
+        "history": [
+          {
+            "timestamp": "2026-02-25T12:20:36.059347+00:00",
+            "gates_passed": 1,
+            "all_11_passed": false,
+            "avg_pnl": -8.4944,
+            "win_rate": 0.3806818181818182,
+            "sortino": -12.192,
+            "n_trades": 176,
+            "max_dd": 100.0,
+            "unique_mints": 769,
+            "total_entries": 769,
+            "date_from": "2026-02-22",
+            "date_to": "2026-02-25"
+          }
+        ]
       },
       {
         "variant_key": "d365497626f4",
