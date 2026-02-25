@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "last_updated": "2026-02-25T12:49:58.761539+00:00",
+  "last_updated": "2026-02-25T12:59:36.610798+00:00",
   "methods": {
     "M1": [
       {
@@ -4481,6 +4481,180 @@
       }
     ],
     "M3": [
+      {
+        "variant_key": "51ac1555e3dc",
+        "db_name": "backtest_30d.db",
+        "db_hash": "0cbe962b8c5da57d",
+        "fingerprint": "9e21231deb4e",
+        "flags": "methods=M3 realistic",
+        "data_label": "backtest_30d.db | 783 mints | 2026-02-22 → 2026-02-25",
+        "updated_at": "2026-02-25T12:59:36.610798+00:00",
+        "run_count": 1,
+        "current": {
+          "method": "M3",
+          "config": {
+            "method": "M3",
+            "entry_params": {},
+            "mcap_min": 10000,
+            "mcap_max": 200000,
+            "time_to_entry_min_ms": 0,
+            "time_to_entry_max_ms": 86400000,
+            "dd_at_entry_min": 0.0,
+            "dd_at_entry_max": 100.0,
+            "sl_pct": 15,
+            "tp_pct": 200,
+            "trailing_activation_pct": 0,
+            "trailing_pct": 0,
+            "has_trailing": false,
+            "fingerprint": "d6486e7e907e",
+            "post_entry_filters": {}
+          },
+          "env_block": "# ═══ A_Dream Strategy: M3 ═══\nTRADE_METHOD=M3\nENTRY_FIB_RATIO=0.382\nENTRY_REVERSAL_PCT=20\n# Pre-Entry Filters\nENTRY_MCAP_MIN=10000\nENTRY_MCAP_MAX=200000\n# Exit Model\nSL_PCT=15\nTP_PCT=200\nTRAILING_ACTIVATION_PCT=0\nTRAILING_PCT=0",
+          "n_total_entries": 28803,
+          "n_filtered_entries": 17168,
+          "gates_passed": 0,
+          "all_11_passed": false,
+          "metrics": {
+            "n_trades": 0,
+            "win_rate": 0.0,
+            "avg_pnl": 0.0,
+            "total_pnl": 0.0,
+            "profit_factor": 0.0,
+            "sortino": 0.0,
+            "sharpe": 0.0,
+            "max_dd": 0.0,
+            "risk_of_ruin": 100.0,
+            "n_early_exits": 0
+          },
+          "train_test": {
+            "train_n": 17168,
+            "test_n": 11522,
+            "train_avg_pnl": 0.0,
+            "test_avg_pnl": 0.0,
+            "train_win_rate": 0.0,
+            "test_win_rate": 0.0,
+            "train_period": "22.02 12:08 → 24.02 09:42",
+            "test_period": "24.02 09:42 → 25.02 11:27",
+            "split_ratio": 0.6
+          },
+          "gates": {},
+          "gate_values": {},
+          "lift_filters": {
+            "mcap": {
+              "<30k": {
+                "lift": 0.985,
+                "count": 9935,
+                "good": true
+              },
+              "30-60k": {
+                "lift": 0.92,
+                "count": 5320,
+                "good": true
+              },
+              "60-100k": {
+                "lift": 1.232,
+                "count": 1454,
+                "good": true
+              },
+              "100-200k": {
+                "lift": 1.827,
+                "count": 459,
+                "good": true
+              },
+              "200-500k": {
+                "lift": 0.28,
+                "count": 100,
+                "good": false
+              },
+              "500k-1M": {
+                "lift": 0.0,
+                "count": 13,
+                "good": false
+              }
+            },
+            "time": {
+              "0-1m": {
+                "lift": 1.351,
+                "count": 4049,
+                "good": true
+              },
+              "1-5m": {
+                "lift": 0.687,
+                "count": 6556,
+                "good": false
+              },
+              "5-15m": {
+                "lift": 1.226,
+                "count": 3465,
+                "good": true
+              },
+              "15-60m": {
+                "lift": 1.003,
+                "count": 2259,
+                "good": true
+              },
+              "1-6h": {
+                "lift": 1.001,
+                "count": 826,
+                "good": true
+              },
+              "6h+": {
+                "lift": 1.121,
+                "count": 126,
+                "good": true
+              }
+            },
+            "dd": {
+              "0-5%": {
+                "lift": 0.0,
+                "count": 0,
+                "good": false
+              },
+              "5-10%": {
+                "lift": 0.955,
+                "count": 185,
+                "good": true
+              },
+              "10-20%": {
+                "lift": 0.807,
+                "count": 5675,
+                "good": true
+              },
+              "20-30%": {
+                "lift": 1.025,
+                "count": 6483,
+                "good": true
+              },
+              "30-50%": {
+                "lift": 1.207,
+                "count": 4339,
+                "good": true
+              },
+              "50%+": {
+                "lift": 1.159,
+                "count": 599,
+                "good": true
+              }
+            }
+          },
+          "post_entry_filters": {},
+          "exit_distribution": {},
+          "trail_slippage": {},
+          "_run_meta": {
+            "db_name": "backtest_30d.db",
+            "db_hash": "0cbe962b8c5da57d",
+            "fingerprint": "9e21231deb4e",
+            "flags": "methods=M3 realistic",
+            "total_entries": 28803,
+            "unique_mints": 783,
+            "date_from": "2026-02-22",
+            "date_to": "2026-02-25",
+            "time_span": "3.0d",
+            "timestamp": "2026-02-25T12:59:36.610798+00:00"
+          }
+        },
+        "history": []
+      },
       {
         "variant_key": "5fb5327c2785",
         "db_name": "backtest_30d.db",
