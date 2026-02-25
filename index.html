@@ -132,6 +132,40 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
   .tt-grid{grid-template-columns:1fr}
   .d-grid{grid-template-columns:1fr 1fr}
 }
+
+/* ═══ Live Trader Panel ═══ */
+.live-panel{background:var(--surface);border:1px solid var(--green);border-radius:12px;margin-bottom:1.5rem;overflow:hidden;box-shadow:0 0 20px rgba(45,212,160,.08)}
+.live-panel.offline{border-color:var(--border);box-shadow:none}
+.live-head{display:flex;justify-content:space-between;align-items:center;padding:.85rem 1.25rem;cursor:pointer}
+.live-head:hover{background:var(--surface2)}
+.live-dot{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;margin-right:.5rem;animation:pulse 2s infinite}
+.live-panel.offline .live-dot{background:var(--text-dim);animation:none}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.live-title{font-family:var(--mono);font-size:.85rem;font-weight:600;color:#fff;display:flex;align-items:center}
+.live-stats{display:flex;gap:1.5rem;font-family:var(--mono);font-size:.7rem;color:var(--text-sec)}
+.live-stats .val{font-weight:600;color:#fff}
+.live-stats .green{color:var(--green)}.live-stats .red{color:var(--red)}
+.live-body{display:none;padding:0 1.25rem 1rem}
+.live-panel.expanded .live-body{display:block}
+.live-info{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.75rem;margin-bottom:.75rem}
+.live-info .li-box{background:var(--surface2);border-radius:8px;padding:.6rem .8rem}
+.li-label{font-size:.55rem;text-transform:uppercase;letter-spacing:.08em;color:var(--text-dim);margin-bottom:.15rem}
+.li-val{font-family:var(--mono);font-size:.9rem;font-weight:600}
+.terminal{background:#050a10;border:1px solid var(--border);border-radius:8px;padding:.5rem .75rem;max-height:240px;overflow-y:auto;font-family:var(--mono);font-size:.65rem;line-height:1.7}
+.terminal .line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.terminal .line .ts{color:var(--text-dim)}
+
+/* ═══ Sessions Sidebar ═══ */
+.sessions-toggle{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.4rem .8rem;font-family:var(--mono);font-size:.65rem;color:var(--text-sec);cursor:pointer;display:inline-flex;align-items:center;gap:.4rem;margin-bottom:1rem}
+.sessions-toggle:hover{border-color:var(--border-light);color:var(--text)}
+.sessions-list{display:none;margin-bottom:1.5rem}
+.sessions-list.visible{display:block}
+.session-row{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.6rem 1rem;margin-bottom:.4rem;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:.65rem}
+.session-row .s-left{display:flex;align-items:center;gap:.75rem}
+.session-row .s-method{color:var(--cyan);font-weight:600}
+.session-row .s-date{color:var(--text-dim)}
+.session-row .s-trades{color:var(--text-sec)}
+.session-row .s-pnl{font-weight:700}
 </style>
 </head>
 <body>
@@ -147,6 +181,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
     </div>
   </div>
   <div class="stats-row" id="stats"></div>
+  <div id="live-panel"></div>
+  <div id="sessions-section"></div>
   <div id="root"></div>
 </div>
 
@@ -441,6 +477,114 @@ async function init(){
 }
 init();
 setInterval(init,60000);
+
+// ═══════════════════════════════════════════════════════════════════
+// LIVE TRADER PANEL + SESSIONS
+// ═══════════════════════════════════════════════════════════════════
+const LIVE_URL='http://46.224.11.8:8780/live/';
+let liveExpanded=true;
+let sessionsVisible=false;
+let lastLiveData=null;
+
+function fmtDuration(s){
+  if(!s)return'—';
+  const h=Math.floor(s/3600),m=Math.floor((s%3600)/60),sec=Math.floor(s%60);
+  return h>0?`${h}h ${m}m`:m>0?`${m}m ${sec}s`:`${sec}s`;
+}
+function fmtPnl(v){return v==null?'—':`${v>=0?'+':''}${v.toFixed(4)}`}
+function pnlClass(v){return v>=0?'green':'red'}
+
+function renderLivePanel(d){
+  const p=$('live-panel');
+  if(!d||!d.active){
+    p.innerHTML=`<div class="live-panel offline${liveExpanded?' expanded':''}">
+      <div class="live-head" onclick="liveExpanded=!liveExpanded;renderLivePanel(lastLiveData)">
+        <div class="live-title"><span class="live-dot"></span>Trader Offline</div>
+        <div class="live-stats"><span style="color:var(--text-dim)">nicht aktiv</span></div>
+      </div></div>`;
+    return;
+  }
+  lastLiveData=d;
+  const b=d.balance||{},t=d.trades||{},pos=d.positions||{};
+  const pnlC=pnlClass(b.pnl_sol);
+  const uptime=fmtDuration(d.uptime_seconds);
+  const log=(d.recent_log||[]).slice(-30).map(l=>{
+    const m=l.match(/^\[(\d{2}:\d{2}:\d{2})\]\s*(.*)/);
+    if(m)return`<div class="line"><span class="ts">${m[1]}</span> ${m[2].replace(/🟢/g,'<span style="color:var(--green)">●</span>').replace(/🔴/g,'<span style="color:var(--red)">●</span>')}</div>`;
+    return`<div class="line">${l}</div>`;
+  }).join('');
+
+  p.innerHTML=`<div class="live-panel${liveExpanded?' expanded':''}">
+    <div class="live-head" onclick="liveExpanded=!liveExpanded;renderLivePanel(lastLiveData)">
+      <div class="live-title"><span class="live-dot"></span>Live — ${d.method||'?'}</div>
+      <div class="live-stats">
+        <span>⏱ ${uptime}</span>
+        <span>W:${t.wins||0} L:${t.losses||0}</span>
+        <span class="${pnlC} val">${fmtPnl(b.pnl_sol)} SOL</span>
+        <span>💰 ${b.current!=null?b.current.toFixed(4):'—'} SOL</span>
+        <span style="font-size:.6rem;color:var(--text-dim)">▼</span>
+      </div>
+    </div>
+    <div class="live-body">
+      <div class="live-info">
+        <div class="li-box"><div class="li-label">Method</div><div class="li-val" style="color:var(--cyan)">${d.method||'—'}</div></div>
+        <div class="li-box"><div class="li-label">PnL</div><div class="li-val ${pnlC}">${fmtPnl(b.pnl_sol)} SOL (${b.pnl_pct!=null?sp(b.pnl_pct,1):'—'})</div></div>
+        <div class="li-box"><div class="li-label">Trades</div><div class="li-val">${t.total||0} <span style="color:var(--text-dim);font-size:.7rem">(${t.win_rate||0}% WR)</span></div></div>
+        <div class="li-box"><div class="li-label">Balance</div><div class="li-val">${b.start!=null?b.start.toFixed(4):'—'} → ${b.current!=null?b.current.toFixed(4):'—'}</div></div>
+        <div class="li-box"><div class="li-label">Open Positions</div><div class="li-val">${pos.open||0}</div></div>
+        <div class="li-box"><div class="li-label">Uptime</div><div class="li-val">${uptime}</div></div>
+      </div>
+      <div class="terminal" id="term">${log||'<span style="color:var(--text-dim)">Waiting for logs...</span>'}</div>
+    </div>
+  </div>`;
+  // Auto-scroll terminal
+  const term=document.getElementById('term');
+  if(term)term.scrollTop=term.scrollHeight;
+}
+
+function renderSessions(sessions){
+  const s=$('sessions-section');
+  if(!sessions||!sessions.length){
+    s.innerHTML=`<div class="sessions-toggle" onclick="sessionsVisible=!sessionsVisible;pollSessions()">📋 Sessions (0)</div>`;
+    return;
+  }
+  const rows=sessions.slice(0,20).map(ss=>{
+    const pC=pnlClass(ss.pnl_sol);
+    const dt=ss.started_at?ss.started_at.substring(0,16).replace('T',' '):'—';
+    return`<div class="session-row">
+      <div class="s-left">
+        <span class="s-date">${dt}</span>
+        <span class="s-method">${ss.method||'?'}</span>
+        <span class="s-trades">${ss.total_trades||0}T (${ss.wins||0}W/${ss.losses||0}L)</span>
+        <span class="s-trades">${ss.duration_formatted||'—'}</span>
+      </div>
+      <span class="s-pnl ${pC}">${fmtPnl(ss.pnl_sol)} SOL (${ss.pnl_pct!=null?sp(ss.pnl_pct,1):'—'})</span>
+    </div>`;
+  }).join('');
+  s.innerHTML=`<div class="sessions-toggle" onclick="sessionsVisible=!sessionsVisible;document.querySelector('.sessions-list').classList.toggle('visible')">📋 Sessions (${sessions.length}) ${sessionsVisible?'▲':'▼'}</div>
+    <div class="sessions-list${sessionsVisible?' visible':''}">${rows}</div>`;
+}
+
+async function pollLive(){
+  try{
+    const r=await fetch(LIVE_URL+'live_status.json?t='+Date.now(),{signal:AbortSignal.timeout(3000)});
+    if(r.ok){renderLivePanel(await r.json())}
+    else{renderLivePanel(null)}
+  }catch(e){renderLivePanel(null)}
+}
+
+async function pollSessions(){
+  try{
+    const r=await fetch(LIVE_URL+'sessions_index.json?t='+Date.now(),{signal:AbortSignal.timeout(5000)});
+    if(r.ok){renderSessions(await r.json())}
+    else{renderSessions([])}
+  }catch(e){renderSessions([])}
+}
+
+// Start polling
+pollLive();pollSessions();
+setInterval(pollLive,3000);
+setInterval(pollSessions,30000);
 </script>
 </body>
 </html>
