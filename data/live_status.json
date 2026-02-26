@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-02-26T20:15:11.694188+00:00",
-  "updated_at": "2026-02-26T20:27:26.269443+00:00",
-  "uptime_seconds": 734.6,
+  "updated_at": "2026-02-26T20:28:27.382325+00:00",
+  "uptime_seconds": 795.7,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,12 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[20:20:50] \ud83d\udd14 Migration #18 detected",
-    "[20:20:56] \ud83d\udd14 Migration #19 detected",
-    "[20:21:15] \ud83d\udd14 Migration #20 detected",
-    "[20:21:15] \ud83d\udcca Mig:20 Track:0 Upd:1 Pos:0 SOL:$86.65",
-    "[20:21:17] \ud83d\udd14 Migration #21 detected",
-    "[20:21:25] \ud83d\udd14 Migration #22 detected",
     "[20:21:38] \u2705 BC Graduated: iSfVuaMVDuSf\u2026",
     "[20:21:39] \ud83d\udce1 Tracking: iSfVuaMVDuSfSQ7V\u2026 | Pool #1",
     "[20:21:40] \u26a0\ufe0f PumpSwap error: tx_failed",
@@ -562,7 +556,13 @@
     "[20:26:22] \ud83d\udd14 Migration #38 detected",
     "[20:26:31] \ud83d\udd14 Migration #39 detected",
     "[20:26:50] \ud83d\udd14 Migration #40 detected",
-    "[20:27:23] \ud83d\udcca Mig:40 Track:0 Upd:4 Pos:0 SOL:$86.63"
+    "[20:27:23] \ud83d\udcca Mig:40 Track:0 Upd:4 Pos:0 SOL:$86.63",
+    "[20:28:08] \ud83d\udd14 Migration #41 detected",
+    "[20:28:10] \ud83d\udd14 Migration #42 detected",
+    "[20:28:23] \u2705 BC Graduated: 2vjK7Z875kta\u2026",
+    "[20:28:24] \ud83d\udce1 Tracking: 2vjK7Z875ktaeNXt\u2026 | Pool #1",
+    "[20:28:24] \ud83d\udcca Mig:42 Track:1 Upd:4 Pos:0 SOL:$86.62",
+    "[20:28:24] \ud83d\udeab Disqualified: 2vjK7Z875kta\u2026 | mcap_bucket_not_enabled | 1s"
   ],
   "balance": {
     "start": 4.467193,
@@ -579,15 +579,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 86.63,
+  "sol_price": 86.62,
   "bot_stats": {
-    "migrations_seen": 40,
-    "migrations_added": 4,
+    "migrations_seen": 42,
+    "migrations_added": 5,
     "pools_tracking": 0,
-    "price_updates": 4,
+    "price_updates": 5,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 4,
+    "bc_graduated": 5,
     "entries_found": 1,
     "buys_success": 0,
     "buys_failed": 1
