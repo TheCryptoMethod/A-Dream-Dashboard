@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "last_updated": "2026-02-26T08:56:02.049511+00:00",
+  "last_updated": "2026-02-26T08:59:11.051347+00:00",
   "methods": {
     "M1": [
       {
@@ -10,8 +10,8 @@
         "fingerprint": "d1e68d7cf548",
         "flags": "methods=M1 realistic",
         "data_label": "backtest_30d.db | 769 mints | 2026-02-22 → 2026-02-25",
-        "updated_at": "2026-02-26T08:32:25.266743+00:00",
-        "run_count": 8,
+        "updated_at": "2026-02-26T08:59:11.051347+00:00",
+        "run_count": 9,
         "current": {
           "method": "M1",
           "config": {
@@ -588,138 +588,138 @@
           "lift_filters": {
             "mcap": {
               "<30k": {
-                "lift": 0.644,
-                "count": 155,
+                "lift": 0.621,
+                "count": 138,
                 "good": false
               },
               "30-60k": {
-                "lift": 1.207,
-                "count": 288,
+                "lift": 1.222,
+                "count": 248,
                 "good": true
               },
               "60-100k": {
-                "lift": 1.307,
-                "count": 15,
+                "lift": 1.527,
+                "count": 13,
                 "good": true
               },
               "100-200k": {
                 "lift": 0.0,
                 "count": 1,
-                "good": false
+                "good": true
               },
               "200-500k": {
                 "lift": 0.0,
                 "count": 2,
-                "good": false
+                "good": true
               },
               "500k-1M": {
                 "lift": 0.0,
                 "count": 0,
-                "good": false
+                "good": true
               }
             },
             "time": {
               "0-1m": {
                 "lift": 1.0,
-                "count": 461,
+                "count": 402,
                 "good": true
               },
               "1-5m": {
                 "lift": 0.0,
                 "count": 0,
-                "good": false
+                "good": true
               },
               "5-15m": {
                 "lift": 0.0,
                 "count": 0,
-                "good": false
+                "good": true
               },
               "15-60m": {
                 "lift": 0.0,
                 "count": 0,
-                "good": false
+                "good": true
               },
               "1-6h": {
                 "lift": 0.0,
                 "count": 0,
-                "good": false
+                "good": true
               },
               "6h+": {
                 "lift": 0.0,
                 "count": 0,
-                "good": false
+                "good": true
               }
             },
             "dd": {
               "0-5%": {
                 "lift": 1.0,
-                "count": 461,
+                "count": 402,
                 "good": true
               },
               "5-10%": {
                 "lift": 0.0,
                 "count": 0,
-                "good": false
+                "good": true
               },
               "10-20%": {
                 "lift": 0.0,
                 "count": 0,
-                "good": false
+                "good": true
               },
               "20-30%": {
                 "lift": 0.0,
                 "count": 0,
-                "good": false
+                "good": true
               },
               "30-50%": {
                 "lift": 0.0,
                 "count": 0,
-                "good": false
+                "good": true
               },
               "50%+": {
                 "lift": 0.0,
                 "count": 0,
-                "good": false
+                "good": true
               }
             },
             "hour": {
               "00-03h": {
-                "lift": 1.025,
+                "lift": 0.998,
                 "count": 61,
                 "good": true
               },
               "03-06h": {
-                "lift": 1.531,
+                "lift": 1.49,
                 "count": 53,
                 "good": true
               },
               "06-09h": {
-                "lift": 0.779,
+                "lift": 0.758,
                 "count": 54,
                 "good": false
               },
               "09-12h": {
-                "lift": 1.634,
+                "lift": 1.591,
                 "count": 21,
                 "good": true
               },
               "12-15h": {
-                "lift": 0.784,
+                "lift": 0.764,
                 "count": 46,
                 "good": false
               },
               "15-18h": {
-                "lift": 0.82,
-                "count": 59,
+                "lift": 0.0,
+                "count": 0,
                 "good": true
               },
               "18-21h": {
-                "lift": 1.245,
+                "lift": 1.212,
                 "count": 78,
                 "good": true
               },
               "21-24h": {
-                "lift": 0.738,
+                "lift": 0.718,
                 "count": 89,
                 "good": false
               }
@@ -1299,10 +1299,24 @@
             "date_from": "2026-02-22",
             "date_to": "2026-02-25",
             "time_span": "3.0d",
-            "timestamp": "2026-02-26T08:32:25.266743+00:00"
+            "timestamp": "2026-02-26T08:59:11.051347+00:00"
           }
         },
         "history": [
+          {
+            "timestamp": "2026-02-26T08:32:25.266743+00:00",
+            "gates_passed": 11,
+            "all_11_passed": true,
+            "avg_pnl": 7.7274,
+            "win_rate": 0.6655844155844156,
+            "sortino": 25.429,
+            "n_trades": 308,
+            "max_dd": 51.64,
+            "unique_mints": 769,
+            "total_entries": 769,
+            "date_from": "2026-02-22",
+            "date_to": "2026-02-25"
+          },
           {
             "timestamp": "2026-02-25T16:56:06.100288+00:00",
             "gates_passed": 10,
