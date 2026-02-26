@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-02-26T20:15:11.694188+00:00",
-  "updated_at": "2026-02-26T20:28:27.382325+00:00",
-  "uptime_seconds": 795.7,
+  "updated_at": "2026-02-26T20:29:28.596916+00:00",
+  "uptime_seconds": 856.9,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[20:21:38] \u2705 BC Graduated: iSfVuaMVDuSf\u2026",
-    "[20:21:39] \ud83d\udce1 Tracking: iSfVuaMVDuSfSQ7V\u2026 | Pool #1",
-    "[20:21:40] \u26a0\ufe0f PumpSwap error: tx_failed",
-    "[20:21:40] \u26a0\ufe0f Buy FAILED: M1 | iSfVuaMVDuSf\u2026",
     "[20:21:44] \ud83d\udd14 Migration #23 detected",
     "[20:22:16] \ud83d\udcca Mig:23 Track:0 Upd:2 Pos:0 SOL:$86.71",
     "[20:22:46] \ud83d\udd14 Migration #24 detected",
@@ -562,7 +558,11 @@
     "[20:28:23] \u2705 BC Graduated: 2vjK7Z875kta\u2026",
     "[20:28:24] \ud83d\udce1 Tracking: 2vjK7Z875ktaeNXt\u2026 | Pool #1",
     "[20:28:24] \ud83d\udcca Mig:42 Track:1 Upd:4 Pos:0 SOL:$86.62",
-    "[20:28:24] \ud83d\udeab Disqualified: 2vjK7Z875kta\u2026 | mcap_bucket_not_enabled | 1s"
+    "[20:28:24] \ud83d\udeab Disqualified: 2vjK7Z875kta\u2026 | mcap_bucket_not_enabled | 1s",
+    "[20:28:56] \ud83d\udd14 Migration #43 detected",
+    "[20:29:07] \ud83d\udd14 Migration #44 detected",
+    "[20:29:25] \ud83d\udcca Mig:44 Track:0 Upd:5 Pos:0 SOL:$86.59",
+    "[20:29:28] \ud83d\udd14 Migration #45 detected"
   ],
   "balance": {
     "start": 4.467193,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 86.62,
+  "sol_price": 86.59,
   "bot_stats": {
-    "migrations_seen": 42,
+    "migrations_seen": 45,
     "migrations_added": 5,
     "pools_tracking": 0,
     "price_updates": 5,
