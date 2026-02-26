@@ -78,7 +78,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
 .modal-overlay.open{opacity:1;visibility:visible}
 .modal{
   position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.95);
-  z-index:201;width:min(94vw,720px);max-height:min(88vh,680px);
+  z-index:201;width:min(96vw,960px);max-height:94vh;
   background:var(--surface);border:1px solid var(--border-light);
   border-radius:14px;overflow:hidden;
   display:flex;flex-direction:column;
@@ -88,6 +88,9 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
 }
 .modal-overlay.open + .modal,
 .modal.open{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1)}
+
+.modal.open.is-live{border-color:rgba(45,212,160,.3);box-shadow:0 20px 60px rgba(0,0,0,.5),0 0 40px rgba(45,212,160,.08)}
+.modal.open.is-dry{border-color:rgba(232,181,62,.3);box-shadow:0 20px 60px rgba(0,0,0,.5),0 0 40px rgba(232,181,62,.06)}
 
 /* Modal Header */
 .m-head{
@@ -116,7 +119,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
 }
 .ms-box{background:var(--surface);padding:.55rem .7rem}
 .ms-label{font-size:.45rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-dim);font-weight:700;margin-bottom:.15rem}
-.ms-val{font-family:var(--mono);font-size:.8rem;font-weight:700}
+.ms-val{font-family:var(--mono);font-size:.9rem;font-weight:700}
 
 /* Modal Bot Stats */
 .m-bot-stats{
@@ -125,8 +128,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
   background:rgba(0,0,0,.15);
 }
 .bs-pill{
-  font-family:var(--mono);font-size:.55rem;font-weight:600;
-  padding:.2rem .5rem;border-radius:5px;
+  font-family:var(--mono);font-size:.6rem;font-weight:600;
+  padding:.25rem .6rem;border-radius:6px;
   background:rgba(255,255,255,.04);color:var(--text-sec);
   display:flex;align-items:center;gap:.3rem;
 }
@@ -135,9 +138,9 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
 
 /* Modal Terminal */
 .m-terminal{
-  flex:1;overflow-y:auto;padding:.6rem .8rem;
+  flex:1;min-height:300px;overflow-y:auto;padding:.8rem 1rem;
   background:#040810;
-  font-family:var(--mono);font-size:.65rem;line-height:1.75;
+  font-family:var(--mono);font-size:.72rem;line-height:1.8;
   -webkit-overflow-scrolling:touch;
 }
 .m-terminal::-webkit-scrollbar{width:6px}
@@ -271,9 +274,10 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
   .lb-status{font-size:.65rem}
   .lb-right{gap:.5rem;font-size:.55rem}
   .lb-right .hide-m{display:none}
-  .modal{width:98vw;max-height:92vh;border-radius:10px}
+  .modal{width:100vw;max-height:100vh;border-radius:0;top:50%;left:50%;transform:translate(-50%,-50%) scale(.95)}
+  .modal.open{transform:translate(-50%,-50%) scale(1)}
   .m-stats{grid-template-columns:repeat(2,1fr)}
-  .m-terminal{font-size:.58rem}
+  .m-terminal{font-size:.62rem;min-height:200px}
   .m-head{padding:.6rem .8rem}
   .ms-val{font-size:.7rem}
   .variant-row{flex-direction:column;align-items:flex-start;gap:.35rem}
@@ -354,7 +358,13 @@ let liveData=null,modalOpen=false,sessionsVisible=false;
 function openTerminal(){
   modalOpen=true;
   $('modal-overlay').classList.add('open');
-  $('modal').classList.add('open');
+  const modal=$('modal');
+  modal.classList.add('open');
+  // Add mode class for glow
+  modal.classList.remove('is-live','is-dry');
+  if(liveData&&liveData.status==='live'){
+    modal.classList.add(liveData.dry_run?'is-dry':'is-live');
+  }
   renderModal(liveData);
 }
 function closeTerminal(){
@@ -382,7 +392,8 @@ function colorLine(raw){
 function updateBar(d){
   const dot=$('lb-dot'),st=$('lb-status'),rt=$('lb-right');
   if(!d||d.status!=='live'){
-    dot.className='lb-dot off';st.className='lb-status off';st.textContent='Trader Offline';
+    dot.className='lb-dot off';st.className='lb-status off';
+    st.textContent=d&&d._was_stale?'⏸ Verbindung unterbrochen':'Trader Offline';
     rt.innerHTML='';return;
   }
   const dry=d.dry_run,mode=dry?'dry':'live';
@@ -404,9 +415,13 @@ function renderModal(d){
   if(!d||d.status!=='live'){
     mDot.className='mdot off';mTitle.textContent='Bot Terminal — Offline';
     mStats.innerHTML='';mBotStats.innerHTML='';
-    mTerm.innerHTML='<div style="color:var(--text-dim);padding:2rem;text-align:center">Bot ist nicht aktiv.'
-      +(d&&d.last_session?`<br><br><span style="color:var(--text-sec)">Letzte Session: ${d.last_session.method||'?'} · ${d.last_session.duration_formatted||'?'} · ${fmtPnl(d.last_session.pnl_sol)} SOL</span>`:'')+
-      '</div>';
+    let offMsg='<div style="color:var(--text-dim);padding:3rem;text-align:center;font-size:.8rem">'
+      +'<div style="font-size:2rem;margin-bottom:.5rem">⏸</div>'
+      +'Bot ist nicht aktiv.';
+    if(d&&d._was_stale) offMsg+='<br><span style="color:var(--yellow);font-size:.7rem">Letzte Daten sind älter als 2 Minuten.</span>';
+    if(d&&d.last_session) offMsg+=`<br><br><div style="background:var(--surface2);border-radius:8px;padding:.8rem;display:inline-block;text-align:left"><span style="color:var(--cyan)">${d.last_session.method||'?'}</span> · ${d.last_session.duration_formatted||'?'}<br><span style="color:var(--${(d.last_session.pnl_sol||0)>=0?'green':'red'})">${fmtPnl(d.last_session.pnl_sol)} SOL</span> · ${d.last_session.total_trades||0} Trades</div>`;
+    offMsg+='</div>';
+    mTerm.innerHTML=offMsg;
     mFootL.textContent='—';mFootR.textContent='—';
     return;
   }
@@ -448,7 +463,18 @@ function renderModal(d){
 }
 
 /* ═══ LIVE POLL ═══ */
+function isStale(d){
+  if(!d||!d.updated_at) return true;
+  const updated=new Date(d.updated_at).getTime();
+  const now=Date.now();
+  return (now - updated) > 150000; // 2.5 minutes = stale
+}
+
 function renderLive(d){
+  // If data is stale, treat as offline
+  if(d && d.status==='live' && isStale(d)){
+    d={...d, status:'offline', _was_stale:true};
+  }
   liveData=d;
   updateBar(d);
   if(modalOpen) renderModal(d);
