@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-02-26T20:55:53.240511+00:00",
-  "updated_at": "2026-02-26T21:00:59.070780+00:00",
-  "uptime_seconds": 305.8,
+  "updated_at": "2026-02-26T21:02:00.308938+00:00",
+  "uptime_seconds": 367.1,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,12 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[20:55:53] \ud83d\ude80 Bot gestartet \u2014 M1",
-    "[20:55:53] \ud83d\udcb0 Balance: 4.4667 SOL",
-    "[20:56:14] \ud83d\udd14 Migration #1 detected",
-    "[20:56:14] \ud83d\udd14 Migration #2 detected",
-    "[20:56:14] \ud83d\udd14 Migration #3 detected",
-    "[20:56:14] \ud83d\udd14 Migration #4 detected",
     "[20:56:14] \ud83d\udd14 Migration #5 detected",
     "[20:56:14] \ud83d\udd14 Migration #6 detected",
     "[20:56:14] \ud83d\udd14 Migration #7 detected",
@@ -552,7 +546,23 @@
     "[21:00:26] \ud83d\udd14 Migration #21 detected",
     "[21:00:27] \ud83d\udd14 Migration #22 detected",
     "[21:00:50] \ud83d\udd14 Migration #23 detected",
-    "[21:00:56] \ud83d\udcca Mig:23 Track:0 Upd:0 Pos:0 SOL:$86.00"
+    "[21:00:56] \ud83d\udcca Mig:23 Track:0 Upd:0 Pos:0 SOL:$86.00",
+    "[21:01:02] \ud83d\udd14 Migration #24 detected",
+    "[21:01:04] \ud83d\udd14 Migration #25 detected",
+    "[21:01:26] \ud83d\udd14 Migration #26 detected",
+    "[21:01:31] \ud83d\udd14 Migration #27 detected",
+    "[21:01:33] \ud83d\udd14 Migration #28 detected",
+    "[21:01:33] \ud83d\udd14 Migration #29 detected",
+    "[21:01:35] \ud83d\udd14 Migration #30 detected",
+    "[21:01:40] \u2705 BC Graduated: FAo8Fs6FVc61\u2026",
+    "[21:01:40] \ud83d\udce1 Tracking: FAo8Fs6FVc61U7ua\u2026 | Pool #1",
+    "[21:01:41] \u26a0\ufe0f PumpSwap error: tx_failed",
+    "[21:01:41] \u26a0\ufe0f Buy FAILED: M1 | FAo8Fs6FVc61\u2026",
+    "[21:01:46] \u2705 BC Graduated: cjjGh8K4ZbjW\u2026",
+    "[21:01:46] \ud83d\udce1 Tracking: cjjGh8K4ZbjWVYQh\u2026 | Pool #1",
+    "[21:01:49] \u26a0\ufe0f PumpSwap error: tx_failed",
+    "[21:01:49] \u26a0\ufe0f Buy FAILED: M1 | cjjGh8K4ZbjW\u2026",
+    "[21:01:57] \ud83d\udcca Mig:30 Track:0 Upd:2 Pos:0 SOL:$86.12"
   ],
   "balance": {
     "start": 4.466688,
@@ -569,17 +579,17 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 86.0,
+  "sol_price": 86.12,
   "bot_stats": {
-    "migrations_seen": 23,
-    "migrations_added": 0,
+    "migrations_seen": 30,
+    "migrations_added": 2,
     "pools_tracking": 0,
-    "price_updates": 0,
+    "price_updates": 2,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 0,
-    "entries_found": 0,
+    "bc_graduated": 2,
+    "entries_found": 2,
     "buys_success": 0,
-    "buys_failed": 0
+    "buys_failed": 2
   }
 }
