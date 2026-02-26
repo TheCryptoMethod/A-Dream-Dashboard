@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-02-26T10:40:11.004423+00:00",
-  "updated_at": "2026-02-26T10:41:12.228853+00:00",
-  "uptime_seconds": 61.2,
+  "updated_at": "2026-02-26T10:42:13.406270+00:00",
+  "uptime_seconds": 122.4,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
@@ -10,7 +10,10 @@
     "[10:40:11] \ud83d\ude80 Bot gestartet \u2014 ENV",
     "[10:40:11] \ud83d\udcb0 Balance: 0.0312 SOL",
     "[10:40:40] \ud83d\udd14 Migration #1 detected",
-    "[10:41:09] \ud83d\udcca Mig:1 Track:0 Upd:0 Pos:0 SOL:$87.68"
+    "[10:41:09] \ud83d\udcca Mig:1 Track:0 Upd:0 Pos:0 SOL:$87.68",
+    "[10:41:47] \ud83d\udd14 Migration #2 detected",
+    "[10:42:10] \ud83d\udcca Mig:2 Track:0 Upd:0 Pos:0 SOL:$87.69",
+    "[10:42:10] \ud83d\udd14 Migration #3 detected"
   ],
   "balance": {
     "start": 0.031193,
@@ -27,9 +30,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 87.68,
+  "sol_price": 87.69,
   "bot_stats": {
-    "migrations_seen": 1,
+    "migrations_seen": 3,
     "migrations_added": 0,
     "pools_tracking": 0,
     "price_updates": 0,
