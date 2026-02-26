@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-02-26T21:46:51.153988+00:00",
-  "updated_at": "2026-02-26T22:09:18.662445+00:00",
-  "uptime_seconds": 1347.5,
+  "updated_at": "2026-02-26T22:10:19.761611+00:00",
+  "uptime_seconds": 1408.6,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,15 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[22:00:03] \ud83d\udd14 Migration #27 detected",
-    "[22:00:04] \ud83d\udcca Mig:27 Track:0 Upd:1 Pos:0 SOL:$86.04",
-    "[22:00:15] \ud83d\udd14 Migration #28 detected",
-    "[22:00:29] \ud83d\udd14 Migration #29 detected",
-    "[22:00:38] \ud83d\udd14 Migration #30 detected",
-    "[22:00:53] \ud83d\udd14 Migration #31 detected",
-    "[22:00:55] \ud83d\udd14 Migration #32 detected",
-    "[22:01:06] \ud83d\udcca Mig:32 Track:0 Upd:1 Pos:0 SOL:$86.04",
-    "[22:01:23] \ud83d\udd14 Migration #33 detected",
     "[22:02:07] \ud83d\udcca Mig:33 Track:0 Upd:1 Pos:0 SOL:$85.98",
     "[22:02:09] \ud83d\udd14 Migration #34 detected",
     "[22:03:08] \ud83d\udcca Mig:34 Track:0 Upd:1 Pos:0 SOL:$85.98",
@@ -562,7 +553,16 @@
     "[22:08:56] \ud83d\udd14 Migration #54 detected",
     "[22:09:02] \ud83d\udd14 Migration #55 detected",
     "[22:09:15] \ud83d\udcca Mig:55 Track:0 Upd:1 Pos:0 SOL:$85.99",
-    "[22:09:16] \ud83d\udd14 Migration #56 detected"
+    "[22:09:16] \ud83d\udd14 Migration #56 detected",
+    "[22:09:31] \u2705 BC Graduated: 8jHd2CvH31if\u2026",
+    "[22:09:31] \ud83d\udce1 Tracking: 8jHd2CvH31if1NjS\u2026 | Pool #1",
+    "[22:09:33] \u26a0\ufe0f PumpSwap error: tx_failed",
+    "[22:09:33] \u26a0\ufe0f Buy FAILED: M1 | 8jHd2CvH31if\u2026",
+    "[22:09:42] \ud83d\udd14 Migration #57 detected",
+    "[22:09:51] \ud83d\udd14 Migration #58 detected",
+    "[22:10:00] \ud83d\udd14 Migration #59 detected",
+    "[22:10:16] \ud83d\udd14 Migration #60 detected",
+    "[22:10:16] \ud83d\udcca Mig:60 Track:0 Upd:2 Pos:0 SOL:$85.99"
   ],
   "balance": {
     "start": 4.461638,
@@ -581,15 +581,15 @@
   },
   "sol_price": 85.99,
   "bot_stats": {
-    "migrations_seen": 56,
-    "migrations_added": 1,
+    "migrations_seen": 60,
+    "migrations_added": 2,
     "pools_tracking": 0,
-    "price_updates": 1,
+    "price_updates": 2,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 1,
-    "entries_found": 1,
+    "bc_graduated": 2,
+    "entries_found": 2,
     "buys_success": 0,
-    "buys_failed": 1
+    "buys_failed": 2
   }
 }
