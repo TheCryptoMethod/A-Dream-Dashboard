@@ -2,8 +2,11 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>A_Dream Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -18,46 +21,122 @@
   --magenta: #c77dff; --magenta-bg: rgba(199,125,255,.10);
   --mono: 'IBM Plex Mono', 'Fira Code', monospace;
   --sans: 'DM Sans', system-ui, sans-serif;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  --bar-h: 44px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14px;min-height:100vh}
-.page{max-width:1100px;margin:0 auto;padding:1.5rem 1rem 4rem}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14px;min-height:100vh;
+  padding-top:calc(var(--bar-h) + var(--safe-top));
+  padding-bottom:var(--safe-bottom);
+  -webkit-text-size-adjust:100%;
+}
 
-/* ── Header ── */
+/* ═══ STICKY LIVE BAR ═══ */
+.live-bar{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding-top:var(--safe-top);
+  background:linear-gradient(180deg,rgba(8,12,20,.97) 0%,rgba(8,12,20,.92) 100%);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.live-bar-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  height:var(--bar-h);
+  padding:0 max(1rem, var(--safe-left)) 0 max(1rem, var(--safe-right));
+  max-width:1200px;margin:0 auto;
+}
+.lb-left{display:flex;align-items:center;gap:.6rem;min-width:0}
+.lb-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.lb-dot.live{background:var(--green);box-shadow:0 0 8px var(--green);animation:pulse 2s infinite}
+.lb-dot.dry{background:var(--yellow);animation:pulse 2s infinite}
+.lb-dot.off{background:var(--text-dim)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.lb-status{font-family:var(--mono);font-size:.75rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lb-status.live{color:var(--green)}
+.lb-status.dry{color:var(--yellow)}
+.lb-status.off{color:var(--text-dim)}
+.lb-right{display:flex;align-items:center;gap:1rem;font-family:var(--mono);font-size:.65rem;color:var(--text-sec);flex-shrink:0}
+.lb-right .val{font-weight:600;color:#fff}
+.lb-right .g{color:var(--green)}.lb-right .r{color:var(--red)}
+.lb-tag{font-size:.5rem;font-weight:700;letter-spacing:.05em;padding:.15rem .4rem;border-radius:3px;text-transform:uppercase}
+.lb-tag.live-tag{background:var(--green-bg);color:var(--green)}
+.lb-tag.dry-tag{background:var(--yellow-bg);color:var(--yellow)}
+
+/* ═══ PAGE ═══ */
+.page{max-width:1100px;margin:0 auto;padding:1.5rem max(1rem,var(--safe-left)) 4rem max(1rem,var(--safe-right))}
 .top-bar{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--border)}
 .top-bar h1{font-family:var(--mono);font-size:1.5rem;font-weight:700;color:#fff;letter-spacing:-.02em}
 .top-bar h1 span{color:var(--accent)}
 .top-bar .meta{font-size:.7rem;color:var(--text-dim);font-family:var(--mono);text-align:right}
-
-/* ── Summary row ── */
 .stats-row{display:flex;gap:.75rem;margin-bottom:2rem;flex-wrap:wrap}
-.stat{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.65rem 1rem;min-width:130px;flex:1}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.65rem 1rem;min-width:110px;flex:1}
 .stat-label{font-size:.55rem;text-transform:uppercase;letter-spacing:.08em;color:var(--text-dim);font-weight:600;margin-bottom:.2rem}
 .stat-val{font-family:var(--mono);font-size:1.15rem;font-weight:700}
 .stat-sub{font-size:.6rem;color:var(--text-dim);margin-top:.15rem}
 
-/* ── Method Card ── */
+/* ═══ LIVE PANEL ═══ */
+.live-panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:1.5rem;overflow:hidden;transition:border-color .3s,box-shadow .3s}
+.live-panel.is-live{border-color:var(--green);box-shadow:0 0 20px rgba(45,212,160,.08)}
+.live-panel.is-dry{border-color:var(--yellow);box-shadow:0 0 15px rgba(232,181,62,.06)}
+.live-head{display:flex;justify-content:space-between;align-items:center;padding:.85rem 1rem;cursor:pointer;gap:.5rem;-webkit-tap-highlight-color:transparent}
+.live-head:hover{background:var(--surface2)}
+.live-title{font-family:var(--mono);font-size:.8rem;font-weight:600;color:#fff;display:flex;align-items:center;gap:.5rem;min-width:0}
+.dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.dot.live{background:var(--green);animation:pulse 2s infinite}
+.dot.dry{background:var(--yellow);animation:pulse 2s infinite}
+.dot.off{background:var(--text-dim)}
+.live-meta{display:flex;gap:1rem;font-family:var(--mono);font-size:.65rem;color:var(--text-sec);align-items:center;flex-shrink:0}
+.live-meta .g{color:var(--green)}.live-meta .r{color:var(--red)}
+.live-caret{color:var(--text-dim);font-size:.75rem;transition:transform .2s;flex-shrink:0}
+.live-panel.expanded .live-caret{transform:rotate(180deg)}
+.live-body{display:none;padding:0 1rem 1rem;overflow:hidden}
+.live-panel.expanded .live-body{display:block}
+.live-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-bottom:.75rem}
+.lg-box{background:var(--surface2);border-radius:8px;padding:.55rem .75rem}
+.lg-label{font-size:.5rem;text-transform:uppercase;letter-spacing:.08em;color:var(--text-dim);margin-bottom:.1rem}
+.lg-val{font-family:var(--mono);font-size:.85rem;font-weight:600}
+.terminal{background:#050a10;border:1px solid var(--border);border-radius:8px;padding:.5rem .6rem;max-height:220px;overflow-y:auto;font-family:var(--mono);font-size:.6rem;line-height:1.7;-webkit-overflow-scrolling:touch}
+.terminal .line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.terminal .ts{color:var(--text-dim)}
+
+/* ═══ SESSIONS ═══ */
+.sessions-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem}
+.sessions-title{font-family:var(--mono);font-size:.8rem;font-weight:600;color:var(--text-sec);cursor:pointer;display:flex;align-items:center;gap:.4rem;-webkit-tap-highlight-color:transparent}
+.sessions-title:hover{color:var(--text)}
+.sessions-list{margin-bottom:1.5rem}
+.sessions-list.hidden{display:none}
+.session-row{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.55rem .8rem;margin-bottom:.35rem;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:.62rem;gap:.5rem;flex-wrap:wrap}
+.session-row .s-left{display:flex;align-items:center;gap:.6rem;min-width:0;flex-wrap:wrap}
+.s-date{color:var(--text-dim);white-space:nowrap}
+.s-method{color:var(--cyan);font-weight:600;white-space:nowrap}
+.s-mode{font-size:.5rem;font-weight:700;letter-spacing:.04em;padding:.1rem .35rem;border-radius:3px;text-transform:uppercase}
+.s-mode.live-mode{background:var(--green-bg);color:var(--green)}
+.s-mode.dry-mode{background:var(--yellow-bg);color:var(--yellow)}
+.s-trades{color:var(--text-sec);white-space:nowrap}
+.s-pnl{font-weight:700;white-space:nowrap;flex-shrink:0}
+
+/* ═══ METHOD CARDS ═══ */
 .method-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:1rem;overflow:hidden;transition:border-color .2s}
 .method-card:hover{border-color:var(--border-light)}
-.method-head{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem}
-.method-title{display:flex;align-items:center;gap:.75rem}
-.method-title h2{font-family:var(--mono);font-size:1.1rem;font-weight:700;color:#fff}
-.method-title .count-badge{font-size:.6rem;font-family:var(--mono);color:var(--text-dim);background:var(--surface2);padding:.15rem .5rem;border-radius:20px}
-.method-right{display:flex;align-items:center;gap:1rem;font-family:var(--mono);font-size:.65rem;color:var(--text-dim)}
-
-/* ── Variant Row ── */
-.variant-list{padding:0 1.25rem 1rem}
-.variant-row{position:relative;padding:.75rem 0;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.method-head{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.1rem}
+.method-title{display:flex;align-items:center;gap:.6rem;min-width:0}
+.method-title h2{font-family:var(--mono);font-size:1rem;font-weight:700;color:#fff;white-space:nowrap}
+.method-title .count-badge{font-size:.55rem;font-family:var(--mono);color:var(--text-dim);background:var(--surface2);padding:.12rem .45rem;border-radius:20px}
+.method-right{display:flex;align-items:center;gap:.75rem;font-family:var(--mono);font-size:.6rem;color:var(--text-dim);flex-shrink:0}
+.variant-list{padding:0 1.1rem 1rem}
+.variant-row{position:relative;padding:.7rem 0;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:.75rem;flex-wrap:wrap}
 .variant-row:first-child{border-top:none}
-.vr-left{display:flex;flex-direction:column;gap:.3rem;min-width:200px}
-.vr-label{font-family:var(--mono);font-size:.75rem;color:var(--text-sec)}
-.vr-sub{font-size:.6rem;color:var(--text-dim)}
-.vr-center{display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;flex:1;justify-content:flex-start;padding-left:1rem}
-.vr-right{display:flex;align-items:center;gap:.75rem;flex-shrink:0}
-.vr-date{font-size:.6rem;color:var(--text-dim);font-family:var(--mono);white-space:nowrap}
-
-/* ── Badges / Pills ── */
-.pill{display:inline-flex;align-items:center;font-family:var(--mono);font-size:.6rem;font-weight:600;padding:.2rem .55rem;border-radius:5px;white-space:nowrap}
+.vr-left{display:flex;flex-direction:column;gap:.25rem;min-width:0;max-width:100%}
+.vr-label{font-family:var(--mono);font-size:.7rem;color:var(--text-sec);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vr-sub{font-size:.55rem;color:var(--text-dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vr-center{display:flex;flex-wrap:wrap;gap:.3rem;align-items:center;flex:1;justify-content:flex-start}
+.vr-right{display:flex;align-items:center;gap:.6rem;flex-shrink:0}
+.vr-date{font-size:.55rem;color:var(--text-dim);font-family:var(--mono);white-space:nowrap}
+.pill{display:inline-flex;align-items:center;font-family:var(--mono);font-size:.55rem;font-weight:600;padding:.15rem .45rem;border-radius:5px;white-space:nowrap}
 .pill-green{background:var(--green-bg);color:var(--green)}
 .pill-red{background:var(--red-bg);color:var(--red)}
 .pill-yellow{background:var(--yellow-bg);color:var(--yellow)}
@@ -65,526 +144,202 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
 .pill-magenta{background:var(--magenta-bg);color:var(--magenta)}
 .pill-dim{background:rgba(255,255,255,.04);color:var(--text-dim)}
 .pill-accent{background:var(--accent-glow);color:var(--accent)}
-
-/* Gate score pill */
-.gate-score{font-family:var(--mono);font-size:.65rem;font-weight:700;padding:.2rem .6rem;border-radius:5px}
-
-/* ── Open Button ── */
-.btn-open{font-family:var(--mono);font-size:.65rem;font-weight:600;padding:.35rem .9rem;border-radius:6px;border:1px solid var(--accent);color:var(--accent);background:transparent;cursor:pointer;transition:all .15s;white-space:nowrap}
-.btn-open:hover{background:var(--accent);color:#000}
+.gate-score{font-family:var(--mono);font-size:.6rem;font-weight:700;padding:.15rem .5rem;border-radius:5px}
+.gate-bar{display:flex;gap:2px;align-items:center}
+.gate-dot{width:5px;height:5px;border-radius:2px}
+.gate-dot.pass{background:var(--green)}.gate-dot.fail{background:var(--red)}
+.btn-open{font-family:var(--mono);font-size:.6rem;font-weight:600;padding:.3rem .75rem;border-radius:6px;border:1px solid var(--accent);color:var(--accent);background:transparent;cursor:pointer;transition:all .15s;white-space:nowrap;-webkit-tap-highlight-color:transparent}
+.btn-open:hover,.btn-open:active{background:var(--accent);color:#000}
 .btn-open.active{background:var(--accent);color:#000}
-
-/* ── Detail Panel (slide down) ── */
 .detail-panel{max-height:0;overflow:hidden;transition:max-height .35s ease;background:var(--surface2);border-top:1px solid var(--border)}
-.detail-panel.open{max-height:3000px;border-top:1px solid var(--border)}
-.detail-inner{padding:1.25rem}
-
-/* ── Detail layout ── */
+.detail-panel.open{max-height:5000px}
+.detail-inner{padding:1rem}
 .d-section{margin-bottom:1rem}
-.d-section-title{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-bottom:.5rem;display:flex;align-items:center;gap:.4rem}
-.d-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:.25rem}
-.kv{display:flex;justify-content:space-between;font-size:.68rem;padding:.2rem .35rem;border-radius:4px}
+.d-section-title{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-bottom:.4rem;display:flex;align-items:center;gap:.35rem}
+.d-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.2rem}
+.kv{display:flex;justify-content:space-between;font-size:.62rem;padding:.15rem .3rem;border-radius:4px}
 .kv:nth-child(odd){background:rgba(255,255,255,.015)}
 .kv-l{color:var(--text-dim)}.kv-v{font-family:var(--mono);font-weight:600;color:var(--text)}
-
-/* ── Train/Test ── */
-.tt-grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:.5rem}
-.tt-box{background:rgba(255,255,255,.02);border-radius:8px;padding:.6rem .75rem;border-left:3px solid var(--border)}
-.tt-box.train{border-left-color:var(--cyan)}
-.tt-box.test{border-left-color:var(--green)}
-.tt-label{font-size:.55rem;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:.3rem}
-.overfit-strip{font-family:var(--mono);font-size:.65rem;padding:.35rem .6rem;border-radius:6px;display:inline-block}
-
-/* ── LIFT / Post bars ── */
-.bar-row{display:flex;align-items:center;gap:.3rem;font-size:.58rem;font-family:var(--mono);margin:.15rem 0}
-.bar-label{width:85px;color:var(--text-dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.bar-bg{flex:1;height:8px;background:rgba(255,255,255,.04);border-radius:4px;overflow:hidden}
-.bar-fill{height:100%;border-radius:4px;transition:width .3s}
-.bar-fill.good{background:var(--green)}.bar-fill.bad{background:var(--red)}
-.bar-val{width:32px;text-align:right}.bar-n{width:28px;color:var(--text-dim);text-align:right}
-
-/* ── .env ── */
-.env-wrap{position:relative;margin-top:.75rem}
-.env-block{background:#070b12;border:1px solid var(--border);border-radius:8px;padding:.8rem 1rem;font-family:var(--mono);font-size:.58rem;line-height:1.6;white-space:pre-wrap;word-break:break-all;color:var(--text-sec);max-height:300px;overflow-y:auto}
+.tt-grid{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-bottom:.5rem}
+.tt-box{background:rgba(255,255,255,.02);border-radius:8px;padding:.5rem .65rem;border-left:3px solid var(--border)}
+.tt-box.train{border-left-color:var(--cyan)}.tt-box.test{border-left-color:var(--green)}
+.tt-label{font-size:.5rem;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:.25rem}
+.overfit-strip{font-family:var(--mono);font-size:.6rem;padding:.3rem .5rem;border-radius:6px;display:inline-block}
+.bar-row{display:flex;align-items:center;gap:.25rem;font-size:.55rem;font-family:var(--mono);margin:.12rem 0}
+.bar-label{width:80px;color:var(--text-dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar-bg{flex:1;height:7px;background:rgba(255,255,255,.04);border-radius:4px;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px}.bar-fill.good{background:var(--green)}.bar-fill.bad{background:var(--red)}
+.bar-val{width:30px;text-align:right}.bar-n{width:26px;color:var(--text-dim);text-align:right}
+.env-wrap{position:relative;margin-top:.5rem}
+.env-block{background:#070b12;border:1px solid var(--border);border-radius:8px;padding:.7rem .8rem;font-family:var(--mono);font-size:.55rem;line-height:1.6;white-space:pre-wrap;word-break:break-all;color:var(--text-sec);max-height:280px;overflow-y:auto;-webkit-overflow-scrolling:touch}
 .env-block .c{color:var(--text-dim)}
-.btn-copy{position:absolute;top:.4rem;right:.4rem;background:var(--surface3);border:1px solid var(--border);border-radius:5px;color:var(--text-dim);font-family:var(--mono);font-size:.58rem;padding:.2rem .6rem;cursor:pointer;transition:all .15s}
-.btn-copy:hover{color:var(--accent);border-color:var(--accent)}
+.btn-copy{position:absolute;top:.35rem;right:.35rem;background:var(--surface3);border:1px solid var(--border);border-radius:5px;color:var(--text-dim);font-family:var(--mono);font-size:.55rem;padding:.15rem .5rem;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.btn-copy:hover,.btn-copy:active{color:var(--accent);border-color:var(--accent)}
+.hist-row{display:flex;gap:.75rem;font-size:.55rem;font-family:var(--mono);color:var(--text-dim);padding:.12rem 0;flex-wrap:wrap}
+.hist-row span:first-child{min-width:95px}
+.empty{text-align:center;padding:3rem 1.5rem;color:var(--text-dim)}
+.empty h3{font-family:var(--mono);color:var(--text-sec);margin-bottom:.4rem}
 
-/* ── History ── */
-.hist-row{display:flex;gap:1rem;font-size:.6rem;font-family:var(--mono);color:var(--text-dim);padding:.15rem 0}
-.hist-row span:first-child{min-width:110px}
-
-/* Gate mini bar */
-.gate-bar{display:flex;gap:2px;align-items:center}
-.gate-dot{width:6px;height:6px;border-radius:2px}
-.gate-dot.pass{background:var(--green)}.gate-dot.fail{background:var(--red)}
-
-/* ── Empty state ── */
-.empty{text-align:center;padding:4rem 2rem;color:var(--text-dim)}
-.empty h3{font-family:var(--mono);color:var(--text-sec);margin-bottom:.5rem}
-
-/* ── Responsive ── */
-@media(max-width:640px){
-  .stats-row{flex-direction:column}
-  .variant-row{flex-direction:column;align-items:flex-start}
-  .vr-center{padding-left:0;margin:.3rem 0}
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:768px){
+  .live-grid{grid-template-columns:repeat(2,1fr)}
+  .live-meta span:nth-child(n+3){display:none}
+  .method-head{flex-direction:column;align-items:flex-start;gap:.4rem}
+  .method-right{width:100%;justify-content:flex-end}
+}
+@media(max-width:520px){
+  :root{--bar-h:38px}
+  body{font-size:13px}
+  .page{padding:1rem max(.75rem,var(--safe-left)) 3rem max(.75rem,var(--safe-right))}
+  .top-bar{flex-direction:column;align-items:flex-start;gap:.3rem}
+  .top-bar .meta{text-align:left}
+  .stats-row{gap:.4rem}
+  .stat{min-width:0;padding:.5rem .7rem}
+  .stat-val{font-size:.95rem}
+  .live-bar-inner{padding:0 max(.75rem,var(--safe-left)) 0 max(.75rem,var(--safe-right))}
+  .lb-status{font-size:.65rem}
+  .lb-right{gap:.5rem;font-size:.55rem}
+  .lb-right .hide-m{display:none}
+  .live-grid{grid-template-columns:1fr 1fr}
+  .lg-val{font-size:.75rem}
+  .live-head{padding:.7rem .8rem}
+  .live-body{padding:0 .8rem .8rem}
+  .variant-row{flex-direction:column;align-items:flex-start;gap:.35rem}
+  .vr-center{padding-left:0}
   .vr-right{width:100%;justify-content:space-between}
   .tt-grid{grid-template-columns:1fr}
   .d-grid{grid-template-columns:1fr 1fr}
+  .detail-inner{padding:.75rem}
+  .session-row{flex-direction:column;align-items:flex-start;gap:.3rem}
+  .session-row .s-pnl{width:100%;text-align:right}
+  .terminal{font-size:.55rem;max-height:180px}
 }
-
-/* ═══ Live Trader Panel ═══ */
-.live-panel{background:var(--surface);border:1px solid var(--green);border-radius:12px;margin-bottom:1.5rem;overflow:hidden;box-shadow:0 0 20px rgba(45,212,160,.08)}
-.live-panel.offline{border-color:var(--border);box-shadow:none}
-.live-head{display:flex;justify-content:space-between;align-items:center;padding:.85rem 1.25rem;cursor:pointer}
-.live-head:hover{background:var(--surface2)}
-.live-dot{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;margin-right:.5rem;animation:pulse 2s infinite}
-.live-panel.offline .live-dot{background:var(--text-dim);animation:none}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
-.live-title{font-family:var(--mono);font-size:.85rem;font-weight:600;color:#fff;display:flex;align-items:center}
-.live-stats{display:flex;gap:1.5rem;font-family:var(--mono);font-size:.7rem;color:var(--text-sec)}
-.live-stats .val{font-weight:600;color:#fff}
-.live-stats .green{color:var(--green)}.live-stats .red{color:var(--red)}
-.live-body{display:none;padding:0 1.25rem 1rem}
-.live-panel.expanded .live-body{display:block}
-.live-info{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.75rem;margin-bottom:.75rem}
-.live-info .li-box{background:var(--surface2);border-radius:8px;padding:.6rem .8rem}
-.li-label{font-size:.55rem;text-transform:uppercase;letter-spacing:.08em;color:var(--text-dim);margin-bottom:.15rem}
-.li-val{font-family:var(--mono);font-size:.9rem;font-weight:600}
-.terminal{background:#050a10;border:1px solid var(--border);border-radius:8px;padding:.5rem .75rem;max-height:240px;overflow-y:auto;font-family:var(--mono);font-size:.65rem;line-height:1.7}
-.terminal .line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.terminal .line .ts{color:var(--text-dim)}
-
-/* ═══ Sessions Sidebar ═══ */
-.sessions-toggle{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.4rem .8rem;font-family:var(--mono);font-size:.65rem;color:var(--text-sec);cursor:pointer;display:inline-flex;align-items:center;gap:.4rem;margin-bottom:1rem}
-.sessions-toggle:hover{border-color:var(--border-light);color:var(--text)}
-.sessions-list{display:none;margin-bottom:1.5rem}
-.sessions-list.visible{display:block}
-.session-row{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.6rem 1rem;margin-bottom:.4rem;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:.65rem}
-.session-row .s-left{display:flex;align-items:center;gap:.75rem}
-.session-row .s-method{color:var(--cyan);font-weight:600}
-.session-row .s-date{color:var(--text-dim)}
-.session-row .s-trades{color:var(--text-sec)}
-.session-row .s-pnl{font-weight:700}
+@supports(padding-top:env(safe-area-inset-top)){
+  .live-bar{padding-top:env(safe-area-inset-top)}
+  body{padding-top:calc(var(--bar-h) + env(safe-area-inset-top))}
+}
 </style>
 </head>
 <body>
+<div class="live-bar" id="live-bar">
+  <div class="live-bar-inner">
+    <div class="lb-left">
+      <div class="lb-dot off" id="lb-dot"></div>
+      <div class="lb-status off" id="lb-status">Offline</div>
+    </div>
+    <div class="lb-right" id="lb-right"></div>
+  </div>
+</div>
 <div class="page">
   <div class="top-bar">
-    <div>
-      <h1>A<span>_</span>Dream</h1>
-      <div style="font-size:.7rem;color:var(--text-dim);margin-top:.15rem">Backtesting Dashboard</div>
-    </div>
-    <div class="meta">
-      <div id="last-update">—</div>
-      <div style="margin-top:.15rem;font-size:.6rem;opacity:.5">auto-refresh 60s</div>
-    </div>
+    <div><h1>A<span>_</span>Dream</h1><div style="font-size:.7rem;color:var(--text-dim);margin-top:.15rem">Trading Dashboard</div></div>
+    <div class="meta"><div id="last-update">—</div><div style="margin-top:.15rem;font-size:.6rem;opacity:.5">auto-refresh 60s</div></div>
   </div>
   <div class="stats-row" id="stats"></div>
-  <div id="live-panel"></div>
+  <div id="live-section"></div>
   <div id="sessions-section"></div>
   <div id="root"></div>
 </div>
-
 <script>
 const $=id=>document.getElementById(id);
 const sp=(v,d=2)=>v==null?'—':`${v>=0?'+':''}${v.toFixed(d)}%`;
 const pf=v=>v==null?'—':(v*100).toFixed(1)+'%';
 const kv=(k,v)=>`<div class="kv"><span class="kv-l">${k}</span><span class="kv-v">${v}</span></div>`;
+function pillFor(l,v,t){let c='pill-dim';if(t)for(const x of t)if(v>=x.min){c=x.cls;break}return`<span class="pill ${c}">${l}</span>`}
+function gateScorePill(g,a){if(a)return`<span class="gate-score pill-green">✅ 11/11</span>`;if(g>=9)return`<span class="gate-score pill-yellow">⚠ ${g}/11</span>`;return`<span class="gate-score pill-accent">${g}/11</span>`}
+function gateDots(g){if(!g)return'';const o=['SIG','EQ','WF','MC','PLT','REG','ROB','tT','DSR','WRC','HHI'];return`<div class="gate-bar" title="${o.map(x=>x+'='+(g[x]?'✓':'✗')).join('  ')}">${o.map(x=>`<div class="gate-dot ${g[x]?'pass':'fail'}"></div>`).join('')}</div>`}
+function fmtDur(s){if(!s)return'—';const h=Math.floor(s/3600),m=Math.floor((s%3600)/60),sc=Math.floor(s%60);return h>0?`${h}h ${m}m`:m>0?`${m}m ${sc}s`:`${sc}s`}
+function fmtPnl(v){return v==null?'—':`${v>=0?'+':''}${v.toFixed(4)}`}
+function pC(v){return v>=0?'g':'r'}
 
-function pillFor(label,val,thresholds){
-  // thresholds: [{min,cls}] sorted desc
-  let cls='pill-dim';
-  if(thresholds)for(const t of thresholds)if(val>=t.min){cls=t.cls;break}
-  return `<span class="pill ${cls}">${label}</span>`;
+let liveData=null,liveExpanded=true,sessionsVisible=false;
+
+function updateBar(d){
+  const dot=$('lb-dot'),st=$('lb-status'),rt=$('lb-right');
+  if(!d||d.status!=='live'){dot.className='lb-dot off';st.className='lb-status off';st.textContent='Trader Offline';rt.innerHTML='';return}
+  const dry=d.dry_run,mode=dry?'dry':'live';
+  dot.className='lb-dot '+mode;st.className='lb-status '+mode;
+  st.textContent=(dry?'🧪 Simulation':'🔴 LIVE')+' — '+(d.method||'?');
+  const b=d.balance||{},t=d.trades||{};
+  rt.innerHTML=`<span class="lb-tag ${dry?'dry-tag':'live-tag'}">${dry?'DRY RUN':'LIVE'}</span><span class="hide-m">⏱ ${fmtDur(d.uptime_seconds)}</span><span>${t.wins||0}W/${t.losses||0}L</span><span class="${pC(b.pnl_sol)} val">${fmtPnl(b.pnl_sol)} SOL</span>`;
 }
 
-function gateScorePill(gp,allPassed){
-  if(allPassed)return `<span class="gate-score pill-green">✅ 11/11</span>`;
-  if(gp>=9)return `<span class="gate-score pill-yellow">⚠ ${gp}/11</span>`;
-  return `<span class="gate-score pill-accent">${gp}/11</span>`;
+function renderLive(d){
+  liveData=d;updateBar(d);const sec=$('live-section');
+  if(!d||d.status!=='live'){
+    sec.innerHTML=`<div class="live-panel${liveExpanded?' expanded':''}"><div class="live-head" onclick="liveExpanded=!liveExpanded;renderLive(liveData)"><div class="live-title"><div class="dot off"></div><span>Trader Offline</span></div><span class="live-caret">▾</span></div><div class="live-body"><div style="padding:1.5rem;text-align:center;color:var(--text-dim);font-family:var(--mono);font-size:.7rem">Bot ist nicht aktiv.${d&&d.last_session?`<div style="margin-top:.5rem;color:var(--text-sec)">Letzte Session: ${d.last_session.method||'?'} · ${d.last_session.duration_formatted||'?'} · ${fmtPnl(d.last_session.pnl_sol)} SOL</div>`:''}</div></div></div>`;return}
+  const dry=d.dry_run,mode=dry?'dry':'live',b=d.balance||{},t=d.trades||{},pos=d.positions||{};
+  const log=(d.terminal||[]).slice(-35).map(l=>{const m=l.match(/^\[(\d{2}:\d{2}:\d{2})\]\s*(.*)/);return m?`<div class="line"><span class="ts">${m[1]}</span> ${m[2]}</div>`:`<div class="line">${l}</div>`}).join('');
+  sec.innerHTML=`<div class="live-panel is-${mode}${liveExpanded?' expanded':''}"><div class="live-head" onclick="liveExpanded=!liveExpanded;renderLive(liveData)"><div class="live-title"><div class="dot ${mode}"></div><span>${dry?'🧪 Simulation':'🔴 LIVE'} — ${d.method||'?'}</span><span class="lb-tag ${dry?'dry-tag':'live-tag'}">${dry?'DRY RUN':'LIVE'}</span></div><div class="live-meta"><span>⏱ ${fmtDur(d.uptime_seconds)}</span><span>${t.wins||0}W/${t.losses||0}L</span><span class="${pC(b.pnl_sol)} val">${fmtPnl(b.pnl_sol)} SOL</span><span class="live-caret">▾</span></div></div><div class="live-body"><div class="live-grid"><div class="lg-box"><div class="lg-label">Method</div><div class="lg-val" style="color:var(--cyan)">${d.method||'—'}</div></div><div class="lg-box"><div class="lg-label">PnL</div><div class="lg-val ${pC(b.pnl_sol)}">${fmtPnl(b.pnl_sol)} SOL${b.pnl_pct!=null?' ('+sp(b.pnl_pct,1)+')':''}</div></div><div class="lg-box"><div class="lg-label">Trades</div><div class="lg-val">${t.total||0} <span style="color:var(--text-dim);font-size:.65rem">${t.win_rate||0}% WR</span></div></div><div class="lg-box"><div class="lg-label">Balance</div><div class="lg-val">${b.start!=null?b.start.toFixed(4):'—'} → ${b.current!=null?b.current.toFixed(4):'—'}</div></div><div class="lg-box"><div class="lg-label">Positions</div><div class="lg-val">${pos.open||0}</div></div><div class="lg-box"><div class="lg-label">Uptime</div><div class="lg-val">${fmtDur(d.uptime_seconds)}</div></div></div><div class="terminal" id="term">${log||'<span style="color:var(--text-dim)">Waiting for logs...</span>'}</div></div></div>`;
+  const term=document.getElementById('term');if(term)term.scrollTop=term.scrollHeight;
 }
 
-function gateDots(gates){
-  if(!gates)return'';
-  const order=['SIG','EQ','WF','MC','PLT','REG','ROB','tT','DSR','WRC','HHI'];
-  return `<div class="gate-bar" title="${order.map(g=>g+'='+(gates[g]?'✓':'✗')).join('  ')}">${order.map(g=>`<div class="gate-dot ${gates[g]?'pass':'fail'}"></div>`).join('')}</div>`;
+function renderSessions(sessions){
+  const sec=$('sessions-section');if(!sessions||!sessions.length){sec.innerHTML='';return}
+  const sorted=[...sessions].reverse(),liveN=sorted.filter(s=>!s.dry_run).length,simN=sorted.length-liveN;
+  const rows=sorted.slice(0,30).map(ss=>{const pc=pC(ss.pnl_sol),dt=ss.started_at?ss.started_at.substring(0,16).replace('T',' '):'—',dry=ss.dry_run;
+    return`<div class="session-row"${dry?' style="opacity:.6"':''}><div class="s-left"><span class="s-date">${dt}</span><span class="s-mode ${dry?'dry-mode':'live-mode'}">${dry?'SIM':'LIVE'}</span><span class="s-method">${ss.method||'?'}</span><span class="s-trades">${ss.total_trades||0}T (${ss.wins||0}W/${ss.losses||0}L) · ${ss.duration_formatted||'—'}</span></div><span class="s-pnl ${pc}">${fmtPnl(ss.pnl_sol)} SOL${ss.pnl_pct!=null?' ('+sp(ss.pnl_pct,1)+')':''}</span></div>`}).join('');
+  sec.innerHTML=`<div class="sessions-header"><div class="sessions-title" onclick="sessionsVisible=!sessionsVisible;document.querySelector('.sessions-list').classList.toggle('hidden')">📋 Sessions (${liveN} Live${simN?', '+simN+' Sim':''}) ${sessionsVisible?'▲':'▼'}</div></div><div class="sessions-list${sessionsVisible?'':' hidden'}">${rows}</div>`;
 }
 
-async function loadData(){
-  try{const r=await fetch('data/results.json?t='+Date.now());return await r.json()}
-  catch(e){return null}
-}
-
+async function loadData(){try{const r=await fetch('data/results.json?t='+Date.now());return await r.json()}catch(e){return null}}
 function renderStats(data){
-  const ms=data.methods||{};const mns=Object.keys(ms);
-  let tv=0,val=0,bestS=null,bestEV=null;
-  mns.forEach(mn=>{ms[mn].forEach(v=>{
-    tv++;const c=v.current||{},m=c.metrics||{};
-    if(c.all_11_passed)val++;
-    if(m.sortino!=null&&(!bestS||m.sortino>bestS.v))bestS={v:m.sortino,l:mn};
-    if(m.avg_pnl!=null&&(!bestEV||m.avg_pnl>bestEV.v))bestEV={v:m.avg_pnl,l:mn};
-  })});
-  $('stats').innerHTML=`
-    <div class="stat"><div class="stat-label">Methods</div><div class="stat-val" style="color:var(--cyan)">${mns.length}</div><div class="stat-sub">${tv} variants total</div></div>
-    <div class="stat"><div class="stat-label">Validated</div><div class="stat-val" style="color:${val?'var(--green)':'var(--red)'}">${val}</div><div class="stat-sub">passed 11/11 gates</div></div>
-    <div class="stat"><div class="stat-label">Best Sortino</div><div class="stat-val" style="color:var(--cyan)">${bestS?bestS.v.toFixed(2):'—'}</div><div class="stat-sub">${bestS?bestS.l:'—'}</div></div>
-    <div class="stat"><div class="stat-label">Best EV</div><div class="stat-val" style="color:var(--green)">${bestEV?sp(bestEV.v):'—'}</div><div class="stat-sub">${bestEV?bestEV.l:'—'}</div></div>`;
+  const ms=data.methods||{},mns=Object.keys(ms);let tv=0,val=0,bestS=null,bestEV=null;
+  mns.forEach(mn=>{ms[mn].forEach(v=>{tv++;const c=v.current||{},m=c.metrics||{};if(c.all_11_passed)val++;if(m.sortino!=null&&(!bestS||m.sortino>bestS.v))bestS={v:m.sortino,l:mn};if(m.avg_pnl!=null&&(!bestEV||m.avg_pnl>bestEV.v))bestEV={v:m.avg_pnl,l:mn}})});
+  $('stats').innerHTML=`<div class="stat"><div class="stat-label">Methods</div><div class="stat-val" style="color:var(--cyan)">${mns.length}</div><div class="stat-sub">${tv} variants</div></div><div class="stat"><div class="stat-label">Validated</div><div class="stat-val" style="color:${val?'var(--green)':'var(--red)'};">${val}</div><div class="stat-sub">11/11 gates</div></div><div class="stat"><div class="stat-label">Best Sortino</div><div class="stat-val" style="color:var(--cyan)">${bestS?bestS.v.toFixed(2):'—'}</div><div class="stat-sub">${bestS?bestS.l:'—'}</div></div><div class="stat"><div class="stat-label">Best EV</div><div class="stat-val" style="color:var(--green)">${bestEV?sp(bestEV.v):'—'}</div><div class="stat-sub">${bestEV?bestEV.l:'—'}</div></div>`;
 }
-
 function renderAll(data){
-  const ms=data.methods||{};const root=$('root');root.innerHTML='';
-  const sorted=Object.keys(ms).sort();
-  if(!sorted.length){root.innerHTML='<div class="empty"><h3>Keine Ergebnisse</h3><p>Starte einen Backtest um Daten hier zu sehen.</p></div>';return}
-
+  const ms=data.methods||{},root=$('root');root.innerHTML='';const sorted=Object.keys(ms).sort();
+  if(!sorted.length){root.innerHTML='<div class="empty"><h3>Keine Ergebnisse</h3><p>Starte einen Backtest.</p></div>';return}
   sorted.forEach(mn=>{
-    const variants=ms[mn];
-    // Find best variant
-    let bestGP=0;variants.forEach(v=>{const gp=v.current?.gates_passed||0;if(gp>bestGP)bestGP=gp});
-    const lastDate=variants[0]?.updated_at?.substring(0,10)||'—';
-    const totalRuns=variants.reduce((s,v)=>s+(v.run_count||1),0);
-
+    const variants=ms[mn];let bestGP=0;variants.forEach(v=>{const gp=v.current?.gates_passed||0;if(gp>bestGP)bestGP=gp});
+    const lastDate=variants[0]?.updated_at?.substring(0,10)||'—',totalRuns=variants.reduce((s,v)=>s+(v.run_count||1),0);
     const card=document.createElement('div');card.className='method-card';
-    card.innerHTML=`
-      <div class="method-head">
-        <div class="method-title">
-          <h2>${mn}</h2>
-          ${gateScorePill(bestGP,variants.some(v=>v.current?.all_11_passed))}
-          <span class="count-badge">${variants.length} Variant${variants.length!==1?'en':''}</span>
-        </div>
-        <div class="method-right">
-          <span>${totalRuns} Tests</span>
-          <span>·</span>
-          <span>Letzter: ${lastDate}</span>
-        </div>
-      </div>
-      <div class="variant-list" id="vlist-${mn}"></div>
-    `;
-    root.appendChild(card);
-
-    const vlist=document.getElementById('vlist-'+mn);
+    card.innerHTML=`<div class="method-head"><div class="method-title"><h2>${mn}</h2>${gateScorePill(bestGP,variants.some(v=>v.current?.all_11_passed))}<span class="count-badge">${variants.length} Variant${variants.length!==1?'en':''}</span></div><div class="method-right"><span>${totalRuns} Tests</span><span>·</span><span>${lastDate}</span></div></div><div class="variant-list" id="vlist-${mn}"></div>`;
+    root.appendChild(card);const vlist=document.getElementById('vlist-'+mn);
     variants.forEach((v,i)=>{
-      const cur=v.current||{};const met=cur.metrics||{};
-      const gp=cur.gates_passed||0;
-      const rm=cur._run_meta||{};
-      const uid=mn+'-'+i;
-
-      // Variant row
+      const cur=v.current||{},met=cur.metrics||{},gp=cur.gates_passed||0,rm=cur._run_meta||{},uid=mn+'-'+i;
       const row=document.createElement('div');
-      row.innerHTML=`
-        <div class="variant-row">
-          <div class="vr-left">
-            <div class="vr-label">${v.db_name||'—'}</div>
-            <div class="vr-sub">${v.flags||'—'} · Span: ${rm.time_span||'?'} · Mints: ${rm.unique_mints||'?'}</div>
-          </div>
-          <div class="vr-center">
-            ${gateScorePill(gp,cur.all_11_passed)}
-            ${pillFor(pf(met.win_rate),met.win_rate,[{min:.4,cls:'pill-green'},{min:.3,cls:'pill-yellow'},{min:0,cls:'pill-red'}])}
-            ${pillFor(sp(met.avg_pnl,1),(met.avg_pnl||0),[{min:0.5,cls:'pill-green'},{min:0,cls:'pill-yellow'},{min:-999,cls:'pill-red'}])}
-            ${pillFor('Srt '+(met.sortino||0).toFixed(1),(met.sortino||0),[{min:1,cls:'pill-cyan'},{min:.5,cls:'pill-yellow'},{min:0,cls:'pill-dim'}])}
-            ${met.n_trades?`<span class="pill pill-dim">${met.n_trades} Trades</span>`:''}
-            ${gateDots(cur.gates)}
-          </div>
-          <div class="vr-right">
-            <span class="vr-date">${(v.updated_at||'').substring(0,16).replace('T',' ')}</span>
-            <button class="btn-open" onclick="toggleDetail('${uid}',this)">Öffnen</button>
-          </div>
-        </div>
-        <div class="detail-panel" id="dp-${uid}">
-          <div class="detail-inner">${renderDetail(cur,v)}</div>
-        </div>
-      `;
+      row.innerHTML=`<div class="variant-row"><div class="vr-left"><div class="vr-label">${v.db_name||'—'}</div><div class="vr-sub">${v.flags||'—'} · ${rm.time_span||'?'} · ${rm.unique_mints||'?'} mints</div></div><div class="vr-center">${gateScorePill(gp,cur.all_11_passed)} ${pillFor(pf(met.win_rate),met.win_rate,[{min:.4,cls:'pill-green'},{min:.3,cls:'pill-yellow'},{min:0,cls:'pill-red'}])} ${pillFor(sp(met.avg_pnl,1),(met.avg_pnl||0),[{min:0.5,cls:'pill-green'},{min:0,cls:'pill-yellow'},{min:-999,cls:'pill-red'}])} ${pillFor('Srt '+(met.sortino||0).toFixed(1),(met.sortino||0),[{min:1,cls:'pill-cyan'},{min:.5,cls:'pill-yellow'},{min:0,cls:'pill-dim'}])} ${met.n_trades?`<span class="pill pill-dim">${met.n_trades}T</span>`:''} ${gateDots(cur.gates)}</div><div class="vr-right"><span class="vr-date">${(v.updated_at||'').substring(0,16).replace('T',' ')}</span><button class="btn-open" onclick="toggleDetail('${uid}',this)">Öffnen</button></div></div><div class="detail-panel" id="dp-${uid}"><div class="detail-inner">${renderDetail(cur,v)}</div></div>`;
       vlist.appendChild(row);
     });
   });
 }
-
-function toggleDetail(uid,btn){
-  const panel=document.getElementById('dp-'+uid);
-  const isOpen=panel.classList.contains('open');
-  panel.classList.toggle('open');
-  btn.classList.toggle('active');
-  btn.textContent=isOpen?'Öffnen':'Schließen';
-}
-
+function toggleDetail(u,b){const p=document.getElementById('dp-'+u),o=p.classList.contains('open');p.classList.toggle('open');b.classList.toggle('active');b.textContent=o?'Öffnen':'Schließen'}
 function renderDetail(cur,variant){
   if(!cur||!cur.metrics)return'<div style="color:var(--text-dim)">Keine Daten</div>';
-  const met=cur.metrics||{};const tt=cur.train_test||{};
-  const gates=cur.gates||{};const gv=cur.gate_values||{};
-  const cfg=cur.config||{};const rm=cur._run_meta||{};
-  const envBlock=cur.env_block||'';
-  const euid='env-'+Math.random().toString(36).substr(2,8);
-
-  let html='';
-
-  // Metrics
-  html+=`<div class="d-section">
-    <div class="d-section-title">📊 Performance (TEST)</div>
-    <div class="d-grid">
-      ${kv('Trades',met.n_trades||0)}
-      ${kv('Win Rate',pf(met.win_rate))}
-      ${kv('EV/Trade',sp(met.avg_pnl,3))}
-      ${kv('Total PnL',sp(met.total_pnl,1))}
-      ${kv('Profit Factor',(met.profit_factor||0).toFixed(3))}
-      ${kv('Sortino',(met.sortino||0).toFixed(3))}
-      ${kv('Sharpe',(met.sharpe||0).toFixed(3))}
-      ${kv('Max Drawdown',(met.max_dd||0).toFixed(1)+'%')}
-      ${kv('Risk of Ruin',(met.risk_of_ruin||0).toFixed(1)+'%')}
-      ${met.n_early_exits>0?kv('Early Exits',met.n_early_exits+' post-entry'):''}
-      ${kv('SL / TP',(cfg.sl_pct||'?')+'% / '+(cfg.tp_pct||'?')+'%')}
-      ${cfg.has_trailing?kv('Trailing','Act='+cfg.trailing_activation_pct+'% Trail='+cfg.trailing_pct+'%'):''}
-    </div>
-  </div>`;
-
-  // Gates detail
-  const gateOrder=['SIG','EQ','WF','MC','PLT','REG','ROB','tT','DSR','WRC','HHI'];
-  html+=`<div class="d-section">
-    <div class="d-section-title">🔒 11-Gate Validation</div>
-    <div style="display:flex;flex-wrap:wrap;gap:.3rem">
-      ${gateOrder.map(g=>{
-        const passed=gates[g];
-        const val=gv[g]||'';
-        return `<span class="pill ${passed?'pill-green':'pill-red'}" title="${val}">${g}${val?' · '+val:''}</span>`;
-      }).join('')}
-    </div>
-  </div>`;
-
-  // Train/Test
-  if(tt&&tt.train_n){
-    const deg=tt.train_avg_pnl>0?(1-tt.test_avg_pnl/tt.train_avg_pnl):0;
-    const dp=Math.round(deg*100);
-    let dc='var(--green)',dl='Consistent';
-    if(deg>.5){dc='var(--red)';dl='OVERFIT ⚠';}
-    else if(deg>.25){dc='var(--yellow)';dl='Moderate ⚠';}
-    html+=`<div class="d-section">
-      <div class="d-section-title">🔀 Train / Test Split</div>
-      <div class="tt-grid">
-        <div class="tt-box train">
-          <div class="tt-label" style="color:var(--cyan)">Train (Discovery)</div>
-          ${kv('Trades',tt.train_n)}${kv('EV',sp(tt.train_avg_pnl,3))}${kv('WR',pf(tt.train_win_rate))}
-          ${tt.train_period?`<div style="font-size:.55rem;color:var(--text-dim);margin-top:.2rem">${tt.train_period}</div>`:''}
-        </div>
-        <div class="tt-box test">
-          <div class="tt-label" style="color:var(--green)">Test (Validation)</div>
-          ${kv('Trades',tt.test_n)}${kv('EV',sp(tt.test_avg_pnl,3))}${kv('WR',pf(tt.test_win_rate))}
-          ${tt.test_period?`<div style="font-size:.55rem;color:var(--text-dim);margin-top:.2rem">${tt.test_period}</div>`:''}
-        </div>
-      </div>
-      <span class="overfit-strip" style="background:${deg>.25?'var(--red-bg)':'var(--green-bg)'};color:${dc}">${dl} · ${dp>0?'-':'+'}${Math.abs(dp)}% degradation</span>
-    </div>`;
-  }
-
-  // LIFT
-  html+=renderLift(cur.lift_filters);
-  // Post-entry
-  html+=renderPostEntry(cur.post_entry_filters);
-
-  // .env
-  if(envBlock){
-    const highlighted=envBlock.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/(#[^\n]*)/g,'<span class="c">$1</span>');
-    html+=`<div class="d-section">
-      <div class="d-section-title">⚙️ .env Konfiguration</div>
-      <div class="env-wrap"><button class="btn-copy" onclick="copyEnv('${euid}')">📋 Copy</button>
-      <div class="env-block" id="${euid}">${highlighted}</div></div>
-    </div>`;
-  }
-
-  // Filter stats
-  html+=`<div class="d-section">
-    <div class="d-grid">
-      ${kv('Entries (raw)',cur.n_total_entries||0)}
-      ${kv('Entries (filtered)',cur.n_filtered_entries||0)}
-      ${cur.n_total_entries>0?kv('Filter Rate',((1-(cur.n_filtered_entries||0)/cur.n_total_entries)*100).toFixed(1)+'% removed'):''}
-    </div>
-  </div>`;
-
-  // History
-  const hist=variant.history||[];
-  if(hist.length){
-    html+=`<div class="d-section">
-      <div class="d-section-title">📜 Vorherige Runs (${hist.length})</div>
-      ${hist.map(h=>`<div class="hist-row">
-        <span>${(h.timestamp||'?').substring(0,16)}</span>
-        <span style="color:${h.gates_passed>=11?'var(--green)':h.gates_passed>=9?'var(--yellow)':'var(--text-dim)'}">${h.gates_passed}/11</span>
-        <span style="color:${(h.avg_pnl||0)>=0?'var(--green)':'var(--red)'}">${sp(h.avg_pnl,3)}</span>
-        <span>Srt=${(h.sortino||0).toFixed(2)}</span>
-        <span>n=${h.n_trades||'?'}</span>
-      </div>`).join('')}
-    </div>`;
-  }
-
+  const met=cur.metrics||{},tt=cur.train_test||{},gates=cur.gates||{},gv=cur.gate_values||{},cfg=cur.config||{},envBlock=cur.env_block||'';
+  const euid='e'+Math.random().toString(36).substr(2,6);let html='';
+  html+=`<div class="d-section"><div class="d-section-title">📊 Performance (TEST)</div><div class="d-grid">${kv('Trades',met.n_trades||0)}${kv('Win Rate',pf(met.win_rate))}${kv('EV/Trade',sp(met.avg_pnl,3))}${kv('Total PnL',sp(met.total_pnl,1))}${kv('PF',(met.profit_factor||0).toFixed(3))}${kv('Sortino',(met.sortino||0).toFixed(3))}${kv('Sharpe',(met.sharpe||0).toFixed(3))}${kv('Max DD',(met.max_dd||0).toFixed(1)+'%')}${kv('RoR',(met.risk_of_ruin||0).toFixed(1)+'%')}${met.n_early_exits>0?kv('Early Exits',met.n_early_exits):''}${kv('SL/TP',(cfg.sl_pct||'?')+'%/'+(cfg.tp_pct||'?')+'%')}${cfg.has_trailing?kv('Trail','A='+cfg.trailing_activation_pct+'% T='+cfg.trailing_pct+'%'):''}</div></div>`;
+  const go=['SIG','EQ','WF','MC','PLT','REG','ROB','tT','DSR','WRC','HHI'];
+  html+=`<div class="d-section"><div class="d-section-title">🔒 11-Gate Validation</div><div style="display:flex;flex-wrap:wrap;gap:.25rem">${go.map(g=>`<span class="pill ${gates[g]?'pill-green':'pill-red'}" title="${gv[g]||''}">${g}${gv[g]?' · '+gv[g]:''}</span>`).join('')}</div></div>`;
+  if(tt&&tt.train_n){const deg=tt.train_avg_pnl>0?(1-tt.test_avg_pnl/tt.train_avg_pnl):0,dp=Math.round(deg*100);let dc='var(--green)',dl='Consistent';if(deg>.5){dc='var(--red)';dl='OVERFIT ⚠'}else if(deg>.25){dc='var(--yellow)';dl='Moderate ⚠'}
+    html+=`<div class="d-section"><div class="d-section-title">🔀 Train / Test</div><div class="tt-grid"><div class="tt-box train"><div class="tt-label" style="color:var(--cyan)">Train</div>${kv('n',tt.train_n)}${kv('EV',sp(tt.train_avg_pnl,3))}${kv('WR',pf(tt.train_win_rate))}${tt.train_period?`<div style="font-size:.5rem;color:var(--text-dim);margin-top:.1rem">${tt.train_period}</div>`:''}</div><div class="tt-box test"><div class="tt-label" style="color:var(--green)">Test</div>${kv('n',tt.test_n)}${kv('EV',sp(tt.test_avg_pnl,3))}${kv('WR',pf(tt.test_win_rate))}${tt.test_period?`<div style="font-size:.5rem;color:var(--text-dim);margin-top:.1rem">${tt.test_period}</div>`:''}</div></div><span class="overfit-strip" style="background:${deg>.25?'var(--red-bg)':'var(--green-bg)'};color:${dc}">${dl} · ${dp>0?'-':'+'}${Math.abs(dp)}%</span></div>`}
+  html+=renderLift(cur.lift_filters);html+=renderPost(cur.post_entry_filters);
+  if(envBlock){const hl=envBlock.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/(#[^\n]*)/g,'<span class="c">$1</span>');html+=`<div class="d-section"><div class="d-section-title">⚙️ .env</div><div class="env-wrap"><button class="btn-copy" onclick="copyEnv('${euid}')">📋 Copy</button><div class="env-block" id="${euid}">${hl}</div></div></div>`}
+  html+=`<div class="d-section"><div class="d-grid">${kv('Raw',cur.n_total_entries||0)}${kv('Filtered',cur.n_filtered_entries||0)}${cur.n_total_entries>0?kv('Removed',((1-(cur.n_filtered_entries||0)/cur.n_total_entries)*100).toFixed(1)+'%'):''}</div></div>`;
+  const hist=variant.history||[];if(hist.length){html+=`<div class="d-section"><div class="d-section-title">📜 History (${hist.length})</div>${hist.map(h=>`<div class="hist-row"><span>${(h.timestamp||'?').substring(0,16)}</span><span style="color:${h.gates_passed>=11?'var(--green)':h.gates_passed>=9?'var(--yellow)':'var(--text-dim)'};">${h.gates_passed}/11</span><span style="color:${(h.avg_pnl||0)>=0?'var(--green)':'var(--red)'};">${sp(h.avg_pnl,3)}</span><span>Srt=${(h.sortino||0).toFixed(2)}</span><span>n=${h.n_trades||'?'}</span></div>`).join('')}</div>`}
   return html;
 }
-
 function renderLift(lift){
-  if(!lift)return'';
-  const dims=[{key:'mcap',label:'MCAP'},{key:'time',label:'Time→Entry'},{key:'dd',label:'DD@Entry'}];
-  let hasAny=false;
-  dims.forEach(d=>{if(lift[d.key]&&Object.keys(lift[d.key]).length)hasAny=true});
-  if(!hasAny)return'';
+  if(!lift)return'';const dims=[{key:'mcap',label:'MCAP'},{key:'time',label:'Time→Entry'},{key:'dd',label:'DD@Entry'},{key:'hour',label:'Hour(UTC)'}];let has=false;dims.forEach(d=>{if(lift[d.key]&&Object.keys(lift[d.key]).length)has=true});if(!has)return'';
   let html=`<div class="d-section"><div class="d-section-title">📈 Pre-Entry LIFT</div>`;
-  dims.forEach(d=>{
-    const data=lift[d.key];if(!data||!Object.keys(data).length)return;
-    html+=`<div style="font-size:.6rem;color:var(--cyan);font-weight:600;margin:.4rem 0 .15rem">${d.label}</div>`;
-    Object.entries(data).forEach(([k,v])=>{
-      const w=Math.min(100,(v.lift||0)*40);
-      html+=`<div class="bar-row"><span class="bar-label">${k}</span>
-        <div class="bar-bg"><div class="bar-fill ${v.good?'good':'bad'}" style="width:${w}%"></div></div>
-        <span class="bar-val" style="color:${v.good?'var(--green)':'var(--red)'}">${(v.lift||0).toFixed(2)}</span>
-        <span class="bar-n">n=${v.count||0}</span></div>`;
-    });
-  });
+  dims.forEach(d=>{const data=lift[d.key];if(!data||!Object.keys(data).length)return;html+=`<div style="font-size:.55rem;color:var(--cyan);font-weight:600;margin:.3rem 0 .1rem">${d.label}</div>`;Object.entries(data).forEach(([k,v])=>{const w=Math.min(100,(v.lift||0)*40);html+=`<div class="bar-row"><span class="bar-label">${k}</span><div class="bar-bg"><div class="bar-fill ${v.good?'good':'bad'}" style="width:${w}%"></div></div><span class="bar-val" style="color:${v.good?'var(--green)':'var(--red)'}">${(v.lift||0).toFixed(2)}</span><span class="bar-n">n=${v.count||0}</span></div>`})});
   return html+'</div>';
 }
-
-function renderPostEntry(pf2){
-  if(!pf2||!Object.keys(pf2).length)return'';
-  let hasExits=false;
-  Object.values(pf2).forEach(bs=>{Object.values(bs).forEach(b=>{if(!b.keep)hasExits=true})});
-  if(!hasExits)return'';
+function renderPost(pf2){
+  if(!pf2||!Object.keys(pf2).length)return'';let has=false;Object.values(pf2).forEach(bs=>{Object.values(bs).forEach(b=>{if(!b.keep)has=true})});if(!has)return'';
   let html=`<div class="d-section"><div class="d-section-title">🔍 Post-Entry Filter</div>`;
-  Object.entries(pf2).forEach(([cat,buckets])=>{
-    const exits=Object.entries(buckets).filter(([,b])=>!b.keep);
-    if(!exits.length)return;
-    html+=`<div style="font-size:.6rem;color:var(--magenta);font-weight:600;margin:.4rem 0 .15rem">${cat}</div>`;
-    Object.entries(buckets).forEach(([suffix,b])=>{
-      const w=Math.min(100,(b.lift||0)*40);
-      html+=`<div class="bar-row"><span class="bar-label" style="width:100px">${suffix}</span>
-        <div class="bar-bg"><div class="bar-fill ${b.keep?'good':'bad'}" style="width:${w}%"></div></div>
-        <span style="width:30px;text-align:center;font-weight:700;font-size:.55rem;color:${b.keep?'var(--green)':'var(--red)'}">${b.keep?'KEEP':'EXIT'}</span>
-        <span class="bar-val" style="color:${b.keep?'var(--green)':'var(--red)'}">${(b.lift||0).toFixed(2)}</span>
-        <span class="bar-n">n=${b.count||0}</span></div>`;
-    });
-  });
+  Object.entries(pf2).forEach(([cat,buckets])=>{const exits=Object.entries(buckets).filter(([,b])=>!b.keep);if(!exits.length)return;html+=`<div style="font-size:.55rem;color:var(--magenta);font-weight:600;margin:.3rem 0 .1rem">${cat}</div>`;Object.entries(buckets).forEach(([s,b])=>{const w=Math.min(100,(b.lift||0)*40);html+=`<div class="bar-row"><span class="bar-label" style="width:90px">${s}</span><div class="bar-bg"><div class="bar-fill ${b.keep?'good':'bad'}" style="width:${w}%"></div></div><span style="width:26px;text-align:center;font-weight:700;font-size:.5rem;color:${b.keep?'var(--green)':'var(--red)'}">${b.keep?'OK':'EXIT'}</span><span class="bar-val" style="color:${b.keep?'var(--green)':'var(--red)'}">${(b.lift||0).toFixed(2)}</span><span class="bar-n">n=${b.count||0}</span></div>`})});
   return html+'</div>';
 }
+function copyEnv(uid){const el=document.getElementById(uid);if(!el)return;navigator.clipboard.writeText(el.innerText.trim()).then(()=>{const b=el.parentElement.querySelector('.btn-copy');if(b){b.textContent='✅';setTimeout(()=>b.textContent='📋 Copy',1500)}})}
 
-function copyEnv(uid){
-  const el=document.getElementById(uid);if(!el)return;
-  const text=el.innerText.trim();
-  navigator.clipboard.writeText(text).then(()=>{
-    const btn=el.parentElement.querySelector('.btn-copy');
-    if(btn){btn.textContent='✅ Copied!';setTimeout(()=>btn.textContent='📋 Copy',2000)}
-  });
-}
-
-async function init(){
-  const data=await loadData();
-  if(!data){$('root').innerHTML='<div class="empty"><h3>Fehler</h3><p>Konnte data/results.json nicht laden.</p></div>';return}
-  $('last-update').textContent='Letzter: '+(data.last_updated?new Date(data.last_updated).toLocaleString('de-DE'):'—');
-  renderStats(data);
-  renderAll(data);
-}
-init();
-setInterval(init,60000);
-
-// ═══════════════════════════════════════════════════════════════════
-// LIVE TRADER PANEL + SESSIONS
-// ═══════════════════════════════════════════════════════════════════
-const LIVE_URL='http://46.224.11.8:8780/live/';
-let liveExpanded=true;
-let sessionsVisible=false;
-let lastLiveData=null;
-
-function fmtDuration(s){
-  if(!s)return'—';
-  const h=Math.floor(s/3600),m=Math.floor((s%3600)/60),sec=Math.floor(s%60);
-  return h>0?`${h}h ${m}m`:m>0?`${m}m ${sec}s`:`${sec}s`;
-}
-function fmtPnl(v){return v==null?'—':`${v>=0?'+':''}${v.toFixed(4)}`}
-function pnlClass(v){return v>=0?'green':'red'}
-
-function renderLivePanel(d){
-  const p=$('live-panel');
-  if(!d||!d.active){
-    p.innerHTML=`<div class="live-panel offline${liveExpanded?' expanded':''}">
-      <div class="live-head" onclick="liveExpanded=!liveExpanded;renderLivePanel(lastLiveData)">
-        <div class="live-title"><span class="live-dot"></span>Trader Offline</div>
-        <div class="live-stats"><span style="color:var(--text-dim)">nicht aktiv</span></div>
-      </div></div>`;
-    return;
-  }
-  lastLiveData=d;
-  const b=d.balance||{},t=d.trades||{},pos=d.positions||{};
-  const pnlC=pnlClass(b.pnl_sol);
-  const uptime=fmtDuration(d.uptime_seconds);
-  const log=(d.recent_log||[]).slice(-30).map(l=>{
-    const m=l.match(/^\[(\d{2}:\d{2}:\d{2})\]\s*(.*)/);
-    if(m)return`<div class="line"><span class="ts">${m[1]}</span> ${m[2].replace(/🟢/g,'<span style="color:var(--green)">●</span>').replace(/🔴/g,'<span style="color:var(--red)">●</span>')}</div>`;
-    return`<div class="line">${l}</div>`;
-  }).join('');
-
-  p.innerHTML=`<div class="live-panel${liveExpanded?' expanded':''}">
-    <div class="live-head" onclick="liveExpanded=!liveExpanded;renderLivePanel(lastLiveData)">
-      <div class="live-title"><span class="live-dot"></span>Live — ${d.method||'?'}</div>
-      <div class="live-stats">
-        <span>⏱ ${uptime}</span>
-        <span>W:${t.wins||0} L:${t.losses||0}</span>
-        <span class="${pnlC} val">${fmtPnl(b.pnl_sol)} SOL</span>
-        <span>💰 ${b.current!=null?b.current.toFixed(4):'—'} SOL</span>
-        <span style="font-size:.6rem;color:var(--text-dim)">▼</span>
-      </div>
-    </div>
-    <div class="live-body">
-      <div class="live-info">
-        <div class="li-box"><div class="li-label">Method</div><div class="li-val" style="color:var(--cyan)">${d.method||'—'}</div></div>
-        <div class="li-box"><div class="li-label">PnL</div><div class="li-val ${pnlC}">${fmtPnl(b.pnl_sol)} SOL (${b.pnl_pct!=null?sp(b.pnl_pct,1):'—'})</div></div>
-        <div class="li-box"><div class="li-label">Trades</div><div class="li-val">${t.total||0} <span style="color:var(--text-dim);font-size:.7rem">(${t.win_rate||0}% WR)</span></div></div>
-        <div class="li-box"><div class="li-label">Balance</div><div class="li-val">${b.start!=null?b.start.toFixed(4):'—'} → ${b.current!=null?b.current.toFixed(4):'—'}</div></div>
-        <div class="li-box"><div class="li-label">Open Positions</div><div class="li-val">${pos.open||0}</div></div>
-        <div class="li-box"><div class="li-label">Uptime</div><div class="li-val">${uptime}</div></div>
-      </div>
-      <div class="terminal" id="term">${log||'<span style="color:var(--text-dim)">Waiting for logs...</span>'}</div>
-    </div>
-  </div>`;
-  // Auto-scroll terminal
-  const term=document.getElementById('term');
-  if(term)term.scrollTop=term.scrollHeight;
-}
-
-function renderSessions(sessions){
-  const s=$('sessions-section');
-  if(!sessions||!sessions.length){
-    s.innerHTML=`<div class="sessions-toggle" onclick="sessionsVisible=!sessionsVisible;pollSessions()">📋 Sessions (0)</div>`;
-    return;
-  }
-  const rows=sessions.slice(0,20).map(ss=>{
-    const pC=pnlClass(ss.pnl_sol);
-    const dt=ss.started_at?ss.started_at.substring(0,16).replace('T',' '):'—';
-    return`<div class="session-row">
-      <div class="s-left">
-        <span class="s-date">${dt}</span>
-        <span class="s-method">${ss.method||'?'}</span>
-        <span class="s-trades">${ss.total_trades||0}T (${ss.wins||0}W/${ss.losses||0}L)</span>
-        <span class="s-trades">${ss.duration_formatted||'—'}</span>
-      </div>
-      <span class="s-pnl ${pC}">${fmtPnl(ss.pnl_sol)} SOL (${ss.pnl_pct!=null?sp(ss.pnl_pct,1):'—'})</span>
-    </div>`;
-  }).join('');
-  s.innerHTML=`<div class="sessions-toggle" onclick="sessionsVisible=!sessionsVisible;document.querySelector('.sessions-list').classList.toggle('visible')">📋 Sessions (${sessions.length}) ${sessionsVisible?'▲':'▼'}</div>
-    <div class="sessions-list${sessionsVisible?' visible':''}">${rows}</div>`;
-}
-
-async function pollLive(){
-  try{
-    const r=await fetch(LIVE_URL+'live_status.json?t='+Date.now(),{signal:AbortSignal.timeout(3000)});
-    if(r.ok){renderLivePanel(await r.json())}
-    else{renderLivePanel(null)}
-  }catch(e){renderLivePanel(null)}
-}
-
-async function pollSessions(){
-  try{
-    const r=await fetch(LIVE_URL+'sessions_index.json?t='+Date.now(),{signal:AbortSignal.timeout(5000)});
-    if(r.ok){renderSessions(await r.json())}
-    else{renderSessions([])}
-  }catch(e){renderSessions([])}
-}
-
-// Start polling
-pollLive();pollSessions();
-setInterval(pollLive,3000);
-setInterval(pollSessions,30000);
+async function pollLive(){try{const r=await fetch('data/live_status.json?t='+Date.now(),{signal:AbortSignal.timeout(4000)});if(r.ok)renderLive(await r.json());else renderLive(null)}catch(e){renderLive(null)}}
+async function pollSessions(){try{const r=await fetch('data/sessions.json?t='+Date.now(),{signal:AbortSignal.timeout(5000)});if(r.ok)renderSessions(await r.json());else renderSessions([])}catch(e){renderSessions([])}}
+async function initBT(){const d=await loadData();if(!d){$('root').innerHTML='<div class="empty"><h3>Fehler</h3><p>results.json nicht geladen.</p></div>';return}$('last-update').textContent='Letzter: '+(d.last_updated?new Date(d.last_updated).toLocaleString('de-DE'):'—');renderStats(d);renderAll(d)}
+pollLive();pollSessions();initBT();
+setInterval(pollLive,30000);setInterval(pollSessions,60000);setInterval(initBT,60000);
 </script>
 </body>
 </html>
