@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-02-26T23:34:18.326730+00:00",
-  "updated_at": "2026-02-26T23:44:29.868794+00:00",
-  "uptime_seconds": 611.5,
+  "updated_at": "2026-02-26T23:45:30.932252+00:00",
+  "uptime_seconds": 672.6,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,19 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[23:38:18] \u2705 BC Graduated: 3Fj44qXNtNU5\u2026",
-    "[23:38:18] \ud83d\udce1 Tracking: 3Fj44qXNtNU5Fv8v\u2026 | Pool #1",
-    "[23:38:19] \ud83d\udd14 Migration #6 detected",
-    "[23:38:19] \ud83d\udcca Mig:6 Track:1 Upd:0 Pos:0 SOL:$86.00",
-    "[23:38:21] \u26a0\ufe0f PumpSwap error: tx_failed",
-    "[23:38:21] \u26a0\ufe0f Buy FAILED: M1 | 3Fj44qXNtNU5\u2026",
-    "[23:38:35] \ud83d\udd14 Migration #7 detected",
-    "[23:38:43] \ud83d\udd14 Migration #8 detected",
-    "[23:38:56] \u2705 BC Graduated: 3fKS9Ce1fX4o\u2026",
-    "[23:38:56] \ud83d\udce1 Tracking: 3fKS9Ce1fX4o1nB3\u2026 | Pool #1",
-    "[23:38:58] \u26a0\ufe0f PumpSwap error: tx_failed",
-    "[23:38:58] \u26a0\ufe0f Buy FAILED: M1 | 3fKS9Ce1fX4o\u2026",
-    "[23:39:14] \ud83d\udd14 Migration #9 detected",
     "[23:39:20] \ud83d\udcca Mig:9 Track:0 Upd:2 Pos:0 SOL:$85.96",
     "[23:39:44] \ud83d\udd14 Migration #10 detected",
     "[23:39:57] \u2705 BC Graduated: GjdomVPEgBzC\u2026",
@@ -562,7 +549,20 @@
     "[23:44:06] \ud83d\udd14 Migration #20 detected",
     "[23:44:14] \ud83d\udd14 Migration #21 detected",
     "[23:44:19] \ud83d\udd14 Migration #22 detected",
-    "[23:44:26] \ud83d\udcca Mig:22 Track:0 Upd:4 Pos:0 SOL:$85.91"
+    "[23:44:26] \ud83d\udcca Mig:22 Track:0 Upd:4 Pos:0 SOL:$85.91",
+    "[23:44:34] \ud83d\udd14 Migration #23 detected",
+    "[23:44:48] \ud83d\udd14 Migration #24 detected",
+    "[23:44:50] \ud83d\udd14 Migration #25 detected",
+    "[23:44:59] \ud83d\udd14 Migration #26 detected",
+    "[23:45:11] \ud83d\udd14 Migration #27 detected",
+    "[23:45:11] \ud83d\udd14 Migration #28 detected",
+    "[23:45:21] \ud83d\udd14 Migration #29 detected",
+    "[23:45:24] \u2705 BC Graduated: 9auxnSBf63TS\u2026",
+    "[23:45:24] \ud83d\udce1 Tracking: 9auxnSBf63TSuxYP\u2026 | Pool #1",
+    "[23:45:26] \u26a0\ufe0f PumpSwap error: tx_failed",
+    "[23:45:26] \u26a0\ufe0f Buy FAILED: M1 | 9auxnSBf63TS\u2026",
+    "[23:45:26] \ud83d\udd14 Migration #30 detected",
+    "[23:45:27] \ud83d\udcca Mig:30 Track:0 Upd:5 Pos:0 SOL:$85.86"
   ],
   "balance": {
     "start": 4.425578,
@@ -579,17 +579,17 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.91,
+  "sol_price": 85.86,
   "bot_stats": {
-    "migrations_seen": 22,
-    "migrations_added": 4,
+    "migrations_seen": 30,
+    "migrations_added": 5,
     "pools_tracking": 0,
-    "price_updates": 4,
+    "price_updates": 5,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 4,
-    "entries_found": 4,
+    "bc_graduated": 5,
+    "entries_found": 5,
     "buys_success": 0,
-    "buys_failed": 4
+    "buys_failed": 5
   }
 }
