@@ -352,7 +352,7 @@ function fmtDur(s){if(!s)return'—';const h=Math.floor(s/3600),m=Math.floor((s%
 function fmtPnl(v){return v==null?'—':`${v>=0?'+':''}${v.toFixed(4)}`}
 function pC(v){return v>=0?'g':'r'}
 
-let liveData=null,modalOpen=false,sessionsVisible=false;
+let liveData=null,modalOpen=false,sessionsVisible=true;
 
 /* ═══ MODAL ═══ */
 function openTerminal(){
@@ -379,12 +379,14 @@ function colorLine(raw){
   if(!m) return `<div class="line system">${raw}</div>`;
   const ts=m[1],body=m[2];
   let cls='system';
-  if(body.includes('🟢 ENTRY')||body.includes('ENTRY')) cls='entry';
-  else if(body.includes('🟢 EXIT')) cls='exit-win';
-  else if(body.includes('🔴 EXIT')) cls='exit-loss';
+  if(body.includes('🟢 ENTRY')||body.includes('💰 Position filled')) cls='entry';
+  else if(body.includes('🟢 Take Profit')||body.includes('🟢 Trailing')) cls='exit-win';
+  else if(body.includes('🔴 Stop Loss')||body.includes('🔴 Early Exit')||body.includes('🔴 Timeout')) cls='exit-loss';
   else if(body.includes('🔔')||body.includes('Migration')) cls='migration';
+  else if(body.includes('✅ BC Graduated')) cls='migration';
   else if(body.includes('📡')||body.includes('Tracking')) cls='tracking';
   else if(body.includes('📊')) cls='stats';
+  else if(body.includes('❌')||body.includes('🚫')||body.includes('⚠️')||body.includes('💧')) cls='exit-loss';
   return `<div class="line ${cls}"><span class="ts">${ts}</span> ${body}</div>`;
 }
 
@@ -393,7 +395,7 @@ function updateBar(d){
   const dot=$('lb-dot'),st=$('lb-status'),rt=$('lb-right');
   if(!d||d.status!=='live'){
     dot.className='lb-dot off';st.className='lb-status off';
-    st.textContent=d&&d._was_stale?'⏸ Verbindung unterbrochen':'Trader Offline';
+    st.textContent='Trader Offline';
     rt.innerHTML='';return;
   }
   const dry=d.dry_run,mode=dry?'dry':'live';
@@ -402,7 +404,7 @@ function updateBar(d){
   const b=d.balance||{},t=d.trades||{};
   rt.innerHTML=`<span class="lb-tag ${dry?'dry-tag':'live-tag'}">${dry?'DRY RUN':'LIVE'}</span>`
     +`<span class="hide-m">⏱ ${fmtDur(d.uptime_seconds)}</span>`
-    +`<span>${t.wins||0}W/${t.losses||0}L</span>`
+    +`<span><span class="g">${t.wins||0}W</span>/<span class="r">${t.losses||0}L</span></span>`
     +`<span class="${pC(b.pnl_sol)} val">${fmtPnl(b.pnl_sol)} SOL</span>`;
 }
 
@@ -417,9 +419,8 @@ function renderModal(d){
     mStats.innerHTML='';mBotStats.innerHTML='';
     let offMsg='<div style="color:var(--text-dim);padding:3rem;text-align:center;font-size:.8rem">'
       +'<div style="font-size:2rem;margin-bottom:.5rem">⏸</div>'
-      +'Bot ist nicht aktiv.';
-    if(d&&d._was_stale) offMsg+='<br><span style="color:var(--yellow);font-size:.7rem">Letzte Daten sind älter als 2 Minuten.</span>';
-    if(d&&d.last_session) offMsg+=`<br><br><div style="background:var(--surface2);border-radius:8px;padding:.8rem;display:inline-block;text-align:left"><span style="color:var(--cyan)">${d.last_session.method||'?'}</span> · ${d.last_session.duration_formatted||'?'}<br><span style="color:var(--${(d.last_session.pnl_sol||0)>=0?'green':'red'})">${fmtPnl(d.last_session.pnl_sol)} SOL</span> · ${d.last_session.total_trades||0} Trades</div>`;
+      +'Bot ist offline.';
+    if(d&&d.last_session) offMsg+=`<br><br><div style="background:var(--surface2);border-radius:8px;padding:.8rem;display:inline-block;text-align:left"><span style="color:var(--cyan)">${d.last_session.method||'?'}</span> · ${d.last_session.duration_formatted||'?'}<br><span style="color:var(--${(d.last_session.pnl_sol||0)>=0?'green':'red'})">${fmtPnl(d.last_session.pnl_sol)} SOL</span> · ${d.last_session.total_trades||0} Trades (${d.last_session.wins||0}W/${d.last_session.losses||0}L)</div>`;
     offMsg+='</div>';
     mTerm.innerHTML=offMsg;
     mFootL.textContent='—';mFootR.textContent='—';
@@ -438,17 +439,22 @@ function renderModal(d){
     `<div class="ms-box"><div class="ms-label">Method</div><div class="ms-val" style="color:var(--cyan)">${d.method||'—'}</div></div>`
     +`<div class="ms-box"><div class="ms-label">PnL</div><div class="ms-val" style="color:var(--${b.pnl_sol>=0?'green':'red'})">${fmtPnl(b.pnl_sol)} SOL</div></div>`
     +`<div class="ms-box"><div class="ms-label">Balance</div><div class="ms-val">${b.current!=null?b.current.toFixed(4):'—'}</div></div>`
-    +`<div class="ms-box"><div class="ms-label">Trades</div><div class="ms-val">${t.total||0} <span style="color:var(--text-dim);font-size:.6rem">${t.win_rate||0}% WR</span></div></div>`
-    +`<div class="ms-box"><div class="ms-label">Positions</div><div class="ms-val">${pos.open||0}</div></div>`
+    +`<div class="ms-box"><div class="ms-label">Trades</div><div class="ms-val">${t.total||0} <span style="font-size:.65rem"><span style="color:var(--green)">${t.wins||0}W</span> / <span style="color:var(--red)">${t.losses||0}L</span></span></div></div>`
+    +`<div class="ms-box"><div class="ms-label">Win Rate</div><div class="ms-val" style="color:${(t.win_rate||0)>=50?'var(--green)':'var(--red)'}">${t.win_rate||0}%</div></div>`
     +`<div class="ms-box"><div class="ms-label">Uptime</div><div class="ms-val">${fmtDur(d.uptime_seconds)}</div></div>`;
   
   // Bot stats pills
   let bsHtml='';
   if(sol>0) bsHtml+=`<div class="bs-pill">SOL <span class="num">$${sol.toFixed(2)}</span></div>`;
-  bsHtml+=`<div class="bs-pill ${bs.migrations_seen>0?'hl':''}">Migrations <span class="num">${bs.migrations_seen||0}</span></div>`;
+  if(bs.migrations_seen>0) bsHtml+=`<div class="bs-pill hl">Migrations <span class="num">${bs.migrations_seen}</span></div>`;
+  if(bs.bc_graduated>0) bsHtml+=`<div class="bs-pill" style="color:var(--cyan)">BC Grad <span class="num">${bs.bc_graduated}</span></div>`;
   bsHtml+=`<div class="bs-pill">Tracking <span class="num">${bs.pools_tracking||0}</span></div>`;
   bsHtml+=`<div class="bs-pill">Updates <span class="num">${(bs.price_updates||0).toLocaleString()}</span></div>`;
-  if(bs.migrations_rejected>0) bsHtml+=`<div class="bs-pill" style="color:var(--red)">Rejected <span class="num">${bs.migrations_rejected}</span></div>`;
+  if(bs.entries_found>0) bsHtml+=`<div class="bs-pill" style="background:var(--green-bg);color:var(--green)">Entries <span class="num">${bs.entries_found}</span></div>`;
+  if(bs.buys_success>0) bsHtml+=`<div class="bs-pill" style="background:var(--green-bg);color:var(--green)">Filled <span class="num">${bs.buys_success}</span></div>`;
+  if(bs.buys_failed>0) bsHtml+=`<div class="bs-pill" style="color:var(--red)">Buy Fail <span class="num">${bs.buys_failed}</span></div>`;
+  if(bs.migrations_rejected>0) bsHtml+=`<div class="bs-pill" style="color:var(--yellow)">Rejected <span class="num">${bs.migrations_rejected}</span></div>`;
+  if(bs.liquidity_rejected>0) bsHtml+=`<div class="bs-pill" style="color:var(--yellow)">Liq Rej <span class="num">${bs.liquidity_rejected}</span></div>`;
   mBotStats.innerHTML=bsHtml;
   
   // Terminal lines
