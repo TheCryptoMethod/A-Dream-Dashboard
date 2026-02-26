@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-02-26T23:34:18.326730+00:00",
-  "updated_at": "2026-02-26T23:40:25.050673+00:00",
-  "uptime_seconds": 366.7,
+  "updated_at": "2026-02-26T23:41:26.195850+00:00",
+  "uptime_seconds": 427.9,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -552,7 +552,15 @@
     "[23:39:58] \ud83d\udce1 Tracking: GjdomVPEgBzCTZwe\u2026 | Pool #1",
     "[23:40:00] \u26a0\ufe0f PumpSwap error: tx_failed",
     "[23:40:00] \u26a0\ufe0f Buy FAILED: M1 | GjdomVPEgBzC\u2026",
-    "[23:40:22] \ud83d\udcca Mig:10 Track:0 Upd:3 Pos:0 SOL:$85.96"
+    "[23:40:22] \ud83d\udcca Mig:10 Track:0 Upd:3 Pos:0 SOL:$85.96",
+    "[23:40:38] \ud83d\udd14 Migration #11 detected",
+    "[23:41:06] \ud83d\udd14 Migration #12 detected",
+    "[23:41:19] \u2705 BC Graduated: HVN5MmyvE3Nq\u2026",
+    "[23:41:19] \ud83d\udce1 Tracking: HVN5MmyvE3NqerYa\u2026 | Pool #1",
+    "[23:41:21] \u26a0\ufe0f PumpSwap error: tx_failed",
+    "[23:41:21] \u26a0\ufe0f Buy FAILED: M1 | HVN5MmyvE3Nq\u2026",
+    "[23:41:22] \ud83d\udd14 Migration #13 detected",
+    "[23:41:23] \ud83d\udcca Mig:13 Track:0 Upd:4 Pos:0 SOL:$86.01"
   ],
   "balance": {
     "start": 4.425578,
@@ -569,17 +577,17 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.96,
+  "sol_price": 86.01,
   "bot_stats": {
-    "migrations_seen": 10,
-    "migrations_added": 3,
+    "migrations_seen": 13,
+    "migrations_added": 4,
     "pools_tracking": 0,
-    "price_updates": 3,
+    "price_updates": 4,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 3,
-    "entries_found": 3,
+    "bc_graduated": 4,
+    "entries_found": 4,
     "buys_success": 0,
-    "buys_failed": 3
+    "buys_failed": 4
   }
 }
