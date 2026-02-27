@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-02-27T21:49:11.331359+00:00",
-  "updated_at": "2026-02-27T21:53:19.213737+00:00",
-  "uptime_seconds": 247.9,
+  "updated_at": "2026-02-27T21:54:21.043128+00:00",
+  "uptime_seconds": 309.7,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -543,29 +543,36 @@
     "[21:53:11] \ud83d\udd34 Stop Loss: 9cP1SxbbQfSd\u2026 | -9.3% | -0.0049 SOL | SL1: -9.3% price (exec: -12.7%)",
     "[21:53:12] \ud83d\udfe2 ENTRY: M1 | 4nUKM8KtTVeB... | $0.000039146 | 0.0521 SOL",
     "[21:53:12] \ud83d\udcb0 Position filled: M1 | 4nUKM8KtTVeB\u2026 | $0.000039146 | 0.0521 SOL | FDV $39.1k",
-    "[21:53:16] \ud83d\udcca Mig:5 Track:1 Upd:118 Pos:1 SOL:$81.35"
+    "[21:53:16] \ud83d\udcca Mig:5 Track:1 Upd:118 Pos:1 SOL:$81.35",
+    "[21:53:42] \ud83d\udd14 Migration #6 detected",
+    "[21:53:51] \ud83d\udd14 Migration #7 detected",
+    "[21:53:52] \ud83d\udd14 Migration #8 detected",
+    "[21:53:52] \ud83d\udd14 Migration #9 detected",
+    "[21:53:57] \ud83d\udfe2 EXIT: 4nUKM8KtTVeB... | EARLY_PERF_30S | +29.2%",
+    "[21:53:57] \ud83d\udfe2 EARLY_PERF_30S: 4nUKM8KtTVeB\u2026 | +29.2% | +0.0152 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_30S (perf_30s=+29.2%)",
+    "[21:54:18] \ud83d\udcca Mig:9 Track:0 Upd:258 Pos:0 SOL:$81.29"
   ],
   "balance": {
     "start": 4.310827,
-    "current": 4.253034,
-    "pnl_sol": -0.057793,
-    "pnl_pct": -1.34
+    "current": 4.306596,
+    "pnl_sol": -0.004231,
+    "pnl_pct": -0.1
   },
   "trades": {
-    "total": 2,
-    "wins": 0,
-    "losses": 2,
-    "win_rate": 0.0
+    "total": 4,
+    "wins": 1,
+    "losses": 3,
+    "win_rate": 25.0
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
-  "sol_price": 81.35,
+  "sol_price": 81.29,
   "bot_stats": {
-    "migrations_seen": 5,
+    "migrations_seen": 9,
     "migrations_added": 2,
-    "pools_tracking": 1,
-    "price_updates": 133,
+    "pools_tracking": 0,
+    "price_updates": 258,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 2,
