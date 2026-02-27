@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-02-27T02:33:32.287599+00:00",
-  "updated_at": "2026-02-27T02:36:37.639559+00:00",
-  "uptime_seconds": 185.4,
+  "updated_at": "2026-02-27T02:37:39.358416+00:00",
+  "uptime_seconds": 247.1,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -546,7 +546,11 @@
     "[02:36:29] \ud83d\udd14 Migration #13 detected",
     "[02:36:33] \ud83d\udd14 Migration #14 detected",
     "[02:36:34] \ud83d\udcca Mig:14 Track:1 Upd:69 Pos:1 SOL:$86.58",
-    "[02:36:36] \u26a0\ufe0f Sell failed: SL | 8YvUf7Vk2tgG\u2026 | SL1: -5.2% price (exec: -12.2%)"
+    "[02:36:36] \u26a0\ufe0f Sell failed: SL | 8YvUf7Vk2tgG\u2026 | SL1: -5.2% price (exec: -12.2%)",
+    "[02:36:43] \ud83d\udd14 Migration #15 detected",
+    "[02:36:57] \ud83d\udd14 Migration #16 detected",
+    "[02:36:58] \ud83d\udd14 Migration #17 detected",
+    "[02:37:36] \ud83d\udcca Mig:17 Track:0 Upd:134 Pos:0 SOL:$86.70"
   ],
   "balance": {
     "start": 4.318626,
@@ -561,14 +565,14 @@
     "win_rate": 0
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
-  "sol_price": 86.58,
+  "sol_price": 86.7,
   "bot_stats": {
-    "migrations_seen": 14,
+    "migrations_seen": 17,
     "migrations_added": 1,
-    "pools_tracking": 1,
-    "price_updates": 117,
+    "pools_tracking": 0,
+    "price_updates": 134,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 1,
