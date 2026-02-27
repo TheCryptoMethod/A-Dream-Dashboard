@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-02-27T02:16:30.318080+00:00",
-  "updated_at": "2026-02-27T02:18:34.205774+00:00",
-  "uptime_seconds": 123.9,
+  "updated_at": "2026-02-27T02:19:36.073902+00:00",
+  "uptime_seconds": 185.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -536,29 +536,35 @@
     "[02:18:18] \ud83d\udce1 Tracking: BTJFUMK141ATcYAh\u2026 | Pool #1",
     "[02:18:28] \ud83d\udfe2 ENTRY: M1 | BTJFUMK141AT... | $0.000028031 | 0.0521 SOL",
     "[02:18:28] \ud83d\udcb0 Position filled: M1 | BTJFUMK141AT\u2026 | $0.000028031 | 0.0521 SOL | FDV $28.0k",
-    "[02:18:31] \ud83d\udcca Mig:6 Track:1 Upd:42 Pos:1 SOL:$86.04"
+    "[02:18:31] \ud83d\udcca Mig:6 Track:1 Upd:42 Pos:1 SOL:$86.04",
+    "[02:18:40] \u26a0\ufe0f Sell failed: SL | BTJFUMK141AT\u2026 | SL1: -43.7% price (exec: -48.7%)",
+    "[02:18:59] \ud83d\udd34 EXIT: BTJFUMK141AT... | EARLY_DELTA_10S_30S | -3.8%",
+    "[02:18:59] \ud83d\udd34 EARLY_DELTA_10S_30S: BTJFUMK141AT\u2026 | -3.8% | -0.0020 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_10S_30S (delta=+36.6%)",
+    "[02:19:13] \ud83d\udd14 Migration #7 detected",
+    "[02:19:17] \ud83d\udd14 Migration #8 detected",
+    "[02:19:33] \ud83d\udcca Mig:8 Track:0 Upd:141 Pos:0 SOL:$86.10"
   ],
   "balance": {
     "start": 4.339755,
-    "current": 4.287661,
-    "pnl_sol": -0.052094,
-    "pnl_pct": -1.2
+    "current": 4.319282,
+    "pnl_sol": -0.020473,
+    "pnl_pct": -0.47
   },
   "trades": {
-    "total": 0,
+    "total": 2,
     "wins": 0,
-    "losses": 0,
-    "win_rate": 0
+    "losses": 2,
+    "win_rate": 0.0
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
-  "sol_price": 86.07,
+  "sol_price": 86.1,
   "bot_stats": {
-    "migrations_seen": 6,
+    "migrations_seen": 8,
     "migrations_added": 1,
-    "pools_tracking": 1,
-    "price_updates": 53,
+    "pools_tracking": 0,
+    "price_updates": 141,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 1,
