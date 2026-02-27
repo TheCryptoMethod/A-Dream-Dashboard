@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-02-27T15:49:55.491097+00:00",
-  "updated_at": "2026-02-27T15:56:08.152603+00:00",
-  "uptime_seconds": 372.7,
+  "updated_at": "2026-02-27T15:57:10.676655+00:00",
+  "uptime_seconds": 435.2,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -542,13 +542,21 @@
     "[15:55:19] \ud83d\udd14 Migration #10 detected",
     "[15:55:57] \ud83d\udd14 Migration #11 detected",
     "[15:56:01] \ud83d\udd14 Migration #12 detected",
-    "[15:56:05] \ud83d\udcca Mig:12 Track:0 Upd:0 Pos:0 SOL:$82.88"
+    "[15:56:05] \ud83d\udcca Mig:12 Track:0 Upd:0 Pos:0 SOL:$82.88",
+    "[15:56:32] \ud83d\udd14 Migration #13 detected",
+    "[15:56:35] \ud83d\udd14 Migration #14 detected",
+    "[15:56:44] \ud83d\udd14 Migration #15 detected",
+    "[15:56:48] \u2705 BC Graduated: Pdajts4Am4ES\u2026",
+    "[15:56:49] \ud83d\udce1 Tracking: Pdajts4Am4ESBkST\u2026 | Pool #1",
+    "[15:56:59] \u26a0\ufe0f Jupiter error: tx_failed_verified",
+    "[15:56:59] \u26a0\ufe0f Buy FAILED: M1 | Pdajts4Am4ES\u2026",
+    "[15:57:07] \ud83d\udcca Mig:15 Track:0 Upd:1 Pos:0 SOL:$82.86"
   ],
   "balance": {
     "start": 4.302341,
-    "current": 4.302341,
-    "pnl_sol": 0.0,
-    "pnl_pct": 0.0
+    "current": 4.302289,
+    "pnl_sol": -5.1e-05,
+    "pnl_pct": -0.0
   },
   "trades": {
     "total": 0,
@@ -559,17 +567,17 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 82.88,
+  "sol_price": 82.86,
   "bot_stats": {
-    "migrations_seen": 12,
-    "migrations_added": 0,
+    "migrations_seen": 15,
+    "migrations_added": 1,
     "pools_tracking": 0,
-    "price_updates": 0,
+    "price_updates": 1,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 0,
-    "entries_found": 0,
+    "bc_graduated": 1,
+    "entries_found": 1,
     "buys_success": 0,
-    "buys_failed": 0
+    "buys_failed": 1
   }
 }
