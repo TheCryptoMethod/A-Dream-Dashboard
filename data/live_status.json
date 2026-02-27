@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-02-27T01:23:36.347232+00:00",
-  "updated_at": "2026-02-27T01:53:30.703932+00:00",
-  "uptime_seconds": 1794.4,
+  "updated_at": "2026-02-27T01:54:32.615334+00:00",
+  "uptime_seconds": 1856.3,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,20 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[01:44:04] \ud83d\udd34 EXIT: GomBu8MosBwT... | EARLY_DELTA_10S_30S | -10.5%",
-    "[01:44:04] \ud83d\udd34 EARLY_DELTA_10S_30S: GomBu8MosBwT\u2026 | -10.5% | -0.0055 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_10S_30S (delta=+5.2%)",
-    "[01:44:11] \ud83d\udcca Mig:66 Track:0 Upd:557 Pos:0 SOL:$85.96",
-    "[01:44:36] \ud83d\udd14 Migration #67 detected",
-    "[01:44:43] \ud83d\udd14 Migration #68 detected",
-    "[01:45:03] \ud83d\udd14 Migration #69 detected",
-    "[01:45:13] \ud83d\udcca Mig:69 Track:0 Upd:557 Pos:0 SOL:$85.94",
-    "[01:45:20] \ud83d\udd14 Migration #70 detected",
-    "[01:45:32] \ud83d\udd14 Migration #71 detected",
-    "[01:45:36] \ud83d\udd14 Migration #72 detected",
-    "[01:45:52] \ud83d\udd14 Migration #73 detected",
-    "[01:46:02] \ud83d\udd14 Migration #74 detected",
-    "[01:46:07] \ud83d\udd14 Migration #75 detected",
-    "[01:46:15] \ud83d\udcca Mig:75 Track:0 Upd:557 Pos:0 SOL:$85.85",
     "[01:46:22] \ud83d\udd14 Migration #76 detected",
     "[01:46:41] \ud83d\udd14 Migration #77 detected",
     "[01:46:42] \ud83d\udd14 Migration #78 detected",
@@ -562,34 +548,48 @@
     "[01:52:33] \ud83d\udd14 Migration #86 detected",
     "[01:53:04] \ud83d\udd14 Migration #87 detected",
     "[01:53:26] \ud83d\udd14 Migration #88 detected",
-    "[01:53:27] \ud83d\udcca Mig:88 Track:0 Upd:613 Pos:0 SOL:$85.95"
+    "[01:53:27] \ud83d\udcca Mig:88 Track:0 Upd:613 Pos:0 SOL:$85.95",
+    "[01:53:39] \ud83d\udd14 Migration #89 detected",
+    "[01:53:42] \ud83d\udd14 Migration #90 detected",
+    "[01:53:55] \u2705 BC Graduated: FhEpTM2ATMnj\u2026",
+    "[01:53:55] \ud83d\udce1 Tracking: FhEpTM2ATMnj8fur\u2026 | Pool #1",
+    "[01:53:57] \ud83d\udd14 Migration #91 detected",
+    "[01:53:57] \ud83d\udd14 Migration #92 detected",
+    "[01:54:06] \ud83d\udfe2 ENTRY: M1 | FhEpTM2ATMnj... | $0.000028423 | 0.0521 SOL",
+    "[01:54:06] \ud83d\udcb0 Position filled: M1 | FhEpTM2ATMnj\u2026 | $0.000028423 | 0.0521 SOL | FDV $28.4k",
+    "[01:54:08] \ud83d\udd14 Migration #93 detected",
+    "[01:54:15] \ud83d\udd34 EXIT: FhEpTM2ATMnj... | SL | -16.3%",
+    "[01:54:15] \ud83d\udd34 Stop Loss: FhEpTM2ATMnj\u2026 | -16.3% | -0.0085 SOL | SL1: -10.3% price (exec: -16.2%)",
+    "[01:54:20] \ud83d\udd14 Migration #94 detected",
+    "[01:54:20] \ud83d\udd14 Migration #95 detected",
+    "[01:54:29] \ud83d\udcca Mig:95 Track:0 Upd:634 Pos:0 SOL:$85.95"
   ],
   "balance": {
     "start": 4.367737,
-    "current": 4.348232,
-    "pnl_sol": -0.019505,
-    "pnl_pct": -0.45
+    "current": 4.339755,
+    "pnl_sol": -0.027982,
+    "pnl_pct": -0.64
   },
   "trades": {
-    "total": 10,
+    "total": 12,
     "wins": 1,
-    "losses": 9,
-    "win_rate": 10.0
+    "losses": 11,
+    "win_rate": 8.3
   },
   "positions": {
     "open": 0
   },
   "sol_price": 85.95,
   "bot_stats": {
-    "migrations_seen": 88,
-    "migrations_added": 5,
+    "migrations_seen": 95,
+    "migrations_added": 6,
     "pools_tracking": 0,
-    "price_updates": 613,
+    "price_updates": 634,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 5,
-    "entries_found": 5,
-    "buys_success": 5,
+    "bc_graduated": 6,
+    "entries_found": 6,
+    "buys_success": 6,
     "buys_failed": 0
   }
 }
