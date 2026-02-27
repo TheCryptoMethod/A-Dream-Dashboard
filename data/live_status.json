@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-02-27T00:45:40.066201+00:00",
-  "updated_at": "2026-02-27T00:48:43.443189+00:00",
-  "uptime_seconds": 183.4,
+  "updated_at": "2026-02-27T00:49:44.640168+00:00",
+  "uptime_seconds": 244.6,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -551,7 +551,12 @@
     "[00:48:38] \ud83d\udd14 Migration #12 detected",
     "[00:48:40] \ud83d\udcca Mig:12 Track:2 Upd:99 Pos:1 SOL:$85.31",
     "[00:48:40] \ud83d\udfe2 ENTRY: M1 | 84weHseRMmBu... | $0.000000000 | 0.0525 SOL",
-    "[00:48:40] \ud83d\udcb0 Position filled: M1 | 84weHseRMmBu\u2026 | $0.000000000 | 0.0525 SOL | FDV $38.3k"
+    "[00:48:40] \ud83d\udcb0 Position filled: M1 | 84weHseRMmBu\u2026 | $0.000000000 | 0.0525 SOL | FDV $38.3k",
+    "[00:48:48] \ud83d\udfe2 EXIT: 84weHseRMmBu... | TP | +8293148188.8%",
+    "[00:48:48] \ud83d\udfe2 Take Profit: 84weHseRMmBu\u2026 | +8293148188.8% | +4354697.6974 SOL | TP1: +110% reached",
+    "[00:48:48] \ud83d\udd14 Migration #13 detected",
+    "[00:49:33] \ud83d\udd14 Migration #14 detected",
+    "[00:49:41] \ud83d\udcca Mig:14 Track:0 Upd:122 Pos:0 SOL:$85.30"
   ],
   "balance": {
     "start": 0.0,
@@ -560,20 +565,20 @@
     "pnl_pct": 0
   },
   "trades": {
-    "total": 2,
-    "wins": 2,
-    "losses": 0,
-    "win_rate": 100.0
+    "total": 4,
+    "wins": 3,
+    "losses": 1,
+    "win_rate": 75.0
   },
   "positions": {
-    "open": 2
+    "open": 0
   },
-  "sol_price": 85.31,
+  "sol_price": 85.3,
   "bot_stats": {
-    "migrations_seen": 12,
+    "migrations_seen": 14,
     "migrations_added": 2,
-    "pools_tracking": 2,
-    "price_updates": 113,
+    "pools_tracking": 0,
+    "price_updates": 122,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 2,
