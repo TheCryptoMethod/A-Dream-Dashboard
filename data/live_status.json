@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-02-27T02:16:30.318080+00:00",
-  "updated_at": "2026-02-27T02:17:32.271740+00:00",
-  "uptime_seconds": 62.0,
+  "updated_at": "2026-02-27T02:18:34.205774+00:00",
+  "uptime_seconds": 123.9,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -529,13 +529,20 @@
     "[02:17:08] \ud83d\udd14 Migration #2 detected",
     "[02:17:16] \ud83d\udd14 Migration #3 detected",
     "[02:17:20] \ud83d\udd14 Migration #4 detected",
-    "[02:17:29] \ud83d\udcca Mig:4 Track:0 Upd:0 Pos:0 SOL:$86.10"
+    "[02:17:29] \ud83d\udcca Mig:4 Track:0 Upd:0 Pos:0 SOL:$86.10",
+    "[02:18:04] \ud83d\udd14 Migration #5 detected",
+    "[02:18:15] \ud83d\udd14 Migration #6 detected",
+    "[02:18:18] \u2705 BC Graduated: BTJFUMK141AT\u2026",
+    "[02:18:18] \ud83d\udce1 Tracking: BTJFUMK141ATcYAh\u2026 | Pool #1",
+    "[02:18:28] \ud83d\udfe2 ENTRY: M1 | BTJFUMK141AT... | $0.000028031 | 0.0521 SOL",
+    "[02:18:28] \ud83d\udcb0 Position filled: M1 | BTJFUMK141AT\u2026 | $0.000028031 | 0.0521 SOL | FDV $28.0k",
+    "[02:18:31] \ud83d\udcca Mig:6 Track:1 Upd:42 Pos:1 SOL:$86.04"
   ],
   "balance": {
     "start": 4.339755,
-    "current": 4.339755,
-    "pnl_sol": 0.0,
-    "pnl_pct": 0.0
+    "current": 4.287661,
+    "pnl_sol": -0.052094,
+    "pnl_pct": -1.2
   },
   "trades": {
     "total": 0,
@@ -544,19 +551,19 @@
     "win_rate": 0
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 86.04,
+  "sol_price": 86.07,
   "bot_stats": {
-    "migrations_seen": 4,
-    "migrations_added": 0,
-    "pools_tracking": 0,
-    "price_updates": 0,
+    "migrations_seen": 6,
+    "migrations_added": 1,
+    "pools_tracking": 1,
+    "price_updates": 53,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 0,
-    "entries_found": 0,
-    "buys_success": 0,
+    "bc_graduated": 1,
+    "entries_found": 1,
+    "buys_success": 1,
     "buys_failed": 0
   }
 }
