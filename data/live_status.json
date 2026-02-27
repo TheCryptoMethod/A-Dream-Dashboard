@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-02-27T15:22:53.259482+00:00",
-  "updated_at": "2026-02-27T15:22:53.259579+00:00",
-  "uptime_seconds": 0.0,
+  "updated_at": "2026-02-27T15:23:55.371802+00:00",
+  "uptime_seconds": 62.1,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -524,13 +524,21 @@
   "dry_run": false,
   "terminal": [
     "[15:22:53] \ud83d\ude80 Bot gestartet \u2014 M1",
-    "[15:22:53] \ud83d\udcb0 Balance: 4.3128 SOL"
+    "[15:22:53] \ud83d\udcb0 Balance: 4.3128 SOL",
+    "[15:23:06] \ud83d\udd14 Migration #1 detected",
+    "[15:23:19] \u2705 BC Graduated: 2tu13sNG9J4T\u2026",
+    "[15:23:19] \ud83d\udce1 Tracking: 2tu13sNG9J4Tf2GZ\u2026 | Pool #1",
+    "[15:23:30] \ud83d\udfe2 ENTRY: M1 | 2tu13sNG9J4T... | $0.000032306 | 0.0521 SOL",
+    "[15:23:30] \ud83d\udcb0 Position filled: M1 | 2tu13sNG9J4T\u2026 | $0.000032306 | 0.0521 SOL | FDV $32.3k",
+    "[15:23:50] \u26a0\ufe0f Sell failed: SL | 2tu13sNG9J4T\u2026 | SL1: -11.0% price (exec: -17.0%)",
+    "[15:23:52] \ud83d\udcca Mig:1 Track:1 Upd:31 Pos:1 SOL:$82.79",
+    "[15:23:53] \ud83d\udd14 Migration #2 detected"
   ],
   "balance": {
-    "start": 4.312840319,
-    "current": 4.312840319,
-    "pnl_sol": 0,
-    "pnl_pct": 0
+    "start": 4.31284,
+    "current": 4.302341,
+    "pnl_sol": -0.010499,
+    "pnl_pct": -0.24
   },
   "trades": {
     "total": 0,
@@ -539,6 +547,19 @@
     "win_rate": 0
   },
   "positions": {
-    "open": 0
+    "open": 1
+  },
+  "sol_price": 82.78,
+  "bot_stats": {
+    "migrations_seen": 2,
+    "migrations_added": 1,
+    "pools_tracking": 1,
+    "price_updates": 35,
+    "migrations_rejected": 0,
+    "liquidity_rejected": 0,
+    "bc_graduated": 1,
+    "entries_found": 1,
+    "buys_success": 1,
+    "buys_failed": 0
   }
 }
