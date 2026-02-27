@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-02-27T20:40:28.119913+00:00",
-  "updated_at": "2026-02-27T20:47:43.669932+00:00",
-  "uptime_seconds": 435.6,
+  "updated_at": "2026-02-27T20:48:45.753582+00:00",
+  "uptime_seconds": 497.6,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -550,28 +550,32 @@
     "[20:47:11] \ud83d\udfe2 ENTRY: M1 | 9aJDPgjsmqwG... | $0.000032292 | 0.0521 SOL",
     "[20:47:11] \ud83d\udcb0 Position filled: M1 | 9aJDPgjsmqwG\u2026 | $0.000032292 | 0.0521 SOL | FDV $32.3k",
     "[20:47:31] \ud83d\udd14 Migration #15 detected",
-    "[20:47:40] \ud83d\udcca Mig:15 Track:1 Upd:185 Pos:1 SOL:$81.61"
+    "[20:47:40] \ud83d\udcca Mig:15 Track:1 Upd:185 Pos:1 SOL:$81.61",
+    "[20:47:55] \ud83d\udfe2 EXIT: 9aJDPgjsmqwG... | EARLY_PERF_30S | +35.0%",
+    "[20:47:55] \ud83d\udfe2 EARLY_PERF_30S: 9aJDPgjsmqwG\u2026 | +35.0% | +0.0182 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_30S (perf_30s=+35.0%)",
+    "[20:48:16] \ud83d\udd14 Migration #16 detected",
+    "[20:48:42] \ud83d\udcca Mig:16 Track:0 Upd:192 Pos:0 SOL:$81.60"
   ],
   "balance": {
     "start": 4.298409,
-    "current": 4.299198,
-    "pnl_sol": 0.00079,
+    "current": 4.299162,
+    "pnl_sol": 0.000753,
     "pnl_pct": 0.02
   },
   "trades": {
-    "total": 0,
-    "wins": 0,
-    "losses": 0,
-    "win_rate": 0
+    "total": 2,
+    "wins": 1,
+    "losses": 1,
+    "win_rate": 50.0
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
-  "sol_price": 81.61,
+  "sol_price": 81.6,
   "bot_stats": {
-    "migrations_seen": 15,
+    "migrations_seen": 16,
     "migrations_added": 1,
-    "pools_tracking": 1,
+    "pools_tracking": 0,
     "price_updates": 192,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
