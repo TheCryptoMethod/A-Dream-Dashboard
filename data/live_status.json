@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T14:52:09.206624+00:00",
-  "updated_at": "2026-03-01T15:44:48.344232+00:00",
-  "uptime_seconds": 3159.1,
+  "updated_at": "2026-03-01T15:45:50.400863+00:00",
+  "uptime_seconds": 3221.2,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,16 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[15:35:47] \ud83d\udd14 Migration #135 detected",
-    "[15:35:52] \ud83d\udcca Mig:135 Track:0 Upd:333 Pos:0 SOL:$86.22",
-    "[15:36:09] \ud83d\udd14 Migration #136 detected",
-    "[15:36:29] \ud83d\udd14 Migration #137 detected",
-    "[15:36:45] \ud83d\udd14 Migration #138 detected",
-    "[15:36:54] \ud83d\udcca Mig:138 Track:0 Upd:333 Pos:0 SOL:$86.22",
-    "[15:37:38] \ud83d\udd14 Migration #139 detected",
-    "[15:37:51] \u2705 BC Graduated: FgUvbQF9fvsJ\u2026",
-    "[15:37:51] \ud83d\udce1 Tracking: FgUvbQF9fvsJ8WwK\u2026 | Pool #1",
-    "[15:37:56] \ud83d\udcca Mig:139 Track:1 Upd:345 Pos:0 SOL:$86.38",
     "[15:38:00] \ud83d\udfe2 ENTRY: M1 | FgUvbQF9fvsJ... | $0.000048070 | 0.0521 SOL",
     "[15:38:00] \ud83d\udcb0 Position filled: M1 | FgUvbQF9fvsJ\u2026 | $0.000048070 | 0.0521 SOL | FDV $48.1k",
     "[15:38:07] \ud83d\udd34 EXIT: FgUvbQF9fvsJ... | SL | -7.3%",
@@ -562,13 +552,23 @@
     "[15:43:55] \ud83d\udd14 Migration #157 detected",
     "[15:44:08] \ud83d\udcca Mig:157 Track:0 Upd:381 Pos:0 SOL:$86.40",
     "[15:44:17] \ud83d\udd14 Migration #158 detected",
-    "[15:44:31] \ud83d\udd14 Migration #159 detected"
+    "[15:44:31] \ud83d\udd14 Migration #159 detected",
+    "[15:44:52] \ud83d\udd14 Migration #160 detected",
+    "[15:45:05] \u2705 BC Graduated: fR1pTx9AaEWo\u2026",
+    "[15:45:05] \ud83d\udce1 Tracking: fR1pTx9AaEWoEhmg\u2026 | Pool #1",
+    "[15:45:10] \ud83d\udcca Mig:160 Track:1 Upd:402 Pos:0 SOL:$86.42",
+    "[15:45:11] \ud83d\udd14 Migration #161 detected",
+    "[15:45:14] \ud83d\udfe2 ENTRY: M1 | fR1pTx9AaEWo... | $0.000108354 | 0.0521 SOL",
+    "[15:45:14] \ud83d\udcb0 Position filled: M1 | fR1pTx9AaEWo\u2026 | $0.000108354 | 0.0521 SOL | FDV $108.4k",
+    "[15:45:15] \ud83d\udd14 Migration #162 detected",
+    "[15:45:33] \ud83d\udd14 Migration #163 detected",
+    "[15:45:37] \ud83d\udd14 Migration #164 detected"
   ],
   "balance": {
     "start": 4.211718,
-    "current": 4.185623,
-    "pnl_sol": -0.026096,
-    "pnl_pct": -0.62
+    "current": 4.133546,
+    "pnl_sol": -0.078172,
+    "pnl_pct": -1.86
   },
   "trades": {
     "total": 5,
@@ -577,19 +577,19 @@
     "win_rate": 0.0
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 86.42,
+  "sol_price": 86.43,
   "bot_stats": {
-    "migrations_seen": 159,
-    "migrations_added": 5,
-    "pools_tracking": 0,
-    "price_updates": 381,
+    "migrations_seen": 164,
+    "migrations_added": 6,
+    "pools_tracking": 1,
+    "price_updates": 562,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 5,
-    "entries_found": 5,
-    "buys_success": 5,
+    "bc_graduated": 6,
+    "entries_found": 6,
+    "buys_success": 6,
     "buys_failed": 0
   }
 }
