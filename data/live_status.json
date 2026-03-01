@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T19:31:08.200338+00:00",
-  "uptime_seconds": 2682.7,
+  "updated_at": "2026-03-01T19:32:10.464646+00:00",
+  "uptime_seconds": 2745.0,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,11 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[19:24:04] \ud83d\udce1 Tracking: 4GHH4c2yse8jzs8E\u2026 | Pool #1",
-    "[19:24:06] \ud83d\udd14 Migration #100 detected",
-    "[19:24:12] \ud83d\udfe2 ENTRY: M1 | 4GHH4c2yse8j... | $0.000032799 | 0.0521 SOL",
-    "[19:24:12] \ud83d\udcb0 Position filled: M1 | 4GHH4c2yse8j\u2026 | $0.000032799 | 0.0521 SOL | FDV $32.8k",
-    "[19:24:15] \ud83d\udd14 Migration #101 detected",
     "[19:24:19] \u2705 BC Graduated: 43PjyvaqQfNQ\u2026",
     "[19:24:19] \ud83d\udce1 Tracking: 43PjyvaqQfNQ481j\u2026 | Pool #2",
     "[19:24:20] \u26a0\ufe0f Jupiter error: quote_failed: HTTP 400: {\"error\":\"No routes found\",\"errorCod",
@@ -562,7 +557,12 @@
     "[19:30:04] \ud83d\udd14 Migration #121 detected",
     "[19:30:04] \ud83d\udd14 Migration #122 detected",
     "[19:30:27] \ud83d\udd14 Migration #123 detected",
-    "[19:31:05] \ud83d\udcca Mig:123 Track:0 Upd:1678 Pos:0 SOL:$83.49"
+    "[19:31:05] \ud83d\udcca Mig:123 Track:0 Upd:1678 Pos:0 SOL:$83.49",
+    "[19:31:29] \ud83d\udd14 Migration #124 detected",
+    "[19:31:31] \ud83d\udd14 Migration #125 detected",
+    "[19:31:48] \ud83d\udd14 Migration #126 detected",
+    "[19:32:03] \ud83d\udd14 Migration #127 detected",
+    "[19:32:07] \ud83d\udcca Mig:127 Track:0 Upd:1678 Pos:0 SOL:$83.47"
   ],
   "balance": {
     "start": 4.065247,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 83.49,
+  "sol_price": 83.47,
   "bot_stats": {
-    "migrations_seen": 123,
+    "migrations_seen": 127,
     "migrations_added": 13,
     "pools_tracking": 0,
     "price_updates": 1678,
