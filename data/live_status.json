@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T14:52:09.206624+00:00",
-  "updated_at": "2026-03-01T16:17:53.495570+00:00",
-  "uptime_seconds": 5144.3,
+  "updated_at": "2026-03-01T16:18:55.501206+00:00",
+  "uptime_seconds": 5206.3,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,12 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[16:11:43] \ud83d\udd14 Migration #268 detected",
-    "[16:11:46] \u2705 BC Graduated: Xakz63gffDg5\u2026",
-    "[16:11:46] \ud83d\udce1 Tracking: Xakz63gffDg5JSq2\u2026 | Pool #1",
-    "[16:11:51] \ud83d\udd14 Migration #269 detected",
-    "[16:11:55] \ud83d\udfe2 ENTRY: M1 | Xakz63gffDg5... | $0.000104540 | 0.0521 SOL",
-    "[16:11:55] \ud83d\udcb0 Position filled: M1 | Xakz63gffDg5\u2026 | $0.000104540 | 0.0521 SOL | FDV $104.5k",
     "[16:11:59] \ud83d\udd14 Migration #270 detected",
     "[16:12:04] \ud83d\udcca Mig:270 Track:1 Upd:1350 Pos:1 SOL:$85.88",
     "[16:12:05] \ud83d\udd14 Migration #271 detected",
@@ -562,7 +556,13 @@
     "[16:16:41] \ud83d\udfe2 EXIT: 4vWwKrsBp9VG... | EARLY_DELTA_10S_30S | +8.8%",
     "[16:16:41] \ud83d\udfe2 EARLY_DELTA_10S_30S: 4vWwKrsBp9VG\u2026 | +8.8% | +0.0046 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_10S_30S (delta=+1.5%)",
     "[16:16:45] \ud83d\udd14 Migration #288 detected",
-    "[16:17:13] \ud83d\udcca Mig:288 Track:0 Upd:1620 Pos:0 SOL:$85.91"
+    "[16:17:13] \ud83d\udcca Mig:288 Track:0 Upd:1620 Pos:0 SOL:$85.91",
+    "[16:18:15] \ud83d\udd14 Migration #289 detected",
+    "[16:18:15] \ud83d\udcca Mig:289 Track:0 Upd:1620 Pos:0 SOL:$85.86",
+    "[16:18:23] \ud83d\udd14 Migration #290 detected",
+    "[16:18:27] \ud83d\udd14 Migration #291 detected",
+    "[16:18:38] \ud83d\udd14 Migration #292 detected",
+    "[16:18:40] \ud83d\udd14 Migration #293 detected"
   ],
   "balance": {
     "start": 4.211718,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.91,
+  "sol_price": 85.86,
   "bot_stats": {
-    "migrations_seen": 288,
+    "migrations_seen": 293,
     "migrations_added": 14,
     "pools_tracking": 0,
     "price_updates": 1620,
