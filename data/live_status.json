@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T13:38:27.044888+00:00",
-  "updated_at": "2026-03-01T13:45:40.801327+00:00",
-  "uptime_seconds": 433.8,
+  "updated_at": "2026-03-01T13:46:42.873825+00:00",
+  "uptime_seconds": 495.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -552,34 +552,42 @@
     "[13:45:22] \ud83d\udd14 Migration #19 detected",
     "[13:45:22] \ud83d\udd14 Migration #20 detected",
     "[13:45:32] \ud83d\udd14 Migration #21 detected",
-    "[13:45:37] \ud83d\udcca Mig:21 Track:0 Upd:0 Pos:0 SOL:$84.87"
+    "[13:45:37] \ud83d\udcca Mig:21 Track:0 Upd:0 Pos:0 SOL:$84.87",
+    "[13:45:45] \u2705 BC Graduated: 4yYXZkG7zBES\u2026",
+    "[13:45:46] \ud83d\udce1 Tracking: 4yYXZkG7zBES6NeE\u2026 | Pool #1",
+    "[13:45:53] \ud83d\udfe2 ENTRY: M1 | 4yYXZkG7zBES... | $0.000035690 | 0.0521 SOL",
+    "[13:45:53] \ud83d\udcb0 Position filled: M1 | 4yYXZkG7zBES\u2026 | $0.000035690 | 0.0521 SOL | FDV $35.7k",
+    "[13:46:04] \ud83d\udd14 Migration #22 detected",
+    "[13:46:32] \ud83d\udd34 EXIT: 4yYXZkG7zBES... | EARLY_PERF_30S | -3.2%",
+    "[13:46:32] \ud83d\udd34 EARLY_PERF_30S: 4yYXZkG7zBES\u2026 | -3.2% | -0.0017 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_30S (perf_30s=+2.4%)",
+    "[13:46:39] \ud83d\udcca Mig:22 Track:0 Upd:57 Pos:0 SOL:$84.87"
   ],
   "balance": {
     "start": 4.212889,
-    "current": 4.212889,
-    "pnl_sol": 0.0,
-    "pnl_pct": 0.0
+    "current": 4.211718,
+    "pnl_sol": -0.001171,
+    "pnl_pct": -0.03
   },
   "trades": {
-    "total": 0,
+    "total": 1,
     "wins": 0,
-    "losses": 0,
-    "win_rate": 0
+    "losses": 1,
+    "win_rate": 0.0
   },
   "positions": {
     "open": 0
   },
   "sol_price": 84.87,
   "bot_stats": {
-    "migrations_seen": 21,
-    "migrations_added": 0,
+    "migrations_seen": 22,
+    "migrations_added": 1,
     "pools_tracking": 0,
-    "price_updates": 0,
+    "price_updates": 57,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 0,
-    "entries_found": 0,
-    "buys_success": 0,
+    "bc_graduated": 1,
+    "entries_found": 1,
+    "buys_success": 1,
     "buys_failed": 0
   }
 }
