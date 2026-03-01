@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T14:52:09.206624+00:00",
-  "updated_at": "2026-03-01T15:38:36.354071+00:00",
-  "uptime_seconds": 2787.1,
+  "updated_at": "2026-03-01T15:39:38.372412+00:00",
+  "uptime_seconds": 2849.2,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,8 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[15:29:15] \ud83d\udd14 Migration #115 detected",
-    "[15:29:32] \ud83d\udd14 Migration #116 detected",
     "[15:29:41] \ud83d\udcca Mig:116 Track:0 Upd:333 Pos:0 SOL:$86.30",
     "[15:29:50] \ud83d\udd14 Migration #117 detected",
     "[15:30:00] \ud83d\udd14 Migration #118 detected",
@@ -562,7 +560,9 @@
     "[15:38:00] \ud83d\udfe2 ENTRY: M1 | FgUvbQF9fvsJ... | $0.000048070 | 0.0521 SOL",
     "[15:38:00] \ud83d\udcb0 Position filled: M1 | FgUvbQF9fvsJ\u2026 | $0.000048070 | 0.0521 SOL | FDV $48.1k",
     "[15:38:07] \ud83d\udd34 EXIT: FgUvbQF9fvsJ... | SL | -7.3%",
-    "[15:38:07] \ud83d\udd34 Stop Loss: FgUvbQF9fvsJ\u2026 | -7.3% | -0.0038 SOL | SL1: -5.8% price (exec: -12.6%)"
+    "[15:38:07] \ud83d\udd34 Stop Loss: FgUvbQF9fvsJ\u2026 | -7.3% | -0.0038 SOL | SL1: -5.8% price (exec: -12.6%)",
+    "[15:38:58] \ud83d\udcca Mig:139 Track:0 Upd:381 Pos:0 SOL:$86.39",
+    "[15:39:37] \ud83d\udd14 Migration #140 detected"
   ],
   "balance": {
     "start": 4.211718,
@@ -581,7 +581,7 @@
   },
   "sol_price": 86.39,
   "bot_stats": {
-    "migrations_seen": 139,
+    "migrations_seen": 140,
     "migrations_added": 5,
     "pools_tracking": 0,
     "price_updates": 381,
