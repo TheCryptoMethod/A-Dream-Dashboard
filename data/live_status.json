@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T10:42:48.078714+00:00",
-  "updated_at": "2026-03-01T10:51:00.721327+00:00",
-  "uptime_seconds": 492.6,
+  "updated_at": "2026-03-01T10:52:02.533260+00:00",
+  "uptime_seconds": 554.5,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,7 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[10:42:48] \ud83d\ude80 Bot gestartet \u2014 M1",
     "[10:42:48] \ud83d\udcb0 Balance: 4.2734 SOL",
     "[10:43:23] \ud83d\udd14 Migration #1 detected",
     "[10:43:29] \ud83d\udd14 Migration #2 detected",
@@ -556,29 +555,36 @@
     "[10:50:43] \ud83d\udd14 Migration #20 detected",
     "[10:50:47] \ud83d\udfe2 ENTRY: M1 | p676jtxtyeSd... | $0.000087266 | 0.0521 SOL",
     "[10:50:47] \ud83d\udcb0 Position filled: M1 | p676jtxtyeSd\u2026 | $0.000087266 | 0.0521 SOL | FDV $87.3k",
-    "[10:51:00] \ud83d\udcca Mig:20 Track:1 Upd:89 Pos:1 SOL:$85.16"
+    "[10:51:00] \ud83d\udcca Mig:20 Track:1 Upd:89 Pos:1 SOL:$85.16",
+    "[10:51:11] \ud83d\udd14 Migration #21 detected",
+    "[10:51:19] \ud83d\udd14 Migration #22 detected",
+    "[10:51:46] \ud83d\udd14 Migration #23 detected",
+    "[10:51:58] \ud83d\udd14 Migration #24 detected",
+    "[10:51:59] \ud83d\udd34 EXIT: p676jtxtyeSd... | SL | -98.5%",
+    "[10:51:59] \ud83d\udd34 Stop Loss: p676jtxtyeSd\u2026 | -98.5% | -0.0513 SOL | SL1: -69.9% price (exec: -75.3%)",
+    "[10:52:02] \ud83d\udcca Mig:24 Track:0 Upd:325 Pos:0 SOL:$85.15"
   ],
   "balance": {
     "start": 4.273392,
-    "current": 4.221298,
-    "pnl_sol": -0.052094,
-    "pnl_pct": -1.22
+    "current": 4.222183,
+    "pnl_sol": -0.051209,
+    "pnl_pct": -1.2
   },
   "trades": {
-    "total": 0,
+    "total": 1,
     "wins": 0,
-    "losses": 0,
-    "win_rate": 0
+    "losses": 1,
+    "win_rate": 0.0
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
-  "sol_price": 85.16,
+  "sol_price": 85.15,
   "bot_stats": {
-    "migrations_seen": 20,
+    "migrations_seen": 24,
     "migrations_added": 1,
-    "pools_tracking": 1,
-    "price_updates": 89,
+    "pools_tracking": 0,
+    "price_updates": 325,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 1,
