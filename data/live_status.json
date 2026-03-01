@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T10:42:48.078714+00:00",
-  "updated_at": "2026-03-01T10:50:00.660861+00:00",
-  "uptime_seconds": 432.6,
+  "updated_at": "2026-03-01T10:51:00.721327+00:00",
+  "uptime_seconds": 492.6,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -546,13 +546,23 @@
     "[10:49:11] \ud83d\udd14 Migration #13 detected",
     "[10:49:17] \ud83d\udd14 Migration #14 detected",
     "[10:49:50] \ud83d\udd14 Migration #15 detected",
-    "[10:49:57] \ud83d\udcca Mig:15 Track:0 Upd:0 Pos:0 SOL:$85.13"
+    "[10:49:57] \ud83d\udcca Mig:15 Track:0 Upd:0 Pos:0 SOL:$85.13",
+    "[10:50:08] \ud83d\udd14 Migration #16 detected",
+    "[10:50:10] \ud83d\udd14 Migration #17 detected",
+    "[10:50:14] \ud83d\udd14 Migration #18 detected",
+    "[10:50:27] \ud83d\udd14 Migration #19 detected",
+    "[10:50:40] \u2705 BC Graduated: p676jtxtyeSd\u2026",
+    "[10:50:40] \ud83d\udce1 Tracking: p676jtxtyeSdT6e9\u2026 | Pool #1",
+    "[10:50:43] \ud83d\udd14 Migration #20 detected",
+    "[10:50:47] \ud83d\udfe2 ENTRY: M1 | p676jtxtyeSd... | $0.000087266 | 0.0521 SOL",
+    "[10:50:47] \ud83d\udcb0 Position filled: M1 | p676jtxtyeSd\u2026 | $0.000087266 | 0.0521 SOL | FDV $87.3k",
+    "[10:51:00] \ud83d\udcca Mig:20 Track:1 Upd:89 Pos:1 SOL:$85.16"
   ],
   "balance": {
     "start": 4.273392,
-    "current": 4.273392,
-    "pnl_sol": 0.0,
-    "pnl_pct": 0.0
+    "current": 4.221298,
+    "pnl_sol": -0.052094,
+    "pnl_pct": -1.22
   },
   "trades": {
     "total": 0,
@@ -561,19 +571,19 @@
     "win_rate": 0
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 85.13,
+  "sol_price": 85.16,
   "bot_stats": {
-    "migrations_seen": 15,
-    "migrations_added": 0,
-    "pools_tracking": 0,
-    "price_updates": 0,
+    "migrations_seen": 20,
+    "migrations_added": 1,
+    "pools_tracking": 1,
+    "price_updates": 89,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 0,
-    "entries_found": 0,
-    "buys_success": 0,
+    "bc_graduated": 1,
+    "entries_found": 1,
+    "buys_success": 1,
     "buys_failed": 0
   }
 }
