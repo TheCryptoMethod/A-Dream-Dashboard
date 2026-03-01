@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T19:11:23.708482+00:00",
-  "uptime_seconds": 1498.2,
+  "updated_at": "2026-03-01T19:12:26.168958+00:00",
+  "uptime_seconds": 1560.7,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,17 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[19:04:41] \ud83d\udd14 Migration #47 detected",
-    "[19:04:47] \ud83d\udd14 Migration #48 detected",
-    "[19:04:56] \ud83d\udd14 Migration #49 detected",
-    "[19:05:06] \ud83d\udcca Mig:49 Track:0 Upd:12 Pos:0 SOL:$83.95",
-    "[19:05:10] \ud83d\udd14 Migration #50 detected",
-    "[19:05:28] \ud83d\udd14 Migration #51 detected",
-    "[19:05:34] \ud83d\udd14 Migration #52 detected",
-    "[19:05:41] \u2705 BC Graduated: 2qNcApDeGd95\u2026",
-    "[19:05:42] \ud83d\udce1 Tracking: 2qNcApDeGd95MDYD\u2026 | Pool #1",
-    "[19:05:42] \u26a0\ufe0f Jupiter error: quote_failed: HTTP 400: {\"error\":\"The token 2qNcApDeGd95MDYD",
-    "[19:05:42] \u26a0\ufe0f Buy FAILED: M1 | 2qNcApDeGd95\u2026",
     "[19:06:08] \ud83d\udcca Mig:52 Track:0 Upd:15 Pos:0 SOL:$83.95",
     "[19:06:26] \ud83d\udd14 Migration #53 detected",
     "[19:06:30] \ud83d\udd14 Migration #54 detected",
@@ -562,13 +551,24 @@
     "[19:10:18] \ud83d\udcca Mig:60 Track:0 Upd:553 Pos:0 SOL:$83.85",
     "[19:11:07] \ud83d\udd14 Migration #61 detected",
     "[19:11:09] \ud83d\udd14 Migration #62 detected",
-    "[19:11:20] \ud83d\udcca Mig:62 Track:0 Upd:553 Pos:0 SOL:$83.85"
+    "[19:11:20] \ud83d\udcca Mig:62 Track:0 Upd:553 Pos:0 SOL:$83.85",
+    "[19:11:26] \ud83d\udd14 Migration #63 detected",
+    "[19:11:27] \ud83d\udd14 Migration #64 detected",
+    "[19:11:40] \u2705 BC Graduated: HerFh55jHjyK\u2026",
+    "[19:11:40] \ud83d\udce1 Tracking: HerFh55jHjyKyjvy\u2026 | Pool #1",
+    "[19:11:50] \ud83d\udfe2 ENTRY: M1 | HerFh55jHjyK... | $0.000037139 | 0.0521 SOL",
+    "[19:11:50] \ud83d\udcb0 Position filled: M1 | HerFh55jHjyK\u2026 | $0.000037139 | 0.0521 SOL | FDV $37.1k",
+    "[19:11:57] \ud83d\udd14 Migration #65 detected",
+    "[19:12:03] \ud83d\udd14 Migration #66 detected",
+    "[19:12:06] \ud83d\udd14 Migration #67 detected",
+    "[19:12:12] \ud83d\udd14 Migration #68 detected",
+    "[19:12:23] \ud83d\udcca Mig:68 Track:1 Upd:686 Pos:1 SOL:$83.87"
   ],
   "balance": {
     "start": 4.065247,
-    "current": 4.054069,
-    "pnl_sol": -0.011179,
-    "pnl_pct": -0.27
+    "current": 4.00196,
+    "pnl_sol": -0.063288,
+    "pnl_pct": -1.56
   },
   "trades": {
     "total": 2,
@@ -577,19 +577,19 @@
     "win_rate": 50.0
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 83.85,
+  "sol_price": 83.87,
   "bot_stats": {
-    "migrations_seen": 62,
-    "migrations_added": 8,
-    "pools_tracking": 0,
-    "price_updates": 553,
+    "migrations_seen": 68,
+    "migrations_added": 9,
+    "pools_tracking": 1,
+    "price_updates": 692,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 8,
-    "entries_found": 8,
-    "buys_success": 2,
+    "bc_graduated": 9,
+    "entries_found": 9,
+    "buys_success": 3,
     "buys_failed": 6
   }
 }
