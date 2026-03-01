@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T14:52:09.206624+00:00",
-  "updated_at": "2026-03-01T16:15:49.787988+00:00",
-  "uptime_seconds": 5020.6,
+  "updated_at": "2026-03-01T16:16:51.485238+00:00",
+  "uptime_seconds": 5082.3,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,17 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[16:09:13] \ud83d\udd14 Migration #258 detected",
-    "[16:09:46] \ud83d\udd14 Migration #259 detected",
-    "[16:10:00] \ud83d\udcca Mig:259 Track:0 Upd:1277 Pos:0 SOL:$85.88",
-    "[16:10:34] \ud83d\udd14 Migration #260 detected",
-    "[16:10:44] \ud83d\udd14 Migration #261 detected",
-    "[16:10:57] \ud83d\udd14 Migration #262 detected",
-    "[16:11:02] \ud83d\udcca Mig:262 Track:0 Upd:1277 Pos:0 SOL:$85.86",
-    "[16:11:03] \ud83d\udd14 Migration #263 detected",
-    "[16:11:09] \ud83d\udd14 Migration #264 detected",
-    "[16:11:20] \ud83d\udd14 Migration #265 detected",
-    "[16:11:33] \ud83d\udd14 Migration #266 detected",
     "[16:11:43] \ud83d\udd14 Migration #267 detected",
     "[16:11:43] \ud83d\udd14 Migration #268 detected",
     "[16:11:46] \u2705 BC Graduated: Xakz63gffDg5\u2026",
@@ -562,34 +551,45 @@
     "[16:15:10] \ud83d\udcca Mig:281 Track:0 Upd:1467 Pos:0 SOL:$85.93",
     "[16:15:21] \ud83d\udd14 Migration #282 detected",
     "[16:15:40] \ud83d\udd14 Migration #283 detected",
-    "[16:15:43] \ud83d\udd14 Migration #284 detected"
+    "[16:15:43] \ud83d\udd14 Migration #284 detected",
+    "[16:15:54] \u2705 BC Graduated: 4vWwKrsBp9VG\u2026",
+    "[16:15:54] \ud83d\udce1 Tracking: 4vWwKrsBp9VGjsa5\u2026 | Pool #1",
+    "[16:16:02] \ud83d\udfe2 ENTRY: M1 | 4vWwKrsBp9VG... | $0.000060051 | 0.0521 SOL",
+    "[16:16:02] \ud83d\udcb0 Position filled: M1 | 4vWwKrsBp9VG\u2026 | $0.000060051 | 0.0521 SOL | FDV $60.1k",
+    "[16:16:09] \ud83d\udd14 Migration #285 detected",
+    "[16:16:12] \ud83d\udcca Mig:285 Track:1 Upd:1530 Pos:1 SOL:$85.93",
+    "[16:16:31] \ud83d\udd14 Migration #286 detected",
+    "[16:16:31] \ud83d\udd14 Migration #287 detected",
+    "[16:16:41] \ud83d\udfe2 EXIT: 4vWwKrsBp9VG... | EARLY_DELTA_10S_30S | +8.8%",
+    "[16:16:41] \ud83d\udfe2 EARLY_DELTA_10S_30S: 4vWwKrsBp9VG\u2026 | +8.8% | +0.0046 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_10S_30S (delta=+1.5%)",
+    "[16:16:45] \ud83d\udd14 Migration #288 detected"
   ],
   "balance": {
     "start": 4.211718,
-    "current": 4.121161,
-    "pnl_sol": -0.090558,
-    "pnl_pct": -2.15
+    "current": 4.122583,
+    "pnl_sol": -0.089135,
+    "pnl_pct": -2.12
   },
   "trades": {
-    "total": 13,
-    "wins": 4,
+    "total": 14,
+    "wins": 5,
     "losses": 9,
-    "win_rate": 30.8
+    "win_rate": 35.7
   },
   "positions": {
     "open": 0
   },
-  "sol_price": 85.93,
+  "sol_price": 85.91,
   "bot_stats": {
-    "migrations_seen": 284,
-    "migrations_added": 13,
+    "migrations_seen": 288,
+    "migrations_added": 14,
     "pools_tracking": 0,
-    "price_updates": 1467,
+    "price_updates": 1620,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 13,
-    "entries_found": 13,
-    "buys_success": 13,
+    "bc_graduated": 14,
+    "entries_found": 14,
+    "buys_success": 14,
     "buys_failed": 0
   }
 }
