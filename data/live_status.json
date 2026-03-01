@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T14:52:09.206624+00:00",
-  "updated_at": "2026-03-01T15:04:32.527148+00:00",
-  "uptime_seconds": 743.3,
+  "updated_at": "2026-03-01T15:05:34.442793+00:00",
+  "uptime_seconds": 805.2,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,13 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[14:55:08] \ud83d\udcb0 Position filled: M1 | BWPySdXReMMk\u2026 | $0.000057012 | 0.0521 SOL | FDV $57.0k",
-    "[14:55:12] \ud83d\udcca Mig:10 Track:1 Upd:40 Pos:1 SOL:$85.66",
-    "[14:55:14] \ud83d\udd34 EXIT: BWPySdXReMMk... | EARLY_PERF_10S | -4.1%",
-    "[14:55:14] \ud83d\udd34 EARLY_PERF_10S: BWPySdXReMMk\u2026 | -4.1% | -0.0021 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_10S (perf_10s=+1.0%)",
-    "[14:55:29] \ud83d\udd14 Migration #11 detected",
-    "[14:55:39] \ud83d\udd14 Migration #12 detected",
-    "[14:55:42] \ud83d\udd14 Migration #13 detected",
     "[14:56:14] \ud83d\udcca Mig:13 Track:0 Upd:44 Pos:0 SOL:$85.68",
     "[14:56:18] \ud83d\udd14 Migration #14 detected",
     "[14:56:58] \ud83d\udd14 Migration #15 detected",
@@ -562,7 +555,14 @@
     "[15:02:45] \ud83d\udd14 Migration #36 detected",
     "[15:03:27] \ud83d\udcca Mig:36 Track:0 Upd:44 Pos:0 SOL:$85.83",
     "[15:03:33] \ud83d\udd14 Migration #37 detected",
-    "[15:04:29] \ud83d\udcca Mig:37 Track:0 Upd:44 Pos:0 SOL:$85.87"
+    "[15:04:29] \ud83d\udcca Mig:37 Track:0 Upd:44 Pos:0 SOL:$85.87",
+    "[15:04:33] \ud83d\udd14 Migration #38 detected",
+    "[15:05:10] \ud83d\udd14 Migration #39 detected",
+    "[15:05:11] \ud83d\udd14 Migration #40 detected",
+    "[15:05:14] \ud83d\udd14 Migration #41 detected",
+    "[15:05:17] \ud83d\udd14 Migration #42 detected",
+    "[15:05:27] \ud83d\udd14 Migration #43 detected",
+    "[15:05:31] \ud83d\udcca Mig:43 Track:0 Upd:44 Pos:0 SOL:$85.91"
   ],
   "balance": {
     "start": 4.211718,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.87,
+  "sol_price": 85.91,
   "bot_stats": {
-    "migrations_seen": 37,
+    "migrations_seen": 43,
     "migrations_added": 1,
     "pools_tracking": 0,
     "price_updates": 44,
