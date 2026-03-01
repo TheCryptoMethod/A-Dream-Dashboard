@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T20:03:11.459935+00:00",
-  "uptime_seconds": 4606.0,
+  "updated_at": "2026-03-01T20:04:13.615115+00:00",
+  "uptime_seconds": 4668.1,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,15 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[19:52:53] \ud83d\udcb0 Position filled: M1 | 9VWzTnZveKXG\u2026 | $0.000046506 | 0.0521 SOL | FDV $46.5k",
-    "[19:53:27] \ud83d\udd14 Migration #193 detected",
-    "[19:53:29] \ud83d\udd14 Migration #194 detected",
-    "[19:53:31] \ud83d\udd34 EXIT: 9VWzTnZveKXG... | EARLY_DELTA_10S_30S | -5.9%",
-    "[19:53:31] \ud83d\udd34 EARLY_DELTA_10S_30S: 9VWzTnZveKXG\u2026 | -5.9% | -0.0031 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_10S_30S (delta=+0.3%)",
-    "[19:53:41] \ud83d\udd14 Migration #195 detected",
-    "[19:53:49] \ud83d\udcca Mig:195 Track:0 Upd:2077 Pos:0 SOL:$83.15",
-    "[19:53:53] \ud83d\udd14 Migration #196 detected",
-    "[19:54:13] \ud83d\udd14 Migration #197 detected",
     "[19:54:51] \ud83d\udcca Mig:197 Track:0 Upd:2077 Pos:0 SOL:$83.15",
     "[19:55:20] \ud83d\udd14 Migration #198 detected",
     "[19:55:45] \ud83d\udd14 Migration #199 detected",
@@ -562,13 +553,22 @@
     "[20:01:04] \ud83d\udcca Mig:218 Track:0 Upd:2077 Pos:0 SOL:$83.28",
     "[20:02:06] \ud83d\udcca Mig:218 Track:0 Upd:2077 Pos:0 SOL:$83.27",
     "[20:02:47] \ud83d\udd14 Migration #219 detected",
-    "[20:03:08] \ud83d\udcca Mig:219 Track:0 Upd:2077 Pos:0 SOL:$83.26"
+    "[20:03:08] \ud83d\udcca Mig:219 Track:0 Upd:2077 Pos:0 SOL:$83.26",
+    "[20:03:16] \ud83d\udd14 Migration #220 detected",
+    "[20:03:43] \ud83d\udd14 Migration #221 detected",
+    "[20:03:56] \u2705 BC Graduated: BB45S1j3n2JG\u2026",
+    "[20:03:56] \ud83d\udce1 Tracking: BB45S1j3n2JGSu4j\u2026 | Pool #1",
+    "[20:04:05] \ud83d\udfe2 ENTRY: M1 | BB45S1j3n2JG... | $0.000035015 | 0.0521 SOL",
+    "[20:04:05] \ud83d\udcb0 Position filled: M1 | BB45S1j3n2JG\u2026 | $0.000035015 | 0.0521 SOL | FDV $35.0k",
+    "[20:04:05] \ud83d\udd14 Migration #222 detected",
+    "[20:04:09] \ud83d\udd14 Migration #223 detected",
+    "[20:04:10] \ud83d\udcca Mig:223 Track:1 Upd:2136 Pos:1 SOL:$83.24"
   ],
   "balance": {
     "start": 4.065247,
-    "current": 4.007369,
-    "pnl_sol": -0.057878,
-    "pnl_pct": -1.42
+    "current": 3.955255,
+    "pnl_sol": -0.109992,
+    "pnl_pct": -2.71
   },
   "trades": {
     "total": 10,
@@ -577,19 +577,19 @@
     "win_rate": 40.0
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 83.26,
+  "sol_price": 83.24,
   "bot_stats": {
-    "migrations_seen": 219,
-    "migrations_added": 17,
-    "pools_tracking": 0,
-    "price_updates": 2077,
+    "migrations_seen": 223,
+    "migrations_added": 18,
+    "pools_tracking": 1,
+    "price_updates": 2152,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 17,
-    "entries_found": 17,
-    "buys_success": 10,
+    "bc_graduated": 18,
+    "entries_found": 18,
+    "buys_success": 11,
     "buys_failed": 7
   }
 }
