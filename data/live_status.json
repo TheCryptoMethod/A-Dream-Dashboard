@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T20:16:38.333026+00:00",
-  "uptime_seconds": 5412.8,
+  "updated_at": "2026-03-01T20:17:40.335295+00:00",
+  "uptime_seconds": 5474.9,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,9 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[20:10:06] \ud83d\udd14 Migration #238 detected",
-    "[20:10:22] \ud83d\udcca Mig:238 Track:0 Upd:2386 Pos:0 SOL:$83.15",
-    "[20:11:01] \ud83d\udd14 Migration #239 detected",
     "[20:11:08] \ud83d\udd14 Migration #240 detected",
     "[20:11:22] \u2705 BC Graduated: HtAGt9iMiA9W\u2026",
     "[20:11:22] \ud83d\udce1 Tracking: HtAGt9iMiA9Wzup5\u2026 | Pool #1",
@@ -562,7 +559,10 @@
     "[20:16:12] \ud83d\udd34 Stop Loss: 3hyRhrc6aSRH\u2026 | -13.0% | -0.0068 SOL | SL1: -5.3% price (exec: -11.1%)",
     "[20:16:35] \ud83d\udcca Mig:251 Track:1 Upd:2812 Pos:1 SOL:$82.66",
     "[20:16:35] \ud83d\udfe2 EXIT: HuL76gj4uEdG... | EARLY_PERF_60S | +5.6%",
-    "[20:16:35] \ud83d\udfe2 EARLY_PERF_60S: HuL76gj4uEdG\u2026 | +5.6% | +0.0029 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_60S (perf_60s=+13.1%)"
+    "[20:16:35] \ud83d\udfe2 EARLY_PERF_60S: HuL76gj4uEdG\u2026 | +5.6% | +0.0029 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_60S (perf_60s=+13.1%)",
+    "[20:16:43] \ud83d\udd14 Migration #252 detected",
+    "[20:17:14] \ud83d\udd14 Migration #253 detected",
+    "[20:17:37] \ud83d\udcca Mig:253 Track:0 Upd:2812 Pos:0 SOL:$82.62"
   ],
   "balance": {
     "start": 4.065247,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 82.66,
+  "sol_price": 82.62,
   "bot_stats": {
-    "migrations_seen": 251,
+    "migrations_seen": 253,
     "migrations_added": 21,
     "pools_tracking": 0,
     "price_updates": 2812,
