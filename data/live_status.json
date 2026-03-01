@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T19:06:11.881909+00:00",
-  "uptime_seconds": 1186.4,
+  "updated_at": "2026-03-01T19:07:14.184651+00:00",
+  "uptime_seconds": 1248.7,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[18:58:09] \ud83d\udd14 Migration #33 detected",
-    "[18:58:11] \ud83d\udd14 Migration #34 detected",
-    "[18:58:25] \u2705 BC Graduated: ctQPRPpLY52C\u2026",
-    "[18:58:25] \ud83d\udce1 Tracking: ctQPRPpLY52CeEfm\u2026 | Pool #1",
     "[18:58:25] \u26a0\ufe0f Jupiter error: quote_failed: HTTP 400: {\"error\":\"No routes found\",\"errorCod",
     "[18:58:25] \u26a0\ufe0f Buy FAILED: M1 | ctQPRPpLY52C\u2026",
     "[18:58:29] \ud83d\udd14 Migration #35 detected",
@@ -562,7 +558,11 @@
     "[19:05:42] \ud83d\udce1 Tracking: 2qNcApDeGd95MDYD\u2026 | Pool #1",
     "[19:05:42] \u26a0\ufe0f Jupiter error: quote_failed: HTTP 400: {\"error\":\"The token 2qNcApDeGd95MDYD",
     "[19:05:42] \u26a0\ufe0f Buy FAILED: M1 | 2qNcApDeGd95\u2026",
-    "[19:06:08] \ud83d\udcca Mig:52 Track:0 Upd:15 Pos:0 SOL:$83.95"
+    "[19:06:08] \ud83d\udcca Mig:52 Track:0 Upd:15 Pos:0 SOL:$83.95",
+    "[19:06:26] \ud83d\udd14 Migration #53 detected",
+    "[19:06:30] \ud83d\udd14 Migration #54 detected",
+    "[19:07:09] \ud83d\udd14 Migration #55 detected",
+    "[19:07:11] \ud83d\udcca Mig:55 Track:0 Upd:15 Pos:0 SOL:$83.94"
   ],
   "balance": {
     "start": 4.065247,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 83.95,
+  "sol_price": 83.94,
   "bot_stats": {
-    "migrations_seen": 52,
+    "migrations_seen": 55,
     "migrations_added": 6,
     "pools_tracking": 0,
     "price_updates": 15,
