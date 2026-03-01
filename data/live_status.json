@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T20:30:02.605661+00:00",
-  "uptime_seconds": 6217.1,
+  "updated_at": "2026-03-01T20:31:04.517739+00:00",
+  "uptime_seconds": 6279.0,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,12 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[20:22:23] \ud83d\udd14 Migration #277 detected",
-    "[20:22:23] \ud83d\udd34 EXIT: B9xbGFQkjuRB... | SL | -19.1%",
-    "[20:22:23] \ud83d\udd34 Stop Loss: B9xbGFQkjuRB\u2026 | -19.1% | -0.0100 SOL | SL1: -14.6% price (exec: -18.2%)",
-    "[20:22:36] \ud83d\udd14 Migration #278 detected",
-    "[20:22:46] \ud83d\udcca Mig:278 Track:0 Upd:3236 Pos:0 SOL:$82.47",
-    "[20:23:26] \ud83d\udd14 Migration #279 detected",
     "[20:23:30] \ud83d\udd14 Migration #280 detected",
     "[20:23:43] \ud83d\udd14 Migration #281 detected",
     "[20:23:48] \ud83d\udcca Mig:281 Track:0 Upd:3236 Pos:0 SOL:$82.47",
@@ -562,7 +556,13 @@
     "[20:29:37] \ud83d\udd34 EXIT: 5Kb2Ub4mpbdn... | EARLY_PERF_10S | -16.8%",
     "[20:29:37] \ud83d\udd34 EARLY_PERF_10S: 5Kb2Ub4mpbdn\u2026 | -16.8% | -0.0088 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_10S (perf_10s=+4.2%)",
     "[20:29:53] \ud83d\udd14 Migration #300 detected",
-    "[20:29:59] \ud83d\udcca Mig:300 Track:0 Upd:3304 Pos:0 SOL:$82.43"
+    "[20:29:59] \ud83d\udcca Mig:300 Track:0 Upd:3304 Pos:0 SOL:$82.43",
+    "[20:30:06] \ud83d\udd14 Migration #301 detected",
+    "[20:30:35] \ud83d\udd14 Migration #302 detected",
+    "[20:30:41] \ud83d\udd14 Migration #303 detected",
+    "[20:31:01] \ud83d\udcca Mig:303 Track:0 Upd:3304 Pos:0 SOL:$82.41",
+    "[20:31:03] \ud83d\udd14 Migration #304 detected",
+    "[20:31:03] \ud83d\udd14 Migration #305 detected"
   ],
   "balance": {
     "start": 4.065247,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 82.43,
+  "sol_price": 82.41,
   "bot_stats": {
-    "migrations_seen": 300,
+    "migrations_seen": 305,
     "migrations_added": 25,
     "pools_tracking": 0,
     "price_updates": 3304,
