@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T07:29:18.736191+00:00",
-  "updated_at": "2026-03-01T07:30:20.509309+00:00",
-  "uptime_seconds": 61.8,
+  "updated_at": "2026-03-01T07:31:22.346586+00:00",
+  "uptime_seconds": 123.6,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -535,28 +535,39 @@
     "[07:30:04] \ud83d\udd14 Migration #6 detected",
     "[07:30:06] \ud83d\udfe2 ENTRY: M1 | 4KJeZ2TF6Eiz... | $0.000046150 | 0.0521 SOL",
     "[07:30:06] \ud83d\udcb0 Position filled: M1 | 4KJeZ2TF6Eiz\u2026 | $0.000046150 | 0.0521 SOL | FDV $46.2k",
-    "[07:30:17] \ud83d\udcca Mig:6 Track:1 Upd:29 Pos:1 SOL:$86.62"
+    "[07:30:17] \ud83d\udcca Mig:6 Track:1 Upd:29 Pos:1 SOL:$86.62",
+    "[07:30:26] \ud83d\udd34 EXIT: 4KJeZ2TF6Eiz... | SL | -14.6%",
+    "[07:30:26] \ud83d\udd34 Stop Loss: 4KJeZ2TF6Eiz\u2026 | -14.6% | -0.0076 SOL | SL1: -6.7% price (exec: -13.4%)",
+    "[07:30:29] \ud83d\udd14 Migration #7 detected",
+    "[07:30:30] \ud83d\udd14 Migration #8 detected",
+    "[07:30:42] \ud83d\udd14 Migration #9 detected",
+    "[07:30:55] \ud83d\udd14 Migration #10 detected",
+    "[07:30:58] \ud83d\udd14 Migration #11 detected",
+    "[07:31:05] \ud83d\udd14 Migration #12 detected",
+    "[07:31:06] \ud83d\udd14 Migration #13 detected",
+    "[07:31:19] \ud83d\udcca Mig:13 Track:0 Upd:29 Pos:0 SOL:$86.52",
+    "[07:31:22] \ud83d\udd14 Migration #14 detected"
   ],
   "balance": {
     "start": 4.306596,
-    "current": 4.29952,
-    "pnl_sol": -0.007076,
+    "current": 4.299505,
+    "pnl_sol": -0.007091,
     "pnl_pct": -0.16
   },
   "trades": {
-    "total": 0,
+    "total": 2,
     "wins": 0,
-    "losses": 0,
-    "win_rate": 0
+    "losses": 2,
+    "win_rate": 0.0
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
-  "sol_price": 86.52,
+  "sol_price": 86.51,
   "bot_stats": {
-    "migrations_seen": 6,
+    "migrations_seen": 14,
     "migrations_added": 1,
-    "pools_tracking": 1,
+    "pools_tracking": 0,
     "price_updates": 29,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
