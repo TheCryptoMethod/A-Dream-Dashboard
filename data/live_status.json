@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T14:52:09.206624+00:00",
-  "updated_at": "2026-03-01T16:29:16.850186+00:00",
-  "uptime_seconds": 5827.6,
+  "updated_at": "2026-03-01T16:30:18.926002+00:00",
+  "uptime_seconds": 5889.7,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,8 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[16:16:41] \ud83d\udfe2 EARLY_DELTA_10S_30S: 4vWwKrsBp9VG\u2026 | +8.8% | +0.0046 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_10S_30S (delta=+1.5%)",
-    "[16:16:45] \ud83d\udd14 Migration #288 detected",
     "[16:17:13] \ud83d\udcca Mig:288 Track:0 Upd:1620 Pos:0 SOL:$85.91",
     "[16:18:15] \ud83d\udd14 Migration #289 detected",
     "[16:18:15] \ud83d\udcca Mig:289 Track:0 Upd:1620 Pos:0 SOL:$85.86",
@@ -562,7 +560,9 @@
     "[16:28:28] \ud83d\udd14 Migration #312 detected",
     "[16:28:37] \ud83d\udcca Mig:312 Track:0 Upd:1620 Pos:0 SOL:$85.85",
     "[16:28:38] \ud83d\udd14 Migration #313 detected",
-    "[16:28:52] \ud83d\udd14 Migration #314 detected"
+    "[16:28:52] \ud83d\udd14 Migration #314 detected",
+    "[16:29:26] \ud83d\udd14 Migration #315 detected",
+    "[16:29:39] \ud83d\udcca Mig:315 Track:0 Upd:1620 Pos:0 SOL:$85.85"
   ],
   "balance": {
     "start": 4.211718,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.85,
+  "sol_price": 85.94,
   "bot_stats": {
-    "migrations_seen": 314,
+    "migrations_seen": 315,
     "migrations_added": 14,
     "pools_tracking": 0,
     "price_updates": 1620,
