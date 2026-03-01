@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T12:40:03.597436+00:00",
-  "updated_at": "2026-03-01T12:50:21.934045+00:00",
-  "uptime_seconds": 618.3,
+  "updated_at": "2026-03-01T12:51:23.740671+00:00",
+  "uptime_seconds": 680.1,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,18 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[12:42:21] \ud83d\udd14 Migration #7 detected",
-    "[12:42:54] \ud83d\udd14 Migration #8 detected",
-    "[12:43:03] \ud83d\udd14 Migration #9 detected",
-    "[12:43:06] \ud83d\udcca Mig:9 Track:0 Upd:0 Pos:0 SOL:$85.03",
-    "[12:43:16] \ud83d\udd14 Migration #10 detected",
-    "[12:44:07] \ud83d\udcca Mig:10 Track:0 Upd:0 Pos:0 SOL:$85.03",
-    "[12:44:08] \ud83d\udd14 Migration #11 detected",
-    "[12:44:39] \ud83d\udd14 Migration #12 detected",
-    "[12:45:09] \ud83d\udcca Mig:12 Track:0 Upd:0 Pos:0 SOL:$85.10",
-    "[12:46:11] \ud83d\udcca Mig:12 Track:0 Upd:0 Pos:0 SOL:$85.13",
-    "[12:46:23] \ud83d\udd14 Migration #13 detected",
-    "[12:46:28] \ud83d\udd14 Migration #14 detected",
     "[12:46:31] \ud83d\udd14 Migration #15 detected",
     "[12:46:32] \ud83d\udd14 Migration #16 detected",
     "[12:46:57] \ud83d\udd14 Migration #17 detected",
@@ -562,34 +550,46 @@
     "[12:49:45] \ud83d\udd14 Migration #32 detected",
     "[12:49:55] \ud83d\udd14 Migration #33 detected",
     "[12:50:11] \ud83d\udd14 Migration #34 detected",
-    "[12:50:18] \ud83d\udcca Mig:34 Track:1 Upd:561 Pos:1 SOL:$85.09"
+    "[12:50:18] \ud83d\udcca Mig:34 Track:1 Upd:561 Pos:1 SOL:$85.09",
+    "[12:50:23] \ud83d\udd14 Migration #35 detected",
+    "[12:50:31] \ud83d\udd14 Migration #36 detected",
+    "[12:50:44] \ud83d\udd14 Migration #37 detected",
+    "[12:50:45] \ud83d\udd14 Migration #38 detected",
+    "[12:50:58] \u2705 BC Graduated: BMpk47S26XQX\u2026",
+    "[12:50:59] \ud83d\udce1 Tracking: BMpk47S26XQXjPLV\u2026 | Pool #2",
+    "[12:51:04] \u26a0\ufe0f Jupiter error: tx_failed_verified",
+    "[12:51:04] \u26a0\ufe0f Buy FAILED: M1 | BMpk47S26XQX\u2026",
+    "[12:51:18] \ud83d\udd14 Migration #39 detected",
+    "[12:51:20] \ud83d\udcca Mig:39 Track:1 Upd:894 Pos:1 SOL:$85.07",
+    "[12:51:23] \ud83d\udd34 EXIT: Z1fbG38EmVZz... | SL | -12.1%",
+    "[12:51:23] \ud83d\udd34 Stop Loss: Z1fbG38EmVZz\u2026 | -12.1% | -0.0063 SOL | SL1: -5.5% price (exec: -13.3%)"
   ],
   "balance": {
     "start": 4.222183,
-    "current": 4.170055,
-    "pnl_sol": -0.052129,
-    "pnl_pct": -1.23
+    "current": 4.212889,
+    "pnl_sol": -0.009294,
+    "pnl_pct": -0.22
   },
   "trades": {
-    "total": 0,
+    "total": 1,
     "wins": 0,
-    "losses": 0,
-    "win_rate": 0
+    "losses": 1,
+    "win_rate": 0.0
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
-  "sol_price": 85.09,
+  "sol_price": 85.07,
   "bot_stats": {
-    "migrations_seen": 34,
-    "migrations_added": 1,
-    "pools_tracking": 1,
-    "price_updates": 574,
+    "migrations_seen": 39,
+    "migrations_added": 2,
+    "pools_tracking": 0,
+    "price_updates": 912,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 1,
-    "entries_found": 1,
+    "bc_graduated": 2,
+    "entries_found": 2,
     "buys_success": 1,
-    "buys_failed": 0
+    "buys_failed": 1
   }
 }
