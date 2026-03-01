@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T18:56:49.831832+00:00",
-  "uptime_seconds": 624.3,
+  "updated_at": "2026-03-01T18:57:52.241439+00:00",
+  "uptime_seconds": 686.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,8 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[18:49:58] \u26a0\ufe0f Jupiter error: quote_failed: HTTP 400: {\"error\":\"No routes found\",\"errorCod",
-    "[18:49:58] \u26a0\ufe0f Buy FAILED: M1 | Gq6uJ5pBY7jp\u2026",
     "[18:50:00] \ud83d\udd14 Migration #7 detected",
     "[18:50:09] \ud83d\udd14 Migration #8 detected",
     "[18:50:31] \ud83d\udcca Mig:8 Track:0 Upd:2 Pos:0 SOL:$84.33",
@@ -562,7 +560,9 @@
     "[18:56:25] \ud83d\udd14 Migration #27 detected",
     "[18:56:33] \ud83d\udd14 Migration #28 detected",
     "[18:56:44] \ud83d\udd14 Migration #29 detected",
-    "[18:56:46] \ud83d\udcca Mig:29 Track:0 Upd:8 Pos:0 SOL:$84.23"
+    "[18:56:46] \ud83d\udcca Mig:29 Track:0 Upd:8 Pos:0 SOL:$84.23",
+    "[18:57:19] \ud83d\udd14 Migration #30 detected",
+    "[18:57:49] \ud83d\udcca Mig:30 Track:0 Upd:8 Pos:0 SOL:$84.17"
   ],
   "balance": {
     "start": 4.065247,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.23,
+  "sol_price": 84.17,
   "bot_stats": {
-    "migrations_seen": 29,
+    "migrations_seen": 30,
     "migrations_added": 3,
     "pools_tracking": 0,
     "price_updates": 8,
