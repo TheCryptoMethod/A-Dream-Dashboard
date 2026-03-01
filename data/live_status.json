@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T14:52:09.206624+00:00",
-  "updated_at": "2026-03-01T15:13:49.933917+00:00",
-  "uptime_seconds": 1300.7,
+  "updated_at": "2026-03-01T15:14:51.915104+00:00",
+  "uptime_seconds": 1362.7,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,15 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[15:06:33] \ud83d\udcca Mig:47 Track:0 Upd:44 Pos:0 SOL:$85.95",
-    "[15:06:37] \ud83d\udd14 Migration #48 detected",
-    "[15:06:50] \u2705 BC Graduated: MNCT6af9YJNE\u2026",
-    "[15:06:51] \ud83d\udce1 Tracking: MNCT6af9YJNExBiZ\u2026 | Pool #1",
-    "[15:06:59] \ud83d\udfe2 ENTRY: M1 | MNCT6af9YJNE... | $0.000033846 | 0.0521 SOL",
-    "[15:06:59] \ud83d\udcb0 Position filled: M1 | MNCT6af9YJNE\u2026 | $0.000033846 | 0.0521 SOL | FDV $33.8k",
-    "[15:07:13] \ud83d\udd14 Migration #49 detected",
-    "[15:07:15] \ud83d\udd14 Migration #50 detected",
-    "[15:07:16] \ud83d\udd14 Migration #51 detected",
     "[15:07:22] \u26a0\ufe0f Sell failed: EARLY_PERF_10S | MNCT6af9YJNE\u2026 | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_10S (perf_10s=+3.6%)",
     "[15:07:23] \ud83d\udd14 Migration #52 detected",
     "[15:07:24] \ud83d\udd34 EXIT: MNCT6af9YJNE... | SL | -29.1%",
@@ -562,13 +553,22 @@
     "[15:13:04] \ud83d\udd14 Migration #70 detected",
     "[15:13:20] \ud83d\udd14 Migration #71 detected",
     "[15:13:32] \ud83d\udd14 Migration #72 detected",
-    "[15:13:46] \ud83d\udcca Mig:72 Track:0 Upd:132 Pos:0 SOL:$86.10"
+    "[15:13:46] \ud83d\udcca Mig:72 Track:0 Upd:132 Pos:0 SOL:$86.10",
+    "[15:14:05] \ud83d\udd14 Migration #73 detected",
+    "[15:14:15] \ud83d\udd14 Migration #74 detected",
+    "[15:14:28] \ud83d\udd14 Migration #75 detected",
+    "[15:14:41] \u2705 BC Graduated: 8TCq5T3STTkX\u2026",
+    "[15:14:41] \ud83d\udce1 Tracking: 8TCq5T3STTkXiXrH\u2026 | Pool #1",
+    "[15:14:48] \ud83d\udd14 Migration #76 detected",
+    "[15:14:48] \ud83d\udcca Mig:76 Track:1 Upd:161 Pos:0 SOL:$86.11",
+    "[15:14:50] \ud83d\udfe2 ENTRY: M1 | 8TCq5T3STTkX... | $0.000038420 | 0.0521 SOL",
+    "[15:14:50] \ud83d\udcb0 Position filled: M1 | 8TCq5T3STTkX\u2026 | $0.000038420 | 0.0521 SOL | FDV $38.4k"
   ],
   "balance": {
     "start": 4.211718,
-    "current": 4.202246,
-    "pnl_sol": -0.009472,
-    "pnl_pct": -0.22
+    "current": 4.150131,
+    "pnl_sol": -0.061587,
+    "pnl_pct": -1.46
   },
   "trades": {
     "total": 2,
@@ -577,19 +577,19 @@
     "win_rate": 0.0
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 86.1,
+  "sol_price": 86.11,
   "bot_stats": {
-    "migrations_seen": 72,
-    "migrations_added": 2,
-    "pools_tracking": 0,
-    "price_updates": 132,
+    "migrations_seen": 76,
+    "migrations_added": 3,
+    "pools_tracking": 1,
+    "price_updates": 177,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 2,
-    "entries_found": 2,
-    "buys_success": 2,
+    "bc_graduated": 3,
+    "entries_found": 3,
+    "buys_success": 3,
     "buys_failed": 0
   }
 }
