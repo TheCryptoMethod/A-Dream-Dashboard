@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T20:41:22.753390+00:00",
-  "uptime_seconds": 6897.3,
+  "updated_at": "2026-03-01T20:42:24.610856+00:00",
+  "uptime_seconds": 6959.1,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,12 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[20:34:01] \ud83d\udfe2 ENTRY: M1 | GkywpBJrCtfw... | $0.000051232 | 0.0522 SOL",
-    "[20:34:01] \ud83d\udcb0 Position filled: M1 | GkywpBJrCtfw\u2026 | $0.000051232 | 0.0522 SOL | FDV $51.2k",
-    "[20:34:06] \ud83d\udcca Mig:313 Track:1 Upd:3487 Pos:1 SOL:$82.36",
-    "[20:34:11] \ud83d\udd14 Migration #314 detected",
-    "[20:34:14] \ud83d\udd14 Migration #315 detected",
-    "[20:34:14] \ud83d\udd14 Migration #316 detected",
     "[20:34:20] \ud83d\udfe2 EXIT: GkywpBJrCtfw... | EARLY_PERF_10S | +7.2%",
     "[20:34:20] \ud83d\udfe2 EARLY_PERF_10S: GkywpBJrCtfw\u2026 | +7.2% | +0.0037 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_10S (perf_10s=+1.4%)",
     "[20:35:02] \ud83d\udd14 Migration #317 detected",
@@ -562,7 +556,13 @@
     "[20:40:08] \u26a0\ufe0f Buy FAILED: M1 | BPuev1mPrkRd\u2026",
     "[20:40:17] \ud83d\udcca Mig:330 Track:0 Upd:3670 Pos:0 SOL:$82.21",
     "[20:40:55] \ud83d\udd14 Migration #331 detected",
-    "[20:41:19] \ud83d\udcca Mig:331 Track:0 Upd:3670 Pos:0 SOL:$82.17"
+    "[20:41:19] \ud83d\udcca Mig:331 Track:0 Upd:3670 Pos:0 SOL:$82.17",
+    "[20:41:39] \ud83d\udd14 Migration #332 detected",
+    "[20:41:49] \ud83d\udd14 Migration #333 detected",
+    "[20:41:54] \ud83d\udd14 Migration #334 detected",
+    "[20:42:08] \ud83d\udd14 Migration #335 detected",
+    "[20:42:21] \ud83d\udcca Mig:335 Track:0 Upd:3670 Pos:0 SOL:$82.13",
+    "[20:42:23] \ud83d\udd14 Migration #336 detected"
   ],
   "balance": {
     "start": 4.065247,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 82.17,
+  "sol_price": 82.13,
   "bot_stats": {
-    "migrations_seen": 331,
+    "migrations_seen": 336,
     "migrations_added": 29,
     "pools_tracking": 0,
     "price_updates": 3670,
