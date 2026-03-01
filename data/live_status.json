@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T20:11:28.127484+00:00",
-  "uptime_seconds": 5102.6,
+  "updated_at": "2026-03-01T20:12:30.153104+00:00",
+  "uptime_seconds": 5164.7,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,11 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[20:02:06] \ud83d\udcca Mig:218 Track:0 Upd:2077 Pos:0 SOL:$83.27",
-    "[20:02:47] \ud83d\udd14 Migration #219 detected",
-    "[20:03:08] \ud83d\udcca Mig:219 Track:0 Upd:2077 Pos:0 SOL:$83.26",
-    "[20:03:16] \ud83d\udd14 Migration #220 detected",
-    "[20:03:43] \ud83d\udd14 Migration #221 detected",
     "[20:03:56] \u2705 BC Graduated: BB45S1j3n2JG\u2026",
     "[20:03:56] \ud83d\udce1 Tracking: BB45S1j3n2JGSu4j\u2026 | Pool #1",
     "[20:04:05] \ud83d\udfe2 ENTRY: M1 | BB45S1j3n2JG... | $0.000035015 | 0.0521 SOL",
@@ -562,34 +557,39 @@
     "[20:11:08] \ud83d\udd14 Migration #240 detected",
     "[20:11:22] \u2705 BC Graduated: HtAGt9iMiA9W\u2026",
     "[20:11:22] \ud83d\udce1 Tracking: HtAGt9iMiA9Wzup5\u2026 | Pool #1",
-    "[20:11:25] \ud83d\udcca Mig:240 Track:1 Upd:2397 Pos:0 SOL:$82.96"
+    "[20:11:25] \ud83d\udcca Mig:240 Track:1 Upd:2397 Pos:0 SOL:$82.96",
+    "[20:11:31] \ud83d\udfe2 ENTRY: M1 | HtAGt9iMiA9W... | $0.000048132 | 0.0522 SOL",
+    "[20:11:31] \ud83d\udcb0 Position filled: M1 | HtAGt9iMiA9W\u2026 | $0.000048132 | 0.0522 SOL | FDV $48.1k",
+    "[20:12:14] \ud83d\udd34 EXIT: HtAGt9iMiA9W... | SL | -17.1%",
+    "[20:12:14] \ud83d\udd34 Stop Loss: HtAGt9iMiA9W\u2026 | -17.1% | -0.0089 SOL | SL1: -7.9% price (exec: -12.5%)",
+    "[20:12:27] \ud83d\udcca Mig:240 Track:0 Upd:2646 Pos:0 SOL:$82.84"
   ],
   "balance": {
     "start": 4.065247,
-    "current": 3.92838,
-    "pnl_sol": -0.136868,
-    "pnl_pct": -3.37
+    "current": 3.981987,
+    "pnl_sol": -0.083261,
+    "pnl_pct": -2.05
   },
   "trades": {
-    "total": 11,
+    "total": 12,
     "wins": 4,
-    "losses": 7,
-    "win_rate": 36.4
+    "losses": 8,
+    "win_rate": 33.3
   },
   "positions": {
     "open": 0
   },
-  "sol_price": 82.96,
+  "sol_price": 82.84,
   "bot_stats": {
     "migrations_seen": 240,
     "migrations_added": 19,
-    "pools_tracking": 1,
-    "price_updates": 2413,
+    "pools_tracking": 0,
+    "price_updates": 2646,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 19,
     "entries_found": 19,
-    "buys_success": 11,
+    "buys_success": 12,
     "buys_failed": 7
   }
 }
