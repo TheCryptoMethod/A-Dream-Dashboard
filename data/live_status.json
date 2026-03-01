@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T20:39:19.114097+00:00",
-  "uptime_seconds": 6773.6,
+  "updated_at": "2026-03-01T20:40:20.877004+00:00",
+  "uptime_seconds": 6835.4,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,12 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[20:32:38] \ud83d\udd14 Migration #309 detected",
-    "[20:33:04] \ud83d\udcca Mig:309 Track:0 Upd:3452 Pos:0 SOL:$82.41",
-    "[20:33:28] \ud83d\udd14 Migration #310 detected",
-    "[20:33:38] \ud83d\udd14 Migration #311 detected",
-    "[20:33:41] \ud83d\udd14 Migration #312 detected",
-    "[20:33:52] \u2705 BC Graduated: GkywpBJrCtfw\u2026",
     "[20:33:52] \ud83d\udce1 Tracking: GkywpBJrCtfwASyy\u2026 | Pool #1",
     "[20:33:55] \ud83d\udd14 Migration #313 detected",
     "[20:34:01] \ud83d\udfe2 ENTRY: M1 | GkywpBJrCtfw... | $0.000051232 | 0.0522 SOL",
@@ -562,7 +556,13 @@
     "[20:38:19] \ud83d\udd14 Migration #327 detected",
     "[20:39:01] \ud83d\udd14 Migration #328 detected",
     "[20:39:14] \ud83d\udd14 Migration #329 detected",
-    "[20:39:16] \ud83d\udcca Mig:329 Track:0 Upd:3667 Pos:0 SOL:$82.22"
+    "[20:39:16] \ud83d\udcca Mig:329 Track:0 Upd:3667 Pos:0 SOL:$82.22",
+    "[20:39:53] \ud83d\udd14 Migration #330 detected",
+    "[20:40:07] \u2705 BC Graduated: BPuev1mPrkRd\u2026",
+    "[20:40:07] \ud83d\udce1 Tracking: BPuev1mPrkRdPkgA\u2026 | Pool #1",
+    "[20:40:08] \u26a0\ufe0f Jupiter error: quote_failed: HTTP 400: {\"error\":\"No routes found\",\"errorCod",
+    "[20:40:08] \u26a0\ufe0f Buy FAILED: M1 | BPuev1mPrkRd\u2026",
+    "[20:40:17] \ud83d\udcca Mig:330 Track:0 Upd:3670 Pos:0 SOL:$82.21"
   ],
   "balance": {
     "start": 4.065247,
@@ -579,17 +579,17 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 82.22,
+  "sol_price": 82.21,
   "bot_stats": {
-    "migrations_seen": 329,
-    "migrations_added": 28,
+    "migrations_seen": 330,
+    "migrations_added": 29,
     "pools_tracking": 0,
-    "price_updates": 3667,
+    "price_updates": 3670,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 28,
-    "entries_found": 28,
+    "bc_graduated": 29,
+    "entries_found": 29,
     "buys_success": 21,
-    "buys_failed": 7
+    "buys_failed": 8
   }
 }
