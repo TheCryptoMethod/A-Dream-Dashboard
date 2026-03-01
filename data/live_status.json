@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T19:10:21.235865+00:00",
-  "uptime_seconds": 1435.8,
+  "updated_at": "2026-03-01T19:11:23.708482+00:00",
+  "uptime_seconds": 1498.2,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,9 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[19:04:23] \u26a0\ufe0f Buy FAILED: M1 | BnLpMb7o4VU2\u2026",
-    "[19:04:29] \ud83d\udd14 Migration #45 detected",
-    "[19:04:40] \ud83d\udd14 Migration #46 detected",
     "[19:04:41] \ud83d\udd14 Migration #47 detected",
     "[19:04:47] \ud83d\udd14 Migration #48 detected",
     "[19:04:56] \ud83d\udd14 Migration #49 detected",
@@ -562,7 +559,10 @@
     "[19:10:00] \ud83d\udcb0 Position filled: M1 | MFEuGXz68Gtr\u2026 | $0.000035188 | 0.0521 SOL | FDV $35.2k",
     "[19:10:06] \ud83d\udd34 EXIT: MFEuGXz68Gtr... | SL | -11.9%",
     "[19:10:06] \ud83d\udd34 Stop Loss: MFEuGXz68Gtr\u2026 | -11.9% | -0.0062 SOL | SL1: -9.4% price (exec: -11.5%)",
-    "[19:10:18] \ud83d\udcca Mig:60 Track:0 Upd:553 Pos:0 SOL:$83.85"
+    "[19:10:18] \ud83d\udcca Mig:60 Track:0 Upd:553 Pos:0 SOL:$83.85",
+    "[19:11:07] \ud83d\udd14 Migration #61 detected",
+    "[19:11:09] \ud83d\udd14 Migration #62 detected",
+    "[19:11:20] \ud83d\udcca Mig:62 Track:0 Upd:553 Pos:0 SOL:$83.85"
   ],
   "balance": {
     "start": 4.065247,
@@ -581,7 +581,7 @@
   },
   "sol_price": 83.85,
   "bot_stats": {
-    "migrations_seen": 60,
+    "migrations_seen": 62,
     "migrations_added": 8,
     "pools_tracking": 0,
     "price_updates": 553,
