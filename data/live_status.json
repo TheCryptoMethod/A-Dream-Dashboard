@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T14:52:09.206624+00:00",
-  "updated_at": "2026-03-01T14:54:13.323132+00:00",
-  "uptime_seconds": 124.1,
+  "updated_at": "2026-03-01T14:55:15.115794+00:00",
+  "uptime_seconds": 185.9,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -532,34 +532,45 @@
     "[14:53:15] \ud83d\udd14 Migration #4 detected",
     "[14:53:38] \ud83d\udd14 Migration #5 detected",
     "[14:54:00] \ud83d\udd14 Migration #6 detected",
-    "[14:54:10] \ud83d\udcca Mig:6 Track:0 Upd:0 Pos:0 SOL:$85.78"
+    "[14:54:10] \ud83d\udcca Mig:6 Track:0 Upd:0 Pos:0 SOL:$85.78",
+    "[14:54:46] \ud83d\udd14 Migration #7 detected",
+    "[14:54:47] \ud83d\udd14 Migration #8 detected",
+    "[14:54:50] \ud83d\udd14 Migration #9 detected",
+    "[14:54:59] \u2705 BC Graduated: BWPySdXReMMk\u2026",
+    "[14:55:00] \ud83d\udce1 Tracking: BWPySdXReMMkMxhd\u2026 | Pool #1",
+    "[14:55:08] \ud83d\udd14 Migration #10 detected",
+    "[14:55:08] \ud83d\udfe2 ENTRY: M1 | BWPySdXReMMk... | $0.000057012 | 0.0521 SOL",
+    "[14:55:08] \ud83d\udcb0 Position filled: M1 | BWPySdXReMMk\u2026 | $0.000057012 | 0.0521 SOL | FDV $57.0k",
+    "[14:55:12] \ud83d\udcca Mig:10 Track:1 Upd:40 Pos:1 SOL:$85.66",
+    "[14:55:14] \ud83d\udd34 EXIT: BWPySdXReMMk... | EARLY_PERF_10S | -4.1%",
+    "[14:55:14] \ud83d\udd34 EARLY_PERF_10S: BWPySdXReMMk\u2026 | -4.1% | -0.0021 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_10S (perf_10s=+1.0%)"
   ],
   "balance": {
     "start": 4.211718,
-    "current": 4.211718,
-    "pnl_sol": 0.0,
-    "pnl_pct": 0.0
+    "current": 4.209575,
+    "pnl_sol": -0.002144,
+    "pnl_pct": -0.05
   },
   "trades": {
-    "total": 0,
+    "total": 1,
     "wins": 0,
-    "losses": 0,
-    "win_rate": 0
+    "losses": 1,
+    "win_rate": 0.0
   },
   "positions": {
     "open": 0
   },
-  "sol_price": 85.72,
+  "sol_price": 85.66,
   "bot_stats": {
-    "migrations_seen": 6,
-    "migrations_added": 0,
+    "migrations_seen": 10,
+    "migrations_added": 1,
     "pools_tracking": 0,
-    "price_updates": 0,
+    "price_updates": 44,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 0,
-    "entries_found": 0,
-    "buys_success": 0,
+    "bc_graduated": 1,
+    "entries_found": 1,
+    "buys_success": 1,
     "buys_failed": 0
   }
 }
