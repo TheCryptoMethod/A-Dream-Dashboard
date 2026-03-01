@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T20:19:44.417918+00:00",
-  "uptime_seconds": 5598.9,
+  "updated_at": "2026-03-01T20:20:46.174820+00:00",
+  "uptime_seconds": 5660.7,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,13 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[20:14:30] \ud83d\udcca Mig:247 Track:0 Upd:2646 Pos:0 SOL:$82.72",
-    "[20:14:39] \ud83d\udd14 Migration #248 detected",
-    "[20:15:14] \ud83d\udd14 Migration #249 detected",
-    "[20:15:27] \u2705 BC Graduated: HuL76gj4uEdG\u2026",
-    "[20:15:27] \ud83d\udce1 Tracking: HuL76gj4uEdGRFSD\u2026 | Pool #1",
-    "[20:15:33] \ud83d\udcca Mig:249 Track:1 Upd:2653 Pos:0 SOL:$82.69",
-    "[20:15:37] \ud83d\udd14 Migration #250 detected",
     "[20:15:39] \ud83d\udfe2 ENTRY: M1 | HuL76gj4uEdG... | $0.000037615 | 0.0522 SOL",
     "[20:15:39] \ud83d\udcb0 Position filled: M1 | HuL76gj4uEdG\u2026 | $0.000037615 | 0.0522 SOL | FDV $37.6k",
     "[20:15:44] \ud83d\udd14 Migration #251 detected",
@@ -562,7 +555,14 @@
     "[20:19:09] \ud83d\udfe2 EXIT: 5buydkGVah8K... | TRAIL | +98.5%",
     "[20:19:09] \ud83d\udfe2 Trailing Stop: 5buydkGVah8K\u2026 | +98.5% | +0.0514 SOL | Trailing: -6.8% from post-entry high $0.000066559",
     "[20:19:39] \ud83d\udd14 Migration #261 detected",
-    "[20:19:41] \ud83d\udcca Mig:261 Track:0 Upd:3144 Pos:0 SOL:$82.47"
+    "[20:19:41] \ud83d\udcca Mig:261 Track:0 Upd:3144 Pos:0 SOL:$82.47",
+    "[20:20:08] \ud83d\udd14 Migration #262 detected",
+    "[20:20:13] \ud83d\udd14 Migration #263 detected",
+    "[20:20:18] \ud83d\udd14 Migration #264 detected",
+    "[20:20:40] \ud83d\udd14 Migration #265 detected",
+    "[20:20:43] \ud83d\udcca Mig:265 Track:0 Upd:3144 Pos:0 SOL:$82.44",
+    "[20:20:44] \ud83d\udd14 Migration #266 detected",
+    "[20:20:44] \ud83d\udd14 Migration #267 detected"
   ],
   "balance": {
     "start": 4.065247,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 82.47,
+  "sol_price": 82.44,
   "bot_stats": {
-    "migrations_seen": 261,
+    "migrations_seen": 267,
     "migrations_added": 22,
     "pools_tracking": 0,
     "price_updates": 3144,
