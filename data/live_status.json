@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T20:22:49.826805+00:00",
-  "uptime_seconds": 5784.3,
+  "updated_at": "2026-03-01T20:23:51.670818+00:00",
+  "uptime_seconds": 5846.2,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[20:18:28] \ud83d\udd14 Migration #259 detected",
-    "[20:18:39] \ud83d\udcca Mig:259 Track:1 Upd:2994 Pos:1 SOL:$82.60",
-    "[20:18:52] \u26a0\ufe0f Sell failed: TRAIL | 5buydkGVah8K\u2026 | Trailing: -8.1% from post-entry high $0.000066559",
-    "[20:18:56] \ud83d\udd14 Migration #260 detected",
     "[20:19:09] \ud83d\udfe2 EXIT: 5buydkGVah8K... | TRAIL | +98.5%",
     "[20:19:09] \ud83d\udfe2 Trailing Stop: 5buydkGVah8K\u2026 | +98.5% | +0.0514 SOL | Trailing: -6.8% from post-entry high $0.000066559",
     "[20:19:39] \ud83d\udd14 Migration #261 detected",
@@ -562,7 +558,11 @@
     "[20:22:23] \ud83d\udd34 EXIT: B9xbGFQkjuRB... | SL | -19.1%",
     "[20:22:23] \ud83d\udd34 Stop Loss: B9xbGFQkjuRB\u2026 | -19.1% | -0.0100 SOL | SL1: -14.6% price (exec: -18.2%)",
     "[20:22:36] \ud83d\udd14 Migration #278 detected",
-    "[20:22:46] \ud83d\udcca Mig:278 Track:0 Upd:3236 Pos:0 SOL:$82.47"
+    "[20:22:46] \ud83d\udcca Mig:278 Track:0 Upd:3236 Pos:0 SOL:$82.47",
+    "[20:23:26] \ud83d\udd14 Migration #279 detected",
+    "[20:23:30] \ud83d\udd14 Migration #280 detected",
+    "[20:23:43] \ud83d\udd14 Migration #281 detected",
+    "[20:23:48] \ud83d\udcca Mig:281 Track:0 Upd:3236 Pos:0 SOL:$82.47"
   ],
   "balance": {
     "start": 4.065247,
@@ -581,7 +581,7 @@
   },
   "sol_price": 82.47,
   "bot_stats": {
-    "migrations_seen": 278,
+    "migrations_seen": 281,
     "migrations_added": 24,
     "pools_tracking": 0,
     "price_updates": 3236,
