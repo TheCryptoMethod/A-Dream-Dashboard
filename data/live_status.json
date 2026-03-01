@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T07:29:18.736191+00:00",
-  "updated_at": "2026-03-01T07:29:18.736233+00:00",
-  "uptime_seconds": 0.0,
+  "updated_at": "2026-03-01T07:30:20.509309+00:00",
+  "uptime_seconds": 61.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -524,13 +524,24 @@
   "dry_run": false,
   "terminal": [
     "[07:29:18] \ud83d\ude80 Bot gestartet \u2014 M1",
-    "[07:29:18] \ud83d\udcb0 Balance: 4.3066 SOL"
+    "[07:29:18] \ud83d\udcb0 Balance: 4.3066 SOL",
+    "[07:29:35] \ud83d\udd14 Migration #1 detected",
+    "[07:29:37] \ud83d\udd14 Migration #2 detected",
+    "[07:29:42] \ud83d\udd14 Migration #3 detected",
+    "[07:29:53] \ud83d\udd14 Migration #4 detected",
+    "[07:29:54] \ud83d\udd14 Migration #5 detected",
+    "[07:29:55] \u2705 BC Graduated: 4KJeZ2TF6Eiz\u2026",
+    "[07:29:55] \ud83d\udce1 Tracking: 4KJeZ2TF6EizcSe9\u2026 | Pool #1",
+    "[07:30:04] \ud83d\udd14 Migration #6 detected",
+    "[07:30:06] \ud83d\udfe2 ENTRY: M1 | 4KJeZ2TF6Eiz... | $0.000046150 | 0.0521 SOL",
+    "[07:30:06] \ud83d\udcb0 Position filled: M1 | 4KJeZ2TF6Eiz\u2026 | $0.000046150 | 0.0521 SOL | FDV $46.2k",
+    "[07:30:17] \ud83d\udcca Mig:6 Track:1 Upd:29 Pos:1 SOL:$86.62"
   ],
   "balance": {
-    "start": 4.306596464,
-    "current": 4.306596464,
-    "pnl_sol": 0,
-    "pnl_pct": 0
+    "start": 4.306596,
+    "current": 4.29952,
+    "pnl_sol": -0.007076,
+    "pnl_pct": -0.16
   },
   "trades": {
     "total": 0,
@@ -539,6 +550,19 @@
     "win_rate": 0
   },
   "positions": {
-    "open": 0
+    "open": 1
+  },
+  "sol_price": 86.52,
+  "bot_stats": {
+    "migrations_seen": 6,
+    "migrations_added": 1,
+    "pools_tracking": 1,
+    "price_updates": 29,
+    "migrations_rejected": 0,
+    "liquidity_rejected": 0,
+    "bc_graduated": 1,
+    "entries_found": 1,
+    "buys_success": 1,
+    "buys_failed": 0
   }
 }
