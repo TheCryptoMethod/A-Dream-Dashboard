@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T20:04:13.615115+00:00",
-  "uptime_seconds": 4668.1,
+  "updated_at": "2026-03-01T20:05:15.724629+00:00",
+  "uptime_seconds": 4730.2,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[19:54:51] \ud83d\udcca Mig:197 Track:0 Upd:2077 Pos:0 SOL:$83.15",
-    "[19:55:20] \ud83d\udd14 Migration #198 detected",
-    "[19:55:45] \ud83d\udd14 Migration #199 detected",
-    "[19:55:49] \ud83d\udd14 Migration #200 detected",
     "[19:55:53] \ud83d\udcca Mig:200 Track:0 Upd:2077 Pos:0 SOL:$83.15",
     "[19:56:03] \ud83d\udd14 Migration #201 detected",
     "[19:56:10] \ud83d\udd14 Migration #202 detected",
@@ -562,13 +558,17 @@
     "[20:04:05] \ud83d\udcb0 Position filled: M1 | BB45S1j3n2JG\u2026 | $0.000035015 | 0.0521 SOL | FDV $35.0k",
     "[20:04:05] \ud83d\udd14 Migration #222 detected",
     "[20:04:09] \ud83d\udd14 Migration #223 detected",
-    "[20:04:10] \ud83d\udcca Mig:223 Track:1 Upd:2136 Pos:1 SOL:$83.24"
+    "[20:04:10] \ud83d\udcca Mig:223 Track:1 Upd:2136 Pos:1 SOL:$83.24",
+    "[20:04:29] \ud83d\udd14 Migration #224 detected",
+    "[20:04:43] \ud83d\udd14 Migration #225 detected",
+    "[20:05:02] \ud83d\udd14 Migration #226 detected",
+    "[20:05:12] \ud83d\udcca Mig:226 Track:1 Upd:2338 Pos:1 SOL:$83.22"
   ],
   "balance": {
     "start": 4.065247,
-    "current": 3.955255,
-    "pnl_sol": -0.109992,
-    "pnl_pct": -2.71
+    "current": 3.980641,
+    "pnl_sol": -0.084607,
+    "pnl_pct": -2.08
   },
   "trades": {
     "total": 10,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 1
   },
-  "sol_price": 83.24,
+  "sol_price": 83.22,
   "bot_stats": {
-    "migrations_seen": 223,
+    "migrations_seen": 226,
     "migrations_added": 18,
     "pools_tracking": 1,
-    "price_updates": 2152,
+    "price_updates": 2352,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 18,
