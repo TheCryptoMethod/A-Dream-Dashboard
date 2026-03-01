@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T18:53:42.941339+00:00",
-  "uptime_seconds": 437.5,
+  "updated_at": "2026-03-01T18:54:45.280290+00:00",
+  "uptime_seconds": 499.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[18:46:25] \ud83d\ude80 Bot gestartet \u2014 M1",
-    "[18:46:25] \ud83d\udcb0 Balance: 4.0652 SOL",
-    "[18:47:12] \ud83d\udd14 Migration #1 detected",
-    "[18:47:24] \ud83d\udcca Mig:1 Track:0 Upd:0 Pos:0 SOL:$84.36",
     "[18:47:43] \ud83d\udd14 Migration #2 detected",
     "[18:48:08] \ud83d\udd14 Migration #3 detected",
     "[18:48:18] \ud83d\udd14 Migration #4 detected",
@@ -557,7 +553,16 @@
     "[18:53:13] \ud83d\udd14 Migration #16 detected",
     "[18:53:31] \ud83d\udd14 Migration #17 detected",
     "[18:53:34] \ud83d\udd14 Migration #18 detected",
-    "[18:53:39] \ud83d\udcca Mig:18 Track:0 Upd:4 Pos:0 SOL:$84.25"
+    "[18:53:39] \ud83d\udcca Mig:18 Track:0 Upd:4 Pos:0 SOL:$84.25",
+    "[18:53:44] \u2705 BC Graduated: 3sxMsCqa6VgL\u2026",
+    "[18:53:44] \ud83d\udce1 Tracking: 3sxMsCqa6VgLA1of\u2026 | Pool #1",
+    "[18:53:45] \u26a0\ufe0f Jupiter error: quote_failed: HTTP 400: {\"error\":\"The token 3sxMsCqa6VgLA1of",
+    "[18:53:45] \u26a0\ufe0f Buy FAILED: M1 | 3sxMsCqa6VgL\u2026",
+    "[18:53:51] \ud83d\udd14 Migration #19 detected",
+    "[18:53:53] \ud83d\udd14 Migration #20 detected",
+    "[18:53:55] \ud83d\udd14 Migration #21 detected",
+    "[18:54:19] \ud83d\udd14 Migration #22 detected",
+    "[18:54:42] \ud83d\udcca Mig:22 Track:0 Upd:8 Pos:0 SOL:$84.25"
   ],
   "balance": {
     "start": 4.065247,
@@ -576,15 +581,15 @@
   },
   "sol_price": 84.25,
   "bot_stats": {
-    "migrations_seen": 18,
-    "migrations_added": 2,
+    "migrations_seen": 22,
+    "migrations_added": 3,
     "pools_tracking": 0,
-    "price_updates": 4,
+    "price_updates": 8,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 2,
-    "entries_found": 2,
+    "bc_graduated": 3,
+    "entries_found": 3,
     "buys_success": 0,
-    "buys_failed": 2
+    "buys_failed": 3
   }
 }
