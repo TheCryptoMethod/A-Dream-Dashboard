@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T20:43:26.385918+00:00",
-  "uptime_seconds": 7020.9,
+  "updated_at": "2026-03-01T20:44:28.250433+00:00",
+  "uptime_seconds": 7082.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,22 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[20:36:43] \ud83d\udcb0 Position filled: M1 | H9csFPNnMLS7\u2026 | $0.000031935 | 0.0523 SOL | FDV $31.9k",
-    "[20:36:46] \ud83d\udd14 Migration #323 detected",
-    "[20:36:46] \ud83d\udd14 Migration #324 detected",
-    "[20:37:06] \ud83d\udd34 EXIT: H9csFPNnMLS7... | SL | -15.7%",
-    "[20:37:06] \ud83d\udd34 Stop Loss: H9csFPNnMLS7\u2026 | -15.7% | -0.0082 SOL | SL1: -6.0% price (exec: -15.4%)",
-    "[20:37:12] \ud83d\udcca Mig:324 Track:0 Upd:3667 Pos:0 SOL:$82.30",
-    "[20:37:21] \ud83d\udd14 Migration #325 detected",
-    "[20:38:11] \ud83d\udd14 Migration #326 detected",
-    "[20:38:14] \ud83d\udcca Mig:326 Track:0 Upd:3667 Pos:0 SOL:$82.26",
-    "[20:38:19] \ud83d\udd14 Migration #327 detected",
-    "[20:39:01] \ud83d\udd14 Migration #328 detected",
-    "[20:39:14] \ud83d\udd14 Migration #329 detected",
-    "[20:39:16] \ud83d\udcca Mig:329 Track:0 Upd:3667 Pos:0 SOL:$82.22",
-    "[20:39:53] \ud83d\udd14 Migration #330 detected",
-    "[20:40:07] \u2705 BC Graduated: BPuev1mPrkRd\u2026",
-    "[20:40:07] \ud83d\udce1 Tracking: BPuev1mPrkRdPkgA\u2026 | Pool #1",
     "[20:40:08] \u26a0\ufe0f Jupiter error: quote_failed: HTTP 400: {\"error\":\"No routes found\",\"errorCod",
     "[20:40:08] \u26a0\ufe0f Buy FAILED: M1 | BPuev1mPrkRd\u2026",
     "[20:40:17] \ud83d\udcca Mig:330 Track:0 Upd:3670 Pos:0 SOL:$82.21",
@@ -562,34 +546,50 @@
     "[20:43:06] \ud83d\udcb0 Position filled: M1 | 3Znu21YkeQ1b\u2026 | $0.000036994 | 0.0521 SOL | FDV $37.0k",
     "[20:43:07] \ud83d\udd14 Migration #343 detected",
     "[20:43:21] \ud83d\udd14 Migration #344 detected",
-    "[20:43:23] \ud83d\udcca Mig:344 Track:1 Upd:3800 Pos:1 SOL:$82.04"
+    "[20:43:23] \ud83d\udcca Mig:344 Track:1 Upd:3800 Pos:1 SOL:$82.04",
+    "[20:43:42] \ud83d\udd14 Migration #345 detected",
+    "[20:43:56] \u2705 BC Graduated: B5Je4uUiAScb\u2026",
+    "[20:43:56] \ud83d\udce1 Tracking: B5Je4uUiAScbA8n9\u2026 | Pool #2",
+    "[20:44:02] \u26a0\ufe0f Sell failed: TRAIL | 3Znu21YkeQ1b\u2026 | Trailing: -12.1% from post-entry high $0.000070929",
+    "[20:44:02] \u26a0\ufe0f Sell failed: TRAIL | 3Znu21YkeQ1b\u2026 | Trailing: -16.1% from post-entry high $0.000070929",
+    "[20:44:02] \u26a0\ufe0f Sell failed: TRAIL | 3Znu21YkeQ1b\u2026 | Trailing: -20.0% from post-entry high $0.000070929",
+    "[20:44:02] \u26a0\ufe0f Sell failed: TRAIL | 3Znu21YkeQ1b\u2026 | Trailing: -16.2% from post-entry high $0.000070929",
+    "[20:44:04] \ud83d\udd14 Migration #346 detected",
+    "[20:44:04] \ud83d\udfe2 ENTRY: M1 | B5Je4uUiAScb... | $0.000016745 | 0.0521 SOL",
+    "[20:44:04] \ud83d\udcb0 Position filled: M1 | B5Je4uUiAScb\u2026 | $0.000016745 | 0.0521 SOL | FDV $16.7k",
+    "[20:44:07] \ud83d\udd14 Migration #347 detected",
+    "[20:44:13] \ud83d\udd14 Migration #348 detected",
+    "[20:44:17] \ud83d\udfe2 EXIT: 3Znu21YkeQ1b... | TRAIL | +80.7%",
+    "[20:44:17] \ud83d\udfe2 Trailing Stop: 3Znu21YkeQ1b\u2026 | +80.7% | +0.0421 SOL | Trailing: -6.2% from post-entry high $0.000070929",
+    "[20:44:18] \ud83d\udd14 Migration #349 detected",
+    "[20:44:25] \ud83d\udcca Mig:349 Track:1 Upd:4199 Pos:1 SOL:$81.97"
   ],
   "balance": {
     "start": 4.065247,
-    "current": 3.79734,
-    "pnl_sol": -0.267908,
-    "pnl_pct": -6.59
+    "current": 3.880227,
+    "pnl_sol": -0.18502,
+    "pnl_pct": -4.55
   },
   "trades": {
-    "total": 21,
-    "wins": 8,
+    "total": 22,
+    "wins": 9,
     "losses": 13,
-    "win_rate": 38.1
+    "win_rate": 40.9
   },
   "positions": {
     "open": 1
   },
-  "sol_price": 82.04,
+  "sol_price": 81.97,
   "bot_stats": {
-    "migrations_seen": 344,
-    "migrations_added": 30,
+    "migrations_seen": 349,
+    "migrations_added": 31,
     "pools_tracking": 1,
-    "price_updates": 3813,
+    "price_updates": 4212,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 30,
-    "entries_found": 30,
-    "buys_success": 22,
+    "bc_graduated": 31,
+    "entries_found": 31,
+    "buys_success": 23,
     "buys_failed": 8
   }
 }
