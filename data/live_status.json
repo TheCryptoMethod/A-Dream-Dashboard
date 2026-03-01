@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T17:42:46.108656+00:00",
-  "updated_at": "2026-03-01T17:44:50.061600+00:00",
-  "uptime_seconds": 124.0,
+  "updated_at": "2026-03-01T17:45:51.901558+00:00",
+  "uptime_seconds": 185.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -543,34 +543,43 @@
     "[17:44:37] \ud83d\udd14 Migration #11 detected",
     "[17:44:41] \u2705 BC Graduated: DjHwmbNAQn7W\u2026",
     "[17:44:41] \ud83d\udce1 Tracking: DjHwmbNAQn7WULkJ\u2026 | Pool #2",
-    "[17:44:47] \ud83d\udcca Mig:11 Track:2 Upd:349 Pos:1 SOL:$84.09"
+    "[17:44:47] \ud83d\udcca Mig:11 Track:2 Upd:349 Pos:1 SOL:$84.09",
+    "[17:44:51] \ud83d\udfe2 ENTRY: M1 | DjHwmbNAQn7W... | $0.000035854 | 0.0521 SOL",
+    "[17:44:51] \ud83d\udcb0 Position filled: M1 | DjHwmbNAQn7W\u2026 | $0.000035854 | 0.0521 SOL | FDV $35.9k",
+    "[17:44:54] \ud83d\udd14 Migration #12 detected",
+    "[17:44:57] \ud83d\udd14 Migration #13 detected",
+    "[17:45:12] \ud83d\udd14 Migration #14 detected",
+    "[17:45:15] \u26a0\ufe0f Sell failed: SL | DjHwmbNAQn7W\u2026 | SL1: -7.7% price (exec: -12.4%)",
+    "[17:45:20] \ud83d\udd34 EXIT: DjHwmbNAQn7W... | EARLY_PERF_30S | -17.2%",
+    "[17:45:20] \ud83d\udd34 EARLY_PERF_30S: DjHwmbNAQn7W\u2026 | -17.2% | -0.0090 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_30S (perf_30s=-12.8%)",
+    "[17:45:48] \ud83d\udcca Mig:14 Track:1 Upd:664 Pos:1 SOL:$84.08"
   ],
   "balance": {
     "start": 4.049484,
-    "current": 3.945301,
-    "pnl_sol": -0.104184,
-    "pnl_pct": -2.57
+    "current": 3.990675,
+    "pnl_sol": -0.05881,
+    "pnl_pct": -1.45
   },
   "trades": {
-    "total": 0,
+    "total": 1,
     "wins": 0,
-    "losses": 0,
-    "win_rate": 0
+    "losses": 1,
+    "win_rate": 0.0
   },
   "positions": {
     "open": 1
   },
   "sol_price": 84.08,
   "bot_stats": {
-    "migrations_seen": 11,
+    "migrations_seen": 14,
     "migrations_added": 2,
-    "pools_tracking": 2,
-    "price_updates": 369,
+    "pools_tracking": 1,
+    "price_updates": 677,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 2,
     "entries_found": 2,
-    "buys_success": 1,
+    "buys_success": 2,
     "buys_failed": 0
   }
 }
