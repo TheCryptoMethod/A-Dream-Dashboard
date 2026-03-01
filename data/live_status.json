@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T18:46:25.483536+00:00",
-  "updated_at": "2026-03-01T19:09:18.849635+00:00",
-  "uptime_seconds": 1373.4,
+  "updated_at": "2026-03-01T19:10:21.235865+00:00",
+  "uptime_seconds": 1435.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,15 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[19:03:01] \ud83d\udcca Mig:40 Track:0 Upd:11 Pos:0 SOL:$83.99",
-    "[19:03:12] \ud83d\udd14 Migration #41 detected",
-    "[19:03:16] \ud83d\udd14 Migration #42 detected",
-    "[19:03:27] \ud83d\udd14 Migration #43 detected",
-    "[19:04:04] \ud83d\udcca Mig:43 Track:0 Upd:11 Pos:0 SOL:$83.96",
-    "[19:04:08] \ud83d\udd14 Migration #44 detected",
-    "[19:04:21] \u2705 BC Graduated: BnLpMb7o4VU2\u2026",
-    "[19:04:21] \ud83d\udce1 Tracking: BnLpMb7o4VU2qdgC\u2026 | Pool #1",
-    "[19:04:23] \u26a0\ufe0f Jupiter error: quote_failed: HTTP 400: {\"error\":\"No routes found\",\"errorCod",
     "[19:04:23] \u26a0\ufe0f Buy FAILED: M1 | BnLpMb7o4VU2\u2026",
     "[19:04:29] \ud83d\udd14 Migration #45 detected",
     "[19:04:40] \ud83d\udd14 Migration #46 detected",
@@ -562,34 +553,43 @@
     "[19:09:04] \ud83d\udfe2 Trailing Stop: BguhxmuY2jw7\u2026 | +87.8% | +0.0458 SOL | Trailing: -6.3% from post-entry high $0.000061680",
     "[19:09:12] \ud83d\udd14 Migration #57 detected",
     "[19:09:15] \ud83d\udcca Mig:57 Track:0 Upd:488 Pos:0 SOL:$83.87",
-    "[19:09:17] \ud83d\udd14 Migration #58 detected"
+    "[19:09:17] \ud83d\udd14 Migration #58 detected",
+    "[19:09:20] \ud83d\udd14 Migration #59 detected",
+    "[19:09:39] \ud83d\udd14 Migration #60 detected",
+    "[19:09:52] \u2705 BC Graduated: MFEuGXz68Gtr\u2026",
+    "[19:09:53] \ud83d\udce1 Tracking: MFEuGXz68GtrFiPj\u2026 | Pool #1",
+    "[19:10:00] \ud83d\udfe2 ENTRY: M1 | MFEuGXz68Gtr... | $0.000035188 | 0.0521 SOL",
+    "[19:10:00] \ud83d\udcb0 Position filled: M1 | MFEuGXz68Gtr\u2026 | $0.000035188 | 0.0521 SOL | FDV $35.2k",
+    "[19:10:06] \ud83d\udd34 EXIT: MFEuGXz68Gtr... | SL | -11.9%",
+    "[19:10:06] \ud83d\udd34 Stop Loss: MFEuGXz68Gtr\u2026 | -11.9% | -0.0062 SOL | SL1: -9.4% price (exec: -11.5%)",
+    "[19:10:18] \ud83d\udcca Mig:60 Track:0 Upd:553 Pos:0 SOL:$83.85"
   ],
   "balance": {
     "start": 4.065247,
-    "current": 4.106236,
-    "pnl_sol": 0.040989,
-    "pnl_pct": 1.01
+    "current": 4.054069,
+    "pnl_sol": -0.011179,
+    "pnl_pct": -0.27
   },
   "trades": {
-    "total": 1,
+    "total": 2,
     "wins": 1,
-    "losses": 0,
-    "win_rate": 100.0
+    "losses": 1,
+    "win_rate": 50.0
   },
   "positions": {
     "open": 0
   },
-  "sol_price": 83.87,
+  "sol_price": 83.85,
   "bot_stats": {
-    "migrations_seen": 58,
-    "migrations_added": 7,
+    "migrations_seen": 60,
+    "migrations_added": 8,
     "pools_tracking": 0,
-    "price_updates": 488,
+    "price_updates": 553,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 7,
-    "entries_found": 7,
-    "buys_success": 1,
+    "bc_graduated": 8,
+    "entries_found": 8,
+    "buys_success": 2,
     "buys_failed": 6
   }
 }
