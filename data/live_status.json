@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-01T07:29:18.736191+00:00",
-  "updated_at": "2026-03-01T07:34:27.614199+00:00",
-  "uptime_seconds": 308.9,
+  "updated_at": "2026-03-01T07:35:29.342969+00:00",
+  "uptime_seconds": 370.6,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,14 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[07:29:18] \ud83d\ude80 Bot gestartet \u2014 M1",
-    "[07:29:18] \ud83d\udcb0 Balance: 4.3066 SOL",
-    "[07:29:35] \ud83d\udd14 Migration #1 detected",
-    "[07:29:37] \ud83d\udd14 Migration #2 detected",
-    "[07:29:42] \ud83d\udd14 Migration #3 detected",
-    "[07:29:53] \ud83d\udd14 Migration #4 detected",
-    "[07:29:54] \ud83d\udd14 Migration #5 detected",
-    "[07:29:55] \u2705 BC Graduated: 4KJeZ2TF6Eiz\u2026",
     "[07:29:55] \ud83d\udce1 Tracking: 4KJeZ2TF6EizcSe9\u2026 | Pool #1",
     "[07:30:04] \ud83d\udd14 Migration #6 detected",
     "[07:30:06] \ud83d\udfe2 ENTRY: M1 | 4KJeZ2TF6Eiz... | $0.000046150 | 0.0521 SOL",
@@ -558,18 +550,30 @@
     "[07:33:37] \ud83d\udd14 Migration #21 detected",
     "[07:33:38] \ud83d\udd14 Migration #22 detected",
     "[07:33:51] \ud83d\udd14 Migration #23 detected",
-    "[07:34:24] \ud83d\udcca Mig:23 Track:0 Upd:29 Pos:0 SOL:$86.49"
+    "[07:34:24] \ud83d\udcca Mig:23 Track:0 Upd:29 Pos:0 SOL:$86.49",
+    "[07:34:36] \ud83d\udd14 Migration #24 detected",
+    "[07:34:43] \ud83d\udd14 Migration #25 detected",
+    "[07:34:56] \u2705 BC Graduated: AGY3bTK7mxYr\u2026",
+    "[07:34:56] \ud83d\udce1 Tracking: AGY3bTK7mxYrJFVt\u2026 | Pool #1",
+    "[07:35:01] \ud83d\udd14 Migration #26 detected",
+    "[07:35:06] \ud83d\udfe2 ENTRY: M1 | AGY3bTK7mxYr... | $0.000036656 | 0.0521 SOL",
+    "[07:35:06] \ud83d\udcb0 Position filled: M1 | AGY3bTK7mxYr\u2026 | $0.000036656 | 0.0521 SOL | FDV $36.7k",
+    "[07:35:13] \ud83d\udd14 Migration #27 detected",
+    "[07:35:23] \ud83d\udd14 Migration #28 detected",
+    "[07:35:26] \ud83d\udcca Mig:28 Track:1 Upd:86 Pos:1 SOL:$86.49",
+    "[07:35:26] \ud83d\udd34 EXIT: AGY3bTK7mxYr... | SL | -20.1%",
+    "[07:35:26] \ud83d\udd34 Stop Loss: AGY3bTK7mxYr\u2026 | -20.1% | -0.0105 SOL | SL1: -9.1% price (exec: -15.4%)"
   ],
   "balance": {
     "start": 4.306596,
-    "current": 4.299505,
-    "pnl_sol": -0.007091,
-    "pnl_pct": -0.16
+    "current": 4.288334,
+    "pnl_sol": -0.018262,
+    "pnl_pct": -0.42
   },
   "trades": {
-    "total": 2,
+    "total": 4,
     "wins": 0,
-    "losses": 2,
+    "losses": 4,
     "win_rate": 0.0
   },
   "positions": {
@@ -577,15 +581,15 @@
   },
   "sol_price": 86.49,
   "bot_stats": {
-    "migrations_seen": 23,
-    "migrations_added": 1,
+    "migrations_seen": 28,
+    "migrations_added": 2,
     "pools_tracking": 0,
-    "price_updates": 29,
+    "price_updates": 86,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 1,
-    "entries_found": 1,
-    "buys_success": 1,
+    "bc_graduated": 2,
+    "entries_found": 2,
+    "buys_success": 2,
     "buys_failed": 0
   }
 }
