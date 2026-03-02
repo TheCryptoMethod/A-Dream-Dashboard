@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-02T09:18:47.556343+00:00",
-  "updated_at": "2026-03-02T09:37:22.307094+00:00",
-  "uptime_seconds": 1114.8,
+  "updated_at": "2026-03-02T09:38:24.043664+00:00",
+  "uptime_seconds": 1176.5,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,18 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[09:30:23] \ud83d\udd14 Migration #32 detected",
-    "[09:30:28] \u2705 BC Graduated: CaWse93HecSQ\u2026",
-    "[09:30:28] \ud83d\udce1 Tracking: CaWse93HecSQNAed\u2026 | Pool #1",
-    "[09:30:28] \ud83d\udeab Disqualified: CaWse93HecSQ\u2026 | mcap_bucket_not_enabled | 0s",
-    "[09:31:07] \ud83d\udcca Mig:32 Track:0 Upd:163 Pos:0 SOL:$83.89",
-    "[09:31:09] \ud83d\udd14 Migration #33 detected",
-    "[09:31:29] \ud83d\udd14 Migration #34 detected",
-    "[09:31:30] \ud83d\udd14 Migration #35 detected",
-    "[09:31:51] \ud83d\udd14 Migration #36 detected",
-    "[09:32:00] \ud83d\udd14 Migration #37 detected",
-    "[09:32:02] \ud83d\udd14 Migration #38 detected",
-    "[09:32:09] \ud83d\udcca Mig:38 Track:0 Upd:163 Pos:0 SOL:$83.86",
     "[09:32:15] \ud83d\udd14 Migration #39 detected",
     "[09:32:32] \ud83d\udd14 Migration #40 detected",
     "[09:32:40] \ud83d\udd14 Migration #41 detected",
@@ -562,34 +550,46 @@
     "[09:36:41] \ud83d\udd14 Migration #59 detected",
     "[09:37:01] \ud83d\udd14 Migration #60 detected",
     "[09:37:13] \ud83d\udd14 Migration #61 detected",
-    "[09:37:19] \ud83d\udcca Mig:61 Track:0 Upd:163 Pos:0 SOL:$83.87"
+    "[09:37:19] \ud83d\udcca Mig:61 Track:0 Upd:163 Pos:0 SOL:$83.87",
+    "[09:37:23] \ud83d\udd14 Migration #62 detected",
+    "[09:37:27] \u2705 BC Graduated: CguWbFbmP32G\u2026",
+    "[09:37:27] \ud83d\udce1 Tracking: CguWbFbmP32GedbC\u2026 | Pool #1",
+    "[09:37:32] \ud83d\udfe2 ENTRY: M1 | CguWbFbmP32G... | $0.000029128 | 0.0521 SOL",
+    "[09:37:32] \ud83d\udcb0 Position filled: M1 | CguWbFbmP32G\u2026 | $0.000029128 | 0.0521 SOL | FDV $29.1k",
+    "[09:37:41] \ud83d\udd34 EXIT: CguWbFbmP32G... | SL | -12.3%",
+    "[09:37:41] \ud83d\udd34 Stop Loss: CguWbFbmP32G\u2026 | -12.3% | -0.0064 SOL | SL1: -7.8% price (exec: -16.4%)",
+    "[09:37:55] \ud83d\udd14 Migration #63 detected",
+    "[09:37:56] \ud83d\udd14 Migration #64 detected",
+    "[09:38:00] \ud83d\udd14 Migration #65 detected",
+    "[09:38:15] \ud83d\udd14 Migration #66 detected",
+    "[09:38:21] \ud83d\udcca Mig:66 Track:0 Upd:221 Pos:0 SOL:$83.84"
   ],
   "balance": {
     "start": 3.973852,
-    "current": 3.964241,
-    "pnl_sol": -0.009611,
-    "pnl_pct": -0.24
+    "current": 3.957819,
+    "pnl_sol": -0.016033,
+    "pnl_pct": -0.4
   },
   "trades": {
-    "total": 2,
+    "total": 3,
     "wins": 0,
-    "losses": 2,
+    "losses": 3,
     "win_rate": 0.0
   },
   "positions": {
     "open": 0
   },
-  "sol_price": 83.87,
+  "sol_price": 83.84,
   "bot_stats": {
-    "migrations_seen": 61,
-    "migrations_added": 3,
+    "migrations_seen": 66,
+    "migrations_added": 4,
     "pools_tracking": 0,
-    "price_updates": 163,
+    "price_updates": 221,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 3,
-    "entries_found": 2,
-    "buys_success": 2,
+    "bc_graduated": 4,
+    "entries_found": 3,
+    "buys_success": 3,
     "buys_failed": 0
   }
 }
