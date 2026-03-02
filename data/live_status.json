@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-02T09:18:47.556343+00:00",
-  "updated_at": "2026-03-02T09:35:18.340770+00:00",
-  "uptime_seconds": 990.8,
+  "updated_at": "2026-03-02T09:36:20.437379+00:00",
+  "uptime_seconds": 1052.9,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,12 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[09:29:06] \ud83d\udcb0 Position filled: M1 | ATBR4i19gcQ3\u2026 | $0.000049564 | 0.0521 SOL | FDV $49.6k",
-    "[09:29:35] \ud83d\udd14 Migration #26 detected",
-    "[09:29:35] \ud83d\udd34 EXIT: ATBR4i19gcQ3... | EARLY_PERF_30S | -5.6%",
-    "[09:29:35] \ud83d\udd34 EARLY_PERF_30S: ATBR4i19gcQ3\u2026 | -5.6% | -0.0029 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_30S (perf_30s=+8.1%)",
-    "[09:29:50] \ud83d\udd14 Migration #27 detected",
-    "[09:29:56] \ud83d\udd14 Migration #28 detected",
     "[09:30:04] \ud83d\udd14 Migration #29 detected",
     "[09:30:05] \ud83d\udcca Mig:29 Track:0 Upd:162 Pos:0 SOL:$83.92",
     "[09:30:13] \ud83d\udd14 Migration #30 detected",
@@ -562,7 +556,13 @@
     "[09:34:55] \ud83d\udd14 Migration #51 detected",
     "[09:34:55] \ud83d\udd14 Migration #52 detected",
     "[09:35:02] \ud83d\udd14 Migration #53 detected",
-    "[09:35:15] \ud83d\udcca Mig:53 Track:0 Upd:163 Pos:0 SOL:$83.90"
+    "[09:35:15] \ud83d\udcca Mig:53 Track:0 Upd:163 Pos:0 SOL:$83.90",
+    "[09:35:23] \ud83d\udd14 Migration #54 detected",
+    "[09:35:42] \ud83d\udd14 Migration #55 detected",
+    "[09:35:42] \ud83d\udd14 Migration #56 detected",
+    "[09:36:06] \ud83d\udd14 Migration #57 detected",
+    "[09:36:17] \ud83d\udcca Mig:57 Track:0 Upd:163 Pos:0 SOL:$83.88",
+    "[09:36:20] \ud83d\udd14 Migration #58 detected"
   ],
   "balance": {
     "start": 3.973852,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 83.9,
+  "sol_price": 83.88,
   "bot_stats": {
-    "migrations_seen": 53,
+    "migrations_seen": 58,
     "migrations_added": 3,
     "pools_tracking": 0,
     "price_updates": 163,
