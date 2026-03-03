@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T18:02:32.687738+00:00",
-  "updated_at": "2026-03-03T18:12:51.455516+00:00",
-  "uptime_seconds": 618.8,
+  "updated_at": "2026-03-03T18:13:53.386218+00:00",
+  "uptime_seconds": 680.7,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,12 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[18:04:33] \ud83d\udcca Mig:8 Track:0 Upd:0 Pos:0 SOL:$85.24",
-    "[18:04:50] \ud83d\udd14 Migration #9 detected",
-    "[18:04:53] \ud83d\udd14 Migration #10 detected",
-    "[18:05:03] \u2705 BC Graduated: DDKNRYKgU9Wc\u2026",
-    "[18:05:03] \ud83d\udce1 Tracking: DDKNRYKgU9WcqYE6\u2026 | Pool #1",
-    "[18:05:31] \ud83d\udd14 Migration #11 detected",
     "[18:05:35] \ud83d\udcca Mig:11 Track:1 Upd:127 Pos:0 SOL:$85.20",
     "[18:05:47] \ud83d\udd14 Migration #12 detected",
     "[18:05:53] \ud83d\udd14 Migration #13 detected",
@@ -564,7 +558,13 @@
     "[18:12:14] \ud83d\udd14 Migration #35 detected",
     "[18:12:45] \ud83d\udd14 Migration #36 detected",
     "[18:12:48] \ud83d\udcca Mig:36 Track:1 Upd:963 Pos:0 SOL:$85.07",
-    "[18:12:51] \ud83d\udd14 Migration #37 detected"
+    "[18:12:51] \ud83d\udd14 Migration #37 detected",
+    "[18:12:52] \ud83d\udd14 Migration #38 detected",
+    "[18:13:01] \ud83d\udd14 Migration #39 detected",
+    "[18:13:18] \ud83d\udd14 Migration #40 detected",
+    "[18:13:31] \u2705 BC Graduated: 7L6NarEaM2do\u2026",
+    "[18:13:32] \ud83d\udce1 Tracking: 7L6NarEaM2doNue3\u2026 | Pool #2",
+    "[18:13:50] \ud83d\udcca Mig:40 Track:2 Upd:1039 Pos:0 SOL:$85.03"
   ],
   "balance": {
     "start": 4.103103,
@@ -581,15 +581,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.07,
+  "sol_price": 85.03,
   "bot_stats": {
-    "migrations_seen": 37,
-    "migrations_added": 1,
-    "pools_tracking": 1,
-    "price_updates": 963,
+    "migrations_seen": 40,
+    "migrations_added": 2,
+    "pools_tracking": 2,
+    "price_updates": 1046,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 1,
+    "bc_graduated": 2,
     "entries_found": 0,
     "buys_success": 0,
     "buys_failed": 0
