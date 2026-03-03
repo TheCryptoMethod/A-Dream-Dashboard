@@ -1,20 +1,45 @@
 {
-  "status": "offline",
-  "updated_at": "2026-03-02T09:45:52.065393+00:00",
-  "last_session": {
-    "started_at": "2026-03-02T09:18:47.556343+00:00",
-    "ended_at": "2026-03-02T09:45:51.536409+00:00",
-    "duration_seconds": 1624.0,
-    "duration_formatted": "27m 3s",
+  "status": "live",
+  "started_at": "2026-03-03T14:24:01.295365+00:00",
+  "updated_at": "2026-03-03T14:24:01.295409+00:00",
+  "uptime_seconds": 0.0,
+  "method": "M1",
+  "strategy": {
     "method": "M1",
-    "dry_run": false,
-    "balance_start": 3.973852,
-    "balance_end": 3.995445,
-    "pnl_sol": 0.021594,
-    "pnl_pct": 0.54,
-    "total_trades": 5,
-    "wins": 2,
-    "losses": 3,
-    "win_rate": 40.0
+    "entry_params": {},
+    "source": "backtest",
+    "sl_pct": 15,
+    "tp_pct": 200,
+    "trailing_activation_pct": 0,
+    "trailing_pct": 0,
+    "mcap_min": 10000,
+    "mcap_max": 1000000,
+    "gates_passed": 0,
+    "all_11_passed": false,
+    "backtest_avg_pnl": 0.0,
+    "backtest_win_rate": 0.0,
+    "backtest_sortino": 0.0,
+    "backtest_n_trades": 0,
+    "post_entry_filters": {}
+  },
+  "dry_run": false,
+  "terminal": [
+    "[14:24:01] \ud83d\ude80 Bot gestartet \u2014 M1",
+    "[14:24:01] \ud83d\udcb0 Balance: 3.9928 SOL"
+  ],
+  "balance": {
+    "start": 3.992839993,
+    "current": 3.992839993,
+    "pnl_sol": 0,
+    "pnl_pct": 0
+  },
+  "trades": {
+    "total": 0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0
+  },
+  "positions": {
+    "open": 0
   }
 }
