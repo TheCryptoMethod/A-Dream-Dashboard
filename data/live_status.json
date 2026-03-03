@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T14:24:01.295365+00:00",
-  "updated_at": "2026-03-03T15:57:05.206473+00:00",
-  "uptime_seconds": 5583.9,
+  "updated_at": "2026-03-03T15:58:07.135777+00:00",
+  "uptime_seconds": 5645.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -24,9 +24,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[15:47:47] \ud83d\udd14 Migration #177 detected",
-    "[15:47:47] \ud83d\udd14 Migration #178 detected",
-    "[15:47:50] \ud83d\udcca Mig:178 Track:0 Upd:13555 Pos:0 SOL:$84.63",
     "[15:48:19] \ud83d\udd14 Migration #179 detected",
     "[15:48:33] \ud83d\udd14 Migration #180 detected",
     "[15:48:33] \ud83d\udd14 Migration #181 detected",
@@ -63,29 +60,32 @@
     "[15:55:05] \ud83d\udcca Mig:195 Track:1 Upd:14308 Pos:1 SOL:$84.86",
     "[15:56:07] \ud83d\udcca Mig:195 Track:1 Upd:14510 Pos:1 SOL:$84.87",
     "[15:56:41] \ud83d\udd14 Migration #196 detected",
-    "[15:56:50] \ud83d\udd14 Migration #197 detected"
+    "[15:56:50] \ud83d\udd14 Migration #197 detected",
+    "[15:57:09] \ud83d\udcca Mig:197 Track:1 Upd:14679 Pos:1 SOL:$84.85",
+    "[15:57:50] \ud83d\udd34 EXIT: X3Nj19WRDb3S... | EARLY_PERF_5M | -1.5%",
+    "[15:57:50] \ud83d\udd34 EARLY_PERF_5M: X3Nj19WRDb3S\u2026 | -1.5% | -0.0045 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_5M"
   ],
   "balance": {
     "start": 3.99284,
-    "current": 3.805299,
-    "pnl_sol": -0.187541,
-    "pnl_pct": -4.7
+    "current": 4.103103,
+    "pnl_sol": 0.110263,
+    "pnl_pct": 2.76
   },
   "trades": {
-    "total": 23,
+    "total": 24,
     "wins": 3,
-    "losses": 20,
-    "win_rate": 13.0
+    "losses": 21,
+    "win_rate": 12.5
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
-  "sol_price": 84.84,
+  "sol_price": 84.85,
   "bot_stats": {
     "migrations_seen": 197,
     "migrations_added": 24,
-    "pools_tracking": 1,
-    "price_updates": 14667,
+    "pools_tracking": 0,
+    "price_updates": 14799,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 24,
