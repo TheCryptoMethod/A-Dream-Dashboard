@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T14:24:01.295365+00:00",
-  "updated_at": "2026-03-03T15:59:09.134738+00:00",
-  "uptime_seconds": 5707.8,
+  "updated_at": "2026-03-03T16:00:11.101440+00:00",
+  "uptime_seconds": 5769.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -24,10 +24,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[15:50:56] \ud83d\udcca Mig:184 Track:0 Upd:13555 Pos:0 SOL:$84.78",
-    "[15:51:32] \ud83d\udd14 Migration #185 detected",
-    "[15:51:34] \ud83d\udd14 Migration #186 detected",
-    "[15:51:34] \ud83d\udd14 Migration #187 detected",
     "[15:51:47] \ud83d\udd14 Migration #188 detected",
     "[15:51:57] \ud83d\udd14 Migration #189 detected",
     "[15:51:58] \ud83d\udcca Mig:189 Track:0 Upd:13555 Pos:0 SOL:$84.80",
@@ -63,7 +59,11 @@
     "[15:58:32] \u26a0\ufe0f Jupiter error: quote_failed: HTTP 400: {\"error\":\"The token z9BSdTch7y39y4MW",
     "[15:58:32] \u26a0\ufe0f Buy FAILED: M1 | z9BSdTch7y39\u2026",
     "[15:58:51] \ud83d\udd14 Migration #199 detected",
-    "[15:59:02] \ud83d\udd14 Migration #200 detected"
+    "[15:59:02] \ud83d\udd14 Migration #200 detected",
+    "[15:59:13] \ud83d\udcca Mig:200 Track:0 Upd:14801 Pos:0 SOL:$84.87",
+    "[15:59:42] \ud83d\udd14 Migration #201 detected",
+    "[15:59:55] \ud83d\udd14 Migration #202 detected",
+    "[16:00:04] \ud83d\udd14 Migration #203 detected"
   ],
   "balance": {
     "start": 3.99284,
@@ -80,9 +80,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.87,
+  "sol_price": 84.89,
   "bot_stats": {
-    "migrations_seen": 200,
+    "migrations_seen": 203,
     "migrations_added": 25,
     "pools_tracking": 0,
     "price_updates": 14801,
