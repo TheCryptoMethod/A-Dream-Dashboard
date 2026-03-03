@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T14:24:01.295365+00:00",
-  "updated_at": "2026-03-03T15:02:15.219329+00:00",
-  "uptime_seconds": 2293.9,
+  "updated_at": "2026-03-03T15:03:17.472650+00:00",
+  "uptime_seconds": 2356.2,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -24,15 +24,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[14:56:44] \ud83d\udd14 Migration #81 detected",
-    "[14:56:48] \ud83d\udd14 Migration #82 detected",
-    "[14:57:02] \ud83d\udcca Mig:82 Track:2 Upd:5443 Pos:2 SOL:$83.13",
-    "[14:57:25] \ud83d\udd14 Migration #83 detected",
-    "[14:57:31] \ud83d\udd14 Migration #84 detected",
-    "[14:57:39] \u2705 BC Graduated: 4AaQh4GhzNWM\u2026",
-    "[14:57:39] \ud83d\udce1 Tracking: 4AaQh4GhzNWMtDt3\u2026 | Pool #3",
-    "[14:57:44] \ud83d\udfe2 ENTRY: M1 | 4AaQh4GhzNWM... | $0.000088859 | 0.3022 SOL",
-    "[14:57:44] \ud83d\udcb0 Position filled: M1 | 4AaQh4GhzNWM\u2026 | $0.000088859 | 0.3022 SOL | FDV $88.9k",
     "[14:58:04] \ud83d\udcca Mig:84 Track:3 Upd:5900 Pos:3 SOL:$83.19",
     "[14:58:08] \ud83d\udd14 Migration #85 detected",
     "[14:58:13] \ud83d\udd34 EXIT: 4AaQh4GhzNWM... | EARLY_DELTA_10S_30S | -3.6%",
@@ -63,34 +54,43 @@
     "[15:02:01] \ud83d\udd14 Migration #94 detected",
     "[15:02:09] \ud83d\udd14 Migration #95 detected",
     "[15:02:12] \ud83d\udcca Mig:95 Track:2 Upd:7495 Pos:2 SOL:$83.25",
-    "[15:02:15] \u2705 BC Graduated: 7EZaVqcXGy1e\u2026"
+    "[15:02:15] \u2705 BC Graduated: 7EZaVqcXGy1e\u2026",
+    "[15:02:16] \ud83d\udce1 Tracking: 7EZaVqcXGy1eVkfp\u2026 | Pool #3",
+    "[15:02:21] \ud83d\udfe2 ENTRY: M1 | 7EZaVqcXGy1e... | $0.000001605 | 0.3023 SOL",
+    "[15:02:21] \ud83d\udcb0 Position filled: M1 | 7EZaVqcXGy1e\u2026 | $0.000001605 | 0.3023 SOL | FDV $1.6k",
+    "[15:02:21] \ud83d\udd14 Migration #96 detected",
+    "[15:02:40] \ud83d\udd14 Migration #97 detected",
+    "[15:02:51] \ud83d\udd34 EXIT: 7EZaVqcXGy1e... | EARLY_DELTA_10S_30S | -5.5%",
+    "[15:02:51] \ud83d\udd34 EARLY_DELTA_10S_30S: 7EZaVqcXGy1e\u2026 | -5.5% | -0.0165 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_10S_30S (delta=+0.0%)",
+    "[15:03:06] \ud83d\udd14 Migration #98 detected",
+    "[15:03:14] \ud83d\udcca Mig:98 Track:2 Upd:7868 Pos:2 SOL:$83.31"
   ],
   "balance": {
     "start": 3.99284,
-    "current": 3.830558,
-    "pnl_sol": -0.162282,
-    "pnl_pct": -4.06
+    "current": 3.814055,
+    "pnl_sol": -0.178785,
+    "pnl_pct": -4.48
   },
   "trades": {
-    "total": 11,
+    "total": 12,
     "wins": 2,
-    "losses": 9,
-    "win_rate": 18.2
+    "losses": 10,
+    "win_rate": 16.7
   },
   "positions": {
     "open": 2
   },
-  "sol_price": 83.25,
+  "sol_price": 83.31,
   "bot_stats": {
-    "migrations_seen": 95,
-    "migrations_added": 13,
+    "migrations_seen": 98,
+    "migrations_added": 14,
     "pools_tracking": 2,
-    "price_updates": 7507,
+    "price_updates": 7888,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 14,
-    "entries_found": 13,
-    "buys_success": 13,
+    "entries_found": 14,
+    "buys_success": 14,
     "buys_failed": 0
   }
 }
