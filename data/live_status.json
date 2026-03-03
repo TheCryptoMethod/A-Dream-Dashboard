@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T14:24:01.295365+00:00",
-  "updated_at": "2026-03-03T16:04:16.948524+00:00",
-  "uptime_seconds": 6015.7,
+  "updated_at": "2026-03-03T16:05:18.908376+00:00",
+  "uptime_seconds": 6077.6,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -24,10 +24,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[15:56:41] \ud83d\udd14 Migration #196 detected",
-    "[15:56:50] \ud83d\udd14 Migration #197 detected",
-    "[15:57:09] \ud83d\udcca Mig:197 Track:1 Upd:14679 Pos:1 SOL:$84.85",
-    "[15:57:50] \ud83d\udd34 EXIT: X3Nj19WRDb3S... | EARLY_PERF_5M | -1.5%",
     "[15:57:50] \ud83d\udd34 EARLY_PERF_5M: X3Nj19WRDb3S\u2026 | -1.5% | -0.0045 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_5M",
     "[15:58:11] \ud83d\udcca Mig:197 Track:0 Upd:14799 Pos:0 SOL:$84.86",
     "[15:58:13] \ud83d\udd14 Migration #198 detected",
@@ -63,7 +59,11 @@
     "[16:03:27] \u2705 BC Graduated: HqWhizu1ed3o\u2026",
     "[16:03:28] \ud83d\udce1 Tracking: HqWhizu1ed3ouoTx\u2026 | Pool #1",
     "[16:03:30] \u26a0\ufe0f Jupiter error: quote_failed: HTTP 400: {\"error\":\"No routes found\",\"errorCod",
-    "[16:03:30] \u26a0\ufe0f Buy FAILED: M1 | HqWhizu1ed3o\u2026"
+    "[16:03:30] \u26a0\ufe0f Buy FAILED: M1 | HqWhizu1ed3o\u2026",
+    "[16:04:24] \ud83d\udcca Mig:210 Track:0 Upd:14807 Pos:0 SOL:$84.96",
+    "[16:04:30] \ud83d\udd14 Migration #211 detected",
+    "[16:04:34] \ud83d\udd14 Migration #212 detected",
+    "[16:04:57] \ud83d\udd14 Migration #213 detected"
   ],
   "balance": {
     "start": 3.99284,
@@ -80,9 +80,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.96,
+  "sol_price": 84.97,
   "bot_stats": {
-    "migrations_seen": 210,
+    "migrations_seen": 213,
     "migrations_added": 28,
     "pools_tracking": 0,
     "price_updates": 14807,
