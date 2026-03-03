@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T14:24:01.295365+00:00",
-  "updated_at": "2026-03-03T14:41:35.372031+00:00",
-  "uptime_seconds": 1054.1,
+  "updated_at": "2026-03-03T14:42:37.216292+00:00",
+  "uptime_seconds": 1115.9,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -24,14 +24,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[14:32:18] \ud83d\udd14 Migration #24 detected",
-    "[14:32:51] \ud83d\udd14 Migration #25 detected",
-    "[14:33:16] \ud83d\udcca Mig:25 Track:1 Upd:1245 Pos:1 SOL:$83.97",
-    "[14:33:49] \ud83d\udd14 Migration #26 detected",
-    "[14:34:18] \ud83d\udcca Mig:26 Track:1 Upd:1457 Pos:1 SOL:$83.93",
-    "[14:34:25] \ud83d\udd14 Migration #27 detected",
-    "[14:35:11] \ud83d\udfe2 EXIT: uBafsxZLRddg... | TP | +153.1%",
-    "[14:35:11] \ud83d\udfe2 Take Profit: uBafsxZLRddg\u2026 | +153.1% | +0.4625 SOL | TP1: +200% reached",
     "[14:35:17] \ud83d\udd14 Migration #28 detected",
     "[14:35:18] \ud83d\udd14 Migration #29 detected",
     "[14:35:20] \ud83d\udcca Mig:29 Track:0 Upd:1678 Pos:0 SOL:$83.84",
@@ -63,13 +55,21 @@
     "[14:40:54] \ud83d\udd14 Migration #42 detected",
     "[14:40:55] \ud83d\udfe2 ENTRY: M1 | 9oxGicd5KXNc... | $0.000039390 | 0.3023 SOL",
     "[14:40:55] \ud83d\udcb0 Position filled: M1 | 9oxGicd5KXNc\u2026 | $0.000039390 | 0.3023 SOL | FDV $39.4k",
-    "[14:41:32] \ud83d\udcca Mig:42 Track:1 Upd:2024 Pos:1 SOL:$83.77"
+    "[14:41:32] \ud83d\udcca Mig:42 Track:1 Upd:2024 Pos:1 SOL:$83.77",
+    "[14:42:00] \ud83d\udd14 Migration #43 detected",
+    "[14:42:07] \ud83d\udd14 Migration #44 detected",
+    "[14:42:13] \u2705 BC Graduated: fFC8QcDUpeV3\u2026",
+    "[14:42:13] \ud83d\udce1 Tracking: fFC8QcDUpeV3UukK\u2026 | Pool #2",
+    "[14:42:16] \ud83d\udd14 Migration #45 detected",
+    "[14:42:18] \ud83d\udfe2 ENTRY: M1 | fFC8QcDUpeV3... | $0.000052370 | 0.3023 SOL",
+    "[14:42:18] \ud83d\udcb0 Position filled: M1 | fFC8QcDUpeV3\u2026 | $0.000052370 | 0.3023 SOL | FDV $52.4k",
+    "[14:42:34] \ud83d\udcca Mig:45 Track:2 Upd:2376 Pos:2 SOL:$83.69"
   ],
   "balance": {
     "start": 3.99284,
-    "current": 3.82736,
-    "pnl_sol": -0.16548,
-    "pnl_pct": -4.14
+    "current": 3.525076,
+    "pnl_sol": -0.467764,
+    "pnl_pct": -11.72
   },
   "trades": {
     "total": 4,
@@ -78,19 +78,19 @@
     "win_rate": 25.0
   },
   "positions": {
-    "open": 1
+    "open": 2
   },
-  "sol_price": 83.77,
+  "sol_price": 83.69,
   "bot_stats": {
-    "migrations_seen": 42,
-    "migrations_added": 5,
-    "pools_tracking": 1,
-    "price_updates": 2038,
+    "migrations_seen": 45,
+    "migrations_added": 6,
+    "pools_tracking": 2,
+    "price_updates": 2392,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 5,
-    "entries_found": 5,
-    "buys_success": 5,
+    "bc_graduated": 6,
+    "entries_found": 6,
+    "buys_success": 6,
     "buys_failed": 0
   }
 }
