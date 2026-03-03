@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T14:24:01.295365+00:00",
-  "updated_at": "2026-03-03T15:51:54.529676+00:00",
-  "uptime_seconds": 5273.2,
+  "updated_at": "2026-03-03T15:52:57.139035+00:00",
+  "uptime_seconds": 5335.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -24,16 +24,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[15:42:36] \ud83d\udd14 Migration #164 detected",
-    "[15:42:39] \ud83d\udcca Mig:164 Track:0 Upd:13431 Pos:0 SOL:$84.35",
-    "[15:43:11] \ud83d\udd14 Migration #165 detected",
-    "[15:43:17] \ud83d\udd14 Migration #166 detected",
-    "[15:43:41] \ud83d\udcca Mig:166 Track:0 Upd:13431 Pos:0 SOL:$84.52",
-    "[15:44:02] \ud83d\udd14 Migration #167 detected",
-    "[15:44:39] \ud83d\udd14 Migration #168 detected",
-    "[15:44:44] \ud83d\udcca Mig:168 Track:0 Upd:13431 Pos:0 SOL:$84.58",
-    "[15:44:48] \ud83d\udd14 Migration #169 detected",
-    "[15:45:46] \ud83d\udcca Mig:169 Track:0 Upd:13431 Pos:0 SOL:$84.57",
     "[15:46:10] \ud83d\udd14 Migration #170 detected",
     "[15:46:23] \u2705 BC Graduated: U5gkiDe8SUpo\u2026",
     "[15:46:23] \ud83d\udce1 Tracking: U5gkiDe8SUpovmzY\u2026 | Pool #1",
@@ -63,13 +53,23 @@
     "[15:51:32] \ud83d\udd14 Migration #185 detected",
     "[15:51:34] \ud83d\udd14 Migration #186 detected",
     "[15:51:34] \ud83d\udd14 Migration #187 detected",
-    "[15:51:47] \ud83d\udd14 Migration #188 detected"
+    "[15:51:47] \ud83d\udd14 Migration #188 detected",
+    "[15:51:57] \ud83d\udd14 Migration #189 detected",
+    "[15:51:58] \ud83d\udcca Mig:189 Track:0 Upd:13555 Pos:0 SOL:$84.80",
+    "[15:52:01] \ud83d\udd14 Migration #190 detected",
+    "[15:52:11] \ud83d\udd14 Migration #191 detected",
+    "[15:52:32] \ud83d\udd14 Migration #192 detected",
+    "[15:52:44] \ud83d\udd14 Migration #193 detected",
+    "[15:52:45] \u2705 BC Graduated: X3Nj19WRDb3S\u2026",
+    "[15:52:45] \ud83d\udce1 Tracking: X3Nj19WRDb3Su1eN\u2026 | Pool #1",
+    "[15:52:50] \ud83d\udfe2 ENTRY: M1 | X3Nj19WRDb3S... | $0.000095863 | 0.3023 SOL",
+    "[15:52:50] \ud83d\udcb0 Position filled: M1 | X3Nj19WRDb3S\u2026 | $0.000095863 | 0.3023 SOL | FDV $95.9k"
   ],
   "balance": {
     "start": 3.99284,
-    "current": 4.155568,
-    "pnl_sol": 0.162728,
-    "pnl_pct": 4.08
+    "current": 3.853284,
+    "pnl_sol": -0.139556,
+    "pnl_pct": -3.5
   },
   "trades": {
     "total": 22,
@@ -78,19 +78,19 @@
     "win_rate": 13.6
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 84.8,
+  "sol_price": 84.81,
   "bot_stats": {
-    "migrations_seen": 188,
-    "migrations_added": 22,
-    "pools_tracking": 0,
-    "price_updates": 13555,
+    "migrations_seen": 193,
+    "migrations_added": 23,
+    "pools_tracking": 1,
+    "price_updates": 13603,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 22,
-    "entries_found": 22,
-    "buys_success": 22,
+    "bc_graduated": 23,
+    "entries_found": 23,
+    "buys_success": 23,
     "buys_failed": 0
   }
 }
