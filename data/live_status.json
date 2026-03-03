@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T14:24:01.295365+00:00",
-  "updated_at": "2026-03-03T15:34:18.922611+00:00",
-  "uptime_seconds": 4217.6,
+  "updated_at": "2026-03-03T15:35:21.107165+00:00",
+  "uptime_seconds": 4279.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -24,9 +24,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[15:23:45] \ud83d\udcb0 Position filled: M1 | 66vCw5ep3BcE\u2026 | $0.000041746 | 0.3023 SOL | FDV $41.7k",
-    "[15:23:58] \ud83d\udcca Mig:131 Track:1 Upd:11153 Pos:1 SOL:$83.33",
-    "[15:25:00] \ud83d\udcca Mig:131 Track:1 Upd:11342 Pos:1 SOL:$83.33",
     "[15:25:11] \ud83d\udd14 Migration #132 detected",
     "[15:25:15] \ud83d\udd14 Migration #133 detected",
     "[15:25:41] \ud83d\udd14 Migration #134 detected",
@@ -63,7 +60,10 @@
     "[15:33:40] \u26a0\ufe0f Sell failed: SL | 9o66MR6ew7AS\u2026 | SL1: -16.2% price (exec: -39.7%)",
     "[15:33:44] \ud83d\udd34 EXIT: 9o66MR6ew7AS... | EARLY_PERF_30S | -46.6%",
     "[15:33:44] \ud83d\udd34 EARLY_PERF_30S: 9o66MR6ew7AS\u2026 | -46.6% | -0.1408 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_30S (perf_30s=-16.3%)",
-    "[15:34:11] \ud83d\udd14 Migration #147 detected"
+    "[15:34:11] \ud83d\udd14 Migration #147 detected",
+    "[15:34:23] \ud83d\udcca Mig:147 Track:1 Upd:13225 Pos:1 SOL:$83.61",
+    "[15:34:40] \ud83d\udd14 Migration #148 detected",
+    "[15:34:56] \ud83d\udd14 Migration #149 detected"
   ],
   "balance": {
     "start": 3.99284,
@@ -80,12 +80,12 @@
   "positions": {
     "open": 1
   },
-  "sol_price": 83.61,
+  "sol_price": 83.69,
   "bot_stats": {
-    "migrations_seen": 147,
+    "migrations_seen": 149,
     "migrations_added": 20,
     "pools_tracking": 1,
-    "price_updates": 13221,
+    "price_updates": 13326,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 20,
