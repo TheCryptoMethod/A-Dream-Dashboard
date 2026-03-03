@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T19:41:40.501776+00:00",
-  "updated_at": "2026-03-03T21:06:13.322398+00:00",
-  "uptime_seconds": 5072.8,
+  "updated_at": "2026-03-03T21:07:14.483326+00:00",
+  "uptime_seconds": 5134.0,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,11 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[20:57:49] \ud83d\udd14 Migration #211 detected",
-    "[20:57:57] \ud83d\udd14 Migration #212 detected",
-    "[20:58:01] \ud83d\udcca Mig:212 Track:22 Upd:42567 Pos:0 SOL:$84.95",
-    "[20:59:02] \ud83d\udcca Mig:212 Track:22 Upd:43547 Pos:0 SOL:$84.92",
-    "[20:59:24] \ud83d\udd14 Migration #213 detected",
     "[20:59:32] \ud83d\udd14 Migration #214 detected",
     "[20:59:43] \ud83d\udd14 Migration #215 detected",
     "[20:59:52] \ud83d\udd14 Migration #216 detected",
@@ -564,7 +559,12 @@
     "[21:05:09] \ud83d\udcca Mig:233 Track:25 Upd:48540 Pos:0 SOL:$84.76",
     "[21:05:44] \ud83d\udd14 Migration #234 detected",
     "[21:05:59] \ud83d\udd14 Migration #235 detected",
-    "[21:06:10] \ud83d\udcca Mig:235 Track:25 Upd:49617 Pos:0 SOL:$84.70"
+    "[21:06:10] \ud83d\udcca Mig:235 Track:25 Upd:49617 Pos:0 SOL:$84.70",
+    "[21:06:29] \ud83d\udd14 Migration #236 detected",
+    "[21:07:01] \ud83d\udd14 Migration #237 detected",
+    "[21:07:04] \ud83d\udd14 Migration #238 detected",
+    "[21:07:11] \ud83d\udcca Mig:238 Track:25 Upd:50521 Pos:0 SOL:$84.65",
+    "[21:07:14] \u2705 BC Graduated: 7RREUDD4x47P\u2026"
   ],
   "balance": {
     "start": 4.06455,
@@ -581,15 +581,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.7,
+  "sol_price": 84.65,
   "bot_stats": {
-    "migrations_seen": 235,
+    "migrations_seen": 238,
     "migrations_added": 25,
     "pools_tracking": 25,
-    "price_updates": 49657,
+    "price_updates": 50569,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 25,
+    "bc_graduated": 26,
     "entries_found": 0,
     "buys_success": 0,
     "buys_failed": 0
