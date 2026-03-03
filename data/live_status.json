@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T14:24:01.295365+00:00",
-  "updated_at": "2026-03-03T15:52:57.139035+00:00",
-  "uptime_seconds": 5335.8,
+  "updated_at": "2026-03-03T15:53:59.050801+00:00",
+  "uptime_seconds": 5397.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -24,13 +24,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[15:46:10] \ud83d\udd14 Migration #170 detected",
-    "[15:46:23] \u2705 BC Graduated: U5gkiDe8SUpo\u2026",
-    "[15:46:23] \ud83d\udce1 Tracking: U5gkiDe8SUpovmzY\u2026 | Pool #1",
-    "[15:46:28] \ud83d\udfe2 ENTRY: M1 | U5gkiDe8SUpo... | $0.000111182 | 0.3023 SOL",
-    "[15:46:28] \ud83d\udcb0 Position filled: M1 | U5gkiDe8SUpo\u2026 | $0.000111182 | 0.3023 SOL | FDV $111.2k",
-    "[15:46:48] \ud83d\udcca Mig:170 Track:1 Upd:13531 Pos:1 SOL:$84.57",
-    "[15:47:01] \ud83d\udd14 Migration #171 detected",
     "[15:47:02] \ud83d\udd14 Migration #172 detected",
     "[15:47:16] \ud83d\udd14 Migration #173 detected",
     "[15:47:19] \ud83d\udd34 EXIT: U5gkiDe8SUpo... | SL | -98.8%",
@@ -63,34 +56,41 @@
     "[15:52:45] \u2705 BC Graduated: X3Nj19WRDb3S\u2026",
     "[15:52:45] \ud83d\udce1 Tracking: X3Nj19WRDb3Su1eN\u2026 | Pool #1",
     "[15:52:50] \ud83d\udfe2 ENTRY: M1 | X3Nj19WRDb3S... | $0.000095863 | 0.3023 SOL",
-    "[15:52:50] \ud83d\udcb0 Position filled: M1 | X3Nj19WRDb3S\u2026 | $0.000095863 | 0.3023 SOL | FDV $95.9k"
+    "[15:52:50] \ud83d\udcb0 Position filled: M1 | X3Nj19WRDb3S\u2026 | $0.000095863 | 0.3023 SOL | FDV $95.9k",
+    "[15:52:58] \u2705 BC Graduated: F7iQYg2TjVHu\u2026",
+    "[15:52:58] \ud83d\udce1 Tracking: F7iQYg2TjVHuit6y\u2026 | Pool #2",
+    "[15:53:01] \ud83d\udcca Mig:193 Track:2 Upd:13635 Pos:1 SOL:$84.81",
+    "[15:53:02] \ud83d\udfe2 ENTRY: M1 | F7iQYg2TjVHu... | $0.000029054 | 0.3023 SOL",
+    "[15:53:02] \ud83d\udcb0 Position filled: M1 | F7iQYg2TjVHu\u2026 | $0.000029054 | 0.3023 SOL | FDV $29.1k",
+    "[15:53:50] \ud83d\udd34 EXIT: F7iQYg2TjVHu... | SL | -15.9%",
+    "[15:53:50] \ud83d\udd34 Stop Loss: F7iQYg2TjVHu\u2026 | -15.9% | -0.0480 SOL | SL1: -16.5% price (exec: -16.6%)"
   ],
   "balance": {
     "start": 3.99284,
-    "current": 3.853284,
-    "pnl_sol": -0.139556,
-    "pnl_pct": -3.5
+    "current": 3.805299,
+    "pnl_sol": -0.187541,
+    "pnl_pct": -4.7
   },
   "trades": {
-    "total": 22,
+    "total": 23,
     "wins": 3,
-    "losses": 19,
-    "win_rate": 13.6
+    "losses": 20,
+    "win_rate": 13.0
   },
   "positions": {
     "open": 1
   },
-  "sol_price": 84.81,
+  "sol_price": 84.85,
   "bot_stats": {
     "migrations_seen": 193,
-    "migrations_added": 23,
+    "migrations_added": 24,
     "pools_tracking": 1,
-    "price_updates": 13603,
+    "price_updates": 14098,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 23,
-    "entries_found": 23,
-    "buys_success": 23,
+    "bc_graduated": 24,
+    "entries_found": 24,
+    "buys_success": 24,
     "buys_failed": 0
   }
 }
