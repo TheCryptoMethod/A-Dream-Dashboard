@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T19:41:40.501776+00:00",
-  "updated_at": "2026-03-03T21:26:36.524671+00:00",
-  "uptime_seconds": 6296.0,
+  "updated_at": "2026-03-03T21:27:37.701926+00:00",
+  "uptime_seconds": 6357.2,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,11 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[21:15:20] \ud83d\udcca Mig:260 Track:30 Upd:60415 Pos:0 SOL:$84.55",
-    "[21:15:32] \ud83d\udd14 Migration #261 detected",
-    "[21:15:57] \ud83d\udd14 Migration #262 detected",
-    "[21:16:21] \ud83d\udcca Mig:262 Track:30 Upd:61669 Pos:0 SOL:$84.53",
-    "[21:16:28] \ud83d\udd14 Migration #263 detected",
     "[21:16:40] \ud83d\udd14 Migration #264 detected",
     "[21:17:13] \ud83d\udd14 Migration #265 detected",
     "[21:17:23] \ud83d\udcca Mig:265 Track:30 Upd:62755 Pos:0 SOL:$84.53",
@@ -564,7 +559,12 @@
     "[21:26:00] \u2705 BC Graduated: ELtnHWx9aE2N\u2026",
     "[21:26:00] \ud83d\udce1 Tracking: ELtnHWx9aE2NTQhu\u2026 | Pool #32",
     "[21:26:06] \ud83d\udd14 Migration #284 detected",
-    "[21:26:33] \ud83d\udcca Mig:284 Track:32 Upd:73696 Pos:0 SOL:$84.50"
+    "[21:26:33] \ud83d\udcca Mig:284 Track:32 Upd:73696 Pos:0 SOL:$84.50",
+    "[21:27:16] \ud83d\udd14 Migration #285 detected",
+    "[21:27:21] \ud83d\udd14 Migration #286 detected",
+    "[21:27:34] \ud83d\udcca Mig:286 Track:32 Upd:75054 Pos:0 SOL:$84.50",
+    "[21:27:35] \u2705 BC Graduated: eGDvcwtUbLKb\u2026",
+    "[21:27:35] \ud83d\udce1 Tracking: eGDvcwtUbLKbRNNm\u2026 | Pool #33"
   ],
   "balance": {
     "start": 4.06455,
@@ -583,13 +583,13 @@
   },
   "sol_price": 84.5,
   "bot_stats": {
-    "migrations_seen": 284,
-    "migrations_added": 32,
-    "pools_tracking": 32,
-    "price_updates": 73774,
+    "migrations_seen": 286,
+    "migrations_added": 33,
+    "pools_tracking": 33,
+    "price_updates": 75133,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 32,
+    "bc_graduated": 33,
     "entries_found": 0,
     "buys_success": 0,
     "buys_failed": 0
