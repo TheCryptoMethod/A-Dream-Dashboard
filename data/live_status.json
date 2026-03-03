@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T19:41:40.501776+00:00",
-  "updated_at": "2026-03-03T20:36:42.012378+00:00",
-  "uptime_seconds": 3301.5,
+  "updated_at": "2026-03-03T20:37:43.171074+00:00",
+  "uptime_seconds": 3362.7,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,9 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[20:29:44] \ud83d\udd14 Migration #139 detected",
-    "[20:30:31] \ud83d\udcca Mig:139 Track:11 Upd:16768 Pos:0 SOL:$84.94",
-    "[20:31:09] \ud83d\udd14 Migration #140 detected",
     "[20:31:33] \ud83d\udcca Mig:140 Track:11 Upd:17444 Pos:0 SOL:$84.95",
     "[20:31:41] \ud83d\udd14 Migration #141 detected",
     "[20:31:53] \ud83d\udd14 Migration #142 detected",
@@ -564,7 +561,10 @@
     "[20:36:02] \ud83d\udd14 Migration #157 detected",
     "[20:36:08] \ud83d\udd14 Migration #158 detected",
     "[20:36:32] \ud83d\udd14 Migration #159 detected",
-    "[20:36:38] \ud83d\udcca Mig:159 Track:17 Upd:22168 Pos:0 SOL:$84.94"
+    "[20:36:38] \ud83d\udcca Mig:159 Track:17 Upd:22168 Pos:0 SOL:$84.94",
+    "[20:36:56] \ud83d\udd14 Migration #160 detected",
+    "[20:37:28] \ud83d\udd14 Migration #161 detected",
+    "[20:37:40] \ud83d\udcca Mig:161 Track:17 Upd:23118 Pos:0 SOL:$84.93"
   ],
   "balance": {
     "start": 4.06455,
@@ -581,12 +581,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.94,
+  "sol_price": 84.93,
   "bot_stats": {
-    "migrations_seen": 159,
+    "migrations_seen": 161,
     "migrations_added": 17,
     "pools_tracking": 17,
-    "price_updates": 22233,
+    "price_updates": 23156,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 17,
