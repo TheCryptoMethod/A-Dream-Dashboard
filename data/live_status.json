@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T14:24:01.295365+00:00",
-  "updated_at": "2026-03-03T16:03:14.998173+00:00",
-  "uptime_seconds": 5953.7,
+  "updated_at": "2026-03-03T16:04:16.948524+00:00",
+  "uptime_seconds": 6015.7,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -24,11 +24,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[15:54:03] \ud83d\udcca Mig:193 Track:1 Upd:14108 Pos:1 SOL:$84.85",
-    "[15:54:09] \ud83d\udd14 Migration #194 detected",
-    "[15:54:33] \ud83d\udd14 Migration #195 detected",
-    "[15:55:05] \ud83d\udcca Mig:195 Track:1 Upd:14308 Pos:1 SOL:$84.86",
-    "[15:56:07] \ud83d\udcca Mig:195 Track:1 Upd:14510 Pos:1 SOL:$84.87",
     "[15:56:41] \ud83d\udd14 Migration #196 detected",
     "[15:56:50] \ud83d\udd14 Migration #197 detected",
     "[15:57:09] \ud83d\udcca Mig:197 Track:1 Upd:14679 Pos:1 SOL:$84.85",
@@ -63,7 +58,12 @@
     "[16:02:17] \u26a0\ufe0f Buy FAILED: M1 | 5HUxYLfKXxxR\u2026",
     "[16:02:18] \ud83d\udd14 Migration #209 detected",
     "[16:02:19] \ud83d\udcca Mig:209 Track:0 Upd:14805 Pos:0 SOL:$84.96",
-    "[16:03:14] \ud83d\udd14 Migration #210 detected"
+    "[16:03:14] \ud83d\udd14 Migration #210 detected",
+    "[16:03:22] \ud83d\udcca Mig:210 Track:0 Upd:14805 Pos:0 SOL:$84.96",
+    "[16:03:27] \u2705 BC Graduated: HqWhizu1ed3o\u2026",
+    "[16:03:28] \ud83d\udce1 Tracking: HqWhizu1ed3ouoTx\u2026 | Pool #1",
+    "[16:03:30] \u26a0\ufe0f Jupiter error: quote_failed: HTTP 400: {\"error\":\"No routes found\",\"errorCod",
+    "[16:03:30] \u26a0\ufe0f Buy FAILED: M1 | HqWhizu1ed3o\u2026"
   ],
   "balance": {
     "start": 3.99284,
@@ -83,14 +83,14 @@
   "sol_price": 84.96,
   "bot_stats": {
     "migrations_seen": 210,
-    "migrations_added": 27,
+    "migrations_added": 28,
     "pools_tracking": 0,
-    "price_updates": 14805,
+    "price_updates": 14807,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 27,
-    "entries_found": 27,
+    "bc_graduated": 28,
+    "entries_found": 28,
     "buys_success": 24,
-    "buys_failed": 3
+    "buys_failed": 4
   }
 }
