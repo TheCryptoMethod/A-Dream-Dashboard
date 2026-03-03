@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T14:24:01.295365+00:00",
-  "updated_at": "2026-03-03T15:05:21.694537+00:00",
-  "uptime_seconds": 2480.4,
+  "updated_at": "2026-03-03T15:06:22.049288+00:00",
+  "uptime_seconds": 2540.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -24,14 +24,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[14:58:13] \ud83d\udd34 EARLY_DELTA_10S_30S: 4AaQh4GhzNWM\u2026 | -3.6% | -0.0110 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_10S_30S (delta=-1.9%)",
-    "[14:58:26] \ud83d\udd14 Migration #86 detected",
-    "[14:58:34] \ud83d\udd14 Migration #87 detected",
-    "[14:58:47] \u2705 BC Graduated: 138aGRZSBGpp\u2026",
-    "[14:58:47] \ud83d\udce1 Tracking: 138aGRZSBGppEvej\u2026 | Pool #3",
-    "[14:58:52] \ud83d\udfe2 ENTRY: M1 | 138aGRZSBGpp... | $0.000104297 | 0.3022 SOL",
-    "[14:58:52] \ud83d\udcb0 Position filled: M1 | 138aGRZSBGpp\u2026 | $0.000104297 | 0.3022 SOL | FDV $104.3k",
-    "[14:59:06] \ud83d\udd34 EXIT: 138aGRZSBGpp... | SL | -18.4%",
     "[14:59:06] \ud83d\udd34 Stop Loss: 138aGRZSBGpp\u2026 | -18.4% | -0.0556 SOL | SL1: -15.0% price (exec: -14.4%)",
     "[14:59:06] \ud83d\udcca Mig:87 Track:2 Upd:6333 Pos:2 SOL:$83.22",
     "[14:59:16] \ud83d\udd14 Migration #88 detected",
@@ -63,34 +55,42 @@
     "[15:03:14] \ud83d\udcca Mig:98 Track:2 Upd:7868 Pos:2 SOL:$83.31",
     "[15:04:16] \ud83d\udcca Mig:98 Track:2 Upd:8167 Pos:2 SOL:$83.36",
     "[15:04:45] \ud83d\udd14 Migration #99 detected",
-    "[15:05:18] \ud83d\udcca Mig:99 Track:2 Upd:8527 Pos:2 SOL:$83.36"
+    "[15:05:18] \ud83d\udcca Mig:99 Track:2 Upd:8527 Pos:2 SOL:$83.36",
+    "[15:05:30] \ud83d\udd14 Migration #100 detected",
+    "[15:05:41] \u2705 BC Graduated: ei8QwWPHYmSA\u2026",
+    "[15:05:42] \ud83d\udce1 Tracking: ei8QwWPHYmSABLsS\u2026 | Pool #3",
+    "[15:05:48] \ud83d\udfe2 ENTRY: M1 | ei8QwWPHYmSA... | $0.000104795 | 0.3022 SOL",
+    "[15:05:48] \ud83d\udcb0 Position filled: M1 | ei8QwWPHYmSA\u2026 | $0.000104795 | 0.3022 SOL | FDV $104.8k",
+    "[15:06:09] \ud83d\udd34 EXIT: ei8QwWPHYmSA... | SL | -14.3%",
+    "[15:06:09] \ud83d\udd34 Stop Loss: ei8QwWPHYmSA\u2026 | -14.3% | -0.0433 SOL | SL1: -16.7% price (exec: -18.1%)",
+    "[15:06:22] \ud83d\udcca Mig:100 Track:2 Upd:8975 Pos:2 SOL:$83.33"
   ],
   "balance": {
     "start": 3.99284,
-    "current": 3.814055,
-    "pnl_sol": -0.178785,
-    "pnl_pct": -4.48
+    "current": 3.770723,
+    "pnl_sol": -0.222117,
+    "pnl_pct": -5.56
   },
   "trades": {
-    "total": 12,
+    "total": 13,
     "wins": 2,
-    "losses": 10,
-    "win_rate": 16.7
+    "losses": 11,
+    "win_rate": 15.4
   },
   "positions": {
     "open": 2
   },
-  "sol_price": 83.36,
+  "sol_price": 83.33,
   "bot_stats": {
-    "migrations_seen": 99,
-    "migrations_added": 14,
+    "migrations_seen": 100,
+    "migrations_added": 15,
     "pools_tracking": 2,
-    "price_updates": 8543,
+    "price_updates": 8975,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 14,
-    "entries_found": 14,
-    "buys_success": 14,
+    "bc_graduated": 15,
+    "entries_found": 15,
+    "buys_success": 15,
     "buys_failed": 0
   }
 }
