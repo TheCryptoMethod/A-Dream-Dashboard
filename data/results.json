@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "last_updated": "2026-03-02T11:36:16.794072+00:00",
+  "last_updated": "2026-03-03T07:51:55.027676+00:00",
   "methods": {
     "M1": [
       {
@@ -10,8 +10,8 @@
         "fingerprint": "4d759ae74cc1",
         "flags": "methods=M1 realistic",
         "data_label": "backtest_30d.db | 795 mints | 2026-02-22 → 2026-02-25",
-        "updated_at": "2026-03-02T11:36:16.794072+00:00",
-        "run_count": 1,
+        "updated_at": "2026-03-03T07:51:55.027676+00:00",
+        "run_count": 2,
         "current": {
           "method": "M1",
           "config": {
@@ -61,19 +61,19 @@
               "PERF_10S": {
                 "LT_MINUS15": {
                   "keep": true,
-                  "lift": 0.117,
-                  "count": 57,
-                  "avg_exit": -37.66,
-                  "avg_hold": -23.82,
-                  "advantage": -13.84
+                  "lift": 0.115,
+                  "count": 58,
+                  "avg_exit": -37.36,
+                  "avg_hold": -23.9,
+                  "advantage": -13.47
                 },
                 "MINUS15_MINUS5": {
                   "keep": true,
-                  "lift": 0.644,
-                  "count": 78,
-                  "avg_exit": -14.66,
-                  "avg_hold": -7.02,
-                  "advantage": -7.64
+                  "lift": 0.654,
+                  "count": 77,
+                  "avg_exit": -14.58,
+                  "avg_hold": -6.74,
+                  "advantage": -7.84
                 },
                 "MINUS5_0": {
                   "keep": true,
@@ -95,7 +95,7 @@
                   "keep": true,
                   "lift": 1.839,
                   "count": 55,
-                  "avg_exit": 8.9,
+                  "avg_exit": 8.91,
                   "avg_hold": 18.14,
                   "advantage": -9.23
                 },
@@ -145,7 +145,7 @@
                   "keep": false,
                   "lift": 1.048,
                   "count": 57,
-                  "avg_exit": 3.95,
+                  "avg_exit": 3.96,
                   "avg_hold": 3.06,
                   "advantage": 0.89
                 },
@@ -187,7 +187,7 @@
                   "keep": true,
                   "lift": 0.073,
                   "count": 45,
-                  "avg_exit": -27.43,
+                  "avg_exit": -27.44,
                   "avg_hold": -25.46,
                   "advantage": -1.97
                 },
@@ -203,7 +203,7 @@
                   "keep": false,
                   "lift": 1.126,
                   "count": 54,
-                  "avg_exit": 6.04,
+                  "avg_exit": 6.05,
                   "avg_hold": 4.81,
                   "advantage": 1.24
                 },
@@ -253,7 +253,7 @@
                   "keep": true,
                   "lift": 0.095,
                   "count": 35,
-                  "avg_exit": -28.89,
+                  "avg_exit": -28.88,
                   "avg_hold": -24.65,
                   "advantage": -4.23
                 },
@@ -425,7 +425,7 @@
                   "keep": true,
                   "lift": 2.092,
                   "count": 33,
-                  "avg_exit": 8.81,
+                  "avg_exit": 8.82,
                   "avg_hold": 22.01,
                   "advantage": -13.19
                 },
@@ -451,9 +451,9 @@
                   "keep": true,
                   "lift": 0.46,
                   "count": 56,
-                  "avg_exit": -19.12,
+                  "avg_exit": -19.11,
                   "avg_hold": -12.34,
-                  "advantage": -6.78
+                  "advantage": -6.77
                 },
                 "MINUS10_MINUS3": {
                   "keep": true,
@@ -493,7 +493,7 @@
                   "count": 36,
                   "avg_exit": 55.71,
                   "avg_hold": 42.64,
-                  "advantage": 13.06
+                  "advantage": 13.07
                 }
               },
               "DELTA_60S_5M": {
@@ -503,7 +503,7 @@
                   "count": 71,
                   "avg_exit": -70.88,
                   "avg_hold": -10.31,
-                  "advantage": -60.57
+                  "advantage": -60.56
                 },
                 "MINUS40_MINUS20": {
                   "keep": true,
@@ -527,7 +527,7 @@
                   "count": 55,
                   "avg_exit": -36.05,
                   "avg_hold": -9.73,
-                  "advantage": -26.33
+                  "advantage": -26.32
                 },
                 "PLUS5_PLUS20": {
                   "keep": true,
@@ -535,7 +535,7 @@
                   "count": 39,
                   "avg_exit": -1.23,
                   "avg_hold": 4.44,
-                  "advantage": -5.68
+                  "advantage": -5.67
                 },
                 "PLUS20_PLUS50": {
                   "keep": true,
@@ -564,20 +564,20 @@
           "metrics": {
             "n_trades": 227,
             "win_rate": 0.5374449339207048,
-            "avg_pnl": 2.2996,
-            "total_pnl": 522.01,
+            "avg_pnl": 2.2981,
+            "total_pnl": 521.68,
             "profit_factor": 1.256,
-            "sortino": 5.129,
-            "sharpe": 2.434,
+            "sortino": 5.103,
+            "sharpe": 2.433,
             "max_dd": 99.95,
-            "risk_of_ruin": 0.06,
+            "risk_of_ruin": 0.09,
             "n_early_exits": 159
           },
           "train_test": {
             "train_n": 329,
             "test_n": 227,
-            "train_avg_pnl": 7.2535,
-            "test_avg_pnl": 2.2996,
+            "train_avg_pnl": 7.2542,
+            "test_avg_pnl": 2.2981,
             "train_win_rate": 0.541,
             "test_win_rate": 0.5374,
             "train_period": "22.02 12:07 → 24.02 09:11",
@@ -600,26 +600,26 @@
           "gate_values": {
             "SIG": "PF=1.26",
             "EQ": "DD=100%,equity<1",
-            "WF": "OOS=4.477%",
-            "MC": "p=0.2030",
+            "WF": "OOS=4.475%",
+            "MC": "p=0.2031",
             "PLT": "ratio=1.00",
             "REG": "neg=0.47",
             "ROB": "h=0.09,m=0.00",
-            "tT": "t=0.86,p=0.3906",
+            "tT": "t=0.86,p=0.3909",
             "DSR": "DSR=0.0%,E[max]=3.492",
             "WRC": "p=0.2450",
-            "HHI": "HHI=0.922,3/6prof"
+            "HHI": "HHI=0.923,3/6prof"
           },
           "lift_filters": {
             "mcap": {
               "<30k": {
-                "lift": 0.945,
-                "count": 143,
+                "lift": 0.952,
+                "count": 142,
                 "good": true
               },
               "30-60k": {
-                "lift": 1.031,
-                "count": 314,
+                "lift": 1.027,
+                "count": 315,
                 "good": true
               },
               "60-100k": {
@@ -754,19 +754,19 @@
             "PERF_10S": {
               "LT_MINUS15": {
                 "keep": true,
-                "lift": 0.117,
-                "count": 57,
-                "avg_exit": -37.66,
-                "avg_hold": -23.82,
-                "advantage": -13.84
+                "lift": 0.115,
+                "count": 58,
+                "avg_exit": -37.36,
+                "avg_hold": -23.9,
+                "advantage": -13.47
               },
               "MINUS15_MINUS5": {
                 "keep": true,
-                "lift": 0.644,
-                "count": 78,
-                "avg_exit": -14.66,
-                "avg_hold": -7.02,
-                "advantage": -7.64
+                "lift": 0.654,
+                "count": 77,
+                "avg_exit": -14.58,
+                "avg_hold": -6.74,
+                "advantage": -7.84
               },
               "MINUS5_0": {
                 "keep": true,
@@ -788,7 +788,7 @@
                 "keep": true,
                 "lift": 1.839,
                 "count": 55,
-                "avg_exit": 8.9,
+                "avg_exit": 8.91,
                 "avg_hold": 18.14,
                 "advantage": -9.23
               },
@@ -838,7 +838,7 @@
                 "keep": false,
                 "lift": 1.048,
                 "count": 57,
-                "avg_exit": 3.95,
+                "avg_exit": 3.96,
                 "avg_hold": 3.06,
                 "advantage": 0.89
               },
@@ -880,7 +880,7 @@
                 "keep": true,
                 "lift": 0.073,
                 "count": 45,
-                "avg_exit": -27.43,
+                "avg_exit": -27.44,
                 "avg_hold": -25.46,
                 "advantage": -1.97
               },
@@ -896,7 +896,7 @@
                 "keep": false,
                 "lift": 1.126,
                 "count": 54,
-                "avg_exit": 6.04,
+                "avg_exit": 6.05,
                 "avg_hold": 4.81,
                 "advantage": 1.24
               },
@@ -946,7 +946,7 @@
                 "keep": true,
                 "lift": 0.095,
                 "count": 35,
-                "avg_exit": -28.89,
+                "avg_exit": -28.88,
                 "avg_hold": -24.65,
                 "advantage": -4.23
               },
@@ -1118,7 +1118,7 @@
                 "keep": true,
                 "lift": 2.092,
                 "count": 33,
-                "avg_exit": 8.81,
+                "avg_exit": 8.82,
                 "avg_hold": 22.01,
                 "advantage": -13.19
               },
@@ -1144,9 +1144,9 @@
                 "keep": true,
                 "lift": 0.46,
                 "count": 56,
-                "avg_exit": -19.12,
+                "avg_exit": -19.11,
                 "avg_hold": -12.34,
-                "advantage": -6.78
+                "advantage": -6.77
               },
               "MINUS10_MINUS3": {
                 "keep": true,
@@ -1186,7 +1186,7 @@
                 "count": 36,
                 "avg_exit": 55.71,
                 "avg_hold": 42.64,
-                "advantage": 13.06
+                "advantage": 13.07
               }
             },
             "DELTA_60S_5M": {
@@ -1196,7 +1196,7 @@
                 "count": 71,
                 "avg_exit": -70.88,
                 "avg_hold": -10.31,
-                "advantage": -60.57
+                "advantage": -60.56
               },
               "MINUS40_MINUS20": {
                 "keep": true,
@@ -1220,7 +1220,7 @@
                 "count": 55,
                 "avg_exit": -36.05,
                 "avg_hold": -9.73,
-                "advantage": -26.33
+                "advantage": -26.32
               },
               "PLUS5_PLUS20": {
                 "keep": true,
@@ -1228,7 +1228,7 @@
                 "count": 39,
                 "avg_exit": -1.23,
                 "avg_hold": 4.44,
-                "advantage": -5.68
+                "advantage": -5.67
               },
               "PLUS20_PLUS50": {
                 "keep": true,
@@ -1253,13 +1253,13 @@
               "count": 56,
               "avg_pnl": -7.12,
               "min_pnl": -24.61,
-              "max_pnl": 9.32
+              "max_pnl": 9.3
             },
             "post_exit_perf_10s": {
               "count": 34,
               "avg_pnl": 1.48,
-              "min_pnl": -0.57,
-              "max_pnl": 4.32
+              "min_pnl": -0.59,
+              "max_pnl": 4.33
             },
             "sl": {
               "count": 64,
@@ -1270,44 +1270,44 @@
             "post_exit_perf_5m": {
               "count": 17,
               "avg_pnl": 5.67,
-              "min_pnl": -20.21,
-              "max_pnl": 23.24
+              "min_pnl": -20.19,
+              "max_pnl": 23.26
             },
             "trailing": {
               "count": 2,
-              "avg_pnl": 84.96,
-              "min_pnl": 84.76,
-              "max_pnl": 85.16
+              "avg_pnl": 84.95,
+              "min_pnl": 84.75,
+              "max_pnl": 85.15
             },
             "post_exit_perf_60s": {
               "count": 19,
-              "avg_pnl": 5.72,
-              "min_pnl": 0.0,
-              "max_pnl": 11.57
+              "avg_pnl": 5.71,
+              "min_pnl": 0.02,
+              "max_pnl": 11.55
             },
             "post_exit_delta_10s_30s": {
               "count": 10,
-              "avg_pnl": -1.95,
-              "min_pnl": -48.73,
-              "max_pnl": 34.66
+              "avg_pnl": -1.96,
+              "min_pnl": -48.74,
+              "max_pnl": 34.63
             },
             "post_exit_delta_60s_5m": {
               "count": 10,
               "avg_pnl": 66.05,
-              "min_pnl": 28.99,
-              "max_pnl": 175.54
+              "min_pnl": 29.02,
+              "max_pnl": 175.52
             },
             "post_exit_delta_30s_60s": {
               "count": 9,
-              "avg_pnl": 106.68,
-              "min_pnl": -8.69,
-              "max_pnl": 350.83
+              "avg_pnl": 106.67,
+              "min_pnl": -8.71,
+              "max_pnl": 350.87
             },
             "post_exit_perf_10m": {
               "count": 4,
-              "avg_pnl": -17.33,
+              "avg_pnl": -17.34,
               "min_pnl": -22.05,
-              "max_pnl": -9.89
+              "max_pnl": -9.91
             },
             "tp": {
               "count": 2,
@@ -1349,10 +1349,25 @@
             "date_from": "2026-02-22",
             "date_to": "2026-02-25",
             "time_span": "3.0d",
-            "timestamp": "2026-03-02T11:36:16.794072+00:00"
+            "timestamp": "2026-03-03T07:51:55.027676+00:00"
           }
         },
-        "history": []
+        "history": [
+          {
+            "timestamp": "2026-03-02T11:36:16.794072+00:00",
+            "gates_passed": 4,
+            "all_11_passed": false,
+            "avg_pnl": 2.2996,
+            "win_rate": 0.5374449339207048,
+            "sortino": 5.129,
+            "n_trades": 227,
+            "max_dd": 99.95,
+            "unique_mints": 795,
+            "total_entries": 795,
+            "date_from": "2026-02-22",
+            "date_to": "2026-02-25"
+          }
+        ]
       },
       {
         "variant_key": "a1d6ded04a63",
