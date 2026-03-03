@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T14:24:01.295365+00:00",
-  "updated_at": "2026-03-03T14:27:07.329100+00:00",
-  "uptime_seconds": 186.0,
+  "updated_at": "2026-03-03T14:28:09.260944+00:00",
+  "uptime_seconds": 248.0,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -46,13 +46,22 @@
     "[14:26:02] \ud83d\udcca Mig:4 Track:0 Upd:137 Pos:0 SOL:$83.89",
     "[14:26:17] \ud83d\udd14 Migration #5 detected",
     "[14:26:21] \ud83d\udd14 Migration #6 detected",
-    "[14:27:04] \ud83d\udcca Mig:6 Track:0 Upd:137 Pos:0 SOL:$84.00"
+    "[14:27:04] \ud83d\udcca Mig:6 Track:0 Upd:137 Pos:0 SOL:$84.00",
+    "[14:27:09] \ud83d\udd14 Migration #7 detected",
+    "[14:27:17] \ud83d\udd14 Migration #8 detected",
+    "[14:27:46] \ud83d\udd14 Migration #9 detected",
+    "[14:27:49] \ud83d\udd14 Migration #10 detected",
+    "[14:28:02] \u2705 BC Graduated: uBafsxZLRddg\u2026",
+    "[14:28:02] \ud83d\udce1 Tracking: uBafsxZLRddgKHgV\u2026 | Pool #1",
+    "[14:28:06] \ud83d\udcca Mig:10 Track:1 Upd:149 Pos:0 SOL:$83.98",
+    "[14:28:06] \ud83d\udfe2 ENTRY: M1 | uBafsxZLRddg... | $0.000031894 | 0.3021 SOL",
+    "[14:28:06] \ud83d\udcb0 Position filled: M1 | uBafsxZLRddg\u2026 | $0.000031894 | 0.3021 SOL | FDV $31.9k"
   ],
   "balance": {
     "start": 3.99284,
-    "current": 3.6969,
-    "pnl_sol": -0.29594,
-    "pnl_pct": -7.41
+    "current": 3.394811,
+    "pnl_sol": -0.598029,
+    "pnl_pct": -14.98
   },
   "trades": {
     "total": 2,
@@ -61,19 +70,19 @@
     "win_rate": 0.0
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 84.0,
+  "sol_price": 83.98,
   "bot_stats": {
-    "migrations_seen": 6,
-    "migrations_added": 2,
-    "pools_tracking": 0,
-    "price_updates": 137,
+    "migrations_seen": 10,
+    "migrations_added": 3,
+    "pools_tracking": 1,
+    "price_updates": 162,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 2,
-    "entries_found": 2,
-    "buys_success": 2,
+    "bc_graduated": 3,
+    "entries_found": 3,
+    "buys_success": 3,
     "buys_failed": 0
   }
 }
