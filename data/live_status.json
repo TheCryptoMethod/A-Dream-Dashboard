@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T14:24:01.295365+00:00",
-  "updated_at": "2026-03-03T15:12:34.858440+00:00",
-  "uptime_seconds": 2913.6,
+  "updated_at": "2026-03-03T15:13:37.018887+00:00",
+  "uptime_seconds": 2975.7,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -24,11 +24,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[15:03:14] \ud83d\udcca Mig:98 Track:2 Upd:7868 Pos:2 SOL:$83.31",
-    "[15:04:16] \ud83d\udcca Mig:98 Track:2 Upd:8167 Pos:2 SOL:$83.36",
-    "[15:04:45] \ud83d\udd14 Migration #99 detected",
-    "[15:05:18] \ud83d\udcca Mig:99 Track:2 Upd:8527 Pos:2 SOL:$83.36",
-    "[15:05:30] \ud83d\udd14 Migration #100 detected",
     "[15:05:41] \u2705 BC Graduated: ei8QwWPHYmSA\u2026",
     "[15:05:42] \ud83d\udce1 Tracking: ei8QwWPHYmSABLsS\u2026 | Pool #3",
     "[15:05:48] \ud83d\udfe2 ENTRY: M1 | ei8QwWPHYmSA... | $0.000104795 | 0.3022 SOL",
@@ -63,7 +58,12 @@
     "[15:11:44] \ud83d\udd34 EARLY_DELTA_10S_30S: 9i4ihKrTxRDD\u2026 | -7.1% | -0.0213 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_10S_30S (delta=-2.6%)",
     "[15:12:21] \ud83d\udd14 Migration #107 detected",
     "[15:12:22] \ud83d\udd14 Migration #108 detected",
-    "[15:12:34] \ud83d\udcca Mig:108 Track:1 Upd:10633 Pos:1 SOL:$83.28"
+    "[15:12:34] \ud83d\udcca Mig:108 Track:1 Upd:10633 Pos:1 SOL:$83.28",
+    "[15:12:48] \ud83d\udd14 Migration #109 detected",
+    "[15:13:03] \ud83d\udd14 Migration #110 detected",
+    "[15:13:11] \ud83d\udd14 Migration #111 detected",
+    "[15:13:28] \ud83d\udd14 Migration #112 detected",
+    "[15:13:37] \ud83d\udcca Mig:112 Track:1 Upd:10833 Pos:1 SOL:$83.27"
   ],
   "balance": {
     "start": 3.99284,
@@ -80,12 +80,12 @@
   "positions": {
     "open": 1
   },
-  "sol_price": 83.28,
+  "sol_price": 83.27,
   "bot_stats": {
-    "migrations_seen": 108,
+    "migrations_seen": 112,
     "migrations_added": 17,
     "pools_tracking": 1,
-    "price_updates": 10633,
+    "price_updates": 10833,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 17,
