@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T14:24:01.295365+00:00",
-  "updated_at": "2026-03-03T15:37:25.382380+00:00",
-  "uptime_seconds": 4404.1,
+  "updated_at": "2026-03-03T15:38:27.378673+00:00",
+  "uptime_seconds": 4466.1,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -24,10 +24,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[15:29:33] \ud83d\udd14 Migration #138 detected",
-    "[15:29:49] \ud83d\udd34 EXIT: 4uJ4K5sSouJZ... | SL | -24.0%",
-    "[15:29:49] \ud83d\udd34 Stop Loss: 4uJ4K5sSouJZ\u2026 | -24.0% | -0.0725 SOL | SL1: -15.6% price (exec: -21.6%)",
-    "[15:29:57] \ud83d\udd14 Migration #139 detected",
     "[15:30:11] \ud83d\udcca Mig:139 Track:1 Upd:12474 Pos:1 SOL:$83.38",
     "[15:31:13] \ud83d\udcca Mig:139 Track:1 Upd:12625 Pos:1 SOL:$83.38",
     "[15:31:28] \ud83d\udd14 Migration #140 detected",
@@ -63,7 +59,11 @@
     "[15:37:12] \ud83d\udfe2 ENTRY: M1 | FAeiC8JTDJ3Y... | $0.000040440 | 0.3023 SOL",
     "[15:37:12] \ud83d\udcb0 Position filled: M1 | FAeiC8JTDJ3Y\u2026 | $0.000040440 | 0.3023 SOL | FDV $40.4k",
     "[15:37:21] \ud83d\udd34 EXIT: FAeiC8JTDJ3Y... | SL | -18.5%",
-    "[15:37:21] \ud83d\udd34 Stop Loss: FAeiC8JTDJ3Y\u2026 | -18.5% | -0.0560 SOL | SL1: -18.6% price (exec: -20.4%)"
+    "[15:37:21] \ud83d\udd34 Stop Loss: FAeiC8JTDJ3Y\u2026 | -18.5% | -0.0560 SOL | SL1: -18.6% price (exec: -20.4%)",
+    "[15:37:26] \ud83d\udd14 Migration #154 detected",
+    "[15:37:29] \ud83d\udcca Mig:154 Track:0 Upd:13431 Pos:0 SOL:$83.78",
+    "[15:37:44] \ud83d\udd14 Migration #155 detected",
+    "[15:38:08] \ud83d\udd14 Migration #156 detected"
   ],
   "balance": {
     "start": 3.99284,
@@ -80,9 +80,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 83.78,
+  "sol_price": 83.81,
   "bot_stats": {
-    "migrations_seen": 153,
+    "migrations_seen": 156,
     "migrations_added": 21,
     "pools_tracking": 0,
     "price_updates": 13431,
