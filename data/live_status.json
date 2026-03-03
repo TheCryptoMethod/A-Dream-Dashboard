@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T14:24:01.295365+00:00",
-  "updated_at": "2026-03-03T15:22:56.320178+00:00",
-  "uptime_seconds": 3535.0,
+  "updated_at": "2026-03-03T15:23:58.450526+00:00",
+  "uptime_seconds": 3597.2,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -24,15 +24,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[15:11:15] \ud83d\udfe2 ENTRY: M1 | 9i4ihKrTxRDD... | $0.000037792 | 0.3023 SOL",
-    "[15:11:15] \ud83d\udcb0 Position filled: M1 | 9i4ihKrTxRDD\u2026 | $0.000037792 | 0.3023 SOL | FDV $37.8k",
-    "[15:11:17] \ud83d\udd14 Migration #106 detected",
-    "[15:11:32] \ud83d\udcca Mig:106 Track:2 Upd:10524 Pos:2 SOL:$83.29",
-    "[15:11:44] \ud83d\udd34 EXIT: 9i4ihKrTxRDD... | EARLY_DELTA_10S_30S | -7.1%",
-    "[15:11:44] \ud83d\udd34 EARLY_DELTA_10S_30S: 9i4ihKrTxRDD\u2026 | -7.1% | -0.0213 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_10S_30S (delta=-2.6%)",
-    "[15:12:21] \ud83d\udd14 Migration #107 detected",
-    "[15:12:22] \ud83d\udd14 Migration #108 detected",
-    "[15:12:34] \ud83d\udcca Mig:108 Track:1 Upd:10633 Pos:1 SOL:$83.28",
     "[15:12:48] \ud83d\udd14 Migration #109 detected",
     "[15:13:03] \ud83d\udd14 Migration #110 detected",
     "[15:13:11] \ud83d\udd14 Migration #111 detected",
@@ -63,13 +54,22 @@
     "[15:21:46] \ud83d\udd14 Migration #126 detected",
     "[15:21:52] \ud83d\udd14 Migration #127 detected",
     "[15:21:54] \ud83d\udcca Mig:127 Track:0 Upd:11099 Pos:0 SOL:$83.34",
-    "[15:22:56] \ud83d\udcca Mig:127 Track:0 Upd:11099 Pos:0 SOL:$83.33"
+    "[15:22:56] \ud83d\udcca Mig:127 Track:0 Upd:11099 Pos:0 SOL:$83.33",
+    "[15:23:04] \ud83d\udd14 Migration #128 detected",
+    "[15:23:27] \ud83d\udd14 Migration #129 detected",
+    "[15:23:30] \ud83d\udd14 Migration #130 detected",
+    "[15:23:37] \ud83d\udd14 Migration #131 detected",
+    "[15:23:41] \u2705 BC Graduated: 66vCw5ep3BcE\u2026",
+    "[15:23:41] \ud83d\udce1 Tracking: 66vCw5ep3BcEe72c\u2026 | Pool #1",
+    "[15:23:45] \ud83d\udfe2 ENTRY: M1 | 66vCw5ep3BcE... | $0.000041746 | 0.3023 SOL",
+    "[15:23:45] \ud83d\udcb0 Position filled: M1 | 66vCw5ep3BcE\u2026 | $0.000041746 | 0.3023 SOL | FDV $41.7k",
+    "[15:23:58] \ud83d\udcca Mig:131 Track:1 Upd:11153 Pos:1 SOL:$83.33"
   ],
   "balance": {
     "start": 3.99284,
-    "current": 4.215641,
-    "pnl_sol": 0.222801,
-    "pnl_pct": 5.58
+    "current": 3.913375,
+    "pnl_sol": -0.079465,
+    "pnl_pct": -1.99
   },
   "trades": {
     "total": 17,
@@ -78,19 +78,19 @@
     "win_rate": 11.8
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
   "sol_price": 83.33,
   "bot_stats": {
-    "migrations_seen": 127,
-    "migrations_added": 17,
-    "pools_tracking": 0,
-    "price_updates": 11099,
+    "migrations_seen": 131,
+    "migrations_added": 18,
+    "pools_tracking": 1,
+    "price_updates": 11153,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 17,
-    "entries_found": 17,
-    "buys_success": 17,
+    "bc_graduated": 18,
+    "entries_found": 18,
+    "buys_success": 18,
     "buys_failed": 0
   }
 }
