@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T14:24:01.295365+00:00",
-  "updated_at": "2026-03-03T15:58:07.135777+00:00",
-  "uptime_seconds": 5645.8,
+  "updated_at": "2026-03-03T15:59:09.134738+00:00",
+  "uptime_seconds": 5707.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -24,14 +24,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[15:48:19] \ud83d\udd14 Migration #179 detected",
-    "[15:48:33] \ud83d\udd14 Migration #180 detected",
-    "[15:48:33] \ud83d\udd14 Migration #181 detected",
-    "[15:48:43] \ud83d\udd14 Migration #182 detected",
-    "[15:48:52] \ud83d\udcca Mig:182 Track:0 Upd:13555 Pos:0 SOL:$84.68",
-    "[15:49:24] \ud83d\udd14 Migration #183 detected",
-    "[15:49:54] \ud83d\udcca Mig:183 Track:0 Upd:13555 Pos:0 SOL:$84.76",
-    "[15:49:55] \ud83d\udd14 Migration #184 detected",
     "[15:50:56] \ud83d\udcca Mig:184 Track:0 Upd:13555 Pos:0 SOL:$84.78",
     "[15:51:32] \ud83d\udd14 Migration #185 detected",
     "[15:51:34] \ud83d\udd14 Migration #186 detected",
@@ -63,7 +55,15 @@
     "[15:56:50] \ud83d\udd14 Migration #197 detected",
     "[15:57:09] \ud83d\udcca Mig:197 Track:1 Upd:14679 Pos:1 SOL:$84.85",
     "[15:57:50] \ud83d\udd34 EXIT: X3Nj19WRDb3S... | EARLY_PERF_5M | -1.5%",
-    "[15:57:50] \ud83d\udd34 EARLY_PERF_5M: X3Nj19WRDb3S\u2026 | -1.5% | -0.0045 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_5M"
+    "[15:57:50] \ud83d\udd34 EARLY_PERF_5M: X3Nj19WRDb3S\u2026 | -1.5% | -0.0045 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_5M",
+    "[15:58:11] \ud83d\udcca Mig:197 Track:0 Upd:14799 Pos:0 SOL:$84.86",
+    "[15:58:13] \ud83d\udd14 Migration #198 detected",
+    "[15:58:29] \u2705 BC Graduated: z9BSdTch7y39\u2026",
+    "[15:58:29] \ud83d\udce1 Tracking: z9BSdTch7y39y4MW\u2026 | Pool #1",
+    "[15:58:32] \u26a0\ufe0f Jupiter error: quote_failed: HTTP 400: {\"error\":\"The token z9BSdTch7y39y4MW",
+    "[15:58:32] \u26a0\ufe0f Buy FAILED: M1 | z9BSdTch7y39\u2026",
+    "[15:58:51] \ud83d\udd14 Migration #199 detected",
+    "[15:59:02] \ud83d\udd14 Migration #200 detected"
   ],
   "balance": {
     "start": 3.99284,
@@ -80,17 +80,17 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.85,
+  "sol_price": 84.87,
   "bot_stats": {
-    "migrations_seen": 197,
-    "migrations_added": 24,
+    "migrations_seen": 200,
+    "migrations_added": 25,
     "pools_tracking": 0,
-    "price_updates": 14799,
+    "price_updates": 14801,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 24,
-    "entries_found": 24,
+    "bc_graduated": 25,
+    "entries_found": 25,
     "buys_success": 24,
-    "buys_failed": 0
+    "buys_failed": 1
   }
 }
