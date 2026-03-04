@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-03T19:41:40.501776+00:00",
-  "updated_at": "2026-03-04T02:15:49.289837+00:00",
-  "uptime_seconds": 23648.8,
+  "updated_at": "2026-03-04T02:16:50.174990+00:00",
+  "uptime_seconds": 23709.7,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,9 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[01:58:20] \ud83d\udd14 Migration #1061 detected",
-    "[01:58:30] \ud83d\udcca Mig:1061 Track:87 Upd:532841 Pos:0 SOL:$87.43",
-    "[01:58:40] \ud83d\udd14 Migration #1062 detected",
     "[01:58:52] \ud83d\udd14 Migration #1063 detected",
     "[01:58:53] \ud83d\udd14 Migration #1064 detected",
     "[01:59:31] \ud83d\udcca Mig:1064 Track:87 Upd:534494 Pos:0 SOL:$87.41",
@@ -564,7 +561,10 @@
     "[02:12:43] \ud83d\udcca Mig:1078 Track:89 Upd:561518 Pos:0 SOL:$87.00",
     "[02:13:44] \ud83d\udcca Mig:1078 Track:89 Upd:563356 Pos:0 SOL:$86.99",
     "[02:14:45] \ud83d\udcca Mig:1078 Track:89 Upd:565178 Pos:0 SOL:$87.00",
-    "[02:15:46] \ud83d\udcca Mig:1078 Track:89 Upd:567015 Pos:0 SOL:$87.05"
+    "[02:15:46] \ud83d\udcca Mig:1078 Track:89 Upd:567015 Pos:0 SOL:$87.05",
+    "[02:15:51] \u26a0\ufe0f Jupiter error: tx_failed_verified",
+    "[02:15:51] \u26a0\ufe0f Buy FAILED: M4_d0.786_r0.618_d0.786 | HvfbNSp9yEpb\u2026",
+    "[02:16:47] \ud83d\udcca Mig:1078 Track:88 Upd:568856 Pos:0 SOL:$87.05"
   ],
   "balance": {
     "start": 4.06455,
@@ -585,13 +585,13 @@
   "bot_stats": {
     "migrations_seen": 1078,
     "migrations_added": 90,
-    "pools_tracking": 89,
-    "price_updates": 567117,
+    "pools_tracking": 88,
+    "price_updates": 568959,
     "migrations_rejected": 0,
     "liquidity_rejected": 1,
     "bc_graduated": 91,
     "entries_found": 1,
     "buys_success": 0,
-    "buys_failed": 0
+    "buys_failed": 1
   }
 }
