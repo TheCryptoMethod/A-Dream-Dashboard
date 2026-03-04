@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-04T12:27:15.748276+00:00",
-  "updated_at": "2026-03-04T18:30:26.471786+00:00",
-  "uptime_seconds": 21790.7,
+  "updated_at": "2026-03-04T18:31:27.607177+00:00",
+  "uptime_seconds": 21851.9,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,16 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[18:22:27] \ud83d\udd14 Migration #1012 detected",
-    "[18:22:33] \ud83d\udcca Mig:1012 Track:72 Upd:404830 Pos:0 SOL:$91.67",
-    "[18:22:34] \ud83d\udd14 Migration #1013 detected",
-    "[18:22:38] \ud83d\udd14 Migration #1014 detected",
-    "[18:22:47] \u2705 BC Graduated: FKTDsVXpfAoU\u2026",
-    "[18:22:47] \ud83d\udce1 Tracking: FKTDsVXpfAoU4uW6\u2026 | Pool #73",
-    "[18:23:22] \ud83d\udd14 Migration #1015 detected",
-    "[18:23:30] \ud83d\udd14 Migration #1016 detected",
-    "[18:23:34] \ud83d\udcca Mig:1016 Track:73 Upd:407226 Pos:0 SOL:$91.70",
-    "[18:23:42] \ud83d\udd14 Migration #1017 detected",
     "[18:24:03] \ud83d\udd14 Migration #1018 detected",
     "[18:24:16] \u2705 BC Graduated: BTZpcynJ8qi7\u2026",
     "[18:24:17] \ud83d\udce1 Tracking: BTZpcynJ8qi7jS78\u2026 | Pool #74",
@@ -564,13 +554,23 @@
     "[18:28:50] \ud83d\udd14 Migration #1035 detected",
     "[18:28:50] \ud83d\udd14 Migration #1036 detected",
     "[18:29:31] \ud83d\udd14 Migration #1037 detected",
-    "[18:29:40] \ud83d\udcca Mig:1037 Track:75 Upd:420958 Pos:0 SOL:$91.90"
+    "[18:29:40] \ud83d\udcca Mig:1037 Track:75 Upd:420958 Pos:0 SOL:$91.90",
+    "[18:30:29] \ud83d\udd14 Migration #1038 detected",
+    "[18:30:41] \ud83d\udcca Mig:1038 Track:75 Upd:423284 Pos:0 SOL:$91.94",
+    "[18:30:54] \ud83d\udd14 Migration #1039 detected",
+    "[18:30:55] \ud83d\udd14 Migration #1040 detected",
+    "[18:31:07] \ud83d\udd14 Migration #1041 detected",
+    "[18:31:14] \ud83d\udd14 Migration #1042 detected",
+    "[18:31:14] \ud83d\udfe2 ENTRY: M4_d0.786_r0.618_d0.786 | 7PhaK3vSp2TG... | $0.000008412 | 0.3021 SOL",
+    "[18:31:14] \ud83d\udcb0 Position filled: M4_d0.786_r0.618_d0.786 | 7PhaK3vSp2TG\u2026 | $0.000008412 | 0.3021 SOL | FDV $8.4k",
+    "[18:31:27] \u2705 BC Graduated: EgrWay6HeQV7\u2026",
+    "[18:31:27] \ud83d\udce1 Tracking: EgrWay6HeQV7VeZ6\u2026 | Pool #76"
   ],
   "balance": {
     "start": 4.06455,
-    "current": 4.481932,
-    "pnl_sol": 0.417382,
-    "pnl_pct": 10.27
+    "current": 4.179807,
+    "pnl_sol": 0.115257,
+    "pnl_pct": 2.84
   },
   "trades": {
     "total": 1,
@@ -579,19 +579,19 @@
     "win_rate": 0.0
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 91.9,
+  "sol_price": 91.94,
   "bot_stats": {
-    "migrations_seen": 1037,
-    "migrations_added": 77,
-    "pools_tracking": 75,
-    "price_updates": 422655,
+    "migrations_seen": 1042,
+    "migrations_added": 78,
+    "pools_tracking": 76,
+    "price_updates": 424920,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 77,
-    "entries_found": 1,
-    "buys_success": 1,
+    "bc_graduated": 78,
+    "entries_found": 2,
+    "buys_success": 2,
     "buys_failed": 0
   }
 }
