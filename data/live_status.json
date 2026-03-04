@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-04T12:27:15.748276+00:00",
-  "updated_at": "2026-03-04T14:43:01.330549+00:00",
-  "uptime_seconds": 8145.6,
+  "updated_at": "2026-03-04T14:44:02.532777+00:00",
+  "uptime_seconds": 8206.8,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,10 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[14:34:20] \ud83d\udd14 Migration #361 detected",
-    "[14:34:26] \ud83d\udd14 Migration #362 detected",
-    "[14:34:26] \ud83d\udd14 Migration #363 detected",
-    "[14:34:47] \ud83d\udd14 Migration #364 detected",
     "[14:34:49] \ud83d\udcca Mig:364 Track:18 Upd:58800 Pos:0 SOL:$90.42",
     "[14:35:17] \ud83d\udd14 Migration #365 detected",
     "[14:35:17] \ud83d\udd14 Migration #366 detected",
@@ -564,7 +560,11 @@
     "[14:42:41] \ud83d\udd14 Migration #387 detected",
     "[14:42:44] \ud83d\udd14 Migration #388 detected",
     "[14:42:53] \ud83d\udd14 Migration #389 detected",
-    "[14:42:58] \ud83d\udcca Mig:389 Track:19 Upd:63910 Pos:0 SOL:$90.60"
+    "[14:42:58] \ud83d\udcca Mig:389 Track:19 Upd:63910 Pos:0 SOL:$90.60",
+    "[14:43:06] \u2705 BC Graduated: BcwpsswwF4pd\u2026",
+    "[14:43:06] \ud83d\udce1 Tracking: BcwpsswwF4pddTjq\u2026 | Pool #20",
+    "[14:43:42] \ud83d\udd14 Migration #390 detected",
+    "[14:43:59] \ud83d\udcca Mig:390 Track:20 Upd:64852 Pos:0 SOL:$90.56"
   ],
   "balance": {
     "start": 4.06455,
@@ -581,15 +581,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 90.6,
+  "sol_price": 90.56,
   "bot_stats": {
-    "migrations_seen": 389,
-    "migrations_added": 19,
-    "pools_tracking": 19,
-    "price_updates": 63947,
+    "migrations_seen": 390,
+    "migrations_added": 20,
+    "pools_tracking": 20,
+    "price_updates": 64894,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 19,
+    "bc_graduated": 20,
     "entries_found": 0,
     "buys_success": 0,
     "buys_failed": 0
