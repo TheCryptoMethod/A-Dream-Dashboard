@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "last_updated": "2026-03-05T12:21:16.523820+00:00",
+  "last_updated": "2026-03-05T15:13:34.436405+00:00",
   "methods": {
     "M1": [
       {
@@ -10,8 +10,8 @@
         "fingerprint": "6d3fda2ebbf5",
         "flags": "methods=M1 realistic signal_only",
         "data_label": "backtest_30d.db | 450 mints | 2026-03-03 → 2026-03-05",
-        "updated_at": "2026-03-05T12:21:16.523820+00:00",
-        "run_count": 1,
+        "updated_at": "2026-03-05T15:13:34.436405+00:00",
+        "run_count": 2,
         "current": {
           "method": "M1",
           "config": {
@@ -1354,10 +1354,25 @@
             "date_from": "2026-03-03",
             "date_to": "2026-03-05",
             "time_span": "1.9d",
-            "timestamp": "2026-03-05T12:21:16.523820+00:00"
+            "timestamp": "2026-03-05T15:13:34.436405+00:00"
           }
         },
-        "history": []
+        "history": [
+          {
+            "timestamp": "2026-03-05T12:21:16.523820+00:00",
+            "gates_passed": 8,
+            "all_11_passed": false,
+            "avg_pnl": 7.9036,
+            "win_rate": 0.47580645161290325,
+            "sortino": 28.482,
+            "n_trades": 124,
+            "max_dd": 65.0,
+            "unique_mints": 450,
+            "total_entries": 450,
+            "date_from": "2026-03-03",
+            "date_to": "2026-03-05"
+          }
+        ]
       },
       {
         "variant_key": "bde5cc6a8449",
