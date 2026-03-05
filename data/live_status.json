@@ -1,15 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-05T15:03:09.438974+00:00",
-  "updated_at": "2026-03-05T15:48:06.738600+00:00",
-  "uptime_seconds": 2697.3,
+  "updated_at": "2026-03-05T15:49:08.039771+00:00",
+  "uptime_seconds": 2758.6,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[15:38:42] \ud83d\udd14 Migration #92 detected",
-    "[15:38:51] \ud83d\udcca Mig:92 Track:0 Upd:827 Pos:0 SOL:$89.09",
-    "[15:39:20] \ud83d\udd14 Migration #93 detected",
     "[15:39:53] \ud83d\udcca Mig:93 Track:0 Upd:827 Pos:0 SOL:$89.09",
     "[15:40:23] \ud83d\udd14 Migration #94 detected",
     "[15:40:31] \ud83d\udd14 Migration #95 detected",
@@ -46,7 +43,10 @@
     "[15:47:59] \ud83d\udce1 Tracking: 8xmW3QdRDBu9bhaX\u2026 | Pool #1",
     "[15:48:03] \ud83d\udcca Mig:111 Track:1 Upd:1307 Pos:0 SOL:$89.40",
     "[15:48:04] \ud83d\udfe2 ENTRY: M8_sm2 | 8xmW3QdRDBu9... | $0.000070397 | 0.3022 SOL",
-    "[15:48:04] \ud83d\udcb0 Position filled: M8_sm2 | 8xmW3QdRDBu9\u2026 | $0.000070397 | 0.3022 SOL | FDV $70.4k"
+    "[15:48:04] \ud83d\udcb0 Position filled: M8_sm2 | 8xmW3QdRDBu9\u2026 | $0.000070397 | 0.3022 SOL | FDV $70.4k",
+    "[15:48:30] \ud83d\udd14 Migration #112 detected",
+    "[15:48:49] \ud83d\udd14 Migration #113 detected",
+    "[15:49:04] \ud83d\udcca Mig:113 Track:1 Upd:1573 Pos:1 SOL:$89.46"
   ],
   "balance": {
     "start": 4.158328,
@@ -63,12 +63,12 @@
   "positions": {
     "open": 1
   },
-  "sol_price": 89.4,
+  "sol_price": 89.46,
   "bot_stats": {
-    "migrations_seen": 111,
+    "migrations_seen": 113,
     "migrations_added": 9,
     "pools_tracking": 1,
-    "price_updates": 1322,
+    "price_updates": 1580,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 8,
