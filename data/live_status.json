@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T12:06:11.687969+00:00",
-  "updated_at": "2026-03-05T12:10:16.849734+00:00",
-  "uptime_seconds": 245.2,
+  "updated_at": "2026-03-05T12:11:18.130222+00:00",
+  "uptime_seconds": 306.4,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
@@ -25,7 +25,10 @@
     "[12:09:46] \ud83d\udd14 Migration #9 detected",
     "[12:10:05] \ud83d\udd14 Migration #10 detected",
     "[12:10:05] \ud83d\udd14 Migration #11 detected",
-    "[12:10:13] \ud83d\udcca Mig:11 Track:1 Upd:177 Pos:0 SOL:$91.72"
+    "[12:10:13] \ud83d\udcca Mig:11 Track:1 Upd:177 Pos:0 SOL:$91.72",
+    "[12:10:47] \ud83d\udeab Disqualified: EcsFC9Temq6m\u2026 | max_time_without_entry | 1.2m",
+    "[12:11:09] \ud83d\udd14 Migration #12 detected",
+    "[12:11:15] \ud83d\udcca Mig:12 Track:0 Upd:345 Pos:0 SOL:$91.73"
   ],
   "balance": {
     "start": 4.451714,
@@ -42,12 +45,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 91.72,
+  "sol_price": 91.73,
   "bot_stats": {
-    "migrations_seen": 11,
+    "migrations_seen": 12,
     "migrations_added": 1,
-    "pools_tracking": 1,
-    "price_updates": 195,
+    "pools_tracking": 0,
+    "price_updates": 345,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 1,
