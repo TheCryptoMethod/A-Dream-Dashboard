@@ -1,21 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-05T12:06:11.687969+00:00",
-  "updated_at": "2026-03-05T13:18:41.093186+00:00",
-  "uptime_seconds": 4349.4,
+  "updated_at": "2026-03-05T13:19:42.851188+00:00",
+  "uptime_seconds": 4411.2,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[13:11:43] \ud83d\udd14 Migration #198 detected",
-    "[13:11:45] \ud83d\udd14 Migration #199 detected",
-    "[13:11:48] \ud83d\udfe2 ENTRY: M8_sm2 | AkhUfHRGaeuR... | $0.000034765 | 0.3021 SOL",
-    "[13:11:48] \ud83d\udcb0 Position filled: M8_sm2 | AkhUfHRGaeuR\u2026 | $0.000034765 | 0.3021 SOL | FDV $34.8k",
-    "[13:11:53] \ud83d\udd34 EXIT: AkhUfHRGaeuR... | SL | -75.9%",
-    "[13:11:53] \ud83d\udd34 Stop Loss: AkhUfHRGaeuR\u2026 | -75.9% | -0.2292 SOL | SL1: -65.7% price (exec: -65.5%)",
-    "[13:11:59] \ud83d\udd14 Migration #200 detected",
-    "[13:12:01] \ud83d\udd14 Migration #201 detected",
-    "[13:12:12] \ud83d\udd14 Migration #202 detected",
     "[13:12:26] \ud83d\udd14 Migration #203 detected",
     "[13:12:30] \ud83d\udcca Mig:203 Track:0 Upd:1846 Pos:0 SOL:$91.69",
     "[13:12:41] \ud83d\udd14 Migration #204 detected",
@@ -46,13 +37,22 @@
     "[13:18:01] \ud83d\udd14 Migration #222 detected",
     "[13:18:06] \ud83d\udd14 Migration #223 detected",
     "[13:18:07] \ud83d\udeab Disqualified: 8Pry3mEhkXEa\u2026 | max_time_without_entry | 1.1m",
-    "[13:18:38] \ud83d\udcca Mig:223 Track:0 Upd:2031 Pos:0 SOL:$91.52"
+    "[13:18:38] \ud83d\udcca Mig:223 Track:0 Upd:2031 Pos:0 SOL:$91.52",
+    "[13:18:57] \ud83d\udd14 Migration #224 detected",
+    "[13:18:57] \ud83d\udd14 Migration #225 detected",
+    "[13:19:11] \u2705 BC Graduated: BgUz7ow6F4GA\u2026",
+    "[13:19:11] \ud83d\udce1 Tracking: BgUz7ow6F4GA5Tik\u2026 | Pool #1",
+    "[13:19:21] \ud83e\udde0 M8: 2 SM wallets \u2192 BgUz7ow6F4GA\u2026",
+    "[13:19:25] \ud83d\udfe2 ENTRY: M8_sm2 | BgUz7ow6F4GA... | $0.000036462 | 0.3021 SOL",
+    "[13:19:25] \ud83d\udcb0 Position filled: M8_sm2 | BgUz7ow6F4GA\u2026 | $0.000036462 | 0.3021 SOL | FDV $36.5k",
+    "[13:19:38] \ud83d\udd14 Migration #226 detected",
+    "[13:19:39] \ud83d\udcca Mig:226 Track:1 Upd:2147 Pos:1 SOL:$91.52"
   ],
   "balance": {
     "start": 4.451714,
-    "current": 4.222539,
-    "pnl_sol": -0.229175,
-    "pnl_pct": -5.15
+    "current": 3.92041,
+    "pnl_sol": -0.531304,
+    "pnl_pct": -11.93
   },
   "trades": {
     "total": 1,
@@ -61,19 +61,19 @@
     "win_rate": 0.0
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
   "sol_price": 91.52,
   "bot_stats": {
-    "migrations_seen": 223,
-    "migrations_added": 9,
-    "pools_tracking": 0,
-    "price_updates": 2031,
+    "migrations_seen": 226,
+    "migrations_added": 10,
+    "pools_tracking": 1,
+    "price_updates": 2157,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 8,
-    "entries_found": 1,
-    "buys_success": 1,
+    "bc_graduated": 9,
+    "entries_found": 2,
+    "buys_success": 2,
     "buys_failed": 0
   }
 }
