@@ -1,17 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-05T12:06:11.687969+00:00",
-  "updated_at": "2026-03-05T13:23:47.620163+00:00",
-  "uptime_seconds": 4655.9,
+  "updated_at": "2026-03-05T13:24:48.938156+00:00",
+  "uptime_seconds": 4717.3,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[13:18:07] \ud83d\udeab Disqualified: 8Pry3mEhkXEa\u2026 | max_time_without_entry | 1.1m",
-    "[13:18:38] \ud83d\udcca Mig:223 Track:0 Upd:2031 Pos:0 SOL:$91.52",
-    "[13:18:57] \ud83d\udd14 Migration #224 detected",
-    "[13:18:57] \ud83d\udd14 Migration #225 detected",
-    "[13:19:11] \u2705 BC Graduated: BgUz7ow6F4GA\u2026",
     "[13:19:11] \ud83d\udce1 Tracking: BgUz7ow6F4GA5Tik\u2026 | Pool #1",
     "[13:19:21] \ud83e\udde0 M8: 2 SM wallets \u2192 BgUz7ow6F4GA\u2026",
     "[13:19:25] \ud83d\udfe2 ENTRY: M8_sm2 | BgUz7ow6F4GA... | $0.000036462 | 0.3021 SOL",
@@ -46,7 +41,12 @@
     "[13:23:09] \ud83d\udd14 Migration #238 detected",
     "[13:23:24] \ud83d\udd14 Migration #239 detected",
     "[13:23:37] \ud83d\udeab Disqualified: DXX28WiMxpHa\u2026 | max_time_without_entry | 1.2m",
-    "[13:23:44] \ud83d\udcca Mig:239 Track:0 Upd:2684 Pos:0 SOL:$91.50"
+    "[13:23:44] \ud83d\udcca Mig:239 Track:0 Upd:2684 Pos:0 SOL:$91.50",
+    "[13:23:59] \ud83d\udd14 Migration #240 detected",
+    "[13:24:12] \u2705 BC Graduated: 5BUp4qksXcwU\u2026",
+    "[13:24:12] \ud83d\udce1 Tracking: 5BUp4qksXcwUaUhD\u2026 | Pool #1",
+    "[13:24:45] \ud83d\udcca Mig:240 Track:1 Upd:2842 Pos:0 SOL:$91.50",
+    "[13:24:47] \ud83d\udd14 Migration #241 detected"
   ],
   "balance": {
     "start": 4.451714,
@@ -65,13 +65,13 @@
   },
   "sol_price": 91.5,
   "bot_stats": {
-    "migrations_seen": 239,
-    "migrations_added": 12,
-    "pools_tracking": 0,
-    "price_updates": 2684,
+    "migrations_seen": 241,
+    "migrations_added": 13,
+    "pools_tracking": 1,
+    "price_updates": 2855,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 11,
+    "bc_graduated": 12,
     "entries_found": 3,
     "buys_success": 3,
     "buys_failed": 0
