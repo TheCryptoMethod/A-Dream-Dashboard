@@ -1,14 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-05T15:03:09.438974+00:00",
-  "updated_at": "2026-03-05T15:11:19.619430+00:00",
-  "uptime_seconds": 490.2,
+  "updated_at": "2026-03-05T15:12:20.892744+00:00",
+  "uptime_seconds": 551.5,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[15:03:09] \ud83d\ude80 Bot gestartet \u2014 ENV",
-    "[15:03:09] \ud83d\udcb0 Balance: 4.1583 SOL",
     "[15:03:31] \ud83d\udd14 Migration #1 detected",
     "[15:03:46] \ud83d\udd14 Migration #2 detected",
     "[15:04:07] \ud83d\udcca Mig:2 Track:0 Upd:0 Pos:0 SOL:$90.84",
@@ -44,7 +42,11 @@
     "[15:10:51] \ud83d\udd14 Migration #24 detected",
     "[15:10:57] \ud83d\udd14 Migration #25 detected",
     "[15:11:06] \ud83d\udd14 Migration #26 detected",
-    "[15:11:16] \ud83d\udcca Mig:26 Track:1 Upd:94 Pos:0 SOL:$90.37"
+    "[15:11:16] \ud83d\udcca Mig:26 Track:1 Upd:94 Pos:0 SOL:$90.37",
+    "[15:11:35] \ud83d\udeab Disqualified: iXmEcGEm4qtk\u2026 | max_time_without_entry | 1.1m",
+    "[15:11:54] \ud83d\udd14 Migration #27 detected",
+    "[15:12:17] \ud83d\udcca Mig:27 Track:0 Upd:118 Pos:0 SOL:$90.29",
+    "[15:12:18] \ud83d\udd14 Migration #28 detected"
   ],
   "balance": {
     "start": 4.158328,
@@ -61,12 +63,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 90.37,
+  "sol_price": 90.29,
   "bot_stats": {
-    "migrations_seen": 26,
+    "migrations_seen": 28,
     "migrations_added": 1,
-    "pools_tracking": 1,
-    "price_updates": 98,
+    "pools_tracking": 0,
+    "price_updates": 118,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 1,
