@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T20:57:40.534989+00:00",
-  "updated_at": "2026-03-05T20:57:40.535055+00:00",
-  "uptime_seconds": 0.0,
+  "updated_at": "2026-03-05T20:58:41.599143+00:00",
+  "uptime_seconds": 61.1,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -526,13 +526,17 @@
   "dry_run": false,
   "terminal": [
     "[20:57:40] \ud83d\ude80 Bot gestartet \u2014 M4",
-    "[20:57:40] \ud83d\udcb0 Balance: 4.0770 SOL"
+    "[20:57:40] \ud83d\udcb0 Balance: 4.0770 SOL",
+    "[20:58:07] \ud83d\udd14 Migration #1 detected",
+    "[20:58:20] \u2705 BC Graduated: 6q2WhZMij3WS\u2026",
+    "[20:58:20] \ud83d\udce1 Tracking: 6q2WhZMij3WSz9BR\u2026 | Pool #1",
+    "[20:58:38] \ud83d\udcca Mig:1 Track:1 Upd:83 Pos:0 SOL:$89.20"
   ],
   "balance": {
-    "start": 4.077029017,
-    "current": 4.077029017,
-    "pnl_sol": 0,
-    "pnl_pct": 0
+    "start": 4.077029,
+    "current": 4.077029,
+    "pnl_sol": 0.0,
+    "pnl_pct": 0.0
   },
   "trades": {
     "total": 0,
@@ -542,5 +546,18 @@
   },
   "positions": {
     "open": 0
+  },
+  "sol_price": 89.21,
+  "bot_stats": {
+    "migrations_seen": 1,
+    "migrations_added": 1,
+    "pools_tracking": 1,
+    "price_updates": 99,
+    "migrations_rejected": 0,
+    "liquidity_rejected": 0,
+    "bc_graduated": 1,
+    "entries_found": 0,
+    "buys_success": 0,
+    "buys_failed": 0
   }
 }
