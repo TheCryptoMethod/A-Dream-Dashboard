@@ -1,20 +1,28 @@
 {
-  "status": "offline",
-  "updated_at": "2026-03-05T14:24:30.406326+00:00",
-  "last_session": {
-    "started_at": "2026-03-05T12:06:11.687969+00:00",
-    "ended_at": "2026-03-05T14:24:29.949607+00:00",
-    "duration_seconds": 8298.3,
-    "duration_formatted": "2h 18m 18s",
-    "method": "ENV",
-    "dry_run": false,
-    "balance_start": 4.451714,
-    "balance_end": 4.158328,
-    "pnl_sol": -0.293386,
-    "pnl_pct": -6.59,
-    "total_trades": 3,
+  "status": "live",
+  "started_at": "2026-03-05T15:03:09.438974+00:00",
+  "updated_at": "2026-03-05T15:03:09.439028+00:00",
+  "uptime_seconds": 0.0,
+  "method": "ENV",
+  "strategy": {},
+  "dry_run": false,
+  "terminal": [
+    "[15:03:09] \ud83d\ude80 Bot gestartet \u2014 ENV",
+    "[15:03:09] \ud83d\udcb0 Balance: 4.1583 SOL"
+  ],
+  "balance": {
+    "start": 4.158327814,
+    "current": 4.158327814,
+    "pnl_sol": 0,
+    "pnl_pct": 0
+  },
+  "trades": {
+    "total": 0,
     "wins": 0,
-    "losses": 3,
-    "win_rate": 0.0
+    "losses": 0,
+    "win_rate": 0
+  },
+  "positions": {
+    "open": 0
   }
 }
