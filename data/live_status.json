@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-06T06:54:24.750595+00:00",
-  "uptime_seconds": 35226.8,
+  "updated_at": "2026-03-06T06:55:25.990484+00:00",
+  "uptime_seconds": 35288.0,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,9 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[06:46:27] \ud83d\udd14 Migration #1537 detected",
-    "[06:46:34] \ud83d\udd14 Migration #1538 detected",
-    "[06:46:34] \ud83d\udd14 Migration #1539 detected",
     "[06:46:38] \ud83d\udd14 Migration #1540 detected",
     "[06:46:44] \ud83d\udd14 Migration #1541 detected",
     "[06:46:47] \u2705 BC Graduated: 8dRJzLyyPXBy\u2026",
@@ -564,7 +561,10 @@
     "[06:53:11] \ud83d\udd14 Migration #1561 detected",
     "[06:53:20] \ud83d\udcca Mig:1561 Track:86 Upd:738930 Pos:0 SOL:$88.19",
     "[06:53:33] \ud83d\udd14 Migration #1562 detected",
-    "[06:54:21] \ud83d\udcca Mig:1562 Track:86 Upd:739937 Pos:0 SOL:$88.18"
+    "[06:54:21] \ud83d\udcca Mig:1562 Track:86 Upd:739937 Pos:0 SOL:$88.18",
+    "[06:54:58] \ud83d\udee1\ufe0f Signal gate: kXDRYF1YuKbJ\u2026 | top5=58.5%>40%",
+    "[06:54:58] \ud83d\udeab Disqualified: kXDRYF1YuKbJ\u2026 | signal_gate_failed | 45.6m",
+    "[06:55:22] \ud83d\udcca Mig:1562 Track:85 Upd:740895 Pos:0 SOL:$88.15"
   ],
   "balance": {
     "start": 4.077029,
@@ -581,12 +581,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 88.18,
+  "sol_price": 88.15,
   "bot_stats": {
     "migrations_seen": 1562,
     "migrations_added": 120,
-    "pools_tracking": 86,
-    "price_updates": 739986,
+    "pools_tracking": 85,
+    "price_updates": 740934,
     "migrations_rejected": 0,
     "liquidity_rejected": 3,
     "bc_graduated": 123,
