@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-06T11:49:57.683218+00:00",
-  "uptime_seconds": 52959.7,
+  "updated_at": "2026-03-06T11:50:58.856487+00:00",
+  "uptime_seconds": 53020.9,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,11 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[11:40:44] \ud83d\udcca Mig:2368 Track:125 Upd:1086417 Pos:0 SOL:$87.80",
-    "[11:41:05] \ud83d\udd14 Migration #2369 detected",
-    "[11:41:18] \u2705 BC Graduated: 4wrgJAEhuSfk\u2026",
-    "[11:41:18] \ud83d\udce1 Tracking: 4wrgJAEhuSfk2P94\u2026 | Pool #126",
-    "[11:41:22] \ud83d\udd14 Migration #2370 detected",
     "[11:41:42] \ud83d\udd14 Migration #2371 detected",
     "[11:41:45] \ud83d\udcca Mig:2371 Track:126 Upd:1088202 Pos:0 SOL:$87.80",
     "[11:41:47] \ud83d\udd14 Migration #2372 detected",
@@ -564,7 +559,12 @@
     "[11:49:11] \ud83d\udd14 Migration #2390 detected",
     "[11:49:41] \ud83d\udd14 Migration #2391 detected",
     "[11:49:48] \ud83d\udd14 Migration #2392 detected",
-    "[11:49:54] \ud83d\udcca Mig:2392 Track:128 Upd:1102460 Pos:0 SOL:$87.61"
+    "[11:49:54] \ud83d\udcca Mig:2392 Track:128 Upd:1102460 Pos:0 SOL:$87.61",
+    "[11:50:09] \ud83d\udd14 Migration #2393 detected",
+    "[11:50:13] \ud83d\udee1\ufe0f Signal gate: 4mKACKKRwa9M\u2026 | top5=52.5%>40%",
+    "[11:50:13] \ud83d\udeab Disqualified: 4mKACKKRwa9M\u2026 | signal_gate_failed | 117.5m",
+    "[11:50:18] \ud83d\udd14 Migration #2394 detected",
+    "[11:50:55] \ud83d\udcca Mig:2394 Track:127 Upd:1104078 Pos:0 SOL:$87.57"
   ],
   "balance": {
     "start": 4.077029,
@@ -581,12 +581,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 87.61,
+  "sol_price": 87.57,
   "bot_stats": {
-    "migrations_seen": 2392,
+    "migrations_seen": 2394,
     "migrations_added": 171,
-    "pools_tracking": 128,
-    "price_updates": 1102560,
+    "pools_tracking": 127,
+    "price_updates": 1104154,
     "migrations_rejected": 0,
     "liquidity_rejected": 3,
     "bc_graduated": 174,
