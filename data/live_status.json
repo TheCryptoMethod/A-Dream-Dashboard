@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-06T17:17:21.233405+00:00",
-  "uptime_seconds": 72603.3,
+  "updated_at": "2026-03-06T17:18:22.610408+00:00",
+  "uptime_seconds": 72664.6,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,12 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[17:09:01] \ud83d\udce1 Tracking: ALWi1o3qgXp68Uyy\u2026 | Pool #182",
-    "[17:09:10] \ud83d\udcca Mig:3305 Track:182 Upd:1752989 Pos:0 SOL:$84.39",
-    "[17:09:36] \ud83d\udd14 Migration #3306 detected",
-    "[17:09:50] \ud83d\udd14 Migration #3307 detected",
-    "[17:10:12] \ud83d\udcca Mig:3307 Track:182 Upd:1755861 Pos:0 SOL:$84.38",
-    "[17:10:41] \ud83d\udd14 Migration #3308 detected",
     "[17:10:48] \ud83d\udd14 Migration #3309 detected",
     "[17:10:52] \ud83d\udd14 Migration #3310 detected",
     "[17:11:13] \ud83d\udcca Mig:3310 Track:182 Upd:1758799 Pos:0 SOL:$84.36",
@@ -564,7 +558,13 @@
     "[17:16:36] \ud83d\udd14 Migration #3329 detected",
     "[17:16:45] \ud83d\udd14 Migration #3330 detected",
     "[17:17:06] \ud83d\udd14 Migration #3331 detected",
-    "[17:17:21] \ud83d\udcca Mig:3331 Track:184 Upd:1775813 Pos:0 SOL:$84.40"
+    "[17:17:21] \ud83d\udcca Mig:3331 Track:184 Upd:1775813 Pos:0 SOL:$84.40",
+    "[17:17:23] \ud83d\udd14 Migration #3332 detected",
+    "[17:17:34] \ud83d\udee1\ufe0f Signal gate: kgYA19Bko9An\u2026 | top5=74.8%>40%",
+    "[17:17:34] \ud83d\udeab Disqualified: kgYA19Bko9An\u2026 | signal_gate_failed | 27.2m",
+    "[17:17:42] \ud83d\udd14 Migration #3333 detected",
+    "[17:17:57] \ud83d\udd14 Migration #3334 detected",
+    "[17:18:22] \ud83d\udcca Mig:3334 Track:183 Upd:1778311 Pos:0 SOL:$84.39"
   ],
   "balance": {
     "start": 4.077029,
@@ -581,12 +581,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.4,
+  "sol_price": 84.39,
   "bot_stats": {
-    "migrations_seen": 3331,
+    "migrations_seen": 3334,
     "migrations_added": 252,
-    "pools_tracking": 184,
-    "price_updates": 1775813,
+    "pools_tracking": 183,
+    "price_updates": 1778311,
     "migrations_rejected": 0,
     "liquidity_rejected": 3,
     "bc_graduated": 255,
