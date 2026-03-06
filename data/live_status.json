@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-06T02:18:38.023546+00:00",
-  "uptime_seconds": 18680.1,
+  "updated_at": "2026-03-06T02:19:39.168367+00:00",
+  "uptime_seconds": 18741.2,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,11 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[02:13:42] \ud83d\udd14 Migration #795 detected",
-    "[02:14:06] \ud83d\udd14 Migration #796 detected",
-    "[02:14:30] \ud83d\udcca Mig:796 Track:52 Upd:327236 Pos:0 SOL:$89.06",
-    "[02:14:40] \ud83d\udd14 Migration #797 detected",
-    "[02:14:42] \ud83d\udd14 Migration #798 detected",
     "[02:14:54] \ud83d\udd14 Migration #799 detected",
     "[02:14:55] \u2705 BC Graduated: 7vAQUtMHaC37\u2026",
     "[02:14:55] \ud83d\udce1 Tracking: 7vAQUtMHaC37sYPb\u2026 | Pool #53",
@@ -564,7 +559,12 @@
     "[02:18:14] \ud83d\udd14 Migration #823 detected",
     "[02:18:34] \ud83d\udcca Mig:823 Track:54 Upd:333469 Pos:0 SOL:$89.14",
     "[02:18:36] \ud83d\udee1\ufe0f Signal gate: ET2GVmX9r6iJ\u2026 | top5=55.0%>40%",
-    "[02:18:36] \ud83d\udeab Disqualified: ET2GVmX9r6iJ\u2026 | signal_gate_failed | 33.7m"
+    "[02:18:36] \ud83d\udeab Disqualified: ET2GVmX9r6iJ\u2026 | signal_gate_failed | 33.7m",
+    "[02:19:18] \ud83d\udd14 Migration #824 detected",
+    "[02:19:18] \ud83d\udd14 Migration #825 detected",
+    "[02:19:21] \ud83d\udd14 Migration #826 detected",
+    "[02:19:24] \ud83d\udd14 Migration #827 detected",
+    "[02:19:36] \ud83d\udcca Mig:827 Track:53 Upd:334964 Pos:0 SOL:$89.14"
   ],
   "balance": {
     "start": 4.077029,
@@ -581,12 +581,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 89.16,
+  "sol_price": 89.14,
   "bot_stats": {
-    "migrations_seen": 823,
+    "migrations_seen": 827,
     "migrations_added": 70,
     "pools_tracking": 53,
-    "price_updates": 333532,
+    "price_updates": 335038,
     "migrations_rejected": 0,
     "liquidity_rejected": 1,
     "bc_graduated": 71,
