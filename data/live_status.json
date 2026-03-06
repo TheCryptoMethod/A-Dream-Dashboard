@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-06T21:35:19.796950+00:00",
-  "uptime_seconds": 88081.8,
+  "updated_at": "2026-03-06T21:36:20.901321+00:00",
+  "uptime_seconds": 88142.9,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,15 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[21:29:00] \ud83d\udd14 Migration #4078 detected",
-    "[21:29:06] \ud83d\udd14 Migration #4079 detected",
-    "[21:29:16] \ud83d\udd14 Migration #4080 detected",
-    "[21:29:16] \ud83d\udcca Mig:4080 Track:220 Upd:2257915 Pos:0 SOL:$84.64",
-    "[21:29:18] \ud83d\udd14 Migration #4081 detected",
-    "[21:29:46] \ud83d\udd14 Migration #4082 detected",
-    "[21:30:03] \ud83d\udd14 Migration #4083 detected",
-    "[21:30:14] \ud83d\udd14 Migration #4084 detected",
-    "[21:30:17] \ud83d\udcca Mig:4084 Track:220 Upd:2259101 Pos:0 SOL:$84.62",
     "[21:30:34] \ud83d\udd14 Migration #4085 detected",
     "[21:31:18] \ud83d\udcca Mig:4085 Track:220 Upd:2260236 Pos:0 SOL:$84.61",
     "[21:31:19] \ud83d\udd14 Migration #4086 detected",
@@ -564,7 +555,16 @@
     "[21:34:29] \ud83d\udd14 Migration #4100 detected",
     "[21:34:56] \ud83d\udd14 Migration #4101 detected",
     "[21:35:14] \ud83d\udd14 Migration #4102 detected",
-    "[21:35:17] \ud83d\udd14 Migration #4103 detected"
+    "[21:35:17] \ud83d\udd14 Migration #4103 detected",
+    "[21:35:23] \ud83d\udcca Mig:4103 Track:220 Upd:2265066 Pos:0 SOL:$84.51",
+    "[21:35:28] \ud83d\udd14 Migration #4104 detected",
+    "[21:35:48] \ud83d\udd14 Migration #4105 detected",
+    "[21:36:00] \ud83d\udd14 Migration #4106 detected",
+    "[21:36:06] \ud83d\udd14 Migration #4107 detected",
+    "[21:36:09] \ud83d\udee1\ufe0f Signal gate: 6uF8frpxKLBg\u2026 | top5=57.1%>40%",
+    "[21:36:09] \ud83d\udeab Disqualified: 6uF8frpxKLBg\u2026 | signal_gate_failed | 2.8m",
+    "[21:36:10] \ud83d\udee1\ufe0f Signal gate: GY8MQxZCfumA\u2026 | rugcheck=10501>5000, top5=65.8%>40%",
+    "[21:36:10] \ud83d\udeab Disqualified: GY8MQxZCfumA\u2026 | signal_gate_failed | 2.3m"
   ],
   "balance": {
     "start": 4.077029,
@@ -581,12 +581,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.51,
+  "sol_price": 84.5,
   "bot_stats": {
-    "migrations_seen": 4103,
+    "migrations_seen": 4107,
     "migrations_added": 306,
-    "pools_tracking": 220,
-    "price_updates": 2265009,
+    "pools_tracking": 218,
+    "price_updates": 2266046,
     "migrations_rejected": 0,
     "liquidity_rejected": 3,
     "bc_graduated": 309,
