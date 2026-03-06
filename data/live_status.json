@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-06T08:35:14.400910+00:00",
-  "uptime_seconds": 41276.4,
+  "updated_at": "2026-03-06T08:36:15.659941+00:00",
+  "uptime_seconds": 41337.7,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,11 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[08:25:55] \ud83d\udd14 Migration #1809 detected",
-    "[08:26:00] \ud83d\udcca Mig:1809 Track:95 Upd:826373 Pos:0 SOL:$88.44",
-    "[08:26:26] \ud83d\udd14 Migration #1810 detected",
-    "[08:26:59] \ud83d\udd14 Migration #1811 detected",
-    "[08:27:01] \ud83d\udcca Mig:1811 Track:95 Upd:827745 Pos:0 SOL:$88.44",
     "[08:27:06] \ud83d\udd14 Migration #1812 detected",
     "[08:27:53] \ud83d\udd14 Migration #1813 detected",
     "[08:28:02] \ud83d\udcca Mig:1813 Track:95 Upd:829029 Pos:0 SOL:$88.43",
@@ -564,7 +559,12 @@
     "[08:34:43] \ud83d\udd14 Migration #1836 detected",
     "[08:34:45] \ud83d\udd14 Migration #1837 detected",
     "[08:34:52] \ud83d\udd14 Migration #1838 detected",
-    "[08:35:11] \ud83d\udcca Mig:1838 Track:95 Upd:837770 Pos:0 SOL:$88.44"
+    "[08:35:11] \ud83d\udcca Mig:1838 Track:95 Upd:837770 Pos:0 SOL:$88.44",
+    "[08:35:26] \ud83d\udd14 Migration #1839 detected",
+    "[08:35:51] \ud83d\udd14 Migration #1840 detected",
+    "[08:35:54] \ud83d\udeab Disqualified: CBNxPuW9oYuX\u2026 | mcap_bucket_not_enabled | 16.1m",
+    "[08:36:03] \ud83d\udd14 Migration #1841 detected",
+    "[08:36:12] \ud83d\udcca Mig:1841 Track:94 Upd:838860 Pos:0 SOL:$88.45"
   ],
   "balance": {
     "start": 4.077029,
@@ -581,12 +581,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 88.44,
+  "sol_price": 88.45,
   "bot_stats": {
-    "migrations_seen": 1838,
+    "migrations_seen": 1841,
     "migrations_added": 133,
-    "pools_tracking": 95,
-    "price_updates": 837829,
+    "pools_tracking": 94,
+    "price_updates": 838898,
     "migrations_rejected": 0,
     "liquidity_rejected": 3,
     "bc_graduated": 136,
