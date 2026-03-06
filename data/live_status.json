@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-06T22:37:28.905614+00:00",
-  "uptime_seconds": 91810.9,
+  "updated_at": "2026-03-06T22:38:30.055876+00:00",
+  "uptime_seconds": 91872.1,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,14 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[22:28:22] \ud83d\udcca Mig:4271 Track:231 Upd:2335209 Pos:0 SOL:$84.67",
-    "[22:29:21] \ud83d\udd14 Migration #4272 detected",
-    "[22:29:23] \ud83d\udcca Mig:4272 Track:231 Upd:2336574 Pos:0 SOL:$84.68",
-    "[22:29:51] \ud83d\udee1\ufe0f Signal gate: Hbjwxdn9cjU2\u2026 | rugcheck=12501>5000, top5=51.4%>40%",
-    "[22:29:51] \ud83d\udeab Disqualified: Hbjwxdn9cjU2\u2026 | signal_gate_failed | 9.5m",
-    "[22:30:00] \ud83d\udd14 Migration #4273 detected",
-    "[22:30:20] \ud83d\udd14 Migration #4274 detected",
-    "[22:30:24] \ud83d\udcca Mig:4274 Track:230 Upd:2337805 Pos:0 SOL:$84.71",
     "[22:31:05] \ud83d\udd14 Migration #4275 detected",
     "[22:31:17] \ud83d\udd14 Migration #4276 detected",
     "[22:31:19] \u2705 BC Graduated: Fi9P7btK6jwP\u2026",
@@ -564,7 +556,15 @@
     "[22:36:39] \ud83d\udd14 Migration #4293 detected",
     "[22:37:05] \ud83d\udd14 Migration #4294 detected",
     "[22:37:20] \ud83d\udd14 Migration #4295 detected",
-    "[22:37:28] \ud83d\udd14 Migration #4296 detected"
+    "[22:37:28] \ud83d\udd14 Migration #4296 detected",
+    "[22:37:31] \ud83d\udee1\ufe0f Signal gate: DwDbxZhdDyqD\u2026 | top5=59.9%>40%",
+    "[22:37:31] \ud83d\udeab Disqualified: DwDbxZhdDyqD\u2026 | signal_gate_failed | 565.8m",
+    "[22:37:32] \ud83d\udcca Mig:4296 Track:231 Upd:2347925 Pos:0 SOL:$84.73",
+    "[22:37:54] \ud83d\udd14 Migration #4297 detected",
+    "[22:38:05] \ud83d\udd14 Migration #4298 detected",
+    "[22:38:13] \ud83d\udd14 Migration #4299 detected",
+    "[22:38:16] \ud83d\udd14 Migration #4300 detected",
+    "[22:38:22] \ud83d\udd14 Migration #4301 detected"
   ],
   "balance": {
     "start": 4.077029,
@@ -581,12 +581,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.73,
+  "sol_price": 84.74,
   "bot_stats": {
-    "migrations_seen": 4296,
+    "migrations_seen": 4301,
     "migrations_added": 326,
-    "pools_tracking": 232,
-    "price_updates": 2347835,
+    "pools_tracking": 231,
+    "price_updates": 2349189,
     "migrations_rejected": 0,
     "liquidity_rejected": 3,
     "bc_graduated": 329,
