@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-06T21:40:25.235344+00:00",
-  "uptime_seconds": 88387.3,
+  "updated_at": "2026-03-06T21:41:26.373729+00:00",
+  "uptime_seconds": 88448.4,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,10 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[21:33:52] \ud83d\udee1\ufe0f Signal gate: 3B68AziQchuK\u2026 | rugcheck=7701>5000, top5=62.0%>40%",
-    "[21:33:52] \ud83d\udeab Disqualified: 3B68AziQchuK\u2026 | signal_gate_failed | 1443.1m",
-    "[21:33:56] \ud83d\udd14 Migration #4096 detected",
-    "[21:34:05] \ud83d\udd14 Migration #4097 detected",
     "[21:34:14] \ud83d\udd14 Migration #4098 detected",
     "[21:34:22] \ud83d\udcca Mig:4098 Track:220 Upd:2263731 Pos:0 SOL:$84.52",
     "[21:34:25] \ud83d\udd14 Migration #4099 detected",
@@ -564,7 +560,11 @@
     "[21:40:14] \ud83d\udd14 Migration #4118 detected",
     "[21:40:15] \ud83d\udd14 Migration #4119 detected",
     "[21:40:19] \ud83d\udd14 Migration #4120 detected",
-    "[21:40:20] \ud83d\udd14 Migration #4121 detected"
+    "[21:40:20] \ud83d\udd14 Migration #4121 detected",
+    "[21:40:28] \ud83d\udcca Mig:4121 Track:219 Upd:2269346 Pos:0 SOL:$84.53",
+    "[21:40:34] \u2705 BC Graduated: 7r2PGPu5gtbE\u2026",
+    "[21:40:34] \ud83d\udce1 Tracking: 7r2PGPu5gtbEkd3W\u2026 | Pool #220",
+    "[21:41:05] \ud83d\udd14 Migration #4122 detected"
   ],
   "balance": {
     "start": 4.077029,
@@ -581,15 +581,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.53,
+  "sol_price": 84.54,
   "bot_stats": {
-    "migrations_seen": 4121,
-    "migrations_added": 307,
-    "pools_tracking": 219,
-    "price_updates": 2269294,
+    "migrations_seen": 4122,
+    "migrations_added": 308,
+    "pools_tracking": 220,
+    "price_updates": 2270679,
     "migrations_rejected": 0,
     "liquidity_rejected": 3,
-    "bc_graduated": 310,
+    "bc_graduated": 311,
     "entries_found": 0,
     "buys_success": 0,
     "buys_failed": 0
