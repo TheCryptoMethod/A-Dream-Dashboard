@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-06T05:33:02.409348+00:00",
-  "uptime_seconds": 30344.4,
+  "updated_at": "2026-03-06T05:34:03.641848+00:00",
+  "uptime_seconds": 30405.7,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,11 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[05:21:47] \ud83d\udcca Mig:1331 Track:75 Upd:618268 Pos:0 SOL:$88.09",
-    "[05:22:09] \ud83d\udd14 Migration #1332 detected",
-    "[05:22:28] \ud83d\udd14 Migration #1333 detected",
-    "[05:22:29] \ud83d\udd14 Migration #1334 detected",
-    "[05:22:36] \ud83d\udd14 Migration #1335 detected",
     "[05:22:48] \ud83d\udcca Mig:1335 Track:75 Upd:619582 Pos:0 SOL:$88.09",
     "[05:23:05] \ud83d\udd14 Migration #1336 detected",
     "[05:23:24] \ud83d\udd14 Migration #1337 detected",
@@ -564,7 +559,12 @@
     "[05:31:38] \ud83d\udd14 Migration #1356 detected",
     "[05:31:58] \ud83d\udcca Mig:1356 Track:76 Upd:631636 Pos:0 SOL:$87.92",
     "[05:32:28] \ud83d\udd14 Migration #1357 detected",
-    "[05:32:59] \ud83d\udcca Mig:1357 Track:76 Upd:633017 Pos:0 SOL:$87.91"
+    "[05:32:59] \ud83d\udcca Mig:1357 Track:76 Upd:633017 Pos:0 SOL:$87.91",
+    "[05:33:28] \ud83d\udee1\ufe0f Signal gate: 9VsMmkTHoqdC\u2026 | top5=53.2%>40%",
+    "[05:33:28] \ud83d\udeab Disqualified: 9VsMmkTHoqdC\u2026 | signal_gate_failed | 7.5m",
+    "[05:33:46] \ud83d\udd14 Migration #1358 detected",
+    "[05:34:00] \ud83d\udcca Mig:1358 Track:75 Upd:634288 Pos:0 SOL:$87.88",
+    "[05:34:00] \ud83d\udd14 Migration #1359 detected"
   ],
   "balance": {
     "start": 4.077029,
@@ -581,12 +581,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 87.91,
+  "sol_price": 87.88,
   "bot_stats": {
-    "migrations_seen": 1357,
+    "migrations_seen": 1359,
     "migrations_added": 104,
-    "pools_tracking": 76,
-    "price_updates": 633067,
+    "pools_tracking": 75,
+    "price_updates": 634361,
     "migrations_rejected": 0,
     "liquidity_rejected": 2,
     "bc_graduated": 106,
