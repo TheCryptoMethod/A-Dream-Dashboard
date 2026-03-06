@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-06T02:53:16.391813+00:00",
-  "uptime_seconds": 20758.4,
+  "updated_at": "2026-03-06T02:54:17.614990+00:00",
+  "uptime_seconds": 20819.6,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,10 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[02:43:18] \ud83d\udd14 Migration #902 detected",
-    "[02:43:18] \ud83d\udd14 Migration #903 detected",
-    "[02:43:24] \ud83d\udd14 Migration #904 detected",
-    "[02:44:02] \ud83d\udd14 Migration #905 detected",
     "[02:44:03] \ud83d\udcca Mig:905 Track:53 Upd:364752 Pos:0 SOL:$88.46",
     "[02:44:20] \ud83d\udd14 Migration #906 detected",
     "[02:44:33] \u2705 BC Graduated: ASXCrdGYRiMs\u2026",
@@ -564,7 +560,11 @@
     "[02:52:12] \ud83d\udcca Mig:923 Track:56 Upd:376184 Pos:0 SOL:$88.59",
     "[02:52:33] \ud83d\udd14 Migration #924 detected",
     "[02:52:33] \ud83d\udd14 Migration #925 detected",
-    "[02:53:13] \ud83d\udcca Mig:925 Track:56 Upd:377675 Pos:0 SOL:$88.58"
+    "[02:53:13] \ud83d\udcca Mig:925 Track:56 Upd:377675 Pos:0 SOL:$88.58",
+    "[02:53:25] \ud83d\udee1\ufe0f Signal gate: ASXCrdGYRiMs\u2026 | top5=53.4%>40%",
+    "[02:53:25] \ud83d\udeab Disqualified: ASXCrdGYRiMs\u2026 | signal_gate_failed | 8.9m",
+    "[02:53:34] \ud83d\udd14 Migration #926 detected",
+    "[02:54:14] \ud83d\udcca Mig:926 Track:55 Upd:379164 Pos:0 SOL:$88.55"
   ],
   "balance": {
     "start": 4.077029,
@@ -581,12 +581,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 88.58,
+  "sol_price": 88.55,
   "bot_stats": {
-    "migrations_seen": 925,
+    "migrations_seen": 926,
     "migrations_added": 77,
-    "pools_tracking": 56,
-    "price_updates": 377752,
+    "pools_tracking": 55,
+    "price_updates": 379249,
     "migrations_rejected": 0,
     "liquidity_rejected": 1,
     "bc_graduated": 78,
