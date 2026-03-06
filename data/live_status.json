@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-06T16:58:57.541097+00:00",
-  "uptime_seconds": 71499.6,
+  "updated_at": "2026-03-06T16:59:58.902743+00:00",
+  "uptime_seconds": 71560.9,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,11 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[16:51:48] \ud83d\udcca Mig:3250 Track:177 Upd:1711019 Pos:0 SOL:$84.74",
-    "[16:51:48] \ud83d\udd14 Migration #3251 detected",
-    "[16:51:53] \ud83d\udd14 Migration #3252 detected",
-    "[16:52:40] \ud83d\udee1\ufe0f Signal gate: 8jtJfBK49mUD\u2026 | top5=96.9%>40%",
-    "[16:52:40] \ud83d\udeab Disqualified: 8jtJfBK49mUD\u2026 | signal_gate_failed | 23.1m",
     "[16:52:49] \ud83d\udcca Mig:3252 Track:176 Upd:1713983 Pos:0 SOL:$84.69",
     "[16:52:49] \ud83d\udd14 Migration #3253 detected",
     "[16:53:14] \ud83d\udd14 Migration #3254 detected",
@@ -564,7 +559,12 @@
     "[16:58:51] \ud83d\udce1 Tracking: Hji55tH54Yau6dWQ\u2026 | Pool #178",
     "[16:58:55] \ud83d\udd14 Migration #3271 detected",
     "[16:58:56] \ud83d\udd14 Migration #3272 detected",
-    "[16:58:57] \ud83d\udcca Mig:3272 Track:178 Upd:1729772 Pos:0 SOL:$84.48"
+    "[16:58:57] \ud83d\udcca Mig:3272 Track:178 Upd:1729772 Pos:0 SOL:$84.48",
+    "[16:59:02] \ud83d\udd14 Migration #3273 detected",
+    "[16:59:02] \ud83d\udd14 Migration #3274 detected",
+    "[16:59:39] \ud83d\udd14 Migration #3275 detected",
+    "[16:59:44] \ud83d\udd14 Migration #3276 detected",
+    "[16:59:58] \ud83d\udcca Mig:3276 Track:178 Upd:1732129 Pos:0 SOL:$84.46"
   ],
   "balance": {
     "start": 4.077029,
@@ -581,12 +581,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.48,
+  "sol_price": 84.46,
   "bot_stats": {
-    "migrations_seen": 3272,
+    "migrations_seen": 3276,
     "migrations_added": 246,
     "pools_tracking": 178,
-    "price_updates": 1729772,
+    "price_updates": 1732129,
     "migrations_rejected": 0,
     "liquidity_rejected": 3,
     "bc_graduated": 249,
