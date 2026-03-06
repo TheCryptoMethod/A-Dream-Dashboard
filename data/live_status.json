@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-06T00:39:54.247728+00:00",
-  "uptime_seconds": 12756.3,
+  "updated_at": "2026-03-06T00:40:55.156037+00:00",
+  "uptime_seconds": 12817.2,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,11 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[00:29:15] \ud83d\udd14 Migration #476 detected",
-    "[00:29:41] \ud83d\udcca Mig:476 Track:37 Upd:192617 Pos:0 SOL:$88.88",
-    "[00:29:43] \ud83d\udd14 Migration #477 detected",
-    "[00:30:09] \ud83d\udd14 Migration #478 detected",
-    "[00:30:42] \ud83d\udcca Mig:478 Track:37 Upd:194111 Pos:0 SOL:$88.87",
     "[00:31:12] \ud83d\udd14 Migration #479 detected",
     "[00:31:31] \ud83d\udd14 Migration #480 detected",
     "[00:31:31] \ud83d\udd14 Migration #481 detected",
@@ -564,7 +559,12 @@
     "[00:39:08] \ud83d\udd14 Migration #500 detected",
     "[00:39:21] \ud83d\udd14 Migration #501 detected",
     "[00:39:45] \ud83d\udd14 Migration #502 detected",
-    "[00:39:51] \ud83d\udcca Mig:502 Track:38 Upd:205670 Pos:0 SOL:$88.82"
+    "[00:39:51] \ud83d\udcca Mig:502 Track:38 Upd:205670 Pos:0 SOL:$88.82",
+    "[00:39:55] \ud83d\udd14 Migration #503 detected",
+    "[00:40:00] \ud83d\udd14 Migration #504 detected",
+    "[00:40:44] \ud83d\udee1\ufe0f Signal gate: CDzGtPjrSJSS\u2026 | rugcheck=6131>5000, top5=81.9%>40%",
+    "[00:40:44] \ud83d\udeab Disqualified: CDzGtPjrSJSS\u2026 | signal_gate_failed | 5.0m",
+    "[00:40:52] \ud83d\udcca Mig:504 Track:37 Upd:206680 Pos:0 SOL:$88.81"
   ],
   "balance": {
     "start": 4.077029,
@@ -581,12 +581,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 88.82,
+  "sol_price": 88.81,
   "bot_stats": {
-    "migrations_seen": 502,
+    "migrations_seen": 504,
     "migrations_added": 49,
-    "pools_tracking": 38,
-    "price_updates": 205724,
+    "pools_tracking": 37,
+    "price_updates": 206735,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 49,
