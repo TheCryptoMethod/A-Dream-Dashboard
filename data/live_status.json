@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-06T00:42:57.221812+00:00",
-  "uptime_seconds": 12939.3,
+  "updated_at": "2026-03-06T00:43:58.183879+00:00",
+  "uptime_seconds": 13000.2,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,11 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[00:35:44] \u2705 BC Graduated: CDzGtPjrSJSS\u2026",
-    "[00:35:44] \ud83d\udce1 Tracking: CDzGtPjrSJSS4fbd\u2026 | Pool #38",
-    "[00:35:47] \ud83d\udcca Mig:488 Track:38 Upd:201088 Pos:0 SOL:$88.84",
-    "[00:35:56] \ud83d\udd14 Migration #489 detected",
-    "[00:36:01] \ud83d\udd14 Migration #490 detected",
     "[00:36:28] \ud83d\udd14 Migration #491 detected",
     "[00:36:48] \ud83d\udcca Mig:491 Track:38 Upd:202468 Pos:0 SOL:$88.83",
     "[00:36:59] \ud83d\udd14 Migration #492 detected",
@@ -564,7 +559,12 @@
     "[00:42:28] \ud83d\udd14 Migration #512 detected",
     "[00:42:38] \u2705 BC Graduated: 8eFA786cjFQc\u2026",
     "[00:42:38] \ud83d\udce1 Tracking: 8eFA786cjFQc7icw\u2026 | Pool #39",
-    "[00:42:54] \ud83d\udcca Mig:512 Track:39 Upd:208638 Pos:0 SOL:$88.82"
+    "[00:42:54] \ud83d\udcca Mig:512 Track:39 Upd:208638 Pos:0 SOL:$88.82",
+    "[00:43:26] \ud83d\udd14 Migration #513 detected",
+    "[00:43:40] \ud83d\udd14 Migration #514 detected",
+    "[00:43:48] \ud83d\udee1\ufe0f Signal gate: 2ysczkzFLAzc\u2026 | top5=52.6%>40%",
+    "[00:43:48] \ud83d\udeab Disqualified: 2ysczkzFLAzc\u2026 | signal_gate_failed | 1.3m",
+    "[00:43:55] \ud83d\udcca Mig:514 Track:38 Upd:210042 Pos:0 SOL:$88.81"
   ],
   "balance": {
     "start": 4.077029,
@@ -581,12 +581,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 88.82,
+  "sol_price": 88.81,
   "bot_stats": {
-    "migrations_seen": 512,
+    "migrations_seen": 514,
     "migrations_added": 51,
-    "pools_tracking": 39,
-    "price_updates": 208700,
+    "pools_tracking": 38,
+    "price_updates": 210092,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 51,
