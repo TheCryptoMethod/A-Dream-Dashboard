@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-06T12:37:54.847376+00:00",
-  "uptime_seconds": 55836.9,
+  "updated_at": "2026-03-06T12:38:55.878239+00:00",
+  "uptime_seconds": 55897.9,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,9 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[12:26:29] \ud83d\udce1 Tracking: DEVGhyuhVdBSS3Ds\u2026 | Pool #130",
-    "[12:26:41] \ud83d\udcca Mig:2477 Track:130 Upd:1167938 Pos:0 SOL:$86.97",
-    "[12:26:43] \ud83d\udd14 Migration #2478 detected",
     "[12:27:16] \ud83d\udd14 Migration #2479 detected",
     "[12:27:42] \ud83d\udcca Mig:2479 Track:130 Upd:1169901 Pos:0 SOL:$86.98",
     "[12:27:56] \ud83d\udd14 Migration #2480 detected",
@@ -564,7 +561,10 @@
     "[12:37:02] \ud83d\udd14 Migration #2496 detected",
     "[12:37:09] \ud83d\udd14 Migration #2497 detected",
     "[12:37:33] \ud83d\udd14 Migration #2498 detected",
-    "[12:37:54] \ud83d\udcca Mig:2498 Track:133 Upd:1189193 Pos:0 SOL:$86.64"
+    "[12:37:54] \ud83d\udcca Mig:2498 Track:133 Upd:1189193 Pos:0 SOL:$86.64",
+    "[12:38:51] \ud83d\udee1\ufe0f Signal gate: YW5xZKtt8ynn\u2026 | top5=59.6%>40%",
+    "[12:38:51] \ud83d\udeab Disqualified: YW5xZKtt8ynn\u2026 | signal_gate_failed | 3.3m",
+    "[12:38:55] \ud83d\udcca Mig:2498 Track:132 Upd:1191041 Pos:0 SOL:$86.60"
   ],
   "balance": {
     "start": 4.077029,
@@ -581,12 +581,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 86.64,
+  "sol_price": 86.6,
   "bot_stats": {
     "migrations_seen": 2498,
     "migrations_added": 180,
-    "pools_tracking": 133,
-    "price_updates": 1189193,
+    "pools_tracking": 132,
+    "price_updates": 1191041,
     "migrations_rejected": 0,
     "liquidity_rejected": 3,
     "bc_graduated": 183,
