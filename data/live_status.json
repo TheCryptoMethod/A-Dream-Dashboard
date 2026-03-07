@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-07T01:36:42.751610+00:00",
-  "uptime_seconds": 102564.8,
+  "updated_at": "2026-03-07T01:37:43.810748+00:00",
+  "uptime_seconds": 102625.8,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,11 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[01:28:26] \ud83d\udd14 Migration #4785 detected",
-    "[01:28:37] \ud83d\udcca Mig:4785 Track:255 Upd:2571695 Pos:0 SOL:$84.65",
-    "[01:29:09] \ud83d\udd14 Migration #4786 detected",
-    "[01:29:28] \ud83d\udd14 Migration #4787 detected",
-    "[01:29:29] \ud83d\udd14 Migration #4788 detected",
     "[01:29:38] \ud83d\udcca Mig:4788 Track:255 Upd:2573400 Pos:0 SOL:$84.66",
     "[01:29:39] \ud83d\udd14 Migration #4789 detected",
     "[01:29:42] \ud83d\udee1\ufe0f Signal gate: 4n3KdRWz24RS\u2026 | top5=54.8%>40%",
@@ -564,7 +559,12 @@
     "[01:35:16] \ud83d\udd14 Migration #4808 detected",
     "[01:35:25] \ud83d\udd14 Migration #4809 detected",
     "[01:35:45] \ud83d\udcca Mig:4809 Track:254 Upd:2581389 Pos:0 SOL:$84.64",
-    "[01:36:08] \ud83d\udd14 Migration #4810 detected"
+    "[01:36:08] \ud83d\udd14 Migration #4810 detected",
+    "[01:36:46] \ud83d\udcca Mig:4810 Track:254 Upd:2582391 Pos:0 SOL:$84.65",
+    "[01:37:02] \ud83d\udd14 Migration #4811 detected",
+    "[01:37:08] \ud83d\udd14 Migration #4812 detected",
+    "[01:37:37] \ud83d\udee1\ufe0f Signal gate: vnCnPd5qBTn3\u2026 | top5=51.5%>40%",
+    "[01:37:37] \ud83d\udeab Disqualified: vnCnPd5qBTn3\u2026 | signal_gate_failed | 529.0m"
   ],
   "balance": {
     "start": 4.077029,
@@ -581,12 +581,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.65,
+  "sol_price": 84.66,
   "bot_stats": {
-    "migrations_seen": 4810,
+    "migrations_seen": 4812,
     "migrations_added": 365,
-    "pools_tracking": 254,
-    "price_updates": 2582335,
+    "pools_tracking": 253,
+    "price_updates": 2583420,
     "migrations_rejected": 0,
     "liquidity_rejected": 3,
     "bc_graduated": 368,
