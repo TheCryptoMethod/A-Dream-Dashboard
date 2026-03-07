@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "last_updated": "2026-03-05T20:52:03.951070+00:00",
+  "last_updated": "2026-03-07T11:19:41.623785+00:00",
   "methods": {
     "M1": [
       {
@@ -22779,6 +22779,383 @@
       }
     ],
     "M4": [
+      {
+        "variant_key": "b73d5893bd40",
+        "db_name": "backtest_30d.db",
+        "db_hash": "39e71437ff3f2223",
+        "fingerprint": "631624ecb603",
+        "flags": "methods=M4 realistic buy_sol=0.3 signal_gate sm_gate=0",
+        "data_label": "backtest_30d.db | 938 mints | 2026-03-03 → 2026-03-07 | methods=M4 realistic buy_sol=0.3 signal_gate sm_gate=0",
+        "updated_at": "2026-03-07T11:19:41.623785+00:00",
+        "run_count": 1,
+        "current": {
+          "method": "M4",
+          "config": {
+            "method": "M4",
+            "entry_params": {
+              "drop1_fib": 0.786,
+              "rev1_ratio": 0.5,
+              "drop2_fib": 0.236
+            },
+            "mcap_min": 30000,
+            "mcap_max": 1000000,
+            "time_to_entry_min_ms": 0,
+            "time_to_entry_max_ms": 86400000,
+            "dd_at_entry_min": 0,
+            "dd_at_entry_max": 100,
+            "hour_buckets": [],
+            "sl_pct": 29,
+            "tp_pct": 140,
+            "trailing_activation_pct": 100,
+            "trailing_pct": 5,
+            "has_trailing": true,
+            "fingerprint": "d88d700a633a",
+            "signal_rugcheck_max": -1,
+            "signal_top1_max_pct": -1.0,
+            "post_entry_filters": {}
+          },
+          "env_block": "# ═══ A_Dream Strategy: M4 ═══\nTRADE_METHOD=M4\nENTRY_DROP1_FIB=0.786\nENTRY_REV1_RATIO=0.5\nENTRY_DROP2_FIB=0.236\n# Pre-Entry Filters\nENTRY_MCAP_MIN=30000\nENTRY_MCAP_MAX=1000000\n# Exit Model\nSL_PCT=29\nTP_PCT=140\nTRAILING_ACTIVATION_PCT=100\nTRAILING_PCT=5",
+          "n_total_entries": 44805,
+          "n_filtered_entries": 62,
+          "gates_passed": 1,
+          "all_11_passed": false,
+          "metrics": {
+            "n_trades": 62,
+            "win_rate": 0.1935483870967742,
+            "avg_pnl": -7.1804,
+            "total_pnl": -445.18,
+            "profit_factor": 0.739,
+            "sortino": -8.985,
+            "sharpe": -5.39,
+            "max_dd": 100.0,
+            "risk_of_ruin": 100.0,
+            "n_early_exits": 0
+          },
+          "train_test": {
+            "train_n": 46,
+            "test_n": 62,
+            "train_avg_pnl": 12.8661,
+            "test_avg_pnl": -7.1804,
+            "train_win_rate": 0.3478,
+            "test_win_rate": 0.1935,
+            "train_period": "03.03 12:58 → 06.03 01:45",
+            "test_period": "06.03 01:45 → 07.03 10:55",
+            "split_ratio": 0.6
+          },
+          "gates": {
+            "SIG": false,
+            "EQ": false,
+            "WF": 0,
+            "MC": false,
+            "PLT": false,
+            "REG": false,
+            "ROB": true,
+            "tT": false,
+            "DSR": false,
+            "WRC": false,
+            "HHI": false
+          },
+          "gate_values": {
+            "SIG": "WR=19.4%,PF=0.74,EV=-7.18%",
+            "EQ": "DD=100%,Srt=-8.99,equity<1,RoR=100%",
+            "WF": "OOS=-5.442%",
+            "MC": "p=0.8335",
+            "PLT": "ratio=0.00",
+            "REG": "neg=0.80",
+            "ROB": "h=0.10,m=0.02",
+            "tT": "t=-0.99,p=0.3204",
+            "DSR": "DSR=0.0%,E[max]=0.000",
+            "WRC": "p=0.9320",
+            "HHI": "HHI=0.342,3/6prof"
+          },
+          "lift_filters": {
+            "mcap": {
+              "<30k": {
+                "lift": 0.73,
+                "count": 44,
+                "good": false
+              },
+              "30-60k": {
+                "lift": 1.734,
+                "count": 33,
+                "good": true
+              },
+              "60-100k": {
+                "lift": 0.0,
+                "count": 5,
+                "good": true
+              },
+              "100-200k": {
+                "lift": 0.771,
+                "count": 7,
+                "good": true
+              },
+              "200-500k": {
+                "lift": 0.0,
+                "count": 1,
+                "good": true
+              },
+              "500k-1M": {
+                "lift": 0.0,
+                "count": 0,
+                "good": true
+              }
+            },
+            "time": {
+              "0-1m": {
+                "lift": 0.0,
+                "count": 3,
+                "good": true
+              },
+              "1-5m": {
+                "lift": 1.542,
+                "count": 8,
+                "good": true
+              },
+              "5-15m": {
+                "lift": 1.779,
+                "count": 18,
+                "good": true
+              },
+              "15-60m": {
+                "lift": 0.661,
+                "count": 32,
+                "good": false
+              },
+              "1-6h": {
+                "lift": 1.156,
+                "count": 20,
+                "good": true
+              },
+              "6h+": {
+                "lift": 0.578,
+                "count": 9,
+                "good": true
+              }
+            },
+            "dd": {
+              "0-5%": {
+                "lift": 0.0,
+                "count": 0,
+                "good": true
+              },
+              "5-10%": {
+                "lift": 0.0,
+                "count": 0,
+                "good": true
+              },
+              "10-20%": {
+                "lift": 0.0,
+                "count": 2,
+                "good": true
+              },
+              "20-30%": {
+                "lift": 0.631,
+                "count": 25,
+                "good": true
+              },
+              "30-50%": {
+                "lift": 1.217,
+                "count": 48,
+                "good": true
+              },
+              "50%+": {
+                "lift": 1.156,
+                "count": 15,
+                "good": true
+              }
+            },
+            "hour": {
+              "00-03h": {
+                "lift": 0.712,
+                "count": 15,
+                "good": true
+              },
+              "03-06h": {
+                "lift": 3.083,
+                "count": 10,
+                "good": true
+              },
+              "06-09h": {
+                "lift": 0.771,
+                "count": 7,
+                "good": true
+              },
+              "09-12h": {
+                "lift": 0.0,
+                "count": 0,
+                "good": true
+              },
+              "12-15h": {
+                "lift": 0.771,
+                "count": 7,
+                "good": true
+              },
+              "15-18h": {
+                "lift": 0.617,
+                "count": 17,
+                "good": true
+              },
+              "18-21h": {
+                "lift": 0.816,
+                "count": 20,
+                "good": true
+              },
+              "21-24h": {
+                "lift": 1.261,
+                "count": 14,
+                "good": true
+              }
+            },
+            "rugcheck": {
+              "Safe(0-500)": {
+                "lift": 1.0,
+                "count": 90,
+                "good": true
+              },
+              "Low(500-2k)": {
+                "lift": 0.0,
+                "count": 0,
+                "good": true
+              },
+              "Med(2k-5k)": {
+                "lift": 0.0,
+                "count": 0,
+                "good": true
+              },
+              "High(5k+)": {
+                "lift": 0.0,
+                "count": 0,
+                "good": true
+              }
+            },
+            "early_buyers": {
+              "0-5": {
+                "lift": 0.0,
+                "count": 1,
+                "good": true
+              },
+              "5-15": {
+                "lift": 1.542,
+                "count": 4,
+                "good": true
+              },
+              "15-30": {
+                "lift": 1.11,
+                "count": 62,
+                "good": true
+              },
+              "30+": {
+                "lift": 0.694,
+                "count": 23,
+                "good": true
+              }
+            },
+            "top1_holder": {
+              "0-10%": {
+                "lift": 0.0,
+                "count": 0,
+                "good": true
+              },
+              "10-25%": {
+                "lift": 6.938,
+                "count": 5,
+                "good": true
+              },
+              "25-50%": {
+                "lift": 0.859,
+                "count": 83,
+                "good": true
+              },
+              "50%+": {
+                "lift": 0.0,
+                "count": 2,
+                "good": true
+              }
+            }
+          },
+          "post_entry_filters": {},
+          "exit_distribution": {
+            "sl": {
+              "count": 49,
+              "avg_pnl": -34.3,
+              "min_pnl": -34.3,
+              "max_pnl": -34.3
+            },
+            "timeout": {
+              "count": 1,
+              "avg_pnl": -25.05,
+              "min_pnl": -25.05,
+              "max_pnl": -25.05
+            },
+            "trailing": {
+              "count": 9,
+              "avg_pnl": 93.6,
+              "min_pnl": 27.26,
+              "max_pnl": 110.97
+            },
+            "tp": {
+              "count": 3,
+              "avg_pnl": 139.4,
+              "min_pnl": 139.4,
+              "max_pnl": 139.4
+            }
+          },
+          "trail_slippage": {
+            "n_trailing": 9,
+            "n_gaps": 7,
+            "avg_gap": 2.63,
+            "worst_gap": 5.84,
+            "total_gap_cost": 18.39,
+            "n_negative_trails": 0,
+            "worst_examples": [
+              {
+                "expected": 95.8,
+                "actual": 90.0,
+                "gap": 5.8
+              },
+              {
+                "expected": 111.7,
+                "actual": 107.4,
+                "gap": 4.3
+              },
+              {
+                "expected": 110.0,
+                "actual": 107.3,
+                "gap": 2.7
+              },
+              {
+                "expected": 99.6,
+                "actual": 97.2,
+                "gap": 2.4
+              },
+              {
+                "expected": 105.3,
+                "actual": 103.6,
+                "gap": 1.7
+              }
+            ]
+          },
+          "sub_strategy": {
+            "drop1_fib": 0.786,
+            "rev1_ratio": 0.5,
+            "drop2_fib": 0.236
+          },
+          "_run_meta": {
+            "db_name": "backtest_30d.db",
+            "db_hash": "39e71437ff3f2223",
+            "fingerprint": "631624ecb603",
+            "flags": "methods=M4 realistic buy_sol=0.3 signal_gate sm_gate=0",
+            "total_entries": 44805,
+            "unique_mints": 938,
+            "date_from": "2026-03-03",
+            "date_to": "2026-03-07",
+            "time_span": "3.9d",
+            "timestamp": "2026-03-07T11:19:41.623785+00:00"
+          }
+        },
+        "history": []
+      },
       {
         "variant_key": "010142efd5cc",
         "db_name": "backtest_30d.db",
