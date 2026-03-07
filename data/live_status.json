@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-07T07:29:02.949621+00:00",
-  "uptime_seconds": 123705.0,
+  "updated_at": "2026-03-07T07:30:03.987476+00:00",
+  "uptime_seconds": 123766.0,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,12 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[07:21:47] \ud83d\udd14 Migration #5957 detected",
-    "[07:22:00] \u2705 BC Graduated: Fn9fptkMunMs\u2026",
-    "[07:22:00] \ud83d\udce1 Tracking: Fn9fptkMunMsexha\u2026 | Pool #303",
-    "[07:22:02] \ud83d\udcca Mig:5957 Track:303 Upd:3077278 Pos:0 SOL:$84.07",
-    "[07:22:14] \ud83d\udd14 Migration #5958 detected",
-    "[07:22:27] \ud83d\udd14 Migration #5959 detected",
     "[07:22:33] \ud83d\udd14 Migration #5960 detected",
     "[07:22:43] \ud83d\udd14 Migration #5961 detected",
     "[07:22:50] \ud83d\udd14 Migration #5962 detected",
@@ -564,7 +558,13 @@
     "[07:28:08] \ud83d\udcca Mig:5984 Track:303 Upd:3088150 Pos:0 SOL:$84.10",
     "[07:28:10] \u2705 BC Graduated: 4XHLk8YXahbH\u2026",
     "[07:28:10] \ud83d\udce1 Tracking: 4XHLk8YXahbHfA98\u2026 | Pool #304",
-    "[07:28:35] \ud83d\udd14 Migration #5985 detected"
+    "[07:28:35] \ud83d\udd14 Migration #5985 detected",
+    "[07:29:06] \ud83d\udd14 Migration #5986 detected",
+    "[07:29:09] \ud83d\udcca Mig:5986 Track:304 Upd:3090552 Pos:0 SOL:$84.10",
+    "[07:29:12] \ud83d\udd14 Migration #5987 detected",
+    "[07:29:34] \ud83d\udd14 Migration #5988 detected",
+    "[07:29:55] \ud83d\udee1\ufe0f Signal gate: EFEU5MatSZQu\u2026 | mint_authority=ON, freeze_authority=ON, top5=90.7%>40%",
+    "[07:29:55] \ud83d\udeab Disqualified: EFEU5MatSZQu\u2026 | signal_gate_failed | 59.7m"
   ],
   "balance": {
     "start": 4.077029,
@@ -583,10 +583,10 @@
   },
   "sol_price": 84.1,
   "bot_stats": {
-    "migrations_seen": 5985,
+    "migrations_seen": 5988,
     "migrations_added": 437,
-    "pools_tracking": 304,
-    "price_updates": 3090309,
+    "pools_tracking": 303,
+    "price_updates": 3092358,
     "migrations_rejected": 0,
     "liquidity_rejected": 3,
     "bc_graduated": 440,
