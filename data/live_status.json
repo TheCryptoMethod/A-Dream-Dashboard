@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-07T12:15:25.249600+00:00",
-  "updated_at": "2026-03-07T18:35:26.996309+00:00",
-  "uptime_seconds": 22801.7,
+  "updated_at": "2026-03-07T18:36:28.048617+00:00",
+  "uptime_seconds": 22862.8,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -28,11 +28,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[18:27:47] \ud83d\udd14 Migration #1297 detected",
-    "[18:28:16] \ud83d\udcca Mig:1297 Track:68 Upd:405963 Pos:0 SOL:$83.41",
-    "[18:28:41] \ud83d\udd14 Migration #1298 detected",
-    "[18:28:42] \ud83d\udd14 Migration #1299 detected",
-    "[18:29:11] \ud83d\udd14 Migration #1300 detected",
     "[18:29:17] \ud83d\udcca Mig:1300 Track:68 Upd:407883 Pos:0 SOL:$83.40",
     "[18:29:18] \ud83d\udd14 Migration #1301 detected",
     "[18:29:24] \ud83d\udd14 Migration #1302 detected",
@@ -67,7 +62,12 @@
     "[18:34:37] \ud83d\udd14 Migration #1324 detected",
     "[18:34:43] \ud83d\udd14 Migration #1325 detected",
     "[18:34:54] \ud83d\udd14 Migration #1326 detected",
-    "[18:35:23] \ud83d\udcca Mig:1326 Track:69 Upd:419875 Pos:0 SOL:$83.41"
+    "[18:35:23] \ud83d\udcca Mig:1326 Track:69 Upd:419875 Pos:0 SOL:$83.41",
+    "[18:35:55] \ud83d\udd14 Migration #1327 detected",
+    "[18:36:05] \ud83d\udd14 Migration #1328 detected",
+    "[18:36:18] \u2705 BC Graduated: 2b6UnavrCH72\u2026",
+    "[18:36:18] \ud83d\udce1 Tracking: 2b6UnavrCH72Rn6z\u2026 | Pool #70",
+    "[18:36:25] \ud83d\udcca Mig:1328 Track:70 Upd:421676 Pos:0 SOL:$83.38"
   ],
   "balance": {
     "start": 4.077029,
@@ -84,15 +84,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 83.41,
+  "sol_price": 83.38,
   "bot_stats": {
-    "migrations_seen": 1326,
-    "migrations_added": 78,
-    "pools_tracking": 69,
-    "price_updates": 419968,
+    "migrations_seen": 1328,
+    "migrations_added": 79,
+    "pools_tracking": 70,
+    "price_updates": 421775,
     "migrations_rejected": 0,
     "liquidity_rejected": 1,
-    "bc_graduated": 79,
+    "bc_graduated": 80,
     "entries_found": 0,
     "buys_success": 0,
     "buys_failed": 0
