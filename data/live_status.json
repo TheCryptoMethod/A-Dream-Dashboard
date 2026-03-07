@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-07T12:15:25.249600+00:00",
-  "updated_at": "2026-03-07T21:59:16.734743+00:00",
-  "uptime_seconds": 35031.5,
+  "updated_at": "2026-03-07T22:00:17.869835+00:00",
+  "uptime_seconds": 35092.6,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -28,11 +28,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[21:49:01] \ud83d\udd14 Migration #1851 detected",
-    "[21:49:05] \ud83d\udcca Mig:1851 Track:107 Upd:750204 Pos:0 SOL:$83.01",
-    "[21:49:47] \ud83d\udd14 Migration #1852 detected",
-    "[21:50:06] \ud83d\udcca Mig:1852 Track:107 Upd:752247 Pos:0 SOL:$83.01",
-    "[21:51:08] \ud83d\udcca Mig:1852 Track:107 Upd:754174 Pos:0 SOL:$83.03",
     "[21:51:17] \ud83d\udd14 Migration #1853 detected",
     "[21:51:35] \ud83d\udd14 Migration #1854 detected",
     "[21:51:44] \ud83d\udd14 Migration #1855 detected",
@@ -67,7 +62,12 @@
     "[21:58:35] \ud83d\udd14 Migration #1875 detected",
     "[21:58:58] \ud83d\udd14 Migration #1876 detected",
     "[21:59:02] \ud83d\udd14 Migration #1877 detected",
-    "[21:59:16] \ud83d\udcca Mig:1877 Track:108 Upd:770923 Pos:0 SOL:$83.12"
+    "[21:59:16] \ud83d\udcca Mig:1877 Track:108 Upd:770923 Pos:0 SOL:$83.12",
+    "[21:59:24] \ud83d\udd14 Migration #1878 detected",
+    "[21:59:37] \u2705 BC Graduated: ATkaxFrmx3ox\u2026",
+    "[21:59:37] \ud83d\udca7 Liquidity rejected: 8.8 SOL < 15.0 SOL",
+    "[21:59:40] \ud83d\udd14 Migration #1879 detected",
+    "[22:00:17] \ud83d\udcca Mig:1879 Track:108 Upd:773072 Pos:0 SOL:$83.15"
   ],
   "balance": {
     "start": 4.077029,
@@ -84,15 +84,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 83.12,
+  "sol_price": 83.15,
   "bot_stats": {
-    "migrations_seen": 1877,
+    "migrations_seen": 1879,
     "migrations_added": 123,
     "pools_tracking": 108,
-    "price_updates": 770923,
+    "price_updates": 773072,
     "migrations_rejected": 0,
-    "liquidity_rejected": 1,
-    "bc_graduated": 124,
+    "liquidity_rejected": 2,
+    "bc_graduated": 125,
     "entries_found": 0,
     "buys_success": 0,
     "buys_failed": 0
