@@ -1,20 +1,49 @@
 {
-  "status": "offline",
-  "updated_at": "2026-03-07T12:15:23.008481+00:00",
-  "last_session": {
-    "started_at": "2026-03-05T21:07:17.966583+00:00",
-    "ended_at": "2026-03-07T12:15:22.690569+00:00",
-    "duration_seconds": 140884.7,
-    "duration_formatted": "39h 8m 4s",
+  "status": "live",
+  "started_at": "2026-03-07T12:15:25.249600+00:00",
+  "updated_at": "2026-03-07T12:15:25.249728+00:00",
+  "uptime_seconds": 0.0,
+  "method": "M4",
+  "strategy": {
     "method": "M4",
-    "dry_run": false,
-    "balance_start": 4.077029,
-    "balance_end": 4.077029,
-    "pnl_sol": 0.0,
-    "pnl_pct": 0.0,
-    "total_trades": 0,
+    "entry_params": {
+      "drop1_fib": 0.786,
+      "rev1_ratio": 0.5,
+      "drop2_fib": 0.236
+    },
+    "source": "backtest",
+    "sl_pct": 29,
+    "tp_pct": 140,
+    "trailing_activation_pct": 100,
+    "trailing_pct": 5,
+    "mcap_min": 30000,
+    "mcap_max": 1000000,
+    "gates_passed": 1,
+    "all_11_passed": false,
+    "backtest_avg_pnl": -7.1804,
+    "backtest_win_rate": 19.35483870967742,
+    "backtest_sortino": -8.985,
+    "backtest_n_trades": 62,
+    "post_entry_filters": {}
+  },
+  "dry_run": false,
+  "terminal": [
+    "[12:15:25] \ud83d\ude80 Bot gestartet \u2014 M4",
+    "[12:15:25] \ud83d\udcb0 Balance: 4.0770 SOL"
+  ],
+  "balance": {
+    "start": 4.077029017,
+    "current": 4.077029017,
+    "pnl_sol": 0,
+    "pnl_pct": 0
+  },
+  "trades": {
+    "total": 0,
     "wins": 0,
     "losses": 0,
     "win_rate": 0
+  },
+  "positions": {
+    "open": 0
   }
 }
