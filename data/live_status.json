@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-05T21:07:17.966583+00:00",
-  "updated_at": "2026-03-07T08:54:32.166069+00:00",
-  "uptime_seconds": 128834.2,
+  "updated_at": "2026-03-07T08:55:33.202025+00:00",
+  "uptime_seconds": 128895.2,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -525,11 +525,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[08:45:40] \ud83d\udd14 Migration #6236 detected",
-    "[08:45:53] \u2705 BC Graduated: DJb3Dkj15FEc\u2026",
-    "[08:45:53] \ud83d\udce1 Tracking: DJb3Dkj15FEc8m6c\u2026 | Pool #309",
-    "[08:46:12] \ud83d\udd14 Migration #6237 detected",
-    "[08:46:30] \ud83d\udcca Mig:6237 Track:309 Upd:3223563 Pos:0 SOL:$84.48",
     "[08:47:30] \ud83d\udd14 Migration #6238 detected",
     "[08:47:31] \ud83d\udcca Mig:6238 Track:309 Upd:3225224 Pos:0 SOL:$84.48",
     "[08:47:41] \ud83d\udd14 Migration #6239 detected",
@@ -564,7 +559,12 @@
     "[08:54:19] \ud83d\udd14 Migration #6258 detected",
     "[08:54:23] \ud83d\udd14 Migration #6259 detected",
     "[08:54:27] \ud83d\udd14 Migration #6260 detected",
-    "[08:54:31] \ud83d\udd14 Migration #6261 detected"
+    "[08:54:31] \ud83d\udd14 Migration #6261 detected",
+    "[08:54:38] \ud83d\udcca Mig:6261 Track:311 Upd:3237193 Pos:0 SOL:$84.50",
+    "[08:54:45] \ud83d\udee1\ufe0f Signal gate: ckAM7bdsXFFx\u2026 | top5=49.5%>40%",
+    "[08:54:45] \ud83d\udeab Disqualified: ckAM7bdsXFFx\u2026 | signal_gate_failed | 199.6m",
+    "[08:55:28] \ud83d\udd14 Migration #6262 detected",
+    "[08:55:30] \ud83d\udd14 Migration #6263 detected"
   ],
   "balance": {
     "start": 4.077029,
@@ -581,12 +581,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.5,
+  "sol_price": 84.51,
   "bot_stats": {
-    "migrations_seen": 6261,
+    "migrations_seen": 6263,
     "migrations_added": 449,
-    "pools_tracking": 311,
-    "price_updates": 3236976,
+    "pools_tracking": 310,
+    "price_updates": 3238935,
     "migrations_rejected": 0,
     "liquidity_rejected": 3,
     "bc_graduated": 452,
