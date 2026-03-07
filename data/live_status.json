@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-07T12:15:25.249600+00:00",
-  "updated_at": "2026-03-07T14:22:50.023779+00:00",
-  "uptime_seconds": 7644.8,
+  "updated_at": "2026-03-07T14:23:51.185771+00:00",
+  "uptime_seconds": 7705.9,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -28,10 +28,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[14:10:37] \ud83d\udd14 Migration #433 detected",
-    "[14:10:45] \ud83d\udd14 Migration #434 detected",
-    "[14:11:04] \ud83d\udd14 Migration #435 detected",
-    "[14:11:12] \ud83d\udd14 Migration #436 detected",
     "[14:11:33] \ud83d\udcca Mig:436 Track:19 Upd:69778 Pos:0 SOL:$84.05",
     "[14:12:16] \ud83d\udd14 Migration #437 detected",
     "[14:12:34] \ud83d\udd14 Migration #438 detected",
@@ -67,7 +63,11 @@
     "[14:21:26] \ud83d\udd14 Migration #457 detected",
     "[14:21:45] \ud83d\udcca Mig:457 Track:20 Upd:75762 Pos:0 SOL:$83.89",
     "[14:22:19] \ud83d\udd14 Migration #458 detected",
-    "[14:22:46] \ud83d\udcca Mig:458 Track:20 Upd:76400 Pos:0 SOL:$83.88"
+    "[14:22:46] \ud83d\udcca Mig:458 Track:20 Upd:76400 Pos:0 SOL:$83.88",
+    "[14:23:19] \ud83d\udd14 Migration #459 detected",
+    "[14:23:32] \u2705 BC Graduated: TtdBE2392Rsr\u2026",
+    "[14:23:32] \ud83d\udce1 Tracking: TtdBE2392RsrP8Xn\u2026 | Pool #21",
+    "[14:23:48] \ud83d\udcca Mig:459 Track:21 Upd:77212 Pos:0 SOL:$83.88"
   ],
   "balance": {
     "start": 4.077029,
@@ -86,13 +86,13 @@
   },
   "sol_price": 83.88,
   "bot_stats": {
-    "migrations_seen": 458,
-    "migrations_added": 24,
-    "pools_tracking": 20,
-    "price_updates": 76433,
+    "migrations_seen": 459,
+    "migrations_added": 25,
+    "pools_tracking": 21,
+    "price_updates": 77256,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
-    "bc_graduated": 24,
+    "bc_graduated": 25,
     "entries_found": 0,
     "buys_success": 0,
     "buys_failed": 0
