@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-07T12:15:25.249600+00:00",
-  "updated_at": "2026-03-07T20:49:01.477660+00:00",
-  "uptime_seconds": 30816.2,
+  "updated_at": "2026-03-07T20:50:02.513903+00:00",
+  "uptime_seconds": 30877.3,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -28,9 +28,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[20:41:50] \ud83d\udcca Mig:1679 Track:87 Upd:635456 Pos:0 SOL:$82.99",
-    "[20:42:19] \ud83d\udd14 Migration #1680 detected",
-    "[20:42:23] \ud83d\udd14 Migration #1681 detected",
     "[20:42:51] \ud83d\udcca Mig:1681 Track:87 Upd:637344 Pos:0 SOL:$83.00",
     "[20:43:16] \ud83d\udd14 Migration #1682 detected",
     "[20:43:24] \ud83d\udd14 Migration #1683 detected",
@@ -67,7 +64,10 @@
     "[20:48:56] \ud83d\udd14 Migration #1701 detected",
     "[20:48:58] \ud83d\udcca Mig:1701 Track:91 Upd:648331 Pos:0 SOL:$83.04",
     "[20:49:00] \ud83d\udd14 Migration #1702 detected",
-    "[20:49:00] \ud83d\udd14 Migration #1703 detected"
+    "[20:49:00] \ud83d\udd14 Migration #1703 detected",
+    "[20:49:37] \ud83d\udee1\ufe0f Signal gate: 4NWL1SkifWUt\u2026 | top5=97.6%>40%",
+    "[20:49:37] \ud83d\udeab Disqualified: 4NWL1SkifWUt\u2026 | signal_gate_failed | 8.6m",
+    "[20:49:59] \ud83d\udcca Mig:1703 Track:90 Upd:650019 Pos:0 SOL:$83.03"
   ],
   "balance": {
     "start": 4.077029,
@@ -84,12 +84,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 83.04,
+  "sol_price": 83.03,
   "bot_stats": {
     "migrations_seen": 1703,
     "migrations_added": 105,
-    "pools_tracking": 91,
-    "price_updates": 648403,
+    "pools_tracking": 90,
+    "price_updates": 650112,
     "migrations_rejected": 0,
     "liquidity_rejected": 1,
     "bc_graduated": 106,
