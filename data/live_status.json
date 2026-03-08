@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-07T12:15:25.249600+00:00",
-  "updated_at": "2026-03-08T02:23:59.600111+00:00",
-  "uptime_seconds": 50914.4,
+  "updated_at": "2026-03-08T02:25:00.608861+00:00",
+  "uptime_seconds": 50975.4,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -28,15 +28,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[02:11:47] \ud83d\udcca Mig:2630 Track:129 Upd:1156158 Pos:0 SOL:$82.91",
-    "[02:11:50] \ud83d\udd14 Migration #2631 detected",
-    "[02:11:51] \ud83d\udd14 Migration #2632 detected",
-    "[02:12:15] \ud83d\udd14 Migration #2633 detected",
-    "[02:12:48] \ud83d\udcca Mig:2633 Track:129 Upd:1157281 Pos:0 SOL:$82.89",
-    "[02:13:33] \ud83d\udd14 Migration #2634 detected",
-    "[02:13:38] \ud83d\udd14 Migration #2635 detected",
-    "[02:13:42] \ud83d\udd14 Migration #2636 detected",
-    "[02:13:43] \ud83d\udd14 Migration #2637 detected",
     "[02:13:49] \ud83d\udcca Mig:2637 Track:129 Upd:1158411 Pos:0 SOL:$82.88",
     "[02:14:50] \ud83d\udcca Mig:2637 Track:129 Upd:1159523 Pos:0 SOL:$82.87",
     "[02:15:25] \ud83d\udd14 Migration #2638 detected",
@@ -67,7 +58,16 @@
     "[02:22:36] \ud83d\udd14 Migration #2656 detected",
     "[02:22:58] \ud83d\udcca Mig:2656 Track:129 Upd:1167777 Pos:0 SOL:$82.97",
     "[02:23:40] \ud83d\udd14 Migration #2657 detected",
-    "[02:23:59] \ud83d\udcca Mig:2657 Track:129 Upd:1168753 Pos:0 SOL:$82.98"
+    "[02:23:59] \ud83d\udcca Mig:2657 Track:129 Upd:1168753 Pos:0 SOL:$82.98",
+    "[02:24:25] \ud83d\udd14 Migration #2658 detected",
+    "[02:24:29] \ud83d\udd14 Migration #2659 detected",
+    "[02:24:29] \ud83d\udd14 Migration #2660 detected",
+    "[02:24:39] \u2705 BC Graduated: 3zyFrMq15eMk\u2026",
+    "[02:24:39] \ud83d\udce1 Tracking: 3zyFrMq15eMk4e7p\u2026 | Pool #130",
+    "[02:24:56] \ud83d\udee1\ufe0f Signal gate: FZhYS946feJY\u2026 | top5=54.5%>40%",
+    "[02:24:56] \ud83d\udeab Disqualified: FZhYS946feJY\u2026 | signal_gate_failed | 632.7m",
+    "[02:24:57] \ud83d\udd14 Migration #2661 detected",
+    "[02:25:00] \ud83d\udcca Mig:2661 Track:129 Upd:1169741 Pos:0 SOL:$82.98"
   ],
   "balance": {
     "start": 4.077029,
@@ -86,13 +86,13 @@
   },
   "sol_price": 82.98,
   "bot_stats": {
-    "migrations_seen": 2657,
-    "migrations_added": 156,
+    "migrations_seen": 2661,
+    "migrations_added": 157,
     "pools_tracking": 129,
-    "price_updates": 1168753,
+    "price_updates": 1169741,
     "migrations_rejected": 0,
     "liquidity_rejected": 11,
-    "bc_graduated": 167,
+    "bc_graduated": 168,
     "entries_found": 0,
     "buys_success": 0,
     "buys_failed": 0
