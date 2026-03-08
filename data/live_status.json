@@ -1,18 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-08T13:53:32.945026+00:00",
-  "updated_at": "2026-03-08T23:58:09.831854+00:00",
-  "uptime_seconds": 36276.9,
+  "updated_at": "2026-03-08T23:59:10.956229+00:00",
+  "uptime_seconds": 36338.0,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[23:50:49] \ud83d\udd14 Migration #1939 detected",
-    "[23:50:54] \ud83d\udd14 Migration #1940 detected",
-    "[23:50:57] \ud83d\udd14 Migration #1941 detected",
-    "[23:50:57] \ud83d\udd14 Migration #1942 detected",
-    "[23:51:08] \ud83d\udcca Mig:1942 Track:0 Upd:28191 Pos:0 SOL:$81.69",
-    "[23:51:12] \ud83d\udd14 Migration #1943 detected",
     "[23:51:17] \ud83d\udd14 Migration #1944 detected",
     "[23:51:35] \ud83d\udd14 Migration #1945 detected",
     "[23:52:00] \ud83d\udd14 Migration #1946 detected",
@@ -46,7 +40,13 @@
     "[23:57:32] \u2705 BC Graduated: 6HnQTb4XfmQD\u2026",
     "[23:57:32] \ud83d\udce1 Tracking: 6HnQTb4XfmQDkaYn\u2026 | Pool #1",
     "[23:58:00] \ud83d\udd14 Migration #1962 detected",
-    "[23:58:04] \ud83d\udd14 Migration #1963 detected"
+    "[23:58:04] \ud83d\udd14 Migration #1963 detected",
+    "[23:58:16] \ud83d\udcca Mig:1963 Track:1 Upd:28608 Pos:0 SOL:$81.68",
+    "[23:58:16] \ud83d\udd14 Migration #1964 detected",
+    "[23:58:20] \ud83d\udd14 Migration #1965 detected",
+    "[23:58:30] \ud83d\udd14 Migration #1966 detected",
+    "[23:58:36] \ud83d\udeab Disqualified: 6HnQTb4XfmQD\u2026 | max_time_without_entry | 1.1m",
+    "[23:58:41] \ud83d\udd14 Migration #1967 detected"
   ],
   "balance": {
     "start": 3.826566,
@@ -63,12 +63,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 81.68,
+  "sol_price": 81.65,
   "bot_stats": {
-    "migrations_seen": 1963,
+    "migrations_seen": 1967,
     "migrations_added": 131,
-    "pools_tracking": 1,
-    "price_updates": 28596,
+    "pools_tracking": 0,
+    "price_updates": 28624,
     "migrations_rejected": 0,
     "liquidity_rejected": 2,
     "bc_graduated": 133,
