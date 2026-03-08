@@ -1,18 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-08T13:53:32.945026+00:00",
-  "updated_at": "2026-03-08T18:57:32.749152+00:00",
-  "uptime_seconds": 18239.8,
+  "updated_at": "2026-03-08T18:58:33.936034+00:00",
+  "uptime_seconds": 18301.0,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[18:52:21] \ud83d\udd14 Migration #1024 detected",
-    "[18:52:26] \ud83d\udcca Mig:1024 Track:0 Upd:12853 Pos:0 SOL:$81.58",
-    "[18:52:41] \ud83d\udd14 Migration #1025 detected",
-    "[18:52:54] \ud83d\udd14 Migration #1026 detected",
-    "[18:53:17] \ud83d\udd14 Migration #1027 detected",
-    "[18:53:27] \ud83d\udcca Mig:1027 Track:0 Upd:12853 Pos:0 SOL:$81.58",
     "[18:53:34] \ud83d\udd14 Migration #1028 detected",
     "[18:53:49] \ud83d\udd14 Migration #1029 detected",
     "[18:54:02] \u2705 BC Graduated: 6yP1FaZKaDyK\u2026",
@@ -46,7 +40,13 @@
     "[18:56:54] \ud83d\udce1 Tracking: GFJx8NwpmFXrS6HG\u2026 | Pool #1",
     "[18:56:56] \ud83d\udd14 Migration #1045 detected",
     "[18:57:22] \ud83d\udd14 Migration #1046 detected",
-    "[18:57:32] \ud83d\udcca Mig:1046 Track:1 Upd:13701 Pos:0 SOL:$81.60"
+    "[18:57:32] \ud83d\udcca Mig:1046 Track:1 Upd:13701 Pos:0 SOL:$81.60",
+    "[18:57:36] \u2705 BC Graduated: FF4GoETwsK8h\u2026",
+    "[18:57:36] \ud83d\udce1 Tracking: FF4GoETwsK8hn9ZX\u2026 | Pool #2",
+    "[18:58:01] \ud83d\udeab Disqualified: GFJx8NwpmFXr\u2026 | max_time_without_entry | 1.1m",
+    "[18:58:11] \ud83d\udd14 Migration #1047 detected",
+    "[18:58:13] \ud83d\udd14 Migration #1048 detected",
+    "[18:58:33] \ud83d\udcca Mig:1048 Track:1 Upd:13992 Pos:0 SOL:$81.60"
   ],
   "balance": {
     "start": 3.826566,
@@ -65,13 +65,13 @@
   },
   "sol_price": 81.6,
   "bot_stats": {
-    "migrations_seen": 1046,
-    "migrations_added": 65,
+    "migrations_seen": 1048,
+    "migrations_added": 66,
     "pools_tracking": 1,
-    "price_updates": 13701,
+    "price_updates": 13992,
     "migrations_rejected": 0,
     "liquidity_rejected": 2,
-    "bc_graduated": 67,
+    "bc_graduated": 68,
     "entries_found": 0,
     "buys_success": 0,
     "buys_failed": 0
