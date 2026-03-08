@@ -1,17 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-08T13:53:32.945026+00:00",
-  "updated_at": "2026-03-08T22:10:13.633321+00:00",
-  "uptime_seconds": 29800.7,
+  "updated_at": "2026-03-08T22:11:14.819007+00:00",
+  "uptime_seconds": 29861.9,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[22:01:35] \ud83d\udd14 Migration #1591 detected",
-    "[22:01:54] \ud83d\udeab Disqualified: G5TvNnWo4S4K\u2026 | max_time_without_entry | 1.2m",
-    "[22:02:00] \ud83d\udd14 Migration #1592 detected",
-    "[22:02:02] \ud83d\udd14 Migration #1593 detected",
-    "[22:02:10] \ud83d\udcca Mig:1593 Track:0 Upd:23619 Pos:0 SOL:$82.16",
     "[22:02:16] \ud83d\udd14 Migration #1594 detected",
     "[22:02:41] \ud83d\udd14 Migration #1595 detected",
     "[22:02:52] \ud83d\udd14 Migration #1596 detected",
@@ -46,7 +41,12 @@
     "[22:09:18] \ud83d\udcca Mig:1612 Track:0 Upd:24209 Pos:0 SOL:$81.32",
     "[22:09:39] \ud83d\udd14 Migration #1613 detected",
     "[22:09:42] \ud83d\udd14 Migration #1614 detected",
-    "[22:10:05] \ud83d\udd14 Migration #1615 detected"
+    "[22:10:05] \ud83d\udd14 Migration #1615 detected",
+    "[22:10:18] \u2705 BC Graduated: AsHcmeJoPcf5\u2026",
+    "[22:10:18] \ud83d\udce1 Tracking: AsHcmeJoPcf5av3U\u2026 | Pool #1",
+    "[22:10:20] \ud83d\udcca Mig:1615 Track:1 Upd:24212 Pos:0 SOL:$81.24",
+    "[22:10:57] \ud83d\udd14 Migration #1616 detected",
+    "[22:11:14] \ud83d\udd14 Migration #1617 detected"
   ],
   "balance": {
     "start": 3.826566,
@@ -63,15 +63,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 81.24,
+  "sol_price": 81.22,
   "bot_stats": {
-    "migrations_seen": 1615,
-    "migrations_added": 111,
-    "pools_tracking": 0,
-    "price_updates": 24209,
+    "migrations_seen": 1617,
+    "migrations_added": 112,
+    "pools_tracking": 1,
+    "price_updates": 24341,
     "migrations_rejected": 0,
     "liquidity_rejected": 2,
-    "bc_graduated": 113,
+    "bc_graduated": 114,
     "entries_found": 0,
     "buys_success": 0,
     "buys_failed": 0
