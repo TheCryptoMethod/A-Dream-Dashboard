@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-07T12:15:25.249600+00:00",
-  "updated_at": "2026-03-08T07:17:13.832095+00:00",
-  "uptime_seconds": 68508.6,
+  "updated_at": "2026-03-08T07:18:14.817601+00:00",
+  "uptime_seconds": 68569.6,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -28,14 +28,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[07:10:02] \ud83d\udd14 Migration #3443 detected",
-    "[07:10:06] \ud83d\udcca Mig:3443 Track:167 Upd:1623533 Pos:0 SOL:$82.59",
-    "[07:10:10] \ud83d\udd14 Migration #3444 detected",
-    "[07:10:24] \u2705 BC Graduated: BAAF8R9EBNAo\u2026",
-    "[07:10:24] \ud83d\udce1 Tracking: BAAF8R9EBNAo2aCP\u2026 | Pool #168",
-    "[07:10:29] \ud83d\udd14 Migration #3445 detected",
-    "[07:10:45] \ud83d\udd14 Migration #3446 detected",
-    "[07:10:53] \ud83d\udd14 Migration #3447 detected",
     "[07:11:07] \ud83d\udcca Mig:3447 Track:168 Upd:1625245 Pos:0 SOL:$82.63",
     "[07:11:18] \ud83d\udd14 Migration #3448 detected",
     "[07:11:44] \ud83d\udd14 Migration #3449 detected",
@@ -67,7 +59,15 @@
     "[07:16:47] \u2705 BC Graduated: C4gZqoH3K8gj\u2026",
     "[07:16:47] \ud83d\udce1 Tracking: C4gZqoH3K8gj2ywt\u2026 | Pool #171",
     "[07:16:56] \ud83d\udd14 Migration #3466 detected",
-    "[07:17:13] \ud83d\udcca Mig:3466 Track:171 Upd:1634366 Pos:0 SOL:$82.79"
+    "[07:17:13] \ud83d\udcca Mig:3466 Track:171 Upd:1634366 Pos:0 SOL:$82.79",
+    "[07:17:19] \ud83d\udee1\ufe0f Signal gate: C4gZqoH3K8gj\u2026 | mint_authority=ON, freeze_authority=ON, top5=85.3%>40%",
+    "[07:17:19] \ud83d\udeab Disqualified: C4gZqoH3K8gj\u2026 | signal_gate_failed | 32s",
+    "[07:17:20] \ud83d\udee1\ufe0f Signal gate: FiCbtMH6gE2V\u2026 | top5=52.9%>40%",
+    "[07:17:20] \ud83d\udeab Disqualified: FiCbtMH6gE2V\u2026 | signal_gate_failed | 13.0m",
+    "[07:17:51] \ud83d\udd14 Migration #3467 detected",
+    "[07:17:53] \ud83d\udd14 Migration #3468 detected",
+    "[07:18:02] \ud83d\udd14 Migration #3469 detected",
+    "[07:18:14] \ud83d\udcca Mig:3469 Track:169 Upd:1635811 Pos:0 SOL:$82.79"
   ],
   "balance": {
     "start": 4.077029,
@@ -86,10 +86,10 @@
   },
   "sol_price": 82.79,
   "bot_stats": {
-    "migrations_seen": 3466,
+    "migrations_seen": 3469,
     "migrations_added": 207,
-    "pools_tracking": 171,
-    "price_updates": 1634366,
+    "pools_tracking": 169,
+    "price_updates": 1635811,
     "migrations_rejected": 0,
     "liquidity_rejected": 13,
     "bc_graduated": 220,
