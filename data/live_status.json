@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-07T12:15:25.249600+00:00",
-  "updated_at": "2026-03-08T05:49:44.010131+00:00",
-  "uptime_seconds": 63258.8,
+  "updated_at": "2026-03-08T05:50:44.997845+00:00",
+  "uptime_seconds": 63319.7,
   "method": "M4",
   "strategy": {
     "method": "M4",
@@ -28,11 +28,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[05:40:09] \ud83d\udd14 Migration #3216 detected",
-    "[05:40:35] \ud83d\udcca Mig:3216 Track:157 Upd:1483421 Pos:0 SOL:$82.65",
-    "[05:40:44] \ud83d\udd14 Migration #3217 detected",
-    "[05:41:02] \ud83d\udd14 Migration #3218 detected",
-    "[05:41:07] \ud83d\udee1\ufe0f Signal gate: C9THkVKhdTUA\u2026 | top5=56.5%>40%",
     "[05:41:07] \ud83d\udeab Disqualified: C9THkVKhdTUA\u2026 | signal_gate_failed | 121.8m",
     "[05:41:36] \ud83d\udcca Mig:3218 Track:156 Upd:1484845 Pos:0 SOL:$82.65",
     "[05:41:54] \ud83d\udd14 Migration #3219 detected",
@@ -67,7 +62,12 @@
     "[05:48:37] \ud83d\udd14 Migration #3240 detected",
     "[05:48:43] \ud83d\udcca Mig:3240 Track:157 Upd:1496418 Pos:0 SOL:$82.62",
     "[05:49:34] \ud83d\udd14 Migration #3241 detected",
-    "[05:49:44] \ud83d\udcca Mig:3241 Track:157 Upd:1497792 Pos:0 SOL:$82.62"
+    "[05:49:44] \ud83d\udcca Mig:3241 Track:157 Upd:1497792 Pos:0 SOL:$82.62",
+    "[05:49:53] \ud83d\udd14 Migration #3242 detected",
+    "[05:49:55] \ud83d\udd14 Migration #3243 detected",
+    "[05:50:21] \ud83d\udd14 Migration #3244 detected",
+    "[05:50:44] \ud83d\udd14 Migration #3245 detected",
+    "[05:50:44] \ud83d\udcca Mig:3245 Track:157 Upd:1499143 Pos:0 SOL:$82.63"
   ],
   "balance": {
     "start": 4.077029,
@@ -84,12 +84,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 82.62,
+  "sol_price": 82.63,
   "bot_stats": {
-    "migrations_seen": 3241,
+    "migrations_seen": 3245,
     "migrations_added": 192,
     "pools_tracking": 157,
-    "price_updates": 1497792,
+    "price_updates": 1499143,
     "migrations_rejected": 0,
     "liquidity_rejected": 13,
     "bc_graduated": 205,
