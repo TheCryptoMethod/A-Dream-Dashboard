@@ -1,17 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-08T13:53:32.945026+00:00",
-  "updated_at": "2026-03-09T13:16:07.766158+00:00",
-  "uptime_seconds": 84154.8,
+  "updated_at": "2026-03-09T13:17:09.017297+00:00",
+  "uptime_seconds": 84216.1,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[13:09:48] \ud83d\udd14 Migration #4390 detected",
-    "[13:10:01] \ud83d\udd14 Migration #4391 detected",
-    "[13:10:15] \ud83d\udd14 Migration #4392 detected",
-    "[13:10:15] \ud83d\udcca Mig:4392 Track:0 Upd:57886 Pos:0 SOL:$84.08",
-    "[13:10:33] \ud83d\udd14 Migration #4393 detected",
     "[13:10:51] \ud83d\udd14 Migration #4394 detected",
     "[13:10:53] \ud83d\udd14 Migration #4395 detected",
     "[13:10:56] \ud83d\udd14 Migration #4396 detected",
@@ -46,7 +41,12 @@
     "[13:15:16] \ud83d\udd14 Migration #4413 detected",
     "[13:15:22] \ud83d\udcca Mig:4413 Track:1 Upd:58432 Pos:0 SOL:$84.28",
     "[13:15:35] \ud83d\udd14 Migration #4414 detected",
-    "[13:15:35] \ud83d\udd14 Migration #4415 detected"
+    "[13:15:35] \ud83d\udd14 Migration #4415 detected",
+    "[13:16:09] \ud83d\udd14 Migration #4416 detected",
+    "[13:16:17] \ud83d\udeab Disqualified: G1NzCVF4bW2k\u2026 | max_time_without_entry | 1.1m",
+    "[13:16:23] \ud83d\udcca Mig:4416 Track:0 Upd:58543 Pos:0 SOL:$84.28",
+    "[13:16:46] \ud83d\udd14 Migration #4417 detected",
+    "[13:16:57] \ud83d\udd14 Migration #4418 detected"
   ],
   "balance": {
     "start": 3.826566,
@@ -63,12 +63,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.28,
+  "sol_price": 84.3,
   "bot_stats": {
-    "migrations_seen": 4415,
+    "migrations_seen": 4418,
     "migrations_added": 284,
-    "pools_tracking": 1,
-    "price_updates": 58529,
+    "pools_tracking": 0,
+    "price_updates": 58543,
     "migrations_rejected": 0,
     "liquidity_rejected": 8,
     "bc_graduated": 292,
