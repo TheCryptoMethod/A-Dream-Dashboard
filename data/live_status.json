@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-09T23:16:25.091385+00:00",
-  "uptime_seconds": 13935.8,
+  "updated_at": "2026-03-09T23:17:26.173721+00:00",
+  "uptime_seconds": 13996.9,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,15 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[23:10:15] \ud83d\udcca Mig:625 Track:2 Upd:35770 Pos:0 SOL:$85.70",
-    "[23:10:19] \ud83d\udd14 Migration #626 detected",
-    "[23:10:25] \ud83d\udd14 Migration #627 detected",
-    "[23:10:27] \ud83d\udd14 Migration #628 detected",
-    "[23:10:38] \ud83d\udd14 Migration #629 detected",
-    "[23:10:44] \ud83d\udd14 Migration #630 detected",
-    "[23:11:16] \ud83d\udd14 Migration #631 detected",
-    "[23:11:16] \ud83d\udcca Mig:631 Track:2 Upd:35938 Pos:0 SOL:$85.70",
-    "[23:11:16] \ud83d\udd14 Migration #632 detected",
     "[23:11:44] \ud83d\udd14 Migration #633 detected",
     "[23:12:17] \ud83d\udcca Mig:633 Track:2 Upd:36100 Pos:0 SOL:$85.81",
     "[23:12:28] \ud83d\udd14 Migration #634 detected",
@@ -562,34 +553,43 @@
     "[23:16:18] \ud83d\udd14 Migration #654 detected",
     "[23:16:22] \ud83d\udcca Mig:654 Track:3 Upd:37617 Pos:0 SOL:$85.77",
     "[23:16:22] \ud83d\udd14 Migration #655 detected",
-    "[23:16:22] \ud83d\udd14 Migration #656 detected"
+    "[23:16:22] \ud83d\udd14 Migration #656 detected",
+    "[23:16:36] \u2705 BC Graduated: 3guyMhp6p7US\u2026",
+    "[23:16:36] \ud83d\udce1 Tracking: 3guyMhp6p7USQUzw\u2026 | Pool #4",
+    "[23:16:36] \ud83d\udd14 Migration #657 detected",
+    "[23:16:57] \ud83d\udfe2 ENTRY: M2_fib0.236 | 3guyMhp6p7US... | $0.000062685 | 0.3021 SOL",
+    "[23:16:57] \ud83d\udcb0 Position filled: M2_fib0.236 | 3guyMhp6p7US\u2026 | $0.000062685 | 0.3021 SOL | FDV $62.7k",
+    "[23:17:03] \ud83d\udfe2 EXIT: 3guyMhp6p7US... | SL | +2.3%",
+    "[23:17:03] \ud83d\udfe2 Stop Loss: 3guyMhp6p7US\u2026 | +2.3% | +0.0070 SOL | SL1: -9.6% price (exec: 2.0%)",
+    "[23:17:05] \ud83d\udd14 Migration #658 detected",
+    "[23:17:23] \ud83d\udcca Mig:658 Track:3 Upd:38171 Pos:0 SOL:$85.77"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 3.78305,
-    "pnl_sol": 0.662553,
-    "pnl_pct": 21.23
+    "current": 3.790075,
+    "pnl_sol": 0.669578,
+    "pnl_pct": 21.46
   },
   "trades": {
-    "total": 31,
-    "wins": 9,
+    "total": 32,
+    "wins": 10,
     "losses": 22,
-    "win_rate": 29.0
+    "win_rate": 31.2
   },
   "positions": {
     "open": 0
   },
   "sol_price": 85.77,
   "bot_stats": {
-    "migrations_seen": 656,
-    "migrations_added": 46,
+    "migrations_seen": 658,
+    "migrations_added": 47,
     "pools_tracking": 3,
-    "price_updates": 37635,
+    "price_updates": 38186,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
-    "bc_graduated": 50,
-    "entries_found": 31,
-    "buys_success": 31,
+    "bc_graduated": 51,
+    "entries_found": 32,
+    "buys_success": 32,
     "buys_failed": 0
   }
 }
