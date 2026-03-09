@@ -1,19 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-08T13:53:32.945026+00:00",
-  "updated_at": "2026-03-09T13:32:27.503659+00:00",
-  "uptime_seconds": 85134.6,
+  "updated_at": "2026-03-09T13:33:28.660324+00:00",
+  "uptime_seconds": 85195.7,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[13:25:56] \ud83d\udce1 Tracking: 7SB1YmU6m6bboaqo\u2026 | Pool #3",
-    "[13:25:58] \ud83d\udd14 Migration #4445 detected",
-    "[13:26:07] \ud83d\udd14 Migration #4446 detected",
-    "[13:26:07] \ud83d\udeab Disqualified: Hut1Ep1HNRoi\u2026 | max_time_without_entry | 1.2m",
-    "[13:26:18] \ud83d\udd14 Migration #4447 detected",
-    "[13:26:19] \ud83d\udd14 Migration #4448 detected",
-    "[13:26:30] \ud83d\udd14 Migration #4449 detected",
     "[13:26:35] \ud83d\udcca Mig:4449 Track:2 Upd:59611 Pos:0 SOL:$84.21",
     "[13:26:40] \ud83d\udd14 Migration #4450 detected",
     "[13:26:47] \ud83d\udeab Disqualified: 7Bu2ZPZnSNdX\u2026 | max_time_without_entry | 1.1m",
@@ -46,7 +39,14 @@
     "[13:30:40] \ud83d\udcca Mig:4466 Track:0 Upd:60149 Pos:0 SOL:$84.43",
     "[13:30:43] \ud83d\udd14 Migration #4467 detected",
     "[13:31:02] \ud83d\udd14 Migration #4468 detected",
-    "[13:31:41] \ud83d\udcca Mig:4468 Track:0 Upd:60149 Pos:0 SOL:$84.53"
+    "[13:31:41] \ud83d\udcca Mig:4468 Track:0 Upd:60149 Pos:0 SOL:$84.53",
+    "[13:32:33] \ud83d\udd14 Migration #4469 detected",
+    "[13:32:42] \ud83d\udd14 Migration #4470 detected",
+    "[13:32:43] \ud83d\udcca Mig:4470 Track:0 Upd:60149 Pos:0 SOL:$84.59",
+    "[13:32:55] \u2705 BC Graduated: DuWNRbozadAZ\u2026",
+    "[13:32:55] \ud83d\udce1 Tracking: DuWNRbozadAZUjRW\u2026 | Pool #1",
+    "[13:33:20] \ud83d\udd14 Migration #4471 detected",
+    "[13:33:27] \ud83d\udeab Disqualified: DuWNRbozadAZ\u2026 | no_price_activity | 32s"
   ],
   "balance": {
     "start": 3.826566,
@@ -63,15 +63,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.53,
+  "sol_price": 84.59,
   "bot_stats": {
-    "migrations_seen": 4468,
-    "migrations_added": 291,
+    "migrations_seen": 4471,
+    "migrations_added": 292,
     "pools_tracking": 0,
-    "price_updates": 60149,
+    "price_updates": 60156,
     "migrations_rejected": 0,
     "liquidity_rejected": 8,
-    "bc_graduated": 299,
+    "bc_graduated": 300,
     "entries_found": 0,
     "buys_success": 0,
     "buys_failed": 0
