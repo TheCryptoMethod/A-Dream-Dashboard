@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-09T20:44:37.703067+00:00",
-  "uptime_seconds": 4828.4,
+  "updated_at": "2026-03-09T20:45:38.734875+00:00",
+  "uptime_seconds": 4889.5,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,8 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[20:37:19] \ud83d\udd34 Stop Loss: Eo26aPbhfkbu\u2026 | -7.6% | -0.0230 SOL | SL1: -5.1% price (exec: -4.2%)",
-    "[20:37:27] \ud83d\udcca Mig:227 Track:1 Upd:9622 Pos:1 SOL:$85.67",
     "[20:37:52] \ud83d\udd14 Migration #228 detected",
     "[20:37:52] \ud83d\udd14 Migration #229 detected",
     "[20:38:07] \ud83d\udd14 Migration #230 detected",
@@ -562,7 +560,9 @@
     "[20:44:12] \ud83d\udd14 Migration #248 detected",
     "[20:44:13] \ud83d\udd14 Migration #249 detected",
     "[20:44:24] \ud83d\udd14 Migration #250 detected",
-    "[20:44:34] \ud83d\udcca Mig:250 Track:1 Upd:10164 Pos:0 SOL:$85.51"
+    "[20:44:34] \ud83d\udcca Mig:250 Track:1 Upd:10164 Pos:0 SOL:$85.51",
+    "[20:45:35] \ud83d\udd14 Migration #251 detected",
+    "[20:45:35] \ud83d\udcca Mig:251 Track:1 Upd:10393 Pos:0 SOL:$85.49"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.51,
+  "sol_price": 85.49,
   "bot_stats": {
-    "migrations_seen": 250,
+    "migrations_seen": 251,
     "migrations_added": 18,
     "pools_tracking": 1,
-    "price_updates": 10175,
+    "price_updates": 10408,
     "migrations_rejected": 0,
     "liquidity_rejected": 1,
     "bc_graduated": 19,
