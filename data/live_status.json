@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T14:45:02.480898+00:00",
-  "updated_at": "2026-03-09T14:51:09.287475+00:00",
-  "uptime_seconds": 366.8,
+  "updated_at": "2026-03-09T14:52:10.506363+00:00",
+  "uptime_seconds": 428.0,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -556,7 +556,12 @@
     "[14:50:47] \ud83d\udd14 Migration #22 detected",
     "[14:51:00] \u2705 BC Graduated: HJAoSdU5sWCP\u2026",
     "[14:51:01] \ud83d\udce1 Tracking: HJAoSdU5sWCPwAbC\u2026 | Pool #2",
-    "[14:51:06] \ud83d\udcca Mig:22 Track:2 Upd:185 Pos:0 SOL:$85.50"
+    "[14:51:06] \ud83d\udcca Mig:22 Track:2 Upd:185 Pos:0 SOL:$85.50",
+    "[14:51:14] \ud83d\udee1\ufe0f Signal gate: HJAoSdU5sWCP\u2026 | mint_authority=ON, freeze_authority=ON",
+    "[14:51:14] \ud83d\udeab Disqualified: HJAoSdU5sWCP\u2026 | signal_gate_failed | 14s",
+    "[14:51:49] \ud83d\udee1\ufe0f Signal gate: 74oDdJb1RMEL\u2026 | rugcheck=83620>5000",
+    "[14:51:49] \ud83d\udeab Disqualified: 74oDdJb1RMEL\u2026 | signal_gate_failed | 2.7m",
+    "[14:52:07] \ud83d\udcca Mig:22 Track:0 Upd:270 Pos:0 SOL:$85.49"
   ],
   "balance": {
     "start": 3.120497,
@@ -573,12 +578,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.5,
+  "sol_price": 85.49,
   "bot_stats": {
     "migrations_seen": 22,
     "migrations_added": 2,
-    "pools_tracking": 2,
-    "price_updates": 202,
+    "pools_tracking": 0,
+    "price_updates": 270,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 2,
