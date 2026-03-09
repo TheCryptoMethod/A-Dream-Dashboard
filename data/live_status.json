@@ -1,15 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-08T13:53:32.945026+00:00",
-  "updated_at": "2026-03-09T07:56:45.321264+00:00",
-  "uptime_seconds": 64992.4,
+  "updated_at": "2026-03-09T07:57:46.470515+00:00",
+  "uptime_seconds": 65053.5,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[07:49:40] \ud83d\udd14 Migration #3388 detected",
-    "[07:49:47] \ud83d\udcca Mig:3388 Track:0 Upd:45134 Pos:0 SOL:$83.11",
-    "[07:49:48] \ud83d\udd14 Migration #3389 detected",
     "[07:49:52] \ud83d\udd14 Migration #3390 detected",
     "[07:50:05] \ud83d\udd14 Migration #3391 detected",
     "[07:50:11] \ud83d\udd14 Migration #3392 detected",
@@ -46,7 +43,10 @@
     "[07:56:06] \ud83d\udd14 Migration #3410 detected",
     "[07:56:09] \ud83d\udd14 Migration #3411 detected",
     "[07:56:23] \ud83d\udeab Disqualified: TntoHenxv98i\u2026 | max_time_without_entry | 1.0m",
-    "[07:56:27] \ud83d\udd14 Migration #3412 detected"
+    "[07:56:27] \ud83d\udd14 Migration #3412 detected",
+    "[07:56:51] \ud83d\udd14 Migration #3413 detected",
+    "[07:56:54] \ud83d\udcca Mig:3413 Track:1 Upd:45624 Pos:0 SOL:$83.13",
+    "[07:57:13] \ud83d\udeab Disqualified: 4n92Cu6MpoPx\u2026 | max_time_without_entry | 1.1m"
   ],
   "balance": {
     "start": 3.826566,
@@ -65,10 +65,10 @@
   },
   "sol_price": 83.13,
   "bot_stats": {
-    "migrations_seen": 3412,
+    "migrations_seen": 3413,
     "migrations_added": 215,
-    "pools_tracking": 1,
-    "price_updates": 45586,
+    "pools_tracking": 0,
+    "price_updates": 45694,
     "migrations_rejected": 0,
     "liquidity_rejected": 7,
     "bc_graduated": 222,
