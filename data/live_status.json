@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-09T21:17:13.151009+00:00",
-  "uptime_seconds": 6783.9,
+  "updated_at": "2026-03-09T21:18:14.218951+00:00",
+  "uptime_seconds": 6845.0,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,9 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[21:07:19] \ud83d\udd14 Migration #316 detected",
-    "[21:07:47] \ud83d\udd14 Migration #317 detected",
-    "[21:08:00] \ud83d\udcca Mig:317 Track:1 Upd:12126 Pos:0 SOL:$86.04",
     "[21:08:04] \ud83d\udd14 Migration #318 detected",
     "[21:08:09] \ud83d\udd14 Migration #319 detected",
     "[21:08:19] \ud83d\udd14 Migration #320 detected",
@@ -562,13 +559,16 @@
     "[21:16:45] \ud83d\udd14 Migration #341 detected",
     "[21:16:59] \ud83d\udd14 Migration #342 detected",
     "[21:17:06] \ud83d\udd14 Migration #343 detected",
-    "[21:17:10] \ud83d\udcca Mig:343 Track:2 Upd:13184 Pos:0 SOL:$86.25"
+    "[21:17:10] \ud83d\udcca Mig:343 Track:2 Upd:13184 Pos:0 SOL:$86.25",
+    "[21:18:01] \ud83d\udfe2 ENTRY: M2_fib0.236 | 2JAGXuzCkidT... | $0.000086650 | 0.3021 SOL",
+    "[21:18:01] \ud83d\udcb0 Position filled: M2_fib0.236 | 2JAGXuzCkidT\u2026 | $0.000086650 | 0.3021 SOL | FDV $86.6k",
+    "[21:18:11] \ud83d\udcca Mig:343 Track:2 Upd:13554 Pos:1 SOL:$86.25"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 3.062456,
-    "pnl_sol": -0.058041,
-    "pnl_pct": -1.86
+    "current": 2.760347,
+    "pnl_sol": -0.360151,
+    "pnl_pct": -11.54
   },
   "trades": {
     "total": 17,
@@ -577,19 +577,19 @@
     "win_rate": 29.4
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
   "sol_price": 86.25,
   "bot_stats": {
     "migrations_seen": 343,
     "migrations_added": 23,
     "pools_tracking": 2,
-    "price_updates": 13202,
+    "price_updates": 13572,
     "migrations_rejected": 0,
     "liquidity_rejected": 1,
     "bc_graduated": 24,
-    "entries_found": 17,
-    "buys_success": 17,
+    "entries_found": 18,
+    "buys_success": 18,
     "buys_failed": 0
   }
 }
