@@ -1,20 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-08T13:53:32.945026+00:00",
-  "updated_at": "2026-03-09T09:09:03.414909+00:00",
-  "uptime_seconds": 69330.5,
+  "updated_at": "2026-03-09T09:10:04.415674+00:00",
+  "uptime_seconds": 69391.5,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[09:01:23] \ud83d\udd14 Migration #3604 detected",
-    "[09:02:01] \ud83d\udd14 Migration #3605 detected",
-    "[09:02:04] \ud83d\udeab Disqualified: DdWKHDBuPL4i\u2026 | max_time_without_entry | 1.1m",
-    "[09:02:07] \ud83d\udcca Mig:3605 Track:0 Upd:46667 Pos:0 SOL:$83.67",
-    "[09:02:14] \u2705 BC Graduated: y3dsV3ir2XE2\u2026",
-    "[09:02:14] \ud83d\udce1 Tracking: y3dsV3ir2XE2thn6\u2026 | Pool #1",
-    "[09:02:29] \ud83d\udd14 Migration #3606 detected",
-    "[09:02:31] \ud83d\udd14 Migration #3607 detected",
     "[09:02:53] \ud83d\udd14 Migration #3608 detected",
     "[09:03:08] \ud83d\udcca Mig:3608 Track:1 Upd:46842 Pos:0 SOL:$83.67",
     "[09:03:15] \ud83d\udd14 Migration #3609 detected",
@@ -46,7 +38,15 @@
     "[09:08:44] \ud83d\udd14 Migration #3625 detected",
     "[09:08:48] \ud83d\udd14 Migration #3626 detected",
     "[09:09:02] \u2705 BC Graduated: Bbe1FM5swFqs\u2026",
-    "[09:09:02] \ud83d\udce1 Tracking: Bbe1FM5swFqsE75G\u2026 | Pool #3"
+    "[09:09:02] \ud83d\udce1 Tracking: Bbe1FM5swFqsE75G\u2026 | Pool #3",
+    "[09:09:14] \ud83d\udeab Disqualified: CSZZRKaBbeqv\u2026 | max_time_without_entry | 1.1m",
+    "[09:09:15] \ud83d\udcca Mig:3626 Track:2 Upd:47210 Pos:0 SOL:$83.60",
+    "[09:09:24] \ud83d\udeab Disqualified: 3ZJUgsqapxsy\u2026 | max_time_without_entry | 1.1m",
+    "[09:09:32] \ud83d\udd14 Migration #3627 detected",
+    "[09:09:38] \ud83d\udd14 Migration #3628 detected",
+    "[09:09:50] \ud83d\udd14 Migration #3629 detected",
+    "[09:09:50] \ud83d\udd14 Migration #3630 detected",
+    "[09:10:04] \ud83d\udeab Disqualified: Bbe1FM5swFqs\u2026 | max_time_without_entry | 1.0m"
   ],
   "balance": {
     "start": 3.826566,
@@ -63,12 +63,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 83.6,
+  "sol_price": 83.53,
   "bot_stats": {
-    "migrations_seen": 3626,
+    "migrations_seen": 3630,
     "migrations_added": 226,
-    "pools_tracking": 3,
-    "price_updates": 47116,
+    "pools_tracking": 0,
+    "price_updates": 47384,
     "migrations_rejected": 0,
     "liquidity_rejected": 7,
     "bc_graduated": 233,
