@@ -1,17 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-08T13:53:32.945026+00:00",
-  "updated_at": "2026-03-09T03:04:29.836492+00:00",
-  "uptime_seconds": 47456.9,
+  "updated_at": "2026-03-09T03:05:30.929610+00:00",
+  "uptime_seconds": 47518.0,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[02:56:41] \ud83d\udd14 Migration #2555 detected",
-    "[02:56:56] \ud83d\udd14 Migration #2556 detected",
-    "[02:57:02] \ud83d\udd14 Migration #2557 detected",
-    "[02:57:20] \ud83d\udd14 Migration #2558 detected",
-    "[02:57:31] \ud83d\udcca Mig:2558 Track:0 Upd:36859 Pos:0 SOL:$82.77",
     "[02:57:43] \ud83d\udd14 Migration #2559 detected",
     "[02:57:47] \ud83d\udd14 Migration #2560 detected",
     "[02:58:00] \u2705 BC Graduated: k8DRPcbzzwYf\u2026",
@@ -46,7 +41,12 @@
     "[03:04:10] \u2705 BC Graduated: 7tN6KcRJwkHF\u2026",
     "[03:04:10] \ud83d\udce1 Tracking: 7tN6KcRJwkHFyRgf\u2026 | Pool #2",
     "[03:04:14] \u2705 BC Graduated: U8ZY5sGFBNSW\u2026",
-    "[03:04:14] \ud83d\udce1 Tracking: U8ZY5sGFBNSWvddW\u2026 | Pool #3"
+    "[03:04:14] \ud83d\udce1 Tracking: U8ZY5sGFBNSWvddW\u2026 | Pool #3",
+    "[03:04:39] \ud83d\udd14 Migration #2579 detected",
+    "[03:04:39] \ud83d\udcca Mig:2579 Track:3 Upd:37572 Pos:0 SOL:$82.83",
+    "[03:04:49] \ud83d\udeab Disqualified: 7uRDPZVNYkH6\u2026 | max_time_without_entry | 1.1m",
+    "[03:05:19] \ud83d\udeab Disqualified: 7tN6KcRJwkHF\u2026 | max_time_without_entry | 1.1m",
+    "[03:05:19] \ud83d\udeab Disqualified: U8ZY5sGFBNSW\u2026 | max_time_without_entry | 1.1m"
   ],
   "balance": {
     "start": 3.826566,
@@ -63,12 +63,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 82.83,
+  "sol_price": 82.84,
   "bot_stats": {
-    "migrations_seen": 2578,
+    "migrations_seen": 2579,
     "migrations_added": 169,
-    "pools_tracking": 3,
-    "price_updates": 37511,
+    "pools_tracking": 0,
+    "price_updates": 37651,
     "migrations_rejected": 0,
     "liquidity_rejected": 7,
     "bc_graduated": 176,
