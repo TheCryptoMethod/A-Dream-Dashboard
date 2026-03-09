@@ -1,21 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-08T13:53:32.945026+00:00",
-  "updated_at": "2026-03-09T01:47:13.035060+00:00",
-  "uptime_seconds": 42820.1,
+  "updated_at": "2026-03-09T01:48:14.191611+00:00",
+  "uptime_seconds": 42881.2,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[01:41:27] \ud83d\udd14 Migration #2306 detected",
-    "[01:41:37] \ud83d\udd14 Migration #2307 detected",
-    "[01:41:37] \ud83d\udeab Disqualified: G2X1VU16duGo\u2026 | max_time_without_entry | 1.1m",
-    "[01:41:59] \ud83d\udd14 Migration #2308 detected",
-    "[01:42:06] \ud83d\udd14 Migration #2309 detected",
-    "[01:42:13] \ud83d\udcca Mig:2309 Track:0 Upd:32176 Pos:0 SOL:$82.61",
-    "[01:43:03] \ud83d\udd14 Migration #2310 detected",
-    "[01:43:05] \ud83d\udd14 Migration #2311 detected",
-    "[01:43:06] \ud83d\udd14 Migration #2312 detected",
     "[01:43:11] \ud83d\udd14 Migration #2313 detected",
     "[01:43:13] \ud83d\udd14 Migration #2314 detected",
     "[01:43:14] \ud83d\udd14 Migration #2315 detected",
@@ -46,7 +37,16 @@
     "[01:46:20] \ud83d\udd14 Migration #2328 detected",
     "[01:46:31] \ud83d\udd14 Migration #2329 detected",
     "[01:46:44] \u2705 BC Graduated: 9fhrgpKEjhgp\u2026",
-    "[01:46:44] \ud83d\udce1 Tracking: 9fhrgpKEjhgpFceY\u2026 | Pool #2"
+    "[01:46:44] \ud83d\udce1 Tracking: 9fhrgpKEjhgpFceY\u2026 | Pool #2",
+    "[01:47:15] \ud83d\udd14 Migration #2330 detected",
+    "[01:47:19] \ud83d\udcca Mig:2330 Track:2 Upd:32982 Pos:0 SOL:$82.62",
+    "[01:47:22] \ud83d\udd14 Migration #2331 detected",
+    "[01:47:23] \ud83d\udd14 Migration #2332 detected",
+    "[01:47:27] \ud83d\udeab Disqualified: mWYX4936gjJY\u2026 | max_time_without_entry | 1.1m",
+    "[01:47:28] \ud83d\udd14 Migration #2333 detected",
+    "[01:47:31] \ud83d\udd14 Migration #2334 detected",
+    "[01:47:48] \ud83d\udeab Disqualified: 9fhrgpKEjhgp\u2026 | max_time_without_entry | 1.1m",
+    "[01:47:54] \ud83d\udd14 Migration #2335 detected"
   ],
   "balance": {
     "start": 3.826566,
@@ -63,12 +63,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 82.62,
+  "sol_price": 82.63,
   "bot_stats": {
-    "migrations_seen": 2329,
+    "migrations_seen": 2335,
     "migrations_added": 151,
-    "pools_tracking": 2,
-    "price_updates": 32943,
+    "pools_tracking": 0,
+    "price_updates": 33069,
     "migrations_rejected": 0,
     "liquidity_rejected": 6,
     "bc_graduated": 157,
