@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-09T21:51:51.463764+00:00",
-  "uptime_seconds": 8862.2,
+  "updated_at": "2026-03-09T21:52:52.573805+00:00",
+  "uptime_seconds": 8923.3,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,8 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[21:42:55] \ud83d\udfe2 Stop Loss: DAwEeQ73Pb2C\u2026 | +10.7% | +0.0322 SOL | SL1: -5.3% price (exec: -0.2%)",
-    "[21:43:00] \ud83d\udd14 Migration #403 detected",
     "[21:43:25] \ud83d\udd14 Migration #404 detected",
     "[21:43:39] \ud83d\udcca Mig:404 Track:1 Upd:17941 Pos:0 SOL:$85.91",
     "[21:44:09] \ud83d\udd14 Migration #405 detected",
@@ -562,7 +560,9 @@
     "[21:50:16] \ud83d\udd14 Migration #423 detected",
     "[21:50:47] \ud83d\udcca Mig:423 Track:2 Upd:19729 Pos:0 SOL:$85.96",
     "[21:51:07] \ud83d\udd14 Migration #424 detected",
-    "[21:51:48] \ud83d\udcca Mig:424 Track:2 Upd:19917 Pos:0 SOL:$85.97"
+    "[21:51:48] \ud83d\udcca Mig:424 Track:2 Upd:19917 Pos:0 SOL:$85.97",
+    "[21:52:49] \ud83d\udcca Mig:424 Track:2 Upd:20109 Pos:0 SOL:$85.97",
+    "[21:52:51] \ud83d\udd14 Migration #425 detected"
   ],
   "balance": {
     "start": 3.120497,
@@ -581,10 +581,10 @@
   },
   "sol_price": 85.97,
   "bot_stats": {
-    "migrations_seen": 424,
+    "migrations_seen": 425,
     "migrations_added": 34,
     "pools_tracking": 2,
-    "price_updates": 19923,
+    "price_updates": 20119,
     "migrations_rejected": 0,
     "liquidity_rejected": 1,
     "bc_graduated": 35,
