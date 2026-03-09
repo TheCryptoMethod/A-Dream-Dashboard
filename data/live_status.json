@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-09T22:26:27.334748+00:00",
-  "uptime_seconds": 10938.1,
+  "updated_at": "2026-03-09T22:27:28.369666+00:00",
+  "uptime_seconds": 10999.1,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[22:16:25] \ud83d\udd14 Migration #485 detected",
-    "[22:16:41] \ud83d\udd14 Migration #486 detected",
-    "[22:16:47] \ud83d\udd14 Migration #487 detected",
-    "[22:17:15] \ud83d\udcca Mig:487 Track:2 Upd:25191 Pos:0 SOL:$86.00",
     "[22:17:27] \ud83d\udd14 Migration #488 detected",
     "[22:18:16] \ud83d\udcca Mig:488 Track:2 Upd:25373 Pos:0 SOL:$86.06",
     "[22:18:16] \ud83d\udd14 Migration #489 detected",
@@ -562,13 +558,17 @@
     "[22:25:51] \ud83d\udcb0 Position filled: M2_fib0.236 | Cnru9iwesBdo\u2026 | $0.000026615 | 0.3021 SOL | FDV $26.6k",
     "[22:25:56] \ud83d\udd34 EXIT: Cnru9iwesBdo... | SL | -4.2%",
     "[22:25:56] \ud83d\udd34 Stop Loss: Cnru9iwesBdo\u2026 | -4.2% | -0.0127 SOL | SL1: -6.4% price (exec: -4.5%)",
-    "[22:26:24] \ud83d\udcca Mig:506 Track:3 Upd:27230 Pos:0 SOL:$86.18"
+    "[22:26:24] \ud83d\udcca Mig:506 Track:3 Upd:27230 Pos:0 SOL:$86.18",
+    "[22:26:42] \ud83d\udd14 Migration #507 detected",
+    "[22:26:48] \ud83d\udd14 Migration #508 detected",
+    "[22:27:23] \ud83d\udd14 Migration #509 detected",
+    "[22:27:25] \ud83d\udcca Mig:509 Track:3 Upd:27592 Pos:0 SOL:$86.17"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 3.875569,
-    "pnl_sol": 0.755072,
-    "pnl_pct": 24.2
+    "current": 3.573468,
+    "pnl_sol": 0.452971,
+    "pnl_pct": 14.52
   },
   "trades": {
     "total": 27,
@@ -579,16 +579,16 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 86.18,
+  "sol_price": 86.17,
   "bot_stats": {
-    "migrations_seen": 506,
+    "migrations_seen": 509,
     "migrations_added": 40,
     "pools_tracking": 3,
-    "price_updates": 27246,
+    "price_updates": 27605,
     "migrations_rejected": 0,
     "liquidity_rejected": 2,
     "bc_graduated": 42,
-    "entries_found": 27,
+    "entries_found": 28,
     "buys_success": 27,
     "buys_failed": 0
   }
