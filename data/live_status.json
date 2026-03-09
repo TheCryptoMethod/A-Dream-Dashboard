@@ -1,17 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-08T13:53:32.945026+00:00",
-  "updated_at": "2026-03-09T09:17:12.417113+00:00",
-  "uptime_seconds": 69819.5,
+  "updated_at": "2026-03-09T09:18:13.378047+00:00",
+  "uptime_seconds": 69880.4,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[09:09:50] \ud83d\udd14 Migration #3630 detected",
-    "[09:10:04] \ud83d\udeab Disqualified: Bbe1FM5swFqs\u2026 | max_time_without_entry | 1.0m",
-    "[09:10:08] \ud83d\udd14 Migration #3631 detected",
-    "[09:10:17] \ud83d\udcca Mig:3631 Track:0 Upd:47384 Pos:0 SOL:$83.53",
-    "[09:10:53] \ud83d\udd14 Migration #3632 detected",
     "[09:11:18] \ud83d\udcca Mig:3632 Track:0 Upd:47384 Pos:0 SOL:$83.51",
     "[09:11:29] \ud83d\udd14 Migration #3633 detected",
     "[09:11:34] \ud83d\udd14 Migration #3634 detected",
@@ -46,7 +41,12 @@
     "[09:16:16] \u2705 BC Graduated: HTWCwcT4Z3GT\u2026",
     "[09:16:16] \ud83d\udce1 Tracking: HTWCwcT4Z3GTfenq\u2026 | Pool #2",
     "[09:16:23] \ud83d\udcca Mig:3651 Track:2 Upd:47653 Pos:0 SOL:$83.53",
-    "[09:16:34] \ud83d\udeab Disqualified: EaHTrRPpz5B3\u2026 | max_time_without_entry | 1.1m"
+    "[09:16:34] \ud83d\udeab Disqualified: EaHTrRPpz5B3\u2026 | max_time_without_entry | 1.1m",
+    "[09:17:24] \ud83d\udeab Disqualified: HTWCwcT4Z3GT\u2026 | max_time_without_entry | 1.1m",
+    "[09:17:24] \ud83d\udcca Mig:3651 Track:0 Upd:47946 Pos:0 SOL:$83.58",
+    "[09:17:35] \ud83d\udd14 Migration #3652 detected",
+    "[09:17:37] \ud83d\udd14 Migration #3653 detected",
+    "[09:17:38] \ud83d\udd14 Migration #3654 detected"
   ],
   "balance": {
     "start": 3.826566,
@@ -63,12 +63,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 83.53,
+  "sol_price": 83.58,
   "bot_stats": {
-    "migrations_seen": 3651,
+    "migrations_seen": 3654,
     "migrations_added": 229,
-    "pools_tracking": 1,
-    "price_updates": 47912,
+    "pools_tracking": 0,
+    "price_updates": 47946,
     "migrations_rejected": 0,
     "liquidity_rejected": 8,
     "bc_graduated": 237,
