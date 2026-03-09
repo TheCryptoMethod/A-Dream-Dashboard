@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-09T21:24:20.872384+00:00",
-  "uptime_seconds": 7211.6,
+  "updated_at": "2026-03-09T21:25:22.006631+00:00",
+  "uptime_seconds": 7272.7,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,9 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[21:18:01] \ud83d\udfe2 ENTRY: M2_fib0.236 | 2JAGXuzCkidT... | $0.000086650 | 0.3021 SOL",
-    "[21:18:01] \ud83d\udcb0 Position filled: M2_fib0.236 | 2JAGXuzCkidT\u2026 | $0.000086650 | 0.3021 SOL | FDV $86.6k",
-    "[21:18:11] \ud83d\udcca Mig:343 Track:2 Upd:13554 Pos:1 SOL:$86.25",
     "[21:18:36] \ud83d\udd14 Migration #344 detected",
     "[21:18:55] \ud83d\udd14 Migration #345 detected",
     "[21:19:00] \ud83d\udfe2 EXIT: 2JAGXuzCkidT... | SL | +4.8%",
@@ -562,7 +559,10 @@
     "[21:23:30] \ud83d\udd34 Stop Loss: DxRGcRQN1xds\u2026 | -14.0% | -0.0423 SOL | SL1: -5.8% price (exec: -9.4%)",
     "[21:24:01] \ud83d\udee1\ufe0f Signal gate: 5yiHwBLaNKAh\u2026 | rugcheck=61370>5000",
     "[21:24:01] \ud83d\udeab Disqualified: 5yiHwBLaNKAh\u2026 | signal_gate_failed | 4.0m",
-    "[21:24:17] \ud83d\udcca Mig:358 Track:0 Upd:14351 Pos:0 SOL:$86.08"
+    "[21:24:17] \ud83d\udcca Mig:358 Track:0 Upd:14351 Pos:0 SOL:$86.08",
+    "[21:24:50] \ud83d\udd14 Migration #359 detected",
+    "[21:25:01] \ud83d\udd14 Migration #360 detected",
+    "[21:25:18] \ud83d\udcca Mig:360 Track:0 Upd:14351 Pos:0 SOL:$86.06"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 86.08,
+  "sol_price": 86.06,
   "bot_stats": {
-    "migrations_seen": 358,
+    "migrations_seen": 360,
     "migrations_added": 25,
     "pools_tracking": 0,
     "price_updates": 14351,
