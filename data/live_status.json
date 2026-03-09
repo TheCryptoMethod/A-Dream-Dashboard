@@ -1,19 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-08T13:53:32.945026+00:00",
-  "updated_at": "2026-03-09T06:12:49.137931+00:00",
-  "uptime_seconds": 58756.2,
+  "updated_at": "2026-03-09T06:13:50.156933+00:00",
+  "uptime_seconds": 58817.2,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[06:05:56] \ud83d\udd14 Migration #3026 detected",
-    "[06:06:07] \ud83d\udd14 Migration #3027 detected",
-    "[06:06:11] \ud83d\udeab Disqualified: ATCL7KnEvyzf\u2026 | max_time_without_entry | 1.1m",
-    "[06:06:51] \ud83d\udcca Mig:3027 Track:0 Upd:42722 Pos:0 SOL:$84.21",
-    "[06:07:11] \ud83d\udd14 Migration #3028 detected",
-    "[06:07:20] \ud83d\udd14 Migration #3029 detected",
-    "[06:07:22] \ud83d\udd14 Migration #3030 detected",
     "[06:07:45] \ud83d\udd14 Migration #3031 detected",
     "[06:07:52] \ud83d\udcca Mig:3031 Track:0 Upd:42722 Pos:0 SOL:$84.21",
     "[06:07:59] \u2705 BC Graduated: 8KBGHX4VsZBx\u2026",
@@ -46,7 +39,14 @@
     "[06:11:43] \ud83d\udd14 Migration #3053 detected",
     "[06:11:57] \ud83d\udcca Mig:3053 Track:0 Upd:42990 Pos:0 SOL:$84.14",
     "[06:12:10] \ud83d\udd14 Migration #3054 detected",
-    "[06:12:17] \ud83d\udd14 Migration #3055 detected"
+    "[06:12:17] \ud83d\udd14 Migration #3055 detected",
+    "[06:12:50] \ud83d\udd14 Migration #3056 detected",
+    "[06:12:57] \ud83d\udd14 Migration #3057 detected",
+    "[06:12:58] \ud83d\udcca Mig:3057 Track:0 Upd:42990 Pos:0 SOL:$84.14",
+    "[06:13:08] \ud83d\udd14 Migration #3058 detected",
+    "[06:13:20] \ud83d\udd14 Migration #3059 detected",
+    "[06:13:23] \ud83d\udd14 Migration #3060 detected",
+    "[06:13:39] \ud83d\udd14 Migration #3061 detected"
   ],
   "balance": {
     "start": 3.826566,
@@ -63,9 +63,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.14,
+  "sol_price": 84.13,
   "bot_stats": {
-    "migrations_seen": 3055,
+    "migrations_seen": 3061,
     "migrations_added": 200,
     "pools_tracking": 0,
     "price_updates": 42990,
