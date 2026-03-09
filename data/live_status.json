@@ -1,16 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-08T13:53:32.945026+00:00",
-  "updated_at": "2026-03-09T06:05:41.180730+00:00",
-  "uptime_seconds": 58328.2,
+  "updated_at": "2026-03-09T06:06:42.238166+00:00",
+  "uptime_seconds": 58389.3,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[05:57:04] \ud83d\udd14 Migration #2999 detected",
-    "[05:57:41] \ud83d\udcca Mig:2999 Track:0 Upd:42400 Pos:0 SOL:$84.32",
-    "[05:57:46] \ud83d\udd14 Migration #3000 detected",
-    "[05:57:57] \ud83d\udd14 Migration #3001 detected",
     "[05:58:20] \ud83d\udd14 Migration #3002 detected",
     "[05:58:24] \ud83d\udd14 Migration #3003 detected",
     "[05:58:31] \ud83d\udd14 Migration #3004 detected",
@@ -46,7 +42,11 @@
     "[06:05:07] \u2705 BC Graduated: ATCL7KnEvyzf\u2026",
     "[06:05:07] \ud83d\udce1 Tracking: ATCL7KnEvyzfzzVD\u2026 | Pool #1",
     "[06:05:29] \ud83d\udd14 Migration #3024 detected",
-    "[06:05:39] \ud83d\udd14 Migration #3025 detected"
+    "[06:05:39] \ud83d\udd14 Migration #3025 detected",
+    "[06:05:50] \ud83d\udcca Mig:3025 Track:1 Upd:42646 Pos:0 SOL:$84.23",
+    "[06:05:56] \ud83d\udd14 Migration #3026 detected",
+    "[06:06:07] \ud83d\udd14 Migration #3027 detected",
+    "[06:06:11] \ud83d\udeab Disqualified: ATCL7KnEvyzf\u2026 | max_time_without_entry | 1.1m"
   ],
   "balance": {
     "start": 3.826566,
@@ -63,12 +63,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.23,
+  "sol_price": 84.21,
   "bot_stats": {
-    "migrations_seen": 3025,
+    "migrations_seen": 3027,
     "migrations_added": 199,
-    "pools_tracking": 1,
-    "price_updates": 42614,
+    "pools_tracking": 0,
+    "price_updates": 42722,
     "migrations_rejected": 0,
     "liquidity_rejected": 7,
     "bc_graduated": 206,
