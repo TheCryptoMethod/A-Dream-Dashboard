@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-09T22:43:46.565539+00:00",
-  "uptime_seconds": 11977.3,
+  "updated_at": "2026-03-09T22:44:47.710813+00:00",
+  "uptime_seconds": 12038.4,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,11 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[22:35:42] \ud83d\udd14 Migration #532 detected",
-    "[22:35:55] \ud83d\udd14 Migration #533 detected",
-    "[22:36:13] \ud83d\udd14 Migration #534 detected",
-    "[22:36:35] \ud83d\udcca Mig:534 Track:3 Upd:29608 Pos:1 SOL:$86.20",
-    "[22:36:50] \ud83d\udd14 Migration #535 detected",
     "[22:36:54] \ud83d\udd14 Migration #536 detected",
     "[22:37:19] \ud83d\udd14 Migration #537 detected",
     "[22:37:22] \ud83d\udd14 Migration #538 detected",
@@ -562,7 +557,12 @@
     "[22:43:15] \ud83d\udd14 Migration #555 detected",
     "[22:43:30] \ud83d\udd14 Migration #556 detected",
     "[22:43:30] \ud83d\udd14 Migration #557 detected",
-    "[22:43:43] \ud83d\udcca Mig:557 Track:3 Upd:31047 Pos:1 SOL:$85.94"
+    "[22:43:43] \ud83d\udcca Mig:557 Track:3 Upd:31047 Pos:1 SOL:$85.94",
+    "[22:44:01] \ud83d\udd14 Migration #558 detected",
+    "[22:44:07] \ud83d\udd14 Migration #559 detected",
+    "[22:44:20] \u2705 BC Graduated: HTVVjU1VKG7N\u2026",
+    "[22:44:20] \ud83d\udca7 Liquidity rejected: 1.7 SOL < 15.0 SOL",
+    "[22:44:44] \ud83d\udcca Mig:559 Track:3 Upd:31255 Pos:1 SOL:$85.92"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,15 +579,15 @@
   "positions": {
     "open": 1
   },
-  "sol_price": 85.94,
+  "sol_price": 85.92,
   "bot_stats": {
-    "migrations_seen": 557,
+    "migrations_seen": 559,
     "migrations_added": 43,
     "pools_tracking": 3,
-    "price_updates": 31059,
+    "price_updates": 31265,
     "migrations_rejected": 0,
-    "liquidity_rejected": 3,
-    "bc_graduated": 46,
+    "liquidity_rejected": 4,
+    "bc_graduated": 47,
     "entries_found": 30,
     "buys_success": 30,
     "buys_failed": 0
