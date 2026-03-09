@@ -1,18 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-08T13:53:32.945026+00:00",
-  "updated_at": "2026-03-09T10:09:29.362441+00:00",
-  "uptime_seconds": 72956.4,
+  "updated_at": "2026-03-09T10:10:30.935615+00:00",
+  "uptime_seconds": 73018.0,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[10:00:45] \ud83d\udd14 Migration #3760 detected",
-    "[10:00:54] \ud83d\udd14 Migration #3761 detected",
-    "[10:01:14] \ud83d\udd14 Migration #3762 detected",
-    "[10:01:32] \ud83d\udcca Mig:3762 Track:0 Upd:49377 Pos:0 SOL:$84.11",
-    "[10:01:36] \ud83d\udd14 Migration #3763 detected",
-    "[10:01:51] \ud83d\udd14 Migration #3764 detected",
     "[10:02:04] \u2705 BC Graduated: BcYjxpFURNJw\u2026",
     "[10:02:05] \ud83d\udce1 Tracking: BcYjxpFURNJwkYJ1\u2026 | Pool #1",
     "[10:02:34] \ud83d\udcca Mig:3764 Track:1 Upd:49518 Pos:0 SOL:$84.10",
@@ -46,7 +40,13 @@
     "[10:09:12] \u2705 BC Graduated: F8W9dQPKaYho\u2026",
     "[10:09:12] \ud83d\udce1 Tracking: F8W9dQPKaYhoRGBb\u2026 | Pool #1",
     "[10:09:17] \ud83d\udd14 Migration #3785 detected",
-    "[10:09:28] \ud83d\udd14 Migration #3786 detected"
+    "[10:09:28] \ud83d\udd14 Migration #3786 detected",
+    "[10:09:32] \ud83d\udd14 Migration #3787 detected",
+    "[10:09:44] \ud83d\udcca Mig:3787 Track:1 Upd:49797 Pos:0 SOL:$84.07",
+    "[10:09:55] \ud83d\udd14 Migration #3788 detected",
+    "[10:09:56] \ud83d\udd14 Migration #3789 detected",
+    "[10:10:09] \ud83d\udd14 Migration #3790 detected",
+    "[10:10:15] \ud83d\udeab Disqualified: F8W9dQPKaYho\u2026 | max_time_without_entry | 1.0m"
   ],
   "balance": {
     "start": 3.826566,
@@ -63,12 +63,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.07,
+  "sol_price": 84.06,
   "bot_stats": {
-    "migrations_seen": 3786,
+    "migrations_seen": 3790,
     "migrations_added": 240,
-    "pools_tracking": 1,
-    "price_updates": 49750,
+    "pools_tracking": 0,
+    "price_updates": 49865,
     "migrations_rejected": 0,
     "liquidity_rejected": 8,
     "bc_graduated": 248,
