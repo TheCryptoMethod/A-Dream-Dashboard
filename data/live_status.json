@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-09T22:49:53.932959+00:00",
-  "uptime_seconds": 12344.7,
+  "updated_at": "2026-03-09T22:50:55.288244+00:00",
+  "uptime_seconds": 12406.0,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,8 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[22:42:33] \ud83d\udd34 EXIT: 6waGedXKFHs3... | SL | -3.1%",
-    "[22:42:33] \ud83d\udd34 Stop Loss: 6waGedXKFHs3\u2026 | -3.1% | -0.0095 SOL | SL1: -5.9% price (exec: -3.3%)",
     "[22:42:42] \ud83d\udcca Mig:552 Track:3 Upd:30861 Pos:1 SOL:$85.95",
     "[22:42:46] \ud83d\udd14 Migration #553 detected",
     "[22:42:53] \ud83d\udd14 Migration #554 detected",
@@ -562,7 +560,9 @@
     "[22:49:25] \ud83d\udd14 Migration #576 detected",
     "[22:49:45] \ud83d\udd14 Migration #577 detected",
     "[22:49:50] \ud83d\udcca Mig:577 Track:2 Upd:32153 Pos:0 SOL:$85.81",
-    "[22:49:52] \ud83d\udd14 Migration #578 detected"
+    "[22:49:52] \ud83d\udd14 Migration #578 detected",
+    "[22:50:32] \ud83d\udd14 Migration #579 detected",
+    "[22:50:52] \ud83d\udcca Mig:579 Track:2 Upd:32307 Pos:0 SOL:$85.82"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.81,
+  "sol_price": 85.82,
   "bot_stats": {
-    "migrations_seen": 578,
+    "migrations_seen": 579,
     "migrations_added": 43,
     "pools_tracking": 2,
-    "price_updates": 32159,
+    "price_updates": 32315,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 47,
