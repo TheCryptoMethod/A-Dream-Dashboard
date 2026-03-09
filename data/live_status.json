@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-09T19:32:18.258108+00:00",
-  "uptime_seconds": 489.0,
+  "updated_at": "2026-03-09T19:33:19.478181+00:00",
+  "uptime_seconds": 550.2,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,7 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[19:24:09] \ud83d\ude80 Bot gestartet \u2014 M2",
     "[19:24:09] \ud83d\udcb0 Balance: 3.1205 SOL",
     "[19:24:27] \ud83d\udd14 Migration #1 detected",
     "[19:24:45] \ud83d\udd14 Migration #2 detected",
@@ -558,7 +557,12 @@
     "[19:31:06] \ud83d\udd14 Migration #25 detected",
     "[19:31:14] \ud83d\udcca Mig:25 Track:0 Upd:0 Pos:0 SOL:$86.36",
     "[19:31:27] \ud83d\udd14 Migration #26 detected",
-    "[19:32:15] \ud83d\udcca Mig:26 Track:0 Upd:0 Pos:0 SOL:$86.47"
+    "[19:32:15] \ud83d\udcca Mig:26 Track:0 Upd:0 Pos:0 SOL:$86.47",
+    "[19:32:26] \ud83d\udd14 Migration #27 detected",
+    "[19:32:31] \ud83d\udd14 Migration #28 detected",
+    "[19:32:53] \ud83d\udd14 Migration #29 detected",
+    "[19:33:06] \ud83d\udd14 Migration #30 detected",
+    "[19:33:16] \ud83d\udcca Mig:30 Track:0 Upd:0 Pos:0 SOL:$86.47"
   ],
   "balance": {
     "start": 3.120497,
@@ -577,7 +581,7 @@
   },
   "sol_price": 86.47,
   "bot_stats": {
-    "migrations_seen": 26,
+    "migrations_seen": 30,
     "migrations_added": 0,
     "pools_tracking": 0,
     "price_updates": 0,
