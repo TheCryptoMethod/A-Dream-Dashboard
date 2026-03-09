@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-09T20:24:15.609784+00:00",
-  "uptime_seconds": 3606.3,
+  "updated_at": "2026-03-09T20:25:16.727405+00:00",
+  "uptime_seconds": 3667.5,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,9 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[20:16:13] \ud83d\udce1 Tracking: 4zqxezA6NxNSRoya\u2026 | Pool #4",
-    "[20:16:20] \ud83d\udd34 EXIT: Ed4dMNh6JqXc... | EARLY_PERF_30S | +0.0%",
-    "[20:16:20] \ud83d\udd34 EARLY_PERF_30S: Ed4dMNh6JqXc\u2026 | +0.0% | +0.0371 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_30S (perf_30s=+33.6%)",
     "[20:16:20] \ud83d\udfe2 ENTRY: M2_fib0.236 | 989p9N9iHwgK... | $0.000037884 | 0.3021 SOL",
     "[20:16:20] \ud83d\udcb0 Position filled: M2_fib0.236 | 989p9N9iHwgK\u2026 | $0.000037884 | 0.3021 SOL | FDV $37.9k",
     "[20:16:30] \ud83d\udd34 EXIT: 989p9N9iHwgK... | SL | -12.7%",
@@ -562,13 +559,16 @@
     "[20:23:25] \ud83d\udd14 Migration #188 detected",
     "[20:23:52] \ud83d\udd14 Migration #189 detected",
     "[20:24:00] \ud83d\udd14 Migration #190 detected",
-    "[20:24:12] \ud83d\udcca Mig:190 Track:2 Upd:6571 Pos:1 SOL:$85.81"
+    "[20:24:12] \ud83d\udcca Mig:190 Track:2 Upd:6571 Pos:1 SOL:$85.81",
+    "[20:25:01] \ud83d\udfe2 ENTRY: M2_fib0.236 | 4zqxezA6NxNS... | $0.000144896 | 0.3021 SOL",
+    "[20:25:01] \ud83d\udcb0 Position filled: M2_fib0.236 | 4zqxezA6NxNS\u2026 | $0.000144896 | 0.3021 SOL | FDV $144.9k",
+    "[20:25:13] \ud83d\udcca Mig:190 Track:2 Upd:6843 Pos:2 SOL:$85.84"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 3.003098,
-    "pnl_sol": -0.117399,
-    "pnl_pct": -3.76
+    "current": 2.700993,
+    "pnl_sol": -0.419504,
+    "pnl_pct": -13.44
   },
   "trades": {
     "total": 10,
@@ -577,19 +577,19 @@
     "win_rate": 40.0
   },
   "positions": {
-    "open": 1
+    "open": 2
   },
-  "sol_price": 85.81,
+  "sol_price": 85.84,
   "bot_stats": {
     "migrations_seen": 190,
     "migrations_added": 14,
     "pools_tracking": 2,
-    "price_updates": 6581,
+    "price_updates": 6861,
     "migrations_rejected": 0,
     "liquidity_rejected": 1,
     "bc_graduated": 15,
-    "entries_found": 11,
-    "buys_success": 11,
+    "entries_found": 12,
+    "buys_success": 12,
     "buys_failed": 0
   }
 }
