@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-09T23:15:23.964309+00:00",
-  "uptime_seconds": 13874.7,
+  "updated_at": "2026-03-09T23:16:25.091385+00:00",
+  "uptime_seconds": 13935.8,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,17 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[23:07:54] \ud83d\udd14 Migration #617 detected",
-    "[23:08:12] \ud83d\udcca Mig:617 Track:2 Upd:35430 Pos:0 SOL:$85.67",
-    "[23:08:15] \ud83d\udd14 Migration #618 detected",
-    "[23:08:18] \ud83d\udd14 Migration #619 detected",
-    "[23:08:33] \ud83d\udd14 Migration #620 detected",
-    "[23:08:43] \ud83d\udd14 Migration #621 detected",
-    "[23:08:58] \ud83d\udd14 Migration #622 detected",
-    "[23:09:04] \ud83d\udd14 Migration #623 detected",
-    "[23:09:14] \ud83d\udcca Mig:623 Track:2 Upd:35598 Pos:0 SOL:$85.69",
-    "[23:09:47] \ud83d\udd14 Migration #624 detected",
-    "[23:10:08] \ud83d\udd14 Migration #625 detected",
     "[23:10:15] \ud83d\udcca Mig:625 Track:2 Upd:35770 Pos:0 SOL:$85.70",
     "[23:10:19] \ud83d\udd14 Migration #626 detected",
     "[23:10:25] \ud83d\udd14 Migration #627 detected",
@@ -562,7 +551,18 @@
     "[23:15:03] \ud83d\udd14 Migration #644 detected",
     "[23:15:11] \ud83d\udd14 Migration #645 detected",
     "[23:15:14] \ud83d\udd14 Migration #646 detected",
-    "[23:15:20] \ud83d\udcca Mig:646 Track:3 Upd:37181 Pos:0 SOL:$85.76"
+    "[23:15:20] \ud83d\udcca Mig:646 Track:3 Upd:37181 Pos:0 SOL:$85.76",
+    "[23:15:25] \ud83d\udd14 Migration #647 detected",
+    "[23:15:40] \ud83d\udd14 Migration #648 detected",
+    "[23:15:41] \ud83d\udd14 Migration #649 detected",
+    "[23:15:54] \ud83d\udd14 Migration #650 detected",
+    "[23:16:05] \ud83d\udd14 Migration #651 detected",
+    "[23:16:07] \ud83d\udd14 Migration #652 detected",
+    "[23:16:09] \ud83d\udd14 Migration #653 detected",
+    "[23:16:18] \ud83d\udd14 Migration #654 detected",
+    "[23:16:22] \ud83d\udcca Mig:654 Track:3 Upd:37617 Pos:0 SOL:$85.77",
+    "[23:16:22] \ud83d\udd14 Migration #655 detected",
+    "[23:16:22] \ud83d\udd14 Migration #656 detected"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.76,
+  "sol_price": 85.77,
   "bot_stats": {
-    "migrations_seen": 646,
+    "migrations_seen": 656,
     "migrations_added": 46,
     "pools_tracking": 3,
-    "price_updates": 37207,
+    "price_updates": 37635,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 50,
