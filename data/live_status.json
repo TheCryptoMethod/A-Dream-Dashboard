@@ -1,17 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-08T13:53:32.945026+00:00",
-  "updated_at": "2026-03-09T10:37:05.291531+00:00",
-  "uptime_seconds": 74612.3,
+  "updated_at": "2026-03-09T10:38:06.507373+00:00",
+  "uptime_seconds": 74673.6,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[10:27:00] \ud83d\udd14 Migration #3832 detected",
-    "[10:27:08] \ud83d\udcca Mig:3832 Track:0 Upd:50645 Pos:0 SOL:$83.91",
-    "[10:27:30] \ud83d\udd14 Migration #3833 detected",
-    "[10:27:35] \ud83d\udd14 Migration #3834 detected",
-    "[10:27:46] \ud83d\udd14 Migration #3835 detected",
     "[10:28:09] \ud83d\udcca Mig:3835 Track:0 Upd:50645 Pos:0 SOL:$83.92",
     "[10:28:21] \ud83d\udd14 Migration #3836 detected",
     "[10:28:45] \ud83d\udd14 Migration #3837 detected",
@@ -46,7 +41,12 @@
     "[10:35:43] \ud83d\udd14 Migration #3853 detected",
     "[10:36:19] \ud83d\udcca Mig:3853 Track:0 Upd:50946 Pos:0 SOL:$83.89",
     "[10:36:22] \ud83d\udd14 Migration #3854 detected",
-    "[10:36:29] \ud83d\udd14 Migration #3855 detected"
+    "[10:36:29] \ud83d\udd14 Migration #3855 detected",
+    "[10:37:11] \ud83d\udd14 Migration #3856 detected",
+    "[10:37:20] \ud83d\udcca Mig:3856 Track:0 Upd:50946 Pos:0 SOL:$83.90",
+    "[10:37:27] \u2705 BC Graduated: ohs6txuSSbK9\u2026",
+    "[10:37:28] \ud83d\udce1 Tracking: ohs6txuSSbK9Eyxj\u2026 | Pool #1",
+    "[10:37:40] \ud83d\udd14 Migration #3857 detected"
   ],
   "balance": {
     "start": 3.826566,
@@ -63,15 +63,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 83.9,
+  "sol_price": 83.91,
   "bot_stats": {
-    "migrations_seen": 3855,
-    "migrations_added": 247,
-    "pools_tracking": 0,
-    "price_updates": 50946,
+    "migrations_seen": 3857,
+    "migrations_added": 248,
+    "pools_tracking": 1,
+    "price_updates": 51130,
     "migrations_rejected": 0,
     "liquidity_rejected": 8,
-    "bc_graduated": 255,
+    "bc_graduated": 256,
     "entries_found": 0,
     "buys_success": 0,
     "buys_failed": 0
