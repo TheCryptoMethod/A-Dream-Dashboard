@@ -1,18 +1,12 @@
 {
   "status": "live",
   "started_at": "2026-03-08T13:53:32.945026+00:00",
-  "updated_at": "2026-03-09T02:33:59.080653+00:00",
-  "uptime_seconds": 45626.1,
+  "updated_at": "2026-03-09T02:35:00.131015+00:00",
+  "uptime_seconds": 45687.2,
   "method": "ENV",
   "strategy": {},
   "dry_run": false,
   "terminal": [
-    "[02:24:57] \ud83d\udce1 Tracking: BGpM5JmZjU7nZmas\u2026 | Pool #1",
-    "[02:24:58] \ud83d\udcca Mig:2452 Track:1 Upd:34856 Pos:0 SOL:$81.92",
-    "[02:25:04] \ud83d\udd14 Migration #2453 detected",
-    "[02:25:21] \ud83d\udd14 Migration #2454 detected",
-    "[02:25:46] \ud83d\udd14 Migration #2455 detected",
-    "[02:25:56] \ud83d\udd14 Migration #2456 detected",
     "[02:25:58] \ud83d\udeab Disqualified: BGpM5JmZjU7n\u2026 | max_time_without_entry | 1.0m",
     "[02:26:00] \ud83d\udcca Mig:2456 Track:0 Upd:35120 Pos:0 SOL:$81.88",
     "[02:26:15] \ud83d\udd14 Migration #2457 detected",
@@ -46,7 +40,13 @@
     "[02:33:39] \u2705 BC Graduated: 41Vs8wxqewsp\u2026",
     "[02:33:40] \ud83d\udce1 Tracking: 41Vs8wxqewspxJqs\u2026 | Pool #1",
     "[02:33:51] \ud83d\udd14 Migration #2478 detected",
-    "[02:33:54] \ud83d\udd14 Migration #2479 detected"
+    "[02:33:54] \ud83d\udd14 Migration #2479 detected",
+    "[02:34:04] \u2705 BC Graduated: qThuX39Kzwe9\u2026",
+    "[02:34:04] \ud83d\udce1 Tracking: qThuX39Kzwe9iGrZ\u2026 | Pool #2",
+    "[02:34:08] \ud83d\udcca Mig:2479 Track:2 Upd:35273 Pos:0 SOL:$81.92",
+    "[02:34:14] \ud83d\udd14 Migration #2480 detected",
+    "[02:34:33] \ud83d\udd14 Migration #2481 detected",
+    "[02:34:48] \ud83d\udeab Disqualified: 41Vs8wxqewsp\u2026 | max_time_without_entry | 1.1m"
   ],
   "balance": {
     "start": 3.826566,
@@ -63,15 +63,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 81.89,
+  "sol_price": 81.92,
   "bot_stats": {
-    "migrations_seen": 2479,
-    "migrations_added": 160,
+    "migrations_seen": 2481,
+    "migrations_added": 161,
     "pools_tracking": 1,
-    "price_updates": 35217,
+    "price_updates": 35737,
     "migrations_rejected": 0,
     "liquidity_rejected": 7,
-    "bc_graduated": 167,
+    "bc_graduated": 168,
     "entries_found": 0,
     "buys_success": 0,
     "buys_failed": 0
