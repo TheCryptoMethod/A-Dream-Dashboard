@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T13:48:42.913491+00:00",
-  "uptime_seconds": 66273.7,
+  "updated_at": "2026-03-10T13:49:44.249033+00:00",
+  "uptime_seconds": 66335.0,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,11 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[13:42:27] \ud83d\udd14 Migration #3115 detected",
-    "[13:42:35] \u2705 BC Graduated: DYT7bHua6vAk\u2026",
-    "[13:42:36] \ud83d\udce1 Tracking: DYT7bHua6vAkPFeU\u2026 | Pool #10",
-    "[13:42:36] \ud83d\udd14 Migration #3116 detected",
-    "[13:42:38] \ud83d\udcca Mig:3116 Track:10 Upd:222429 Pos:0 SOL:$86.44",
     "[13:42:52] \ud83d\udd14 Migration #3117 detected",
     "[13:42:58] \ud83d\udd14 Migration #3118 detected",
     "[13:43:28] \ud83d\udd14 Migration #3119 detected",
@@ -562,7 +557,12 @@
     "[13:48:09] \ud83d\udd14 Migration #3136 detected",
     "[13:48:21] \ud83d\udd14 Migration #3137 detected",
     "[13:48:39] \ud83d\udd34 EXIT: xkmtC55Zhzh9... | SL | -13.8%",
-    "[13:48:39] \ud83d\udd34 Stop Loss: xkmtC55Zhzh9\u2026 | -13.8% | -0.0416 SOL | SL1: -6.2% price (exec: -12.4%)"
+    "[13:48:39] \ud83d\udd34 Stop Loss: xkmtC55Zhzh9\u2026 | -13.8% | -0.0416 SOL | SL1: -6.2% price (exec: -12.4%)",
+    "[13:48:46] \ud83d\udcca Mig:3137 Track:10 Upd:225107 Pos:0 SOL:$86.13",
+    "[13:48:58] \ud83d\udd14 Migration #3138 detected",
+    "[13:49:31] \ud83d\udd14 Migration #3139 detected",
+    "[13:49:38] \ud83d\udd14 Migration #3140 detected",
+    "[13:49:43] \ud83d\udd14 Migration #3141 detected"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 86.13,
+  "sol_price": 86.15,
   "bot_stats": {
-    "migrations_seen": 3137,
+    "migrations_seen": 3141,
     "migrations_added": 176,
     "pools_tracking": 10,
-    "price_updates": 225090,
+    "price_updates": 225263,
     "migrations_rejected": 0,
     "liquidity_rejected": 5,
     "bc_graduated": 181,
