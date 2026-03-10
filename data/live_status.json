@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T13:32:22.404207+00:00",
-  "uptime_seconds": 65293.1,
+  "updated_at": "2026-03-10T13:33:23.667752+00:00",
+  "uptime_seconds": 65354.4,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,17 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[13:23:53] \ud83d\udd14 Migration #3044 detected",
-    "[13:23:57] \ud83d\udd14 Migration #3045 detected",
-    "[13:24:02] \ud83d\udd14 Migration #3046 detected",
-    "[13:24:04] \ud83d\udd14 Migration #3047 detected",
-    "[13:24:15] \ud83d\udcca Mig:3047 Track:8 Upd:219326 Pos:0 SOL:$87.03",
-    "[13:24:21] \ud83d\udd14 Migration #3048 detected",
-    "[13:24:43] \ud83d\udd14 Migration #3049 detected",
-    "[13:25:07] \ud83d\udd14 Migration #3050 detected",
-    "[13:25:16] \ud83d\udcca Mig:3050 Track:8 Upd:219395 Pos:0 SOL:$87.05",
-    "[13:25:27] \ud83d\udd14 Migration #3051 detected",
-    "[13:26:07] \ud83d\udd14 Migration #3052 detected",
     "[13:26:15] \ud83d\udd14 Migration #3053 detected",
     "[13:26:18] \ud83d\udcca Mig:3053 Track:8 Upd:219464 Pos:0 SOL:$87.08",
     "[13:26:32] \ud83d\udd14 Migration #3054 detected",
@@ -562,7 +551,18 @@
     "[13:31:24] \ud83d\udcca Mig:3068 Track:8 Upd:220224 Pos:0 SOL:$87.14",
     "[13:32:10] \ud83d\udd14 Migration #3069 detected",
     "[13:32:12] \ud83d\udd14 Migration #3070 detected",
-    "[13:32:13] \ud83d\udd14 Migration #3071 detected"
+    "[13:32:13] \ud83d\udd14 Migration #3071 detected",
+    "[13:32:25] \ud83d\udcca Mig:3071 Track:8 Upd:220274 Pos:0 SOL:$87.14",
+    "[13:32:29] \ud83d\udd14 Migration #3072 detected",
+    "[13:32:38] \ud83d\udd14 Migration #3073 detected",
+    "[13:32:42] \u2705 BC Graduated: DwFagWK1vC65\u2026",
+    "[13:32:42] \ud83d\udce1 Tracking: DwFagWK1vC65dMef\u2026 | Pool #9",
+    "[13:32:46] \ud83d\udd14 Migration #3074 detected",
+    "[13:32:52] \ud83d\udd14 Migration #3075 detected",
+    "[13:32:53] \ud83d\udd14 Migration #3076 detected",
+    "[13:33:01] \ud83d\udee1\ufe0f Signal gate: DwFagWK1vC65\u2026 | rugcheck=19701>5000",
+    "[13:33:01] \ud83d\udeab Disqualified: DwFagWK1vC65\u2026 | signal_gate_failed | 18s",
+    "[13:33:13] \ud83d\udd14 Migration #3077 detected"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,15 +579,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 87.14,
+  "sol_price": 87.13,
   "bot_stats": {
-    "migrations_seen": 3071,
-    "migrations_added": 169,
+    "migrations_seen": 3077,
+    "migrations_added": 170,
     "pools_tracking": 8,
-    "price_updates": 220272,
+    "price_updates": 220379,
     "migrations_rejected": 0,
     "liquidity_rejected": 5,
-    "bc_graduated": 174,
+    "bc_graduated": 175,
     "entries_found": 99,
     "buys_success": 99,
     "buys_failed": 0
