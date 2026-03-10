@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T07:30:05.941175+00:00",
-  "uptime_seconds": 43556.7,
+  "updated_at": "2026-03-10T07:31:07.304458+00:00",
+  "uptime_seconds": 43618.0,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,16 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[07:18:40] \ud83d\udd14 Migration #2060 detected",
-    "[07:18:52] \ud83d\udcca Mig:2060 Track:6 Upd:164039 Pos:0 SOL:$86.49",
-    "[07:18:52] \ud83d\udd14 Migration #2061 detected",
-    "[07:18:56] \ud83d\udd14 Migration #2062 detected",
-    "[07:19:01] \ud83d\udd14 Migration #2063 detected",
-    "[07:19:06] \ud83d\udd14 Migration #2064 detected",
-    "[07:19:53] \ud83d\udcca Mig:2064 Track:6 Upd:164141 Pos:0 SOL:$86.50",
-    "[07:20:01] \ud83d\udd14 Migration #2065 detected",
-    "[07:20:33] \ud83d\udd14 Migration #2066 detected",
-    "[07:20:44] \ud83d\udd14 Migration #2067 detected",
     "[07:20:54] \ud83d\udcca Mig:2067 Track:6 Upd:164243 Pos:0 SOL:$86.52",
     "[07:21:23] \ud83d\udd14 Migration #2068 detected",
     "[07:21:55] \ud83d\udcca Mig:2068 Track:6 Upd:164345 Pos:0 SOL:$86.55",
@@ -562,34 +552,44 @@
     "[07:29:46] \ud83d\udd14 Migration #2083 detected",
     "[07:29:51] \ud83d\udd14 Migration #2084 detected",
     "[07:29:59] \ud83d\udd14 Migration #2085 detected",
-    "[07:30:05] \ud83d\udcca Mig:2085 Track:7 Upd:165472 Pos:0 SOL:$86.63"
+    "[07:30:05] \ud83d\udcca Mig:2085 Track:7 Upd:165472 Pos:0 SOL:$86.63",
+    "[07:30:13] \ud83d\udfe2 ENTRY: M2_fib0.236 | 9MEuLXfkNPca... | $0.000027680 | 0.3021 SOL",
+    "[07:30:13] \ud83d\udcb0 Position filled: M2_fib0.236 | 9MEuLXfkNPca\u2026 | $0.000027680 | 0.3021 SOL | FDV $27.7k",
+    "[07:30:30] \ud83d\udd14 Migration #2086 detected",
+    "[07:30:39] \ud83d\udd14 Migration #2087 detected",
+    "[07:30:39] \ud83d\udd14 Migration #2088 detected",
+    "[07:30:43] \ud83d\udd34 EXIT: 9MEuLXfkNPca... | SL | -7.9%",
+    "[07:30:43] \ud83d\udd34 Stop Loss: 9MEuLXfkNPca\u2026 | -7.9% | -0.0239 SOL | SL1: -7.5% price (exec: -4.3%)",
+    "[07:30:57] \ud83d\udd14 Migration #2089 detected",
+    "[07:31:03] \ud83d\udd14 Migration #2090 detected",
+    "[07:31:07] \ud83d\udcca Mig:2090 Track:6 Upd:165665 Pos:0 SOL:$86.62"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 2.907698,
-    "pnl_sol": -0.212799,
-    "pnl_pct": -6.82
+    "current": 2.883797,
+    "pnl_sol": -0.2367,
+    "pnl_pct": -7.59
   },
   "trades": {
-    "total": 63,
+    "total": 64,
     "wins": 15,
-    "losses": 48,
-    "win_rate": 23.8
+    "losses": 49,
+    "win_rate": 23.4
   },
   "positions": {
     "open": 0
   },
-  "sol_price": 86.63,
+  "sol_price": 86.62,
   "bot_stats": {
-    "migrations_seen": 2085,
+    "migrations_seen": 2090,
     "migrations_added": 119,
-    "pools_tracking": 7,
-    "price_updates": 165472,
+    "pools_tracking": 6,
+    "price_updates": 165665,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 123,
-    "entries_found": 63,
-    "buys_success": 63,
+    "entries_found": 64,
+    "buys_success": 64,
     "buys_failed": 0
   }
 }
