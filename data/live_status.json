@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T17:28:21.146944+00:00",
-  "uptime_seconds": 79451.9,
+  "updated_at": "2026-03-10T17:29:22.192879+00:00",
+  "uptime_seconds": 79512.9,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,11 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[17:19:51] \ud83d\udd14 Migration #3823 detected",
-    "[17:20:15] \ud83d\udcca Mig:3823 Track:11 Upd:254250 Pos:0 SOL:$88.49",
-    "[17:20:42] \ud83d\udd14 Migration #3824 detected",
-    "[17:20:45] \ud83d\udd14 Migration #3825 detected",
-    "[17:21:15] \ud83d\udd14 Migration #3826 detected",
     "[17:21:16] \ud83d\udcca Mig:3826 Track:11 Upd:254421 Pos:0 SOL:$88.54",
     "[17:21:46] \ud83d\udd14 Migration #3827 detected",
     "[17:22:09] \ud83d\udd14 Migration #3828 detected",
@@ -562,29 +557,34 @@
     "[17:27:51] \ud83d\udd14 Migration #3847 detected",
     "[17:27:53] \ud83d\udd14 Migration #3848 detected",
     "[17:28:20] \ud83d\udfe2 ENTRY: M2_fib0.236 | 2iqdwLDV5TMt... | $0.000031018 | 0.3021 SOL",
-    "[17:28:20] \ud83d\udcb0 Position filled: M2_fib0.236 | 2iqdwLDV5TMt\u2026 | $0.000031018 | 0.3021 SOL | FDV $31.0k"
+    "[17:28:20] \ud83d\udcb0 Position filled: M2_fib0.236 | 2iqdwLDV5TMt\u2026 | $0.000031018 | 0.3021 SOL | FDV $31.0k",
+    "[17:28:24] \ud83d\udcca Mig:3848 Track:12 Upd:255526 Pos:1 SOL:$88.44",
+    "[17:28:25] \ud83d\udd34 EXIT: 2iqdwLDV5TMt... | SL | -13.5%",
+    "[17:28:25] \ud83d\udd34 Stop Loss: 2iqdwLDV5TMt\u2026 | -13.5% | -0.0407 SOL | SL1: -7.7% price (exec: -16.4%)",
+    "[17:28:51] \ud83d\udd14 Migration #3849 detected",
+    "[17:29:00] \ud83d\udd14 Migration #3850 detected"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 2.4092,
-    "pnl_sol": -0.711297,
-    "pnl_pct": -22.79
+    "current": 2.670623,
+    "pnl_sol": -0.449874,
+    "pnl_pct": -14.42
   },
   "trades": {
-    "total": 133,
+    "total": 134,
     "wins": 29,
-    "losses": 104,
-    "win_rate": 21.8
+    "losses": 105,
+    "win_rate": 21.6
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
-  "sol_price": 88.44,
+  "sol_price": 88.42,
   "bot_stats": {
-    "migrations_seen": 3848,
+    "migrations_seen": 3850,
     "migrations_added": 221,
-    "pools_tracking": 12,
-    "price_updates": 255503,
+    "pools_tracking": 11,
+    "price_updates": 255635,
     "migrations_rejected": 0,
     "liquidity_rejected": 8,
     "bc_graduated": 229,
