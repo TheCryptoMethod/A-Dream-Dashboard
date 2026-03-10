@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T00:21:33.013991+00:00",
-  "uptime_seconds": 17843.8,
+  "updated_at": "2026-03-10T00:22:33.984966+00:00",
+  "uptime_seconds": 17904.7,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,8 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[00:12:20] \ud83d\udcca Mig:795 Track:4 Upd:49319 Pos:0 SOL:$84.95",
-    "[00:12:43] \ud83d\udee1\ufe0f Signal gate: F4FGnjR9ueDV\u2026 | rugcheck=13192>5000",
     "[00:12:43] \ud83d\udeab Disqualified: F4FGnjR9ueDV\u2026 | signal_gate_failed | 1.4m",
     "[00:13:21] \ud83d\udcca Mig:795 Track:3 Upd:49517 Pos:0 SOL:$84.95",
     "[00:13:55] \ud83d\udd14 Migration #796 detected",
@@ -562,7 +560,9 @@
     "[00:20:43] \ud83d\udd14 Migration #815 detected",
     "[00:21:05] \ud83d\udd14 Migration #816 detected",
     "[00:21:27] \ud83d\udd14 Migration #817 detected",
-    "[00:21:29] \ud83d\udcca Mig:817 Track:3 Upd:51407 Pos:0 SOL:$85.05"
+    "[00:21:29] \ud83d\udcca Mig:817 Track:3 Upd:51407 Pos:0 SOL:$85.05",
+    "[00:22:23] \ud83d\udd14 Migration #818 detected",
+    "[00:22:30] \ud83d\udcca Mig:818 Track:3 Upd:51591 Pos:0 SOL:$85.09"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.05,
+  "sol_price": 85.09,
   "bot_stats": {
-    "migrations_seen": 817,
+    "migrations_seen": 818,
     "migrations_added": 54,
     "pools_tracking": 3,
-    "price_updates": 51415,
+    "price_updates": 51601,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 58,
