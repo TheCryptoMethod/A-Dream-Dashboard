@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T01:24:36.621801+00:00",
-  "uptime_seconds": 21627.4,
+  "updated_at": "2026-03-10T01:25:37.740788+00:00",
+  "uptime_seconds": 21688.5,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,16 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[01:16:57] \ud83d\udd14 Migration #971 detected",
-    "[01:17:26] \ud83d\udcca Mig:971 Track:3 Upd:57173 Pos:0 SOL:$85.67",
-    "[01:17:31] \ud83d\udd14 Migration #972 detected",
-    "[01:17:33] \ud83d\udd14 Migration #973 detected",
-    "[01:17:49] \ud83d\udd14 Migration #974 detected",
-    "[01:18:00] \ud83d\udd14 Migration #975 detected",
-    "[01:18:22] \ud83d\udd14 Migration #976 detected",
-    "[01:18:23] \ud83d\udd14 Migration #977 detected",
-    "[01:18:27] \ud83d\udcca Mig:977 Track:3 Upd:57299 Pos:0 SOL:$85.65",
-    "[01:18:35] \u2705 BC Graduated: 6n5eX1SJLPzP\u2026",
     "[01:18:35] \ud83d\udce1 Tracking: 6n5eX1SJLPzPy3vj\u2026 | Pool #4",
     "[01:18:43] \ud83d\udd14 Migration #978 detected",
     "[01:19:14] \ud83d\udd14 Migration #979 detected",
@@ -562,34 +552,44 @@
     "[01:24:07] \u2705 BC Graduated: 5P8KkW5jrqds\u2026",
     "[01:24:07] \ud83d\udce1 Tracking: 5P8KkW5jrqdsrhTR\u2026 | Pool #6",
     "[01:24:17] \ud83d\udd14 Migration #994 detected",
-    "[01:24:33] \ud83d\udcca Mig:994 Track:6 Upd:59369 Pos:1 SOL:$85.45"
+    "[01:24:33] \ud83d\udcca Mig:994 Track:6 Upd:59369 Pos:1 SOL:$85.45",
+    "[01:24:44] \ud83d\udd14 Migration #995 detected",
+    "[01:24:47] \ud83d\udfe2 EXIT: 6jGtQy1C19Xd... | EARLY_DELTA_60S_5M | +75.1%",
+    "[01:24:47] \ud83d\udfe2 EARLY_DELTA_60S_5M: 6jGtQy1C19Xd\u2026 | +75.1% | +0.2270 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_60S_5M",
+    "[01:25:10] \ud83d\udd14 Migration #996 detected",
+    "[01:25:19] \ud83d\udd14 Migration #997 detected",
+    "[01:25:20] \ud83d\udd14 Migration #998 detected",
+    "[01:25:24] \ud83d\udd14 Migration #999 detected",
+    "[01:25:29] \ud83d\udfe2 ENTRY: M2_fib0.236 | 5P8KkW5jrqds... | $0.000035496 | 0.3021 SOL",
+    "[01:25:29] \ud83d\udcb0 Position filled: M2_fib0.236 | 5P8KkW5jrqds\u2026 | $0.000035496 | 0.3021 SOL | FDV $35.5k",
+    "[01:25:34] \ud83d\udcca Mig:999 Track:5 Upd:59665 Pos:1 SOL:$85.44"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 3.178314,
-    "pnl_sol": 0.057817,
-    "pnl_pct": 1.85
+    "current": 3.405345,
+    "pnl_sol": 0.284848,
+    "pnl_pct": 9.13
   },
   "trades": {
-    "total": 44,
-    "wins": 12,
+    "total": 45,
+    "wins": 13,
     "losses": 32,
-    "win_rate": 27.3
+    "win_rate": 28.9
   },
   "positions": {
     "open": 1
   },
-  "sol_price": 85.45,
+  "sol_price": 85.44,
   "bot_stats": {
-    "migrations_seen": 994,
+    "migrations_seen": 999,
     "migrations_added": 67,
-    "pools_tracking": 6,
-    "price_updates": 59390,
+    "pools_tracking": 5,
+    "price_updates": 59675,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 71,
-    "entries_found": 45,
-    "buys_success": 45,
+    "entries_found": 46,
+    "buys_success": 46,
     "buys_failed": 0
   }
 }
