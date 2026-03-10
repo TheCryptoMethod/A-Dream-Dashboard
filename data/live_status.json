@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T07:16:49.949828+00:00",
-  "uptime_seconds": 42760.7,
+  "updated_at": "2026-03-10T07:17:51.129579+00:00",
+  "uptime_seconds": 42821.9,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[07:06:37] \ud83d\udcca Mig:2035 Track:7 Upd:162309 Pos:0 SOL:$86.28",
-    "[07:06:48] \ud83d\udfe2 ENTRY: M2_fib0.236 | Dhqp2YuTE5RV... | $0.000035535 | 0.3021 SOL",
-    "[07:06:48] \ud83d\udcb0 Position filled: M2_fib0.236 | Dhqp2YuTE5RV\u2026 | $0.000035535 | 0.3021 SOL | FDV $35.5k",
-    "[07:06:54] \ud83d\udd34 EXIT: Dhqp2YuTE5RV... | SL | -3.9%",
     "[07:06:54] \ud83d\udd34 Stop Loss: Dhqp2YuTE5RV\u2026 | -3.9% | -0.0117 SOL | SL1: -17.7% price (exec: -12.3%)",
     "[07:07:14] \ud83d\udd14 Migration #2036 detected",
     "[07:07:38] \ud83d\udcca Mig:2036 Track:6 Upd:162466 Pos:0 SOL:$86.29",
@@ -562,7 +558,11 @@
     "[07:15:58] \ud83d\udd34 EXIT: AfTGyYtiUibg... | SL | -10.9%",
     "[07:15:58] \ud83d\udd34 Stop Loss: AfTGyYtiUibg\u2026 | -10.9% | -0.0329 SOL | SL1: -5.9% price (exec: -9.0%)",
     "[07:16:09] \ud83d\udd14 Migration #2054 detected",
-    "[07:16:49] \ud83d\udcca Mig:2054 Track:6 Upd:163839 Pos:0 SOL:$86.46"
+    "[07:16:49] \ud83d\udcca Mig:2054 Track:6 Upd:163839 Pos:0 SOL:$86.46",
+    "[07:17:15] \ud83d\udd14 Migration #2055 detected",
+    "[07:17:42] \ud83d\udd14 Migration #2056 detected",
+    "[07:17:49] \ud83d\udd14 Migration #2057 detected",
+    "[07:17:51] \ud83d\udcca Mig:2057 Track:6 Upd:163935 Pos:0 SOL:$86.48"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 86.46,
+  "sol_price": 86.48,
   "bot_stats": {
-    "migrations_seen": 2054,
+    "migrations_seen": 2057,
     "migrations_added": 118,
     "pools_tracking": 6,
-    "price_updates": 163839,
+    "price_updates": 163935,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 122,
