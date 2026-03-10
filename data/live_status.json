@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T07:39:17.222120+00:00",
-  "uptime_seconds": 44108.0,
+  "updated_at": "2026-03-10T07:40:18.652539+00:00",
+  "uptime_seconds": 44169.4,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,14 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[07:30:05] \ud83d\udcca Mig:2085 Track:7 Upd:165472 Pos:0 SOL:$86.63",
-    "[07:30:13] \ud83d\udfe2 ENTRY: M2_fib0.236 | 9MEuLXfkNPca... | $0.000027680 | 0.3021 SOL",
-    "[07:30:13] \ud83d\udcb0 Position filled: M2_fib0.236 | 9MEuLXfkNPca\u2026 | $0.000027680 | 0.3021 SOL | FDV $27.7k",
-    "[07:30:30] \ud83d\udd14 Migration #2086 detected",
-    "[07:30:39] \ud83d\udd14 Migration #2087 detected",
-    "[07:30:39] \ud83d\udd14 Migration #2088 detected",
-    "[07:30:43] \ud83d\udd34 EXIT: 9MEuLXfkNPca... | SL | -7.9%",
-    "[07:30:43] \ud83d\udd34 Stop Loss: 9MEuLXfkNPca\u2026 | -7.9% | -0.0239 SOL | SL1: -7.5% price (exec: -4.3%)",
     "[07:30:57] \ud83d\udd14 Migration #2089 detected",
     "[07:31:03] \ud83d\udd14 Migration #2090 detected",
     "[07:31:07] \ud83d\udcca Mig:2090 Track:6 Upd:165665 Pos:0 SOL:$86.62",
@@ -562,13 +554,21 @@
     "[07:38:46] \ud83d\udd14 Migration #2107 detected",
     "[07:38:59] \u2705 BC Graduated: Czcg2J1vRySA\u2026",
     "[07:39:00] \ud83d\udce1 Tracking: Czcg2J1vRySACiX1\u2026 | Pool #8",
-    "[07:39:17] \ud83d\udcca Mig:2107 Track:8 Upd:167133 Pos:0 SOL:$86.74"
+    "[07:39:17] \ud83d\udcca Mig:2107 Track:8 Upd:167133 Pos:0 SOL:$86.74",
+    "[07:39:17] \ud83d\udd14 Migration #2108 detected",
+    "[07:39:37] \ud83d\udd14 Migration #2109 detected",
+    "[07:39:50] \u2705 BC Graduated: GukXSXRD98Kf\u2026",
+    "[07:39:50] \ud83d\udce1 Tracking: GukXSXRD98KfzgSY\u2026 | Pool #9",
+    "[07:40:02] \ud83d\udd14 Migration #2110 detected",
+    "[07:40:13] \ud83d\udfe2 ENTRY: M2_fib0.236 | GukXSXRD98Kf... | $0.000033921 | 0.3021 SOL",
+    "[07:40:13] \ud83d\udcb0 Position filled: M2_fib0.236 | GukXSXRD98Kf\u2026 | $0.000033921 | 0.3021 SOL | FDV $33.9k",
+    "[07:40:18] \ud83d\udcca Mig:2110 Track:9 Upd:167511 Pos:1 SOL:$86.76"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 2.883797,
-    "pnl_sol": -0.2367,
-    "pnl_pct": -7.59
+    "current": 2.581677,
+    "pnl_sol": -0.53882,
+    "pnl_pct": -17.27
   },
   "trades": {
     "total": 64,
@@ -577,19 +577,19 @@
     "win_rate": 23.4
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 86.74,
+  "sol_price": 86.76,
   "bot_stats": {
-    "migrations_seen": 2107,
-    "migrations_added": 121,
-    "pools_tracking": 8,
-    "price_updates": 167133,
+    "migrations_seen": 2110,
+    "migrations_added": 122,
+    "pools_tracking": 9,
+    "price_updates": 167511,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
-    "bc_graduated": 125,
-    "entries_found": 64,
-    "buys_success": 64,
+    "bc_graduated": 126,
+    "entries_found": 65,
+    "buys_success": 65,
     "buys_failed": 0
   }
 }
