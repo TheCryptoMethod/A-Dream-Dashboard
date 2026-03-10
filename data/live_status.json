@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-10T23:10:05.101795+00:00",
-  "uptime_seconds": 4093.0,
+  "updated_at": "2026-03-10T23:11:06.065800+00:00",
+  "uptime_seconds": 4154.0,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,23 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[22:59:51] \ud83d\udcca Mig:143 Track:0 Upd:2271 Pos:0 SOL:$85.52",
-    "[23:00:52] \ud83d\udcca Mig:143 Track:0 Upd:2271 Pos:0 SOL:$85.52",
-    "[23:01:10] \ud83d\udd14 Migration #144 detected",
-    "[23:01:50] \ud83d\udd14 Migration #145 detected",
-    "[23:01:51] \ud83d\udd14 Migration #146 detected",
-    "[23:01:53] \ud83d\udcca Mig:146 Track:0 Upd:2271 Pos:0 SOL:$85.52",
-    "[23:01:54] \ud83d\udd14 Migration #147 detected",
-    "[23:02:02] \ud83d\udd14 Migration #148 detected",
-    "[23:02:03] \ud83d\udd14 Migration #149 detected",
-    "[23:02:09] \ud83d\udd14 Migration #150 detected",
-    "[23:02:16] \u2705 BC Graduated: 9BLdMAvbnWTB\u2026",
-    "[23:02:17] \ud83d\udce1 Tracking: 9BLdMAvbnWTBsV5X\u2026 | Pool #1",
-    "[23:02:20] \ud83d\udee1\ufe0f Signal gate: 9BLdMAvbnWTB\u2026 | mint_authority=ON, freeze_authority=ON",
-    "[23:02:20] \ud83d\udeab Disqualified: 9BLdMAvbnWTB\u2026 | signal_gate_failed | 4s",
-    "[23:02:25] \ud83d\udd14 Migration #151 detected",
-    "[23:02:27] \ud83d\udd14 Migration #152 detected",
-    "[23:02:32] \ud83d\udd14 Migration #153 detected",
     "[23:02:54] \ud83d\udcca Mig:153 Track:0 Upd:2272 Pos:0 SOL:$85.53",
     "[23:03:55] \ud83d\udcca Mig:153 Track:0 Upd:2272 Pos:0 SOL:$85.56",
     "[23:04:30] \ud83d\udd14 Migration #154 detected",
@@ -562,34 +545,51 @@
     "[23:09:01] \ud83d\udcca Mig:166 Track:0 Upd:2272 Pos:0 SOL:$85.60",
     "[23:09:14] \ud83d\udd14 Migration #167 detected",
     "[23:09:59] \ud83d\udd14 Migration #168 detected",
-    "[23:10:02] \ud83d\udcca Mig:168 Track:0 Upd:2272 Pos:0 SOL:$85.61"
+    "[23:10:02] \ud83d\udcca Mig:168 Track:0 Upd:2272 Pos:0 SOL:$85.61",
+    "[23:10:06] \ud83d\udd14 Migration #169 detected",
+    "[23:10:10] \ud83d\udd14 Migration #170 detected",
+    "[23:10:12] \u2705 BC Graduated: 2vDeDrGjkNdD\u2026",
+    "[23:10:12] \ud83d\udce1 Tracking: 2vDeDrGjkNdDC9Hv\u2026 | Pool #1",
+    "[23:10:17] \ud83d\udd14 Migration #171 detected",
+    "[23:10:19] \ud83d\udfe2 ENTRY: M1 | 2vDeDrGjkNdD... | $0.000097803 | 0.3021 SOL",
+    "[23:10:19] \ud83d\udcb0 Position filled: M1 | 2vDeDrGjkNdD\u2026 | $0.000097803 | 0.3021 SOL | FDV $97.8k",
+    "[23:10:24] \ud83d\udfe2 EXIT: 2vDeDrGjkNdD... | SL | +14.6%",
+    "[23:10:24] \ud83d\udfe2 Stop Loss: 2vDeDrGjkNdD\u2026 | +14.6% | +0.0442 SOL | SL1: -28.1% price (exec: -2.4%)",
+    "[23:10:41] \ud83d\udd14 Migration #172 detected",
+    "[23:10:48] \ud83d\udd14 Migration #173 detected",
+    "[23:10:53] \ud83d\udd14 Migration #174 detected",
+    "[23:10:55] \u2705 BC Graduated: 9mL6xaGX7JvU\u2026",
+    "[23:10:55] \ud83d\udce1 Tracking: 9mL6xaGX7JvUAr4w\u2026 | Pool #1",
+    "[23:11:02] \ud83d\udfe2 ENTRY: M1 | 9mL6xaGX7JvU... | $0.000042657 | 0.3021 SOL",
+    "[23:11:02] \ud83d\udcb0 Position filled: M1 | 9mL6xaGX7JvU\u2026 | $0.000042657 | 0.3021 SOL | FDV $42.7k",
+    "[23:11:03] \ud83d\udcca Mig:174 Track:1 Upd:2365 Pos:1 SOL:$85.62"
   ],
   "balance": {
     "start": 2.567413,
-    "current": 2.40182,
-    "pnl_sol": -0.165593,
-    "pnl_pct": -6.45
+    "current": 2.143852,
+    "pnl_sol": -0.423561,
+    "pnl_pct": -16.5
   },
   "trades": {
-    "total": 8,
-    "wins": 1,
+    "total": 9,
+    "wins": 2,
     "losses": 7,
-    "win_rate": 12.5
+    "win_rate": 22.2
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 85.61,
+  "sol_price": 85.62,
   "bot_stats": {
-    "migrations_seen": 168,
-    "migrations_added": 15,
-    "pools_tracking": 0,
-    "price_updates": 2272,
+    "migrations_seen": 174,
+    "migrations_added": 17,
+    "pools_tracking": 1,
+    "price_updates": 2381,
     "migrations_rejected": 0,
     "liquidity_rejected": 8,
-    "bc_graduated": 23,
-    "entries_found": 8,
-    "buys_success": 8,
+    "bc_graduated": 25,
+    "entries_found": 10,
+    "buys_success": 10,
     "buys_failed": 0
   }
 }
