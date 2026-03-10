@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T00:10:21.214078+00:00",
-  "uptime_seconds": 17172.0,
+  "updated_at": "2026-03-10T00:11:22.220297+00:00",
+  "uptime_seconds": 17233.0,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,16 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[23:59:40] \ud83d\udd14 Migration #759 detected",
-    "[23:59:56] \ud83d\udd14 Migration #760 detected",
-    "[00:00:07] \ud83d\udcca Mig:760 Track:3 Upd:46861 Pos:0 SOL:$84.93",
-    "[00:00:12] \ud83d\udd14 Migration #761 detected",
-    "[00:00:44] \ud83d\udd14 Migration #762 detected",
-    "[00:01:08] \ud83d\udcca Mig:762 Track:3 Upd:47029 Pos:0 SOL:$84.93",
-    "[00:01:39] \ud83d\udd14 Migration #763 detected",
-    "[00:01:58] \ud83d\udd14 Migration #764 detected",
-    "[00:02:08] \ud83d\udd14 Migration #765 detected",
-    "[00:02:09] \ud83d\udcca Mig:765 Track:3 Upd:47209 Pos:0 SOL:$84.93",
     "[00:02:23] \ud83d\udd14 Migration #766 detected",
     "[00:03:10] \ud83d\udcca Mig:766 Track:3 Upd:47375 Pos:0 SOL:$84.92",
     "[00:03:17] \ud83d\udd14 Migration #767 detected",
@@ -562,7 +552,17 @@
     "[00:09:17] \ud83d\udcca Mig:785 Track:3 Upd:48427 Pos:0 SOL:$84.95",
     "[00:09:20] \ud83d\udd14 Migration #786 detected",
     "[00:09:56] \ud83d\udd14 Migration #787 detected",
-    "[00:10:18] \ud83d\udcca Mig:787 Track:3 Upd:48589 Pos:0 SOL:$84.96"
+    "[00:10:18] \ud83d\udcca Mig:787 Track:3 Upd:48589 Pos:0 SOL:$84.96",
+    "[00:10:50] \ud83d\udd14 Migration #788 detected",
+    "[00:10:55] \ud83d\udd14 Migration #789 detected",
+    "[00:11:02] \ud83d\udd14 Migration #790 detected",
+    "[00:11:03] \u2705 BC Graduated: DDpTR5bxAgWn\u2026",
+    "[00:11:03] \ud83d\udce1 Tracking: DDpTR5bxAgWncQSG\u2026 | Pool #4",
+    "[00:11:07] \ud83d\udd14 Migration #791 detected",
+    "[00:11:15] \ud83d\udd14 Migration #792 detected",
+    "[00:11:19] \ud83d\udcca Mig:792 Track:4 Upd:48844 Pos:0 SOL:$84.96",
+    "[00:11:20] \u2705 BC Graduated: F4FGnjR9ueDV\u2026",
+    "[00:11:20] \ud83d\udce1 Tracking: F4FGnjR9ueDVcKjq\u2026 | Pool #5"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,15 +579,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 84.96,
+  "sol_price": 84.95,
   "bot_stats": {
-    "migrations_seen": 787,
-    "migrations_added": 51,
-    "pools_tracking": 3,
-    "price_updates": 48601,
+    "migrations_seen": 792,
+    "migrations_added": 53,
+    "pools_tracking": 5,
+    "price_updates": 48868,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
-    "bc_graduated": 55,
+    "bc_graduated": 57,
     "entries_found": 34,
     "buys_success": 34,
     "buys_failed": 0
