@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T17:42:37.376034+00:00",
-  "uptime_seconds": 80308.1,
+  "updated_at": "2026-03-10T17:43:38.538515+00:00",
+  "uptime_seconds": 80369.3,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,16 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[17:34:31] \ud83d\udcca Mig:3862 Track:12 Upd:256117 Pos:0 SOL:$88.42",
-    "[17:35:32] \ud83d\udcca Mig:3862 Track:12 Upd:256213 Pos:0 SOL:$88.41",
-    "[17:35:38] \ud83d\udd14 Migration #3863 detected",
-    "[17:35:53] \ud83d\udd14 Migration #3864 detected",
-    "[17:36:00] \ud83d\udd14 Migration #3865 detected",
-    "[17:36:01] \ud83d\udd14 Migration #3866 detected",
-    "[17:36:33] \ud83d\udcca Mig:3866 Track:12 Upd:256285 Pos:0 SOL:$88.39",
-    "[17:36:39] \ud83d\udd14 Migration #3867 detected",
-    "[17:36:57] \ud83d\udd14 Migration #3868 detected",
-    "[17:37:34] \ud83d\udcca Mig:3868 Track:12 Upd:256345 Pos:0 SOL:$88.34",
     "[17:37:38] \ud83d\udd14 Migration #3869 detected",
     "[17:38:33] \ud83d\udd14 Migration #3870 detected",
     "[17:38:35] \ud83d\udcca Mig:3870 Track:12 Upd:256409 Pos:0 SOL:$88.27",
@@ -562,34 +552,44 @@
     "[17:42:30] \ud83d\udee1\ufe0f Signal gate: GsojAK2bKa7K\u2026 | rugcheck=117601>5000",
     "[17:42:30] \ud83d\udeab Disqualified: GsojAK2bKa7K\u2026 | signal_gate_failed | 9s",
     "[17:42:31] \u2705 BC Graduated: 7cnnkSGVCjbr\u2026",
-    "[17:42:31] \ud83d\udce1 Tracking: 7cnnkSGVCjbrTSW9\u2026 | Pool #14"
+    "[17:42:31] \ud83d\udce1 Tracking: 7cnnkSGVCjbrTSW9\u2026 | Pool #14",
+    "[17:42:40] \ud83d\udcca Mig:3886 Track:14 Upd:256838 Pos:0 SOL:$88.09",
+    "[17:42:41] \ud83d\udfe2 ENTRY: M2_fib0.236 | 7cnnkSGVCjbr... | $0.000035243 | 0.3022 SOL",
+    "[17:42:41] \ud83d\udcb0 Position filled: M2_fib0.236 | 7cnnkSGVCjbr\u2026 | $0.000035243 | 0.3022 SOL | FDV $35.2k",
+    "[17:43:00] \ud83d\udd34 EXIT: 7cnnkSGVCjbr... | SL | -12.3%",
+    "[17:43:00] \ud83d\udd34 Stop Loss: 7cnnkSGVCjbr\u2026 | -12.3% | -0.0372 SOL | SL1: -5.6% price (exec: -18.3%)",
+    "[17:43:09] \ud83d\udfe2 ENTRY: M2_fib0.236 | BMnAxtc4TU9m... | $0.000049243 | 0.3021 SOL",
+    "[17:43:09] \ud83d\udcb0 Position filled: M2_fib0.236 | BMnAxtc4TU9m\u2026 | $0.000049243 | 0.3021 SOL | FDV $49.2k",
+    "[17:43:15] \ud83d\udfe2 EXIT: BMnAxtc4TU9m... | SL | +2.7%",
+    "[17:43:15] \ud83d\udfe2 Stop Loss: BMnAxtc4TU9m\u2026 | +2.7% | +0.0080 SOL | SL1: -5.3% price (exec: 2.3%)",
+    "[17:43:32] \ud83d\udd14 Migration #3887 detected"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 2.670623,
-    "pnl_sol": -0.449874,
-    "pnl_pct": -14.42
+    "current": 2.641464,
+    "pnl_sol": -0.479034,
+    "pnl_pct": -15.35
   },
   "trades": {
-    "total": 134,
-    "wins": 29,
-    "losses": 105,
-    "win_rate": 21.6
+    "total": 136,
+    "wins": 30,
+    "losses": 106,
+    "win_rate": 22.1
   },
   "positions": {
     "open": 0
   },
-  "sol_price": 88.09,
+  "sol_price": 88.02,
   "bot_stats": {
-    "migrations_seen": 3886,
+    "migrations_seen": 3887,
     "migrations_added": 225,
-    "pools_tracking": 14,
-    "price_updates": 256806,
+    "pools_tracking": 12,
+    "price_updates": 257054,
     "migrations_rejected": 0,
     "liquidity_rejected": 8,
     "bc_graduated": 233,
-    "entries_found": 135,
-    "buys_success": 135,
+    "entries_found": 137,
+    "buys_success": 137,
     "buys_failed": 0
   }
 }
