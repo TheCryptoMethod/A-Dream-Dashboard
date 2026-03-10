@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-10T22:10:01.003445+00:00",
-  "uptime_seconds": 488.9,
+  "updated_at": "2026-03-10T22:11:02.138285+00:00",
+  "uptime_seconds": 550.0,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,11 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[22:04:52] \ud83d\udcca Mig:9 Track:0 Upd:126 Pos:0 SOL:$85.73",
-    "[22:05:08] \ud83d\udd14 Migration #10 detected",
-    "[22:05:20] \ud83d\udd14 Migration #11 detected",
-    "[22:05:21] \u2705 BC Graduated: 6nxRq8shCXGP\u2026",
-    "[22:05:22] \ud83d\udca7 Liquidity rejected: 0.4 SOL < 15.0 SOL",
     "[22:05:27] \ud83d\udd14 Migration #12 detected",
     "[22:05:44] \ud83d\udd14 Migration #13 detected",
     "[22:05:47] \ud83d\udd14 Migration #14 detected",
@@ -562,7 +557,12 @@
     "[22:09:41] \ud83d\udd34 Stop Loss: Ar3QbizYS8tG\u2026 | -19.6% | -0.0593 SOL | SL1: -14.2% price (exec: -14.9%)",
     "[22:09:43] \ud83d\udd14 Migration #25 detected",
     "[22:09:50] \ud83d\udd14 Migration #26 detected",
-    "[22:09:57] \ud83d\udcca Mig:26 Track:0 Upd:385 Pos:0 SOL:$85.61"
+    "[22:09:57] \ud83d\udcca Mig:26 Track:0 Upd:385 Pos:0 SOL:$85.61",
+    "[22:10:13] \ud83d\udd14 Migration #27 detected",
+    "[22:10:26] \u2705 BC Graduated: DJdLR5yhHXAY\u2026",
+    "[22:10:26] \ud83d\udce1 Tracking: DJdLR5yhHXAYxo9R\u2026 | Pool #1",
+    "[22:10:27] \ud83d\udeab Disqualified: DJdLR5yhHXAY\u2026 | mcap_bucket_not_enabled | 1s",
+    "[22:10:59] \ud83d\udcca Mig:27 Track:0 Upd:386 Pos:0 SOL:$85.56"
   ],
   "balance": {
     "start": 2.567413,
@@ -579,15 +579,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.61,
+  "sol_price": 85.56,
   "bot_stats": {
-    "migrations_seen": 26,
-    "migrations_added": 5,
+    "migrations_seen": 27,
+    "migrations_added": 6,
     "pools_tracking": 0,
-    "price_updates": 385,
+    "price_updates": 386,
     "migrations_rejected": 0,
     "liquidity_rejected": 1,
-    "bc_graduated": 6,
+    "bc_graduated": 7,
     "entries_found": 2,
     "buys_success": 2,
     "buys_failed": 0
