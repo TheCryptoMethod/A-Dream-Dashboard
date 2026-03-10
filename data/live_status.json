@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T12:49:32.699360+00:00",
-  "uptime_seconds": 62723.4,
+  "updated_at": "2026-03-10T12:50:33.733723+00:00",
+  "uptime_seconds": 62784.5,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,9 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[12:44:30] \ud83d\udcca Mig:2897 Track:11 Upd:213443 Pos:0 SOL:$86.53",
-    "[12:44:32] \ud83d\udd14 Migration #2898 detected",
-    "[12:44:48] \ud83d\udd14 Migration #2899 detected",
     "[12:44:49] \ud83d\udd14 Migration #2900 detected",
     "[12:44:54] \ud83d\udd14 Migration #2901 detected",
     "[12:44:59] \ud83d\udd14 Migration #2902 detected",
@@ -562,13 +559,16 @@
     "[12:49:04] \ud83d\udd14 Migration #2919 detected",
     "[12:49:17] \u2705 BC Graduated: sHxs3zsx6ooJ\u2026",
     "[12:49:17] \ud83d\udce1 Tracking: sHxs3zsx6ooJCDJE\u2026 | Pool #11",
-    "[12:49:20] \ud83d\udd14 Migration #2920 detected"
+    "[12:49:20] \ud83d\udd14 Migration #2920 detected",
+    "[12:49:36] \ud83d\udcca Mig:2920 Track:11 Upd:215389 Pos:0 SOL:$86.60",
+    "[12:50:27] \ud83d\udfe2 ENTRY: M2_fib0.236 | Czcg2J1vRySA... | $0.000081513 | 0.3021 SOL",
+    "[12:50:27] \ud83d\udcb0 Position filled: M2_fib0.236 | Czcg2J1vRySA\u2026 | $0.000081513 | 0.3021 SOL | FDV $81.5k"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 3.064725,
-    "pnl_sol": -0.055772,
-    "pnl_pct": -1.79
+    "current": 2.762608,
+    "pnl_sol": -0.35789,
+    "pnl_pct": -11.47
   },
   "trades": {
     "total": 93,
@@ -577,19 +577,19 @@
     "win_rate": 24.7
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
   "sol_price": 86.6,
   "bot_stats": {
     "migrations_seen": 2920,
     "migrations_added": 164,
     "pools_tracking": 11,
-    "price_updates": 215360,
+    "price_updates": 216011,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 168,
-    "entries_found": 93,
-    "buys_success": 93,
+    "entries_found": 94,
+    "buys_success": 94,
     "buys_failed": 0
   }
 }
