@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T08:16:02.613299+00:00",
-  "uptime_seconds": 46313.4,
+  "updated_at": "2026-03-10T08:17:03.782753+00:00",
+  "uptime_seconds": 46374.5,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,14 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[08:06:59] \ud83d\udfe2 ENTRY: M2_fib0.236 | FcUdd49bfuaj... | $0.000024421 | 0.3021 SOL",
-    "[08:06:59] \ud83d\udcb0 Position filled: M2_fib0.236 | FcUdd49bfuaj\u2026 | $0.000024421 | 0.3021 SOL | FDV $24.4k",
-    "[08:07:06] \ud83d\udd14 Migration #2183 detected",
-    "[08:07:17] \ud83d\udd14 Migration #2184 detected",
-    "[08:07:28] \ud83d\udfe2 EXIT: FcUdd49bfuaj... | EARLY_PERF_30S | +15.0%",
-    "[08:07:28] \ud83d\udfe2 EARLY_PERF_30S: FcUdd49bfuaj\u2026 | +15.0% | +0.0454 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_30S (perf_30s=+27.5%)",
-    "[08:07:52] \ud83d\udcca Mig:2184 Track:7 Upd:172286 Pos:0 SOL:$86.82",
-    "[08:07:54] \ud83d\udd14 Migration #2185 detected",
     "[08:08:00] \ud83d\udd14 Migration #2186 detected",
     "[08:08:33] \ud83d\udd14 Migration #2187 detected",
     "[08:08:49] \ud83d\udd14 Migration #2188 detected",
@@ -562,7 +554,15 @@
     "[08:14:00] \ud83d\udcca Mig:2198 Track:7 Upd:173404 Pos:0 SOL:$87.05",
     "[08:14:14] \ud83d\udd14 Migration #2199 detected",
     "[08:15:01] \ud83d\udcca Mig:2199 Track:7 Upd:173519 Pos:0 SOL:$87.06",
-    "[08:16:02] \ud83d\udcca Mig:2199 Track:7 Upd:173629 Pos:0 SOL:$87.05"
+    "[08:16:02] \ud83d\udcca Mig:2199 Track:7 Upd:173629 Pos:0 SOL:$87.05",
+    "[08:16:05] \ud83d\udd14 Migration #2200 detected",
+    "[08:16:06] \ud83d\udd14 Migration #2201 detected",
+    "[08:16:10] \ud83d\udd14 Migration #2202 detected",
+    "[08:16:12] \ud83d\udd14 Migration #2203 detected",
+    "[08:16:18] \ud83d\udd14 Migration #2204 detected",
+    "[08:16:23] \ud83d\udd14 Migration #2205 detected",
+    "[08:16:57] \ud83d\udd14 Migration #2206 detected",
+    "[08:17:03] \ud83d\udcca Mig:2206 Track:7 Upd:173741 Pos:0 SOL:$87.06"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 87.05,
+  "sol_price": 87.06,
   "bot_stats": {
-    "migrations_seen": 2199,
+    "migrations_seen": 2206,
     "migrations_added": 125,
     "pools_tracking": 7,
-    "price_updates": 173629,
+    "price_updates": 173741,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 129,
