@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T09:53:58.697353+00:00",
-  "uptime_seconds": 52189.4,
+  "updated_at": "2026-03-10T09:54:59.943625+00:00",
+  "uptime_seconds": 52250.7,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[09:45:21] \ud83d\udd14 Migration #2425 detected",
-    "[09:45:41] \ud83d\udd14 Migration #2426 detected",
-    "[09:45:46] \ud83d\udd14 Migration #2427 detected",
-    "[09:45:49] \ud83d\udcca Mig:2427 Track:8 Upd:188573 Pos:0 SOL:$87.29",
     "[09:45:54] \u2705 BC Graduated: MWHn7SphRu6V\u2026",
     "[09:45:55] \ud83d\udce1 Tracking: MWHn7SphRu6Vq9QQ\u2026 | Pool #9",
     "[09:46:02] \ud83d\udd14 Migration #2428 detected",
@@ -562,7 +558,11 @@
     "[09:53:05] \ud83d\udcb0 Position filled: M2_fib0.236 | EyZHxWPDGikm\u2026 | $0.000030525 | 0.3021 SOL | FDV $30.5k",
     "[09:53:10] \ud83d\udd34 EXIT: EyZHxWPDGikm... | SL | -6.8%",
     "[09:53:10] \ud83d\udd34 Stop Loss: EyZHxWPDGikm\u2026 | -6.8% | -0.0204 SOL | SL1: -22.3% price (exec: -7.2%)",
-    "[09:53:58] \ud83d\udcca Mig:2441 Track:7 Upd:191377 Pos:0 SOL:$87.24"
+    "[09:53:58] \ud83d\udcca Mig:2441 Track:7 Upd:191377 Pos:0 SOL:$87.24",
+    "[09:54:06] \ud83d\udd14 Migration #2442 detected",
+    "[09:54:22] \ud83d\udd14 Migration #2443 detected",
+    "[09:54:51] \ud83d\udd14 Migration #2444 detected",
+    "[09:54:59] \ud83d\udcca Mig:2444 Track:7 Upd:191579 Pos:0 SOL:$87.24"
   ],
   "balance": {
     "start": 3.120497,
@@ -581,10 +581,10 @@
   },
   "sol_price": 87.24,
   "bot_stats": {
-    "migrations_seen": 2441,
+    "migrations_seen": 2444,
     "migrations_added": 139,
     "pools_tracking": 7,
-    "price_updates": 191377,
+    "price_updates": 191579,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 143,
