@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T13:33:23.667752+00:00",
-  "uptime_seconds": 65354.4,
+  "updated_at": "2026-03-10T13:34:24.969640+00:00",
+  "uptime_seconds": 65415.7,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,11 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[13:26:15] \ud83d\udd14 Migration #3053 detected",
-    "[13:26:18] \ud83d\udcca Mig:3053 Track:8 Upd:219464 Pos:0 SOL:$87.08",
-    "[13:26:32] \ud83d\udd14 Migration #3054 detected",
-    "[13:26:32] \ud83d\udd14 Migration #3055 detected",
-    "[13:26:44] \ud83d\udd14 Migration #3056 detected",
     "[13:27:11] \ud83d\udd14 Migration #3057 detected",
     "[13:27:19] \ud83d\udcca Mig:3057 Track:8 Upd:219532 Pos:0 SOL:$87.09",
     "[13:27:33] \ud83d\udd14 Migration #3058 detected",
@@ -562,7 +557,12 @@
     "[13:32:53] \ud83d\udd14 Migration #3076 detected",
     "[13:33:01] \ud83d\udee1\ufe0f Signal gate: DwFagWK1vC65\u2026 | rugcheck=19701>5000",
     "[13:33:01] \ud83d\udeab Disqualified: DwFagWK1vC65\u2026 | signal_gate_failed | 18s",
-    "[13:33:13] \ud83d\udd14 Migration #3077 detected"
+    "[13:33:13] \ud83d\udd14 Migration #3077 detected",
+    "[13:33:26] \u2705 BC Graduated: FHYtZH9J4ryN\u2026",
+    "[13:33:26] \ud83d\udce1 Tracking: FHYtZH9J4ryN3YsV\u2026 | Pool #9",
+    "[13:33:27] \ud83d\udcca Mig:3077 Track:9 Upd:220381 Pos:0 SOL:$87.13",
+    "[13:33:38] \ud83d\udd14 Migration #3078 detected",
+    "[13:34:20] \ud83d\udd14 Migration #3079 detected"
   ],
   "balance": {
     "start": 3.120497,
@@ -581,13 +581,13 @@
   },
   "sol_price": 87.13,
   "bot_stats": {
-    "migrations_seen": 3077,
-    "migrations_added": 170,
-    "pools_tracking": 8,
-    "price_updates": 220379,
+    "migrations_seen": 3079,
+    "migrations_added": 171,
+    "pools_tracking": 9,
+    "price_updates": 220640,
     "migrations_rejected": 0,
     "liquidity_rejected": 5,
-    "bc_graduated": 175,
+    "bc_graduated": 176,
     "entries_found": 99,
     "buys_success": 99,
     "buys_failed": 0
