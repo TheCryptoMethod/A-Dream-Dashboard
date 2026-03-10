@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T12:11:46.848462+00:00",
-  "uptime_seconds": 60457.6,
+  "updated_at": "2026-03-10T12:12:48.206884+00:00",
+  "uptime_seconds": 60518.9,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,11 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[12:03:39] \ud83d\udcca Mig:2774 Track:8 Upd:208682 Pos:0 SOL:$86.83",
-    "[12:04:33] \ud83d\udd14 Migration #2775 detected",
-    "[12:04:40] \ud83d\udcca Mig:2775 Track:8 Upd:208750 Pos:0 SOL:$86.82",
-    "[12:04:51] \ud83d\udd14 Migration #2776 detected",
-    "[12:04:52] \ud83d\udd14 Migration #2777 detected",
     "[12:05:03] \ud83d\udd14 Migration #2778 detected",
     "[12:05:05] \ud83d\udd14 Migration #2779 detected",
     "[12:05:07] \ud83d\udd14 Migration #2780 detected",
@@ -562,7 +557,12 @@
     "[12:10:49] \ud83d\udcca Mig:2801 Track:9 Upd:209537 Pos:0 SOL:$86.60",
     "[12:10:58] \ud83d\udd14 Migration #2802 detected",
     "[12:11:07] \ud83d\udd14 Migration #2803 detected",
-    "[12:11:08] \ud83d\udd14 Migration #2804 detected"
+    "[12:11:08] \ud83d\udd14 Migration #2804 detected",
+    "[12:11:50] \ud83d\udcca Mig:2804 Track:9 Upd:209801 Pos:0 SOL:$86.60",
+    "[12:12:22] \ud83d\udee1\ufe0f Signal gate: ArCadd1FPNuG\u2026 | mint_authority=ON, freeze_authority=ON",
+    "[12:12:22] \ud83d\udeab Disqualified: ArCadd1FPNuG\u2026 | signal_gate_failed | 3.7m",
+    "[12:12:22] \ud83d\udd14 Migration #2805 detected",
+    "[12:12:37] \ud83d\udd14 Migration #2806 detected"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 86.6,
+  "sol_price": 86.56,
   "bot_stats": {
-    "migrations_seen": 2804,
+    "migrations_seen": 2806,
     "migrations_added": 157,
-    "pools_tracking": 9,
-    "price_updates": 209787,
+    "pools_tracking": 8,
+    "price_updates": 209937,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 161,
