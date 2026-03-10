@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T01:04:16.252277+00:00",
-  "uptime_seconds": 20407.0,
+  "updated_at": "2026-03-10T01:05:17.244914+00:00",
+  "uptime_seconds": 20468.0,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[00:58:07] \ud83d\udcca Mig:904 Track:3 Upd:53976 Pos:0 SOL:$85.66",
-    "[00:58:26] \ud83d\udd14 Migration #905 detected",
-    "[00:58:34] \ud83d\udfe2 ENTRY: M2_fib0.236 | 7H3pseCRXn3w... | $0.000042735 | 0.3021 SOL",
-    "[00:58:34] \ud83d\udcb0 Position filled: M2_fib0.236 | 7H3pseCRXn3w\u2026 | $0.000042735 | 0.3021 SOL | FDV $42.7k",
     "[00:58:41] \ud83d\udd34 EXIT: 7H3pseCRXn3w... | SL | -2.2%",
     "[00:58:41] \ud83d\udd34 Stop Loss: 7H3pseCRXn3w\u2026 | -2.2% | -0.0065 SOL | SL1: -5.2% price (exec: -0.9%)",
     "[00:58:58] \ud83d\udd14 Migration #906 detected",
@@ -562,7 +558,11 @@
     "[01:03:36] \u2705 BC Graduated: LyonFRYdR8Sv\u2026",
     "[01:03:36] \ud83d\udce1 Tracking: LyonFRYdR8SvVcsF\u2026 | Pool #3",
     "[01:04:07] \ud83d\udd14 Migration #921 detected",
-    "[01:04:13] \ud83d\udcca Mig:921 Track:3 Upd:54476 Pos:0 SOL:$85.61"
+    "[01:04:13] \ud83d\udcca Mig:921 Track:3 Upd:54476 Pos:0 SOL:$85.61",
+    "[01:04:22] \ud83d\udd14 Migration #922 detected",
+    "[01:04:23] \ud83d\udd14 Migration #923 detected",
+    "[01:04:30] \ud83d\udd14 Migration #924 detected",
+    "[01:05:14] \ud83d\udcca Mig:924 Track:3 Upd:54582 Pos:0 SOL:$85.63"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.61,
+  "sol_price": 85.63,
   "bot_stats": {
-    "migrations_seen": 921,
+    "migrations_seen": 924,
     "migrations_added": 62,
     "pools_tracking": 3,
-    "price_updates": 54486,
+    "price_updates": 54586,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 66,
