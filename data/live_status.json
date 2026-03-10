@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-10T22:21:13.077523+00:00",
-  "uptime_seconds": 1161.0,
+  "updated_at": "2026-03-10T22:22:14.138046+00:00",
+  "uptime_seconds": 1222.0,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,8 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[22:09:57] \ud83d\udcca Mig:26 Track:0 Upd:385 Pos:0 SOL:$85.61",
-    "[22:10:13] \ud83d\udd14 Migration #27 detected",
     "[22:10:26] \u2705 BC Graduated: DJdLR5yhHXAY\u2026",
     "[22:10:26] \ud83d\udce1 Tracking: DJdLR5yhHXAYxo9R\u2026 | Pool #1",
     "[22:10:27] \ud83d\udeab Disqualified: DJdLR5yhHXAY\u2026 | mcap_bucket_not_enabled | 1s",
@@ -562,7 +560,9 @@
     "[22:20:22] \ud83d\udd14 Migration #47 detected",
     "[22:20:23] \ud83d\udfe2 ENTRY: M1 | Eubc5VNxm1Q8... | $0.000048332 | 0.3021 SOL",
     "[22:20:23] \ud83d\udcb0 Position filled: M1 | Eubc5VNxm1Q8\u2026 | $0.000048332 | 0.3021 SOL | FDV $48.3k",
-    "[22:21:10] \ud83d\udcca Mig:47 Track:1 Upd:604 Pos:1 SOL:$85.24"
+    "[22:21:10] \ud83d\udcca Mig:47 Track:1 Upd:604 Pos:1 SOL:$85.24",
+    "[22:21:27] \ud83d\udd14 Migration #48 detected",
+    "[22:22:11] \ud83d\udcca Mig:48 Track:1 Upd:827 Pos:1 SOL:$85.22"
   ],
   "balance": {
     "start": 2.567413,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 1
   },
-  "sol_price": 85.24,
+  "sol_price": 85.22,
   "bot_stats": {
-    "migrations_seen": 47,
+    "migrations_seen": 48,
     "migrations_added": 7,
     "pools_tracking": 1,
-    "price_updates": 617,
+    "price_updates": 841,
     "migrations_rejected": 0,
     "liquidity_rejected": 1,
     "bc_graduated": 8,
