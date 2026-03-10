@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T16:20:55.033579+00:00",
-  "uptime_seconds": 75405.8,
+  "updated_at": "2026-03-10T16:21:56.310866+00:00",
+  "uptime_seconds": 75467.0,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,12 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[16:15:14] \ud83d\udd14 Migration #3612 detected",
-    "[16:15:24] \ud83d\udd14 Migration #3613 detected",
-    "[16:15:38] \ud83d\udd14 Migration #3614 detected",
-    "[16:15:51] \ud83d\udcca Mig:3614 Track:9 Upd:248273 Pos:0 SOL:$87.90",
-    "[16:15:51] \ud83d\udd14 Migration #3615 detected",
-    "[16:15:52] \u2705 BC Graduated: 5csCfnvLp9qH\u2026",
     "[16:15:52] \ud83d\udca7 Liquidity rejected: 1.3 SOL < 15.0 SOL",
     "[16:16:09] \ud83d\udd14 Migration #3616 detected",
     "[16:16:22] \ud83d\udd14 Migration #3617 detected",
@@ -562,7 +556,13 @@
     "[16:20:14] \u2705 BC Graduated: BAMaRdw1xdAA\u2026",
     "[16:20:14] \ud83d\udce1 Tracking: BAMaRdw1xdAAJiq2\u2026 | Pool #10",
     "[16:20:20] \ud83d\udd14 Migration #3629 detected",
-    "[16:20:50] \ud83d\udd14 Migration #3630 detected"
+    "[16:20:50] \ud83d\udd14 Migration #3630 detected",
+    "[16:20:58] \ud83d\udcca Mig:3630 Track:10 Upd:249116 Pos:0 SOL:$88.02",
+    "[16:21:16] \ud83d\udd14 Migration #3631 detected",
+    "[16:21:32] \ud83d\udd14 Migration #3632 detected",
+    "[16:21:45] \ud83d\udd14 Migration #3633 detected",
+    "[16:21:45] \ud83d\udd14 Migration #3634 detected",
+    "[16:21:49] \ud83d\udd14 Migration #3635 detected"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 88.02,
+  "sol_price": 88.06,
   "bot_stats": {
-    "migrations_seen": 3630,
+    "migrations_seen": 3635,
     "migrations_added": 207,
     "pools_tracking": 10,
-    "price_updates": 249108,
+    "price_updates": 249340,
     "migrations_rejected": 0,
     "liquidity_rejected": 6,
     "bc_graduated": 213,
