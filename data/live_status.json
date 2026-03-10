@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-10T22:02:53.119930+00:00",
-  "uptime_seconds": 61.0,
+  "updated_at": "2026-03-10T22:03:54.430308+00:00",
+  "uptime_seconds": 122.3,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -534,34 +534,41 @@
     "[22:02:50] \ud83d\udd14 Migration #6 detected",
     "[22:02:51] \ud83d\udd14 Migration #7 detected",
     "[22:02:52] \u2705 BC Graduated: BtDkdQtZisab\u2026",
-    "[22:02:52] \ud83d\udce1 Tracking: BtDkdQtZisabxcNJ\u2026 | Pool #1"
+    "[22:02:52] \ud83d\udce1 Tracking: BtDkdQtZisabxcNJ\u2026 | Pool #1",
+    "[22:03:00] \ud83d\udfe2 ENTRY: M1 | BtDkdQtZisab... | $0.000036525 | 0.3021 SOL",
+    "[22:03:00] \ud83d\udcb0 Position filled: M1 | BtDkdQtZisab\u2026 | $0.000036525 | 0.3021 SOL | FDV $36.5k",
+    "[22:03:23] \ud83d\udd34 EXIT: BtDkdQtZisab... | SL | -78.1%",
+    "[22:03:23] \ud83d\udd34 Stop Loss: BtDkdQtZisab\u2026 | -78.1% | -0.2360 SOL | SL1: -51.8% price (exec: -54.4%)",
+    "[22:03:36] \ud83d\udd14 Migration #8 detected",
+    "[22:03:42] \ud83d\udd14 Migration #9 detected",
+    "[22:03:51] \ud83d\udcca Mig:9 Track:0 Upd:126 Pos:0 SOL:$85.68"
   ],
   "balance": {
     "start": 2.567413,
-    "current": 2.567413,
-    "pnl_sol": 0.0,
-    "pnl_pct": 0.0
+    "current": 2.331377,
+    "pnl_sol": -0.236036,
+    "pnl_pct": -9.19
   },
   "trades": {
-    "total": 0,
+    "total": 1,
     "wins": 0,
-    "losses": 0,
-    "win_rate": 0
+    "losses": 1,
+    "win_rate": 0.0
   },
   "positions": {
     "open": 0
   },
-  "sol_price": 85.68,
+  "sol_price": 85.7,
   "bot_stats": {
-    "migrations_seen": 7,
+    "migrations_seen": 9,
     "migrations_added": 1,
-    "pools_tracking": 1,
-    "price_updates": 0,
+    "pools_tracking": 0,
+    "price_updates": 126,
     "migrations_rejected": 0,
     "liquidity_rejected": 0,
     "bc_graduated": 1,
-    "entries_found": 0,
-    "buys_success": 0,
+    "entries_found": 1,
+    "buys_success": 1,
     "buys_failed": 0
   }
 }
