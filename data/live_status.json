@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T15:14:30.916139+00:00",
-  "uptime_seconds": 71421.7,
+  "updated_at": "2026-03-10T15:15:32.120090+00:00",
+  "uptime_seconds": 71482.9,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,11 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[15:07:16] \ud83d\udd14 Migration #3413 detected",
-    "[15:07:26] \ud83d\udcca Mig:3413 Track:10 Upd:241099 Pos:0 SOL:$88.13",
-    "[15:07:37] \ud83d\udd14 Migration #3414 detected",
-    "[15:07:55] \ud83d\udd14 Migration #3415 detected",
-    "[15:08:00] \ud83d\udd14 Migration #3416 detected",
     "[15:08:27] \ud83d\udcca Mig:3416 Track:10 Upd:241370 Pos:0 SOL:$88.08",
     "[15:08:39] \ud83d\udd14 Migration #3417 detected",
     "[15:09:14] \ud83d\udd14 Migration #3418 detected",
@@ -562,7 +557,12 @@
     "[15:14:08] \ud83d\udd14 Migration #3430 detected",
     "[15:14:12] \ud83d\udd14 Migration #3431 detected",
     "[15:14:12] \ud83d\udd34 EXIT: 5kPosFqLTMLi... | SL | -2.4%",
-    "[15:14:12] \ud83d\udd34 Stop Loss: 5kPosFqLTMLi\u2026 | -2.4% | -0.0074 SOL | SL1: -6.8% price (exec: -10.5%)"
+    "[15:14:12] \ud83d\udd34 Stop Loss: 5kPosFqLTMLi\u2026 | -2.4% | -0.0074 SOL | SL1: -6.8% price (exec: -10.5%)",
+    "[15:14:34] \ud83d\udcca Mig:3431 Track:9 Upd:242629 Pos:0 SOL:$87.94",
+    "[15:14:35] \ud83d\udd14 Migration #3432 detected",
+    "[15:14:39] \ud83d\udd14 Migration #3433 detected",
+    "[15:15:01] \ud83d\udd14 Migration #3434 detected",
+    "[15:15:16] \ud83d\udd14 Migration #3435 detected"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 87.94,
+  "sol_price": 87.79,
   "bot_stats": {
-    "migrations_seen": 3431,
+    "migrations_seen": 3435,
     "migrations_added": 197,
     "pools_tracking": 9,
-    "price_updates": 242623,
+    "price_updates": 242673,
     "migrations_rejected": 0,
     "liquidity_rejected": 5,
     "bc_graduated": 202,
