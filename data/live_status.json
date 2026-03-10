@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T00:51:03.452581+00:00",
-  "uptime_seconds": 19614.2,
+  "updated_at": "2026-03-10T00:52:04.518972+00:00",
+  "uptime_seconds": 19675.3,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,8 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[00:41:36] \ud83d\udd14 Migration #858 detected",
-    "[00:41:50] \ud83d\udcca Mig:858 Track:2 Upd:53567 Pos:0 SOL:$85.68",
     "[00:42:26] \ud83d\udd14 Migration #859 detected",
     "[00:42:51] \ud83d\udcca Mig:859 Track:2 Upd:53567 Pos:0 SOL:$85.68",
     "[00:42:58] \ud83d\udd14 Migration #860 detected",
@@ -562,7 +560,9 @@
     "[00:50:48] \ud83d\udcb0 Position filled: M2_fib0.236 | H7pbJU4rabny\u2026 | $0.000031943 | 0.3021 SOL | FDV $31.9k",
     "[00:50:53] \ud83d\udd34 EXIT: H7pbJU4rabny... | SL | -4.3%",
     "[00:50:53] \ud83d\udd34 Stop Loss: H7pbJU4rabny\u2026 | -4.3% | -0.0131 SOL | SL1: -5.4% price (exec: -4.6%)",
-    "[00:51:00] \ud83d\udcca Mig:881 Track:2 Upd:53660 Pos:0 SOL:$85.81"
+    "[00:51:00] \ud83d\udcca Mig:881 Track:2 Upd:53660 Pos:0 SOL:$85.81",
+    "[00:51:27] \ud83d\udd14 Migration #882 detected",
+    "[00:52:01] \ud83d\udcca Mig:882 Track:2 Upd:53660 Pos:0 SOL:$85.80"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.81,
+  "sol_price": 85.8,
   "bot_stats": {
-    "migrations_seen": 881,
+    "migrations_seen": 882,
     "migrations_added": 58,
     "pools_tracking": 2,
     "price_updates": 53660,
