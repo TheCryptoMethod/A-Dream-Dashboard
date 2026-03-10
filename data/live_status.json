@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T10:27:37.060644+00:00",
-  "uptime_seconds": 54207.8,
+  "updated_at": "2026-03-10T10:28:38.161511+00:00",
+  "uptime_seconds": 54268.9,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,14 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[10:18:11] \ud83d\udfe2 Take Profit: DKavk9gH3JZY\u2026 | +233.7% | +0.7062 SOL | TP1: +330% reached",
-    "[10:18:26] \ud83d\udcca Mig:2488 Track:8 Upd:197543 Pos:0 SOL:$87.24",
-    "[10:18:36] \ud83d\udd14 Migration #2489 detected",
-    "[10:19:04] \ud83d\udd14 Migration #2490 detected",
-    "[10:19:09] \ud83d\udd14 Migration #2491 detected",
-    "[10:19:16] \ud83d\udd14 Migration #2492 detected",
-    "[10:19:17] \u2705 BC Graduated: DGdKfpUGDi8B\u2026",
-    "[10:19:18] \ud83d\udce1 Tracking: DGdKfpUGDi8BLrxL\u2026 | Pool #9",
     "[10:19:24] \ud83d\udeab Disqualified: DGdKfpUGDi8B\u2026 | mcap_bucket_not_enabled | 6s",
     "[10:19:27] \ud83d\udcca Mig:2492 Track:8 Upd:197846 Pos:0 SOL:$87.22",
     "[10:19:30] \ud83d\udd14 Migration #2493 detected",
@@ -562,29 +554,37 @@
     "[10:26:35] \ud83d\udcca Mig:2510 Track:8 Upd:199561 Pos:1 SOL:$87.12",
     "[10:27:02] \ud83d\udd14 Migration #2511 detected",
     "[10:27:24] \ud83d\udd14 Migration #2512 detected",
-    "[10:27:37] \ud83d\udcca Mig:2512 Track:8 Upd:199840 Pos:1 SOL:$87.11"
+    "[10:27:37] \ud83d\udcca Mig:2512 Track:8 Upd:199840 Pos:1 SOL:$87.11",
+    "[10:27:45] \ud83d\udfe2 EXIT: HnYuWaoGJhwg... | EARLY_PERF_5M | +14.0%",
+    "[10:27:45] \ud83d\udfe2 EARLY_PERF_5M: HnYuWaoGJhwg\u2026 | +14.0% | +0.0422 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_5M",
+    "[10:27:55] \ud83d\udd14 Migration #2513 detected",
+    "[10:28:10] \ud83d\udd14 Migration #2514 detected",
+    "[10:28:19] \ud83d\udd14 Migration #2515 detected",
+    "[10:28:30] \ud83d\udd14 Migration #2516 detected",
+    "[10:28:36] \ud83d\udd14 Migration #2517 detected",
+    "[10:28:38] \ud83d\udcca Mig:2517 Track:7 Upd:199924 Pos:0 SOL:$87.09"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 3.039549,
-    "pnl_sol": -0.080948,
-    "pnl_pct": -2.59
+    "current": 3.383893,
+    "pnl_sol": 0.263396,
+    "pnl_pct": 8.44
   },
   "trades": {
-    "total": 81,
-    "wins": 20,
+    "total": 82,
+    "wins": 21,
     "losses": 61,
-    "win_rate": 24.7
+    "win_rate": 25.6
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
-  "sol_price": 87.11,
+  "sol_price": 87.09,
   "bot_stats": {
-    "migrations_seen": 2512,
+    "migrations_seen": 2517,
     "migrations_added": 144,
-    "pools_tracking": 8,
-    "price_updates": 199840,
+    "pools_tracking": 7,
+    "price_updates": 199924,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 148,
