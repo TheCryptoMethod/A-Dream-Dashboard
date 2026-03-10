@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-10T22:05:56.761826+00:00",
-  "uptime_seconds": 244.7,
+  "updated_at": "2026-03-10T22:06:57.960814+00:00",
+  "uptime_seconds": 305.9,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,11 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[22:01:52] \ud83d\ude80 Bot gestartet \u2014 M1",
-    "[22:01:52] \ud83d\udcb0 Balance: 2.5674 SOL",
-    "[22:02:00] \ud83d\udd14 Migration #1 detected",
-    "[22:02:05] \ud83d\udd14 Migration #2 detected",
-    "[22:02:24] \ud83d\udd14 Migration #3 detected",
     "[22:02:39] \ud83d\udd14 Migration #4 detected",
     "[22:02:45] \ud83d\udd14 Migration #5 detected",
     "[22:02:50] \ud83d\udcca Mig:5 Track:0 Upd:0 Pos:0 SOL:$85.65",
@@ -552,7 +547,22 @@
     "[22:05:47] \ud83d\udd14 Migration #14 detected",
     "[22:05:53] \ud83d\udcca Mig:14 Track:0 Upd:126 Pos:0 SOL:$85.70",
     "[22:05:55] \ud83d\udd14 Migration #15 detected",
-    "[22:05:56] \ud83d\udd14 Migration #16 detected"
+    "[22:05:56] \ud83d\udd14 Migration #16 detected",
+    "[22:06:20] \ud83d\udd14 Migration #17 detected",
+    "[22:06:31] \ud83d\udd14 Migration #18 detected",
+    "[22:06:34] \u2705 BC Graduated: C6oJ1B68e5NT\u2026",
+    "[22:06:34] \ud83d\udce1 Tracking: C6oJ1B68e5NTTmWC\u2026 | Pool #1",
+    "[22:06:35] \ud83d\udeab Disqualified: C6oJ1B68e5NT\u2026 | mcap_bucket_not_enabled | 1s",
+    "[22:06:39] \ud83d\udd14 Migration #19 detected",
+    "[22:06:42] \ud83d\udd14 Migration #20 detected",
+    "[22:06:43] \ud83d\udd14 Migration #21 detected",
+    "[22:06:52] \u2705 BC Graduated: wC6YfsG6sVzt\u2026",
+    "[22:06:53] \ud83d\udce1 Tracking: wC6YfsG6sVzt3EoD\u2026 | Pool #1",
+    "[22:06:53] \ud83d\udeab Disqualified: wC6YfsG6sVzt\u2026 | mcap_bucket_not_enabled | 0s",
+    "[22:06:54] \ud83d\udcca Mig:21 Track:0 Upd:128 Pos:0 SOL:$85.67",
+    "[22:06:55] \u2705 BC Graduated: Gn2b1x78X1rZ\u2026",
+    "[22:06:55] \ud83d\udce1 Tracking: Gn2b1x78X1rZ4tBE\u2026 | Pool #1",
+    "[22:06:56] \ud83d\udeab Disqualified: Gn2b1x78X1rZ\u2026 | mcap_bucket_not_enabled | 0s"
   ],
   "balance": {
     "start": 2.567413,
@@ -569,15 +579,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.7,
+  "sol_price": 85.67,
   "bot_stats": {
-    "migrations_seen": 16,
-    "migrations_added": 1,
+    "migrations_seen": 21,
+    "migrations_added": 4,
     "pools_tracking": 0,
-    "price_updates": 126,
+    "price_updates": 129,
     "migrations_rejected": 0,
     "liquidity_rejected": 1,
-    "bc_graduated": 2,
+    "bc_graduated": 5,
     "entries_found": 1,
     "buys_success": 1,
     "buys_failed": 0
