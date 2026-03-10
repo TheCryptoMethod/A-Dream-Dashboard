@@ -1,20 +1,544 @@
 {
-  "status": "offline",
-  "updated_at": "2026-03-10T22:01:49.885778+00:00",
-  "last_session": {
-    "started_at": "2026-03-10T20:59:18.760005+00:00",
-    "ended_at": "2026-03-10T22:01:49.358446+00:00",
-    "duration_seconds": 3750.6,
-    "duration_formatted": "1h 2m 30s",
+  "status": "live",
+  "started_at": "2026-03-10T22:01:52.089543+00:00",
+  "updated_at": "2026-03-10T22:01:52.089593+00:00",
+  "uptime_seconds": 0.0,
+  "method": "M1",
+  "strategy": {
     "method": "M1",
-    "dry_run": false,
-    "balance_start": 2.567413,
-    "balance_end": 2.567413,
-    "pnl_sol": 0.0,
-    "pnl_pct": 0.0,
-    "total_trades": 0,
+    "entry_params": {
+      "type": "migration"
+    },
+    "source": "backtest",
+    "sl_pct": 12,
+    "tp_pct": 390,
+    "trailing_activation_pct": 0,
+    "trailing_pct": 0,
+    "mcap_min": 30000,
+    "mcap_max": 1000000,
+    "gates_passed": 10,
+    "all_11_passed": false,
+    "backtest_avg_pnl": 12.1607,
+    "backtest_win_rate": 35.31669865642994,
+    "backtest_sortino": 23.182,
+    "backtest_n_trades": 521,
+    "post_entry_filters": {
+      "PERF_10S": {
+        "LT_MINUS15": {
+          "keep": true,
+          "lift": 0.39,
+          "count": 67,
+          "avg_exit": -35.52,
+          "avg_hold": -14.64,
+          "advantage": -20.88
+        },
+        "MINUS15_MINUS5": {
+          "keep": true,
+          "lift": 0.938,
+          "count": 136,
+          "avg_exit": -13.52,
+          "avg_hold": 9.53,
+          "advantage": -23.05
+        },
+        "MINUS5_0": {
+          "keep": true,
+          "lift": 0.724,
+          "count": 149,
+          "avg_exit": -7.04,
+          "avg_hold": 4.93,
+          "advantage": -11.97
+        },
+        "0_PLUS5": {
+          "keep": true,
+          "lift": 1.038,
+          "count": 164,
+          "avg_exit": -0.07,
+          "avg_hold": 13.62,
+          "advantage": -13.68
+        },
+        "PLUS5_PLUS15": {
+          "keep": true,
+          "lift": 1.142,
+          "count": 170,
+          "avg_exit": 7.0,
+          "avg_hold": 20.03,
+          "advantage": -13.03
+        },
+        "PLUS15_PLUS30": {
+          "keep": true,
+          "lift": 1.45,
+          "count": 71,
+          "avg_exit": 17.95,
+          "avg_hold": 35.87,
+          "advantage": -17.93
+        },
+        "GT_PLUS30": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 28,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        }
+      },
+      "PERF_30S": {
+        "LT_MINUS20": {
+          "keep": true,
+          "lift": 0.082,
+          "count": 99,
+          "avg_exit": -45.06,
+          "avg_hold": -33.67,
+          "advantage": -11.39
+        },
+        "MINUS20_MINUS10": {
+          "keep": true,
+          "lift": 0.697,
+          "count": 87,
+          "avg_exit": -19.33,
+          "avg_hold": 2.39,
+          "advantage": -21.73
+        },
+        "MINUS10_0": {
+          "keep": true,
+          "lift": 0.969,
+          "count": 158,
+          "avg_exit": -9.36,
+          "avg_hold": 14.26,
+          "advantage": -23.63
+        },
+        "0_PLUS10": {
+          "keep": true,
+          "lift": 1.345,
+          "count": 158,
+          "avg_exit": 2.6,
+          "avg_hold": 24.02,
+          "advantage": -21.42
+        },
+        "PLUS10_PLUS25": {
+          "keep": true,
+          "lift": 1.046,
+          "count": 163,
+          "avg_exit": 13.57,
+          "avg_hold": 16.4,
+          "advantage": -2.83
+        },
+        "PLUS25_PLUS50": {
+          "keep": true,
+          "lift": 1.404,
+          "count": 88,
+          "avg_exit": 30.84,
+          "avg_hold": 32.31,
+          "advantage": -1.47
+        },
+        "GT_PLUS50": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 32,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        }
+      },
+      "PERF_60S": {
+        "LT_MINUS30": {
+          "keep": true,
+          "lift": 0.0,
+          "count": 96,
+          "avg_exit": -64.39,
+          "avg_hold": -37.8,
+          "advantage": -26.59
+        },
+        "MINUS30_MINUS15": {
+          "keep": false,
+          "lift": 0.153,
+          "count": 81,
+          "avg_exit": -27.04,
+          "avg_hold": -32.3,
+          "advantage": 5.26
+        },
+        "MINUS15_0": {
+          "keep": true,
+          "lift": 0.712,
+          "count": 171,
+          "avg_exit": -11.69,
+          "avg_hold": 4.62,
+          "advantage": -16.31
+        },
+        "0_PLUS15": {
+          "keep": true,
+          "lift": 1.354,
+          "count": 173,
+          "avg_exit": 4.72,
+          "avg_hold": 25.48,
+          "advantage": -20.76
+        },
+        "PLUS15_PLUS40": {
+          "keep": true,
+          "lift": 1.46,
+          "count": 171,
+          "avg_exit": 23.08,
+          "avg_hold": 30.91,
+          "advantage": -7.82
+        },
+        "PLUS40_PLUS80": {
+          "keep": true,
+          "lift": 2.255,
+          "count": 69,
+          "avg_exit": 53.75,
+          "avg_hold": 60.5,
+          "advantage": -6.75
+        },
+        "GT_PLUS80": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 24,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        }
+      },
+      "PERF_5M": {
+        "LT_MINUS50": {
+          "keep": true,
+          "lift": 0.04,
+          "count": 177,
+          "avg_exit": -85.61,
+          "avg_hold": -34.69,
+          "advantage": -50.92
+        },
+        "MINUS50_MINUS30": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 47,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        },
+        "MINUS30_MINUS15": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 50,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        },
+        "MINUS15_0": {
+          "keep": true,
+          "lift": 0.49,
+          "count": 74,
+          "avg_exit": -12.4,
+          "avg_hold": -6.2,
+          "advantage": -6.2
+        },
+        "0_PLUS25": {
+          "keep": true,
+          "lift": 1.059,
+          "count": 113,
+          "avg_exit": 10.01,
+          "avg_hold": 21.28,
+          "advantage": -11.27
+        },
+        "PLUS25_PLUS50": {
+          "keep": true,
+          "lift": 1.902,
+          "count": 83,
+          "avg_exit": 34.62,
+          "avg_hold": 48.27,
+          "advantage": -13.64
+        },
+        "PLUS50_PLUS100": {
+          "keep": true,
+          "lift": 2.912,
+          "count": 82,
+          "avg_exit": 71.2,
+          "avg_hold": 80.61,
+          "advantage": -9.41
+        },
+        "PLUS100_PLUS200": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 50,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        },
+        "GT_PLUS200": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 17,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        }
+      },
+      "PERF_10M": {
+        "LT_MINUS60": {
+          "keep": true,
+          "lift": 0.05,
+          "count": 217,
+          "avg_exit": -92.43,
+          "avg_hold": -33.99,
+          "advantage": -58.43
+        },
+        "MINUS60_MINUS40": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 57,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        },
+        "MINUS40_MINUS20": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 47,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        },
+        "MINUS20_0": {
+          "keep": true,
+          "lift": 0.55,
+          "count": 67,
+          "avg_exit": -13.94,
+          "avg_hold": -5.76,
+          "advantage": -8.19
+        },
+        "0_PLUS30": {
+          "keep": false,
+          "lift": 0.828,
+          "count": 95,
+          "avg_exit": 10.46,
+          "avg_hold": 7.24,
+          "advantage": 3.23
+        },
+        "PLUS30_PLUS75": {
+          "keep": true,
+          "lift": 2.509,
+          "count": 82,
+          "avg_exit": 46.78,
+          "avg_hold": 72.72,
+          "advantage": -25.94
+        },
+        "PLUS75_PLUS150": {
+          "keep": true,
+          "lift": 4.508,
+          "count": 75,
+          "avg_exit": 103.79,
+          "avg_hold": 112.16,
+          "advantage": -8.37
+        },
+        "PLUS150_PLUS300": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 31,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        },
+        "GT_PLUS300": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 16,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        }
+      },
+      "DELTA_10S_30S": {
+        "LT_MINUS20": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 50,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        },
+        "MINUS20_MINUS10": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 61,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        },
+        "MINUS10_MINUS3": {
+          "keep": true,
+          "lift": 0.574,
+          "count": 84,
+          "avg_exit": -5.83,
+          "avg_hold": 0.82,
+          "advantage": -6.65
+        },
+        "MINUS3_PLUS3": {
+          "keep": true,
+          "lift": 1.084,
+          "count": 117,
+          "avg_exit": -7.48,
+          "avg_hold": 22.83,
+          "advantage": -30.3
+        },
+        "PLUS3_PLUS10": {
+          "keep": true,
+          "lift": 1.244,
+          "count": 98,
+          "avg_exit": 3.25,
+          "avg_hold": 30.29,
+          "advantage": -27.05
+        },
+        "PLUS10_PLUS20": {
+          "keep": true,
+          "lift": 1.057,
+          "count": 98,
+          "avg_exit": 15.9,
+          "avg_hold": 27.35,
+          "advantage": -11.45
+        },
+        "GT_PLUS20": {
+          "keep": true,
+          "lift": 1.672,
+          "count": 101,
+          "avg_exit": 40.5,
+          "avg_hold": 48.25,
+          "advantage": -7.75
+        }
+      },
+      "DELTA_30S_60S": {
+        "LT_MINUS25": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 57,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        },
+        "MINUS25_MINUS10": {
+          "keep": false,
+          "lift": 0.186,
+          "count": 78,
+          "avg_exit": -18.13,
+          "avg_hold": -23.31,
+          "advantage": 5.18
+        },
+        "MINUS10_MINUS3": {
+          "keep": true,
+          "lift": 0.832,
+          "count": 72,
+          "avg_exit": -7.83,
+          "avg_hold": 13.76,
+          "advantage": -21.59
+        },
+        "MINUS3_PLUS3": {
+          "keep": true,
+          "lift": 1.21,
+          "count": 100,
+          "avg_exit": -8.32,
+          "avg_hold": 29.7,
+          "advantage": -38.02
+        },
+        "PLUS3_PLUS10": {
+          "keep": true,
+          "lift": 1.31,
+          "count": 98,
+          "avg_exit": 8.21,
+          "avg_hold": 33.76,
+          "advantage": -25.54
+        },
+        "PLUS10_PLUS25": {
+          "keep": false,
+          "lift": 0.916,
+          "count": 119,
+          "avg_exit": 19.99,
+          "avg_hold": 17.3,
+          "advantage": 2.69
+        },
+        "GT_PLUS25": {
+          "keep": true,
+          "lift": 2.656,
+          "count": 85,
+          "avg_exit": 59.84,
+          "avg_hold": 79.43,
+          "advantage": -19.59
+        }
+      },
+      "DELTA_60S_5M": {
+        "LT_MINUS40": {
+          "keep": true,
+          "lift": 0.226,
+          "count": 94,
+          "avg_exit": -61.71,
+          "avg_hold": -17.3,
+          "advantage": -44.41
+        },
+        "MINUS40_MINUS20": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 39,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        },
+        "MINUS20_MINUS5": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 45,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        },
+        "MINUS5_PLUS5": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 58,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        },
+        "PLUS5_PLUS20": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 31,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        },
+        "PLUS20_PLUS50": {
+          "keep": true,
+          "lift": 1.0,
+          "count": 59,
+          "avg_exit": 0,
+          "avg_hold": 0,
+          "advantage": 0
+        },
+        "GT_PLUS50": {
+          "keep": false,
+          "lift": 5.108,
+          "count": 76,
+          "avg_exit": 144.29,
+          "avg_hold": 136.24,
+          "advantage": 8.05
+        }
+      }
+    }
+  },
+  "dry_run": false,
+  "terminal": [
+    "[22:01:52] \ud83d\ude80 Bot gestartet \u2014 M1",
+    "[22:01:52] \ud83d\udcb0 Balance: 2.5674 SOL"
+  ],
+  "balance": {
+    "start": 2.567412966,
+    "current": 2.567412966,
+    "pnl_sol": 0,
+    "pnl_pct": 0
+  },
+  "trades": {
+    "total": 0,
     "wins": 0,
     "losses": 0,
     "win_rate": 0
+  },
+  "positions": {
+    "open": 0
   }
 }
