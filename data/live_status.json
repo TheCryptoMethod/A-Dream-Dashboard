@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T12:39:21.806786+00:00",
-  "uptime_seconds": 62112.5,
+  "updated_at": "2026-03-10T12:40:23.027177+00:00",
+  "uptime_seconds": 62173.8,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,11 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[12:30:15] \ud83d\udcca Mig:2849 Track:9 Upd:211307 Pos:0 SOL:$86.54",
-    "[12:30:25] \ud83d\udd14 Migration #2850 detected",
-    "[12:30:35] \ud83d\udd14 Migration #2851 detected",
-    "[12:30:51] \ud83d\udd14 Migration #2852 detected",
-    "[12:30:51] \ud83d\udd14 Migration #2853 detected",
     "[12:30:58] \ud83d\udd14 Migration #2854 detected",
     "[12:31:04] \ud83d\udd14 Migration #2855 detected",
     "[12:31:15] \ud83d\udd14 Migration #2856 detected",
@@ -562,7 +557,12 @@
     "[12:38:24] \ud83d\udcca Mig:2875 Track:10 Upd:212084 Pos:0 SOL:$86.50",
     "[12:38:50] \ud83d\udd14 Migration #2876 detected",
     "[12:39:16] \ud83d\udfe2 ENTRY: M2_fib0.236 | DpxKNEi3XVeR... | $0.000039837 | 0.3021 SOL",
-    "[12:39:16] \ud83d\udcb0 Position filled: M2_fib0.236 | DpxKNEi3XVeR\u2026 | $0.000039837 | 0.3021 SOL | FDV $39.8k"
+    "[12:39:16] \ud83d\udcb0 Position filled: M2_fib0.236 | DpxKNEi3XVeR\u2026 | $0.000039837 | 0.3021 SOL | FDV $39.8k",
+    "[12:39:22] \ud83d\udd14 Migration #2877 detected",
+    "[12:39:25] \ud83d\udcca Mig:2877 Track:10 Upd:212205 Pos:1 SOL:$86.50",
+    "[12:40:07] \ud83d\udd14 Migration #2878 detected",
+    "[12:40:09] \ud83d\udd14 Migration #2879 detected",
+    "[12:40:18] \ud83d\udd14 Migration #2880 detected"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 1
   },
-  "sol_price": 86.5,
+  "sol_price": 86.51,
   "bot_stats": {
-    "migrations_seen": 2876,
+    "migrations_seen": 2880,
     "migrations_added": 160,
     "pools_tracking": 10,
-    "price_updates": 212203,
+    "price_updates": 212332,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 164,
