@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T13:41:33.763291+00:00",
-  "uptime_seconds": 65844.5,
+  "updated_at": "2026-03-10T13:42:35.147580+00:00",
+  "uptime_seconds": 65905.9,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[13:36:28] \ud83d\udd34 EXIT: FHYtZH9J4ryN... | SL | -12.9%",
-    "[13:36:28] \ud83d\udd34 Stop Loss: FHYtZH9J4ryN\u2026 | -12.9% | -0.0391 SOL | SL1: -6.6% price (exec: -14.0%)",
-    "[13:36:30] \ud83d\udd14 Migration #3086 detected",
-    "[13:36:30] \ud83d\udcca Mig:3086 Track:8 Upd:221224 Pos:0 SOL:$87.05",
     "[13:36:56] \ud83d\udd14 Migration #3087 detected",
     "[13:37:15] \ud83d\udd14 Migration #3088 detected",
     "[13:37:18] \ud83d\udd14 Migration #3089 detected",
@@ -562,7 +558,11 @@
     "[13:41:09] \ud83d\udd14 Migration #3111 detected",
     "[13:41:20] \ud83d\udd14 Migration #3112 detected",
     "[13:41:21] \ud83d\udee1\ufe0f Signal gate: EW1gaYCMrShz\u2026 | mint_authority=ON, freeze_authority=ON",
-    "[13:41:21] \ud83d\udeab Disqualified: EW1gaYCMrShz\u2026 | signal_gate_failed | 3.3m"
+    "[13:41:21] \ud83d\udeab Disqualified: EW1gaYCMrShz\u2026 | signal_gate_failed | 3.3m",
+    "[13:41:37] \ud83d\udcca Mig:3112 Track:9 Upd:222345 Pos:0 SOL:$86.45",
+    "[13:41:43] \ud83d\udd14 Migration #3113 detected",
+    "[13:42:22] \ud83d\udd14 Migration #3114 detected",
+    "[13:42:27] \ud83d\udd14 Migration #3115 detected"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 86.45,
+  "sol_price": 86.44,
   "bot_stats": {
-    "migrations_seen": 3112,
+    "migrations_seen": 3115,
     "migrations_added": 173,
     "pools_tracking": 9,
-    "price_updates": 222340,
+    "price_updates": 222412,
     "migrations_rejected": 0,
     "liquidity_rejected": 5,
     "bc_graduated": 178,
