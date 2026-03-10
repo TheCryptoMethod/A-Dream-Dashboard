@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T11:49:17.388052+00:00",
-  "uptime_seconds": 59108.1,
+  "updated_at": "2026-03-10T11:50:18.823091+00:00",
+  "uptime_seconds": 59169.6,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,14 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[11:41:05] \ud83d\udd14 Migration #2701 detected",
-    "[11:41:10] \ud83d\udcca Mig:2701 Track:8 Upd:206881 Pos:0 SOL:$86.80",
-    "[11:41:34] \ud83d\udd14 Migration #2702 detected",
-    "[11:42:11] \ud83d\udcca Mig:2702 Track:8 Upd:206938 Pos:0 SOL:$86.79",
-    "[11:42:43] \ud83d\udd14 Migration #2703 detected",
-    "[11:42:56] \ud83d\udd14 Migration #2704 detected",
-    "[11:43:03] \ud83d\udd14 Migration #2705 detected",
-    "[11:43:13] \ud83d\udcca Mig:2705 Track:8 Upd:206984 Pos:0 SOL:$86.78",
     "[11:43:46] \ud83d\udd14 Migration #2706 detected",
     "[11:44:04] \ud83d\udd14 Migration #2707 detected",
     "[11:44:14] \ud83d\udcca Mig:2707 Track:8 Upd:207046 Pos:0 SOL:$86.77",
@@ -562,34 +554,42 @@
     "[11:49:08] \ud83d\udd14 Migration #2727 detected",
     "[11:49:11] \ud83d\udd14 Migration #2728 detected",
     "[11:49:13] \ud83d\udd14 Migration #2729 detected",
-    "[11:49:17] \ud83d\udd14 Migration #2730 detected"
+    "[11:49:17] \ud83d\udd14 Migration #2730 detected",
+    "[11:49:21] \ud83d\udcca Mig:2730 Track:9 Upd:207478 Pos:0 SOL:$86.72",
+    "[11:49:27] \ud83d\udd14 Migration #2731 detected",
+    "[11:49:38] \ud83d\udfe2 ENTRY: M2_fib0.236 | BJpEUmcVNjQT... | $0.000032956 | 0.3021 SOL",
+    "[11:49:38] \ud83d\udcb0 Position filled: M2_fib0.236 | BJpEUmcVNjQT\u2026 | $0.000032956 | 0.3021 SOL | FDV $33.0k",
+    "[11:50:05] \ud83d\udd14 Migration #2732 detected",
+    "[11:50:05] \ud83d\udd14 Migration #2733 detected",
+    "[11:50:08] \ud83d\udfe2 EXIT: BJpEUmcVNjQT... | EARLY_PERF_30S | +24.9%",
+    "[11:50:08] \ud83d\udfe2 EARLY_PERF_30S: BJpEUmcVNjQT\u2026 | +24.9% | +0.0752 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_30S (perf_30s=+29.6%)"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 3.180316,
-    "pnl_sol": 0.059819,
-    "pnl_pct": 1.92
+    "current": 3.255519,
+    "pnl_sol": 0.135022,
+    "pnl_pct": 4.33
   },
   "trades": {
-    "total": 86,
-    "wins": 21,
+    "total": 87,
+    "wins": 22,
     "losses": 65,
-    "win_rate": 24.4
+    "win_rate": 25.3
   },
   "positions": {
     "open": 0
   },
   "sol_price": 86.72,
   "bot_stats": {
-    "migrations_seen": 2730,
+    "migrations_seen": 2733,
     "migrations_added": 154,
-    "pools_tracking": 9,
-    "price_updates": 207468,
+    "pools_tracking": 8,
+    "price_updates": 207667,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 158,
-    "entries_found": 86,
-    "buys_success": 86,
+    "entries_found": 87,
+    "buys_success": 87,
     "buys_failed": 0
   }
 }
