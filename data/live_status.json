@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T16:51:35.779446+00:00",
-  "uptime_seconds": 77246.5,
+  "updated_at": "2026-03-10T16:52:37.123784+00:00",
+  "uptime_seconds": 77307.9,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,8 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[16:44:41] \ud83d\udcb0 Position filled: M2_fib0.236 | 6LF5Laty8Pwp\u2026 | $0.000035117 | 0.3021 SOL | FDV $35.1k",
-    "[16:44:59] \ud83d\udd34 EXIT: 6LF5Laty8Pwp... | SL | -30.6%",
     "[16:44:59] \ud83d\udd34 Stop Loss: 6LF5Laty8Pwp\u2026 | -30.6% | -0.0924 SOL | SL1: -6.8% price (exec: -27.0%)",
     "[16:45:00] \ud83d\udd14 Migration #3707 detected",
     "[16:45:07] \ud83d\udd14 Migration #3708 detected",
@@ -562,7 +560,9 @@
     "[16:51:06] \ud83d\udee1\ufe0f Signal gate: BdxZU97HsQWH\u2026 | rugcheck=19701>5000",
     "[16:51:06] \ud83d\udeab Disqualified: BdxZU97HsQWH\u2026 | signal_gate_failed | 14s",
     "[16:51:18] \ud83d\udd14 Migration #3730 detected",
-    "[16:51:35] \ud83d\udd14 Migration #3731 detected"
+    "[16:51:35] \ud83d\udd14 Migration #3731 detected",
+    "[16:51:39] \ud83d\udcca Mig:3731 Track:11 Upd:251596 Pos:0 SOL:$88.41",
+    "[16:51:43] \ud83d\udd14 Migration #3732 detected"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 88.41,
+  "sol_price": 88.43,
   "bot_stats": {
-    "migrations_seen": 3731,
+    "migrations_seen": 3732,
     "migrations_added": 214,
     "pools_tracking": 11,
-    "price_updates": 251591,
+    "price_updates": 251643,
     "migrations_rejected": 0,
     "liquidity_rejected": 6,
     "bc_graduated": 220,
