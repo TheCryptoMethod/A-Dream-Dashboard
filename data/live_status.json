@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T15:46:07.613205+00:00",
-  "uptime_seconds": 73318.4,
+  "updated_at": "2026-03-10T15:47:08.716940+00:00",
+  "uptime_seconds": 73379.5,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,11 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[15:39:47] \ud83d\udd34 Stop Loss: 73S4z6hjoDHN\u2026 | -55.4% | -0.1673 SOL | SL1: -37.6% price (exec: -29.7%)",
-    "[15:40:03] \ud83d\udcca Mig:3498 Track:9 Upd:244036 Pos:0 SOL:$87.91",
-    "[15:40:23] \ud83d\udd14 Migration #3499 detected",
-    "[15:40:30] \ud83d\udd14 Migration #3500 detected",
-    "[15:41:05] \ud83d\udcca Mig:3500 Track:9 Upd:244076 Pos:0 SOL:$87.89",
     "[15:41:25] \ud83d\udd14 Migration #3501 detected",
     "[15:41:29] \ud83d\udd14 Migration #3502 detected",
     "[15:41:42] \u2705 BC Graduated: DnxSV3WPhCBe\u2026",
@@ -562,7 +557,12 @@
     "[15:45:13] \ud83d\udd14 Migration #3522 detected",
     "[15:45:15] \ud83d\udd14 Migration #3523 detected",
     "[15:45:41] \ud83d\udd14 Migration #3524 detected",
-    "[15:46:02] \ud83d\udd14 Migration #3525 detected"
+    "[15:46:02] \ud83d\udd14 Migration #3525 detected",
+    "[15:46:09] \ud83d\udd14 Migration #3526 detected",
+    "[15:46:10] \ud83d\udcca Mig:3526 Track:9 Upd:244784 Pos:0 SOL:$87.85",
+    "[15:46:53] \ud83d\udd14 Migration #3527 detected",
+    "[15:47:07] \u2705 BC Graduated: 7exokM2YiPc4\u2026",
+    "[15:47:07] \ud83d\udce1 Tracking: 7exokM2YiPc4FTvZ\u2026 | Pool #10"
   ],
   "balance": {
     "start": 3.120497,
@@ -581,13 +581,13 @@
   },
   "sol_price": 87.85,
   "bot_stats": {
-    "migrations_seen": 3525,
-    "migrations_added": 202,
-    "pools_tracking": 9,
-    "price_updates": 244782,
+    "migrations_seen": 3527,
+    "migrations_added": 203,
+    "pools_tracking": 10,
+    "price_updates": 244831,
     "migrations_rejected": 0,
     "liquidity_rejected": 5,
-    "bc_graduated": 207,
+    "bc_graduated": 208,
     "entries_found": 121,
     "buys_success": 121,
     "buys_failed": 0
