@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T06:41:08.321331+00:00",
-  "uptime_seconds": 40619.1,
+  "updated_at": "2026-03-10T06:42:09.326297+00:00",
+  "uptime_seconds": 40680.1,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,14 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[06:32:40] \ud83d\udd14 Migration #1932 detected",
-    "[06:32:59] \ud83d\udcca Mig:1932 Track:6 Upd:157860 Pos:0 SOL:$86.44",
-    "[06:33:22] \ud83d\udd14 Migration #1933 detected",
-    "[06:33:58] \ud83d\udd14 Migration #1934 detected",
-    "[06:34:00] \ud83d\udcca Mig:1934 Track:6 Upd:157944 Pos:0 SOL:$86.43",
-    "[06:34:31] \ud83d\udd14 Migration #1935 detected",
-    "[06:35:01] \ud83d\udcca Mig:1935 Track:6 Upd:158025 Pos:0 SOL:$86.48",
-    "[06:35:06] \ud83d\udd14 Migration #1936 detected",
     "[06:35:17] \ud83d\udd14 Migration #1937 detected",
     "[06:35:34] \ud83d\udd14 Migration #1938 detected",
     "[06:36:03] \ud83d\udcca Mig:1938 Track:6 Upd:158116 Pos:0 SOL:$86.51",
@@ -562,34 +554,42 @@
     "[06:41:06] \ud83d\udd14 Migration #1960 detected",
     "[06:41:06] \u2705 BC Graduated: AzZsrK78EEAh\u2026",
     "[06:41:06] \ud83d\udce1 Tracking: AzZsrK78EEAhm9Ri\u2026 | Pool #7",
-    "[06:41:08] \ud83d\udcca Mig:1960 Track:7 Upd:158645 Pos:0 SOL:$86.48"
+    "[06:41:08] \ud83d\udcca Mig:1960 Track:7 Upd:158645 Pos:0 SOL:$86.48",
+    "[06:41:27] \ud83d\udfe2 ENTRY: M2_fib0.236 | AzZsrK78EEAh... | $0.000025392 | 0.3021 SOL",
+    "[06:41:27] \ud83d\udcb0 Position filled: M2_fib0.236 | AzZsrK78EEAh\u2026 | $0.000025392 | 0.3021 SOL | FDV $25.4k",
+    "[06:41:42] \ud83d\udd14 Migration #1961 detected",
+    "[06:41:46] \ud83d\udd14 Migration #1962 detected",
+    "[06:41:48] \ud83d\udd14 Migration #1963 detected",
+    "[06:41:57] \ud83d\udfe2 EXIT: AzZsrK78EEAh... | EARLY_PERF_30S | +22.4%",
+    "[06:41:57] \ud83d\udfe2 EARLY_PERF_30S: AzZsrK78EEAh\u2026 | +22.4% | +0.0677 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_30S (perf_30s=+35.8%)",
+    "[06:42:09] \ud83d\udcca Mig:1963 Track:6 Upd:158887 Pos:0 SOL:$86.49"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 2.982953,
-    "pnl_sol": -0.137544,
-    "pnl_pct": -4.41
+    "current": 3.050676,
+    "pnl_sol": -0.069821,
+    "pnl_pct": -2.24
   },
   "trades": {
-    "total": 59,
-    "wins": 14,
+    "total": 60,
+    "wins": 15,
     "losses": 45,
-    "win_rate": 23.7
+    "win_rate": 25.0
   },
   "positions": {
     "open": 0
   },
-  "sol_price": 86.48,
+  "sol_price": 86.49,
   "bot_stats": {
-    "migrations_seen": 1960,
+    "migrations_seen": 1963,
     "migrations_added": 115,
-    "pools_tracking": 7,
-    "price_updates": 158645,
+    "pools_tracking": 6,
+    "price_updates": 158887,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 119,
-    "entries_found": 59,
-    "buys_success": 59,
+    "entries_found": 60,
+    "buys_success": 60,
     "buys_failed": 0
   }
 }
