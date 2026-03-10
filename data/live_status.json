@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-10T22:46:40.052740+00:00",
-  "uptime_seconds": 2688.0,
+  "updated_at": "2026-03-10T22:47:41.466160+00:00",
+  "uptime_seconds": 2749.4,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,9 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[22:40:29] \ud83d\udd14 Migration #87 detected",
-    "[22:40:29] \ud83d\udcca Mig:87 Track:0 Upd:1662 Pos:0 SOL:$85.42",
-    "[22:40:42] \ud83d\udd14 Migration #88 detected",
     "[22:41:12] \ud83d\udd14 Migration #89 detected",
     "[22:41:31] \ud83d\udcca Mig:89 Track:0 Upd:1662 Pos:0 SOL:$85.43",
     "[22:42:14] \ud83d\udd14 Migration #90 detected",
@@ -562,29 +559,32 @@
     "[22:45:35] \ud83d\udcca Mig:107 Track:1 Upd:1903 Pos:1 SOL:$85.45",
     "[22:46:03] \ud83d\udd14 Migration #108 detected",
     "[22:46:22] \ud83d\udd14 Migration #109 detected",
-    "[22:46:36] \ud83d\udcca Mig:109 Track:1 Upd:2003 Pos:1 SOL:$85.45"
+    "[22:46:36] \ud83d\udcca Mig:109 Track:1 Upd:2003 Pos:1 SOL:$85.45",
+    "[22:46:46] \ud83d\udd34 EXIT: Erkg2CCuLL3m... | SL | -23.6%",
+    "[22:46:46] \ud83d\udd34 Stop Loss: Erkg2CCuLL3m\u2026 | -23.6% | -0.0712 SOL | SL1: -19.8% price (exec: -24.0%)",
+    "[22:47:38] \ud83d\udcca Mig:109 Track:0 Upd:2036 Pos:0 SOL:$85.47"
   ],
   "balance": {
     "start": 2.567413,
-    "current": 2.204345,
-    "pnl_sol": -0.363068,
-    "pnl_pct": -14.14
+    "current": 2.435225,
+    "pnl_sol": -0.132188,
+    "pnl_pct": -5.15
   },
   "trades": {
-    "total": 6,
+    "total": 7,
     "wins": 1,
-    "losses": 5,
-    "win_rate": 16.7
+    "losses": 6,
+    "win_rate": 14.3
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
-  "sol_price": 85.45,
+  "sol_price": 85.47,
   "bot_stats": {
     "migrations_seen": 109,
     "migrations_added": 12,
-    "pools_tracking": 1,
-    "price_updates": 2009,
+    "pools_tracking": 0,
+    "price_updates": 2036,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 16,
