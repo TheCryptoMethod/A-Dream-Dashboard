@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T17:20:11.316046+00:00",
-  "uptime_seconds": 78962.1,
+  "updated_at": "2026-03-10T17:21:13.157630+00:00",
+  "uptime_seconds": 79023.9,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,9 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[17:13:37] \ud83d\udce1 Tracking: EARLYeBEXWA6dA8b\u2026 | Pool #11",
-    "[17:14:02] \ud83d\udd14 Migration #3803 detected",
-    "[17:14:07] \ud83d\udcca Mig:3803 Track:11 Upd:253248 Pos:0 SOL:$88.55",
     "[17:14:26] \ud83d\udd14 Migration #3804 detected",
     "[17:15:03] \ud83d\udfe2 ENTRY: M2_fib0.236 | EARLYeBEXWA6... | $0.000081187 | 0.3021 SOL",
     "[17:15:03] \ud83d\udcb0 Position filled: M2_fib0.236 | EARLYeBEXWA6\u2026 | $0.000081187 | 0.3021 SOL | FDV $81.2k",
@@ -562,7 +559,10 @@
     "[17:19:16] \ud83d\udd14 Migration #3820 detected",
     "[17:19:27] \ud83d\udd14 Migration #3821 detected",
     "[17:19:28] \ud83d\udd14 Migration #3822 detected",
-    "[17:19:51] \ud83d\udd14 Migration #3823 detected"
+    "[17:19:51] \ud83d\udd14 Migration #3823 detected",
+    "[17:20:15] \ud83d\udcca Mig:3823 Track:11 Upd:254250 Pos:0 SOL:$88.49",
+    "[17:20:42] \ud83d\udd14 Migration #3824 detected",
+    "[17:20:45] \ud83d\udd14 Migration #3825 detected"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 88.49,
+  "sol_price": 88.54,
   "bot_stats": {
-    "migrations_seen": 3823,
+    "migrations_seen": 3825,
     "migrations_added": 220,
     "pools_tracking": 11,
-    "price_updates": 254241,
+    "price_updates": 254417,
     "migrations_rejected": 0,
     "liquidity_rejected": 7,
     "bc_graduated": 227,
