@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T02:04:17.180385+00:00",
-  "uptime_seconds": 24007.9,
+  "updated_at": "2026-03-10T02:05:18.314899+00:00",
+  "uptime_seconds": 24069.1,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[01:57:03] \u2705 BC Graduated: 2FomoUseSy22\u2026",
-    "[01:57:03] \ud83d\udce1 Tracking: 2FomoUseSy22gnRN\u2026 | Pool #8",
-    "[01:57:06] \ud83d\udcca Mig:1105 Track:8 Upd:66841 Pos:0 SOL:$85.58",
-    "[01:57:17] \ud83d\udd14 Migration #1106 detected",
     "[01:57:22] \ud83d\udd14 Migration #1107 detected",
     "[01:57:57] \ud83d\udd14 Migration #1108 detected",
     "[01:58:08] \ud83d\udcca Mig:1108 Track:8 Upd:67431 Pos:0 SOL:$85.63",
@@ -562,7 +558,11 @@
     "[02:03:58] \ud83d\udd34 Stop Loss: CZEZmARqTUu4\u2026 | -8.2% | -0.0247 SOL | SL1: -5.4% price (exec: -6.8%)",
     "[02:04:02] \ud83d\udd14 Migration #1126 detected",
     "[02:04:11] \ud83d\udd14 Migration #1127 detected",
-    "[02:04:14] \ud83d\udcca Mig:1127 Track:8 Upd:71012 Pos:1 SOL:$85.73"
+    "[02:04:14] \ud83d\udcca Mig:1127 Track:8 Upd:71012 Pos:1 SOL:$85.73",
+    "[02:04:22] \ud83d\udd14 Migration #1128 detected",
+    "[02:04:38] \ud83d\udd14 Migration #1129 detected",
+    "[02:04:56] \ud83d\udd14 Migration #1130 detected",
+    "[02:05:15] \ud83d\udcca Mig:1130 Track:8 Upd:71476 Pos:1 SOL:$85.74"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 1
   },
-  "sol_price": 85.73,
+  "sol_price": 85.74,
   "bot_stats": {
-    "migrations_seen": 1127,
+    "migrations_seen": 1130,
     "migrations_added": 74,
     "pools_tracking": 8,
-    "price_updates": 71041,
+    "price_updates": 71500,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 78,
