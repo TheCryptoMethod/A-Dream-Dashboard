@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-10T23:36:32.275053+00:00",
-  "uptime_seconds": 5680.2,
+  "updated_at": "2026-03-10T23:37:33.370752+00:00",
+  "uptime_seconds": 5741.3,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,8 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[23:30:47] \ud83d\udd14 Migration #216 detected",
-    "[23:31:00] \u2705 BC Graduated: 9YMN3QsKPrB4\u2026",
     "[23:31:00] \ud83d\udce1 Tracking: 9YMN3QsKPrB4hrA5\u2026 | Pool #1",
     "[23:31:07] \ud83d\udfe2 ENTRY: M1 | 9YMN3QsKPrB4... | $0.000038188 | 0.3021 SOL",
     "[23:31:07] \ud83d\udcb0 Position filled: M1 | 9YMN3QsKPrB4\u2026 | $0.000038188 | 0.3021 SOL | FDV $38.2k",
@@ -562,7 +560,9 @@
     "[23:35:44] \ud83d\udd14 Migration #231 detected",
     "[23:36:05] \ud83d\udd34 EXIT: 9YMN3QsKPrB4... | EARLY_DELTA_60S_5M | +0.0%",
     "[23:36:05] \ud83d\udd34 EARLY_DELTA_60S_5M: 9YMN3QsKPrB4\u2026 | +0.0% | +0.4475 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_60S_5M",
-    "[23:36:29] \ud83d\udcca Mig:231 Track:0 Upd:4603 Pos:0 SOL:$85.55"
+    "[23:36:29] \ud83d\udcca Mig:231 Track:0 Upd:4603 Pos:0 SOL:$85.55",
+    "[23:37:30] \ud83d\udcca Mig:231 Track:0 Upd:4603 Pos:0 SOL:$85.57",
+    "[23:37:31] \ud83d\udd14 Migration #232 detected"
   ],
   "balance": {
     "start": 2.567413,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.55,
+  "sol_price": 85.57,
   "bot_stats": {
-    "migrations_seen": 231,
+    "migrations_seen": 232,
     "migrations_added": 24,
     "pools_tracking": 0,
     "price_updates": 4603,
