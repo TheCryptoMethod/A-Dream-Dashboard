@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T01:10:22.203323+00:00",
-  "uptime_seconds": 20772.9,
+  "updated_at": "2026-03-10T01:11:23.217488+00:00",
+  "uptime_seconds": 20834.0,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,15 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[01:03:36] \ud83d\udce1 Tracking: LyonFRYdR8SvVcsF\u2026 | Pool #3",
-    "[01:04:07] \ud83d\udd14 Migration #921 detected",
-    "[01:04:13] \ud83d\udcca Mig:921 Track:3 Upd:54476 Pos:0 SOL:$85.61",
-    "[01:04:22] \ud83d\udd14 Migration #922 detected",
-    "[01:04:23] \ud83d\udd14 Migration #923 detected",
-    "[01:04:30] \ud83d\udd14 Migration #924 detected",
-    "[01:05:14] \ud83d\udcca Mig:924 Track:3 Upd:54582 Pos:0 SOL:$85.63",
-    "[01:05:21] \ud83d\udd14 Migration #925 detected",
-    "[01:05:25] \ud83d\udd14 Migration #926 detected",
     "[01:06:15] \ud83d\udcca Mig:926 Track:3 Upd:54658 Pos:0 SOL:$85.63",
     "[01:06:20] \ud83d\udd14 Migration #927 detected",
     "[01:07:16] \ud83d\udcca Mig:927 Track:3 Upd:54693 Pos:0 SOL:$85.53",
@@ -562,34 +553,43 @@
     "[01:09:39] \ud83d\udd14 Migration #946 detected",
     "[01:09:40] \ud83d\udd14 Migration #947 detected",
     "[01:09:48] \ud83d\udd14 Migration #948 detected",
-    "[01:10:19] \ud83d\udcca Mig:948 Track:5 Upd:55460 Pos:0 SOL:$85.58"
+    "[01:10:19] \ud83d\udcca Mig:948 Track:5 Upd:55460 Pos:0 SOL:$85.58",
+    "[01:10:29] \ud83d\udfe2 ENTRY: M2_fib0.236 | VGwoNUuZKhkJ... | $0.000038564 | 0.3021 SOL",
+    "[01:10:29] \ud83d\udcb0 Position filled: M2_fib0.236 | VGwoNUuZKhkJ\u2026 | $0.000038564 | 0.3021 SOL | FDV $38.6k",
+    "[01:10:40] \ud83d\udfe2 ENTRY: M2_fib0.236 | LyonFRYdR8Sv... | $0.000080080 | 0.3021 SOL",
+    "[01:10:40] \ud83d\udcb0 Position filled: M2_fib0.236 | LyonFRYdR8Sv\u2026 | $0.000080080 | 0.3021 SOL | FDV $80.1k",
+    "[01:10:45] \ud83d\udd14 Migration #949 detected",
+    "[01:10:55] \ud83d\udd34 EXIT: LyonFRYdR8Sv... | SL | -6.3%",
+    "[01:10:55] \ud83d\udd34 Stop Loss: LyonFRYdR8Sv\u2026 | -6.3% | -0.0190 SOL | SL1: -5.8% price (exec: -9.1%)",
+    "[01:11:08] \ud83d\udd14 Migration #950 detected",
+    "[01:11:20] \ud83d\udcca Mig:950 Track:4 Upd:55967 Pos:1 SOL:$85.59"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 3.55933,
-    "pnl_sol": 0.438833,
-    "pnl_pct": 14.06
+    "current": 3.238266,
+    "pnl_sol": 0.117769,
+    "pnl_pct": 3.77
   },
   "trades": {
-    "total": 42,
+    "total": 43,
     "wins": 12,
-    "losses": 30,
-    "win_rate": 28.6
+    "losses": 31,
+    "win_rate": 27.9
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 85.58,
+  "sol_price": 85.59,
   "bot_stats": {
-    "migrations_seen": 948,
+    "migrations_seen": 950,
     "migrations_added": 64,
-    "pools_tracking": 5,
-    "price_updates": 55487,
+    "pools_tracking": 4,
+    "price_updates": 55987,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 68,
-    "entries_found": 42,
-    "buys_success": 42,
+    "entries_found": 44,
+    "buys_success": 44,
     "buys_failed": 0
   }
 }
