@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T14:36:44.526293+00:00",
-  "uptime_seconds": 69155.3,
+  "updated_at": "2026-03-10T14:37:45.829533+00:00",
+  "uptime_seconds": 69216.6,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,13 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[14:30:33] \ud83d\udd14 Migration #3300 detected",
-    "[14:30:40] \ud83d\udcca Mig:3300 Track:11 Upd:232146 Pos:1 SOL:$85.68",
-    "[14:30:40] \ud83d\udd14 Migration #3301 detected",
-    "[14:30:41] \ud83d\udd14 Migration #3302 detected",
-    "[14:30:54] \ud83d\udd14 Migration #3303 detected",
-    "[14:31:00] \ud83d\udd14 Migration #3304 detected",
-    "[14:31:03] \ud83d\udd14 Migration #3305 detected",
     "[14:31:16] \ud83d\udd14 Migration #3306 detected",
     "[14:31:33] \ud83d\udd14 Migration #3307 detected",
     "[14:31:41] \ud83d\udcca Mig:3307 Track:11 Upd:232447 Pos:1 SOL:$85.68",
@@ -562,12 +555,19 @@
     "[14:36:34] \ud83d\udcb0 Position filled: M2_fib0.236 | 2yVP1xtYTG3d\u2026 | $0.000030573 | 0.3022 SOL | FDV $30.6k",
     "[14:36:36] \ud83d\udd14 Migration #3321 detected",
     "[14:36:39] \ud83d\udd34 EXIT: 2yVP1xtYTG3d... | SL | -10.5%",
-    "[14:36:39] \ud83d\udd34 Stop Loss: 2yVP1xtYTG3d\u2026 | -10.5% | -0.0316 SOL | SL1: -6.2% price (exec: -6.4%)"
+    "[14:36:39] \ud83d\udd34 Stop Loss: 2yVP1xtYTG3d\u2026 | -10.5% | -0.0316 SOL | SL1: -6.2% price (exec: -6.4%)",
+    "[14:36:48] \ud83d\udcca Mig:3321 Track:11 Upd:235191 Pos:2 SOL:$85.86",
+    "[14:36:48] \ud83d\udd14 Migration #3322 detected",
+    "[14:37:20] \ud83d\udd14 Migration #3323 detected",
+    "[14:37:24] \ud83d\udd14 Migration #3324 detected",
+    "[14:37:35] \ud83d\udd14 Migration #3325 detected",
+    "[14:37:42] \ud83d\udd14 Migration #3326 detected",
+    "[14:37:43] \ud83d\udd14 Migration #3327 detected"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 2.59033,
-    "pnl_sol": -0.530167,
+    "current": 2.590325,
+    "pnl_sol": -0.530172,
     "pnl_pct": -16.99
   },
   "trades": {
@@ -579,12 +579,12 @@
   "positions": {
     "open": 2
   },
-  "sol_price": 85.86,
+  "sol_price": 85.9,
   "bot_stats": {
-    "migrations_seen": 3321,
+    "migrations_seen": 3327,
     "migrations_added": 188,
     "pools_tracking": 11,
-    "price_updates": 235175,
+    "price_updates": 235486,
     "migrations_rejected": 0,
     "liquidity_rejected": 5,
     "bc_graduated": 193,
