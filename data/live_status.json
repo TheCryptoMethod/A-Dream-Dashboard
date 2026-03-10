@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T15:05:20.612833+00:00",
-  "uptime_seconds": 70871.4,
+  "updated_at": "2026-03-10T15:06:21.792312+00:00",
+  "uptime_seconds": 70932.5,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,9 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[14:55:16] \ud83d\udd14 Migration #3385 detected",
-    "[14:55:17] \ud83d\udd14 Migration #3386 detected",
-    "[14:55:35] \ud83d\udfe2 ENTRY: M2_fib0.236 | VNkMDyHBsNKx... | $0.000090896 | 0.3023 SOL",
     "[14:55:35] \ud83d\udcb0 Position filled: M2_fib0.236 | VNkMDyHBsNKx\u2026 | $0.000090896 | 0.3023 SOL | FDV $90.9k",
     "[14:55:36] \ud83d\udd34 EXIT: DUzaRXmvkc3h... | SL | -12.2%",
     "[14:55:36] \ud83d\udd34 Stop Loss: DUzaRXmvkc3h\u2026 | -12.2% | -0.0369 SOL | SL1: -6.2% price (exec: -10.1%)",
@@ -562,7 +559,10 @@
     "[15:04:41] \ud83d\udd14 Migration #3406 detected",
     "[15:04:54] \u2705 BC Graduated: 2BkUiwjmRCvN\u2026",
     "[15:04:54] \ud83d\udce1 Tracking: 2BkUiwjmRCvNLzV9\u2026 | Pool #10",
-    "[15:05:06] \ud83d\udd14 Migration #3407 detected"
+    "[15:05:06] \ud83d\udd14 Migration #3407 detected",
+    "[15:05:22] \ud83d\udd14 Migration #3408 detected",
+    "[15:05:24] \ud83d\udcca Mig:3408 Track:10 Upd:240658 Pos:0 SOL:$88.01",
+    "[15:06:07] \ud83d\udd14 Migration #3409 detected"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 88.01,
+  "sol_price": 88.17,
   "bot_stats": {
-    "migrations_seen": 3407,
+    "migrations_seen": 3409,
     "migrations_added": 195,
     "pools_tracking": 10,
-    "price_updates": 240651,
+    "price_updates": 240863,
     "migrations_rejected": 0,
     "liquidity_rejected": 5,
     "bc_graduated": 200,
