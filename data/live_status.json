@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T12:46:29.524606+00:00",
-  "uptime_seconds": 62540.3,
+  "updated_at": "2026-03-10T12:47:30.639831+00:00",
+  "uptime_seconds": 62601.4,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,16 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[12:41:05] \ud83d\udd34 EXIT: DpxKNEi3XVeR... | SL | -7.2%",
-    "[12:41:05] \ud83d\udd34 Stop Loss: DpxKNEi3XVeR\u2026 | -7.2% | -0.0216 SOL | SL1: -6.3% price (exec: -7.2%)",
-    "[12:41:14] \ud83d\udd14 Migration #2883 detected",
-    "[12:41:19] \ud83d\udd14 Migration #2884 detected",
-    "[12:41:25] \ud83d\udd14 Migration #2885 detected",
-    "[12:41:27] \ud83d\udcca Mig:2885 Track:9 Upd:212478 Pos:0 SOL:$86.51",
-    "[12:41:33] \u2705 BC Graduated: CzBHnbPgD8mB\u2026",
-    "[12:41:33] \ud83d\udce1 Tracking: CzBHnbPgD8mBrhqQ\u2026 | Pool #10",
-    "[12:42:00] \ud83d\udd14 Migration #2886 detected",
-    "[12:42:21] \ud83d\udd14 Migration #2887 detected",
     "[12:42:26] \ud83d\udd14 Migration #2888 detected",
     "[12:42:28] \ud83d\udcca Mig:2888 Track:10 Upd:212745 Pos:0 SOL:$86.51",
     "[12:42:34] \ud83d\udd14 Migration #2889 detected",
@@ -562,29 +552,39 @@
     "[12:46:00] \ud83d\udcb0 Position filled: M2_fib0.236 | CzBHnbPgD8mB\u2026 | $0.000025125 | 0.3021 SOL | FDV $25.1k",
     "[12:46:05] \ud83d\udfe2 EXIT: CzBHnbPgD8mB... | SL | +1.9%",
     "[12:46:05] \ud83d\udfe2 Stop Loss: CzBHnbPgD8mB\u2026 | +1.9% | +0.0059 SOL | SL1: -92.1% price (exec: 1.1%)",
-    "[12:46:25] \ud83d\udd14 Migration #2905 detected"
+    "[12:46:25] \ud83d\udd14 Migration #2905 detected",
+    "[12:46:31] \ud83d\udd14 Migration #2906 detected",
+    "[12:46:31] \ud83d\udd14 Migration #2907 detected",
+    "[12:46:32] \ud83d\udcca Mig:2907 Track:10 Upd:214409 Pos:1 SOL:$86.55",
+    "[12:46:48] \ud83d\udd14 Migration #2908 detected",
+    "[12:47:08] \ud83d\udd14 Migration #2909 detected",
+    "[12:47:10] \ud83d\udd14 Migration #2910 detected",
+    "[12:47:21] \ud83d\udd34 EXIT: 41egcxpjFyTb... | SL | -25.4%",
+    "[12:47:21] \ud83d\udd34 Stop Loss: 41egcxpjFyTb\u2026 | -25.4% | -0.0768 SOL | SL1: -6.4% price (exec: -6.7%)",
+    "[12:47:22] \ud83d\udd14 Migration #2911 detected",
+    "[12:47:30] \ud83d\udd14 Migration #2912 detected"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 2.839393,
-    "pnl_sol": -0.281104,
-    "pnl_pct": -9.01
+    "current": 3.064725,
+    "pnl_sol": -0.055772,
+    "pnl_pct": -1.79
   },
   "trades": {
-    "total": 92,
+    "total": 93,
     "wins": 23,
-    "losses": 69,
-    "win_rate": 25.0
+    "losses": 70,
+    "win_rate": 24.7
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
-  "sol_price": 86.55,
+  "sol_price": 86.56,
   "bot_stats": {
-    "migrations_seen": 2905,
+    "migrations_seen": 2912,
     "migrations_added": 162,
-    "pools_tracking": 10,
-    "price_updates": 214396,
+    "pools_tracking": 9,
+    "price_updates": 214657,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 166,
