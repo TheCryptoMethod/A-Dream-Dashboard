@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T02:54:07.815312+00:00",
-  "uptime_seconds": 26998.6,
+  "updated_at": "2026-03-10T02:55:08.980735+00:00",
+  "uptime_seconds": 27059.7,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,16 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[02:45:56] \ud83d\udcca Mig:1266 Track:8 Upd:87555 Pos:0 SOL:$86.55",
-    "[02:46:35] \ud83d\udd14 Migration #1267 detected",
-    "[02:46:57] \ud83d\udcca Mig:1267 Track:8 Upd:87913 Pos:0 SOL:$86.56",
-    "[02:47:20] \ud83d\udd14 Migration #1268 detected",
-    "[02:47:22] \ud83d\udd14 Migration #1269 detected",
-    "[02:47:58] \ud83d\udcca Mig:1269 Track:8 Upd:88271 Pos:0 SOL:$86.57",
-    "[02:48:13] \ud83d\udd14 Migration #1270 detected",
-    "[02:48:39] \ud83d\udd14 Migration #1271 detected",
-    "[02:48:40] \ud83d\udd14 Migration #1272 detected",
-    "[02:48:52] \ud83d\udd14 Migration #1273 detected",
     "[02:48:55] \ud83d\udd14 Migration #1274 detected",
     "[02:48:59] \ud83d\udcca Mig:1274 Track:8 Upd:88580 Pos:0 SOL:$86.59",
     "[02:49:14] \ud83d\udd14 Migration #1275 detected",
@@ -562,29 +552,39 @@
     "[02:52:59] \ud83d\udd14 Migration #1290 detected",
     "[02:53:03] \ud83d\udcca Mig:1290 Track:10 Upd:90027 Pos:1 SOL:$86.69",
     "[02:53:42] \ud83d\udd14 Migration #1291 detected",
-    "[02:54:04] \ud83d\udcca Mig:1291 Track:10 Upd:90532 Pos:1 SOL:$86.67"
+    "[02:54:04] \ud83d\udcca Mig:1291 Track:10 Upd:90532 Pos:1 SOL:$86.67",
+    "[02:54:20] \ud83d\udd14 Migration #1292 detected",
+    "[02:54:24] \ud83d\udd34 EXIT: EzfMCEXqSqyp... | SL | -10.3%",
+    "[02:54:24] \ud83d\udd34 Stop Loss: EzfMCEXqSqyp\u2026 | -10.3% | -0.0312 SOL | SL1: -5.6% price (exec: -8.0%)",
+    "[02:54:26] \ud83d\udee1\ufe0f Signal gate: 3MLb9MXmjYkd\u2026 | rugcheck=10501>5000",
+    "[02:54:26] \ud83d\udeab Disqualified: 3MLb9MXmjYkd\u2026 | signal_gate_failed | 2.4m",
+    "[02:54:36] \ud83d\udd14 Migration #1293 detected",
+    "[02:55:02] \ud83d\udee1\ufe0f Signal gate: Aa3zi2s9bZCq\u2026 | mint_authority=ON, freeze_authority=ON",
+    "[02:55:02] \ud83d\udeab Disqualified: Aa3zi2s9bZCq\u2026 | signal_gate_failed | 106.2m",
+    "[02:55:05] \ud83d\udcca Mig:1293 Track:7 Upd:90855 Pos:0 SOL:$86.67",
+    "[02:55:07] \ud83d\udd14 Migration #1294 detected"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 3.135272,
-    "pnl_sol": 0.014775,
-    "pnl_pct": 0.47
+    "current": 3.406157,
+    "pnl_sol": 0.28566,
+    "pnl_pct": 9.15
   },
   "trades": {
-    "total": 53,
+    "total": 54,
     "wins": 13,
-    "losses": 40,
-    "win_rate": 24.5
+    "losses": 41,
+    "win_rate": 24.1
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
   "sol_price": 86.67,
   "bot_stats": {
-    "migrations_seen": 1291,
+    "migrations_seen": 1294,
     "migrations_added": 80,
-    "pools_tracking": 10,
-    "price_updates": 90552,
+    "pools_tracking": 7,
+    "price_updates": 90865,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 84,
