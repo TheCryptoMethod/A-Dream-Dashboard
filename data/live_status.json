@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T14:03:01.118659+00:00",
-  "uptime_seconds": 67131.9,
+  "updated_at": "2026-03-10T14:04:02.392983+00:00",
+  "uptime_seconds": 67193.1,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,16 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[13:57:05] \ud83d\udd14 Migration #3180 detected",
-    "[13:57:19] \ud83d\udd14 Migration #3181 detected",
-    "[13:57:27] \ud83d\udd14 Migration #3182 detected",
-    "[13:57:32] \u2705 BC Graduated: J994NujBVpDL\u2026",
-    "[13:57:33] \ud83d\udce1 Tracking: J994NujBVpDLPmFw\u2026 | Pool #10",
-    "[13:57:56] \ud83d\udd14 Migration #3183 detected",
-    "[13:57:58] \ud83d\udcca Mig:3183 Track:10 Upd:227022 Pos:0 SOL:$86.43",
-    "[13:58:09] \ud83d\udd14 Migration #3184 detected",
-    "[13:58:23] \ud83d\udd14 Migration #3185 detected",
-    "[13:58:29] \ud83d\udd14 Migration #3186 detected",
     "[13:58:43] \ud83d\udd14 Migration #3187 detected",
     "[13:58:59] \ud83d\udcca Mig:3187 Track:10 Upd:227352 Pos:0 SOL:$86.40",
     "[13:59:10] \ud83d\udfe2 ENTRY: M2_fib0.236 | J994NujBVpDL... | $0.000039830 | 0.3021 SOL",
@@ -562,34 +552,44 @@
     "[14:01:46] \ud83d\udd14 Migration #3203 detected",
     "[14:02:03] \ud83d\udcca Mig:3203 Track:9 Upd:227627 Pos:0 SOL:$86.27",
     "[14:02:22] \ud83d\udd14 Migration #3204 detected",
-    "[14:02:29] \ud83d\udd14 Migration #3205 detected"
+    "[14:02:29] \ud83d\udd14 Migration #3205 detected",
+    "[14:03:04] \ud83d\udcca Mig:3205 Track:9 Upd:227677 Pos:0 SOL:$86.25",
+    "[14:03:18] \ud83d\udd14 Migration #3206 detected",
+    "[14:03:20] \ud83d\udd14 Migration #3207 detected",
+    "[14:03:21] \ud83d\udd14 Migration #3208 detected",
+    "[14:03:31] \u2705 BC Graduated: Z6dMfre3Pgz6\u2026",
+    "[14:03:32] \ud83d\udce1 Tracking: Z6dMfre3Pgz6TBD1\u2026 | Pool #10",
+    "[14:03:56] \ud83d\udfe2 ENTRY: M2_fib0.236 | Z6dMfre3Pgz6... | $0.000082099 | 0.3021 SOL",
+    "[14:03:56] \ud83d\udcb0 Position filled: M2_fib0.236 | Z6dMfre3Pgz6\u2026 | $0.000082099 | 0.3021 SOL | FDV $82.1k",
+    "[14:04:02] \ud83d\udd34 EXIT: Z6dMfre3Pgz6... | SL | -7.8%",
+    "[14:04:02] \ud83d\udd34 Stop Loss: Z6dMfre3Pgz6\u2026 | -7.8% | -0.0237 SOL | SL1: -6.6% price (exec: 2.3%)"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 3.305092,
-    "pnl_sol": 0.184595,
-    "pnl_pct": 5.92
+    "current": 3.281406,
+    "pnl_sol": 0.160909,
+    "pnl_pct": 5.16
   },
   "trades": {
-    "total": 103,
+    "total": 104,
     "wins": 25,
-    "losses": 78,
-    "win_rate": 24.3
+    "losses": 79,
+    "win_rate": 24.0
   },
   "positions": {
     "open": 0
   },
-  "sol_price": 86.25,
+  "sol_price": 86.21,
   "bot_stats": {
-    "migrations_seen": 3205,
-    "migrations_added": 179,
+    "migrations_seen": 3208,
+    "migrations_added": 180,
     "pools_tracking": 9,
-    "price_updates": 227672,
+    "price_updates": 227847,
     "migrations_rejected": 0,
     "liquidity_rejected": 5,
-    "bc_graduated": 184,
-    "entries_found": 103,
-    "buys_success": 103,
+    "bc_graduated": 185,
+    "entries_found": 104,
+    "buys_success": 104,
     "buys_failed": 0
   }
 }
