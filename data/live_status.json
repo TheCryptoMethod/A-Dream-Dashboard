@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T01:17:29.380337+00:00",
-  "uptime_seconds": 21200.1,
+  "updated_at": "2026-03-10T01:18:30.439458+00:00",
+  "uptime_seconds": 21261.2,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,13 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[01:09:48] \ud83d\udd14 Migration #948 detected",
-    "[01:10:19] \ud83d\udcca Mig:948 Track:5 Upd:55460 Pos:0 SOL:$85.58",
-    "[01:10:29] \ud83d\udfe2 ENTRY: M2_fib0.236 | VGwoNUuZKhkJ... | $0.000038564 | 0.3021 SOL",
-    "[01:10:29] \ud83d\udcb0 Position filled: M2_fib0.236 | VGwoNUuZKhkJ\u2026 | $0.000038564 | 0.3021 SOL | FDV $38.6k",
-    "[01:10:40] \ud83d\udfe2 ENTRY: M2_fib0.236 | LyonFRYdR8Sv... | $0.000080080 | 0.3021 SOL",
-    "[01:10:40] \ud83d\udcb0 Position filled: M2_fib0.236 | LyonFRYdR8Sv\u2026 | $0.000080080 | 0.3021 SOL | FDV $80.1k",
-    "[01:10:45] \ud83d\udd14 Migration #949 detected",
     "[01:10:55] \ud83d\udd34 EXIT: LyonFRYdR8Sv... | SL | -6.3%",
     "[01:10:55] \ud83d\udd34 Stop Loss: LyonFRYdR8Sv\u2026 | -6.3% | -0.0190 SOL | SL1: -5.8% price (exec: -9.1%)",
     "[01:11:08] \ud83d\udd14 Migration #950 detected",
@@ -562,7 +555,14 @@
     "[01:16:36] \ud83d\udd14 Migration #969 detected",
     "[01:16:49] \ud83d\udd14 Migration #970 detected",
     "[01:16:57] \ud83d\udd14 Migration #971 detected",
-    "[01:17:26] \ud83d\udcca Mig:971 Track:3 Upd:57173 Pos:0 SOL:$85.67"
+    "[01:17:26] \ud83d\udcca Mig:971 Track:3 Upd:57173 Pos:0 SOL:$85.67",
+    "[01:17:31] \ud83d\udd14 Migration #972 detected",
+    "[01:17:33] \ud83d\udd14 Migration #973 detected",
+    "[01:17:49] \ud83d\udd14 Migration #974 detected",
+    "[01:18:00] \ud83d\udd14 Migration #975 detected",
+    "[01:18:22] \ud83d\udd14 Migration #976 detected",
+    "[01:18:23] \ud83d\udd14 Migration #977 detected",
+    "[01:18:27] \ud83d\udcca Mig:977 Track:3 Upd:57299 Pos:0 SOL:$85.65"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.67,
+  "sol_price": 85.65,
   "bot_stats": {
-    "migrations_seen": 971,
+    "migrations_seen": 977,
     "migrations_added": 64,
     "pools_tracking": 3,
-    "price_updates": 57186,
+    "price_updates": 57303,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 68,
