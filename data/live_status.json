@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T16:57:43.523877+00:00",
-  "uptime_seconds": 77614.3,
+  "updated_at": "2026-03-10T16:58:44.797864+00:00",
+  "uptime_seconds": 77675.5,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,13 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[16:51:18] \ud83d\udd14 Migration #3730 detected",
-    "[16:51:35] \ud83d\udd14 Migration #3731 detected",
-    "[16:51:39] \ud83d\udcca Mig:3731 Track:11 Upd:251596 Pos:0 SOL:$88.41",
-    "[16:51:43] \ud83d\udd14 Migration #3732 detected",
-    "[16:52:40] \ud83d\udcca Mig:3732 Track:11 Upd:251647 Pos:0 SOL:$88.43",
-    "[16:52:50] \ud83d\udfe2 ENTRY: M2_fib0.236 | 8LsBHpgCifje... | $0.000032958 | 0.3021 SOL",
-    "[16:52:50] \ud83d\udcb0 Position filled: M2_fib0.236 | 8LsBHpgCifje\u2026 | $0.000032958 | 0.3021 SOL | FDV $33.0k",
     "[16:53:18] \ud83d\udd14 Migration #3733 detected",
     "[16:53:41] \ud83d\udcca Mig:3733 Track:11 Upd:251687 Pos:1 SOL:$88.45",
     "[16:54:02] \ud83d\udd14 Migration #3734 detected",
@@ -562,34 +555,41 @@
     "[16:57:34] \u2705 BC Graduated: 5N8S6xfs7fLP\u2026",
     "[16:57:34] \ud83d\udce1 Tracking: 5N8S6xfs7fLPUEf7\u2026 | Pool #11",
     "[16:57:36] \ud83d\udd14 Migration #3748 detected",
-    "[16:57:38] \ud83d\udd14 Migration #3749 detected"
+    "[16:57:38] \ud83d\udd14 Migration #3749 detected",
+    "[16:57:47] \ud83d\udcca Mig:3749 Track:11 Upd:252123 Pos:0 SOL:$88.48",
+    "[16:57:58] \ud83d\udd14 Migration #3750 detected",
+    "[16:57:58] \ud83d\udfe2 ENTRY: M2_fib0.236 | 5N8S6xfs7fLP... | $0.000043264 | 0.3021 SOL",
+    "[16:57:58] \ud83d\udcb0 Position filled: M2_fib0.236 | 5N8S6xfs7fLP\u2026 | $0.000043264 | 0.3021 SOL | FDV $43.3k",
+    "[16:58:06] \ud83d\udd34 EXIT: 5N8S6xfs7fLP... | SL | -4.5%",
+    "[16:58:06] \ud83d\udd34 Stop Loss: 5N8S6xfs7fLP\u2026 | -4.5% | -0.0137 SOL | SL1: -11.2% price (exec: -12.5%)",
+    "[16:58:27] \ud83d\udd14 Migration #3751 detected"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 2.894727,
-    "pnl_sol": -0.22577,
-    "pnl_pct": -7.24
+    "current": 2.881023,
+    "pnl_sol": -0.239474,
+    "pnl_pct": -7.67
   },
   "trades": {
-    "total": 129,
+    "total": 130,
     "wins": 29,
-    "losses": 100,
-    "win_rate": 22.5
+    "losses": 101,
+    "win_rate": 22.3
   },
   "positions": {
     "open": 0
   },
-  "sol_price": 88.48,
+  "sol_price": 88.46,
   "bot_stats": {
-    "migrations_seen": 3749,
+    "migrations_seen": 3751,
     "migrations_added": 216,
-    "pools_tracking": 11,
-    "price_updates": 252112,
+    "pools_tracking": 10,
+    "price_updates": 252227,
     "migrations_rejected": 0,
     "liquidity_rejected": 7,
     "bc_graduated": 223,
-    "entries_found": 130,
-    "buys_success": 130,
+    "entries_found": 131,
+    "buys_success": 131,
     "buys_failed": 0
   }
 }
