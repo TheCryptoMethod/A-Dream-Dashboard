@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T10:29:39.194134+00:00",
-  "uptime_seconds": 54329.9,
+  "updated_at": "2026-03-10T10:30:40.243946+00:00",
+  "uptime_seconds": 54391.0,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,12 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[10:19:30] \ud83d\udd14 Migration #2493 detected",
-    "[10:20:27] \ud83d\udd14 Migration #2494 detected",
-    "[10:20:28] \ud83d\udcca Mig:2494 Track:8 Upd:198113 Pos:0 SOL:$87.20",
-    "[10:20:33] \ud83d\udd14 Migration #2495 detected",
-    "[10:20:44] \ud83d\udd14 Migration #2496 detected",
-    "[10:20:49] \ud83d\udd14 Migration #2497 detected",
     "[10:21:02] \ud83d\udd14 Migration #2498 detected",
     "[10:21:16] \ud83d\udd14 Migration #2499 detected",
     "[10:21:22] \ud83d\udd14 Migration #2500 detected",
@@ -562,7 +556,13 @@
     "[10:28:36] \ud83d\udd14 Migration #2517 detected",
     "[10:28:38] \ud83d\udcca Mig:2517 Track:7 Upd:199924 Pos:0 SOL:$87.09",
     "[10:29:08] \ud83d\udd14 Migration #2518 detected",
-    "[10:29:39] \ud83d\udcca Mig:2518 Track:7 Upd:199989 Pos:0 SOL:$87.09"
+    "[10:29:39] \ud83d\udcca Mig:2518 Track:7 Upd:199989 Pos:0 SOL:$87.09",
+    "[10:29:46] \ud83d\udd14 Migration #2519 detected",
+    "[10:30:00] \u2705 BC Graduated: 7beP2jW6Rtbz\u2026",
+    "[10:30:00] \ud83d\udce1 Tracking: 7beP2jW6Rtbz6w7q\u2026 | Pool #8",
+    "[10:30:15] \ud83d\udd14 Migration #2520 detected",
+    "[10:30:23] \ud83d\udd14 Migration #2521 detected",
+    "[10:30:40] \ud83d\udcca Mig:2521 Track:8 Upd:200080 Pos:0 SOL:$87.09"
   ],
   "balance": {
     "start": 3.120497,
@@ -581,13 +581,13 @@
   },
   "sol_price": 87.09,
   "bot_stats": {
-    "migrations_seen": 2518,
-    "migrations_added": 144,
-    "pools_tracking": 7,
-    "price_updates": 199989,
+    "migrations_seen": 2521,
+    "migrations_added": 145,
+    "pools_tracking": 8,
+    "price_updates": 200080,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
-    "bc_graduated": 148,
+    "bc_graduated": 149,
     "entries_found": 82,
     "buys_success": 82,
     "buys_failed": 0
