@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T13:47:41.622502+00:00",
-  "uptime_seconds": 66212.4,
+  "updated_at": "2026-03-10T13:48:42.913491+00:00",
+  "uptime_seconds": 66273.7,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,14 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[13:40:55] \ud83d\udd14 Migration #3110 detected",
-    "[13:41:09] \ud83d\udd14 Migration #3111 detected",
-    "[13:41:20] \ud83d\udd14 Migration #3112 detected",
-    "[13:41:21] \ud83d\udee1\ufe0f Signal gate: EW1gaYCMrShz\u2026 | mint_authority=ON, freeze_authority=ON",
-    "[13:41:21] \ud83d\udeab Disqualified: EW1gaYCMrShz\u2026 | signal_gate_failed | 3.3m",
-    "[13:41:37] \ud83d\udcca Mig:3112 Track:9 Upd:222345 Pos:0 SOL:$86.45",
-    "[13:41:43] \ud83d\udd14 Migration #3113 detected",
-    "[13:42:22] \ud83d\udd14 Migration #3114 detected",
     "[13:42:27] \ud83d\udd14 Migration #3115 detected",
     "[13:42:35] \u2705 BC Graduated: DYT7bHua6vAk\u2026",
     "[13:42:36] \ud83d\udce1 Tracking: DYT7bHua6vAkPFeU\u2026 | Pool #10",
@@ -562,34 +554,42 @@
     "[13:46:30] \ud83d\udd14 Migration #3133 detected",
     "[13:46:43] \ud83d\udcca Mig:3133 Track:12 Upd:224233 Pos:0 SOL:$86.10",
     "[13:46:48] \ud83d\udd14 Migration #3134 detected",
-    "[13:47:32] \ud83d\udd14 Migration #3135 detected"
+    "[13:47:32] \ud83d\udd14 Migration #3135 detected",
+    "[13:47:45] \ud83d\udcca Mig:3135 Track:12 Upd:224715 Pos:0 SOL:$86.10",
+    "[13:47:51] \ud83d\udfe2 ENTRY: M2_fib0.236 | xkmtC55Zhzh9... | $0.000112231 | 0.3023 SOL",
+    "[13:47:51] \ud83d\udcb0 Position filled: M2_fib0.236 | xkmtC55Zhzh9\u2026 | $0.000112231 | 0.3023 SOL | FDV $112.2k",
+    "[13:47:55] \ud83d\udeab Disqualified: 3x6bCnGMXKj3\u2026 | mcap_bucket_not_enabled | 3.5m",
+    "[13:48:09] \ud83d\udd14 Migration #3136 detected",
+    "[13:48:21] \ud83d\udd14 Migration #3137 detected",
+    "[13:48:39] \ud83d\udd34 EXIT: xkmtC55Zhzh9... | SL | -13.8%",
+    "[13:48:39] \ud83d\udd34 Stop Loss: xkmtC55Zhzh9\u2026 | -13.8% | -0.0416 SOL | SL1: -6.2% price (exec: -12.4%)"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 3.34126,
-    "pnl_sol": 0.220763,
-    "pnl_pct": 7.07
+    "current": 3.299638,
+    "pnl_sol": 0.179141,
+    "pnl_pct": 5.74
   },
   "trades": {
-    "total": 100,
+    "total": 101,
     "wins": 24,
-    "losses": 76,
-    "win_rate": 24.0
+    "losses": 77,
+    "win_rate": 23.8
   },
   "positions": {
     "open": 0
   },
-  "sol_price": 86.1,
+  "sol_price": 86.13,
   "bot_stats": {
-    "migrations_seen": 3135,
+    "migrations_seen": 3137,
     "migrations_added": 176,
-    "pools_tracking": 12,
-    "price_updates": 224682,
+    "pools_tracking": 10,
+    "price_updates": 225090,
     "migrations_rejected": 0,
     "liquidity_rejected": 5,
     "bc_graduated": 181,
-    "entries_found": 100,
-    "buys_success": 100,
+    "entries_found": 101,
+    "buys_success": 101,
     "buys_failed": 0
   }
 }
