@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T06:28:55.134744+00:00",
-  "uptime_seconds": 39885.9,
+  "updated_at": "2026-03-10T06:29:56.304459+00:00",
+  "uptime_seconds": 39947.0,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,15 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[06:15:12] \ud83d\udd14 Migration #1894 detected",
-    "[06:15:34] \ud83d\udd14 Migration #1895 detected",
-    "[06:15:41] \ud83d\udcca Mig:1895 Track:6 Upd:155611 Pos:0 SOL:$86.25",
-    "[06:16:08] \ud83d\udd14 Migration #1896 detected",
-    "[06:16:10] \ud83d\udd14 Migration #1897 detected",
-    "[06:16:42] \ud83d\udcca Mig:1897 Track:6 Upd:155697 Pos:0 SOL:$86.23",
-    "[06:17:43] \ud83d\udcca Mig:1897 Track:6 Upd:155804 Pos:0 SOL:$86.21",
-    "[06:17:45] \ud83d\udd14 Migration #1898 detected",
-    "[06:18:13] \ud83d\udd14 Migration #1899 detected",
     "[06:18:33] \ud83d\udd14 Migration #1900 detected",
     "[06:18:44] \ud83d\udcca Mig:1900 Track:6 Upd:155910 Pos:0 SOL:$86.20",
     "[06:18:50] \ud83d\udd14 Migration #1901 detected",
@@ -562,13 +553,22 @@
     "[06:28:15] \ud83d\udd14 Migration #1917 detected",
     "[06:28:29] \u2705 BC Graduated: HyXJo46g45TN\u2026",
     "[06:28:29] \ud83d\udce1 Tracking: HyXJo46g45TNd6wK\u2026 | Pool #7",
-    "[06:28:55] \ud83d\udcca Mig:1917 Track:7 Upd:156985 Pos:0 SOL:$86.19"
+    "[06:28:55] \ud83d\udcca Mig:1917 Track:7 Upd:156985 Pos:0 SOL:$86.19",
+    "[06:29:09] \ud83d\udd14 Migration #1918 detected",
+    "[06:29:11] \ud83d\udd14 Migration #1919 detected",
+    "[06:29:13] \ud83d\udd14 Migration #1920 detected",
+    "[06:29:15] \ud83d\udd14 Migration #1921 detected",
+    "[06:29:15] \ud83d\udd14 Migration #1922 detected",
+    "[06:29:30] \ud83d\udd14 Migration #1923 detected",
+    "[06:29:40] \ud83d\udfe2 ENTRY: M2_fib0.236 | HyXJo46g45TN... | $0.000034754 | 0.3021 SOL",
+    "[06:29:40] \ud83d\udcb0 Position filled: M2_fib0.236 | HyXJo46g45TN\u2026 | $0.000034754 | 0.3021 SOL | FDV $34.8k",
+    "[06:29:56] \ud83d\udcca Mig:1923 Track:7 Upd:157333 Pos:1 SOL:$86.22"
   ],
   "balance": {
     "start": 3.120497,
-    "current": 3.04078,
-    "pnl_sol": -0.079717,
-    "pnl_pct": -2.55
+    "current": 2.738651,
+    "pnl_sol": -0.381846,
+    "pnl_pct": -12.24
   },
   "trades": {
     "total": 58,
@@ -577,19 +577,19 @@
     "win_rate": 24.1
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 86.19,
+  "sol_price": 86.22,
   "bot_stats": {
-    "migrations_seen": 1917,
+    "migrations_seen": 1923,
     "migrations_added": 114,
     "pools_tracking": 7,
-    "price_updates": 156985,
+    "price_updates": 157333,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 118,
-    "entries_found": 58,
-    "buys_success": 58,
+    "entries_found": 59,
+    "buys_success": 59,
     "buys_failed": 0
   }
 }
