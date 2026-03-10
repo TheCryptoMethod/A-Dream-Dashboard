@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T16:53:38.287895+00:00",
-  "uptime_seconds": 77369.0,
+  "updated_at": "2026-03-10T16:54:39.583529+00:00",
+  "uptime_seconds": 77430.3,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[16:45:31] \ud83d\udcca Mig:3709 Track:10 Upd:251010 Pos:0 SOL:$88.50",
-    "[16:46:02] \ud83d\udd14 Migration #3710 detected",
-    "[16:46:16] \ud83d\udd14 Migration #3711 detected",
-    "[16:46:32] \ud83d\udcca Mig:3711 Track:10 Upd:251062 Pos:0 SOL:$88.50",
     "[16:46:58] \ud83d\udd14 Migration #3712 detected",
     "[16:47:02] \ud83d\udd14 Migration #3713 detected",
     "[16:47:08] \ud83d\udd14 Migration #3714 detected",
@@ -562,7 +558,11 @@
     "[16:52:40] \ud83d\udcca Mig:3732 Track:11 Upd:251647 Pos:0 SOL:$88.43",
     "[16:52:50] \ud83d\udfe2 ENTRY: M2_fib0.236 | 8LsBHpgCifje... | $0.000032958 | 0.3021 SOL",
     "[16:52:50] \ud83d\udcb0 Position filled: M2_fib0.236 | 8LsBHpgCifje\u2026 | $0.000032958 | 0.3021 SOL | FDV $33.0k",
-    "[16:53:18] \ud83d\udd14 Migration #3733 detected"
+    "[16:53:18] \ud83d\udd14 Migration #3733 detected",
+    "[16:53:41] \ud83d\udcca Mig:3733 Track:11 Upd:251687 Pos:1 SOL:$88.45",
+    "[16:54:02] \ud83d\udd14 Migration #3734 detected",
+    "[16:54:05] \ud83d\udd14 Migration #3735 detected",
+    "[16:54:17] \ud83d\udd14 Migration #3736 detected"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 1
   },
-  "sol_price": 88.45,
+  "sol_price": 88.46,
   "bot_stats": {
-    "migrations_seen": 3733,
+    "migrations_seen": 3736,
     "migrations_added": 214,
     "pools_tracking": 11,
-    "price_updates": 251685,
+    "price_updates": 251747,
     "migrations_rejected": 0,
     "liquidity_rejected": 6,
     "bc_graduated": 220,
