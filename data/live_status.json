@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-09T19:24:09.261953+00:00",
-  "updated_at": "2026-03-10T10:32:42.542045+00:00",
-  "uptime_seconds": 54513.3,
+  "updated_at": "2026-03-10T10:33:43.623128+00:00",
+  "uptime_seconds": 54574.4,
   "method": "M2",
   "strategy": {
     "method": "M2",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[10:22:52] \ud83d\udd14 Migration #2505 detected",
-    "[10:23:17] \ud83d\udd14 Migration #2506 detected",
-    "[10:23:32] \ud83d\udcca Mig:2506 Track:8 Upd:198837 Pos:1 SOL:$87.16",
-    "[10:24:33] \ud83d\udcca Mig:2506 Track:8 Upd:199079 Pos:1 SOL:$87.15",
     "[10:24:48] \ud83d\udd14 Migration #2507 detected",
     "[10:25:11] \ud83d\udd14 Migration #2508 detected",
     "[10:25:25] \ud83d\udd14 Migration #2509 detected",
@@ -562,7 +558,11 @@
     "[10:32:09] \ud83d\udd14 Migration #2528 detected",
     "[10:32:16] \ud83d\udee1\ufe0f Signal gate: 7beP2jW6Rtbz\u2026 | mint_authority=ON, freeze_authority=ON",
     "[10:32:16] \ud83d\udeab Disqualified: 7beP2jW6Rtbz\u2026 | signal_gate_failed | 2.3m",
-    "[10:32:42] \ud83d\udcca Mig:2528 Track:7 Upd:200283 Pos:0 SOL:$87.12"
+    "[10:32:42] \ud83d\udcca Mig:2528 Track:7 Upd:200283 Pos:0 SOL:$87.12",
+    "[10:32:57] \ud83d\udd14 Migration #2529 detected",
+    "[10:33:07] \ud83d\udd14 Migration #2530 detected",
+    "[10:33:42] \ud83d\udd14 Migration #2531 detected",
+    "[10:33:43] \ud83d\udcca Mig:2531 Track:7 Upd:200340 Pos:0 SOL:$87.13"
   ],
   "balance": {
     "start": 3.120497,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 87.12,
+  "sol_price": 87.13,
   "bot_stats": {
-    "migrations_seen": 2528,
+    "migrations_seen": 2531,
     "migrations_added": 145,
     "pools_tracking": 7,
-    "price_updates": 200283,
+    "price_updates": 200340,
     "migrations_rejected": 0,
     "liquidity_rejected": 4,
     "bc_graduated": 149,
