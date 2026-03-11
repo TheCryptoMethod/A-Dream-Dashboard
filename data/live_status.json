@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T01:23:28.245325+00:00",
-  "uptime_seconds": 12096.2,
+  "updated_at": "2026-03-11T01:24:29.221166+00:00",
+  "uptime_seconds": 12157.1,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,15 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[01:12:42] \ud83d\udd34 EXIT: 8Euirakr9fBo... | SL | -19.8%",
-    "[01:12:42] \ud83d\udd34 Stop Loss: 8Euirakr9fBo\u2026 | -19.8% | -0.0598 SOL | SL1: -16.0% price (exec: -20.6%)",
-    "[01:13:14] \ud83d\udcca Mig:446 Track:0 Upd:6090 Pos:0 SOL:$86.17",
-    "[01:13:19] \ud83d\udd14 Migration #447 detected",
-    "[01:13:23] \ud83d\udd14 Migration #448 detected",
-    "[01:13:24] \ud83d\udd14 Migration #449 detected",
-    "[01:13:35] \ud83d\udd14 Migration #450 detected",
-    "[01:14:16] \ud83d\udcca Mig:450 Track:0 Upd:6090 Pos:0 SOL:$86.15",
-    "[01:14:28] \ud83d\udd14 Migration #451 detected",
     "[01:14:33] \ud83d\udd14 Migration #452 detected",
     "[01:15:17] \ud83d\udcca Mig:452 Track:0 Upd:6090 Pos:0 SOL:$86.15",
     "[01:16:18] \ud83d\udcca Mig:452 Track:0 Upd:6090 Pos:0 SOL:$86.14",
@@ -562,13 +553,22 @@
     "[01:23:17] \ud83d\udd14 Migration #469 detected",
     "[01:23:23] \ud83d\udd14 Migration #470 detected",
     "[01:23:24] \ud83d\udd14 Migration #471 detected",
-    "[01:23:25] \ud83d\udcca Mig:471 Track:0 Upd:6090 Pos:0 SOL:$86.08"
+    "[01:23:25] \ud83d\udcca Mig:471 Track:0 Upd:6090 Pos:0 SOL:$86.08",
+    "[01:23:34] \ud83d\udd14 Migration #472 detected",
+    "[01:23:36] \u2705 BC Graduated: 9entUNqQgVdH\u2026",
+    "[01:23:36] \ud83d\udce1 Tracking: 9entUNqQgVdHHzMD\u2026 | Pool #1",
+    "[01:23:44] \ud83d\udfe2 ENTRY: M1 | 9entUNqQgVdH... | $0.000032798 | 0.3021 SOL",
+    "[01:23:44] \ud83d\udcb0 Position filled: M1 | 9entUNqQgVdH\u2026 | $0.000032798 | 0.3021 SOL | FDV $32.8k",
+    "[01:23:49] \ud83d\udd14 Migration #473 detected",
+    "[01:24:06] \ud83d\udd14 Migration #474 detected",
+    "[01:24:18] \ud83d\udd14 Migration #475 detected",
+    "[01:24:26] \ud83d\udcca Mig:475 Track:1 Upd:6311 Pos:1 SOL:$86.07"
   ],
   "balance": {
     "start": 2.567413,
-    "current": 1.317355,
-    "pnl_sol": -1.250058,
-    "pnl_pct": -48.69
+    "current": 1.015246,
+    "pnl_sol": -1.552167,
+    "pnl_pct": -60.46
   },
   "trades": {
     "total": 26,
@@ -577,19 +577,19 @@
     "win_rate": 7.7
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 86.08,
+  "sol_price": 86.07,
   "bot_stats": {
-    "migrations_seen": 471,
-    "migrations_added": 36,
-    "pools_tracking": 0,
-    "price_updates": 6090,
+    "migrations_seen": 475,
+    "migrations_added": 37,
+    "pools_tracking": 1,
+    "price_updates": 6324,
     "migrations_rejected": 0,
     "liquidity_rejected": 20,
-    "bc_graduated": 56,
-    "entries_found": 26,
-    "buys_success": 26,
+    "bc_graduated": 57,
+    "entries_found": 27,
+    "buys_success": 27,
     "buys_failed": 0
   }
 }
