@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T06:03:31.348400+00:00",
-  "uptime_seconds": 28899.3,
+  "updated_at": "2026-03-11T06:04:32.598787+00:00",
+  "uptime_seconds": 28960.5,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,12 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[05:56:11] \ud83d\udd14 Migration #1230 detected",
-    "[05:56:19] \ud83d\udcca Mig:1230 Track:0 Upd:19812 Pos:0 SOL:$85.83",
-    "[05:56:26] \ud83d\udd14 Migration #1231 detected",
-    "[05:56:46] \ud83d\udd14 Migration #1232 detected",
-    "[05:57:13] \ud83d\udd14 Migration #1233 detected",
-    "[05:57:21] \ud83d\udcca Mig:1233 Track:0 Upd:19812 Pos:0 SOL:$85.82",
     "[05:57:45] \ud83d\udd14 Migration #1234 detected",
     "[05:57:51] \ud83d\udd14 Migration #1235 detected",
     "[05:58:22] \ud83d\udcca Mig:1235 Track:0 Upd:19812 Pos:0 SOL:$85.80",
@@ -562,7 +556,13 @@
     "[06:02:49] \ud83d\udd14 Migration #1247 detected",
     "[06:03:09] \ud83d\udd14 Migration #1248 detected",
     "[06:03:22] \ud83d\udd14 Migration #1249 detected",
-    "[06:03:28] \ud83d\udcca Mig:1249 Track:0 Upd:20141 Pos:0 SOL:$85.75"
+    "[06:03:28] \ud83d\udcca Mig:1249 Track:0 Upd:20141 Pos:0 SOL:$85.75",
+    "[06:03:36] \ud83d\udd14 Migration #1250 detected",
+    "[06:04:06] \ud83d\udd14 Migration #1251 detected",
+    "[06:04:07] \ud83d\udd14 Migration #1252 detected",
+    "[06:04:19] \u2705 BC Graduated: 7uqoE4A4BdC5\u2026",
+    "[06:04:19] \ud83d\udca7 Liquidity rejected: 2.4 SOL < 15.0 SOL",
+    "[06:04:29] \ud83d\udcca Mig:1252 Track:0 Upd:20141 Pos:0 SOL:$85.73"
   ],
   "balance": {
     "start": 2.567413,
@@ -579,15 +579,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.75,
+  "sol_price": 85.73,
   "bot_stats": {
-    "migrations_seen": 1249,
+    "migrations_seen": 1252,
     "migrations_added": 77,
     "pools_tracking": 0,
     "price_updates": 20141,
     "migrations_rejected": 0,
-    "liquidity_rejected": 42,
-    "bc_graduated": 119,
+    "liquidity_rejected": 43,
+    "bc_graduated": 120,
     "entries_found": 58,
     "buys_success": 58,
     "buys_failed": 0
