@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-11T11:27:02.442253+00:00",
-  "updated_at": "2026-03-11T12:54:48.234191+00:00",
-  "uptime_seconds": 5265.8,
+  "updated_at": "2026-03-11T12:55:49.839070+00:00",
+  "uptime_seconds": 5327.4,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[12:47:29] \ud83d\udd34 EXIT: RdCuUywWJqv5... | SL | -18.7%",
-    "[12:47:29] \ud83d\udd34 Stop Loss: RdCuUywWJqv5\u2026 | -18.7% | -0.0564 SOL | SL1: -10.5% price (exec: -16.1%)",
-    "[12:47:36] \ud83d\udcca Mig:208 Track:0 Upd:4189 Pos:0 SOL:$85.04",
-    "[12:47:58] \ud83d\udd14 Migration #209 detected",
     "[12:48:37] \ud83d\udcca Mig:209 Track:0 Upd:4189 Pos:0 SOL:$85.04",
     "[12:49:25] \ud83d\udd14 Migration #210 detected",
     "[12:49:38] \ud83d\udcca Mig:210 Track:0 Upd:4189 Pos:0 SOL:$85.04",
@@ -562,7 +558,11 @@
     "[12:54:00] \ud83d\udcb0 Position filled: M1 | 8DLSU3fHpuP6\u2026 | $0.000037700 | 0.3021 SOL | FDV $37.7k",
     "[12:54:18] \ud83d\udd34 EXIT: 8DLSU3fHpuP6... | SL | -17.8%",
     "[12:54:18] \ud83d\udd34 Stop Loss: 8DLSU3fHpuP6\u2026 | -17.8% | -0.0537 SOL | SL1: -8.9% price (exec: -12.3%)",
-    "[12:54:45] \ud83d\udcca Mig:226 Track:0 Upd:4218 Pos:0 SOL:$85.07"
+    "[12:54:45] \ud83d\udcca Mig:226 Track:0 Upd:4218 Pos:0 SOL:$85.07",
+    "[12:55:13] \ud83d\udd14 Migration #227 detected",
+    "[12:55:25] \ud83d\udd14 Migration #228 detected",
+    "[12:55:38] \ud83d\udd14 Migration #229 detected",
+    "[12:55:46] \ud83d\udcca Mig:229 Track:0 Upd:4218 Pos:0 SOL:$85.10"
   ],
   "balance": {
     "start": 0.953864,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.07,
+  "sol_price": 85.1,
   "bot_stats": {
-    "migrations_seen": 226,
+    "migrations_seen": 229,
     "migrations_added": 18,
     "pools_tracking": 0,
     "price_updates": 4218,
