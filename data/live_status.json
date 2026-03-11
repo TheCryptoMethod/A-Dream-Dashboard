@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T04:25:41.335964+00:00",
-  "uptime_seconds": 23029.2,
+  "updated_at": "2026-03-11T04:26:42.284239+00:00",
+  "uptime_seconds": 23090.2,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,14 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[04:13:25] \ud83d\udeab Disqualified: 4ECnGJp8zq24\u2026 | mcap_bucket_not_enabled | 0s",
-    "[04:13:26] \ud83d\udcca Mig:947 Track:1 Upd:16825 Pos:1 SOL:$85.57",
-    "[04:13:52] \ud83d\udd14 Migration #948 detected",
-    "[04:14:10] \ud83d\udd14 Migration #949 detected",
-    "[04:14:27] \ud83d\udcca Mig:949 Track:1 Upd:16877 Pos:1 SOL:$85.58",
-    "[04:14:33] \ud83d\udd14 Migration #950 detected",
-    "[04:14:49] \ud83d\udd14 Migration #951 detected",
-    "[04:15:10] \ud83d\udd14 Migration #952 detected",
     "[04:15:19] \ud83d\udd14 Migration #953 detected",
     "[04:15:28] \ud83d\udcca Mig:953 Track:1 Upd:16911 Pos:1 SOL:$85.60",
     "[04:15:36] \ud83d\udfe2 EXIT: 4cwbwFNTcHVc... | EARLY_DELTA_60S_5M | +100.4%",
@@ -562,13 +554,21 @@
     "[04:24:30] \ud83d\udd14 Migration #968 detected",
     "[04:24:37] \ud83d\udcca Mig:968 Track:0 Upd:16921 Pos:0 SOL:$85.75",
     "[04:24:39] \ud83d\udd14 Migration #969 detected",
-    "[04:25:38] \ud83d\udcca Mig:969 Track:0 Upd:16921 Pos:0 SOL:$85.76"
+    "[04:25:38] \ud83d\udcca Mig:969 Track:0 Upd:16921 Pos:0 SOL:$85.76",
+    "[04:25:51] \ud83d\udd14 Migration #970 detected",
+    "[04:26:18] \ud83d\udd14 Migration #971 detected",
+    "[04:26:20] \ud83d\udd14 Migration #972 detected",
+    "[04:26:31] \u2705 BC Graduated: zHRHjsCf3p5Q\u2026",
+    "[04:26:31] \ud83d\udce1 Tracking: zHRHjsCf3p5QyGvR\u2026 | Pool #1",
+    "[04:26:39] \ud83d\udcca Mig:972 Track:1 Upd:16950 Pos:0 SOL:$85.80",
+    "[04:26:40] \ud83d\udfe2 ENTRY: M1 | zHRHjsCf3p5Q... | $0.000038080 | 0.3021 SOL",
+    "[04:26:40] \ud83d\udcb0 Position filled: M1 | zHRHjsCf3p5Q\u2026 | $0.000038080 | 0.3021 SOL | FDV $38.1k"
   ],
   "balance": {
     "start": 2.567413,
-    "current": 1.988273,
-    "pnl_sol": -0.57914,
-    "pnl_pct": -22.56
+    "current": 1.686179,
+    "pnl_sol": -0.881234,
+    "pnl_pct": -34.32
   },
   "trades": {
     "total": 46,
@@ -577,19 +577,19 @@
     "win_rate": 17.4
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 85.76,
+  "sol_price": 85.8,
   "bot_stats": {
-    "migrations_seen": 969,
-    "migrations_added": 63,
-    "pools_tracking": 0,
-    "price_updates": 16921,
+    "migrations_seen": 972,
+    "migrations_added": 64,
+    "pools_tracking": 1,
+    "price_updates": 16965,
     "migrations_rejected": 0,
     "liquidity_rejected": 30,
-    "bc_graduated": 93,
-    "entries_found": 46,
-    "buys_success": 46,
+    "bc_graduated": 94,
+    "entries_found": 47,
+    "buys_success": 47,
     "buys_failed": 0
   }
 }
