@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T01:03:07.163103+00:00",
-  "uptime_seconds": 10875.1,
+  "updated_at": "2026-03-11T01:04:08.286452+00:00",
+  "uptime_seconds": 10936.2,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[00:55:41] \ud83d\udd14 Migration #414 detected",
-    "[00:55:51] \ud83d\udd14 Migration #415 detected",
-    "[00:55:55] \ud83d\udcca Mig:415 Track:0 Upd:5596 Pos:0 SOL:$85.99",
-    "[00:56:09] \ud83d\udd14 Migration #416 detected",
     "[00:56:56] \ud83d\udcca Mig:416 Track:0 Upd:5596 Pos:0 SOL:$86.00",
     "[00:57:57] \ud83d\udcca Mig:416 Track:0 Upd:5596 Pos:0 SOL:$86.04",
     "[00:58:50] \ud83d\udd14 Migration #417 detected",
@@ -562,7 +558,11 @@
     "[01:02:47] \ud83d\udd14 Migration #429 detected",
     "[01:02:50] \ud83d\udee1\ufe0f Signal gate: EZLLufinMrWS\u2026 | rugcheck=17428>5000",
     "[01:02:50] \ud83d\udeab Disqualified: EZLLufinMrWS\u2026 | signal_gate_failed | 4s",
-    "[01:03:04] \ud83d\udcca Mig:429 Track:0 Upd:5819 Pos:0 SOL:$86.07"
+    "[01:03:04] \ud83d\udcca Mig:429 Track:0 Upd:5819 Pos:0 SOL:$86.07",
+    "[01:03:07] \ud83d\udd14 Migration #430 detected",
+    "[01:03:18] \ud83d\udd14 Migration #431 detected",
+    "[01:03:25] \ud83d\udd14 Migration #432 detected",
+    "[01:04:05] \ud83d\udcca Mig:432 Track:0 Upd:5819 Pos:0 SOL:$86.10"
   ],
   "balance": {
     "start": 2.567413,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 86.07,
+  "sol_price": 86.1,
   "bot_stats": {
-    "migrations_seen": 429,
+    "migrations_seen": 432,
     "migrations_added": 34,
     "pools_tracking": 0,
     "price_updates": 5819,
