@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T01:58:04.672221+00:00",
-  "uptime_seconds": 14172.6,
+  "updated_at": "2026-03-11T01:59:05.919237+00:00",
+  "uptime_seconds": 14233.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,9 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[01:52:06] \ud83d\udcb0 Position filled: M1 | BMJBZczcFCxx\u2026 | $0.000028475 | 0.3021 SOL | FDV $28.5k",
-    "[01:52:12] \ud83d\udd14 Migration #545 detected",
-    "[01:52:12] \ud83d\udd14 Migration #546 detected",
     "[01:52:28] \ud83d\udd14 Migration #547 detected",
     "[01:52:30] \ud83d\udd14 Migration #548 detected",
     "[01:52:39] \ud83d\udd14 Migration #549 detected",
@@ -562,7 +559,10 @@
     "[01:57:12] \ud83d\udd34 EXIT: AR5JGQTiy7Wu... | SL | -14.5%",
     "[01:57:12] \ud83d\udd34 Stop Loss: AR5JGQTiy7Wu\u2026 | -14.5% | -0.0439 SOL | SL1: -12.9% price (exec: -14.3%)",
     "[01:58:01] \ud83d\udcca Mig:566 Track:1 Upd:10675 Pos:1 SOL:$86.03",
-    "[01:58:04] \ud83d\udd14 Migration #567 detected"
+    "[01:58:04] \ud83d\udd14 Migration #567 detected",
+    "[01:58:20] \ud83d\udd14 Migration #568 detected",
+    "[01:58:42] \ud83d\udd14 Migration #569 detected",
+    "[01:59:02] \ud83d\udcca Mig:569 Track:1 Upd:10929 Pos:1 SOL:$86.03"
   ],
   "balance": {
     "start": 2.567413,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 1
   },
-  "sol_price": 86.03,
+  "sol_price": 86.05,
   "bot_stats": {
-    "migrations_seen": 567,
+    "migrations_seen": 569,
     "migrations_added": 41,
     "pools_tracking": 1,
-    "price_updates": 10686,
+    "price_updates": 10942,
     "migrations_rejected": 0,
     "liquidity_rejected": 22,
     "bc_graduated": 63,
