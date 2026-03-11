@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-11T08:01:39.575586+00:00",
-  "updated_at": "2026-03-11T08:22:01.741718+00:00",
-  "uptime_seconds": 1222.2,
+  "updated_at": "2026-03-11T08:23:02.923167+00:00",
+  "uptime_seconds": 1283.3,
   "method": "M3",
   "strategy": {
     "method": "M3",
@@ -524,11 +524,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[08:14:47] \ud83d\udd14 Migration #49 detected",
-    "[08:14:51] \ud83d\udcca Mig:49 Track:0 Upd:880 Pos:0 SOL:$85.43",
-    "[08:15:02] \ud83d\udd14 Migration #50 detected",
-    "[08:15:03] \ud83d\udd14 Migration #51 detected",
-    "[08:15:07] \ud83d\udd14 Migration #52 detected",
     "[08:15:17] \ud83d\udd14 Migration #53 detected",
     "[08:15:27] \ud83d\udd14 Migration #54 detected",
     "[08:15:52] \ud83d\udcca Mig:54 Track:0 Upd:880 Pos:0 SOL:$85.42",
@@ -563,7 +558,12 @@
     "[08:21:32] \ud83d\udd14 Migration #72 detected",
     "[08:21:55] \ud83d\udd14 Migration #73 detected",
     "[08:21:58] \ud83d\udd14 Migration #74 detected",
-    "[08:21:58] \ud83d\udcca Mig:74 Track:2 Upd:1485 Pos:1 SOL:$85.35"
+    "[08:21:58] \ud83d\udcca Mig:74 Track:2 Upd:1485 Pos:1 SOL:$85.35",
+    "[08:22:02] \ud83d\udfe2 EXIT: 9bSiVvN6FhtJ... | EARLY_PERF_60S | +18.3%",
+    "[08:22:02] \ud83d\udfe2 EARLY_PERF_60S: 9bSiVvN6FhtJ\u2026 | +18.3% | +0.0552 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_60S (perf_60s=+15.0%)",
+    "[08:22:26] \ud83d\udd14 Migration #75 detected",
+    "[08:22:26] \ud83d\udd14 Migration #76 detected",
+    "[08:22:59] \ud83d\udcca Mig:76 Track:1 Upd:1633 Pos:0 SOL:$85.35"
   ],
   "balance": {
     "start": 1.392436,
@@ -572,20 +572,20 @@
     "pnl_pct": 10.01
   },
   "trades": {
-    "total": 1,
-    "wins": 1,
+    "total": 2,
+    "wins": 2,
     "losses": 0,
     "win_rate": 100.0
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
   "sol_price": 85.35,
   "bot_stats": {
-    "migrations_seen": 74,
+    "migrations_seen": 76,
     "migrations_added": 3,
-    "pools_tracking": 2,
-    "price_updates": 1509,
+    "pools_tracking": 1,
+    "price_updates": 1633,
     "migrations_rejected": 0,
     "liquidity_rejected": 2,
     "bc_graduated": 5,
