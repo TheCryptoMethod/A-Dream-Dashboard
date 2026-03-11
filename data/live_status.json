@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T04:55:13.313264+00:00",
-  "uptime_seconds": 24801.2,
+  "updated_at": "2026-03-11T04:56:14.333816+00:00",
+  "uptime_seconds": 24862.2,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,9 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[04:47:51] \ud83d\udd34 EXIT: 29D1M4WGq2Uh... | SL | -7.4%",
-    "[04:47:51] \ud83d\udd34 Stop Loss: 29D1M4WGq2Uh\u2026 | -7.4% | -0.0223 SOL | SL1: -12.3% price (exec: -12.8%)",
-    "[04:48:02] \ud83d\udcca Mig:1051 Track:1 Upd:18488 Pos:1 SOL:$86.41",
     "[04:48:12] \ud83d\udd14 Migration #1052 detected",
     "[04:48:29] \ud83d\udfe2 EXIT: goVeoZerMCUi... | EARLY_PERF_10M | +13.6%",
     "[04:48:29] \ud83d\udfe2 EARLY_PERF_10M: goVeoZerMCUi\u2026 | +13.6% | +0.0411 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_10M",
@@ -562,7 +559,10 @@
     "[04:54:10] \ud83d\udd14 Migration #1069 detected",
     "[04:54:17] \ud83d\udd14 Migration #1070 detected",
     "[04:54:30] \ud83d\udd14 Migration #1071 detected",
-    "[04:55:10] \ud83d\udcca Mig:1071 Track:0 Upd:18704 Pos:0 SOL:$86.50"
+    "[04:55:10] \ud83d\udcca Mig:1071 Track:0 Upd:18704 Pos:0 SOL:$86.50",
+    "[04:55:14] \ud83d\udd14 Migration #1072 detected",
+    "[04:55:55] \ud83d\udd14 Migration #1073 detected",
+    "[04:56:11] \ud83d\udcca Mig:1073 Track:0 Upd:18704 Pos:0 SOL:$86.50"
   ],
   "balance": {
     "start": 2.567413,
@@ -581,7 +581,7 @@
   },
   "sol_price": 86.5,
   "bot_stats": {
-    "migrations_seen": 1071,
+    "migrations_seen": 1073,
     "migrations_added": 70,
     "pools_tracking": 0,
     "price_updates": 18704,
