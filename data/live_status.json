@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-11T08:01:39.575586+00:00",
-  "updated_at": "2026-03-11T09:28:15.746332+00:00",
-  "uptime_seconds": 5196.2,
+  "updated_at": "2026-03-11T09:29:16.941784+00:00",
+  "uptime_seconds": 5257.4,
   "method": "M3",
   "strategy": {
     "method": "M3",
@@ -524,14 +524,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[09:19:43] \ud83d\udd14 Migration #217 detected",
-    "[09:19:43] \ud83d\udd14 Migration #218 detected",
-    "[09:20:03] \ud83d\udcca Mig:218 Track:3 Upd:7523 Pos:1 SOL:$85.37",
-    "[09:20:07] \ud83d\udfe2 ENTRY: M3_fib0.236_rev5 | DU91iw1GDXkv... | $0.000037157 | 0.3021 SOL",
-    "[09:20:07] \ud83d\udcb0 Position filled: M3_fib0.236_rev5 | DU91iw1GDXkv\u2026 | $0.000037157 | 0.3021 SOL | FDV $37.2k",
-    "[09:20:18] \ud83d\udd34 EXIT: GsH2xhweEKqd... | EARLY_PERF_5M | -3.6%",
-    "[09:20:18] \ud83d\udd34 EARLY_PERF_5M: GsH2xhweEKqd\u2026 | -3.6% | -0.0108 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_5M",
-    "[09:20:39] \ud83d\udd14 Migration #219 detected",
     "[09:20:54] \ud83d\udd14 Migration #220 detected",
     "[09:21:04] \ud83d\udcca Mig:220 Track:2 Upd:7609 Pos:1 SOL:$85.37",
     "[09:21:08] \ud83d\udd14 Migration #221 detected",
@@ -563,34 +555,42 @@
     "[09:26:51] \ud83d\udd14 Migration #236 detected",
     "[09:27:11] \ud83d\udcca Mig:236 Track:2 Upd:8787 Pos:0 SOL:$85.38",
     "[09:27:36] \ud83d\udd14 Migration #237 detected",
-    "[09:28:12] \ud83d\udcca Mig:237 Track:2 Upd:9079 Pos:0 SOL:$85.38"
+    "[09:28:12] \ud83d\udcca Mig:237 Track:2 Upd:9079 Pos:0 SOL:$85.38",
+    "[09:28:44] \ud83d\udfe2 ENTRY: M3_fib0.236_rev5 | tqcQ7ij4UoXj... | $0.000256248 | 0.3021 SOL",
+    "[09:28:44] \ud83d\udcb0 Position filled: M3_fib0.236_rev5 | tqcQ7ij4UoXj\u2026 | $0.000256248 | 0.3021 SOL | FDV $256.2k",
+    "[09:28:49] \ud83d\udd14 Migration #238 detected",
+    "[09:28:49] \ud83d\udd14 Migration #239 detected",
+    "[09:28:53] \ud83d\udd34 EXIT: tqcQ7ij4UoXj... | EARLY_PERF_10S | -10.9%",
+    "[09:28:53] \ud83d\udd34 EARLY_PERF_10S: tqcQ7ij4UoXj\u2026 | -10.9% | -0.0330 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_10S (perf_10s=-5.3%)",
+    "[09:29:03] \ud83d\udd14 Migration #240 detected",
+    "[09:29:13] \ud83d\udcca Mig:240 Track:1 Upd:9274 Pos:0 SOL:$85.37"
   ],
   "balance": {
     "start": 1.392436,
-    "current": 0.986815,
-    "pnl_sol": -0.405621,
-    "pnl_pct": -29.13
+    "current": 0.953864,
+    "pnl_sol": -0.438572,
+    "pnl_pct": -31.5
   },
   "trades": {
-    "total": 8,
+    "total": 9,
     "wins": 2,
-    "losses": 6,
-    "win_rate": 25.0
+    "losses": 7,
+    "win_rate": 22.2
   },
   "positions": {
     "open": 0
   },
-  "sol_price": 85.38,
+  "sol_price": 85.37,
   "bot_stats": {
-    "migrations_seen": 237,
+    "migrations_seen": 240,
     "migrations_added": 10,
-    "pools_tracking": 2,
-    "price_updates": 9085,
+    "pools_tracking": 1,
+    "price_updates": 9274,
     "migrations_rejected": 0,
     "liquidity_rejected": 10,
     "bc_graduated": 20,
-    "entries_found": 8,
-    "buys_success": 8,
+    "entries_found": 9,
+    "buys_success": 9,
     "buys_failed": 0
   }
 }
