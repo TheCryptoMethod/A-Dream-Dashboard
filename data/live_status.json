@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T04:53:11.203707+00:00",
-  "uptime_seconds": 24679.1,
+  "updated_at": "2026-03-11T04:54:12.264051+00:00",
+  "uptime_seconds": 24740.2,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,15 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[04:45:45] \ud83d\udd14 Migration #1046 detected",
-    "[04:45:59] \ud83d\udd14 Migration #1047 detected",
-    "[04:46:00] \ud83d\udcca Mig:1047 Track:1 Upd:18375 Pos:1 SOL:$86.38",
-    "[04:46:30] \ud83d\udd14 Migration #1048 detected",
-    "[04:47:01] \ud83d\udcca Mig:1048 Track:1 Upd:18414 Pos:1 SOL:$86.41",
-    "[04:47:04] \ud83d\udd14 Migration #1049 detected",
-    "[04:47:26] \ud83d\udd14 Migration #1050 detected",
-    "[04:47:38] \ud83d\udd14 Migration #1051 detected",
-    "[04:47:39] \u2705 BC Graduated: 29D1M4WGq2Uh\u2026",
     "[04:47:40] \ud83d\udce1 Tracking: 29D1M4WGq2Uhg3Tx\u2026 | Pool #2",
     "[04:47:47] \ud83d\udfe2 ENTRY: M1 | 29D1M4WGq2Uh... | $0.000025895 | 0.3021 SOL",
     "[04:47:47] \ud83d\udcb0 Position filled: M1 | 29D1M4WGq2Uh\u2026 | $0.000025895 | 0.3021 SOL | FDV $25.9k",
@@ -562,7 +553,16 @@
     "[04:52:24] \ud83d\udd34 EARLY_DELTA_30S_60S: 5M1akUtgQJXx\u2026 | -13.6% | -0.0409 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_30S_60S (delta=-18.1%)",
     "[04:52:46] \ud83d\udd14 Migration #1062 detected",
     "[04:53:08] \ud83d\udcca Mig:1062 Track:0 Upd:18704 Pos:0 SOL:$86.45",
-    "[04:53:10] \ud83d\udd14 Migration #1063 detected"
+    "[04:53:10] \ud83d\udd14 Migration #1063 detected",
+    "[04:53:15] \ud83d\udd14 Migration #1064 detected",
+    "[04:53:48] \ud83d\udd14 Migration #1065 detected",
+    "[04:53:54] \ud83d\udd14 Migration #1066 detected",
+    "[04:53:58] \ud83d\udd14 Migration #1067 detected",
+    "[04:54:08] \u2705 BC Graduated: DhALLkiatWU3\u2026",
+    "[04:54:08] \ud83d\udca7 Liquidity rejected: 0.5 SOL < 15.0 SOL",
+    "[04:54:09] \ud83d\udcca Mig:1067 Track:0 Upd:18704 Pos:0 SOL:$86.45",
+    "[04:54:09] \ud83d\udd14 Migration #1068 detected",
+    "[04:54:10] \ud83d\udd14 Migration #1069 detected"
   ],
   "balance": {
     "start": 2.567413,
@@ -581,13 +581,13 @@
   },
   "sol_price": 86.45,
   "bot_stats": {
-    "migrations_seen": 1063,
+    "migrations_seen": 1069,
     "migrations_added": 70,
     "pools_tracking": 0,
     "price_updates": 18704,
     "migrations_rejected": 0,
-    "liquidity_rejected": 32,
-    "bc_graduated": 102,
+    "liquidity_rejected": 33,
+    "bc_graduated": 103,
     "entries_found": 53,
     "buys_success": 53,
     "buys_failed": 0
