@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T02:35:42.928069+00:00",
-  "uptime_seconds": 16430.8,
+  "updated_at": "2026-03-11T02:36:43.847052+00:00",
+  "uptime_seconds": 16491.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,15 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[02:27:14] \ud83d\udd34 Stop Loss: 4WkrfiBwD2XF\u2026 | -4.6% | -0.0138 SOL | SL1: -13.5% price (exec: -14.7%)",
-    "[02:27:19] \ud83d\udd14 Migration #645 detected",
-    "[02:27:31] \ud83d\udcca Mig:645 Track:0 Upd:13457 Pos:0 SOL:$86.02",
-    "[02:27:32] \ud83d\udd14 Migration #646 detected",
-    "[02:27:37] \ud83d\udd14 Migration #647 detected",
-    "[02:28:17] \ud83d\udd14 Migration #648 detected",
-    "[02:28:32] \ud83d\udcca Mig:648 Track:0 Upd:13457 Pos:0 SOL:$86.01",
-    "[02:28:33] \ud83d\udd14 Migration #649 detected",
-    "[02:29:08] \ud83d\udd14 Migration #650 detected",
     "[02:29:10] \ud83d\udd14 Migration #651 detected",
     "[02:29:23] \ud83d\udd14 Migration #652 detected",
     "[02:29:33] \ud83d\udcca Mig:652 Track:0 Upd:13457 Pos:0 SOL:$86.01",
@@ -562,13 +553,22 @@
     "[02:34:53] \ud83d\udd14 Migration #668 detected",
     "[02:35:12] \ud83d\udd14 Migration #669 detected",
     "[02:35:32] \ud83d\udd14 Migration #670 detected",
-    "[02:35:39] \ud83d\udcca Mig:670 Track:0 Upd:13458 Pos:0 SOL:$85.96"
+    "[02:35:39] \ud83d\udcca Mig:670 Track:0 Upd:13458 Pos:0 SOL:$85.96",
+    "[02:35:49] \ud83d\udd14 Migration #671 detected",
+    "[02:35:52] \ud83d\udd14 Migration #672 detected",
+    "[02:36:09] \ud83d\udd14 Migration #673 detected",
+    "[02:36:16] \ud83d\udd14 Migration #674 detected",
+    "[02:36:30] \u2705 BC Graduated: B9AgK9utmq9U\u2026",
+    "[02:36:30] \ud83d\udce1 Tracking: B9AgK9utmq9UEWpb\u2026 | Pool #1",
+    "[02:36:37] \ud83d\udfe2 ENTRY: M1 | B9AgK9utmq9U... | $0.000029983 | 0.3021 SOL",
+    "[02:36:37] \ud83d\udcb0 Position filled: M1 | B9AgK9utmq9U\u2026 | $0.000029983 | 0.3021 SOL | FDV $30.0k",
+    "[02:36:40] \ud83d\udcca Mig:674 Track:1 Upd:13489 Pos:1 SOL:$85.95"
   ],
   "balance": {
     "start": 2.567413,
-    "current": 2.17818,
-    "pnl_sol": -0.389233,
-    "pnl_pct": -15.16
+    "current": 1.876081,
+    "pnl_sol": -0.691332,
+    "pnl_pct": -26.93
   },
   "trades": {
     "total": 35,
@@ -577,19 +577,19 @@
     "win_rate": 11.4
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 85.96,
+  "sol_price": 85.95,
   "bot_stats": {
-    "migrations_seen": 670,
-    "migrations_added": 49,
-    "pools_tracking": 0,
-    "price_updates": 13458,
+    "migrations_seen": 674,
+    "migrations_added": 50,
+    "pools_tracking": 1,
+    "price_updates": 13492,
     "migrations_rejected": 0,
     "liquidity_rejected": 23,
-    "bc_graduated": 72,
-    "entries_found": 35,
-    "buys_success": 35,
+    "bc_graduated": 73,
+    "entries_found": 36,
+    "buys_success": 36,
     "buys_failed": 0
   }
 }
