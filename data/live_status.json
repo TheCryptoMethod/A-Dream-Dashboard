@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-11T08:01:39.575586+00:00",
-  "updated_at": "2026-03-11T09:17:03.171019+00:00",
-  "uptime_seconds": 4523.6,
+  "updated_at": "2026-03-11T09:18:04.321292+00:00",
+  "uptime_seconds": 4584.7,
   "method": "M3",
   "strategy": {
     "method": "M3",
@@ -524,15 +524,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[09:08:53] \ud83d\udd14 Migration #185 detected",
-    "[09:09:16] \ud83d\udd14 Migration #186 detected",
-    "[09:09:21] \ud83d\udd14 Migration #187 detected",
-    "[09:09:23] \ud83d\udd14 Migration #188 detected",
-    "[09:09:34] \u2705 BC Graduated: DU91iw1GDXkv\u2026",
-    "[09:09:34] \ud83d\udce1 Tracking: DU91iw1GDXkvJLFy\u2026 | Pool #3",
-    "[09:09:37] \ud83d\udd14 Migration #189 detected",
-    "[09:09:51] \ud83d\udd14 Migration #190 detected",
-    "[09:09:52] \ud83d\udcca Mig:190 Track:3 Upd:5499 Pos:0 SOL:$85.38",
     "[09:10:41] \ud83d\udd14 Migration #191 detected",
     "[09:10:43] \ud83d\udd14 Migration #192 detected",
     "[09:10:46] \ud83d\udd14 Migration #193 detected",
@@ -563,32 +554,41 @@
     "[09:16:06] \ud83d\udcb0 Position filled: M3_fib0.236_rev5 | BaURNvqfCC9T\u2026 | $0.000022903 | 0.3021 SOL | FDV $22.9k",
     "[09:16:32] \ud83d\udd14 Migration #207 detected",
     "[09:16:41] \ud83d\udd14 Migration #208 detected",
-    "[09:17:00] \ud83d\udcca Mig:208 Track:4 Upd:7033 Pos:2 SOL:$85.35"
+    "[09:17:00] \ud83d\udcca Mig:208 Track:4 Upd:7033 Pos:2 SOL:$85.35",
+    "[09:17:14] \ud83d\udd34 EXIT: BaURNvqfCC9T... | SL | -21.8%",
+    "[09:17:14] \ud83d\udd34 Stop Loss: BaURNvqfCC9T\u2026 | -21.8% | -0.0658 SOL | SL1: -19.2% price (exec: -22.6%)",
+    "[09:17:34] \ud83d\udd14 Migration #209 detected",
+    "[09:17:44] \ud83d\udd14 Migration #210 detected",
+    "[09:17:50] \ud83d\udd14 Migration #211 detected",
+    "[09:18:01] \ud83d\udcca Mig:211 Track:3 Upd:7249 Pos:1 SOL:$85.34",
+    "[09:18:03] \u2705 BC Graduated: GJwRnBUSqzt7\u2026",
+    "[09:18:03] \ud83d\udd14 Migration #212 detected",
+    "[09:18:03] \ud83d\udca7 Liquidity rejected: 0.3 SOL < 15.0 SOL"
   ],
   "balance": {
     "start": 1.392436,
-    "current": 0.742759,
-    "pnl_sol": -0.649677,
-    "pnl_pct": -46.66
+    "current": 0.979083,
+    "pnl_sol": -0.413353,
+    "pnl_pct": -29.69
   },
   "trades": {
-    "total": 5,
+    "total": 6,
     "wins": 2,
-    "losses": 3,
-    "win_rate": 40.0
+    "losses": 4,
+    "win_rate": 33.3
   },
   "positions": {
-    "open": 2
+    "open": 1
   },
-  "sol_price": 85.35,
+  "sol_price": 85.34,
   "bot_stats": {
-    "migrations_seen": 208,
+    "migrations_seen": 212,
     "migrations_added": 9,
-    "pools_tracking": 4,
-    "price_updates": 7059,
+    "pools_tracking": 3,
+    "price_updates": 7255,
     "migrations_rejected": 0,
-    "liquidity_rejected": 6,
-    "bc_graduated": 15,
+    "liquidity_rejected": 7,
+    "bc_graduated": 16,
     "entries_found": 7,
     "buys_success": 7,
     "buys_failed": 0
