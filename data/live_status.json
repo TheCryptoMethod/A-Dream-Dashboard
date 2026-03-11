@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-11T08:01:39.575586+00:00",
-  "updated_at": "2026-03-11T08:13:53.055584+00:00",
-  "uptime_seconds": 733.5,
+  "updated_at": "2026-03-11T08:14:54.132761+00:00",
+  "uptime_seconds": 794.6,
   "method": "M3",
   "strategy": {
     "method": "M3",
@@ -524,18 +524,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[08:06:42] \ud83d\udcca Mig:14 Track:0 Upd:0 Pos:0 SOL:$85.50",
-    "[08:06:51] \ud83d\udd14 Migration #15 detected",
-    "[08:07:00] \ud83d\udd14 Migration #16 detected",
-    "[08:07:01] \ud83d\udd14 Migration #17 detected",
-    "[08:07:10] \ud83d\udd14 Migration #18 detected",
-    "[08:07:39] \ud83d\udd14 Migration #19 detected",
-    "[08:07:40] \ud83d\udd14 Migration #20 detected",
-    "[08:07:43] \ud83d\udcca Mig:20 Track:0 Upd:0 Pos:0 SOL:$85.51",
-    "[08:08:05] \ud83d\udd14 Migration #21 detected",
-    "[08:08:39] \ud83d\udd14 Migration #22 detected",
-    "[08:08:44] \ud83d\udcca Mig:22 Track:0 Upd:0 Pos:0 SOL:$85.51",
-    "[08:09:05] \ud83d\udd14 Migration #23 detected",
     "[08:09:30] \ud83d\udd14 Migration #24 detected",
     "[08:09:38] \ud83d\udd14 Migration #25 detected",
     "[08:09:45] \ud83d\udcca Mig:25 Track:0 Upd:0 Pos:0 SOL:$85.48",
@@ -563,29 +551,41 @@
     "[08:13:42] \ud83d\udd14 Migration #40 detected",
     "[08:13:47] \ud83d\udfe2 ENTRY: M3_fib0.236_rev5 | CbkSZQhpmPWt... | $0.000056185 | 0.3021 SOL",
     "[08:13:47] \ud83d\udcb0 Position filled: M3_fib0.236_rev5 | CbkSZQhpmPWt\u2026 | $0.000056185 | 0.3021 SOL | FDV $56.2k",
-    "[08:13:50] \ud83d\udcca Mig:40 Track:1 Upd:666 Pos:1 SOL:$85.43"
+    "[08:13:50] \ud83d\udcca Mig:40 Track:1 Upd:666 Pos:1 SOL:$85.43",
+    "[08:13:57] \ud83d\udd14 Migration #41 detected",
+    "[08:14:10] \ud83d\udd14 Migration #42 detected",
+    "[08:14:18] \ud83d\udd14 Migration #43 detected",
+    "[08:14:21] \ud83d\udd14 Migration #44 detected",
+    "[08:14:23] \ud83d\udd14 Migration #45 detected",
+    "[08:14:32] \ud83d\udd14 Migration #46 detected",
+    "[08:14:33] \ud83d\udd14 Migration #47 detected",
+    "[08:14:39] \ud83d\udd14 Migration #48 detected",
+    "[08:14:46] \ud83d\udfe2 EXIT: CbkSZQhpmPWt... | EARLY_PERF_60S | +27.9%",
+    "[08:14:46] \ud83d\udfe2 EARLY_PERF_60S: CbkSZQhpmPWt\u2026 | +27.9% | +0.0842 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_60S (perf_60s=+33.1%)",
+    "[08:14:47] \ud83d\udd14 Migration #49 detected",
+    "[08:14:51] \ud83d\udcca Mig:49 Track:0 Upd:880 Pos:0 SOL:$85.43"
   ],
   "balance": {
     "start": 1.392436,
-    "current": 1.090372,
-    "pnl_sol": -0.302064,
-    "pnl_pct": -21.69
+    "current": 1.47664,
+    "pnl_sol": 0.084204,
+    "pnl_pct": 6.05
   },
   "trades": {
-    "total": 0,
-    "wins": 0,
+    "total": 1,
+    "wins": 1,
     "losses": 0,
-    "win_rate": 0
+    "win_rate": 100.0
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
   "sol_price": 85.43,
   "bot_stats": {
-    "migrations_seen": 40,
+    "migrations_seen": 49,
     "migrations_added": 1,
-    "pools_tracking": 1,
-    "price_updates": 676,
+    "pools_tracking": 0,
+    "price_updates": 880,
     "migrations_rejected": 0,
     "liquidity_rejected": 2,
     "bc_graduated": 3,
