@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T05:40:03.898990+00:00",
-  "uptime_seconds": 27491.8,
+  "updated_at": "2026-03-11T05:41:05.102823+00:00",
+  "uptime_seconds": 27553.0,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[05:31:27] \ud83d\udd14 Migration #1171 detected",
-    "[05:31:28] \ud83d\udd14 Migration #1172 detected",
-    "[05:31:42] \ud83d\udd14 Migration #1173 detected",
-    "[05:31:44] \ud83d\udd14 Migration #1174 detected",
     "[05:31:51] \ud83d\udcca Mig:1174 Track:0 Upd:19704 Pos:0 SOL:$86.27",
     "[05:31:56] \u2705 BC Graduated: 4WxKxAMgRKPn\u2026",
     "[05:31:56] \ud83d\udca7 Liquidity rejected: 0.2 SOL < 15.0 SOL",
@@ -562,7 +558,11 @@
     "[05:38:59] \ud83d\udcca Mig:1191 Track:0 Upd:19811 Pos:0 SOL:$86.21",
     "[05:39:47] \ud83d\udd14 Migration #1192 detected",
     "[05:40:00] \ud83d\udd14 Migration #1193 detected",
-    "[05:40:00] \ud83d\udcca Mig:1193 Track:0 Upd:19811 Pos:0 SOL:$86.17"
+    "[05:40:00] \ud83d\udcca Mig:1193 Track:0 Upd:19811 Pos:0 SOL:$86.17",
+    "[05:40:16] \u2705 BC Graduated: 7EJiRvqCavyK\u2026",
+    "[05:40:16] \ud83d\udca7 Liquidity rejected: 0.1 SOL < 15.0 SOL",
+    "[05:40:59] \ud83d\udd14 Migration #1194 detected",
+    "[05:41:02] \ud83d\udcca Mig:1194 Track:0 Upd:19811 Pos:0 SOL:$86.15"
   ],
   "balance": {
     "start": 2.567413,
@@ -579,15 +579,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 86.17,
+  "sol_price": 86.15,
   "bot_stats": {
-    "migrations_seen": 1193,
+    "migrations_seen": 1194,
     "migrations_added": 74,
     "pools_tracking": 0,
     "price_updates": 19811,
     "migrations_rejected": 0,
-    "liquidity_rejected": 40,
-    "bc_graduated": 114,
+    "liquidity_rejected": 41,
+    "bc_graduated": 115,
     "entries_found": 56,
     "buys_success": 56,
     "buys_failed": 0
