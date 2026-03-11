@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-11T11:27:02.442253+00:00",
-  "updated_at": "2026-03-11T12:50:43.129524+00:00",
-  "uptime_seconds": 5020.7,
+  "updated_at": "2026-03-11T12:51:44.426278+00:00",
+  "uptime_seconds": 5082.0,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,15 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[12:43:30] \ud83d\udcca Mig:200 Track:0 Upd:3930 Pos:0 SOL:$85.12",
-    "[12:43:40] \ud83d\udd14 Migration #201 detected",
-    "[12:43:50] \ud83d\udd14 Migration #202 detected",
-    "[12:44:03] \u2705 BC Graduated: HTMubRexweNq\u2026",
-    "[12:44:03] \ud83d\udce1 Tracking: HTMubRexweNqgric\u2026 | Pool #1",
-    "[12:44:09] \ud83d\udd14 Migration #203 detected",
-    "[12:44:13] \ud83d\udfe2 ENTRY: M1 | HTMubRexweNq... | $0.000040078 | 0.3021 SOL",
-    "[12:44:13] \ud83d\udcb0 Position filled: M1 | HTMubRexweNq\u2026 | $0.000040078 | 0.3021 SOL | FDV $40.1k",
-    "[12:44:20] \ud83d\udfe2 EXIT: HTMubRexweNq... | EARLY_PERF_10S | +16.8%",
     "[12:44:20] \ud83d\udfe2 EARLY_PERF_10S: HTMubRexweNq\u2026 | +16.8% | +0.0507 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_10S (perf_10s=+7.3%)",
     "[12:44:32] \ud83d\udcca Mig:203 Track:0 Upd:3999 Pos:0 SOL:$85.08",
     "[12:45:16] \ud83d\udd14 Migration #204 detected",
@@ -562,7 +553,16 @@
     "[12:49:45] \ud83d\udd14 Migration #212 detected",
     "[12:49:52] \ud83d\udd14 Migration #213 detected",
     "[12:50:29] \ud83d\udd14 Migration #214 detected",
-    "[12:50:40] \ud83d\udcca Mig:214 Track:0 Upd:4189 Pos:0 SOL:$85.04"
+    "[12:50:40] \ud83d\udcca Mig:214 Track:0 Upd:4189 Pos:0 SOL:$85.04",
+    "[12:50:55] \ud83d\udd14 Migration #215 detected",
+    "[12:50:58] \ud83d\udd14 Migration #216 detected",
+    "[12:50:59] \ud83d\udd14 Migration #217 detected",
+    "[12:50:59] \ud83d\udd14 Migration #218 detected",
+    "[12:50:59] \ud83d\udd14 Migration #219 detected",
+    "[12:51:19] \ud83d\udd14 Migration #220 detected",
+    "[12:51:40] \ud83d\udd14 Migration #221 detected",
+    "[12:51:41] \ud83d\udcca Mig:221 Track:0 Upd:4189 Pos:0 SOL:$85.06",
+    "[12:51:41] \ud83d\udd14 Migration #222 detected"
   ],
   "balance": {
     "start": 0.953864,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.04,
+  "sol_price": 85.06,
   "bot_stats": {
-    "migrations_seen": 214,
+    "migrations_seen": 222,
     "migrations_added": 17,
     "pools_tracking": 0,
     "price_updates": 4189,
