@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-11T11:27:02.442253+00:00",
-  "updated_at": "2026-03-11T12:43:33.967360+00:00",
-  "uptime_seconds": 4591.5,
+  "updated_at": "2026-03-11T12:44:35.222799+00:00",
+  "uptime_seconds": 4652.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,16 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[12:36:32] \ud83d\udd34 EXIT: C5bvJxRKYHA9... | SL | -18.8%",
-    "[12:36:32] \ud83d\udd34 Stop Loss: C5bvJxRKYHA9\u2026 | -18.8% | -0.0568 SOL | SL1: -30.8% price (exec: -18.5%)",
-    "[12:36:38] \ud83d\udd14 Migration #182 detected",
-    "[12:36:40] \ud83d\udd14 Migration #183 detected",
-    "[12:36:40] \ud83d\udd14 Migration #184 detected",
-    "[12:36:51] \ud83d\udd14 Migration #185 detected",
-    "[12:36:53] \u2705 BC Graduated: 6MeHyman8BXJ\u2026",
-    "[12:36:53] \ud83d\udce1 Tracking: 6MeHyman8BXJuiLX\u2026 | Pool #2",
-    "[12:36:55] \ud83d\udd14 Migration #186 detected",
-    "[12:37:01] \ud83d\udd14 Migration #187 detected",
     "[12:37:03] \u26a0\ufe0f Jupiter error: tx_failed_verified",
     "[12:37:03] \u26a0\ufe0f Buy FAILED: M1 | 6MeHyman8BXJ\u2026",
     "[12:37:16] \ud83d\udd14 Migration #188 detected",
@@ -562,34 +552,44 @@
     "[12:42:29] \ud83d\udcca Mig:198 Track:0 Upd:3930 Pos:0 SOL:$85.15",
     "[12:42:29] \ud83d\udd14 Migration #199 detected",
     "[12:43:27] \ud83d\udd14 Migration #200 detected",
-    "[12:43:30] \ud83d\udcca Mig:200 Track:0 Upd:3930 Pos:0 SOL:$85.12"
+    "[12:43:30] \ud83d\udcca Mig:200 Track:0 Upd:3930 Pos:0 SOL:$85.12",
+    "[12:43:40] \ud83d\udd14 Migration #201 detected",
+    "[12:43:50] \ud83d\udd14 Migration #202 detected",
+    "[12:44:03] \u2705 BC Graduated: HTMubRexweNq\u2026",
+    "[12:44:03] \ud83d\udce1 Tracking: HTMubRexweNqgric\u2026 | Pool #1",
+    "[12:44:09] \ud83d\udd14 Migration #203 detected",
+    "[12:44:13] \ud83d\udfe2 ENTRY: M1 | HTMubRexweNq... | $0.000040078 | 0.3021 SOL",
+    "[12:44:13] \ud83d\udcb0 Position filled: M1 | HTMubRexweNq\u2026 | $0.000040078 | 0.3021 SOL | FDV $40.1k",
+    "[12:44:20] \ud83d\udfe2 EXIT: HTMubRexweNq... | EARLY_PERF_10S | +16.8%",
+    "[12:44:20] \ud83d\udfe2 EARLY_PERF_10S: HTMubRexweNq\u2026 | +16.8% | +0.0507 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_10S (perf_10s=+7.3%)",
+    "[12:44:32] \ud83d\udcca Mig:203 Track:0 Upd:3999 Pos:0 SOL:$85.08"
   ],
   "balance": {
     "start": 0.953864,
-    "current": 0.510775,
-    "pnl_sol": -0.443088,
-    "pnl_pct": -46.45
+    "current": 0.561501,
+    "pnl_sol": -0.392362,
+    "pnl_pct": -41.13
   },
   "trades": {
-    "total": 12,
-    "wins": 1,
+    "total": 13,
+    "wins": 2,
     "losses": 11,
-    "win_rate": 8.3
+    "win_rate": 15.4
   },
   "positions": {
     "open": 0
   },
-  "sol_price": 85.12,
+  "sol_price": 85.08,
   "bot_stats": {
-    "migrations_seen": 200,
-    "migrations_added": 14,
+    "migrations_seen": 203,
+    "migrations_added": 15,
     "pools_tracking": 0,
-    "price_updates": 3930,
+    "price_updates": 3999,
     "migrations_rejected": 0,
     "liquidity_rejected": 6,
-    "bc_graduated": 20,
-    "entries_found": 13,
-    "buys_success": 12,
+    "bc_graduated": 21,
+    "entries_found": 14,
+    "buys_success": 13,
     "buys_failed": 1
   }
 }
