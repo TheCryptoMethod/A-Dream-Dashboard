@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T02:10:17.335798+00:00",
-  "uptime_seconds": 14905.2,
+  "updated_at": "2026-03-11T02:11:18.328776+00:00",
+  "uptime_seconds": 14966.2,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,17 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[02:03:18] \ud83d\udd14 Migration #581 detected",
-    "[02:03:23] \ud83d\udd14 Migration #582 detected",
-    "[02:03:28] \ud83d\udd14 Migration #583 detected",
-    "[02:04:08] \ud83d\udcca Mig:583 Track:0 Upd:11624 Pos:0 SOL:$86.11",
-    "[02:04:10] \ud83d\udd14 Migration #584 detected",
-    "[02:04:11] \ud83d\udd14 Migration #585 detected",
-    "[02:04:41] \ud83d\udd14 Migration #586 detected",
-    "[02:04:50] \ud83d\udd14 Migration #587 detected",
-    "[02:04:53] \ud83d\udd14 Migration #588 detected",
-    "[02:04:55] \u2705 BC Graduated: 6MJYg8CGwbUU\u2026",
-    "[02:04:55] \ud83d\udce1 Tracking: 6MJYg8CGwbUUkBGU\u2026 | Pool #1",
     "[02:04:57] \ud83d\udd14 Migration #589 detected",
     "[02:05:02] \ud83d\udfe2 ENTRY: M1 | 6MJYg8CGwbUU... | $0.000024710 | 0.3021 SOL",
     "[02:05:02] \ud83d\udcb0 Position filled: M1 | 6MJYg8CGwbUU\u2026 | $0.000024710 | 0.3021 SOL | FDV $24.7k",
@@ -562,13 +551,24 @@
     "[02:09:55] \ud83d\udd14 Migration #601 detected",
     "[02:10:12] \ud83d\udd14 Migration #602 detected",
     "[02:10:14] \ud83d\udcca Mig:602 Track:0 Upd:11745 Pos:0 SOL:$86.12",
-    "[02:10:16] \ud83d\udd14 Migration #603 detected"
+    "[02:10:16] \ud83d\udd14 Migration #603 detected",
+    "[02:10:25] \u2705 BC Graduated: 7L2gHpYnANrW\u2026",
+    "[02:10:26] \ud83d\udca7 Liquidity rejected: 0.2 SOL < 15.0 SOL",
+    "[02:10:29] \u2705 BC Graduated: G8L2mQQKZfMS\u2026",
+    "[02:10:30] \ud83d\udce1 Tracking: G8L2mQQKZfMSXysC\u2026 | Pool #1",
+    "[02:10:30] \ud83d\udd14 Migration #604 detected",
+    "[02:10:35] \ud83d\udd14 Migration #605 detected",
+    "[02:10:37] \ud83d\udfe2 ENTRY: M1 | G8L2mQQKZfMS... | $0.000026340 | 0.3021 SOL",
+    "[02:10:37] \ud83d\udcb0 Position filled: M1 | G8L2mQQKZfMS\u2026 | $0.000026340 | 0.3021 SOL | FDV $26.3k",
+    "[02:10:45] \ud83d\udd14 Migration #606 detected",
+    "[02:10:48] \ud83d\udd14 Migration #607 detected",
+    "[02:11:15] \ud83d\udcca Mig:607 Track:1 Upd:11835 Pos:1 SOL:$86.13"
   ],
   "balance": {
     "start": 2.567413,
-    "current": 2.19232,
-    "pnl_sol": -0.375093,
-    "pnl_pct": -14.61
+    "current": 1.890211,
+    "pnl_sol": -0.677202,
+    "pnl_pct": -26.38
   },
   "trades": {
     "total": 31,
@@ -577,19 +577,19 @@
     "win_rate": 9.7
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 86.12,
+  "sol_price": 86.13,
   "bot_stats": {
-    "migrations_seen": 603,
-    "migrations_added": 44,
-    "pools_tracking": 0,
-    "price_updates": 11745,
+    "migrations_seen": 607,
+    "migrations_added": 45,
+    "pools_tracking": 1,
+    "price_updates": 11843,
     "migrations_rejected": 0,
-    "liquidity_rejected": 22,
-    "bc_graduated": 66,
-    "entries_found": 31,
-    "buys_success": 31,
+    "liquidity_rejected": 23,
+    "bc_graduated": 68,
+    "entries_found": 32,
+    "buys_success": 32,
     "buys_failed": 0
   }
 }
