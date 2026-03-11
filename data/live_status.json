@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-11T11:27:02.442253+00:00",
-  "updated_at": "2026-03-11T12:37:26.262360+00:00",
-  "uptime_seconds": 4223.8,
+  "updated_at": "2026-03-11T12:38:27.668666+00:00",
+  "uptime_seconds": 4285.2,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,9 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[12:32:22] \ud83d\udce1 Tracking: NyYiJdHzGvQUGZJZ\u2026 | Pool #1",
-    "[12:32:29] \ud83d\udfe2 ENTRY: M1 | NyYiJdHzGvQU... | $0.000090185 | 0.3021 SOL",
-    "[12:32:29] \ud83d\udcb0 Position filled: M1 | NyYiJdHzGvQU\u2026 | $0.000090185 | 0.3021 SOL | FDV $90.2k",
     "[12:32:51] \ud83d\udd14 Migration #171 detected",
     "[12:33:18] \ud83d\udcca Mig:171 Track:1 Upd:2589 Pos:1 SOL:$85.15",
     "[12:33:19] \ud83d\udd14 Migration #172 detected",
@@ -562,7 +559,10 @@
     "[12:37:03] \u26a0\ufe0f Jupiter error: tx_failed_verified",
     "[12:37:03] \u26a0\ufe0f Buy FAILED: M1 | 6MeHyman8BXJ\u2026",
     "[12:37:16] \ud83d\udd14 Migration #188 detected",
-    "[12:37:23] \ud83d\udcca Mig:188 Track:1 Upd:3436 Pos:1 SOL:$85.06"
+    "[12:37:23] \ud83d\udcca Mig:188 Track:1 Upd:3436 Pos:1 SOL:$85.06",
+    "[12:37:50] \ud83d\udd14 Migration #189 detected",
+    "[12:38:24] \ud83d\udcca Mig:189 Track:1 Upd:3626 Pos:1 SOL:$85.06",
+    "[12:38:25] \ud83d\udd14 Migration #190 detected"
   ],
   "balance": {
     "start": 0.953864,
@@ -581,10 +581,10 @@
   },
   "sol_price": 85.06,
   "bot_stats": {
-    "migrations_seen": 188,
+    "migrations_seen": 190,
     "migrations_added": 13,
     "pools_tracking": 1,
-    "price_updates": 3448,
+    "price_updates": 3639,
     "migrations_rejected": 0,
     "liquidity_rejected": 6,
     "bc_graduated": 19,
