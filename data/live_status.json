@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-11T06:51:58.692188+00:00",
-  "updated_at": "2026-03-11T07:04:13.006408+00:00",
-  "uptime_seconds": 734.3,
+  "updated_at": "2026-03-11T07:05:14.106570+00:00",
+  "uptime_seconds": 795.4,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,9 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[06:54:58] \ud83d\udd14 Migration #12 detected",
-    "[06:54:59] \ud83d\udcca Mig:12 Track:2 Upd:105 Pos:2 SOL:$85.96",
-    "[06:55:07] \ud83d\udd34 EXIT: DJ6R3zSP645g... | SL | -13.8%",
     "[06:55:07] \ud83d\udd34 Stop Loss: DJ6R3zSP645g\u2026 | -13.8% | -0.0417 SOL | SL1: -12.6% price (exec: -13.8%)",
     "[06:55:56] \ud83d\udd14 Migration #13 detected",
     "[06:56:00] \ud83d\udcca Mig:13 Track:1 Upd:219 Pos:1 SOL:$85.93",
@@ -562,7 +559,10 @@
     "[07:02:47] \ud83d\udd14 Migration #30 detected",
     "[07:03:08] \ud83d\udcca Mig:30 Track:0 Upd:1193 Pos:0 SOL:$86.02",
     "[07:04:09] \ud83d\udcca Mig:30 Track:0 Upd:1193 Pos:0 SOL:$86.02",
-    "[07:04:11] \ud83d\udd14 Migration #31 detected"
+    "[07:04:11] \ud83d\udd14 Migration #31 detected",
+    "[07:04:27] \ud83d\udd14 Migration #32 detected",
+    "[07:04:37] \ud83d\udd14 Migration #33 detected",
+    "[07:05:11] \ud83d\udcca Mig:33 Track:0 Upd:1193 Pos:0 SOL:$86.03"
   ],
   "balance": {
     "start": 1.564748,
@@ -579,9 +579,9 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 86.02,
+  "sol_price": 86.03,
   "bot_stats": {
-    "migrations_seen": 31,
+    "migrations_seen": 33,
     "migrations_added": 4,
     "pools_tracking": 0,
     "price_updates": 1193,
