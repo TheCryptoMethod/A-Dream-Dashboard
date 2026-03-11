@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T05:08:28.099972+00:00",
-  "uptime_seconds": 25596.0,
+  "updated_at": "2026-03-11T05:09:29.181943+00:00",
+  "uptime_seconds": 25657.1,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,9 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[04:58:38] \ud83d\udd34 EXIT: H8mfS17Z1gLo... | SL | -16.0%",
-    "[04:58:38] \ud83d\udd34 Stop Loss: H8mfS17Z1gLo\u2026 | -16.0% | -0.0483 SOL | SL1: -12.7% price (exec: -18.1%)",
-    "[04:58:58] \ud83d\udd14 Migration #1084 detected",
     "[04:59:01] \ud83d\udd14 Migration #1085 detected",
     "[04:59:14] \ud83d\udcca Mig:1085 Track:0 Upd:18779 Pos:0 SOL:$86.54",
     "[04:59:19] \ud83d\udd14 Migration #1086 detected",
@@ -562,7 +559,10 @@
     "[05:08:00] \ud83d\udd14 Migration #1107 detected",
     "[05:08:21] \ud83d\udd14 Migration #1108 detected",
     "[05:08:21] \ud83d\udd14 Migration #1109 detected",
-    "[05:08:25] \ud83d\udcca Mig:1109 Track:0 Upd:18779 Pos:0 SOL:$86.72"
+    "[05:08:25] \ud83d\udcca Mig:1109 Track:0 Upd:18779 Pos:0 SOL:$86.72",
+    "[05:08:35] \u2705 BC Graduated: GDxAj6Gufhop\u2026",
+    "[05:08:35] \ud83d\udca7 Liquidity rejected: 0.3 SOL < 15.0 SOL",
+    "[05:09:26] \ud83d\udcca Mig:1109 Track:0 Upd:18779 Pos:0 SOL:$86.72"
   ],
   "balance": {
     "start": 2.567413,
@@ -586,8 +586,8 @@
     "pools_tracking": 0,
     "price_updates": 18779,
     "migrations_rejected": 0,
-    "liquidity_rejected": 34,
-    "bc_graduated": 105,
+    "liquidity_rejected": 35,
+    "bc_graduated": 106,
     "entries_found": 54,
     "buys_success": 54,
     "buys_failed": 0
