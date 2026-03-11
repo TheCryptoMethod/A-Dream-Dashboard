@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T04:44:01.244365+00:00",
-  "uptime_seconds": 24129.2,
+  "updated_at": "2026-03-11T04:45:02.447104+00:00",
+  "uptime_seconds": 24190.4,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,23 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[04:38:52] \ud83d\udd14 Migration #1009 detected",
-    "[04:39:08] \ud83d\udd14 Migration #1010 detected",
-    "[04:39:53] \ud83d\udcca Mig:1010 Track:2 Upd:17849 Pos:2 SOL:$86.38",
-    "[04:39:54] \ud83d\udd14 Migration #1011 detected",
-    "[04:40:18] \ud83d\udd14 Migration #1012 detected",
-    "[04:40:18] \ud83d\udd14 Migration #1013 detected",
-    "[04:40:28] \ud83d\udd34 EXIT: kgCoA4rBNGnB... | SL | -96.0%",
-    "[04:40:28] \ud83d\udd34 Stop Loss: kgCoA4rBNGnB\u2026 | -96.0% | -0.2900 SOL | SL1: -57.3% price (exec: -57.3%)",
-    "[04:40:28] \ud83d\udd14 Migration #1014 detected",
-    "[04:40:35] \ud83d\udd14 Migration #1015 detected",
-    "[04:40:37] \ud83d\udd14 Migration #1016 detected",
-    "[04:40:43] \ud83d\udd14 Migration #1017 detected",
-    "[04:40:54] \ud83d\udcca Mig:1017 Track:1 Upd:18071 Pos:1 SOL:$86.37",
-    "[04:40:55] \ud83d\udd14 Migration #1018 detected",
-    "[04:40:57] \ud83d\udd14 Migration #1019 detected",
-    "[04:41:11] \ud83d\udd14 Migration #1020 detected",
-    "[04:41:33] \ud83d\udd14 Migration #1021 detected",
     "[04:41:56] \ud83d\udcca Mig:1021 Track:1 Upd:18101 Pos:1 SOL:$86.36",
     "[04:42:00] \ud83d\udd14 Migration #1022 detected",
     "[04:42:10] \ud83d\udd14 Migration #1023 detected",
@@ -562,34 +545,51 @@
     "[04:43:41] \ud83d\udd14 Migration #1033 detected",
     "[04:43:46] \ud83d\udd14 Migration #1034 detected",
     "[04:43:55] \ud83d\udd14 Migration #1035 detected",
-    "[04:43:58] \ud83d\udcca Mig:1035 Track:1 Upd:18251 Pos:1 SOL:$86.38"
+    "[04:43:58] \ud83d\udcca Mig:1035 Track:1 Upd:18251 Pos:1 SOL:$86.38",
+    "[04:44:08] \ud83d\udd14 Migration #1036 detected",
+    "[04:44:10] \ud83d\udd14 Migration #1037 detected",
+    "[04:44:10] \ud83d\udd14 Migration #1038 detected",
+    "[04:44:10] \ud83d\udd14 Migration #1039 detected",
+    "[04:44:11] \ud83d\udd14 Migration #1040 detected",
+    "[04:44:16] \ud83d\udd14 Migration #1041 detected",
+    "[04:44:23] \u2705 BC Graduated: 2FKbavfLxrop\u2026",
+    "[04:44:23] \ud83d\udca7 Liquidity rejected: 1.5 SOL < 15.0 SOL",
+    "[04:44:25] \ud83d\udd14 Migration #1042 detected",
+    "[04:44:30] \u2705 BC Graduated: ARBNFyosCGJA\u2026",
+    "[04:44:30] \ud83d\udce1 Tracking: ARBNFyosCGJARPkt\u2026 | Pool #2",
+    "[04:44:37] \ud83d\udfe2 ENTRY: M1 | ARBNFyosCGJA... | $0.000038312 | 0.3021 SOL",
+    "[04:44:37] \ud83d\udcb0 Position filled: M1 | ARBNFyosCGJA\u2026 | $0.000038312 | 0.3021 SOL | FDV $38.3k",
+    "[04:44:40] \ud83d\udd14 Migration #1043 detected",
+    "[04:44:42] \ud83d\udd34 EXIT: ARBNFyosCGJA... | SL | -24.3%",
+    "[04:44:42] \ud83d\udd34 Stop Loss: ARBNFyosCGJA\u2026 | -24.3% | -0.0733 SOL | SL1: -30.1% price (exec: -24.3%)",
+    "[04:44:59] \ud83d\udcca Mig:1043 Track:1 Upd:18331 Pos:1 SOL:$86.39"
   ],
   "balance": {
     "start": 2.567413,
-    "current": 1.395895,
-    "pnl_sol": -1.171518,
-    "pnl_pct": -45.63
+    "current": 1.32258,
+    "pnl_sol": -1.244833,
+    "pnl_pct": -48.49
   },
   "trades": {
-    "total": 49,
+    "total": 50,
     "wins": 9,
-    "losses": 40,
-    "win_rate": 18.4
+    "losses": 41,
+    "win_rate": 18.0
   },
   "positions": {
     "open": 1
   },
-  "sol_price": 86.38,
+  "sol_price": 86.39,
   "bot_stats": {
-    "migrations_seen": 1035,
-    "migrations_added": 67,
+    "migrations_seen": 1043,
+    "migrations_added": 68,
     "pools_tracking": 1,
-    "price_updates": 18255,
+    "price_updates": 18333,
     "migrations_rejected": 0,
-    "liquidity_rejected": 31,
-    "bc_graduated": 98,
-    "entries_found": 50,
-    "buys_success": 50,
+    "liquidity_rejected": 32,
+    "bc_graduated": 100,
+    "entries_found": 51,
+    "buys_success": 51,
     "buys_failed": 0
   }
 }
