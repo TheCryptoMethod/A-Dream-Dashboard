@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T05:55:21.646499+00:00",
-  "uptime_seconds": 28409.6,
+  "updated_at": "2026-03-11T05:56:22.938633+00:00",
+  "uptime_seconds": 28470.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,11 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[05:45:47] \ud83d\udd14 Migration #1203 detected",
-    "[05:45:48] \ud83d\udd14 Migration #1204 detected",
-    "[05:46:07] \ud83d\udcca Mig:1204 Track:0 Upd:19811 Pos:0 SOL:$85.98",
-    "[05:46:27] \ud83d\udd14 Migration #1205 detected",
-    "[05:46:37] \ud83d\udd14 Migration #1206 detected",
     "[05:46:59] \ud83d\udd14 Migration #1207 detected",
     "[05:47:08] \ud83d\udcca Mig:1207 Track:0 Upd:19811 Pos:0 SOL:$85.93",
     "[05:48:10] \ud83d\udcca Mig:1207 Track:0 Upd:19811 Pos:0 SOL:$85.93",
@@ -562,7 +557,12 @@
     "[05:54:17] \ud83d\udcca Mig:1226 Track:0 Upd:19812 Pos:0 SOL:$85.86",
     "[05:54:26] \ud83d\udd14 Migration #1227 detected",
     "[05:54:27] \ud83d\udd14 Migration #1228 detected",
-    "[05:55:18] \ud83d\udcca Mig:1228 Track:0 Upd:19812 Pos:0 SOL:$85.86"
+    "[05:55:18] \ud83d\udcca Mig:1228 Track:0 Upd:19812 Pos:0 SOL:$85.86",
+    "[05:55:30] \ud83d\udd14 Migration #1229 detected",
+    "[05:55:43] \u2705 BC Graduated: DqKeLA5Z8pJq\u2026",
+    "[05:55:43] \ud83d\udca7 Liquidity rejected: 0.7 SOL < 15.0 SOL",
+    "[05:56:11] \ud83d\udd14 Migration #1230 detected",
+    "[05:56:19] \ud83d\udcca Mig:1230 Track:0 Upd:19812 Pos:0 SOL:$85.83"
   ],
   "balance": {
     "start": 2.567413,
@@ -579,15 +579,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 85.86,
+  "sol_price": 85.83,
   "bot_stats": {
-    "migrations_seen": 1228,
+    "migrations_seen": 1230,
     "migrations_added": 75,
     "pools_tracking": 0,
     "price_updates": 19812,
     "migrations_rejected": 0,
-    "liquidity_rejected": 41,
-    "bc_graduated": 116,
+    "liquidity_rejected": 42,
+    "bc_graduated": 117,
     "entries_found": 56,
     "buys_success": 56,
     "buys_failed": 0
