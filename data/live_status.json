@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T02:46:54.319809+00:00",
-  "uptime_seconds": 17102.2,
+  "updated_at": "2026-03-11T02:47:55.352083+00:00",
+  "uptime_seconds": 17163.3,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,13 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[02:36:37] \ud83d\udfe2 ENTRY: M1 | B9AgK9utmq9U... | $0.000029983 | 0.3021 SOL",
-    "[02:36:37] \ud83d\udcb0 Position filled: M1 | B9AgK9utmq9U\u2026 | $0.000029983 | 0.3021 SOL | FDV $30.0k",
-    "[02:36:40] \ud83d\udcca Mig:674 Track:1 Upd:13489 Pos:1 SOL:$85.95",
-    "[02:37:05] \ud83d\udd14 Migration #675 detected",
-    "[02:37:34] \ud83d\udfe2 EXIT: B9AgK9utmq9U... | EARLY_DELTA_30S_60S | +1.5%",
-    "[02:37:34] \ud83d\udfe2 EARLY_DELTA_30S_60S: B9AgK9utmq9U\u2026 | +1.5% | +0.0044 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_30S_60S (delta=+11.8%)",
-    "[02:37:41] \ud83d\udcca Mig:675 Track:0 Upd:13564 Pos:0 SOL:$85.95",
     "[02:38:43] \ud83d\udcca Mig:675 Track:0 Upd:13564 Pos:0 SOL:$85.94",
     "[02:38:54] \ud83d\udd14 Migration #676 detected",
     "[02:39:44] \ud83d\udcca Mig:676 Track:0 Upd:13564 Pos:0 SOL:$85.90",
@@ -562,7 +555,14 @@
     "[02:45:58] \ud83d\udfe2 EXIT: F1oHyyT3PDAA... | EARLY_DELTA_30S_60S | +14.6%",
     "[02:45:58] \ud83d\udfe2 EARLY_DELTA_30S_60S: F1oHyyT3PDAA\u2026 | +14.6% | +0.0441 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_30S_60S (delta=+17.0%)",
     "[02:46:33] \ud83d\udd14 Migration #693 detected",
-    "[02:46:51] \ud83d\udcca Mig:693 Track:0 Upd:13808 Pos:0 SOL:$85.71"
+    "[02:46:51] \ud83d\udcca Mig:693 Track:0 Upd:13808 Pos:0 SOL:$85.71",
+    "[02:46:54] \ud83d\udd14 Migration #694 detected",
+    "[02:47:01] \ud83d\udd14 Migration #695 detected",
+    "[02:47:03] \ud83d\udd14 Migration #696 detected",
+    "[02:47:07] \ud83d\udd14 Migration #697 detected",
+    "[02:47:38] \ud83d\udd14 Migration #698 detected",
+    "[02:47:46] \ud83d\udd14 Migration #699 detected",
+    "[02:47:52] \ud83d\udcca Mig:699 Track:0 Upd:13808 Pos:0 SOL:$85.71"
   ],
   "balance": {
     "start": 2.567413,
@@ -581,7 +581,7 @@
   },
   "sol_price": 85.71,
   "bot_stats": {
-    "migrations_seen": 693,
+    "migrations_seen": 699,
     "migrations_added": 51,
     "pools_tracking": 0,
     "price_updates": 13808,
