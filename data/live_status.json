@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T06:14:44.365093+00:00",
-  "uptime_seconds": 29572.3,
+  "updated_at": "2026-03-11T06:15:45.604803+00:00",
+  "uptime_seconds": 29633.5,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,17 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[06:03:09] \ud83d\udd14 Migration #1248 detected",
-    "[06:03:22] \ud83d\udd14 Migration #1249 detected",
-    "[06:03:28] \ud83d\udcca Mig:1249 Track:0 Upd:20141 Pos:0 SOL:$85.75",
-    "[06:03:36] \ud83d\udd14 Migration #1250 detected",
-    "[06:04:06] \ud83d\udd14 Migration #1251 detected",
-    "[06:04:07] \ud83d\udd14 Migration #1252 detected",
-    "[06:04:19] \u2705 BC Graduated: 7uqoE4A4BdC5\u2026",
-    "[06:04:19] \ud83d\udca7 Liquidity rejected: 2.4 SOL < 15.0 SOL",
-    "[06:04:29] \ud83d\udcca Mig:1252 Track:0 Upd:20141 Pos:0 SOL:$85.73",
-    "[06:05:13] \ud83d\udd14 Migration #1253 detected",
-    "[06:05:20] \ud83d\udd14 Migration #1254 detected",
     "[06:05:30] \ud83d\udcca Mig:1254 Track:0 Upd:20141 Pos:0 SOL:$85.75",
     "[06:06:32] \ud83d\udcca Mig:1254 Track:0 Upd:20141 Pos:0 SOL:$85.76",
     "[06:06:38] \ud83d\udd14 Migration #1255 detected",
@@ -562,13 +551,24 @@
     "[06:13:57] \ud83d\udd14 Migration #1271 detected",
     "[06:14:03] \ud83d\udd14 Migration #1272 detected",
     "[06:14:16] \ud83d\udd14 Migration #1273 detected",
-    "[06:14:41] \ud83d\udcca Mig:1273 Track:0 Upd:20141 Pos:0 SOL:$85.81"
+    "[06:14:41] \ud83d\udcca Mig:1273 Track:0 Upd:20141 Pos:0 SOL:$85.81",
+    "[06:14:44] \ud83d\udd14 Migration #1274 detected",
+    "[06:14:52] \ud83d\udd14 Migration #1275 detected",
+    "[06:14:58] \u2705 BC Graduated: D38i8dq8zUFb\u2026",
+    "[06:14:58] \ud83d\udce1 Tracking: D38i8dq8zUFbb6Pd\u2026 | Pool #1",
+    "[06:15:06] \ud83d\udfe2 ENTRY: M1 | D38i8dq8zUFb... | $0.000029281 | 0.3021 SOL",
+    "[06:15:06] \ud83d\udcb0 Position filled: M1 | D38i8dq8zUFb\u2026 | $0.000029281 | 0.3021 SOL | FDV $29.3k",
+    "[06:15:07] \ud83d\udd14 Migration #1276 detected",
+    "[06:15:32] \ud83d\udd14 Migration #1277 detected",
+    "[06:15:37] \ud83d\udd14 Migration #1278 detected",
+    "[06:15:37] \ud83d\udd14 Migration #1279 detected",
+    "[06:15:42] \ud83d\udcca Mig:1279 Track:1 Upd:20244 Pos:1 SOL:$85.82"
   ],
   "balance": {
     "start": 2.567413,
-    "current": 1.56697,
-    "pnl_sol": -1.000442,
-    "pnl_pct": -38.97
+    "current": 1.264876,
+    "pnl_sol": -1.302537,
+    "pnl_pct": -50.73
   },
   "trades": {
     "total": 58,
@@ -577,19 +577,19 @@
     "win_rate": 20.7
   },
   "positions": {
-    "open": 0
+    "open": 1
   },
-  "sol_price": 85.81,
+  "sol_price": 85.82,
   "bot_stats": {
-    "migrations_seen": 1273,
-    "migrations_added": 77,
-    "pools_tracking": 0,
-    "price_updates": 20141,
+    "migrations_seen": 1279,
+    "migrations_added": 78,
+    "pools_tracking": 1,
+    "price_updates": 20253,
     "migrations_rejected": 0,
     "liquidity_rejected": 43,
-    "bc_graduated": 120,
-    "entries_found": 58,
-    "buys_success": 58,
+    "bc_graduated": 121,
+    "entries_found": 59,
+    "buys_success": 59,
     "buys_failed": 0
   }
 }
