@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-11T08:01:39.575586+00:00",
-  "updated_at": "2026-03-11T09:06:51.700086+00:00",
-  "uptime_seconds": 3912.1,
+  "updated_at": "2026-03-11T09:07:52.871339+00:00",
+  "uptime_seconds": 3973.3,
   "method": "M3",
   "strategy": {
     "method": "M3",
@@ -524,11 +524,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[08:56:25] \ud83d\udd14 Migration #151 detected",
-    "[08:56:30] \ud83d\udd14 Migration #152 detected",
-    "[08:56:36] \ud83d\udcca Mig:152 Track:1 Upd:5076 Pos:0 SOL:$85.33",
-    "[08:57:30] \ud83d\udd14 Migration #153 detected",
-    "[08:57:38] \ud83d\udcca Mig:153 Track:1 Upd:5076 Pos:0 SOL:$85.34",
     "[08:58:39] \ud83d\udcca Mig:153 Track:1 Upd:5088 Pos:0 SOL:$85.34",
     "[08:58:43] \ud83d\udd14 Migration #154 detected",
     "[08:58:53] \ud83d\udd14 Migration #155 detected",
@@ -563,7 +558,12 @@
     "[09:06:20] \ud83d\udd14 Migration #177 detected",
     "[09:06:21] \ud83d\udd14 Migration #178 detected",
     "[09:06:39] \ud83d\udd14 Migration #179 detected",
-    "[09:06:48] \ud83d\udcca Mig:179 Track:1 Upd:5092 Pos:0 SOL:$85.39"
+    "[09:06:48] \ud83d\udcca Mig:179 Track:1 Upd:5092 Pos:0 SOL:$85.39",
+    "[09:06:52] \ud83d\udd14 Migration #180 detected",
+    "[09:07:06] \ud83d\udd14 Migration #181 detected",
+    "[09:07:20] \u2705 BC Graduated: GsH2xhweEKqd\u2026",
+    "[09:07:21] \ud83d\udce1 Tracking: GsH2xhweEKqdriF7\u2026 | Pool #2",
+    "[09:07:49] \ud83d\udcca Mig:181 Track:2 Upd:5141 Pos:0 SOL:$85.39"
   ],
   "balance": {
     "start": 1.392436,
@@ -582,13 +582,13 @@
   },
   "sol_price": 85.39,
   "bot_stats": {
-    "migrations_seen": 179,
-    "migrations_added": 6,
-    "pools_tracking": 1,
-    "price_updates": 5092,
+    "migrations_seen": 181,
+    "migrations_added": 7,
+    "pools_tracking": 2,
+    "price_updates": 5149,
     "migrations_rejected": 0,
     "liquidity_rejected": 6,
-    "bc_graduated": 12,
+    "bc_graduated": 13,
     "entries_found": 5,
     "buys_success": 5,
     "buys_failed": 0
