@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T02:33:40.660913+00:00",
-  "uptime_seconds": 16308.6,
+  "updated_at": "2026-03-11T02:34:41.696571+00:00",
+  "uptime_seconds": 16369.6,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,17 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[02:25:19] \ud83d\udfe2 EARLY_TIME_SINCE_HIGH_5M: F1Tq1a8NVJfg\u2026 | +40.2% | +0.1215 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_TIME_SINCE_HIGH_5M",
-    "[02:25:21] \ud83d\udd14 Migration #638 detected",
-    "[02:25:29] \ud83d\udcca Mig:638 Track:0 Upd:13383 Pos:0 SOL:$86.02",
-    "[02:25:41] \ud83d\udd14 Migration #639 detected",
-    "[02:25:53] \ud83d\udd14 Migration #640 detected",
-    "[02:26:09] \ud83d\udd14 Migration #641 detected",
-    "[02:26:30] \ud83d\udcca Mig:641 Track:0 Upd:13383 Pos:0 SOL:$86.02",
-    "[02:26:40] \ud83d\udd14 Migration #642 detected",
-    "[02:26:43] \ud83d\udd14 Migration #643 detected",
-    "[02:26:49] \ud83d\udd14 Migration #644 detected",
-    "[02:26:56] \u2705 BC Graduated: 4WkrfiBwD2XF\u2026",
     "[02:26:56] \ud83d\udce1 Tracking: 4WkrfiBwD2XFaQk7\u2026 | Pool #1",
     "[02:27:04] \ud83d\udfe2 ENTRY: M1 | 4WkrfiBwD2XF... | $0.000043399 | 0.3021 SOL",
     "[02:27:04] \ud83d\udcb0 Position filled: M1 | 4WkrfiBwD2XF\u2026 | $0.000043399 | 0.3021 SOL | FDV $43.4k",
@@ -562,7 +551,18 @@
     "[02:33:05] \ud83d\udd14 Migration #659 detected",
     "[02:33:15] \ud83d\udd14 Migration #660 detected",
     "[02:33:25] \ud83d\udd14 Migration #661 detected",
-    "[02:33:37] \ud83d\udcca Mig:661 Track:0 Upd:13457 Pos:0 SOL:$86.01"
+    "[02:33:37] \ud83d\udcca Mig:661 Track:0 Upd:13457 Pos:0 SOL:$86.01",
+    "[02:33:41] \ud83d\udd14 Migration #662 detected",
+    "[02:33:47] \ud83d\udd14 Migration #663 detected",
+    "[02:33:54] \u2705 BC Graduated: 7LYUR28WFHXo\u2026",
+    "[02:33:54] \ud83d\udd14 Migration #664 detected",
+    "[02:33:54] \ud83d\udce1 Tracking: 7LYUR28WFHXoNeT2\u2026 | Pool #1",
+    "[02:33:57] \ud83d\udd14 Migration #665 detected",
+    "[02:33:58] \ud83d\udee1\ufe0f Signal gate: 7LYUR28WFHXo\u2026 | rugcheck=10501>5000",
+    "[02:33:58] \ud83d\udeab Disqualified: 7LYUR28WFHXo\u2026 | signal_gate_failed | 4s",
+    "[02:34:02] \ud83d\udd14 Migration #666 detected",
+    "[02:34:12] \ud83d\udd14 Migration #667 detected",
+    "[02:34:38] \ud83d\udcca Mig:667 Track:0 Upd:13458 Pos:0 SOL:$85.99"
   ],
   "balance": {
     "start": 2.567413,
@@ -579,15 +579,15 @@
   "positions": {
     "open": 0
   },
-  "sol_price": 86.01,
+  "sol_price": 85.99,
   "bot_stats": {
-    "migrations_seen": 661,
-    "migrations_added": 48,
+    "migrations_seen": 667,
+    "migrations_added": 49,
     "pools_tracking": 0,
-    "price_updates": 13457,
+    "price_updates": 13458,
     "migrations_rejected": 0,
     "liquidity_rejected": 23,
-    "bc_graduated": 71,
+    "bc_graduated": 72,
     "entries_found": 35,
     "buys_success": 35,
     "buys_failed": 0
