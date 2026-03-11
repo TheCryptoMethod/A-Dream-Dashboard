@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T01:52:58.829505+00:00",
-  "uptime_seconds": 13866.7,
+  "updated_at": "2026-03-11T01:53:59.825780+00:00",
+  "uptime_seconds": 13927.7,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,13 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[01:45:54] \u2705 BC Graduated: Y65Ezd1VcEJc\u2026",
-    "[01:45:54] \ud83d\udce1 Tracking: Y65Ezd1VcEJcSDF6\u2026 | Pool #1",
-    "[01:45:55] \ud83d\udd14 Migration #527 detected",
-    "[01:45:58] \ud83d\udfe2 ENTRY: M1 | Y65Ezd1VcEJc... | $0.000028773 | 0.3021 SOL",
-    "[01:45:58] \ud83d\udcb0 Position filled: M1 | Y65Ezd1VcEJc\u2026 | $0.000028773 | 0.3021 SOL | FDV $28.8k",
-    "[01:46:07] \ud83d\udd14 Migration #528 detected",
-    "[01:46:18] \ud83d\udd14 Migration #529 detected",
     "[01:46:49] \ud83d\udcca Mig:529 Track:1 Upd:7456 Pos:1 SOL:$85.83",
     "[01:47:50] \ud83d\udcca Mig:529 Track:1 Upd:7712 Pos:1 SOL:$85.84",
     "[01:48:09] \ud83d\udd14 Migration #530 detected",
@@ -562,29 +555,36 @@
     "[01:52:39] \ud83d\udd14 Migration #549 detected",
     "[01:52:44] \ud83d\udd14 Migration #550 detected",
     "[01:52:49] \ud83d\udd14 Migration #551 detected",
-    "[01:52:55] \ud83d\udcca Mig:551 Track:2 Upd:9233 Pos:2 SOL:$85.94"
+    "[01:52:55] \ud83d\udcca Mig:551 Track:2 Upd:9233 Pos:2 SOL:$85.94",
+    "[01:52:59] \ud83d\udd14 Migration #552 detected",
+    "[01:53:05] \ud83d\udd34 EXIT: BMJBZczcFCxx... | EARLY_DELTA_30S_60S | +0.0%",
+    "[01:53:05] \ud83d\udd34 EARLY_DELTA_30S_60S: BMJBZczcFCxx\u2026 | +0.0% | +0.4669 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_30S_60S (delta=+18.8%)",
+    "[01:53:14] \ud83d\udd14 Migration #553 detected",
+    "[01:53:29] \ud83d\udd14 Migration #554 detected",
+    "[01:53:33] \ud83d\udd14 Migration #555 detected",
+    "[01:53:56] \ud83d\udcca Mig:555 Track:1 Upd:9540 Pos:1 SOL:$85.97"
   ],
   "balance": {
     "start": 2.567413,
-    "current": 0.582385,
-    "pnl_sol": -1.985028,
-    "pnl_pct": -77.32
+    "current": 1.049264,
+    "pnl_sol": -1.518149,
+    "pnl_pct": -59.13
   },
   "trades": {
-    "total": 27,
+    "total": 28,
     "wins": 2,
-    "losses": 25,
-    "win_rate": 7.4
+    "losses": 26,
+    "win_rate": 7.1
   },
   "positions": {
-    "open": 2
+    "open": 1
   },
-  "sol_price": 85.94,
+  "sol_price": 85.97,
   "bot_stats": {
-    "migrations_seen": 551,
+    "migrations_seen": 555,
     "migrations_added": 40,
-    "pools_tracking": 2,
-    "price_updates": 9262,
+    "pools_tracking": 1,
+    "price_updates": 9554,
     "migrations_rejected": 0,
     "liquidity_rejected": 21,
     "bc_graduated": 61,
