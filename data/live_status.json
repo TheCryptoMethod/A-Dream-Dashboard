@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T03:37:53.386501+00:00",
-  "uptime_seconds": 20161.3,
+  "updated_at": "2026-03-11T03:38:54.338855+00:00",
+  "uptime_seconds": 20222.2,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,14 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[03:28:48] \ud83d\udce1 Tracking: 6G1H1ArhaciP4io5\u2026 | Pool #1",
-    "[03:28:50] \ud83d\udd14 Migration #815 detected",
-    "[03:28:50] \u2705 BC Graduated: yZENspYcRKwj\u2026",
-    "[03:28:50] \ud83d\udce1 Tracking: yZENspYcRKwj2hDx\u2026 | Pool #2",
-    "[03:28:52] \ud83d\udd14 Migration #816 detected",
-    "[03:28:57] \ud83d\udfe2 ENTRY: M1 | 6G1H1ArhaciP... | $0.000029902 | 0.3021 SOL",
-    "[03:28:57] \ud83d\udcb0 Position filled: M1 | 6G1H1ArhaciP\u2026 | $0.000029902 | 0.3021 SOL | FDV $29.9k",
-    "[03:28:57] \ud83d\udd14 Migration #817 detected",
     "[03:28:58] \ud83d\udfe2 ENTRY: M1 | yZENspYcRKwj... | $0.000099897 | 0.3021 SOL",
     "[03:28:58] \ud83d\udcb0 Position filled: M1 | yZENspYcRKwj\u2026 | $0.000099897 | 0.3021 SOL | FDV $99.9k",
     "[03:29:40] \ud83d\udcca Mig:817 Track:2 Upd:14513 Pos:2 SOL:$85.64",
@@ -562,29 +554,37 @@
     "[03:35:47] \ud83d\udcca Mig:833 Track:1 Upd:15727 Pos:1 SOL:$85.61",
     "[03:36:31] \ud83d\udd14 Migration #834 detected",
     "[03:36:49] \ud83d\udcca Mig:834 Track:1 Upd:15865 Pos:1 SOL:$85.62",
-    "[03:37:50] \ud83d\udcca Mig:834 Track:1 Upd:16023 Pos:1 SOL:$85.63"
+    "[03:37:50] \ud83d\udcca Mig:834 Track:1 Upd:16023 Pos:1 SOL:$85.63",
+    "[03:38:16] \ud83d\udd14 Migration #835 detected",
+    "[03:38:16] \ud83d\udd14 Migration #836 detected",
+    "[03:38:25] \ud83d\udd14 Migration #837 detected",
+    "[03:38:37] \ud83d\udd14 Migration #838 detected",
+    "[03:38:39] \ud83d\udd14 Migration #839 detected",
+    "[03:38:51] \ud83d\udcca Mig:839 Track:1 Upd:16148 Pos:1 SOL:$85.63",
+    "[03:38:54] \ud83d\udd34 EXIT: 6G1H1ArhaciP... | EARLY_PERF_10M | -13.2%",
+    "[03:38:54] \ud83d\udd34 EARLY_PERF_10M: 6G1H1ArhaciP\u2026 | -13.2% | -0.0398 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_PERF_10M"
   ],
   "balance": {
     "start": 2.567413,
-    "current": 1.569575,
-    "pnl_sol": -0.997838,
-    "pnl_pct": -38.87
+    "current": 1.831847,
+    "pnl_sol": -0.735566,
+    "pnl_pct": -28.65
   },
   "trades": {
-    "total": 42,
+    "total": 43,
     "wins": 7,
-    "losses": 35,
-    "win_rate": 16.7
+    "losses": 36,
+    "win_rate": 16.3
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
   "sol_price": 85.63,
   "bot_stats": {
-    "migrations_seen": 834,
+    "migrations_seen": 839,
     "migrations_added": 57,
-    "pools_tracking": 1,
-    "price_updates": 16030,
+    "pools_tracking": 0,
+    "price_updates": 16153,
     "migrations_rejected": 0,
     "liquidity_rejected": 27,
     "bc_graduated": 84,
