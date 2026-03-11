@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-11T11:27:02.442253+00:00",
-  "updated_at": "2026-03-11T12:36:24.992878+00:00",
-  "uptime_seconds": 4162.6,
+  "updated_at": "2026-03-11T12:37:26.262360+00:00",
+  "uptime_seconds": 4223.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,22 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[12:28:11] \ud83d\udcca Mig:162 Track:1 Upd:1838 Pos:1 SOL:$84.96",
-    "[12:28:43] \ud83d\udd14 Migration #163 detected",
-    "[12:29:04] \ud83d\udd14 Migration #164 detected",
-    "[12:29:12] \ud83d\udcca Mig:164 Track:1 Upd:2081 Pos:1 SOL:$84.97",
-    "[12:29:17] \ud83d\udd14 Migration #165 detected",
-    "[12:30:14] \ud83d\udcca Mig:165 Track:1 Upd:2281 Pos:1 SOL:$85.00",
-    "[12:30:20] \ud83d\udd14 Migration #166 detected",
-    "[12:30:20] \ud83d\udd14 Migration #167 detected",
-    "[12:30:43] \ud83d\udd14 Migration #168 detected",
-    "[12:31:15] \ud83d\udcca Mig:168 Track:1 Upd:2491 Pos:1 SOL:$85.01",
-    "[12:31:22] \ud83d\udd34 EXIT: 8hDUzcth8HtE... | SL | -24.4%",
-    "[12:31:22] \ud83d\udd34 Stop Loss: 8hDUzcth8HtE\u2026 | -24.4% | -0.0738 SOL | SL1: -11.8% price (exec: -11.8%)",
-    "[12:31:50] \ud83d\udd14 Migration #169 detected",
-    "[12:32:09] \ud83d\udd14 Migration #170 detected",
-    "[12:32:17] \ud83d\udcca Mig:170 Track:0 Upd:2528 Pos:0 SOL:$85.05",
-    "[12:32:22] \u2705 BC Graduated: NyYiJdHzGvQU\u2026",
     "[12:32:22] \ud83d\udce1 Tracking: NyYiJdHzGvQUGZJZ\u2026 | Pool #1",
     "[12:32:29] \ud83d\udfe2 ENTRY: M1 | NyYiJdHzGvQU... | $0.000090185 | 0.3021 SOL",
     "[12:32:29] \ud83d\udcb0 Position filled: M1 | NyYiJdHzGvQU\u2026 | $0.000090185 | 0.3021 SOL | FDV $90.2k",
@@ -562,34 +546,50 @@
     "[12:36:11] \ud83d\udca7 Liquidity rejected: 0.3 SOL < 15.0 SOL",
     "[12:36:19] \u2705 BC Graduated: C5bvJxRKYHA9\u2026",
     "[12:36:20] \ud83d\udce1 Tracking: C5bvJxRKYHA9xBsS\u2026 | Pool #2",
-    "[12:36:21] \ud83d\udcca Mig:181 Track:2 Upd:3124 Pos:1 SOL:$85.09"
+    "[12:36:21] \ud83d\udcca Mig:181 Track:2 Upd:3124 Pos:1 SOL:$85.09",
+    "[12:36:27] \ud83d\udfe2 ENTRY: M1 | C5bvJxRKYHA9... | $0.000042428 | 0.3021 SOL",
+    "[12:36:27] \ud83d\udcb0 Position filled: M1 | C5bvJxRKYHA9\u2026 | $0.000042428 | 0.3021 SOL | FDV $42.4k",
+    "[12:36:32] \ud83d\udd34 EXIT: C5bvJxRKYHA9... | SL | -18.8%",
+    "[12:36:32] \ud83d\udd34 Stop Loss: C5bvJxRKYHA9\u2026 | -18.8% | -0.0568 SOL | SL1: -30.8% price (exec: -18.5%)",
+    "[12:36:38] \ud83d\udd14 Migration #182 detected",
+    "[12:36:40] \ud83d\udd14 Migration #183 detected",
+    "[12:36:40] \ud83d\udd14 Migration #184 detected",
+    "[12:36:51] \ud83d\udd14 Migration #185 detected",
+    "[12:36:53] \u2705 BC Graduated: 6MeHyman8BXJ\u2026",
+    "[12:36:53] \ud83d\udce1 Tracking: 6MeHyman8BXJuiLX\u2026 | Pool #2",
+    "[12:36:55] \ud83d\udd14 Migration #186 detected",
+    "[12:37:01] \ud83d\udd14 Migration #187 detected",
+    "[12:37:03] \u26a0\ufe0f Jupiter error: tx_failed_verified",
+    "[12:37:03] \u26a0\ufe0f Buy FAILED: M1 | 6MeHyman8BXJ\u2026",
+    "[12:37:16] \ud83d\udd14 Migration #188 detected",
+    "[12:37:23] \ud83d\udcca Mig:188 Track:1 Upd:3436 Pos:1 SOL:$85.06"
   ],
   "balance": {
     "start": 0.953864,
-    "current": 0.032886,
-    "pnl_sol": -0.920978,
-    "pnl_pct": -96.55
+    "current": 0.278111,
+    "pnl_sol": -0.675753,
+    "pnl_pct": -70.84
   },
   "trades": {
-    "total": 9,
+    "total": 10,
     "wins": 1,
-    "losses": 8,
-    "win_rate": 11.1
+    "losses": 9,
+    "win_rate": 10.0
   },
   "positions": {
     "open": 1
   },
-  "sol_price": 85.09,
+  "sol_price": 85.06,
   "bot_stats": {
-    "migrations_seen": 181,
-    "migrations_added": 12,
-    "pools_tracking": 2,
-    "price_updates": 3155,
+    "migrations_seen": 188,
+    "migrations_added": 13,
+    "pools_tracking": 1,
+    "price_updates": 3448,
     "migrations_rejected": 0,
     "liquidity_rejected": 6,
-    "bc_graduated": 18,
-    "entries_found": 11,
-    "buys_success": 10,
-    "buys_failed": 0
+    "bc_graduated": 19,
+    "entries_found": 12,
+    "buys_success": 11,
+    "buys_failed": 1
   }
 }
