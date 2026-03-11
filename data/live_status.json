@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-11T06:51:58.692188+00:00",
-  "updated_at": "2026-03-11T07:00:08.227724+00:00",
-  "uptime_seconds": 489.5,
+  "updated_at": "2026-03-11T07:01:09.443461+00:00",
+  "uptime_seconds": 550.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[06:54:27] \ud83d\udd14 Migration #10 detected",
-    "[06:54:35] \u2705 BC Graduated: DJ6R3zSP645g\u2026",
-    "[06:54:35] \ud83d\udce1 Tracking: DJ6R3zSP645gagzN\u2026 | Pool #1",
-    "[06:54:39] \ud83d\udd14 Migration #11 detected",
     "[06:54:40] \u2705 BC Graduated: F3EmT1RupEPd\u2026",
     "[06:54:40] \ud83d\udce1 Tracking: F3EmT1RupEPdKDxX\u2026 | Pool #2",
     "[06:54:43] \ud83d\udfe2 ENTRY: M1 | DJ6R3zSP645g... | $0.000034299 | 0.3021 SOL",
@@ -562,29 +558,33 @@
     "[06:59:45] \ud83d\udfe2 EXIT: F3EmT1RupEPd... | EARLY_DELTA_60S_5M | +100.6%",
     "[06:59:45] \ud83d\udfe2 EARLY_DELTA_60S_5M: F3EmT1RupEPd\u2026 | +100.6% | +0.3039 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_DELTA_60S_5M",
     "[06:59:53] \ud83d\udd14 Migration #25 detected",
-    "[07:00:05] \ud83d\udcca Mig:25 Track:1 Upd:937 Pos:1 SOL:$85.99"
+    "[07:00:05] \ud83d\udcca Mig:25 Track:1 Upd:937 Pos:1 SOL:$85.99",
+    "[07:00:15] \ud83d\udd14 Migration #26 detected",
+    "[07:00:54] \ud83d\udd34 EXIT: 5Vt84ukEKHux... | SL | -14.1%",
+    "[07:00:54] \ud83d\udd34 Stop Loss: 5Vt84ukEKHux\u2026 | -14.1% | -0.0425 SOL | SL1: -16.6% price (exec: -27.7%)",
+    "[07:01:06] \ud83d\udcca Mig:26 Track:0 Upd:1193 Pos:0 SOL:$85.99"
   ],
   "balance": {
     "start": 1.564748,
-    "current": 1.524901,
-    "pnl_sol": -0.039847,
-    "pnl_pct": -2.55
+    "current": 1.784514,
+    "pnl_sol": 0.219766,
+    "pnl_pct": 14.04
   },
   "trades": {
-    "total": 2,
+    "total": 3,
     "wins": 1,
-    "losses": 1,
-    "win_rate": 50.0
+    "losses": 2,
+    "win_rate": 33.3
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
   "sol_price": 85.99,
   "bot_stats": {
-    "migrations_seen": 25,
+    "migrations_seen": 26,
     "migrations_added": 4,
-    "pools_tracking": 1,
-    "price_updates": 953,
+    "pools_tracking": 0,
+    "price_updates": 1193,
     "migrations_rejected": 0,
     "liquidity_rejected": 1,
     "bc_graduated": 5,
