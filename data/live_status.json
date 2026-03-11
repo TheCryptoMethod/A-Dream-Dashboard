@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-11T06:51:58.692188+00:00",
-  "updated_at": "2026-03-11T07:45:02.389068+00:00",
-  "uptime_seconds": 3183.7,
+  "updated_at": "2026-03-11T07:46:03.564336+00:00",
+  "uptime_seconds": 3244.9,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,13 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[07:34:40] \ud83d\udd14 Migration #108 detected",
-    "[07:34:46] \ud83d\udcca Mig:108 Track:1 Upd:3699 Pos:1 SOL:$85.90",
-    "[07:35:43] \ud83d\udd14 Migration #109 detected",
-    "[07:35:47] \ud83d\udcca Mig:109 Track:1 Upd:3859 Pos:1 SOL:$85.88",
-    "[07:35:53] \ud83d\udd14 Migration #110 detected",
-    "[07:36:45] \ud83d\udd14 Migration #111 detected",
-    "[07:36:49] \ud83d\udcca Mig:111 Track:1 Upd:4033 Pos:1 SOL:$85.85",
     "[07:37:13] \ud83d\udd14 Migration #112 detected",
     "[07:37:16] \ud83d\udd14 Migration #113 detected",
     "[07:37:42] \ud83d\udd14 Migration #114 detected",
@@ -562,7 +555,14 @@
     "[07:43:48] \ud83d\udd14 Migration #131 detected",
     "[07:43:58] \ud83d\udcca Mig:131 Track:1 Upd:5215 Pos:1 SOL:$85.48",
     "[07:44:09] \ud83d\udd14 Migration #132 detected",
-    "[07:44:59] \ud83d\udcca Mig:132 Track:1 Upd:5399 Pos:1 SOL:$85.46"
+    "[07:44:59] \ud83d\udcca Mig:132 Track:1 Upd:5399 Pos:1 SOL:$85.46",
+    "[07:45:04] \ud83d\udd14 Migration #133 detected",
+    "[07:45:31] \ud83d\udd14 Migration #134 detected",
+    "[07:45:35] \ud83d\udd14 Migration #135 detected",
+    "[07:45:48] \u2705 BC Graduated: HaE6YxEVPZmm\u2026",
+    "[07:45:49] \ud83d\udca7 Liquidity rejected: 2.4 SOL < 15.0 SOL",
+    "[07:45:57] \ud83d\udd14 Migration #136 detected",
+    "[07:46:00] \ud83d\udcca Mig:136 Track:1 Upd:5567 Pos:1 SOL:$85.33"
   ],
   "balance": {
     "start": 1.564748,
@@ -579,15 +579,15 @@
   "positions": {
     "open": 1
   },
-  "sol_price": 85.33,
+  "sol_price": 85.34,
   "bot_stats": {
-    "migrations_seen": 132,
+    "migrations_seen": 136,
     "migrations_added": 10,
     "pools_tracking": 1,
-    "price_updates": 5405,
+    "price_updates": 5583,
     "migrations_rejected": 0,
-    "liquidity_rejected": 8,
-    "bc_graduated": 18,
+    "liquidity_rejected": 9,
+    "bc_graduated": 19,
     "entries_found": 9,
     "buys_success": 9,
     "buys_failed": 0
