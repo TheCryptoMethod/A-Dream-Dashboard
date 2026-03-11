@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T04:45:02.447104+00:00",
-  "uptime_seconds": 24190.4,
+  "updated_at": "2026-03-11T04:46:03.506423+00:00",
+  "uptime_seconds": 24251.4,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,11 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[04:41:56] \ud83d\udcca Mig:1021 Track:1 Upd:18101 Pos:1 SOL:$86.36",
-    "[04:42:00] \ud83d\udd14 Migration #1022 detected",
-    "[04:42:10] \ud83d\udd14 Migration #1023 detected",
-    "[04:42:10] \ud83d\udd14 Migration #1024 detected",
-    "[04:42:14] \ud83d\udd14 Migration #1025 detected",
     "[04:42:30] \ud83d\udd14 Migration #1026 detected",
     "[04:42:32] \ud83d\udd14 Migration #1027 detected",
     "[04:42:35] \ud83d\udd14 Migration #1028 detected",
@@ -562,7 +557,12 @@
     "[04:44:40] \ud83d\udd14 Migration #1043 detected",
     "[04:44:42] \ud83d\udd34 EXIT: ARBNFyosCGJA... | SL | -24.3%",
     "[04:44:42] \ud83d\udd34 Stop Loss: ARBNFyosCGJA\u2026 | -24.3% | -0.0733 SOL | SL1: -30.1% price (exec: -24.3%)",
-    "[04:44:59] \ud83d\udcca Mig:1043 Track:1 Upd:18331 Pos:1 SOL:$86.39"
+    "[04:44:59] \ud83d\udcca Mig:1043 Track:1 Upd:18331 Pos:1 SOL:$86.39",
+    "[04:45:23] \ud83d\udd14 Migration #1044 detected",
+    "[04:45:33] \ud83d\udd14 Migration #1045 detected",
+    "[04:45:45] \ud83d\udd14 Migration #1046 detected",
+    "[04:45:59] \ud83d\udd14 Migration #1047 detected",
+    "[04:46:00] \ud83d\udcca Mig:1047 Track:1 Upd:18375 Pos:1 SOL:$86.38"
   ],
   "balance": {
     "start": 2.567413,
@@ -579,12 +579,12 @@
   "positions": {
     "open": 1
   },
-  "sol_price": 86.39,
+  "sol_price": 86.38,
   "bot_stats": {
-    "migrations_seen": 1043,
+    "migrations_seen": 1047,
     "migrations_added": 68,
     "pools_tracking": 1,
-    "price_updates": 18333,
+    "price_updates": 18375,
     "migrations_rejected": 0,
     "liquidity_rejected": 32,
     "bc_graduated": 100,
