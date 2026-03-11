@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T02:25:32.414739+00:00",
-  "uptime_seconds": 15820.3,
+  "updated_at": "2026-03-11T02:26:33.480079+00:00",
+  "uptime_seconds": 15881.4,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,10 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[02:14:17] \ud83d\udcb0 Position filled: M1 | DadMqCGk3cvF\u2026 | $0.000040847 | 0.3021 SOL | FDV $40.8k",
-    "[02:14:18] \ud83d\udcca Mig:619 Track:1 Upd:11900 Pos:1 SOL:$86.13",
-    "[02:14:25] \ud83d\udd34 EXIT: DadMqCGk3cvF... | SL | -18.2%",
-    "[02:14:25] \ud83d\udd34 Stop Loss: DadMqCGk3cvF\u2026 | -18.2% | -0.0550 SOL | SL1: -14.2% price (exec: -15.1%)",
     "[02:14:36] \ud83d\udd14 Migration #620 detected",
     "[02:14:56] \ud83d\udd14 Migration #621 detected",
     "[02:15:19] \ud83d\udcca Mig:621 Track:0 Upd:11938 Pos:0 SOL:$86.11",
@@ -562,7 +558,11 @@
     "[02:25:19] \ud83d\udfe2 EXIT: F1Tq1a8NVJfg... | EARLY_TIME_SINCE_HIGH_5M | +40.2%",
     "[02:25:19] \ud83d\udfe2 EARLY_TIME_SINCE_HIGH_5M: F1Tq1a8NVJfg\u2026 | +40.2% | +0.1215 SOL | \u23f1\ufe0f Post-Entry Bucket: EARLY_TIME_SINCE_HIGH_5M",
     "[02:25:21] \ud83d\udd14 Migration #638 detected",
-    "[02:25:29] \ud83d\udcca Mig:638 Track:0 Upd:13383 Pos:0 SOL:$86.02"
+    "[02:25:29] \ud83d\udcca Mig:638 Track:0 Upd:13383 Pos:0 SOL:$86.02",
+    "[02:25:41] \ud83d\udd14 Migration #639 detected",
+    "[02:25:53] \ud83d\udd14 Migration #640 detected",
+    "[02:26:09] \ud83d\udd14 Migration #641 detected",
+    "[02:26:30] \ud83d\udcca Mig:641 Track:0 Upd:13383 Pos:0 SOL:$86.02"
   ],
   "balance": {
     "start": 2.567413,
@@ -581,7 +581,7 @@
   },
   "sol_price": 86.02,
   "bot_stats": {
-    "migrations_seen": 638,
+    "migrations_seen": 641,
     "migrations_added": 47,
     "pools_tracking": 0,
     "price_updates": 13383,
