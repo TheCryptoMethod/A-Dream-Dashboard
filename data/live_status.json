@@ -1,8 +1,8 @@
 {
   "status": "live",
   "started_at": "2026-03-10T22:01:52.089543+00:00",
-  "updated_at": "2026-03-11T00:32:34.813559+00:00",
-  "uptime_seconds": 9042.7,
+  "updated_at": "2026-03-11T00:33:35.925480+00:00",
+  "uptime_seconds": 9103.8,
   "method": "M1",
   "strategy": {
     "method": "M1",
@@ -523,14 +523,6 @@
   },
   "dry_run": false,
   "terminal": [
-    "[00:26:22] \u2705 BC Graduated: HBVnKYMkJVHS\u2026",
-    "[00:26:23] \ud83d\udce1 Tracking: HBVnKYMkJVHSqm4W\u2026 | Pool #1",
-    "[00:26:25] \ud83d\udcca Mig:350 Track:1 Upd:4752 Pos:0 SOL:$85.80",
-    "[00:26:30] \ud83d\udfe2 ENTRY: M1 | HBVnKYMkJVHS... | $0.000036103 | 0.3021 SOL",
-    "[00:26:30] \ud83d\udcb0 Position filled: M1 | HBVnKYMkJVHS\u2026 | $0.000036103 | 0.3021 SOL | FDV $36.1k",
-    "[00:27:04] \ud83d\udd14 Migration #351 detected",
-    "[00:27:07] \ud83d\udd14 Migration #352 detected",
-    "[00:27:26] \ud83d\udcca Mig:352 Track:1 Upd:5042 Pos:1 SOL:$85.83",
     "[00:27:31] \ud83d\udd14 Migration #353 detected",
     "[00:27:48] \ud83d\udd14 Migration #354 detected",
     "[00:28:09] \ud83d\udd34 EXIT: HBVnKYMkJVHS... | SL | -20.5%",
@@ -562,32 +554,40 @@
     "[00:31:55] \u2705 BC Graduated: 3f2nAJKdJEHr\u2026",
     "[00:31:56] \ud83d\udca7 Liquidity rejected: 0.3 SOL < 15.0 SOL",
     "[00:32:21] \ud83d\udd14 Migration #365 detected",
-    "[00:32:31] \ud83d\udcca Mig:365 Track:1 Upd:5462 Pos:1 SOL:$85.93"
+    "[00:32:31] \ud83d\udcca Mig:365 Track:1 Upd:5462 Pos:1 SOL:$85.93",
+    "[00:32:35] \u2705 BC Graduated: 9jpwUpdJV8y3\u2026",
+    "[00:32:35] \ud83d\udce1 Tracking: 9jpwUpdJV8y3Hg3K\u2026 | Pool #2",
+    "[00:32:39] \ud83d\udee1\ufe0f Signal gate: 9jpwUpdJV8y3\u2026 | rugcheck=120001>5000",
+    "[00:32:39] \ud83d\udeab Disqualified: 9jpwUpdJV8y3\u2026 | signal_gate_failed | 4s",
+    "[00:32:48] \ud83d\udd34 EXIT: 5Y82ZXTCe8qG... | SL | -33.7%",
+    "[00:32:48] \ud83d\udd34 Stop Loss: 5Y82ZXTCe8qG\u2026 | -33.7% | -0.1019 SOL | SL1: -13.1% price (exec: -20.6%)",
+    "[00:33:27] \ud83d\udd14 Migration #366 detected",
+    "[00:33:32] \ud83d\udcca Mig:366 Track:0 Upd:5517 Pos:0 SOL:$85.90"
   ],
   "balance": {
     "start": 2.567413,
-    "current": 1.394454,
-    "pnl_sol": -1.172959,
-    "pnl_pct": -45.69
+    "current": 1.594607,
+    "pnl_sol": -0.972806,
+    "pnl_pct": -37.89
   },
   "trades": {
-    "total": 20,
+    "total": 21,
     "wins": 2,
-    "losses": 18,
-    "win_rate": 10.0
+    "losses": 19,
+    "win_rate": 9.5
   },
   "positions": {
-    "open": 1
+    "open": 0
   },
-  "sol_price": 85.93,
+  "sol_price": 85.9,
   "bot_stats": {
-    "migrations_seen": 365,
-    "migrations_added": 29,
-    "pools_tracking": 1,
-    "price_updates": 5470,
+    "migrations_seen": 366,
+    "migrations_added": 30,
+    "pools_tracking": 0,
+    "price_updates": 5517,
     "migrations_rejected": 0,
     "liquidity_rejected": 15,
-    "bc_graduated": 44,
+    "bc_graduated": 45,
     "entries_found": 21,
     "buys_success": 21,
     "buys_failed": 0
